@@ -53,12 +53,14 @@ with sync_playwright() as p:
     util_log.test_check_user_agent(page)
     util_log.test_check_referrer(page)
 
-    add_time_for_page_to_load(page)
+    #add_time_for_page_to_load(page)
 
-    action.move_mouse_smoothly_top_left_bottom_right(page)
+    #action.move_mouse_smoothly_top_left_bottom_right(page)
 
-    action.save_screenshot(page, "test.png")
+    #action.save_screenshot(page, "test.png")
 
+    action.page_scroll(page)
+    time.sleep(10)
     # Get the HTML content of the page
     html_content = page.content()
     soup = BeautifulSoup(html_content, "lxml")
