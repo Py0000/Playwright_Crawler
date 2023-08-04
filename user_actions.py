@@ -21,7 +21,6 @@ def mouse_click(page, direction):
     
 
 
-
 def move_mouse_smoothly_top_left_bottom_right(page):
     try:
         steps = 100
@@ -94,3 +93,11 @@ def page_scroll(page):
     except Exception as e:
         print("PAGE SCROLL FAILED...")
         print(e)
+    
+
+def dismiss_js_alert(page):
+    try:
+        page.on("dialog", lambda dialog: dialog.accept())
+        print("Alert dismissed successfully...")
+    except:
+        print("ALERT NOT DISMISSED...")
