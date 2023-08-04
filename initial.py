@@ -57,7 +57,7 @@ with sync_playwright() as p:
 
     #action.move_mouse_smoothly_top_left_bottom_right(page)
 
-    action.mouse_right_click(page)
+    action.mouse_click(page, 'left')
 
     #action.save_screenshot(page, "test.png")
 
