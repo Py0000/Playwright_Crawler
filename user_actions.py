@@ -9,6 +9,18 @@ def save_screenshot(page, save_file_loc):
         print("UNABLE TO SAVE SCREENSHOT...")
 
 
+def mouse_right_click(page):
+    try:
+        # Perform right-click at the current mouse position
+        page.mouse.down(button='right')
+        page.mouse.up(button='right')
+        print("Mouse right click successful...")
+    except:
+        print("MOUSE RIGHT CLICK UNSUCCESSFUL")
+    
+
+
+
 def move_mouse_smoothly_top_left_bottom_right(page):
     try:
         steps = 100

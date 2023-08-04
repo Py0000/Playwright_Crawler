@@ -57,10 +57,12 @@ with sync_playwright() as p:
 
     #action.move_mouse_smoothly_top_left_bottom_right(page)
 
+    action.mouse_right_click(page)
+
     #action.save_screenshot(page, "test.png")
 
-    action.page_scroll(page)
-    time.sleep(10)
+    #action.page_scroll(page)
+    
     # Get the HTML content of the page
     html_content = page.content()
     soup = BeautifulSoup(html_content, "lxml")
