@@ -46,7 +46,7 @@ with sync_playwright() as p:
     page.set_extra_http_headers({"referer": custom_referer})
 
     # visit the url 
-    page.goto("http://autopract.com/selenium/alert5/") 
+    page.goto("http://www.youtube.com/") 
     time.sleep(5)
 
     # Get the user-agent & referrer string
@@ -63,14 +63,14 @@ with sync_playwright() as p:
 
     #action.page_scroll(page)
 
-    alert_btn = page.locator("text=Trigger a Confirmation")
+    #alert_btn = page.locator("text=Trigger a Confirmation")
 
-    action.dismiss_js_alert(page)
+    #action.dismiss_js_alert(page)
 
-    alert_btn.click()
-    print(page.locator("id=msg").inner_text())
+    #alert_btn.click()
+    #print(page.locator("id=msg").inner_text())
     #time.sleep(3)
-
+    
     # Get the HTML content of the page
     html_content = page.content()
     soup = BeautifulSoup(html_content, "lxml")
