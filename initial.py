@@ -56,18 +56,24 @@ def get_html_content(page, base_folder_name, formatted_index, actual_url, embedd
 
 
 def scrape_content(page, base_folder_name, referer_url, actual_url, formatted_index, embedded_flag):
-    # If it is the seed url, visit google first
-    # Then inject a javascript click-through to visit the seed url to ensure no empty referrer
-    if not embedded_flag:
-        referer_url = referer_url + actual_url
+    if referer_url is not None:
+        # If it is the seed url, visit google first
+        # Then inject a javascript click-through to visit the seed url to ensure no empty referrer
+        if not embedded_flag:
+            referer_url = referer_url + actual_url
 
-    # Set the referrer first
-    page.goto(referer_url) 
-    add_time_for_page_to_load(page)
+        # Set the referrer first
+        page.goto(referer_url) 
+        add_time_for_page_to_load(page)
 
-     # Visit the actual webpage
-    page.evaluate('window.location.href = "{}";'.format(actual_url))
-    add_time_for_page_to_load(page)
+        # Visit the actual webpage
+        page.evaluate('window.location.href = "{}";'.format(actual_url))
+        add_time_for_page_to_load(page)
+    
+    # Not referrer set
+    else:
+        page.goto(actual_url)
+        add_time_for_page_to_load(page) 
 
     return get_html_content(page, base_folder_name, formatted_index, actual_url, embedded_flag)
 
@@ -95,7 +101,7 @@ def crawl_depth_one_embedded_links(page, embedded_link_path, index, error_list, 
     return index, error_list
 
 
-def get_dataset(page, base_folder_name, url_list):
+def get_dataset(page, base_folder_name, url_list, referrer):
     error_list = []
 
     index = 0
@@ -103,7 +109,6 @@ def get_dataset(page, base_folder_name, url_list):
         formatted_index_str = util.format_index_base_file_name(index)
 
         try:
-            referrer = util.GOOGLE_SEARCH_QUERY_REFERRER
             content, embedded_path = scrape_content(page, base_folder_name, referrer, url, formatted_index_str, embedded_flag=False)
             index += 1
 
@@ -111,7 +116,7 @@ def get_dataset(page, base_folder_name, url_list):
                 crawler.save_html_script(base_folder_name, content, formatted_index_str)
                 
                 # Scrape embedded link
-                referrer = url
+                referrer = url if referrer is not None else referrer
                 index, error_list = crawl_depth_one_embedded_links(page, embedded_path, index, error_list, base_folder_name, referrer)
             
         except Exception as e:
@@ -148,32 +153,30 @@ def get_dataset(page, base_folder_name, url_list):
         
 
 
-def setup_desktop_user_browser(custom_user_agent, custom_referer):
-    return
+def setup_user_agent(config):
+    user_agent_map = {
+        util.CONFIG_DESKTOP_USER: util.DESKTOP_USER_AGENT,
+        util.CONFIG_DESKTOP_BOT: util.DESKTOP_BOT_AGENT,
+        util.CONFIG_MOBILE_USER: "",
+        util.CONFIG_MOBILE_BOT: ""
+    }
+
+    return [f"--user-agent={user_agent_map.get(config)}"]
 
 
-def crawl(url_list):
+def crawl(url_list, config, referrer=None):
     print("\nCrawling in progress...")
 
-    custom_http_header = [
-        f"--user-agent={util.DESKTOP_USER_AGENT}", 
-        # f"--referer={util.GOOGLE_REFERRER}",
-    ]
+    custom_user_agent = setup_user_agent(config)
 
     p = sync_playwright().start()
-    browser = p.chromium.launch(headless=False, slow_mo=50, args=custom_http_header)
+    browser = p.chromium.launch(headless=False, slow_mo=50, args=custom_user_agent)
 
     # creates a new page within the browser
     page = browser.new_page()
 
-    # Set the user-agent & referrer header
-    page.set_extra_http_headers({"User-Agent": util.DESKTOP_USER_AGENT})
-    # page.set_extra_http_headers({"referer": util.GOOGLE_REFERRER})
-
-    # Can add setting the config for mobile/desktop/bots
-
     # Generate folders required for crawling
-    base_folder_name = f"{util.CRAWLED_DATA_IDENTIFIER}"
+    base_folder_name = f"{util.CRAWLED_DATA_IDENTIFIER}_{config}"
     sub_folder_list = [
         util.CRAWLED_HTML_SCRIPT_FOLDER,
         util.CRAWLED_EMBEDDED_LINK_FOLDER,
@@ -185,7 +188,7 @@ def crawl(url_list):
 
     crawler.generate_folder_for_crawling(base_folder_name, sub_folder_list)
 
-    get_dataset(page, base_folder_name, url_list)
+    get_dataset(page, base_folder_name, url_list, referrer)
 
     browser.close()
     p.stop()
@@ -193,4 +196,4 @@ def crawl(url_list):
     print("\nCrawling done...")
 
 
-crawl(["https://www.google.com/"])
+crawl(["https://www.google.com/"], util.CONFIG_DESKTOP_USER)

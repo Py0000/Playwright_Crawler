@@ -1,6 +1,11 @@
 
 ERROR_URL_FLAG = "ERROR_URL"
 
+CONFIG_DESKTOP_USER = "desktop_user"
+CONFIG_DESKTOP_BOT = "desktop_bot"
+CONFIG_MOBILE_USER = "mobile_user"
+CONFIG_MOBILE_BOT = "mobile_bot"
+
 CRAWLED_DATA_IDENTIFIER = "crawled_dataset"
 CRAWLED_HTML_SCRIPT_FOLDER = "crawled_html_scripts"
 CRAWLED_EMBEDDED_LINK_FOLDER = "crawled_embedded_links"
