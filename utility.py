@@ -14,6 +14,9 @@ CRAWLED_URL_FOLDER = "crawled_urls"
 CRAWLED_HTML_TAG_FOLDER = "crawled_html_tags"
 CRAWLED_REDIRECTION_FOLDER = "crawled_redirected_url"
 
+OUTPUT_PATH_EXCEL_FEATURES = "Features/Excelsheet/"
+OUTPUT_PATH_JSON_FEATURES = "Features/Json/"
+
 DESKTOP_BOT_AGENT = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/W.X.Y.Z Safari/537.36"
 DESKTOP_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
 

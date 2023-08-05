@@ -8,8 +8,14 @@ import crawler_support as crawler
 import user_actions as action
 import utility as util
 
-# sync_playwright() returns a sync Playwright Object
-# with ... as ... ensures proper resource management & close the Playwright instance at the end 
+
+
+def desktop_user_mouse_movement(page):
+    action.dismiss_js_alert(page)
+    action.move_mouse_smoothly_top_left_bottom_right(page)
+    action.mouse_click(page, 'left')
+    action.mouse_click(page, "right")
+
 
 def add_time_for_page_to_load(page):
     try:
@@ -24,16 +30,38 @@ def add_time_for_page_to_load(page):
     except:
         pass
 
+def wait_for_page_to_load(page, action_flag):
+    if action_flag:
+        action.move_mouse_smoothly_top_left_bottom_right(page)
+    
+    add_time_for_page_to_load(page)
 
 
-def get_html_content(page, base_folder_name, formatted_index, actual_url, embedded_flag):
-    # Can add mouse movement here
+def check_and_execute_user_actions(base_folder_name, action_flag, page):
+    if not action_flag:
+        pass
+    else:
+        if "desktop" in base_folder_name:
+            desktop_user_mouse_movement(page)
+        if "mobile" in base_folder_name:
+            return
+
+
+def check_and_execute_scroll(action_flag, page):
+    if action_flag:
+        action.page_scroll(page)
+    else:
+        pass
+
+def get_html_content(page, base_folder_name, formatted_index, actual_url, action_flag, embedded_flag):
+    
+    check_and_execute_user_actions(base_folder_name, action_flag, page)
 
     screenshot_path = crawler.get_screenshot_file_path(base_folder_name, formatted_index)
     action.save_screenshot(page, screenshot_path)
     print("Screenshot Captured...")
 
-    # Can add page scroll here
+    check_and_execute_scroll(action_flag, page)
 
     html_content = page.content()
     soup = BeautifulSoup(html_content, "lxml")
@@ -55,7 +83,7 @@ def get_html_content(page, base_folder_name, formatted_index, actual_url, embedd
     return soup.prettify(), embedded_file_path
 
 
-def scrape_content(page, base_folder_name, referer_url, actual_url, formatted_index, embedded_flag):
+def scrape_content(page, base_folder_name, referer_url, actual_url, formatted_index, action_flag, embedded_flag):
     if referer_url is not None:
         # If it is the seed url, visit google first
         # Then inject a javascript click-through to visit the seed url to ensure no empty referrer
@@ -64,27 +92,26 @@ def scrape_content(page, base_folder_name, referer_url, actual_url, formatted_in
 
         # Set the referrer first
         page.goto(referer_url) 
-        add_time_for_page_to_load(page)
+        wait_for_page_to_load(page, action_flag)
 
         # Visit the actual webpage
         page.evaluate('window.location.href = "{}";'.format(actual_url))
-        add_time_for_page_to_load(page)
     
     # Not referrer set
     else:
         page.goto(actual_url)
-        add_time_for_page_to_load(page) 
+        
+    wait_for_page_to_load(page, action_flag)
+    return get_html_content(page, base_folder_name, formatted_index, actual_url, action_flag, embedded_flag)
 
-    return get_html_content(page, base_folder_name, formatted_index, actual_url, embedded_flag)
 
-
-def crawl_depth_one_embedded_links(page, embedded_link_path, index, error_list, base_folder_name, referrer):
+def crawl_depth_one_embedded_links(page, embedded_link_path, index, error_list, base_folder_name, referrer, action_flag):
     url_list = crawler.get_level_one_embedded_link(embedded_link_path)
 
     for url in url_list:
         formatted_index_str = util.format_index_base_file_name(index)
         try:
-            content, _ = scrape_content(page, base_folder_name, referrer, url, formatted_index_str, embedded_flag=True)
+            content, _ = scrape_content(page, base_folder_name, referrer, url, formatted_index_str, action_flag, embedded_flag=True)
 
             if content is not None:
                 crawler.save_html_script(base_folder_name, content, formatted_index_str)
@@ -101,7 +128,7 @@ def crawl_depth_one_embedded_links(page, embedded_link_path, index, error_list, 
     return index, error_list
 
 
-def get_dataset(page, base_folder_name, url_list, referrer):
+def get_dataset(page, base_folder_name, url_list, referrer, action_flag):
     error_list = []
 
     index = 0
@@ -109,7 +136,7 @@ def get_dataset(page, base_folder_name, url_list, referrer):
         formatted_index_str = util.format_index_base_file_name(index)
 
         try:
-            content, embedded_path = scrape_content(page, base_folder_name, referrer, url, formatted_index_str, embedded_flag=False)
+            content, embedded_path = scrape_content(page, base_folder_name, referrer, url, formatted_index_str, action_flag, embedded_flag=False)
             index += 1
 
             if content is not None:
@@ -117,7 +144,7 @@ def get_dataset(page, base_folder_name, url_list, referrer):
                 
                 # Scrape embedded link
                 referrer = url if referrer is not None else referrer
-                index, error_list = crawl_depth_one_embedded_links(page, embedded_path, index, error_list, base_folder_name, referrer)
+                index, error_list = crawl_depth_one_embedded_links(page, embedded_path, index, error_list, base_folder_name, referrer, action_flag)
             
         except Exception as e:
             crawler.save_html_script(base_folder_name, f"Error occurred for url: {url}\n{e}", formatted_index_str)
@@ -132,23 +159,6 @@ def get_dataset(page, base_folder_name, url_list, referrer):
         print("Error occurred for link: ", j)
     
     print("Crawled dataset generated...")
-
-
-    #add_time_for_page_to_load(page)
-
-    #action.move_mouse_smoothly_top_left_bottom_right(page)
-
-    #action.mouse_click(page, 'left')
-
-    #action.page_scroll(page)
-
-    #alert_btn = page.locator("text=Trigger a Confirmation")
-
-    #action.dismiss_js_alert(page)
-
-    #alert_btn.click()
-    #print(page.locator("id=msg").inner_text())
-    #time.sleep(3)
         
         
 
@@ -164,7 +174,7 @@ def setup_user_agent(config):
     return [f"--user-agent={user_agent_map.get(config)}"]
 
 
-def crawl(url_list, config, referrer=None):
+def crawl(url_list, config, action_flag, referrer=None):
     print("\nCrawling in progress...")
 
     custom_user_agent = setup_user_agent(config)
@@ -188,7 +198,7 @@ def crawl(url_list, config, referrer=None):
 
     crawler.generate_folder_for_crawling(base_folder_name, sub_folder_list)
 
-    get_dataset(page, base_folder_name, url_list, referrer)
+    get_dataset(page, base_folder_name, url_list, referrer, action_flag)
 
     browser.close()
     p.stop()
@@ -196,4 +206,4 @@ def crawl(url_list, config, referrer=None):
     print("\nCrawling done...")
 
 
-crawl(["https://www.google.com/"], util.CONFIG_DESKTOP_USER)
+crawl(["https://www.google.com/"], util.CONFIG_DESKTOP_USER, action_flag=True)

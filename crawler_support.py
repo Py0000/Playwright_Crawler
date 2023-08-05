@@ -12,7 +12,7 @@ def test_check_user_agent(page):
 
 def test_check_referrer(page):
     referrer = page.evaluate('''() => document.referrer''')
-    print("Referrer:", referrer)
+    print(f"Referrer: {referrer}\n")
 
 
 def generate_folder_for_crawling(base_folder_name, sub_folder_lists):

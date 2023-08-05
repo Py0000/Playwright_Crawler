@@ -45,7 +45,7 @@ def move_mouse_smoothly_top_left_bottom_right(page):
             # Add a small delay to simulate smooth movement (adjust the time for your desired smoothness)
             time.sleep(random.uniform(0.005, 0.01))
 
-            print("Mouse moved: ", i)
+        print("Mouse moved sucessful...")
     except:
         print("ERROR MOVING MOUSE...")
     
