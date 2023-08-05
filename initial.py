@@ -4,6 +4,7 @@ import random
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
+import crawler_support as crawler
 import user_actions as action
 import utility as util
 
@@ -28,7 +29,7 @@ def add_time_for_page_to_load(page):
 def get_html_content(page, base_folder_name, formatted_index, actual_url, embedded_flag):
     # Can add mouse movement here
 
-    screenshot_path = util.get_screenshot_file_path(base_folder_name, formatted_index)
+    screenshot_path = crawler.get_screenshot_file_path(base_folder_name, formatted_index)
     action.save_screenshot(page, screenshot_path)
     print("Screenshot Captured...")
 
@@ -37,19 +38,19 @@ def get_html_content(page, base_folder_name, formatted_index, actual_url, embedd
     html_content = page.content()
     soup = BeautifulSoup(html_content, "lxml")
     scraped_url = page.url
-    util.detect_redirection(base_folder_name, scraped_url, actual_url)
-    util.save_crawled_url(base_folder_name, scraped_url)
+    crawler.detect_redirection(base_folder_name, scraped_url, actual_url)
+    crawler.save_crawled_url(base_folder_name, scraped_url)
 
     embedded_file_path = ""
     if not embedded_flag:
-        embedded_file_path = util.get_embedded_links(base_folder_name, soup, page, actual_url)
+        embedded_file_path = crawler.get_embedded_links(base_folder_name, soup, page, actual_url)
     
-    util.get_all_html_tags(base_folder_name, soup, formatted_index)
+    crawler.get_all_html_tags(base_folder_name, soup, formatted_index)
 
     print("Actual url: ", actual_url)
     print("Url visited: ", scraped_url)
-    util.test_check_user_agent(page)
-    util.test_check_referrer(page)
+    crawler.test_check_user_agent(page)
+    crawler.test_check_referrer(page)
 
     return soup.prettify(), embedded_file_path
 
@@ -72,7 +73,7 @@ def scrape_content(page, base_folder_name, referer_url, actual_url, formatted_in
 
 
 def crawl_depth_one_embedded_links(page, embedded_link_path, index, error_list, base_folder_name, referrer):
-    url_list = util.get_level_one_embedded_link(embedded_link_path)
+    url_list = crawler.get_level_one_embedded_link(embedded_link_path)
 
     for url in url_list:
         formatted_index_str = util.format_index_base_file_name(index)
@@ -80,11 +81,11 @@ def crawl_depth_one_embedded_links(page, embedded_link_path, index, error_list, 
             content, _ = scrape_content(page, base_folder_name, referrer, url, formatted_index_str, embedded_flag=True)
 
             if content is not None:
-                util.save_html_script(base_folder_name, content, formatted_index_str)
+                crawler.save_html_script(base_folder_name, content, formatted_index_str)
         
         except Exception as e:
-            util.save_html_script(base_folder_name, f"Error occurred for url: {url}\n{e}", formatted_index_str)
-            util.save_crawled_url(base_folder_name, util.ERROR_URL_FLAG)
+            crawler.save_html_script(base_folder_name, f"Error occurred for url: {url}\n{e}", formatted_index_str)
+            crawler.save_crawled_url(base_folder_name, util.ERROR_URL_FLAG)
             error_list.append(index)
             continue
 
@@ -107,15 +108,15 @@ def get_dataset(page, base_folder_name, url_list):
             index += 1
 
             if content is not None:
-                util.save_html_script(base_folder_name, content, formatted_index_str)
+                crawler.save_html_script(base_folder_name, content, formatted_index_str)
                 
                 # Scrape embedded link
                 referrer = url
                 index, error_list = crawl_depth_one_embedded_links(page, embedded_path, index, error_list, base_folder_name, referrer)
             
         except Exception as e:
-            util.save_html_script(base_folder_name, f"Error occurred for url: {url}\n{e}", formatted_index_str)
-            util.save_crawled_url(base_folder_name, util.ERROR_URL_FLAG)
+            crawler.save_html_script(base_folder_name, f"Error occurred for url: {url}\n{e}", formatted_index_str)
+            crawler.save_crawled_url(base_folder_name, util.ERROR_URL_FLAG)
             error_list.append(index)
             index += 1
             continue
@@ -182,7 +183,7 @@ def crawl(url_list):
         util.CRAWLED_REDIRECTION_FOLDER,
     ]
 
-    util.generate_folder_for_crawling(base_folder_name, sub_folder_list)
+    crawler.generate_folder_for_crawling(base_folder_name, sub_folder_list)
 
     get_dataset(page, base_folder_name, url_list)
 
@@ -192,4 +193,4 @@ def crawl(url_list):
     print("\nCrawling done...")
 
 
-crawl(["https://www.youtube.com/"])
+crawl(["https://www.google.com/"])
