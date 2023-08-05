@@ -97,7 +97,7 @@ def save_html_script(base_folder_name, text, name):
 
 
 def save_crawled_url(base_folder_name, url):
-    file_name = "urls.txt"
+    file_name = util.CRAWLED_URL_FILE_NAME
     file = os.path.join(os.getcwd(), base_folder_name, util.CRAWLED_URL_FOLDER, file_name)
     
     with open(file, "a") as f:

@@ -1,3 +1,5 @@
+import os
+import utility as util
 
 ERROR_URL_FLAG = "ERROR_URL"
 
@@ -13,6 +15,7 @@ CRAWLED_PAGE_SCREENSHOT_FOLDER = "crawled_screenshots"
 CRAWLED_URL_FOLDER = "crawled_urls"
 CRAWLED_HTML_TAG_FOLDER = "crawled_html_tags"
 CRAWLED_REDIRECTION_FOLDER = "crawled_redirected_url"
+CRAWLED_URL_FILE_NAME = "urls.txt"
 
 OUTPUT_PATH_EXCEL_FEATURES = "Features/Excelsheet/"
 OUTPUT_PATH_JSON_FEATURES = "Features/Json/"
@@ -51,3 +54,35 @@ CURRENT_KNOWN_EXCLUEDED_TAG_SET = {
 
 def format_index_base_file_name(index):
     return f"{index:08}"
+
+
+def read_urls_from_file(base_folder):
+    # Specify the folder and file path
+    folder_path = CRAWLED_URL_FOLDER
+    file_name = CRAWLED_URL_FILE_NAME
+    file_path = os.path.join(base_folder, folder_path, file_name)
+
+    urls = []
+    with open(file_path, 'r') as file:
+        for line in file:
+            url = line.strip()
+            urls.append(url)
+    return urls
+
+
+def generate_extractor_analysis_folder(base_folder_name):
+    sub_folder_lists = ['Certificates', 'DNS', 'Features']
+    sub_sub_folder_lists = ['Analysis', 'Excelsheet', 'Json']
+
+    if not os.path.exists(base_folder_name):
+        os.makedirs(base_folder_name)
+    
+    for sub_folder in sub_folder_lists:
+        sub_folder_path = os.path.join(base_folder_name, sub_folder)
+        if not os.path.exists(sub_folder_path):
+            os.mkdir(sub_folder_path)
+        if sub_folder != 'DNS':
+            for sub_sub_folder in sub_sub_folder_lists:
+                sub_sub_folder_path = os.path.join(sub_folder_path, sub_sub_folder)
+                if not os.path.exists(sub_sub_folder_path):
+                    os.mkdir(sub_sub_folder_path)

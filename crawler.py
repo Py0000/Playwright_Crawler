@@ -87,8 +87,9 @@ def scrape_content(page, base_folder_name, referer_url, actual_url, formatted_in
     if referer_url is not None:
         # If it is the seed url, visit google first
         # Then inject a javascript click-through to visit the seed url to ensure no empty referrer
-        if not embedded_flag:
+        if not embedded_flag and referer_url == util.GOOGLE_SEARCH_QUERY_REFERRER:
             referer_url = referer_url + actual_url
+            print("Google Referrer executed")
 
         # Set the referrer first
         page.goto(referer_url) 
@@ -206,4 +207,4 @@ def crawl(url_list, config, action_flag, referrer=None):
     print("\nCrawling done...")
 
 
-crawl(["https://www.google.com/"], util.CONFIG_DESKTOP_USER, action_flag=True)
+#crawl(["https://www.google.com/"], util.CONFIG_DESKTOP_USER, action_flag=True, referrer=util.FACEBOOK_REFERRER)

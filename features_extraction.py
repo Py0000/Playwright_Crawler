@@ -242,10 +242,10 @@ def create_dataframe(file_name, base_folder_name, crawled_data_dir, urls):
     df = pd.DataFrame(data=data, columns=columns)
     df.drop_duplicates(subset=["Link"], keep="first", inplace=True)
 
-    save_loc = f"{base_folder_name}//{util.FEATURES_EXCEL_OUTPUT_PATH}{file_name}_features.xlsx"
+    save_loc = f"{base_folder_name}//{util.OUTPUT_PATH_EXCEL_FEATURES}{file_name}_features.xlsx"
     df.to_excel(save_loc, index=False)
 
-    print("Features dataframe generated...")
+    print("Features dataframe generated...\n")
 
 
 def create_json(file_name, base_folder_name, crawled_data_dir, urls):
@@ -295,7 +295,7 @@ def create_json(file_name, base_folder_name, crawled_data_dir, urls):
         index += 1
         duplicate_checker.add(url)
     
-    print("Features Json File generated... ")
+    print("Features Json File generated... \n")
 
 
 
@@ -305,5 +305,5 @@ def extract_features(file_name, base_folder_name, crawled_data_dir, urls):
     create_dataframe(file_name, base_folder_name, crawled_data_dir, urls)
     create_json(file_name, base_folder_name, crawled_data_dir, urls)
 
-    print("HTML features extracted...")
+    print("\nHTML features extracted...")
 
