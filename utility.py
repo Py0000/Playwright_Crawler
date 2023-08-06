@@ -1,5 +1,5 @@
 import os
-import utility as util
+from urllib.parse import urlparse
 
 ERROR_URL_FLAG = "ERROR_URL"
 
@@ -19,6 +19,10 @@ CRAWLED_URL_FILE_NAME = "urls.txt"
 
 OUTPUT_PATH_EXCEL_FEATURES = "Features/Excelsheet/"
 OUTPUT_PATH_JSON_FEATURES = "Features/Json/"
+OUTPUT_PATH_EXCEL_CERTS = "Certificates/Excelsheet/"
+OUTPUT_PATH_JSON_CERTS = "Certificates/Json/"
+OUTPUT_PATH_DNS = "DNS/"
+
 
 DESKTOP_BOT_AGENT = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/W.X.Y.Z Safari/537.36"
 DESKTOP_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
@@ -68,6 +72,12 @@ def read_urls_from_file(base_folder):
             url = line.strip()
             urls.append(url)
     return urls
+
+
+def extract_hostname(website_url):
+    parsed_url = urlparse(website_url)
+    hostname = parsed_url.hostname
+    return hostname
 
 
 def generate_extractor_analysis_folder(base_folder_name):

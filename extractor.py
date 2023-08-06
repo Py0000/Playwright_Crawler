@@ -1,5 +1,7 @@
 import datetime
 
+import certificate_extraction as ce
+import dns_extraction as de
 import features_extraction as fe
 import utility as util
  
@@ -17,7 +19,7 @@ def extract_webpage(config):
 
     print("\nExtracting Data ...")
     fe.extract_features(file_name, base_folder_name, crawled_data_dir, crawled_urls)
+    ce.extract_certificates(file_name, base_folder_name, crawled_urls)
+    de.generate_dns_records(file_name, base_folder_name, crawled_urls)
     print("\nData Extracted ... \n")
 
-
-extract_webpage(util.CONFIG_DESKTOP_USER)

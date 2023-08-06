@@ -15,7 +15,7 @@ def start_program(seed_url_list):
     crawl_with_desktop_user_referrer_action(seed_url_list)
 
 
-start_program(["https://www.facebook.com/"])
+start_program(["https://www.google.com.sg/"])
 
 
 
