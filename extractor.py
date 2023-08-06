@@ -6,10 +6,7 @@ import features_extraction as fe
 import utility as util
  
 
-def extract_webpage(config):
-    base_folder_name = f'data_{config}'
-    util.generate_extractor_analysis_folder(base_folder_name)
-    
+def extract_webpage(base_folder_name, config):
     file_date = datetime.date.today().strftime("%Y%m%d")
     file_time = datetime.datetime.now().time().strftime("%H%M%S")
     file_name = f"{file_date}_{file_time}"

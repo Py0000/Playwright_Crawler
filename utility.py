@@ -19,8 +19,10 @@ CRAWLED_URL_FILE_NAME = "urls.txt"
 
 OUTPUT_PATH_EXCEL_FEATURES = "Features/Excelsheet/"
 OUTPUT_PATH_JSON_FEATURES = "Features/Json/"
+OUTPUT_PATH_ANALYSIS_FEATURES = "Features/Analysis/"
 OUTPUT_PATH_EXCEL_CERTS = "Certificates/Excelsheet/"
 OUTPUT_PATH_JSON_CERTS = "Certificates/Json/"
+OUTPUT_PATH_ANALYSIS_CERTS = "Certificates/Analysis/"
 OUTPUT_PATH_DNS = "DNS/"
 
 
@@ -78,6 +80,13 @@ def extract_hostname(website_url):
     parsed_url = urlparse(website_url)
     hostname = parsed_url.hostname
     return hostname
+
+
+def get_file_name_without_ext(file):
+    file_name = os.path.basename(file)
+    file_name_without_extension = os.path.splitext(file_name)[0]
+
+    return file_name_without_extension
 
 
 def generate_extractor_analysis_folder(base_folder_name):
