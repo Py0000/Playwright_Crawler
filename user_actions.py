@@ -101,3 +101,14 @@ def dismiss_js_alert(page):
         print("Alert dismissed successfully...")
     except:
         print("ALERT NOT DISMISSED...")
+
+
+def touchscreen(page):
+    try:
+        page_size = page.evaluate('''() => ({ width: document.documentElement.clientWidth, height: document.documentElement.clientHeight })''')
+        bottom_x, bottom_y = page_size['width'] / 2, page_size['height']
+        page.touchscreen.tap(bottom_x, bottom_y)
+        print(f"Touch at: {bottom_x}, {bottom_y}")
+    
+    except Exception as e:
+        print(f"Error tapping on screen: {e}")

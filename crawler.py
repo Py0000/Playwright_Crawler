@@ -17,6 +17,10 @@ def desktop_user_mouse_movement(page):
     action.mouse_click(page, "right")
 
 
+def mobile_user_hand_gesture(page):
+    action.touchscreen(page)
+
+
 def add_time_for_page_to_load(page):
     try:
         # Wait for the page to load completely (wait for the load event)
@@ -44,7 +48,7 @@ def check_and_execute_user_actions(base_folder_name, action_flag, page):
         if "desktop" in base_folder_name:
             desktop_user_mouse_movement(page)
         if "mobile" in base_folder_name:
-            return
+            mobile_user_hand_gesture(page)
 
 
 def check_and_execute_scroll(action_flag, page):
@@ -187,10 +191,23 @@ def setup_desktop_crawler(playwright_object, config):
     return browser, page
 
 
-def setup_mobile_crawler(playwright_object):
+def setup_mobile_user_crawler(playwright_object):
     browser = playwright_object.webkit.launch(headless=False, slow_mo=50)
     context = browser.new_context(
         **playwright_object.devices['Pixel 5']
+    )
+
+    page = context.new_page()
+    return browser, page
+
+
+def setup_mobile_bot_crawler(playwright_object):
+    browser = playwright_object.webkit.launch(headless=False, slow_mo=50)
+    pixel_5_bot = playwright_object.devices['Pixel 5'].copy()
+    pixel_5_bot['user_agent'] = util.MOBILE_BOT_AGENT
+
+    context = browser.new_context(
+        **pixel_5_bot
     )
 
     page = context.new_page()
@@ -202,11 +219,17 @@ def crawl(url_list, config, action_flag, referrer=None):
 
     p = sync_playwright().start()
 
-    if config == util.CONFIG_DESKTOP_USER or util.CONFIG_DESKTOP_BOT:
+   
+    if config == util.CONFIG_MOBILE_USER:
+        browser, page = setup_mobile_user_crawler(p)
+    
+    elif config == util.CONFIG_MOBILE_BOT:
+        browser, page = setup_mobile_bot_crawler(p)
+    
+    else:
         browser, page = setup_desktop_crawler(p, config)
 
-    if config == util.CONFIG_MOBILE_USER:
-        browser, page = setup_mobile_crawler(p)
+    
 
     # Generate folders required for crawling
     base_folder_name = f"{util.CRAWLED_DATA_IDENTIFIER}_{config}"
