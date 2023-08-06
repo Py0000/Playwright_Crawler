@@ -84,7 +84,10 @@ def get_html_content(page, base_folder_name, formatted_index, actual_url, action
 
 
 def scrape_content(page, base_folder_name, referer_url, actual_url, formatted_index, action_flag, embedded_flag):
-    if referer_url is not None:
+    isDesktop = util.CONFIG_DESKTOP_BOT in base_folder_name or util.CONFIG_DESKTOP_USER in base_folder_name 
+    isMobile = util.CONFIG_MOBILE_BOT in base_folder_name or util.CONFIG_MOBILE_USER in base_folder_name
+
+    if isDesktop and referer_url is not None :
         # If it is the seed url, visit google first
         # Then inject a javascript click-through to visit the seed url to ensure no empty referrer
         if not embedded_flag and referer_url == util.GOOGLE_SEARCH_QUERY_REFERRER:
@@ -97,7 +100,11 @@ def scrape_content(page, base_folder_name, referer_url, actual_url, formatted_in
 
         # Visit the actual webpage
         page.evaluate('window.location.href = "{}";'.format(actual_url))
-    
+
+    elif isMobile and referer_url is not None :
+        page.set_extra_http_headers({"Referer": referer_url})
+        page.goto(actual_url)
+
     # Not referrer set
     else:
         page.goto(actual_url)
@@ -164,27 +171,42 @@ def get_dataset(page, base_folder_name, url_list, referrer, action_flag):
         
 
 
-def setup_user_agent(config):
+def setup_desktop_crawler(playwright_object, config):
     user_agent_map = {
-        util.CONFIG_DESKTOP_USER: util.DESKTOP_USER_AGENT,
-        util.CONFIG_DESKTOP_BOT: util.DESKTOP_BOT_AGENT,
-        util.CONFIG_MOBILE_USER: "",
-        util.CONFIG_MOBILE_BOT: ""
+        util.CONFIG_DESKTOP_USER: [f"--user-agent={util.DESKTOP_USER_AGENT}"],
+        util.CONFIG_DESKTOP_BOT: [f"--user-agent={util.DESKTOP_BOT_AGENT}"],
     }
 
-    return [f"--user-agent={user_agent_map.get(config)}"]
+    custom_user_agent = user_agent_map.get(config)
+
+    browser = playwright_object.chromium.launch(headless=False, slow_mo=50, args=custom_user_agent)
+
+    # creates a new page within the browser
+    page = browser.new_page()
+
+    return browser, page
+
+
+def setup_mobile_crawler(playwright_object):
+    browser = playwright_object.webkit.launch(headless=False, slow_mo=50)
+    context = browser.new_context(
+        **playwright_object.devices['Pixel 5']
+    )
+
+    page = context.new_page()
+    return browser, page
 
 
 def crawl(url_list, config, action_flag, referrer=None):
     print("\nCrawling in progress...")
 
-    custom_user_agent = setup_user_agent(config)
-
     p = sync_playwright().start()
-    browser = p.chromium.launch(headless=False, slow_mo=50, args=custom_user_agent)
 
-    # creates a new page within the browser
-    page = browser.new_page()
+    if config == util.CONFIG_DESKTOP_USER or util.CONFIG_DESKTOP_BOT:
+        browser, page = setup_desktop_crawler(p, config)
+
+    if config == util.CONFIG_MOBILE_USER:
+        browser, page = setup_mobile_crawler(p)
 
     # Generate folders required for crawling
     base_folder_name = f"{util.CRAWLED_DATA_IDENTIFIER}_{config}"
@@ -208,3 +230,15 @@ def crawl(url_list, config, action_flag, referrer=None):
 
 
 #crawl(["https://www.google.com/"], util.CONFIG_DESKTOP_USER, action_flag=True, referrer=util.FACEBOOK_REFERRER)
+
+"""
+def list_available_devices():
+    with sync_playwright() as p:
+        devices = p.devices
+
+        print("Available Devices:")
+        for device_name in devices.keys():
+            print(f"- {device_name}")
+
+list_available_devices()
+"""

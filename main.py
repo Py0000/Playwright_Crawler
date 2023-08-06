@@ -11,16 +11,46 @@ def crawl_with_desktop_user_referrer_action(seed_url_list):
     print("\nCrawling and analyzing with Desktop User-Agent, referrer set and mouse movement enabled...")
     extracted_data_base_folder_name = f'data_{util.CONFIG_DESKTOP_USER}'
 
-    # crawler.crawl(seed_url_list, util.CONFIG_DESKTOP_USER, action_flag=True, referrer=util.GOOGLE_SEARCH_QUERY_REFERRER)
+    crawler.crawl(seed_url_list, util.CONFIG_DESKTOP_USER, action_flag=True, referrer=util.GOOGLE_SEARCH_QUERY_REFERRER)
     util.generate_extractor_analysis_folder(extracted_data_base_folder_name)
     extractor.extract_webpage(extracted_data_base_folder_name, util.CONFIG_DESKTOP_USER)
     analyzer.analyze_extracted_data(extracted_data_base_folder_name)
     print("Done with Desktop User-Agent, referrer set and mouse movement enabled...")
 
 
+# Configurations: 
+# User-Agent: Desktop Bot
+# Referrer: Google 
+# User interaction: Enabled
+def crawl_with_desktop_bot_referrer_action(seed_url_list):
+    print("\nCrawling and analyzing with Desktop Bot-Agent, referrer set and mouse movement enabled...")
+    extracted_data_base_folder_name = f'data_{util.CONFIG_DESKTOP_BOT}'
+
+    crawler.crawl(seed_url_list, util.CONFIG_DESKTOP_BOT, action_flag=True, referrer=util.GOOGLE_SEARCH_QUERY_REFERRER)
+    util.generate_extractor_analysis_folder(extracted_data_base_folder_name)
+    extractor.extract_webpage(extracted_data_base_folder_name, util.CONFIG_DESKTOP_BOT)
+    analyzer.analyze_extracted_data(extracted_data_base_folder_name)
+    print("Done with Desktop Bot-Agent, referrer set and mouse movement enabled...")
+
+# Configurations: 
+# User-Agent: Mobile User
+# Referrer: Google 
+# User interaction: Not Enabled
+def crawl_with_mobile_user_referrer_no_action(seed_url_list):
+    print("\nCrawling and analyzing with Mobile User-Agent, referrer set and NO mouse movement enabled...")
+    extracted_data_base_folder_name = f'data_{util.CONFIG_MOBILE_USER}'
+
+    crawler.crawl(seed_url_list, util.CONFIG_MOBILE_USER, action_flag=False, referrer=util.GOOGLE_REFERRER)
+    util.generate_extractor_analysis_folder(extracted_data_base_folder_name)
+    extractor.extract_webpage(extracted_data_base_folder_name, util.CONFIG_MOBILE_USER)
+    analyzer.analyze_extracted_data(extracted_data_base_folder_name)
+    print("Done with Mobile User-Agent, referrer set and No mouse movement enabled...")
+
 
 def start_program(seed_url_list):
-    crawl_with_desktop_user_referrer_action(seed_url_list)
+    #crawl_with_desktop_user_referrer_action(seed_url_list)
+    #crawl_with_desktop_bot_referrer_action(seed_url_list)
+    crawl_with_mobile_user_referrer_no_action(seed_url_list)
 
 
 start_program(["https://www.google.com.sg/"])
