@@ -3,6 +3,10 @@ from urllib.parse import urlparse
 
 ERROR_URL_FLAG = "ERROR_URL"
 
+CONFIG_REFERRER_SET = "ref"
+CONFIG_NO_REFERRER_SET = "no_ref"
+CONFIG_USER_ACTION_ENABLED = "user_act"
+CONFIG_USER_ACTION_NOT_ENABLED = "no_user_act"
 CONFIG_DESKTOP_USER = "desktop_user"
 CONFIG_DESKTOP_BOT = "desktop_bot"
 CONFIG_MOBILE_USER = "mobile_user"

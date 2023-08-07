@@ -18,6 +18,7 @@ def desktop_user_mouse_movement(page):
 
 
 def mobile_user_hand_gesture(page):
+    action.dismiss_js_alert(page)
     action.touchscreen(page)
 
 
@@ -220,10 +221,10 @@ def crawl(url_list, config, action_flag, referrer=None):
     p = sync_playwright().start()
 
    
-    if config == util.CONFIG_MOBILE_USER:
+    if util.CONFIG_MOBILE_USER in config:
         browser, page = setup_mobile_user_crawler(p)
     
-    elif config == util.CONFIG_MOBILE_BOT:
+    elif util.CONFIG_MOBILE_BOT in config:
         browser, page = setup_mobile_bot_crawler(p)
     
     else:
