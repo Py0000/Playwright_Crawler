@@ -79,7 +79,7 @@ def get_links_in_iframe(soup, file, url, page, added_url_set):
         added_url_set = save_iframe_src(file, iframe_src, added_url_set)
         page.goto(iframe_src)
         iframe_soup = BeautifulSoup(page.content(), 'lxml')
-        added_url_set = handle_nested_iframes(iframe_soup, url, file, added_url_set)
+        added_url_set = handle_nested_iframes(iframe_soup, url, file, page, added_url_set)
     return added_url_set
         
 

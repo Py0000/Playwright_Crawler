@@ -28,12 +28,18 @@ def add_time_for_page_to_load(page):
         page.wait_for_load_state('load')
     except:
         pass
-    
+
     try:
         # Wait for the body tag to be loaded
         page.wait_for_selector('body')
     except:
         pass
+
+    try:
+        page.waitForLoadState('networkidle')
+    except:
+        pass
+    
 
 def wait_for_page_to_load(page, action_flag):
     if action_flag:
