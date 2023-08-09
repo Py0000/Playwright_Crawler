@@ -177,8 +177,9 @@ def get_dataset(page, base_folder_name, url_list, referrer, action_flag):
 
 
 def setup_desktop_crawler(playwright_object, config):
+    # desktop_user_agent = util.DESKTOP_USER_AGENT_LIST[random.randint(1,2)]
     user_agent_map = {
-        util.CONFIG_DESKTOP_USER: [f"--user-agent={util.DESKTOP_USER_AGENT}"],
+        util.CONFIG_DESKTOP_USER: [f"--user-agent={util.DESKTOP_USER_AGENT_2}"],
         util.CONFIG_DESKTOP_BOT: [f"--user-agent={util.DESKTOP_BOT_AGENT}"],
     }
 
@@ -255,7 +256,7 @@ def crawl(url_list, config, action_flag, referrer=None):
 
 #crawl(["https://www.google.com/"], util.CONFIG_DESKTOP_USER, action_flag=True, referrer=util.FACEBOOK_REFERRER)
 
-"""
+'''
 def list_available_devices():
     with sync_playwright() as p:
         devices = p.devices
@@ -265,4 +266,4 @@ def list_available_devices():
             print(f"- {device_name}")
 
 list_available_devices()
-"""
+'''

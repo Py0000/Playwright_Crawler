@@ -44,10 +44,30 @@ def save_unique_embedded_url(file, anchor_tag, URL, added_url_set):
 
     return added_url_set
 
+def save_iframe_src(file, iframe_src, added_url_set):
+    try:
+        url = full_url_converter(iframe_src)
+        if url not in added_url_set:
+            with open(file, "a") as f:
+                f.write(url + '\n')
+                added_url_set.add(url)
+    
+    except:
+        pass
+
+    return added_url_set
+
 def get_links_in_anchor(soup, file, url, added_url_set):
     for a in soup.find_all("a"):
         added_url_set = save_unique_embedded_url(file, a, url, added_url_set)
     
+    return added_url_set
+
+def handle_nested_iframes(iframe_soup, url, file, page, added_url_set):
+    for a in iframe_soup.find_all('a'):
+        added_url_set = save_unique_embedded_url(file, a, url, added_url_set)
+    
+    added_url_set = get_links_in_iframe(iframe_soup, file, url, page, added_url_set)
     return added_url_set
 
 def get_links_in_iframe(soup, file, url, page, added_url_set):
@@ -55,12 +75,13 @@ def get_links_in_iframe(soup, file, url, page, added_url_set):
         iframe_src = iframe.get('src')  # Load the iframe URL in the WebDriver
         if not iframe_src:
             continue
-
+        
+        added_url_set = save_iframe_src(file, iframe_src, added_url_set)
         page.goto(iframe_src)
         iframe_soup = BeautifulSoup(page.content(), 'lxml')
-
-        for a in iframe_soup.find_all('a'):
-            added_url_set = save_unique_embedded_url(file, a, url, added_url_set)
+        added_url_set = handle_nested_iframes(iframe_soup, url, file, added_url_set)
+    return added_url_set
+        
 
 def get_embedded_links(base_folder_name, soup, page, url):   
     file_date = datetime.date.today().strftime("%Y%m%d")
