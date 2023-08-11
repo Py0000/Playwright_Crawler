@@ -23,23 +23,24 @@ def mobile_user_hand_gesture(page):
 
 
 def add_time_for_page_to_load(page):
+    """
     try:
         # Wait for the page to load completely (wait for the load event)
         page.wait_for_load_state('load')
     except:
         pass
-
+    """
     try:
         # Wait for the body tag to be loaded
         page.wait_for_selector('body')
     except:
         pass
-
+    """
     try:
         page.waitForLoadState('networkidle')
     except:
         pass
-    
+    """
 
 def wait_for_page_to_load(page, action_flag):
     if action_flag:
@@ -163,7 +164,7 @@ def get_dataset(page, base_folder_name, url_list, referrer, action_flag):
                 
                 # Scrape embedded link
                 referrer = url if referrer is not None else referrer
-                index, error_list = crawl_depth_one_embedded_links(page, embedded_path, index, error_list, base_folder_name, referrer, action_flag)
+                # index, error_list = crawl_depth_one_embedded_links(page, embedded_path, index, error_list, base_folder_name, referrer, action_flag)
             
         except Exception as e:
             crawler.save_html_script(base_folder_name, f"Error occurred for url: {url}\n{e}", formatted_index_str)
