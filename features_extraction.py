@@ -94,7 +94,6 @@ def create_vector(soup, url):
         fe.num_of_h6(soup),
         fe.num_of_metas(soup),
         fe.num_of_meta_with_refresh_attrs(soup),
-        fe.meta_refresh_analysis(soup),
         fe.num_of_p(soup),
         fe.num_of_bases(soup),
         fe.has_exceptional_bases(soup),
@@ -214,7 +213,6 @@ def create_dataframe(file_name, base_folder_name, crawled_data_dir, urls):
         "Num of h5",
         "Num of h6",
         "Num of metas",
-        "Num of meta with refreseh attrs",
         "Meta Refresh analysis",
         "Num of <p> tags",
         "Num of bases",
@@ -285,6 +283,7 @@ def create_json(file_name, base_folder_name, crawled_data_dir, urls):
         result["Embed Src"] = fe.embed_src_analysis(soup)
         result["Object Type"] = fe.object_type_analysis(soup)
         result["Object Data"] = fe.object_data_analysis(soup)
+        result["Meta Refresh Attributes"] = fe.meta_refresh_analysis(soup)
         result["Unique Tags"] = fe.get_unique_tags(crawled_data_dir, util.format_index_base_file_name(index))
         
         save_loc = f"{base_folder_name}/{util.OUTPUT_PATH_JSON_FEATURES}{str(index)}_features_analysis_{file_name}.json"

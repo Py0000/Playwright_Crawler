@@ -120,16 +120,16 @@ def crawl_with_mobile_bot_referrer_action(seed_url_list):
 
 
 def start_program(seed_url_list):
-    crawl_with_desktop_user_referrer_action(seed_url_list)
-    #crawl_with_desktop_user_no_referrer_action(seed_url_list)
-    #crawl_with_desktop_user_referrer_no_action(seed_url_list)
-    crawl_with_desktop_bot_referrer_action(seed_url_list)
-    #crawl_with_mobile_user_referrer_no_action(seed_url_list)
+    #crawl_with_desktop_user_referrer_action(seed_url_list)
+    ##crawl_with_desktop_user_no_referrer_action(seed_url_list)
+    ##crawl_with_desktop_user_referrer_no_action(seed_url_list)
+    #crawl_with_desktop_bot_referrer_action(seed_url_list)
+    ##crawl_with_mobile_user_referrer_no_action(seed_url_list)
     crawl_with_mobile_user_referrer_action(seed_url_list)
     crawl_with_mobile_bot_referrer_action(seed_url_list)
 
 
-start_program(["https://www.irs.gov/"])
+start_program(["https://www.chase.com/"])
 
 
 
