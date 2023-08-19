@@ -14,16 +14,22 @@ CONFIG_MOBILE_BOT = "mobile_bot"
 
 CRAWLED_DATA_IDENTIFIER = "crawled_dataset"
 CRAWLED_HTML_SCRIPT_FOLDER = "crawled_html_scripts"
+CRAWLED_HTML_SCRIPT_BEFORE_FOLDER = "crawled_html_scripts_before_csr"
 CRAWLED_EMBEDDED_LINK_FOLDER = "crawled_embedded_links"
 CRAWLED_PAGE_SCREENSHOT_FOLDER = "crawled_screenshots"
 CRAWLED_URL_FOLDER = "crawled_urls"
+CRAWLED_URL_BEFORE_FOLDER = "crawled_urls_before_csr"
 CRAWLED_HTML_TAG_FOLDER = "crawled_html_tags"
+CRAWLED_HTML_TAG_BEFORE_FOLDER = "crawled_html_tags_before_csr"
 CRAWLED_REDIRECTION_FOLDER = "crawled_redirected_url"
 CRAWLED_URL_FILE_NAME = "urls.txt"
 
-OUTPUT_PATH_EXCEL_FEATURES = "Features/Excelsheet/"
-OUTPUT_PATH_JSON_FEATURES = "Features/Json/"
-OUTPUT_PATH_ANALYSIS_FEATURES = "Features/Analysis/"
+OUTPUT_PATH_EXCEL_FEATURES_BEFORE = "Features_Before_CSR/Excelsheet/"
+OUTPUT_PATH_JSON_FEATURES_BEFORE = "Features_Before_CSR/Json/"
+OUTPUT_PATH_EXCEL_FEATURES_AFTER = "Features_After_CSR/Excelsheet/"
+OUTPUT_PATH_JSON_FEATURES_AFTER = "Features_After_CSR/Json/"
+OUTPUT_PATH_ANALYSIS_FEATURES_BEFORE = "Features_Before_CSR/Analysis/"
+OUTPUT_PATH_ANALYSIS_FEATURES_AFTER = "Features_After_CSR/Analysis/"
 OUTPUT_PATH_EXCEL_CERTS = "Certificates/Excelsheet/"
 OUTPUT_PATH_JSON_CERTS = "Certificates/Json/"
 OUTPUT_PATH_ANALYSIS_CERTS = "Certificates/Analysis/"
@@ -98,7 +104,7 @@ def get_file_name_without_ext(file):
 
 
 def generate_extractor_analysis_folder(base_folder_name):
-    sub_folder_lists = ['Certificates', 'DNS', 'Features']
+    sub_folder_lists = ['Certificates', 'DNS', 'Features_Before_CSR', 'Features_After_CSR']
     sub_sub_folder_lists = ['Analysis', 'Excelsheet', 'Json']
 
     if not os.path.exists(base_folder_name):

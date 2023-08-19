@@ -135,8 +135,8 @@ def create_2d_list(folder_name, urls):
 
 
 # Step 5: Create a dataframe by using the 2D array generated in step 4.
-def create_dataframe(file_name, base_folder_name, crawled_data_dir, urls):
-    folder = os.path.join(crawled_data_dir, util.CRAWLED_HTML_SCRIPT_FOLDER)
+def create_dataframe(file_name, base_folder_name, crawled_data_dir, specific_folder_name, urls):
+    folder = os.path.join(crawled_data_dir, specific_folder_name)
     data = create_2d_list(folder, urls)
 
     columns = [
@@ -240,15 +240,29 @@ def create_dataframe(file_name, base_folder_name, crawled_data_dir, urls):
     df = pd.DataFrame(data=data, columns=columns)
     df.drop_duplicates(subset=["Link"], keep="first", inplace=True)
 
-    save_loc = f"{base_folder_name}//{util.OUTPUT_PATH_EXCEL_FEATURES}{file_name}_features.xlsx"
+    output_folder = ""
+    if specific_folder_name == util.CRAWLED_HTML_SCRIPT_FOLDER:
+        output_folder = util.OUTPUT_PATH_EXCEL_FEATURES_AFTER
+    elif specific_folder_name == util.CRAWLED_HTML_SCRIPT_BEFORE_FOLDER:
+        output_folder = util.OUTPUT_PATH_EXCEL_FEATURES_BEFORE
+    else:
+        pass
+
+    save_loc = f"{base_folder_name}//{output_folder}{file_name}_features.xlsx"
     df.to_excel(save_loc, index=False)
 
     print("Features dataframe generated...\n")
 
 
-def create_json(file_name, base_folder_name, crawled_data_dir, urls):
-    folder = util.CRAWLED_HTML_SCRIPT_FOLDER
-    directory = os.path.join(os.getcwd(), crawled_data_dir, folder)
+def create_json(file_name, base_folder_name, crawled_data_dir, specific_folder_name, urls):
+    directory = os.path.join(os.getcwd(), crawled_data_dir, specific_folder_name)
+    unique_tag_folder = ""
+    if specific_folder_name == util.CRAWLED_HTML_SCRIPT_BEFORE_FOLDER:
+        unique_tag_folder = util.CRAWLED_HTML_TAG_BEFORE_FOLDER
+    elif specific_folder_name == util.CRAWLED_HTML_SCRIPT_FOLDER:
+        unique_tag_folder = util.CRAWLED_HTML_TAG_FOLDER
+    else:
+        pass
 
     duplicate_checker = set()
 
@@ -284,9 +298,17 @@ def create_json(file_name, base_folder_name, crawled_data_dir, urls):
         result["Object Type"] = fe.object_type_analysis(soup)
         result["Object Data"] = fe.object_data_analysis(soup)
         result["Meta Refresh Attributes"] = fe.meta_refresh_analysis(soup)
-        result["Unique Tags"] = fe.get_unique_tags(crawled_data_dir, util.format_index_base_file_name(index))
+        result["Unique Tags"] = fe.get_unique_tags(crawled_data_dir, unique_tag_folder, util.format_index_base_file_name(index))
         
-        save_loc = f"{base_folder_name}/{util.OUTPUT_PATH_JSON_FEATURES}{str(index)}_features_analysis_{file_name}.json"
+        output_folder = ""
+        if specific_folder_name == util.CRAWLED_HTML_SCRIPT_FOLDER:
+            output_folder = util.OUTPUT_PATH_JSON_FEATURES_AFTER
+        elif specific_folder_name == util.CRAWLED_HTML_SCRIPT_BEFORE_FOLDER:
+            output_folder = util.OUTPUT_PATH_JSON_FEATURES_BEFORE
+        else:
+            pass
+
+        save_loc = f"{base_folder_name}/{output_folder}{str(index)}_features_analysis_{file_name}.json"
         with open(save_loc, 'w') as file:
             json.dump(result, file, indent=4)
 
@@ -301,8 +323,13 @@ def create_json(file_name, base_folder_name, crawled_data_dir, urls):
 def extract_features(file_name, base_folder_name, crawled_data_dir, urls):
     print("\nExtracting HTML features...")
 
-    create_dataframe(file_name, base_folder_name, crawled_data_dir, urls)
-    create_json(file_name, base_folder_name, crawled_data_dir, urls)
+    # Extract for after client_side_rendering
+    create_dataframe(file_name, base_folder_name, crawled_data_dir, util.CRAWLED_HTML_SCRIPT_FOLDER, urls)
+    create_json(file_name, base_folder_name, crawled_data_dir, util.CRAWLED_HTML_SCRIPT_FOLDER, urls)
+
+    # Extract for before client_side_rendering
+    create_dataframe(file_name, base_folder_name, crawled_data_dir, util.CRAWLED_HTML_SCRIPT_BEFORE_FOLDER, urls)
+    create_json(file_name, base_folder_name, crawled_data_dir, util.CRAWLED_HTML_SCRIPT_BEFORE_FOLDER, urls)
 
     print("\nHTML features extracted...")
 

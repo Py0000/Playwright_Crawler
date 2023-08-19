@@ -118,7 +118,11 @@ def save_html_script(base_folder_name, text, name):
     with open(file, "w", encoding="utf-8") as f:
         f.write(text)
     
-
+def save_html_script_before_client_side_rendering(base_folder_name, text, name):
+    file_name = name + ".html"
+    file = os.path.join(os.getcwd(), base_folder_name, util.CRAWLED_HTML_SCRIPT_BEFORE_FOLDER, file_name)
+    with open(file, "w", encoding="utf-8") as f:
+        f.write(text)
 
 def save_crawled_url(base_folder_name, url):
     file_name = util.CRAWLED_URL_FILE_NAME
@@ -127,6 +131,12 @@ def save_crawled_url(base_folder_name, url):
     with open(file, "a") as f:
         f.write(url + '\n')
 
+def save_crawled_url_before_client_client_rendering(base_folder_name, url):
+    file_name = util.CRAWLED_URL_FILE_NAME
+    file = os.path.join(os.getcwd(), base_folder_name, util.CRAWLED_URL_BEFORE_FOLDER, file_name)
+    
+    with open(file, "a") as f:
+        f.write(url + '\n')
 
 
 def get_screenshot_file_path(base_folder, file_name):
@@ -141,6 +151,21 @@ def get_screenshot_file_path(base_folder, file_name):
 def get_all_html_tags(base_folder_name, soup, index):
     file_name = index + ".txt"
     file = os.path.join(os.getcwd(), base_folder_name, util.CRAWLED_HTML_TAG_FOLDER, file_name)
+
+    set = {tag.name for tag in soup.find_all()}
+    initial_diff = set.difference(util.CURRENT_COVERED_TAG_SET)
+    diff = initial_diff.difference(util.CURRENT_KNOWN_EXCLUEDED_TAG_SET)
+
+    if len(diff) == 0:
+        diff = ""
+
+    with open(file, "a") as f:
+        f.write(str(diff))
+
+
+def get_all_html_tags_before_client_side_rendering(base_folder_name, soup, index):
+    file_name = index + ".txt"
+    file = os.path.join(os.getcwd(), base_folder_name, util.CRAWLED_HTML_TAG_BEFORE_FOLDER, file_name)
 
     set = {tag.name for tag in soup.find_all()}
     initial_diff = set.difference(util.CURRENT_COVERED_TAG_SET)

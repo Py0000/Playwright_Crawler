@@ -9,6 +9,15 @@ import user_actions as action
 import utility as util
 
 
+# Enable route interception to prevent certain requests
+# If the request's resource type is a script or an XHR request, it's aborted (preventing JavaScript execution). 
+# Otherwise, it continues loading other resources.
+def intercept_requests(route, request):
+    if request.resource_type in ('script', 'xhr'):
+        route.abort()
+    else:
+        route.continue_()
+
 
 def desktop_user_mouse_movement(page):
     action.dismiss_js_alert(page)
@@ -23,24 +32,23 @@ def mobile_user_hand_gesture(page):
 
 
 def add_time_for_page_to_load(page):
-    """
     try:
         # Wait for the page to load completely (wait for the load event)
-        page.wait_for_load_state('load')
+        page.wait_for_load_state('domcontentloaded')
     except:
         pass
-    """
+
     try:
         # Wait for the body tag to be loaded
         page.wait_for_selector('body')
     except:
         pass
-    """
+
     try:
         page.waitForLoadState('networkidle')
     except:
         pass
-    """
+
 
 def wait_for_page_to_load(page, action_flag):
     if action_flag:
@@ -65,14 +73,41 @@ def check_and_execute_scroll(action_flag, page):
     else:
         pass
 
+def get_screenshot(page, base_folder_name, formatted_index, before_after_flag):
+    screenshot_path = crawler.get_screenshot_file_path(base_folder_name, f"{formatted_index}_{before_after_flag}")
+    action.save_screenshot(page, screenshot_path)
+    print("Screenshot Captured...")
+
+
+def get_before_client_side_rendering_data(page, base_folder_name, formatted_index):
+    # Get the content before client-side rendering
+    get_screenshot(page, base_folder_name, formatted_index, before_after_flag="before")
+    before_render_content = page.content()
+    before_render_soup = BeautifulSoup(before_render_content, "lxml")
+
+    if before_render_soup is not None:
+        crawler.save_html_script_before_client_side_rendering(base_folder_name, before_render_soup.prettify(), formatted_index)
+    
+    else:
+        crawler.save_html_script_before_client_side_rendering(base_folder_name, f"No content shown for {page.url}", formatted_index)
+
+    crawler.save_crawled_url_before_client_client_rendering(base_folder_name, page.url)
+    crawler.get_all_html_tags_before_client_side_rendering(base_folder_name, before_render_soup, formatted_index)
+
+    return page
+
+
 def get_html_content(page, base_folder_name, formatted_index, actual_url, action_flag, embedded_flag):
     
     check_and_execute_user_actions(base_folder_name, action_flag, page)
 
-    screenshot_path = crawler.get_screenshot_file_path(base_folder_name, formatted_index)
-    action.save_screenshot(page, screenshot_path)
-    print("Screenshot Captured...")
+    page = get_before_client_side_rendering_data(page, base_folder_name, formatted_index)
 
+    # Disable route interception to allow JavaScript execution
+    page.unroute('**/*', intercept_requests)
+    wait_for_page_to_load(page, action_flag)
+
+    get_screenshot(page, base_folder_name, formatted_index, before_after_flag="after")
     check_and_execute_scroll(action_flag, page)
 
     html_content = page.content()
@@ -95,6 +130,7 @@ def get_html_content(page, base_folder_name, formatted_index, actual_url, action
     return soup.prettify(), embedded_file_path
 
 
+
 def scrape_content(page, base_folder_name, referer_url, actual_url, formatted_index, action_flag, embedded_flag):
     isDesktop = util.CONFIG_DESKTOP_BOT in base_folder_name or util.CONFIG_DESKTOP_USER in base_folder_name 
     isMobile = util.CONFIG_MOBILE_BOT in base_folder_name or util.CONFIG_MOBILE_USER in base_folder_name
@@ -109,16 +145,32 @@ def scrape_content(page, base_folder_name, referer_url, actual_url, formatted_in
         # Set the referrer first
         page.goto(referer_url) 
         wait_for_page_to_load(page, action_flag)
+        
+        # Sets up route interception on the page. 
+        # The '**/*' pattern matches all network requests. 
+        # The intercept_requests function will be called whenever a request is made.
+        page.route('**/*', intercept_requests)
 
         # Visit the actual webpage
         page.evaluate('window.location.href = "{}";'.format(actual_url))
 
     elif isMobile and referer_url is not None :
         page.set_extra_http_headers({"Referer": referer_url})
+
+        # Sets up route interception on the page. 
+        # The '**/*' pattern matches all network requests. 
+        # The intercept_requests function will be called whenever a request is made.
+        page.route('**/*', intercept_requests)
+
         page.goto(actual_url)
 
     # Not referrer set
     else:
+        # Sets up route interception on the page. 
+        # The '**/*' pattern matches all network requests. 
+        # The intercept_requests function will be called whenever a request is made.
+        page.route('**/*', intercept_requests)
+
         page.goto(actual_url)
         
     wait_for_page_to_load(page, action_flag)
@@ -244,10 +296,13 @@ def crawl(url_list, config, action_flag, referrer=None):
     base_folder_name = f"{util.CRAWLED_DATA_IDENTIFIER}_{config}"
     sub_folder_list = [
         util.CRAWLED_HTML_SCRIPT_FOLDER,
+        util.CRAWLED_HTML_SCRIPT_BEFORE_FOLDER,
         util.CRAWLED_EMBEDDED_LINK_FOLDER,
         util.CRAWLED_PAGE_SCREENSHOT_FOLDER,
         util.CRAWLED_URL_FOLDER,
+        util.CRAWLED_URL_BEFORE_FOLDER,
         util.CRAWLED_HTML_TAG_FOLDER,
+        util.CRAWLED_HTML_TAG_BEFORE_FOLDER,
         util.CRAWLED_REDIRECTION_FOLDER,
     ]
 

@@ -13,10 +13,10 @@ def analyze_column(df, column, consolidated_counts):
 
 
 
-def analyze_features_df(base_folder_name):
+def analyze_features_df(base_folder_name, specific_folder_name):
     print("Analysing Features Data...")
 
-    folder_name = f"{base_folder_name}/{util.OUTPUT_PATH_EXCEL_FEATURES}"
+    folder_name = f"{base_folder_name}/{specific_folder_name}"
     directory = os.path.join(os.getcwd(), folder_name)
 
     for file in sorted(os.listdir(directory)):
@@ -34,7 +34,15 @@ def analyze_features_df(base_folder_name):
 
             analyze_column(df, column, consolidated_counts)
     
-    output_file = f"{base_folder_name}/{util.OUTPUT_PATH_ANALYSIS_FEATURES}{file_name}_analysis.json"
+    output_file = ""
+    if specific_folder_name == util.OUTPUT_PATH_EXCEL_FEATURES_AFTER:
+        output_file = util.OUTPUT_PATH_ANALYSIS_FEATURES_AFTER
+    elif specific_folder_name == util.OUTPUT_PATH_EXCEL_FEATURES_BEFORE:
+        output_file = util.OUTPUT_PATH_ANALYSIS_FEATURES_BEFORE
+    else:
+        pass
+
+    output_file = f"{base_folder_name}/{output_file}{file_name}_analysis.json"
     with open(output_file, 'w') as json_file:
             json.dump(consolidated_counts, json_file, indent=4)
 

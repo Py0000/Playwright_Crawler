@@ -849,11 +849,10 @@ def has_html_tag(soup):
 
 
 ########## DEALS WITH TAGS ##########
-def get_unique_tags(crawled_data_dir, file):
+def get_unique_tags(crawled_data_dir, specific_folder_name, file):
     # Specify the folder and file path
-    folder_path = util.CRAWLED_HTML_TAG_FOLDER
     file_name = file + ".txt"
-    file_path = os.path.join(crawled_data_dir, folder_path, file_name)
+    file_path = os.path.join(crawled_data_dir, specific_folder_name, file_name)
 
     try:
         with open(file_path, 'r') as file:
@@ -865,6 +864,5 @@ def get_unique_tags(crawled_data_dir, file):
         elements = ""
         pass
 
-    
-
     return elements
+
