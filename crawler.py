@@ -256,7 +256,7 @@ def setup_desktop_crawler(playwright_object, config):
 
     custom_user_agent = user_agent_map.get(config)
 
-    browser = playwright_object.chromium.launch(headless=False, slow_mo=50, args=custom_user_agent)
+    browser = playwright_object.chromium.launch(headless=True, slow_mo=50, args=custom_user_agent)
 
     # creates a new page within the browser
     page = browser.new_page()
@@ -265,7 +265,7 @@ def setup_desktop_crawler(playwright_object, config):
 
 
 def setup_mobile_user_crawler(playwright_object):
-    browser = playwright_object.webkit.launch(headless=False, slow_mo=50)
+    browser = playwright_object.webkit.launch(headless=True, slow_mo=50)
     context = browser.new_context(
         **playwright_object.devices['Pixel 5']
     )
@@ -275,7 +275,7 @@ def setup_mobile_user_crawler(playwright_object):
 
 
 def setup_mobile_bot_crawler(playwright_object):
-    browser = playwright_object.webkit.launch(headless=False, slow_mo=50)
+    browser = playwright_object.webkit.launch(headless=True, slow_mo=50)
     pixel_5_bot = playwright_object.devices['Pixel 5'].copy()
     pixel_5_bot['user_agent'] = util.MOBILE_BOT_AGENT
 
@@ -329,7 +329,7 @@ def crawl(url_list, config, action_flag, referrer=None):
     print("\nCrawling done...")
 
 
-crawl(["https://www.google.com/"], util.CONFIG_DESKTOP_USER, action_flag=True, referrer=util.FACEBOOK_REFERRER)
+#crawl(["https://www.google.com/"], util.CONFIG_DESKTOP_USER, action_flag=True, referrer=util.FACEBOOK_REFERRER)
 
 '''
 def list_available_devices():
