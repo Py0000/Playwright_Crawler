@@ -5,6 +5,7 @@ from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
 import crawler_support as crawler
+import crawler_network_request_support as net_spt
 import user_actions as action
 import utility as util
 
@@ -17,7 +18,6 @@ def intercept_requests(route, request):
         route.abort()
     else:
         route.continue_()
-
 
 def desktop_user_mouse_movement(page):
     action.dismiss_js_alert(page)
@@ -107,6 +107,9 @@ def get_html_content(page, base_folder_name, formatted_index, actual_url, action
     page.unroute('**/*', intercept_requests)
     wait_for_page_to_load(page, action_flag)
 
+    # Setup and get network request after CSR
+    net_spt.intercept_network_request(page, base_folder_name, formatted_index, util.NETWORK_AFTER_FOLDER)
+
     get_screenshot(page, base_folder_name, formatted_index, before_after_flag="after")
     check_and_execute_scroll(action_flag, page)
 
@@ -151,6 +154,9 @@ def scrape_content(page, base_folder_name, referer_url, actual_url, formatted_in
         # The intercept_requests function will be called whenever a request is made.
         page.route('**/*', intercept_requests)
 
+        # Setup and get network request before CSR
+        net_spt.intercept_network_request(page, base_folder_name, formatted_index, util.NETWORK_BEFORE_FOLDER)
+
         # Visit the actual webpage
         page.evaluate('window.location.href = "{}";'.format(actual_url))
 
@@ -162,6 +168,9 @@ def scrape_content(page, base_folder_name, referer_url, actual_url, formatted_in
         # The intercept_requests function will be called whenever a request is made.
         page.route('**/*', intercept_requests)
 
+        # Setup and get network request before CSR
+        net_spt.intercept_network_request(page, base_folder_name, formatted_index, util.NETWORK_BEFORE_FOLDER)
+
         page.goto(actual_url)
 
     # Not referrer set
@@ -170,6 +179,9 @@ def scrape_content(page, base_folder_name, referer_url, actual_url, formatted_in
         # The '**/*' pattern matches all network requests. 
         # The intercept_requests function will be called whenever a request is made.
         page.route('**/*', intercept_requests)
+
+        # Setup and get network request before CSR
+        net_spt.intercept_network_request(page, base_folder_name, formatted_index, util.NETWORK_BEFORE_FOLDER)
 
         page.goto(actual_url)
         
@@ -304,6 +316,7 @@ def crawl(url_list, config, action_flag, referrer=None):
         util.CRAWLED_HTML_TAG_FOLDER,
         util.CRAWLED_HTML_TAG_BEFORE_FOLDER,
         util.CRAWLED_REDIRECTION_FOLDER,
+        util.CRAWLED_NETWORK_LOGS_FOLDER,
     ]
 
     crawler.generate_folder_for_crawling(base_folder_name, sub_folder_list)
@@ -316,7 +329,7 @@ def crawl(url_list, config, action_flag, referrer=None):
     print("\nCrawling done...")
 
 
-#crawl(["https://www.google.com/"], util.CONFIG_DESKTOP_USER, action_flag=True, referrer=util.FACEBOOK_REFERRER)
+crawl(["https://www.google.com/"], util.CONFIG_DESKTOP_USER, action_flag=True, referrer=util.FACEBOOK_REFERRER)
 
 '''
 def list_available_devices():
