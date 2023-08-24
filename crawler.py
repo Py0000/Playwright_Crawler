@@ -62,6 +62,20 @@ def get_screenshot(page, base_folder_name, formatted_index, before_after_flag):
 
 
 
+def get_client_side_script(page, base_folder_name, formatted_index):
+    client_side_scripts = page.evaluate(interception.client_side_scripts_injection_code)
+
+    # Format client-side scripts for better readability
+    # Create a dictionary to store the client-side script data
+    script_data = {}
+    for index, script in enumerate(client_side_scripts):
+        script_data[f'script_{index + 1}'] = script
+    
+    # Save data to a JSON file
+    crawler_support.save_client_side_script(base_folder_name, script_data, formatted_index)
+
+
+
 def get_before_client_side_rendering_data(page, base_folder_name, formatted_index):
     # Get the content before client-side rendering
     get_screenshot(page, base_folder_name, formatted_index, before_after_flag="before")
@@ -85,7 +99,8 @@ def get_html_content(page, base_folder_name, formatted_index, actual_url, action
     check_and_execute_user_actions(base_folder_name, action_flag, page)
     
     page = get_before_client_side_rendering_data(page, base_folder_name, formatted_index)
-    
+    get_client_side_script(page, base_folder_name, formatted_index)
+
     # Disable route interception to allow JavaScript execution
     page.unroute('**/*', interception.intercept_script_xhr_requests)
     wait_for_page_to_load(page, action_flag)
@@ -245,4 +260,4 @@ def crawl(url_list, config, action_flag, referrer=None):
     print("\nCrawling done...")
 
 
-# crawl(["https://www.google.com/", "https://www.youtube.com"], definitions.CONFIG_DESKTOP_USER, action_flag=True, referrer=definitions.GOOGLE_SEARCH_QUERY_REFERRER)
+crawl(["https://www.google.com/", "https://www.youtube.com"], definitions.CONFIG_DESKTOP_USER, action_flag=True, referrer=definitions.GOOGLE_SEARCH_QUERY_REFERRER)

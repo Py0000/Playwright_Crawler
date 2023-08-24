@@ -1,4 +1,5 @@
 import datetime 
+import json
 import os
 
 from bs4 import BeautifulSoup
@@ -176,3 +177,13 @@ def get_level_one_embedded_link(file_path):
             url_list.append(url)
            
     return url_list
+
+
+def save_client_side_script(base_folder_name, data, index):
+    file_name = index + ".txt"
+    file = os.path.join(os.getcwd(), base_folder_name, definitions.CRAWLED_CLIENT_SIDE_SCRIPT_FOLDER, file_name)
+
+    # Save data to a JSON file
+    with open(file, 'w') as json_file:
+        json.dump(data, json_file, indent=4)
+

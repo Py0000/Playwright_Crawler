@@ -169,3 +169,19 @@ def intercept_network_request(page, base_folder_name, index, before_after_flag):
     
     with open(console_save_loc, 'w') as json_file:
         json.dump(console_msg_details, json_file, indent=4)
+
+
+
+# Get client-side scripts
+client_side_scripts_injection_code = '''() => {
+    const scripts = [];
+    const scriptElements = document.querySelectorAll('script');
+    scriptElements.forEach(script => {
+        if (script.src) {
+            scripts.push(script.src);
+        } else {
+            scripts.push(script.innerText);
+        }
+    });
+    return scripts;
+}'''
