@@ -35,6 +35,24 @@ NETWORK_LOGS_REQUEST_FILE = "request.json"
 NETWORK_LOGS_RESPONSE_FILE = "response.json"
 NETWORK_LOGS_DOM_FUNCTION_FILE = "dom_func.json"
 
+CRAWLED_URL_FILE_NAME = "urls.txt"
+CRAWLED_REDIRECTION_FILE_NAME = "redirection.txt"
+
+##### Related to extraction/analysis folders #####
+OUTPUT_PATH_EXCEL_FEATURES_BEFORE = "Features_Before/Excelsheet/"
+OUTPUT_PATH_JSON_FEATURES_BEFORE = "Features_Before/Json/"
+OUTPUT_PATH_EXCEL_FEATURES_AFTER = "Features_After/Excelsheet/"
+OUTPUT_PATH_JSON_FEATURES_AFTER = "Features_After/Json/"
+OUTPUT_PATH_ANALYSIS_FEATURES_BEFORE = "Features_BeforeAnalysis/"
+OUTPUT_PATH_ANALYSIS_FEATURES_AFTER = "Features_After/Analysis/"
+
+OUTPUT_PATH_EXCEL_CERTS = "Certificates/Excelsheet/"
+OUTPUT_PATH_JSON_CERTS = "Certificates/Json/"
+OUTPUT_PATH_ANALYSIS_CERTS = "Certificates/Analysis/"
+
+OUTPUT_PATH_DNS = "DNS/"
+
+
 ##### Related to HTML Tags #####
 CURRENT_COVERED_TAG_SET = {'title', 
                            'form', 'input', 'textarea', 'button', 'select', 'output',

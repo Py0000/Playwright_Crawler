@@ -1,17 +1,13 @@
 import dns.resolver
 import json
+import utility as util
 import pandas as pd
 import os
-
-import definitions
-import util
-
 
 NO_RECORDS_FLAG = "No records found"
 TIMEOUT = "DNS resolution timed out"
 DNS_EXCEPTION = "DNS Exception occurred"
 ERROR_RESULTS = [[NO_RECORDS_FLAG], [TIMEOUT], [DNS_EXCEPTION]]
-
 
 def get_A_records(domain, resolver):
     record_type = 'A'
@@ -241,7 +237,6 @@ def get_TXT_records(domain, resolver):
     return txt_records
 
 
-
 def get_dns_records(domain):
     # Create a DNS resolver object
     resolver = dns.resolver.Resolver()
@@ -268,7 +263,6 @@ def get_dns_records(domain):
     }
 
     return dns_records
-
 
 
 def generate_dns_into_excel(summary_output_path, file_date, domain, records):
@@ -308,13 +302,12 @@ def generate_dns_into_excel(summary_output_path, file_date, domain, records):
     df.to_excel(save_loc, index=False)
 
 
-def generate_dns_records(file_name, base_folder_name, config_dir):    
+def generate_dns_records(file_name, base_folder_name, urls):    
     print("\nExtracting DNS Data...")
-    summary_output_path = os.path.join(base_folder_name, definitions.OUTPUT_PATH_DNS)
+    summary_output_path = f"{base_folder_name}/{util.OUTPUT_PATH_DNS}"
 
-    urls = util.read_urls_from_file(config_dir, definitions.SUBFOLDER_AFTER)
     for url in urls:
-        if url == definitions.ERROR_URL_FLAG:
+        if url == util.ERROR_URL_FLAG:
             continue
         
         domain = util.extract_hostname(url)
@@ -325,7 +318,7 @@ def generate_dns_records(file_name, base_folder_name, config_dir):
 
         generate_dns_into_excel(summary_output_path, file_name, domain, records)
 
-        save_loc = f"{base_folder_name}/{definitions.OUTPUT_PATH_DNS}{domain}_dns_records_{file_name}.json"
+        save_loc = f"{base_folder_name}/{util.OUTPUT_PATH_DNS}{domain}_dns_records_{file_name}.json"
 
         with open(save_loc, 'w') as file:
             json.dump(records, file, indent=4)

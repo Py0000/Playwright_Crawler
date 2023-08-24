@@ -1,9 +1,9 @@
 import datetime
 
-import certificate_extraction as ce
-import dns_extraction as de
-import features_extraction as fe
-import utility as util
+import certificate_extraction 
+import dns_extraction 
+import features_extraction 
+import definitions
  
 
 def extract_webpage(base_folder_name, config):
@@ -11,12 +11,10 @@ def extract_webpage(base_folder_name, config):
     file_time = datetime.datetime.now().time().strftime("%H%M%S")
     file_name = f"{file_date}_{file_time}"
     
-    crawled_data_dir = f"{util.CRAWLED_DATA_IDENTIFIER}_{config}"
-    crawled_urls = util.read_urls_from_file(crawled_data_dir)
+    config_dir = f"{definitions.MAIN_CRAWLING_FOLDER}_{config}"
 
     print("\nExtracting Data ...")
-    fe.extract_features(file_name, base_folder_name, crawled_data_dir, crawled_urls)
-    ce.extract_certificates(file_name, base_folder_name, crawled_urls)
-    de.generate_dns_records(file_name, base_folder_name, crawled_urls)
+    features_extraction.extract_features(file_name, base_folder_name, config_dir)
+    certificate_extraction.extract_certificates(file_name, base_folder_name, config_dir)
+    dns_extraction.generate_dns_records(file_name, base_folder_name, config_dir)
     print("\nData Extracted ... \n")
-

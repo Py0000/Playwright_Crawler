@@ -1,4 +1,5 @@
 import os
+import utility as util
 
 ######### DEALS WITH TITLE #########
 def has_title(soup):
@@ -848,10 +849,14 @@ def has_html_tag(soup):
 
 
 ########## DEALS WITH TAGS ##########
-def get_unique_tags(folder_path, file):
+def get_unique_tags(crawled_data_dir, specific_folder_name, file):
     # Specify the folder and file path
     file_name = file + ".txt"
-    file_path = os.path.join(folder_path, file_name)
+    file_path = os.path.join(crawled_data_dir, specific_folder_name, file_name)
+    print("dir1: ", crawled_data_dir)
+    print("dir2: ", specific_folder_name)
+    print("dir3: ", file_name)
+    print("file_path", file_path)
 
     try:
         with open(file_path, 'r') as file:

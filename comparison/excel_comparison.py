@@ -66,9 +66,9 @@ def compare_and_save_json(file1_path, file2_path, output_json_path):
         json.dump(combined_column_differences, json_file, indent=4)
     
 
-file1_path = 'comparison\\amazon_desktop_bot_features.xlsx'
-file2_path = 'comparison\\amazon_desktop_user_features.xlsx'
+file1_path = 'comparison\\phishing_desktop_bot_no_ref_user.xlsx'
+file2_path = 'comparison\\phishing_desktop_bot_no_ref_user_before.xlsx'
 
-output_path = "comparison\\amazon_desktop_differences_features"
-compare_excel_sheets(file1_path, file2_path, output_path)
+output_path = "comparison\\phishing_desktop_bot_no_ref_user_before_features"
+#compare_excel_sheets(file1_path, file2_path, output_path)
 compare_and_save_json(file1_path, file2_path, output_path)

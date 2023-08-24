@@ -6,12 +6,12 @@ import definitions
 def format_index_base_file_name(index):
     return f"{index:08}"
 
-"""
-def read_urls_from_file(base_folder):
+
+def read_urls_from_file(base_folder, before_after_folder):
     # Specify the folder and file path
     folder_path = definitions.CRAWLED_URL_FOLDER
     file_name = definitions.CRAWLED_URL_FILE_NAME
-    file_path = os.path.join(base_folder, folder_path, file_name)
+    file_path = os.path.join(base_folder, folder_path, before_after_folder, file_name)
 
     urls = []
     with open(file_path, 'r') as file:
@@ -19,7 +19,7 @@ def read_urls_from_file(base_folder):
             url = line.strip()
             urls.append(url)
     return urls
-"""
+
 
 def get_file_name_without_ext(file):
     file_name = os.path.basename(file)
@@ -57,7 +57,7 @@ def generate_folder_for_crawling(base_folder_name, sub_folder_lists):
 
 
 def generate_extractor_analysis_folder(base_folder_name):
-    sub_folder_lists = ['Certificates', 'DNS', 'Features_Before_CSR', 'Features_After_CSR']
+    sub_folder_lists = ['Certificates', 'DNS', 'Features_Before', 'Features_After']
     sub_sub_folder_lists = ['Analysis', 'Excelsheet', 'Json']
 
     if not os.path.exists(base_folder_name):

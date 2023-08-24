@@ -1,9 +1,7 @@
 import os
 import pandas as pd
 
-import definitions
-import util
-
+import utility as util
 
 def get_true_false_count_DNS(df):
     true_counts = []
@@ -23,11 +21,11 @@ def get_true_false_count_DNS(df):
     return true_counts, false_counts
 
 
-
 def analyze_DNS_df(base_folder_name):
     print("Analysing DNS Data...")
 
-    directory = os.path.join(os.getcwd(), base_folder_name, definitions.OUTPUT_PATH_DNS)
+    folder_name = f"{base_folder_name}/{util.OUTPUT_PATH_DNS}"
+    directory = os.path.join(os.getcwd(), folder_name)
 
     for file in sorted(os.listdir(directory)):
         # Only process excel files
@@ -39,3 +37,5 @@ def analyze_DNS_df(base_folder_name):
             df.to_excel(os.path.join(directory, file), index=False)
     
     print("Done analysing DNS Data...")
+
+

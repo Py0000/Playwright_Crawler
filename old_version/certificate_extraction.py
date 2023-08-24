@@ -8,8 +8,8 @@ from cryptography import x509
 from cryptography.hazmat.backends import default_backend
 import OpenSSL.crypto as crypto
 
-import definitions
-import util
+import utility as util
+
 
 def parse_date(date):
     # Convert the original date string to a datetime object
@@ -39,7 +39,6 @@ def get_certificate_signature_algorithm(cert):
     return signature_algorithm
 
 
-
 def get_certificate_type(binary_cert):
     # Decode the certificate data and extract the certificate type
     certificate = crypto.load_certificate(crypto.FILETYPE_ASN1, binary_cert)
@@ -59,7 +58,6 @@ def get_certificate_type(binary_cert):
             return "Domain Validation (DV)"
 
 
-
 def generate_json(website_url, hostname, alt_subject, json_output_path, file_name):
     json_result = [{"URL: ": website_url, "Hostname: ": hostname}]
     alt_subject_list = [{"type": item[0], "value": item[1]} for item in alt_subject]
@@ -69,7 +67,6 @@ def generate_json(website_url, hostname, alt_subject, json_output_path, file_nam
 
     with open(output_file_path, 'w') as json_file:
         json.dump(json_result, json_file, indent=4)
-
 
 
 def extract_certificate_info(website_url, file_name, json_output_path):
@@ -179,17 +176,17 @@ def extract_certificate_info(website_url, file_name, json_output_path):
     return df
 
 
-def extract_certificates(file_name, base_folder_name, config_dir):
+
+def extract_certificates(file_name, base_folder_name, urls):
     print("\nExtracting Certificate Data...")
     # Create an empty DataFrame to store the certificate information
     df_all = pd.DataFrame()
 
-    json_output_path = f'{base_folder_name}/{definitions.OUTPUT_PATH_JSON_CERTS}'
+    json_output_path = f'{base_folder_name}/{util.OUTPUT_PATH_JSON_CERTS}'
 
     # Iterate over the URLs and extract the certificate information
-    urls = util.read_urls_from_file(config_dir, definitions.SUBFOLDER_AFTER)
     for url in urls:
-        if url == definitions.ERROR_URL_FLAG:
+        if url == util.ERROR_URL_FLAG:
             continue
 
         df = extract_certificate_info(url, file_name, json_output_path)
@@ -197,7 +194,7 @@ def extract_certificates(file_name, base_folder_name, config_dir):
         print("<" + url + ">" + " done!")
 
     # Save the DataFrame to a file (e.g., CSV)
-    output_file = f"{base_folder_name}/{definitions.OUTPUT_PATH_EXCEL_CERTS}{file_name}_certs.xlsx"
+    output_file = f"{base_folder_name}/{util.OUTPUT_PATH_EXCEL_CERTS}{file_name}_certs.xlsx"
     df_all.to_excel(output_file, index=False)
 
     print("Certificate data extracted...")

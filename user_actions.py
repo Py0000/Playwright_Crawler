@@ -1,13 +1,11 @@
 import time
 import random
 
-
-def save_screenshot(page, save_file_loc):
+def save_screenshot(page, save_file_loc, full_flag):
     try: 
-        page.screenshot(path=save_file_loc)
+        page.screenshot(path=save_file_loc, full_page=full_flag)
     except:
         print("UNABLE TO SAVE SCREENSHOT...")
-
 
 
 def mouse_click(page, direction):
@@ -112,3 +110,15 @@ def touchscreen(page):
     
     except Exception as e:
         print(f"Error tapping on screen: {e}")
+
+
+def desktop_user_mouse_movement(page):
+    dismiss_js_alert(page)
+    move_mouse_smoothly_top_left_bottom_right(page)
+    mouse_click(page, 'left')
+    mouse_click(page, "right")
+
+
+def mobile_user_hand_gesture(page):
+    dismiss_js_alert(page)
+    touchscreen(page)

@@ -2,8 +2,7 @@ import json
 import os
 import pandas as pd
 
-import definitions
-import util
+import utility as util
 
 
 def analyze_cert_duration_column(df, column, counts_dict):
@@ -14,7 +13,6 @@ def analyze_cert_duration_column(df, column, counts_dict):
     counts_dict["Range"] = range
 
     return counts_dict
-
 
 
 def analyze_other_columns(column, counts, counts_dict, consolidated_counts):
@@ -36,14 +34,14 @@ def analyze_other_columns(column, counts, counts_dict, consolidated_counts):
     consolidated_counts[column] = counts_dict
 
     return consolidated_counts
-
-
+    
 
 
 def analyze_certificate_df(base_folder_name):
     print("Analysing Certificate Data...")
 
-    directory = os.path.join(os.getcwd(), base_folder_name, definitions.OUTPUT_PATH_EXCEL_CERTS)
+    folder_name = f"{base_folder_name}/{util.OUTPUT_PATH_EXCEL_CERTS}"
+    directory = os.path.join(os.getcwd(), folder_name)
 
     for file in sorted(os.listdir(directory)):
         file_name = util.get_file_name_without_ext(file)
@@ -74,8 +72,11 @@ def analyze_certificate_df(base_folder_name):
                     analyze_other_columns(column, counts, counts_dict, consolidated_counts)
     
 
-    output_file = f"{base_folder_name}/{definitions.OUTPUT_PATH_ANALYSIS_CERTS}{file_name}_analysis.json"
+    output_file = f"{base_folder_name}/{util.OUTPUT_PATH_ANALYSIS_CERTS}{file_name}_analysis.json"
     with open(output_file, 'w') as json_file:
             json.dump(consolidated_counts, json_file, indent=4)    
-    
+
+
     print("Done analysing Certificate Data...")
+
+

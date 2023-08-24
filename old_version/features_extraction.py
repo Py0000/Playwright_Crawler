@@ -4,8 +4,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 
 import features as fe
-import definitions
-import util
+import utility as util
 
 # Step 1: Define a function that opens a html file and returns the content
 def open_file(file_name):
@@ -136,9 +135,9 @@ def create_2d_list(folder_name, urls):
 
 
 # Step 5: Create a dataframe by using the 2D array generated in step 4.
-def create_dataframe(file_name, base_folder_name, config_dir, specific_folder, before_after_folder, urls):
-    folder_path = os.path.join(config_dir, specific_folder, before_after_folder)
-    data = create_2d_list(folder_path, urls)
+def create_dataframe(file_name, base_folder_name, crawled_data_dir, specific_folder_name, urls):
+    folder = os.path.join(crawled_data_dir, specific_folder_name)
+    data = create_2d_list(folder, urls)
 
     columns = [
         "Webpage Title",
@@ -241,28 +240,38 @@ def create_dataframe(file_name, base_folder_name, config_dir, specific_folder, b
     df = pd.DataFrame(data=data, columns=columns)
     df.drop_duplicates(subset=["Link"], keep="first", inplace=True)
 
-    if before_after_folder == definitions.SUBFOLDER_BEFORE:
-        output_folder = definitions.OUTPUT_PATH_EXCEL_FEATURES_BEFORE
+    output_folder = ""
+    if specific_folder_name == util.CRAWLED_HTML_SCRIPT_FOLDER:
+        output_folder = util.OUTPUT_PATH_EXCEL_FEATURES_AFTER
+    elif specific_folder_name == util.CRAWLED_HTML_SCRIPT_BEFORE_FOLDER:
+        output_folder = util.OUTPUT_PATH_EXCEL_FEATURES_BEFORE
     else:
-        output_folder = definitions.OUTPUT_PATH_EXCEL_FEATURES_AFTER
-    
+        pass
+
     save_loc = f"{base_folder_name}//{output_folder}{file_name}_features.xlsx"
     df.to_excel(save_loc, index=False)
 
     print("Features dataframe generated...\n")
 
 
-def create_json(file_name, base_folder_name, config_dir, specific_folder, before_after_folder, urls):
-    directory = os.path.join(os.getcwd(), config_dir, specific_folder, before_after_folder)
-    unique_tag_folder = os.path.join(config_dir, definitions.CRAWLED_HTML_TAG_FOLDER, before_after_folder)
+def create_json(file_name, base_folder_name, crawled_data_dir, specific_folder_name, urls):
+    directory = os.path.join(os.getcwd(), crawled_data_dir, specific_folder_name)
+    unique_tag_folder = ""
+    if specific_folder_name == util.CRAWLED_HTML_SCRIPT_BEFORE_FOLDER:
+        unique_tag_folder = util.CRAWLED_HTML_TAG_BEFORE_FOLDER
+    elif specific_folder_name == util.CRAWLED_HTML_SCRIPT_FOLDER:
+        unique_tag_folder = util.CRAWLED_HTML_TAG_FOLDER
+    else:
+        pass
 
     duplicate_checker = set()
+
     result = {}
 
     index = 0
     for file in sorted(os.listdir(directory)):
         url = urls[index]
-        if url == definitions.ERROR_URL_FLAG:
+        if url == util.ERROR_URL_FLAG:
             print("HTML File " + str(index) + " Error!")
             index += 1
             continue
@@ -289,13 +298,16 @@ def create_json(file_name, base_folder_name, config_dir, specific_folder, before
         result["Object Type"] = fe.object_type_analysis(soup)
         result["Object Data"] = fe.object_data_analysis(soup)
         result["Meta Refresh Attributes"] = fe.meta_refresh_analysis(soup)
-        result["Unique Tags"] = fe.get_unique_tags(unique_tag_folder, util.format_index_base_file_name(index))
-
-        if before_after_folder == definitions.SUBFOLDER_BEFORE:
-            output_folder = definitions.OUTPUT_PATH_JSON_FEATURES_BEFORE
-        else:
-            output_folder = definitions.OUTPUT_PATH_JSON_FEATURES_AFTER
+        result["Unique Tags"] = fe.get_unique_tags(crawled_data_dir, unique_tag_folder, util.format_index_base_file_name(index))
         
+        output_folder = ""
+        if specific_folder_name == util.CRAWLED_HTML_SCRIPT_FOLDER:
+            output_folder = util.OUTPUT_PATH_JSON_FEATURES_AFTER
+        elif specific_folder_name == util.CRAWLED_HTML_SCRIPT_BEFORE_FOLDER:
+            output_folder = util.OUTPUT_PATH_JSON_FEATURES_BEFORE
+        else:
+            pass
+
         save_loc = f"{base_folder_name}/{output_folder}{str(index)}_features_analysis_{file_name}.json"
         with open(save_loc, 'w') as file:
             json.dump(result, file, indent=4)
@@ -307,17 +319,17 @@ def create_json(file_name, base_folder_name, config_dir, specific_folder, before
     print("Features Json File generated... \n")
 
 
-def extract_features(file_name, base_folder_name, config_dir):
+
+def extract_features(file_name, base_folder_name, crawled_data_dir, urls):
     print("\nExtracting HTML features...")
 
     # Extract for after client_side_rendering
-    urls = util.read_urls_from_file(config_dir, definitions.SUBFOLDER_AFTER)
-    create_dataframe(file_name, base_folder_name, config_dir, definitions.CRAWLED_HTML_SCRIPT_FOLDER, definitions.SUBFOLDER_AFTER, urls)
-    create_json(file_name, base_folder_name, config_dir, definitions.CRAWLED_HTML_SCRIPT_FOLDER, definitions.SUBFOLDER_AFTER, urls)
+    create_dataframe(file_name, base_folder_name, crawled_data_dir, util.CRAWLED_HTML_SCRIPT_FOLDER, urls)
+    create_json(file_name, base_folder_name, crawled_data_dir, util.CRAWLED_HTML_SCRIPT_FOLDER, urls)
 
     # Extract for before client_side_rendering
-    urls = util.read_urls_from_file(config_dir, definitions.SUBFOLDER_BEFORE)
-    create_dataframe(file_name, base_folder_name, config_dir, definitions.CRAWLED_HTML_SCRIPT_FOLDER, definitions.SUBFOLDER_BEFORE, urls)
-    create_json(file_name, base_folder_name, config_dir, definitions.CRAWLED_HTML_SCRIPT_FOLDER, definitions.SUBFOLDER_BEFORE, urls)
+    create_dataframe(file_name, base_folder_name, crawled_data_dir, util.CRAWLED_HTML_SCRIPT_BEFORE_FOLDER, urls)
+    create_json(file_name, base_folder_name, crawled_data_dir, util.CRAWLED_HTML_SCRIPT_BEFORE_FOLDER, urls)
 
     print("\nHTML features extracted...")
+
