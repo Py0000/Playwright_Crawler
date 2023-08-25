@@ -71,10 +71,10 @@ def compare_and_save_json(file1_path, file2_path, output_json_path):
 
 
 
-desktop_user_path = "comparison\\data\\desktop\\user"
-desktop_bot_path = "comparison\\data\\desktop\\bot"
-mobile_user_path = "comparison\\data\\mobile\\user"
-mobile_bot_path = "comparison\\data\\mobile\\bot"
+desktop_user_path = "comparison\\excelsheet_data\\desktop\\user"
+desktop_bot_path = "comparison\\excelsheet_data\\desktop\\bot"
+mobile_user_path = "comparison\\excelsheet_data\\mobile\\user"
+mobile_bot_path = "comparison\\excelsheet_data\\mobile\\bot"
 
 ref_user_sub_path = "ref_user"
 no_ref_no_user_sub_path = "no_ref_no_user"

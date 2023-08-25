@@ -53,6 +53,11 @@ def generate_folder_for_crawling(base_folder_name, sub_folder_lists):
                 sub_sub_folder_path = os.path.join(sub_folder_path, sub_sub_folder)
                 if not os.path.exists(sub_sub_folder_path):
                     os.mkdir(sub_sub_folder_path)
+                
+                if sub_folder == definitions.CRAWLED_URL_FOLDER:
+                    file = os.path.join(sub_sub_folder_path, definitions.CRAWLED_URL_FILE_NAME)
+                    with open(file, "a") as f:
+                        pass
 
 
 

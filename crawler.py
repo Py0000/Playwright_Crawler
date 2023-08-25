@@ -260,4 +260,4 @@ def crawl(url_list, config, action_flag, referrer=None):
     print("\nCrawling done...")
 
 
-crawl(["https://www.google.com/", "https://www.youtube.com"], definitions.CONFIG_DESKTOP_USER, action_flag=True, referrer=definitions.GOOGLE_SEARCH_QUERY_REFERRER)
+# crawl(["https://www.google.com/", "https://www.youtube.com"], definitions.CONFIG_DESKTOP_USER, action_flag=True, referrer=definitions.GOOGLE_SEARCH_QUERY_REFERRER)

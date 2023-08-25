@@ -146,7 +146,7 @@ def crawl_with_mobile_user_referrer_action(seed_url_list):
     full_config = f"{definitions.CONFIG_MOBILE_USER}_{definitions.CONFIG_REFERRER_SET}_{definitions.CONFIG_USER_ACTION_ENABLED}"
     extracted_data_base_folder_name = f'data_{full_config}'
 
-    crawler.crawl(seed_url_list, full_config, action_flag=True, referrer=definitions.GOOGLE_REFERRER)
+    crawler.crawl(seed_url_list, full_config, action_flag=True, referrer=definitions.GOOGLE_SEARCH_QUERY_REFERRER)
     util.generate_extractor_analysis_folder(extracted_data_base_folder_name)
     extractor.extract_webpage(extracted_data_base_folder_name, full_config)
     analyzer.analyze_extracted_data(extracted_data_base_folder_name)
@@ -163,7 +163,7 @@ def crawl_with_mobile_user_referrer_no_action(seed_url_list):
     full_config = f"{definitions.CONFIG_MOBILE_USER}_{definitions.CONFIG_REFERRER_SET}_{definitions.CONFIG_USER_ACTION_NOT_ENABLED}"
     extracted_data_base_folder_name = f'data_{full_config}'
 
-    crawler.crawl(seed_url_list, full_config, action_flag=False, referrer=definitions.GOOGLE_REFERRER)
+    crawler.crawl(seed_url_list, full_config, action_flag=False, referrer=definitions.GOOGLE_SEARCH_QUERY_REFERRER)
     util.generate_extractor_analysis_folder(extracted_data_base_folder_name)
     extractor.extract_webpage(extracted_data_base_folder_name, full_config)
     analyzer.analyze_extracted_data(extracted_data_base_folder_name)
@@ -214,7 +214,7 @@ def crawl_with_mobile_bot_referrer_action(seed_url_list):
     full_config = f"{definitions.CONFIG_MOBILE_BOT}_{definitions.CONFIG_REFERRER_SET}_{definitions.CONFIG_USER_ACTION_ENABLED}"
     extracted_data_base_folder_name = f'data_{full_config}'
 
-    crawler.crawl(seed_url_list, full_config, action_flag=True, referrer=definitions.GOOGLE_REFERRER)
+    crawler.crawl(seed_url_list, full_config, action_flag=True, referrer=definitions.GOOGLE_SEARCH_QUERY_REFERRER)
     util.generate_extractor_analysis_folder(extracted_data_base_folder_name)
     extractor.extract_webpage(extracted_data_base_folder_name, full_config)
     analyzer.analyze_extracted_data(extracted_data_base_folder_name)
@@ -231,7 +231,7 @@ def crawl_with_mobile_bot_referrer_no_action(seed_url_list):
     full_config = f"{definitions.CONFIG_MOBILE_BOT}_{definitions.CONFIG_REFERRER_SET}_{definitions.CONFIG_USER_ACTION_NOT_ENABLED}"
     extracted_data_base_folder_name = f'data_{full_config}'
 
-    crawler.crawl(seed_url_list, full_config, action_flag=False, referrer=definitions.GOOGLE_REFERRER)
+    crawler.crawl(seed_url_list, full_config, action_flag=False, referrer=definitions.GOOGLE_SEARCH_QUERY_REFERRER)
     util.generate_extractor_analysis_folder(extracted_data_base_folder_name)
     extractor.extract_webpage(extracted_data_base_folder_name, full_config)
     analyzer.analyze_extracted_data(extracted_data_base_folder_name)
