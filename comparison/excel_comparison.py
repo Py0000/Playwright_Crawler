@@ -16,8 +16,12 @@ def compare_excel_sheets(file1_path, file2_path, output_path):
     # Compare the two DataFrames and create a new DataFrame for differences
     differences = (df1 != df2).applymap(lambda x: "Different" if x else "")
 
+    # Modify the data for easy consolidation
+    combined_df = pd.concat([df1, df2, differences], axis=0)
+    transposed_data = combined_df.transpose()
+
     # Save the differences to a new Excel file
-    differences.to_excel(f"{output_path}.xlsx", index=False)
+    transposed_data.to_excel(f"{output_path}.xlsx", index=False)
 
 
 def compare_and_save_json(file1_path, file2_path, output_json_path):
@@ -64,11 +68,49 @@ def compare_and_save_json(file1_path, file2_path, output_json_path):
     # Save the combined column differences to a JSON file with formatting
     with open(f"{output_json_path}.json", 'w') as json_file:
         json.dump(combined_column_differences, json_file, indent=4)
-    
 
-file1_path = 'comparison\\phishing_desktop_bot_no_ref_user.xlsx'
-file2_path = 'comparison\\phishing_desktop_bot_no_ref_user_before.xlsx'
 
-output_path = "comparison\\phishing_desktop_bot_no_ref_user_before_features"
-#compare_excel_sheets(file1_path, file2_path, output_path)
+
+desktop_user_path = "comparison\\data\\desktop\\user"
+desktop_bot_path = "comparison\\data\\desktop\\bot"
+mobile_user_path = "comparison\\data\\mobile\\user"
+mobile_bot_path = "comparison\\data\\mobile\\bot"
+
+ref_user_sub_path = "ref_user"
+no_ref_no_user_sub_path = "no_ref_no_user"
+ref_no_user_sub_path = "ref_no_user"
+no_ref_user_sub_path = "no_ref_user"
+
+main_path = [
+    desktop_user_path, 
+    desktop_bot_path, 
+    mobile_user_path, 
+    mobile_bot_path
+]
+
+sub_path = [
+    ref_user_sub_path,
+    no_ref_no_user_sub_path,
+    ref_no_user_sub_path,
+    no_ref_user_sub_path
+]
+
+## Change lines 95, 96, 97 and 101 
+selected_main_path = main_path[0]
+selected_sub_path = sub_path[0]
+file_name = ""
+
+output_name_id = "_".join(selected_main_path.split("\\")[2:])
+output_name_setting = selected_sub_path
+additional_output_name = ""
+
+
+
+file1_path = f"{selected_main_path}\\{selected_sub_path}\\{file_name}.xlsx"
+file2_path = f"{selected_main_path}\\{selected_sub_path}\\{file_name}.xlsx"
+output_path = f"comparison\\{output_name_id}_{output_name_setting}_{additional_output_name}"
+
+compare_excel_sheets(file1_path, file2_path, output_path)
 compare_and_save_json(file1_path, file2_path, output_path)
+
+
