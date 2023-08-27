@@ -32,7 +32,7 @@ def setup_desktop_crawler(playwright_object, config):
 
 
 def setup_mobile_user_crawler(playwright_object):
-    browser = playwright_object.webkit.launch(headless=True, slow_mo=50)
+    browser = playwright_object.chromium.launch(headless=True, slow_mo=50)
     context = browser.new_context(
         **playwright_object.devices['Pixel 5']
     )
@@ -42,7 +42,7 @@ def setup_mobile_user_crawler(playwright_object):
 
 
 def setup_mobile_bot_crawler(playwright_object):
-    browser = playwright_object.webkit.launch(headless=True, slow_mo=50)
+    browser = playwright_object.chromium.launch(headless=True, slow_mo=50)
     pixel_5_bot = playwright_object.devices['Pixel 5'].copy()
     pixel_5_bot['user_agent'] = definitions.MOBILE_BOT_AGENT
 
