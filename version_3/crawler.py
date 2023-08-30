@@ -100,7 +100,7 @@ def get_dataset(device_conf, ref_flag, act_flag, device, browser, url_list):
 
                 # Scrape embedded link
                 referrer = url if referrer is not None else referrer
-                error_list = scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, url_index, error_list)
+                error_list = scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, url, url_index, error_list)
         
         except Exception as e:
             crawler_support.save_html_script(folder_path, f"Error occurred for url: {url}\n{e}")
@@ -114,13 +114,13 @@ def get_dataset(device_conf, ref_flag, act_flag, device, browser, url_list):
 
 
 
-def scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, base_index, error_list):
+def scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, referrer, base_index, error_list):
     url_list = crawler_support.get_level_one_embedded_link(embedded_path)
 
     for url in url_list:
         embedded_url_index = url_list.index(url)
         file_index = f"{base_index}-{embedded_url_index}"
-        folder_path, page, context, referrer = setup_crawler_context(device_conf, ref_flag, act_flag, browser, device, file_index)
+        folder_path, page, context, _ = setup_crawler_context(device_conf, ref_flag, act_flag, browser, device, file_index)
         try:
             content, _ = scrape_content(device_conf, act_flag, page, folder_path, referrer, url, is_embedded=True)
 
@@ -144,32 +144,15 @@ def scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, em
 
 
 def scrape_content(device_conf, act_flag, page, folder_path, ref_url, actual_url, is_embedded):
-    is_desktop = util.desktop_configuration_checker(device_conf)
-    isMobile = util.mobile_configuration_checker(device_conf)
-
-    if is_desktop and ref_url is not None:
-
-        # If it is the seed url, visit google first
-        # Then inject a javascript click-through to visit the seed url to ensure no empty referrer
-        if not is_embedded:
-            ref_url = ref_url + actual_url
-            print("Google Referrer executed")
-        
-        page.goto(ref_url) 
-        wait_for_page_to_load(page, act_flag)
-
-        # Visit the actual webpage
-        page.evaluate('window.location.href = "{}";'.format(actual_url))
-    
-    else: 
-        if isMobile and ref_url is not None:
-            # set referrer for mobile crawler
-            page.set_extra_http_headers({"Referer": ref_url})
+    if ref_url is not None:
+        # set referrer for mobile crawler
+        page.set_extra_http_headers({"Referer": ref_url})
         
         page.goto(actual_url)
     
     wait_for_page_to_load(page, act_flag)
-    # 
+
+    # get the html script and embedded links in the script
     return get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_embedded)
 
 
@@ -177,12 +160,13 @@ def scrape_content(device_conf, act_flag, page, folder_path, ref_url, actual_url
 def get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_embedded):
     # Perform any user-actions if needed
     check_and_execute_user_actions(device_conf, act_flag, page)
-    check_and_execute_scroll(page, act_flag)
-
-    ### Might need to get page ss before csr
 
     # Saves the full page screenshot 
     get_screenshot(page, folder_path)
+
+    check_and_execute_scroll(page, act_flag)
+
+    ### Might need to get page ss before csr
 
     # Gets the html content 
     html_content = page.content()
@@ -254,4 +238,4 @@ def get_screenshot(page, folder_path):
     print("Screenshot Captured...")
 
 
-crawl(util_def.DESKTOP_USER, ref_flag=True, act_flag=True, url_list=["https://www.google.com"])
+crawl(util_def.DESKTOP_USER, ref_flag=True, act_flag=True, url_list=["https://www.youtube.com"])

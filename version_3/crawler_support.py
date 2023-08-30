@@ -59,10 +59,10 @@ def extract_links(folder_path, soup, page, base_url):
     file_path = os.path.join(os.getcwd(), folder_path, util_def.EMBEDDED_URL_FILE)
 
     # Extract links from anchor tags
-    added_link_set = get_link_in_anchor(file_path, soup, set(), base_url)
+    added_url_set = get_link_in_anchor(file_path, soup, set(), base_url)
 
     # Extract links from iframes and nested iframes
-    get_link_in_iframe(file_path, soup, page, added_link_set, base_url)
+    get_link_in_iframe(file_path, soup, page, added_url_set, base_url)
 
     return file_path
 
@@ -77,15 +77,16 @@ def get_link_in_anchor(file_path, soup, added_url_set, base_url):
 def get_link_in_iframe(file_path, soup, page, added_url_set, base_url):
     for iframe in soup.find_all('iframe'):
         iframe_src = iframe.attrs.get('src')  # Load the iframe 
+        
         if not iframe_src:
             continue
-        """
+
         # Checks if the iframe contains legitimate url
         parsed_url = urlparse(iframe_src)
         if not all([parsed_url.scheme, parsed_url.netloc]):
             continue
-        """
-        added_link_set = save_embedded_url(file_path, iframe_src, base_url, added_link_set)
+
+        added_url_set = save_embedded_url(file_path, iframe_src, base_url, added_url_set)
         page.goto(iframe_src)
         iframe_soup = BeautifulSoup(page.content(), 'lxml')
         added_url_set = handle_nested_iframes(iframe_soup, file_path, page, added_url_set, base_url)
