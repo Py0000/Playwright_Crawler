@@ -114,7 +114,7 @@ def extract_certificate_info(website_url, folder_path):
         "issuer": issuer,
         "version": version,
         "not_before": not_before,
-        "not after": not_after,
+        "not_after": not_after,
         "valid_period": valid_period,
         "serial_number": serial_number,
         "signature_algo": signature_algorithm,

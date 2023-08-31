@@ -64,7 +64,7 @@ def crawl(device_conf, ref_flag, act_flag, url_list):
     is_desktop_device = util.desktop_configuration_checker(device_conf)
     if is_desktop_device:
         custom_user_agent = util_def.DESKTOP_USER_AGENT_MAP.get(device_conf)
-        browser = p.chromium.launch(headless=False, slow_mo=50, args=custom_user_agent)
+        browser = p.chromium.launch(headless=True, slow_mo=50, args=custom_user_agent)
     else:
         if device_conf == util_def.MOBILE_USER:
             device = p.devices['Pixel 5']
@@ -105,7 +105,7 @@ def get_dataset(device_conf, ref_flag, act_flag, device, browser, url_list):
 
                 # Scrape embedded link
                 referrer = url if referrer is not None else referrer
-                # error_list = scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, url, url_index, error_list)
+                error_list = scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, url, url_index, error_list)
         
         except Exception as e:
             crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, f"Error occurred for url: {url}\n{e}")
