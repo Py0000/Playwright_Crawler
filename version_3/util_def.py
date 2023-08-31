@@ -38,7 +38,10 @@ CLIENT_SIDE_SCRIPT_FILE = "client_scripts.json"
 TLS_CERT_FILE = "certificate.json"
 DNS_FILE = "dns_records.json"
 
-
+FEATURES_EXCEL = "analysis_f_excel_aft.xlsx"
+FEATURES_BEF_EXCEL = "analysis_f_excel_bef.xlsx"
+FEATURES_JSON = "analysis_f_json_aft.json"
+FEATURES_BEF_JSON = "analysis_f_json_bef.json"
 
 ##### Related to HTML Tags #####
 CURRENT_COVERED_TAG_SET = {'title', 
