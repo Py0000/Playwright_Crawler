@@ -41,8 +41,10 @@ FEATURES_EXCEL = "features_excel_aft.xlsx"
 FEATURES_BEF_EXCEL = "features_excel_bef.xlsx"
 FEATURES_JSON = "features_json_aft.json"
 FEATURES_BEF_JSON = "features_json_bef.json"
-CERT_EXCEL = "certs_consolidated_excel.xlsx"
-CERT_JSON = "certs_consolidated_json.json"
+DNS_EXCEL = "dns_excel.xlsx"
+DNS_CONSOLIDATED_EXCEL = "dns_consolidated_excel.xlsx"
+CERT_CONSOLIDATED_EXCEL = "certs_consolidated_excel.xlsx"
+CERT_CONSOLIDATED_JSON = "certs_consolidated_json.json"
 
 ##### Related to HTML Tags #####
 CURRENT_COVERED_TAG_SET = {'title', 

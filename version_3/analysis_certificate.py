@@ -3,7 +3,6 @@ import os
 
 import pandas as pd
 
-import util
 import util_def
 
 def extract_data_from_json(json_data):
@@ -56,7 +55,7 @@ def consolidate_cert_from_json_to_excel(device_conf, ref_flag, act_flag):
     
     output_folder = os.path.join(util_def.ANALYSIS_FOLDER, f"{device_conf}_{ref}_{act}")
     for group, df in group_data.items():
-        output_filename = f"{group}_{util_def.CERT_EXCEL}"
+        output_filename = f"{group}_{util_def.CERT_CONSOLIDATED_EXCEL}"
         df.to_excel(os.path.join(output_folder, output_filename), index=False)
     
 
@@ -105,7 +104,7 @@ def analyze_certificate_df(device_conf, ref_flag, act_flag):
     directory = os.path.join(util_def.ANALYSIS_FOLDER, f"{device_conf}_{ref}_{act}")
     
     for file in os.listdir(directory):
-        if file.endswith(util_def.CERT_EXCEL):
+        if file.endswith(util_def.CERT_CONSOLIDATED_EXCEL):
             consolidated_counts = {}
             df = pd.read_excel(os.path.join(directory, file))
 
@@ -130,7 +129,7 @@ def analyze_certificate_df(device_conf, ref_flag, act_flag):
                         analyze_other_columns(column, counts, counts_dict, consolidated_counts)
 
             group_prefix = file.split("_")[0]
-            output_file_path = os.path.join(directory, f"{group_prefix}_{util_def.CERT_JSON}")
+            output_file_path = os.path.join(directory, f"{group_prefix}_{util_def.CERT_CONSOLIDATED_JSON}")
             with open(output_file_path, 'w') as json_file:
                 json.dump(consolidated_counts, json_file, indent=4)
     
