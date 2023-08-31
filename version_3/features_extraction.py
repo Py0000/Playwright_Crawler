@@ -238,21 +238,23 @@ def create_dataframe(device_conf, ref_flag, act_flag, is_aft_flag):
             html_file_path = os.path.join(dirpath, html_file_name)
             soup = create_soup(open_file(html_file_path))
             data = [create_vector(soup, url)]
-        
-            output_filename = util_def.FEATURES_EXCEL if is_aft_flag else util_def.FEATURES_BEF_EXCEL
+
             df = pd.DataFrame(data=data, columns=DATAFRAME_COLUMNS)
-            df.to_excel(os.path.join(dirpath, output_filename), index=False)
+
+            output_filename = util_def.FEATURES_EXCEL if is_aft_flag else util_def.FEATURES_BEF_EXCEL
+            output_folder = util.get_analysis_folder_path(dirpath)
+            df.to_excel(os.path.join(output_folder, output_filename), index=False)
             print("Features Excel generated for:", dirpath)
 
-            create_json(soup, url, dirpath, is_aft_flag)
+            create_json(soup, url, dirpath, output_folder, is_aft_flag)
 
 
 
-def create_json(soup, url, folder_name, is_aft_flag):
+def create_json(soup, url, dataset_folder_name, output_folder_name, is_aft_flag):
     tag_file_name = util_def.HTML_TAG_FILE if is_aft_flag else util_def.HTML_TAG_BEF_FILE
     result = {}
 
-    result["Referenced HTML file"] = folder_name
+    result["Referenced HTML file"] = dataset_folder_name
     result["URL"] = url 
     result["Page Title"] = fe.get_title(soup).strip() if (len(fe.get_title(soup)) > 0) else ""
     
@@ -267,12 +269,12 @@ def create_json(soup, url, folder_name, is_aft_flag):
     result["Object Type"] = fe.object_type_analysis(soup)
     result["Object Data"] = fe.object_data_analysis(soup)
     result["Meta Refresh Attributes"] = fe.meta_refresh_analysis(soup)
-    result["Unique Tags"] = fe.get_unique_tags(folder_name, tag_file_name)
+    result["Unique Tags"] = fe.get_unique_tags(dataset_folder_name, tag_file_name)
 
     output_filename = util_def.FEATURES_JSON if is_aft_flag else util_def.FEATURES_BEF_JSON
-    with open(os.path.join(folder_name, output_filename), 'w') as file:
+    with open(os.path.join(output_folder_name, output_filename), 'w') as file:
         json.dump(result, file, indent=4)
-    print("Features Json generated for:", folder_name)
+    print("Features Json generated for:", dataset_folder_name)
 
 
 

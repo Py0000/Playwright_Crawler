@@ -69,5 +69,15 @@ def mobile_configuration_checker(device_config):
     return isMobile
 
 
+def get_analysis_folder_path(dataset_folder_path):
+    # Splitting path into components
+    parts = os.path.normpath(dataset_folder_path).split(os.sep)
 
+    # Extracting the last two components
+    sub_folder_path = os.path.join(parts[-2], parts[-1])
 
+    output_path = os.path.join(util_def.ANALYSIS_FOLDER, sub_folder_path)
+    if not os.path.exists(output_path):
+        os.makedirs(output_path)
+    
+    return output_path
