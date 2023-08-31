@@ -225,10 +225,9 @@ def create_dataframe(device_conf, ref_flag, act_flag, is_aft_flag):
     act = util_def.USER_ACT_SET if act_flag else util_def.NO_USER_ACT_SET
     html_file_name = util_def.HTML_SCRIPT_FILE if is_aft_flag else util_def.HTML_SCRIPT_BEF_FILE
 
-    base_folder = f"{device_conf}_{ref}_{act}"
+    base_folder = os.path.join(util_def.DATA_FOLDER, f"{device_conf}_{ref}_{act}")
     for dirpath, _, filenames in os.walk(base_folder):
         url = ""
-        data = []
         
         if util_def.VISITED_URL_FILE in filenames and html_file_name in filenames:
             url_file_path = os.path.join(dirpath, util_def.VISITED_URL_FILE)
@@ -247,7 +246,6 @@ def create_dataframe(device_conf, ref_flag, act_flag, is_aft_flag):
 
             create_json(soup, url, dirpath, is_aft_flag)
 
-    return data
 
 
 def create_json(soup, url, folder_name, is_aft_flag):
@@ -283,3 +281,6 @@ def extract_features(device_conf, ref_flag, act_flag):
     create_dataframe(device_conf, ref_flag, act_flag, is_aft_flag=True)
     create_dataframe(device_conf, ref_flag, act_flag, is_aft_flag=False)
     print("\nHTML features extracted...")
+
+
+create_dataframe(util_def.DESKTOP_USER, ref_flag=True, act_flag=True, is_aft_flag=True)

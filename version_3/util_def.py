@@ -20,7 +20,6 @@ DESKTOP_USER_AGENT_MAP = {
     DESKTOP_BOT: [f"--user-agent={DESKTOP_BOT_AGENT}"],
 }
 
-GOOGLE_SEARCH_QUERY_REFERRER = "https://www.google.com/search?q="
 GOOGLE_REFERRER = "https://www.google.com"
 
 ###### Related to file names ######
@@ -71,3 +70,5 @@ CURRENT_KNOWN_EXCLUEDED_TAG_SET = {
 
 ##### MISCELLANEOUS #####
 ERROR_URL_FLAG = "ERROR_URL"
+DATA_FOLDER = "dataset"
+ANALYSIS_FOLDER = "analysis"

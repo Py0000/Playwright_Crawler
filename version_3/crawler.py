@@ -36,14 +36,13 @@ def setup_crawler_context(device_conf, ref_flag, act_flag, browser, device, inde
     har_network_log_file = os.path.join(folder_path, util_def.NETWORK_FILE_BEFORE)
 
     # Create a new context and page for crawling
-    referrer = util_def.GOOGLE_SEARCH_QUERY_REFERRER if ref_flag else None
+    referrer = util_def.GOOGLE_REFERRER if ref_flag else None
 
     context = browser.new_context(record_har_path=har_network_log_file)
 
     is_mobile = util.mobile_configuration_checker(device_conf)
     if is_mobile:
         context = browser.new_context(**device, record_har_path=har_network_log_file)
-        referrer = util_def.GOOGLE_REFERRER if ref_flag else None
 
     page = context.new_page()
 
@@ -106,7 +105,7 @@ def get_dataset(device_conf, ref_flag, act_flag, device, browser, url_list):
 
                 # Scrape embedded link
                 referrer = url if referrer is not None else referrer
-                error_list = scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, url, url_index, error_list)
+                # error_list = scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, url, url_index, error_list)
         
         except Exception as e:
             crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, f"Error occurred for url: {url}\n{e}")
