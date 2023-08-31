@@ -96,21 +96,49 @@ sub_path = [
 ]
 
 ## Change lines 95, 96, 97 and 101 
-selected_main_path = main_path[0]
-selected_sub_path = sub_path[0]
-file_name = ""
+selected_main_path = main_path[3]
+selected_sub_path = sub_path[1]
+file_name_1 = "p1_features_after"
+file_name_2 = "wise_features_before"
 
 output_name_id = "_".join(selected_main_path.split("\\")[2:])
 output_name_setting = selected_sub_path
-additional_output_name = ""
+additional_output_name = "_with_p2_dns"
 
 
 
-file1_path = f"{selected_main_path}\\{selected_sub_path}\\{file_name}.xlsx"
-file2_path = f"{selected_main_path}\\{selected_sub_path}\\{file_name}.xlsx"
+file1_path = f"{selected_main_path}\\{selected_sub_path}\\{file_name_1}.xlsx"
+file2_path = f"{selected_main_path}\\{selected_sub_path}\\{file_name_2}.xlsx"
 output_path = f"comparison\\{output_name_id}_{output_name_setting}_{additional_output_name}"
 
-compare_excel_sheets(file1_path, file2_path, output_path)
-compare_and_save_json(file1_path, file2_path, output_path)
+
+"""
+special_file1_path = f"comparison\\excelsheet_data\\mobile\\user\\ref_user\\{file_name_1}.xlsx"
+special_file2_path = f"comparison\\excelsheet_data\\mobile\\user\\no_ref_no_user\\{file_name_1}.xlsx"
+special_file3_path = f"comparison\\excelsheet_data\\mobile\\user\\ref_no_user\\{file_name_1}.xlsx"
+special_file4_path = f"comparison\\excelsheet_data\\mobile\\user\\no_ref_user\\{file_name_1}.xlsx"
+compare_excel_sheets(special_file1_path, special_file2_path, f"comparison\\test")
+"""
+
+"""
+before_after_path11 = f"comparison\\excelsheet_data\\mobile\\user\\ref_user\\{file_name_1}.xlsx"
+before_after_path12 = f"comparison\\excelsheet_data\\mobile\\user\\ref_user\\{file_name_2}.xlsx"
+before_after_path21 = f"comparison\\excelsheet_data\\desktop\\user\\no_ref_no_user\\{file_name_1}.xlsx"
+before_after_path22 = f"comparison\\excelsheet_data\\desktop\\user\\no_ref_no_user\\{file_name_2}.xlsx"
+before_after_path31 = f"comparison\\excelsheet_data\\desktop\\user\\ref_no_user\\{file_name_1}.xlsx"
+before_after_path32 = f"comparison\\excelsheet_data\\desktop\\user\\ref_no_user\\{file_name_2}.xlsx"
+before_after_path41 = f"comparison\\excelsheet_data\\desktop\\user\\no_ref_user\\{file_name_1}.xlsx"
+before_after_path42 = f"comparison\\excelsheet_data\\desktop\\user\\no_ref_user\\{file_name_2}.xlsx"
+compare_excel_sheets(before_after_path11, before_after_path12, f"comparison\\before_after")
+"""
+
+ua1 = f"comparison\\excelsheet_data\\desktop\\user\\no_ref_no_user\\{file_name_1}.xlsx"
+ua2 = f"comparison\\excelsheet_data\\desktop\\bot\\no_ref_no_user\\{file_name_1}.xlsx"
+ua3 = f"comparison\\excelsheet_data\\mobile\\user\\no_ref_no_user\\{file_name_1}.xlsx"
+ua4 = f"comparison\\excelsheet_data\\mobile\\bot\\no_ref_no_user\\{file_name_1}.xlsx"
+compare_excel_sheets(ua1, ua3, f"comparison\\ua")
+
+#compare_excel_sheets(file1_path, file2_path, output_path)
+#compare_and_save_json(file1_path, file2_path, output_path)
 
 

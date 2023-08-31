@@ -845,9 +845,14 @@ def has_html_tag(soup):
     return soup.html is not None
 
 
+
+
 ########## DEALS WITH TAGS ##########
-def get_unique_tags(folder_path, file_name):
+def get_unique_tags(folder_path, file):
+    # Specify the folder and file path
+    file_name = file + ".txt"
     file_path = os.path.join(folder_path, file_name)
+
     try:
         with open(file_path, 'r') as file:
             content = file.read()
@@ -859,3 +864,4 @@ def get_unique_tags(folder_path, file_name):
         pass
 
     return elements
+

@@ -73,6 +73,7 @@ def consolidate_dns_data(device_conf, ref_flag, act_flag):
     output_folder = os.path.join(util_def.ANALYSIS_FOLDER, f"{device_conf}_{ref}_{act}")
     for group, df in group_data.items():
         output_filename = f"{group}_{util_def.DNS_CONSOLIDATED_EXCEL}"
+        df.drop_duplicates(subset=["Domain"], keep="first", inplace=True)
         df.to_excel(os.path.join(output_folder, output_filename), index=False)
 
 

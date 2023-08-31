@@ -1,15 +1,21 @@
-import certificate_analyzer 
-import dns_analyzer 
-import features_analyzer 
-import definitions
+import analysis_certificate as ca
+import analysis_dns as da
+import analysis_features_extraction as fa
 
-def analyze_extracted_data(base_folder_name):
-    print("Analyzing Data ... \n")
+def extract_and_analyse_features(device_conf, ref_flag, act_flag):
+    fa.extract_features(device_conf, ref_flag, act_flag)
 
-    features_analyzer.analyze_features_df(base_folder_name, definitions.OUTPUT_PATH_EXCEL_FEATURES_AFTER)
-    features_analyzer.analyze_features_df(base_folder_name, definitions.OUTPUT_PATH_EXCEL_FEATURES_BEFORE)
-    certificate_analyzer.analyze_certificate_df(base_folder_name)
-    dns_analyzer.analyze_DNS_df(base_folder_name)
 
-    print("Analysis Done ... \n")
+def extract_and_analyse_certificates(device_conf, ref_flag, act_flag):
+    ca.analyze_certificate_df(device_conf, ref_flag, act_flag)
+
+
+def extract_and_analyze_dns(device_conf, ref_flag, act_flag):
+    da.analyse_individual_dns_data(device_conf, ref_flag, act_flag)
+    da.analyze_DNS_df(device_conf, ref_flag, act_flag)
+
+def extract_and_analyse(device_conf, ref_flag, act_flag):
+    extract_and_analyse_features(device_conf, ref_flag, act_flag)
+    extract_and_analyse_certificates(device_conf, ref_flag, act_flag)
+    extract_and_analyze_dns(device_conf, ref_flag, act_flag)
 

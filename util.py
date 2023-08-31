@@ -1,31 +1,8 @@
 import os
 from urllib.parse import urlparse
 
-import definitions
+import util_def
 
-def format_index_base_file_name(index):
-    return f"{index:08}"
-
-
-def read_urls_from_file(base_folder, before_after_folder):
-    # Specify the folder and file path
-    folder_path = definitions.CRAWLED_URL_FOLDER
-    file_name = definitions.CRAWLED_URL_FILE_NAME
-    file_path = os.path.join(base_folder, folder_path, before_after_folder, file_name)
-
-    urls = []
-    with open(file_path, 'r') as file:
-        for line in file:
-            url = line.strip()
-            urls.append(url)
-    return urls
-
-
-def get_file_name_without_ext(file):
-    file_name = os.path.basename(file)
-    file_name_without_extension = os.path.splitext(file_name)[0]
-
-    return file_name_without_extension
 
 
 def extract_hostname(website_url):
@@ -35,45 +12,72 @@ def extract_hostname(website_url):
 
 
 
-def generate_folder_for_crawling(base_folder_name, sub_folder_lists):
-    sub_sub_folder_lists = [definitions.SUBFOLDER_BEFORE, definitions.SUBFOLDER_AFTER]
+def generate_crawling_base_folders():
+    folders = [
+        f"{util_def.DESKTOP_USER}_{util_def.REF_SET}_{util_def.USER_ACT_SET}",
+        f"{util_def.DESKTOP_USER}_{util_def.NO_REF_SET}_{util_def.USER_ACT_SET}",
+        f"{util_def.DESKTOP_USER}_{util_def.REF_SET}_{util_def.NO_USER_ACT_SET}",
+        f"{util_def.DESKTOP_USER}_{util_def.NO_REF_SET}_{util_def.NO_USER_ACT_SET}",
+        f"{util_def.DESKTOP_BOT}_{util_def.REF_SET}_{util_def.USER_ACT_SET}",
+        f"{util_def.DESKTOP_BOT}_{util_def.NO_REF_SET}_{util_def.USER_ACT_SET}",
+        f"{util_def.DESKTOP_BOT}_{util_def.REF_SET}_{util_def.NO_USER_ACT_SET}",
+        f"{util_def.DESKTOP_BOT}_{util_def.NO_REF_SET}_{util_def.NO_USER_ACT_SET}",
+        f"{util_def.MOBILE_USER}_{util_def.REF_SET}_{util_def.USER_ACT_SET}",
+        f"{util_def.MOBILE_USER}_{util_def.NO_REF_SET}_{util_def.USER_ACT_SET}",
+        f"{util_def.MOBILE_USER}_{util_def.REF_SET}_{util_def.NO_USER_ACT_SET}",
+        f"{util_def.MOBILE_USER}_{util_def.NO_REF_SET}_{util_def.NO_USER_ACT_SET}",
+        f"{util_def.MOBILE_BOT}_{util_def.REF_SET}_{util_def.USER_ACT_SET}",
+        f"{util_def.MOBILE_BOT}_{util_def.NO_REF_SET}_{util_def.USER_ACT_SET}",
+        f"{util_def.MOBILE_BOT}_{util_def.REF_SET}_{util_def.NO_USER_ACT_SET}",
+        f"{util_def.MOBILE_BOT}_{util_def.NO_REF_SET}_{util_def.NO_USER_ACT_SET}",
+    ]
+
+    if not os.path.exists(util_def.DATA_FOLDER):
+        os.mkdir(util_def.DATA_FOLDER)
+
+    for folder in folders:
+        folder_path = os.path.join(util_def.DATA_FOLDER, folder)
+        if not os.path.exists(folder_path):
+            os.mkdir(folder_path)
+
+
+
+def generate_crawling_folder_for_url(device_config, ref_flag, act_flag, url_index):
+    ref = util_def.REF_SET if ref_flag else util_def.NO_REF_SET
+    act = util_def.USER_ACT_SET if act_flag else util_def.NO_USER_ACT_SET
+
+    base_path = os.path.join(util_def.DATA_FOLDER, f"{device_config}_{ref}_{act}")
+    folder_path = os.path.join(base_path, url_index)
+    if not os.path.exists(folder_path):
+        os.mkdir(folder_path)
+
+    return folder_path
+
+
+
+def desktop_configuration_checker(device_config):
+    isDesktopBot = util_def.DESKTOP_BOT == device_config
+    isDesktopUser = util_def.DESKTOP_USER == device_config
+    isDesktop = isDesktopBot or isDesktopUser
+    return isDesktop
+
+
+def mobile_configuration_checker(device_config):
+    isMobileBot = util_def.MOBILE_BOT == device_config
+    isMobileUser = util_def.MOBILE_USER == device_config
+    isMobile = isMobileBot or isMobileUser
+    return isMobile
+
+
+def get_analysis_folder_path(dataset_folder_path):
+    # Splitting path into components
+    parts = os.path.normpath(dataset_folder_path).split(os.sep)
+
+    # Extracting the last two components
+    sub_folder_path = os.path.join(parts[-2], parts[-1])
+
+    output_path = os.path.join(util_def.ANALYSIS_FOLDER, sub_folder_path)
+    if not os.path.exists(output_path):
+        os.makedirs(output_path)
     
-    if not os.path.exists(base_folder_name):
-        os.makedirs(base_folder_name)
-    
-    for sub_folder in sub_folder_lists:
-        sub_folder_path = os.path.join(base_folder_name, sub_folder)
-        if not os.path.exists(sub_folder_path):
-            os.mkdir(sub_folder_path)
-
-        
-        not_to_generate_sub_sub_folder = [definitions.CRAWLED_EMBEDDED_LINK_FOLDER, definitions.CRAWLED_CLIENT_SIDE_SCRIPT_FOLDER, definitions.CRAWLED_REDIRECTION_FOLDER]
-        if sub_folder not in not_to_generate_sub_sub_folder:
-            for sub_sub_folder in sub_sub_folder_lists:
-                sub_sub_folder_path = os.path.join(sub_folder_path, sub_sub_folder)
-                if not os.path.exists(sub_sub_folder_path):
-                    os.mkdir(sub_sub_folder_path)
-                
-                if sub_folder == definitions.CRAWLED_URL_FOLDER:
-                    file = os.path.join(sub_sub_folder_path, definitions.CRAWLED_URL_FILE_NAME)
-                    with open(file, "a") as f:
-                        pass
-
-
-
-def generate_extractor_analysis_folder(base_folder_name):
-    sub_folder_lists = ['Certificates', 'DNS', 'Features_Before', 'Features_After']
-    sub_sub_folder_lists = ['Analysis', 'Excelsheet', 'Json']
-
-    if not os.path.exists(base_folder_name):
-        os.makedirs(base_folder_name)
-    
-    for sub_folder in sub_folder_lists:
-        sub_folder_path = os.path.join(base_folder_name, sub_folder)
-        if not os.path.exists(sub_folder_path):
-            os.mkdir(sub_folder_path)
-        if sub_folder != 'DNS':
-            for sub_sub_folder in sub_sub_folder_lists:
-                sub_sub_folder_path = os.path.join(sub_folder_path, sub_sub_folder)
-                if not os.path.exists(sub_sub_folder_path):
-                    os.mkdir(sub_sub_folder_path)
+    return output_path

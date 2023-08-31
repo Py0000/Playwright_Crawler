@@ -56,6 +56,7 @@ def consolidate_cert_from_json_to_excel(device_conf, ref_flag, act_flag):
     output_folder = os.path.join(util_def.ANALYSIS_FOLDER, f"{device_conf}_{ref}_{act}")
     for group, df in group_data.items():
         output_filename = f"{group}_{util_def.CERT_CONSOLIDATED_EXCEL}"
+        df.drop_duplicates(subset=["Website"], keep="first", inplace=True)
         df.to_excel(os.path.join(output_folder, output_filename), index=False)
     
 
@@ -136,4 +137,4 @@ def analyze_certificate_df(device_conf, ref_flag, act_flag):
     print("Done analysing Certificate Data...")
 
 
-analyze_certificate_df(util_def.DESKTOP_USER, util_def.REF_SET, util_def.USER_ACT_SET)
+#analyze_certificate_df(util_def.DESKTOP_USER, util_def.REF_SET, util_def.USER_ACT_SET)

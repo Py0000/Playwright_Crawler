@@ -285,4 +285,4 @@ def extract_features(device_conf, ref_flag, act_flag):
     print("\nHTML features extracted...")
 
 
-create_dataframe(util_def.DESKTOP_USER, ref_flag=True, act_flag=True, is_aft_flag=True)
+#create_dataframe(util_def.DESKTOP_USER, ref_flag=True, act_flag=True, is_aft_flag=True)
