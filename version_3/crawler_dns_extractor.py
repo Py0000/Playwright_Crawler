@@ -268,4 +268,4 @@ def extract_dns_records(website_url, folder_path):
     with open(os.path.join(folder_path, util_def.DNS_FILE), 'w', encoding='utf-8') as f:
         json.dump(dns_records, f, ensure_ascii=False, indent=4)
 
-    print("Certificate info saved... ")
+    print("DNS info saved... ")

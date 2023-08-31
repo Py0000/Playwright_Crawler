@@ -1,5 +1,6 @@
 import os
 import random
+import requests
 import time
 
 from playwright.sync_api import sync_playwright
@@ -99,7 +100,7 @@ def get_dataset(device_conf, ref_flag, act_flag, device, browser, url_list):
             
             # Save obtained html if present
             if content is not None:
-                crawler_support.save_html_script(folder_path, content)
+                crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, content)
                 page.close()
                 context.close()
 
@@ -108,7 +109,7 @@ def get_dataset(device_conf, ref_flag, act_flag, device, browser, url_list):
                 error_list = scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, url, url_index, error_list)
         
         except Exception as e:
-            crawler_support.save_html_script(folder_path, f"Error occurred for url: {url}\n{e}")
+            crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, f"Error occurred for url: {url}\n{e}")
             crawler_support.save_crawled_url(folder_path, util_def.ERROR_URL_FLAG)
             error_list.append(url_index)
             page.close()
@@ -134,12 +135,12 @@ def scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, em
             content, _ = scrape_content(device_conf, act_flag, page, folder_path, referrer, url, is_embedded=True)
             
             if content is not None:
-                crawler_support.save_html_script(folder_path, content)
+                crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, content)
                 page.close()
                 context.close()
 
         except Exception as e:
-            crawler_support.save_html_script(folder_path, f"Error occurred for url: {url}\n{e}")
+            crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, f"Error occurred for url: {url}\n{e}")
             crawler_support.save_crawled_url(folder_path, util_def.ERROR_URL_FLAG)
             error_list.append(file_index)
             page.close()
@@ -153,6 +154,9 @@ def scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, em
 
 
 def scrape_content(device_conf, act_flag, page, folder_path, ref_url, actual_url, is_embedded):
+    # Get contents before any client-side execution
+    get_content_from_server_only(folder_path, actual_url, page)
+
     if ref_url is not None:
         # set referrer for mobile crawler
         page.set_extra_http_headers({"Referer": ref_url})
@@ -167,15 +171,14 @@ def scrape_content(device_conf, act_flag, page, folder_path, ref_url, actual_url
 
 
 def get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_embedded):
+    
     # Perform any user-actions if needed
     check_and_execute_user_actions(device_conf, act_flag, page)
 
     # Saves the full page screenshot 
-    get_screenshot(page, folder_path)
+    get_screenshot(page, folder_path, util_def.SCREENSHOT_FILE)
 
     check_and_execute_scroll(page, act_flag)
-
-    ### Might need to get page ss before csr
 
     # Gets the html content 
     html_content = page.content()
@@ -194,7 +197,7 @@ def get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_em
         embedded_file_path = crawler_support.extract_links(folder_path, soup, page, visited_url)
     
     # Extract all the uncommon html_tags used
-    crawler_support.get_all_html_tags(folder_path, soup)
+    crawler_support.get_all_html_tags(folder_path, soup, util_def.HTML_TAG_FILE)
 
     # Save all client-side scripts
     get_client_side_script(page, folder_path)
@@ -220,6 +223,24 @@ def get_client_side_script(page, folder_path):
     crawler_support.save_client_side_script(folder_path, script_data)
 
 
+def get_content_from_server_only(folder_path, actual_url, page):
+    print("Getting content from server-side...")
+    try:
+        server_html_script = requests.get(actual_url).text
+        soup = BeautifulSoup(server_html_script, "lxml")
+        if soup is not None:
+            crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_BEF_FILE, soup.prettify())
+        else:
+            crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_BEF_FILE, f"No server-side content for url: {actual_url}")
+
+        crawler_support.get_all_html_tags(folder_path, soup, util_def.HTML_TAG_BEF_FILE)
+
+        page.set_content(soup.prettify())
+        wait_for_page_to_load(page, act_flag=False)
+        get_screenshot(page, folder_path, util_def.SCREENSHOT_BEF_FILE)
+        
+    except Exception as e:
+        crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, f"Error occurred for url: {actual_url}\n{e}")
 
 
 def check_and_execute_user_actions(device_conf, act_flag, page):
@@ -241,10 +262,10 @@ def check_and_execute_scroll(page, act_flag):
 
 
 
-def get_screenshot(page, folder_path):
-    path = os.path.join(folder_path, util_def.SCREENSHOT_FILE)
+def get_screenshot(page, folder_path, file_name):
+    path = os.path.join(folder_path, file_name)
     crawler_support.save_screenshot(page, path)
     print("Screenshot Captured...")
 
 
-crawl(util_def.DESKTOP_USER, ref_flag=True, act_flag=True, url_list=["https://www.youtube.com"])
+crawl(util_def.DESKTOP_USER, ref_flag=True, act_flag=True, url_list=["https://www.google.com"])

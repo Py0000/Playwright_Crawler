@@ -35,14 +35,14 @@ def save_screenshot(page, save_loc):
         print("UNABLE TO SAVE SCREENSHOT...")
 
 
-def save_html_script(folder_path, text):
-    file_path = os.path.join(os.getcwd(), folder_path, util_def.HTML_SCRIPT_FILE)
+def save_html_script(folder_path, file_name, text):
+    file_path = os.path.join(os.getcwd(), folder_path, file_name)
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(text)
 
 
-def get_all_html_tags(folder_path, soup):
-    file_path = os.path.join(os.getcwd(), folder_path, util_def.HTML_TAG_FILE)
+def get_all_html_tags(folder_path, soup, file_name):
+    file_path = os.path.join(os.getcwd(), folder_path, file_name)
 
     set = {tag.name for tag in soup.find_all()}
     initial_diff = set.difference(util_def.CURRENT_COVERED_TAG_SET)
