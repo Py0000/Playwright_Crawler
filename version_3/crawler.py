@@ -6,6 +6,7 @@ from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
 import crawler_certificate_extractor as certificate_extractor
+import crawler_dns_extractor as dns_extractor
 import crawler_actions
 import crawler_support
 import util
@@ -89,10 +90,12 @@ def get_dataset(device_conf, ref_flag, act_flag, device, browser, url_list):
         url_index = str(url_list.index(url))
 
         folder_path, page, context, referrer = setup_crawler_context(device_conf, ref_flag, act_flag, browser, device, url_index)
+        
+        certificate_extractor.extract_certificate_info(url, folder_path)
+        dns_extractor.extract_dns_records(url, folder_path)
 
         try:
             content, embedded_path = scrape_content(device_conf, act_flag, page, folder_path, referrer, url, is_embedded=False)
-            certificate_extractor.extract_certificate_info(url, folder_path)
             
             # Save obtained html if present
             if content is not None:
@@ -123,10 +126,13 @@ def scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, em
         embedded_url_index = url_list.index(url)
         file_index = f"{base_index}-{embedded_url_index}"
         folder_path, page, context, _ = setup_crawler_context(device_conf, ref_flag, act_flag, browser, device, file_index)
+        
+        certificate_extractor.extract_certificate_info(url, folder_path)
+        dns_extractor.extract_dns_records(url, folder_path)
+
         try:
             content, _ = scrape_content(device_conf, act_flag, page, folder_path, referrer, url, is_embedded=True)
-            certificate_extractor.extract_certificate_info(url, folder_path)
-
+            
             if content is not None:
                 crawler_support.save_html_script(folder_path, content)
                 page.close()
