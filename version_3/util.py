@@ -1,11 +1,14 @@
 import os
+from urllib.parse import urlparse
 
 import util_def
 
 
 
-def format_index_base_file_name(index):
-    return f"{index:08}"
+def extract_hostname(website_url):
+    parsed_url = urlparse(website_url)
+    hostname = parsed_url.hostname
+    return hostname
 
 
 
@@ -60,3 +63,7 @@ def mobile_configuration_checker(device_config):
     isMobileUser = util_def.MOBILE_USER == device_config
     isMobile = isMobileBot or isMobileUser
     return isMobile
+
+
+
+

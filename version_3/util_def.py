@@ -32,6 +32,7 @@ EMBEDDED_URL_FILE = "embedded.txt"
 HTML_TAG_FILE = "html_tag_aft.txt"
 HTML_SCRIPT_FILE = "html_script_aft.html"
 CLIENT_SIDE_SCRIPT_FILE = "client_scripts.json"
+TLS_CERT_FILE = "certificate.json"
 
 
 

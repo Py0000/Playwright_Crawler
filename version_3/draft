@@ -1,0 +1,35 @@
+
+
+    # Create a pandas DataFrame
+    data = {
+        "Website": [website_url],
+        "Hostname": [hostname],
+        "Certificate Subject (Common Name)": [subject.get("commonName", "")],
+        "Certificate Subject (Organization)": [subject.get("organizationName", "")],
+        "Certificate Subject (Locality or City)": [subject.get("localityName", "")],
+        "Certificate Subject (State or Province)": [subject.get('stateOrProvinceName', '')],
+        "Certificate Subject (Country)": [subject.get("countryName", "")],
+        "Certificate Subject (Business Category)": [subject.get("businessCategory", "")],
+        "Certificate Subject (Serial No.)": [subject.get("serialNumber", "")],
+        "Certificate Subject (Jurisdiction State)": [subject.get("jurisdictionState", "")],
+        "Certificate Subject (Jurisdiction Locality)": [subject.get("jurisdictionLocality", "")],
+        "Certificate Issuer (Country Name)": [issuer.get("countryName", "")],
+        "Certificate Issuer (Organization Name)": [issuer.get("organizationName", "")],
+        "Certificate Issuer (Organizational Unit Name)": [issuer.get("organizationalUnitName", "")],
+        "Certificate Issuer (Common Name)": [issuer.get("commonName", "")],
+        "Certificate Version": [version],
+        "Certificate Valid From": [not_before],
+        "Certificate Valid Until": [not_after],
+        "Certificate Valid Duration": [valid_period],
+        "Certificate Serial Number": [serial_number],
+        "Certificate Signature Algorithm": [signature_algorithm],
+        "SSL/TLS Protocol Version": [protocol_version],
+        "Num of Certificate Alternate Subject Name": [len(alt_subject)],
+        "Certificate Alternate Subject Name": [alt_subject],
+    }    
+    """
+    df = pd.DataFrame(data)
+    df.drop_duplicates(subset=["Website"], keep="last", inplace=True)
+
+    return df
+    """

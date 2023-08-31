@@ -5,6 +5,7 @@ import time
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
+import crawler_certificate_extractor as certificate_extractor
 import crawler_actions
 import crawler_support
 import util
@@ -91,6 +92,7 @@ def get_dataset(device_conf, ref_flag, act_flag, device, browser, url_list):
 
         try:
             content, embedded_path = scrape_content(device_conf, act_flag, page, folder_path, referrer, url, is_embedded=False)
+            certificate_extractor.extract_certificate_info(url, folder_path)
             
             # Save obtained html if present
             if content is not None:
@@ -109,7 +111,7 @@ def get_dataset(device_conf, ref_flag, act_flag, device, browser, url_list):
             page.close()
             context.close()
             continue
-
+        
         time.sleep(random.randint(10, 20))
 
 
@@ -123,6 +125,7 @@ def scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, em
         folder_path, page, context, _ = setup_crawler_context(device_conf, ref_flag, act_flag, browser, device, file_index)
         try:
             content, _ = scrape_content(device_conf, act_flag, page, folder_path, referrer, url, is_embedded=True)
+            certificate_extractor.extract_certificate_info(url, folder_path)
 
             if content is not None:
                 crawler_support.save_html_script(folder_path, content)
