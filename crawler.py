@@ -1,5 +1,6 @@
 import os
 import random
+import requests
 import time
 
 from playwright.sync_api import sync_playwright
@@ -92,6 +93,7 @@ def get_dataset(device_conf, ref_flag, act_flag, device, browser, url_list):
         
         certificate_extractor.extract_certificate_info(url, folder_path)
         dns_extractor.extract_dns_records(url, folder_path)
+        get_server_side_data(device_conf, ref_flag, act_flag, folder_path, browser, referrer, url)
 
         try:
             content, embedded_path = scrape_content(device_conf, ref_flag, act_flag, page, folder_path, referrer, url, is_embedded=False)
@@ -128,6 +130,7 @@ def scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, em
         
         certificate_extractor.extract_certificate_info(url, folder_path)
         dns_extractor.extract_dns_records(url, folder_path)
+        get_server_side_data(device_conf, ref_flag, act_flag, folder_path, browser, referrer, url)
 
         try:
             content, _ = scrape_content(device_conf, ref_flag, act_flag, page, folder_path, referrer, url, is_embedded=True)
@@ -196,6 +199,10 @@ def get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_em
     # Save all client-side scripts
     get_client_side_script(page, folder_path)
 
+    # Save css scripts
+    css_urls = page.eval_on_selector_all("link[rel='stylesheet']", "links => links.map(link => link.href)")
+    crawler_support.save_css_files(folder_path, css_urls)
+
     print("Actual url: ", actual_url)
     print("Url visited: ", visited_url)
     print("User-Agent:", page.evaluate('''() => window.navigator.userAgent'''))
@@ -242,4 +249,48 @@ def get_screenshot(page, folder_path, file_name):
     print("Screenshot Captured...")
 
 
-crawl(util_def.DESKTOP_USER, ref_flag=False, act_flag=True, url_list=["https://www.google.com.sg"])
+
+def get_server_side_data(device_conf, ref_flag, act_flag, folder_path, browser, ref_url, actual_url):
+    print("Getting content from server-side...")
+    try:
+        is_desktop_device = util.desktop_configuration_checker(device_conf)
+        if is_desktop_device:
+            context =  browser.new_context()
+        else:
+            if device_conf == util_def.MOBILE_USER:
+                device = p.devices['Pixel 5']
+            else:
+                device = p.devices['Pixel 5'].copy()
+                device['user_agent'] = util_def.MOBILE_BOT_AGENT
+            context = browser.new_context(**device)
+        
+        page = context.new_page()
+
+        if ref_flag:
+            page.set_extra_http_headers({"Referer": ref_url})
+        
+        page.route('**/*', lambda route, request: 
+               route.abort() if 'script' in request.resource_type else route.continue_())
+        
+        page.goto(actual_url)
+
+        if act_flag:
+            check_and_execute_user_actions(device_conf, act_flag, page)
+
+        # Gets the html content 
+        get_screenshot(page, folder_path, util_def.SCREENSHOT_BEF_FILE)
+
+        server_html_script = requests.get(actual_url).text
+        soup = BeautifulSoup(server_html_script, "lxml")
+
+        if soup is not None:
+            crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_BEF_FILE, soup.prettify())
+        else:
+            crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_BEF_FILE, f"No server-side content for url: {actual_url}")
+        
+        crawler_support.get_all_html_tags(folder_path, soup, util_def.HTML_TAG_BEF_FILE)
+    
+    except Exception as e:
+        crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_BEF_FILE, f"Error occurred for url: {actual_url}\n{e}")
+
+#crawl(util_def.DESKTOP_USER, ref_flag=False, act_flag=False, url_list=["https://www.google.com.sg"])

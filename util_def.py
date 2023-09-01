@@ -36,6 +36,7 @@ HTML_SCRIPT_BEF_FILE = "html_script_before.html"
 CLIENT_SIDE_SCRIPT_FILE = "client_scripts.json"
 TLS_CERT_FILE = "certificate.json"
 DNS_FILE = "dns_records.json"
+CSS_FOLDER = "css"
 
 FEATURES_EXCEL = "features_excel_aft.xlsx"
 FEATURES_BEF_EXCEL = "features_excel_bef.xlsx"
