@@ -288,4 +288,5 @@ def get_server_side_data(device_conf, ref_flag, act_flag, folder_path, browser, 
     except Exception as e:
         crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_BEF_FILE, f"Error occurred for url: {actual_url}\n{e}")
 
+
 #crawl(util_def.DESKTOP_USER, ref_flag=False, act_flag=False, url_list=["https://www.google.com.sg"])
