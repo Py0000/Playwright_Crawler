@@ -56,7 +56,7 @@ def crawl(device_conf, ref_flag, act_flag, url_list):
 
     # Create the playwright object and browser object
     p = sync_playwright().start()
-    browser = p.chromium.launch(headless=False, slow_mo=50)
+    browser = p.chromium.launch(headless=True, slow_mo=50)
     device = ""
 
     # Set the user_agent in the browser object for desktop crawler
@@ -93,7 +93,7 @@ def get_dataset(device_conf, ref_flag, act_flag, device, browser, url_list):
         
         certificate_extractor.extract_certificate_info(url, folder_path)
         dns_extractor.extract_dns_records(url, folder_path)
-        get_server_side_data(device_conf, ref_flag, act_flag, folder_path, browser, referrer, url)
+        get_server_side_data(device_conf, ref_flag, act_flag, folder_path, browser, device, referrer, url)
 
         try:
             content, embedded_path = scrape_content(device_conf, ref_flag, act_flag, page, folder_path, referrer, url, is_embedded=False)
@@ -130,7 +130,7 @@ def scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, em
         
         certificate_extractor.extract_certificate_info(url, folder_path)
         dns_extractor.extract_dns_records(url, folder_path)
-        get_server_side_data(device_conf, ref_flag, act_flag, folder_path, browser, referrer, url)
+        get_server_side_data(device_conf, ref_flag, act_flag, folder_path, browser, device, referrer, url)
 
         try:
             content, _ = scrape_content(device_conf, ref_flag, act_flag, page, folder_path, referrer, url, is_embedded=True)
@@ -250,18 +250,13 @@ def get_screenshot(page, folder_path, file_name):
 
 
 
-def get_server_side_data(device_conf, ref_flag, act_flag, folder_path, browser, ref_url, actual_url):
+def get_server_side_data(device_conf, ref_flag, act_flag, folder_path, browser, device, ref_url, actual_url):
     print("Getting content from server-side...")
     try:
         is_desktop_device = util.desktop_configuration_checker(device_conf)
         if is_desktop_device:
             context =  browser.new_context()
         else:
-            if device_conf == util_def.MOBILE_USER:
-                device = p.devices['Pixel 5']
-            else:
-                device = p.devices['Pixel 5'].copy()
-                device['user_agent'] = util_def.MOBILE_BOT_AGENT
             context = browser.new_context(**device)
         
         page = context.new_page()
