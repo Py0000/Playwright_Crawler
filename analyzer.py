@@ -19,3 +19,5 @@ def extract_and_analyse(device_conf, ref_flag, act_flag):
     extract_and_analyse_certificates(device_conf, ref_flag, act_flag)
     extract_and_analyze_dns(device_conf, ref_flag, act_flag)
 
+import util_def
+extract_and_analyse(util_def.MOBILE_BOT, ref_flag=False, act_flag=False)

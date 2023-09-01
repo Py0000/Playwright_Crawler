@@ -853,8 +853,8 @@ def get_unique_tags(folder_path, file_name):
             content = file.read()
         
         elements = content.replace('{', '').replace('}', '').replace('\'', '').split(', ')
-    except:
-        print(f"Error reading file: {file_name}")
+    except Exception as e:
+        print(f"Error reading file: {file_name} in {folder_path}\nError is: {e}")
         elements = ""
         pass
 

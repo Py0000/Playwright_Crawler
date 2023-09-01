@@ -102,10 +102,12 @@ def handle_nested_iframes(iframe_soup, file_path, page, added_url_set, base_url)
 
 
 def save_embedded_url(file_path, url, base_url, added_url_set):
+    
     try: 
         parsed_url = urlparse(url)
         if not parsed_url.scheme:
-            url = urljoin(base_url, url)
+            if urlparse(base_url).scheme:
+                url = urljoin(base_url, url)
 
         if url not in added_url_set:
             with open(file_path, "a") as f:

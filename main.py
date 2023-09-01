@@ -194,4 +194,4 @@ def start_program(seed_url_list):
     crawl_with_mobile_bot_no_referrer_no_action(seed_url_list)
 
 
-start_program()
+start_program(["https://www.google.com"])

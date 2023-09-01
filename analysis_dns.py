@@ -117,4 +117,4 @@ def analyze_DNS_df(device_conf, ref_flag, act_flag):
     
 
 
-analyze_DNS_df(util_def.DESKTOP_USER, util_def.REF_SET, util_def.USER_ACT_SET)
+#analyze_DNS_df(util_def.DESKTOP_USER, util_def.REF_SET, util_def.USER_ACT_SET)
