@@ -8,176 +8,102 @@ from bs4 import BeautifulSoup
 
 import crawler_certificate_extractor as certificate_extractor
 import crawler_dns_extractor as dns_extractor
-import crawler_actions
+import crawler_utilities
 import crawler_support
 import util
 import util_def
 
 
-def wait_for_page_to_load(page, act_flag):
-    if act_flag:
-        crawler_actions.move_mouse_smoothly_top_left_bottom_right(page)
-    
-    try:
-        # Wait for the page to load completely (wait for the load event)
-        page.wait_for_load_state('domcontentloaded')
-    except:
-        pass
-
-    try:
-        page.wait_for_load_state('networkidle')
-    except:
-        pass
-
-
-def setup_crawler_context(device_conf, ref_flag, act_flag, browser, device, index):
-    # Generate a folder for each url to store data & obtain path to store har files
-    folder_path = util.generate_crawling_folder_for_url(device_conf, ref_flag, act_flag, index)
+def setup_crawler_context(device_conf, ref_flag, browser, device, folder_path):
     har_network_log_file = os.path.join(folder_path, util_def.NETWORK_FILE_BEFORE)
-
-    # Create a new context and page for crawling
     referrer = util_def.GOOGLE_REFERRER if ref_flag else None
-
-    context = browser.new_context(record_har_path=har_network_log_file)
 
     is_mobile = util.mobile_configuration_checker(device_conf)
     if is_mobile:
         context = browser.new_context(**device, record_har_path=har_network_log_file)
-
-    page = context.new_page()
-
-    return folder_path, page, context, referrer
-
-
-def crawl(device_conf, ref_flag, act_flag, url_list):
-    print("\nCrawling in progress...\n")
-    # Generate the base folders (i.e. 16 different combinations) to store data
-    util.generate_crawling_base_folders()
-
-    # Create the playwright object and browser object
-    p = sync_playwright().start()
-    browser = p.chromium.launch(headless=True, slow_mo=50)
-    device = ""
-
-    # Set the user_agent in the browser object for desktop crawler
-    # Set the device for mobile crawler
-    is_desktop_device = util.desktop_configuration_checker(device_conf)
-    if is_desktop_device:
-        custom_user_agent = util_def.DESKTOP_USER_AGENT_MAP.get(device_conf)
-        browser = p.chromium.launch(headless=True, slow_mo=50, args=custom_user_agent)
     else:
-        if device_conf == util_def.MOBILE_USER:
-            device = p.devices['Pixel 5']
-        else:
-            device = p.devices['Pixel 5'].copy()
-            device['user_agent'] = util_def.MOBILE_BOT_AGENT
-
-    # Start crawling the urls to get the required dataset
-    get_dataset(device_conf, ref_flag, act_flag, device, browser, url_list)
-
-    browser.close()
-    p.stop()
-    print("\nCrawling done...")
-
-
-
-def get_dataset(device_conf, ref_flag, act_flag, device, browser, url_list):
-    # Store the list of urls that encountered errors
-    error_list = []
-
-    # Visits each url in the provided list
-    for url in url_list:
-        url_index = str(url_list.index(url))
-
-        folder_path, page, context, referrer = setup_crawler_context(device_conf, ref_flag, act_flag, browser, device, url_index)
-        
-        certificate_extractor.extract_certificate_info(url, folder_path)
-        dns_extractor.extract_dns_records(url, folder_path)
-        get_server_side_data(device_conf, ref_flag, act_flag, folder_path, browser, device, referrer, url)
-
-        try:
-            content, embedded_path = scrape_content(device_conf, ref_flag, act_flag, page, folder_path, referrer, url, is_embedded=False)
-            
-            # Save obtained html if present
-            if content is not None:
-                crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, content)
-                page.close()
-                context.close()
-                """
-                # Scrape embedded link
-                referrer = url if ref_flag else referrer
-                error_list = scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, url, url_index, error_list)
-                """
-        except Exception as e:
-            crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, f"Error occurred for url: {url}\n{e}")
-            crawler_support.save_crawled_url(folder_path, util_def.ERROR_URL_FLAG)
-            error_list.append(url_index)
-            page.close()
-            context.close()
-            continue
-       
-        time.sleep(random.randint(10, 20))
-
-
-
-def scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, referrer, base_index, error_list):
-    url_list = crawler_support.get_level_one_embedded_link(embedded_path)
-
-    for url in url_list:
-        embedded_url_index = url_list.index(url)
-        file_index = f"{base_index}-{embedded_url_index}"
-        folder_path, page, context, _ = setup_crawler_context(device_conf, ref_flag, act_flag, browser, device, file_index)
-        
-        certificate_extractor.extract_certificate_info(url, folder_path)
-        dns_extractor.extract_dns_records(url, folder_path)
-        get_server_side_data(device_conf, ref_flag, act_flag, folder_path, browser, device, referrer, url)
-
-        try:
-            content, _ = scrape_content(device_conf, ref_flag, act_flag, page, folder_path, referrer, url, is_embedded=True)
-            
-            if content is not None:
-                crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, content)
-                page.close()
-                context.close()
-
-        except Exception as e:
-            crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, f"Error occurred for url: {url}\n{e}")
-            crawler_support.save_crawled_url(folder_path, util_def.ERROR_URL_FLAG)
-            error_list.append(file_index)
-            page.close()
-            context.close()
-            continue
-
-    time.sleep(random.randint(5, 10))
-            
-    return error_list        
-
-
-
-def scrape_content(device_conf, ref_flag, act_flag, page, folder_path, ref_url, actual_url, is_embedded):
-    if ref_url is not None:
-        # set referrer for mobile crawler
-        page.set_extra_http_headers({"Referer": ref_url})
+        context = browser.new_context(record_har_path=har_network_log_file)
     
-    client, captured = capture_more_detailed_network_logs(page)
-    page.goto(actual_url)
-    wait_for_page_to_load(page, act_flag)
+    page = context.new_page()
+    return page, context, referrer
 
-    client.detach()
-    crawler_support.save_more_detailed_network_logs(folder_path, captured)
-    # get the html script and embedded links in the script
-    return get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_embedded)
 
+
+def get_server_side_data(device_conf, ref_flag, act_flag, browser, device, folder_path, actual_url):
+    print("Getting content from server-side...")
+    page, _, referrer = setup_crawler_context(device_conf, ref_flag, browser, device, folder_path)
+    if ref_flag:
+        page.set_extra_http_headers({"Referer": referrer})
+
+    try:
+        page.route('**/*', lambda route, request: 
+                route.abort() if 'script' in request.resource_type else route.continue_())
+
+        page.goto(actual_url)
+
+        if act_flag:
+            crawler_utilities.check_and_execute_user_actions(device_conf, act_flag, page)
+        
+        # Gets the html content 
+        crawler_utilities.get_screenshot(page, folder_path, util_def.SCREENSHOT_BEF_FILE)
+
+        server_html_script = requests.get(actual_url).text
+        soup = BeautifulSoup(server_html_script, "lxml")
+
+        crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_BEF_FILE, soup.prettify())
+        crawler_support.get_all_html_tags(folder_path, soup, util_def.HTML_TAG_BEF_FILE)
+
+    except Exception as e:
+        crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_BEF_FILE, f"Error occurred for url: {actual_url}\n{e}")
+
+
+
+
+def get_client_side_script(page, folder_path):
+    client_side_scripts = page.evaluate(crawler_support.client_side_scripts_injection_code)
+
+    # Format client-side scripts for better readability
+    # Create a dictionary to store the client-side script data
+    script_data = {}
+    for index, script in enumerate(client_side_scripts):
+        script_data[f'script_{index + 1}'] = script
+    
+    # Save data to a JSON file
+    crawler_support.save_client_side_script(folder_path, script_data)
+
+
+
+def capture_more_detailed_network_logs(page, act_flag, folder_path):
+    # List to store the captured events
+    captured_events = []  
+    
+    # Create a CDP session for the page
+    client = page.context.new_cdp_session(page)
+
+    # Enable the Network domain to receive network-related events
+    client.send("Network.enable")
+
+    # Set up an event listener for requestWillBeSent
+    def capture_request(payload):
+        captured_event = payload
+        cookies = client.send("Network.getCookies", {"requestId": payload["requestId"]})
+        captured_event["cookies"] = cookies
+        captured_events.append(captured_event)
+    
+    client.on("Network.requestWillBeSent", capture_request)
+    crawler_utilities.wait_for_page_to_load(page, act_flag)
+
+    return client, captured_events
 
 
 def get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_embedded):
     # Perform any user-actions if needed
-    check_and_execute_user_actions(device_conf, act_flag, page)
+    crawler_utilities.check_and_execute_user_actions(device_conf, act_flag, page)
 
     # Saves the full page screenshot 
-    get_screenshot(page, folder_path, util_def.SCREENSHOT_FILE)
+    crawler_utilities.get_screenshot(page, folder_path, util_def.SCREENSHOT_FILE)
 
-    check_and_execute_scroll(page, act_flag)
+    crawler_utilities.check_and_execute_scroll(page, act_flag)
 
     # Gets the html content 
     html_content = page.content()
@@ -213,105 +139,121 @@ def get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_em
     return soup.prettify(), embedded_file_path
 
 
-def get_client_side_script(page, folder_path):
-    client_side_scripts = page.evaluate(crawler_support.client_side_scripts_injection_code)
-
-    # Format client-side scripts for better readability
-    # Create a dictionary to store the client-side script data
-    script_data = {}
-    for index, script in enumerate(client_side_scripts):
-        script_data[f'script_{index + 1}'] = script
+def scrape_content(device_conf, act_flag, page, folder_path, ref_url, actual_url, is_embedded):
+    if ref_url is not None:
+        # set referrer for mobile crawler
+        page.set_extra_http_headers({"Referer": ref_url})
     
-    # Save data to a JSON file
-    crawler_support.save_client_side_script(folder_path, script_data)
+    client, captured_events = capture_more_detailed_network_logs(page, act_flag, folder_path)
+    page.goto(actual_url)
+    crawler_utilities.wait_for_page_to_load(page, act_flag)
+
+    client.detach()
+    crawler_support.save_more_detailed_network_logs(folder_path, captured_events)
+    
+    # get the html script and embedded links in the script
+    return get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_embedded)
 
 
-def check_and_execute_user_actions(device_conf, act_flag, page):
-    if not act_flag:
-        pass
+
+def scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, referrer, base_index, error_list):
+    url_list = crawler_support.get_level_one_embedded_link(embedded_path)
+    for url in url_list:
+        embedded_url_index = url_list.index(url)
+        file_index = f"{base_index}-{embedded_url_index}"
+        folder_path = util.generate_crawling_folder_for_url(device_conf, ref_flag, act_flag, embedded_url_index)
+        page, context, referrer = setup_crawler_context(device_conf, ref_flag, browser, device, folder_path)
+
+        certificate_extractor.extract_certificate_info(url, folder_path)
+        dns_extractor.extract_dns_records(url, folder_path)
+        get_server_side_data(device_conf, ref_flag, act_flag, browser, device, folder_path, url)
+
+        try:
+            content, _ = scrape_content(device_conf, act_flag, page, folder_path, referrer, url, is_embedded=True)
+            if content is not None:
+                crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, content)
+                page.close()
+                context.close()
+
+        except Exception as e:
+            crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, f"Error occurred for url: {url}\n{e}")
+            crawler_support.save_crawled_url(folder_path, util_def.ERROR_URL_FLAG)
+            error_list.append(file_index)
+            page.close()
+            context.close()
+            continue
+
+        time.sleep(random.randint(5, 10))
+    
+    return error_list
+
+
+def get_dataset(device_conf, ref_flag, act_flag, browser, device, url_list):
+    # Store the list of urls that encountered errors
+    error_list = []
+
+    # Visits each url in the provided list
+    for url in url_list:
+        url_index = str(url_list.index(url))
+        folder_path = util.generate_crawling_folder_for_url(device_conf, ref_flag, act_flag, url_index)
+        page, context, referrer = setup_crawler_context(device_conf, ref_flag, browser, device, folder_path)
+
+        certificate_extractor.extract_certificate_info(url, folder_path)
+        dns_extractor.extract_dns_records(url, folder_path)
+        get_server_side_data(device_conf, ref_flag, act_flag, browser, device, folder_path, url)
+
+        try:
+            content, embedded_path = scrape_content(device_conf, act_flag, page, folder_path, referrer, url, is_embedded=False)
+            # Save obtained html if present
+            if content is not None:
+                crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, content)
+                page.close()
+                context.close()
+                """
+                # Scrape embedded link
+                referrer = url if ref_flag else referrer
+                error_list = scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, url, url_index, error_list)
+                """
+        except Exception as e:
+            crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, f"Error occurred for url: {url}\n{e}")
+            crawler_support.save_crawled_url(folder_path, util_def.ERROR_URL_FLAG)
+            error_list.append(url_index)
+            page.close()
+            context.close()
+            continue
+        
+        time.sleep(random.randint(10, 20))
+       
+
+
+
+def crawl(device_conf, ref_flag, act_flag, url_list):
+    print("\nCrawling in progress...\n")
+    util.generate_crawling_base_folders(device_conf, ref_flag, act_flag)
+
+    # Create the playwright object and browser object
+    p = sync_playwright().start()
+    
+    # Set the user_agent in the browser object for desktop crawler & device for mobile crawler
+    is_desktop_device = util.desktop_configuration_checker(device_conf)
+    if is_desktop_device:
+        custom_user_agent = util_def.DESKTOP_USER_AGENT_MAP.get(device_conf)
+        browser = p.chromium.launch(headless=True, slow_mo=50, args=custom_user_agent)
+        device = ""
     else:
-        if util.desktop_configuration_checker(device_conf):
-            crawler_actions.desktop_user_mouse_movement(page)
+        browser = p.chromium.launch(headless=True, slow_mo=50)
+        if device_conf == util_def.MOBILE_USER:
+            device = p.devices['Pixel 5']
         else:
-            crawler_actions.mobile_user_hand_gesture(page)
-
-
-
-def check_and_execute_scroll(page, act_flag):
-    if act_flag:
-        crawler_actions.page_scroll(page)
-    else:
-        pass
-
-
-
-def get_screenshot(page, folder_path, file_name):
-    path = os.path.join(folder_path, file_name)
-    crawler_support.save_screenshot(page, path)
-    print("Screenshot Captured...")
-
-
-
-def get_server_side_data(device_conf, ref_flag, act_flag, folder_path, browser, device, ref_url, actual_url):
-    print("Getting content from server-side...")
-    try:
-        is_desktop_device = util.desktop_configuration_checker(device_conf)
-        if is_desktop_device:
-            context =  browser.new_context()
-        else:
-            context = browser.new_context(**device)
-        
-        page = context.new_page()
-
-        if ref_flag:
-            page.set_extra_http_headers({"Referer": ref_url})
-        
-        page.route('**/*', lambda route, request: 
-               route.abort() if 'script' in request.resource_type else route.continue_())
-        
-        page.goto(actual_url)
-
-        if act_flag:
-            check_and_execute_user_actions(device_conf, act_flag, page)
-
-        # Gets the html content 
-        get_screenshot(page, folder_path, util_def.SCREENSHOT_BEF_FILE)
-
-        server_html_script = requests.get(actual_url).text
-        soup = BeautifulSoup(server_html_script, "lxml")
-
-        if soup is not None:
-            crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_BEF_FILE, soup.prettify())
-        else:
-            crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_BEF_FILE, f"No server-side content for url: {actual_url}")
-        
-        crawler_support.get_all_html_tags(folder_path, soup, util_def.HTML_TAG_BEF_FILE)
+            device = p.devices['Pixel 5'].copy()
+            device['user_agent'] = util_def.MOBILE_BOT_AGENT
     
-    except Exception as e:
-        crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_BEF_FILE, f"Error occurred for url: {actual_url}\n{e}")
+    # Start crawling the urls to get the required dataset
+    get_dataset(device_conf, ref_flag, act_flag, browser, device, url_list)
 
-
-def capture_more_detailed_network_logs(page):
-    # List to store the captured events
-    captured_events = []  
-    
-    # Create a CDP session for the page
-    client = page.context.new_cdp_session(page)
-
-    # Enable the Network domain to receive network-related events
-    client.send("Network.enable")
-
-    # Set up an event listener for requestWillBeSent
-    def capture_request(payload):
-        captured_event = payload
-        cookies = client.send("Network.getCookies", {"requestId": payload["requestId"]})
-        captured_event["cookies"] = cookies
-        captured_events.append(captured_event)
-    
-    client.on("Network.requestWillBeSent", capture_request)
-
-    return client, captured_events
-
+    browser.close()
+    p.stop()
+    print("\nCrawling done...")
 
 
 #crawl(util_def.DESKTOP_USER, ref_flag=False, act_flag=False, url_list=["https://www.google.com.sg"])

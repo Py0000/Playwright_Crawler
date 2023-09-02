@@ -12,33 +12,17 @@ def extract_hostname(website_url):
 
 
 
-def generate_crawling_base_folders():
-    folders = [
-        f"{util_def.DESKTOP_USER}_{util_def.REF_SET}_{util_def.USER_ACT_SET}",
-        f"{util_def.DESKTOP_USER}_{util_def.NO_REF_SET}_{util_def.USER_ACT_SET}",
-        f"{util_def.DESKTOP_USER}_{util_def.REF_SET}_{util_def.NO_USER_ACT_SET}",
-        f"{util_def.DESKTOP_USER}_{util_def.NO_REF_SET}_{util_def.NO_USER_ACT_SET}",
-        f"{util_def.DESKTOP_BOT}_{util_def.REF_SET}_{util_def.USER_ACT_SET}",
-        f"{util_def.DESKTOP_BOT}_{util_def.NO_REF_SET}_{util_def.USER_ACT_SET}",
-        f"{util_def.DESKTOP_BOT}_{util_def.REF_SET}_{util_def.NO_USER_ACT_SET}",
-        f"{util_def.DESKTOP_BOT}_{util_def.NO_REF_SET}_{util_def.NO_USER_ACT_SET}",
-        f"{util_def.MOBILE_USER}_{util_def.REF_SET}_{util_def.USER_ACT_SET}",
-        f"{util_def.MOBILE_USER}_{util_def.NO_REF_SET}_{util_def.USER_ACT_SET}",
-        f"{util_def.MOBILE_USER}_{util_def.REF_SET}_{util_def.NO_USER_ACT_SET}",
-        f"{util_def.MOBILE_USER}_{util_def.NO_REF_SET}_{util_def.NO_USER_ACT_SET}",
-        f"{util_def.MOBILE_BOT}_{util_def.REF_SET}_{util_def.USER_ACT_SET}",
-        f"{util_def.MOBILE_BOT}_{util_def.NO_REF_SET}_{util_def.USER_ACT_SET}",
-        f"{util_def.MOBILE_BOT}_{util_def.REF_SET}_{util_def.NO_USER_ACT_SET}",
-        f"{util_def.MOBILE_BOT}_{util_def.NO_REF_SET}_{util_def.NO_USER_ACT_SET}",
-    ]
-
+def generate_crawling_base_folders(device_conf, ref_flag, act_flag):
+    ref = util_def.REF_SET if ref_flag else util_def.NO_REF_SET
+    act = util_def.USER_ACT_SET if act_flag else util_def.NO_USER_ACT_SET
+    folder = f"{device_conf}_{ref}_{act}"
+        
     if not os.path.exists(util_def.DATA_FOLDER):
         os.mkdir(util_def.DATA_FOLDER)
 
-    for folder in folders:
-        folder_path = os.path.join(util_def.DATA_FOLDER, folder)
-        if not os.path.exists(folder_path):
-            os.mkdir(folder_path)
+    folder_path = os.path.join(util_def.DATA_FOLDER, folder)
+    if not os.path.exists(folder_path):
+        os.mkdir(folder_path)
 
 
 
