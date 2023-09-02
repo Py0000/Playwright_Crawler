@@ -314,4 +314,4 @@ def capture_more_detailed_network_logs(page):
 
 
 
-crawl(util_def.DESKTOP_USER, ref_flag=False, act_flag=False, url_list=["https://www.google.com.sg"])
+#crawl(util_def.DESKTOP_USER, ref_flag=False, act_flag=False, url_list=["https://www.google.com.sg"])
