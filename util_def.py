@@ -24,6 +24,7 @@ GOOGLE_REFERRER = "https://www.google.com"
 
 ###### Related to file names ######
 NETWORK_FILE_BEFORE = "network.har"
+DETAILED_NETWORK_FILE = "detailed_network.json"
 SCREENSHOT_FILE = "screenshot_aft.png"
 SCREENSHOT_BEF_FILE = "screenshot_bef.png"
 REDIRECTION_FILE = "redirect.json"

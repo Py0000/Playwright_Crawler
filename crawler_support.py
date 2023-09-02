@@ -173,3 +173,10 @@ def save_css_files(folder_path, css_urls):
                 file.write(f"Error obtaining css file from server for: {css_url}")
     
     print("CSS files obtained and saved...")
+
+
+def save_more_detailed_network_logs(folder_path, data):
+    print("Saving more detailed network logs...")
+    file_dir = os.path.join(folder_path, util_def.DETAILED_NETWORK_FILE)
+    with open(file_dir, 'w') as file:
+        json.dump(data, file, indent=4)

@@ -158,11 +158,13 @@ def scrape_content(device_conf, ref_flag, act_flag, page, folder_path, ref_url, 
     if ref_url is not None:
         # set referrer for mobile crawler
         page.set_extra_http_headers({"Referer": ref_url})
-        
-    page.goto(actual_url)
     
+    client, captured = capture_more_detailed_network_logs(page)
+    page.goto(actual_url)
     wait_for_page_to_load(page, act_flag)
 
+    client.detach()
+    crawler_support.save_more_detailed_network_logs(folder_path, captured)
     # get the html script and embedded links in the script
     return get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_embedded)
 
@@ -289,4 +291,27 @@ def get_server_side_data(device_conf, ref_flag, act_flag, folder_path, browser, 
         crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_BEF_FILE, f"Error occurred for url: {actual_url}\n{e}")
 
 
-#crawl(util_def.DESKTOP_USER, ref_flag=False, act_flag=False, url_list=["https://www.google.com.sg"])
+def capture_more_detailed_network_logs(page):
+    # List to store the captured events
+    captured_events = []  
+    
+    # Create a CDP session for the page
+    client = page.context.new_cdp_session(page)
+
+    # Enable the Network domain to receive network-related events
+    client.send("Network.enable")
+
+    # Set up an event listener for requestWillBeSent
+    def capture_request(payload):
+        captured_event = payload
+        cookies = client.send("Network.getCookies", {"requestId": payload["requestId"]})
+        captured_event["cookies"] = cookies
+        captured_events.append(captured_event)
+    
+    client.on("Network.requestWillBeSent", capture_request)
+
+    return client, captured_events
+
+
+
+crawl(util_def.DESKTOP_USER, ref_flag=False, act_flag=False, url_list=["https://www.google.com.sg"])
