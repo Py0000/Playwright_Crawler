@@ -158,10 +158,11 @@ def scrape_content(device_conf, act_flag, page, folder_path, ref_url, actual_url
 
 def scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, referrer, base_index, error_list):
     url_list = crawler_support.get_level_one_embedded_link(embedded_path)
+
     for url in url_list:
         embedded_url_index = url_list.index(url)
         file_index = f"{base_index}-{embedded_url_index}"
-        folder_path = util.generate_crawling_folder_for_url(device_conf, ref_flag, act_flag, embedded_url_index)
+        folder_path = util.generate_crawling_folder_for_url(device_conf, ref_flag, act_flag, file_index)
         page, context, referrer = setup_crawler_context(device_conf, ref_flag, browser, device, folder_path)
 
         certificate_extractor.extract_certificate_info(url, folder_path)
@@ -209,11 +210,11 @@ def get_dataset(device_conf, ref_flag, act_flag, browser, device, url_list):
                 crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, content)
                 page.close()
                 context.close()
-                """
+                
                 # Scrape embedded link
                 referrer = url if ref_flag else referrer
                 error_list = scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, url, url_index, error_list)
-                """
+                
         except Exception as e:
             crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, f"Error occurred for url: {url}\n{e}")
             crawler_support.save_crawled_url(folder_path, util_def.ERROR_URL_FLAG)
