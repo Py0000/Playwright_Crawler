@@ -123,4 +123,4 @@ def start_program(seed_url_list):
 
 
 feeds = read_feeds_from_file("feeds.txt")
-start_program(["https://www.google.com"])
+start_program(feeds)
