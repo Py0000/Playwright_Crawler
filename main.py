@@ -3,6 +3,14 @@ import analyzer
 import util_def
 
 
+def read_feeds_from_file(feed_path):
+    urls = []
+    with open(feed_path, "r") as f:
+        for line in f:
+            urls.append(line.strip())
+    return urls
+
+
 def crawl_desktop_user_config(seed_url_list):
     print("\nConfigurations:\nUser-Agent: Desktop User\nReferrer: Google\nUser interaction: Enabled")
     crawler.crawl(util_def.DESKTOP_USER, ref_flag=True, act_flag=True, url_list=seed_url_list)
@@ -113,4 +121,6 @@ def start_program(seed_url_list):
     analyze_mobile_bot_config_data()
 
 
+
+feeds = read_feeds_from_file("feeds.txt")
 start_program(["https://www.google.com"])
