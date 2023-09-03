@@ -728,7 +728,11 @@ def num_of_meta_with_refresh_attrs(soup):
 def meta_refresh_analysis(soup):
     meta_tags = soup.find_all('meta', attrs={'http-equiv': 'refresh'})
     content_values = [meta.get('content') for meta in meta_tags]
-    result_string = '\n'.join(content_values)
+    result_string = ""
+    for content in content_values:
+        if content == None:
+            continue
+        result_string = '\n'.join(content) 
     return result_string    
 
 
