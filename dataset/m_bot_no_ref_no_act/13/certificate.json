@@ -1,0 +1,33 @@
+{
+    "website url": "http://login.yonetimmerkezi-tr.com/",
+    "hostname": "login.yonetimmerkezi-tr.com",
+    "subject": {
+        "commonName": "www.login.yonetimmerkezi-tr.com"
+    },
+    "issuer": {
+        "countryName": "US",
+        "organizationName": "Let's Encrypt",
+        "commonName": "R3"
+    },
+    "version": 3,
+    "not_before": "Jul 16 19:07:28 2023 GMT",
+    "not_after": "Oct 14 19:07:27 2023 GMT",
+    "valid_period": 90,
+    "serial_number": "04CF29B09035F26494A368D2ED2A0936CEFE",
+    "signature_algo": "sha256WithRSAEncryption",
+    "protocol_version": "TLSv1.3",
+    "alternate subject name": [
+        [
+            "DNS",
+            "*.yonetimmerkezi-tr.com"
+        ],
+        [
+            "DNS",
+            "www.login.yonetimmerkezi-tr.com"
+        ],
+        [
+            "DNS",
+            "yonetimmerkezi-tr.com"
+        ]
+    ]
+}

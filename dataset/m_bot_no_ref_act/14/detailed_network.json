@@ -1,0 +1,108 @@
+[
+    {
+        "requestId": "B9A0E69B74A5B0AAA95256270AF66117",
+        "loaderId": "B9A0E69B74A5B0AAA95256270AF66117",
+        "documentURL": "http://3656a.net/",
+        "request": {
+            "url": "http://3656a.net/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 18743.97293,
+        "wallTime": 1693731761.415931,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "2BB47548B2C907F478424AF49FD00789",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "B9A0E69B74A5B0AAA95256270AF66117",
+        "loaderId": "B9A0E69B74A5B0AAA95256270AF66117",
+        "documentURL": "http://3656a.net/mobile-client/index/index.html",
+        "request": {
+            "url": "http://3656a.net/mobile-client/index/index.html",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 18744.061225,
+        "wallTime": 1693731761.504407,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://3656a.net/",
+            "status": 301,
+            "statusText": "Moved Permanently",
+            "headers": {
+                "Cache-Control": "private, no-store, no-cache, must-revalidate, proxy-revalidate",
+                "Connection": "keep-alive",
+                "Content-Length": "166",
+                "Content-Type": "text/html",
+                "Date": "Sun, 03 Sep 2023 09:02:41 GMT",
+                "Location": "/mobile-client/index/index.html",
+                "X-Frame-Options": "SAMEORIGIN"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 6673,
+            "remoteIPAddress": "13.70.48.143",
+            "remotePort": 80,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 292,
+            "timing": {
+                "requestTime": 18743.975547,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.388,
+                "dnsEnd": 6.175,
+                "connectStart": 6.175,
+                "connectEnd": 42.867,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 42.945,
+                "sendEnd": 45.267,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 81.61,
+                "receiveHeadersEnd": 81.704
+            },
+            "responseTime": 1693731761500.071,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "2BB47548B2C907F478424AF49FD00789",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

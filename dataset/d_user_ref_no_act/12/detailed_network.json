@@ -1,0 +1,516 @@
+[
+    {
+        "requestId": "5A7E94D2807A3406F896034850B6357D",
+        "loaderId": "5A7E94D2807A3406F896034850B6357D",
+        "documentURL": "http://package2021.blogspot.ch/",
+        "request": {
+            "url": "http://package2021.blogspot.ch/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4979.509462,
+        "wallTime": 1693717996.952484,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "8BD250A7C9C7B5E554C909C001FED3BD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "5A7E94D2807A3406F896034850B6357D",
+        "loaderId": "5A7E94D2807A3406F896034850B6357D",
+        "documentURL": "http://package2021.blogspot.com/",
+        "request": {
+            "url": "http://package2021.blogspot.com/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4979.697259,
+        "wallTime": 1693717997.14027,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://package2021.blogspot.ch/",
+            "status": 302,
+            "statusText": "Moved Temporarily",
+            "headers": {
+                "Cache-Control": "private, max-age=0",
+                "Content-Encoding": "gzip",
+                "Content-Length": "180",
+                "Content-Security-Policy": "frame-ancestors 'self'",
+                "Content-Type": "text/html; charset=UTF-8",
+                "Date": "Sun, 03 Sep 2023 05:13:17 GMT",
+                "Expires": "Sun, 03 Sep 2023 05:13:17 GMT",
+                "Location": "http://package2021.blogspot.com/",
+                "Server": "GSE",
+                "X-Content-Type-Options": "nosniff",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-XSS-Protection": "1; mode=block"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 3550,
+            "remoteIPAddress": "142.251.10.132",
+            "remotePort": 80,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 432,
+            "timing": {
+                "requestTime": 4979.511888,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.909,
+                "dnsEnd": 2.052,
+                "connectStart": 2.052,
+                "connectEnd": 8.67,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 8.899,
+                "sendEnd": 9.261,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 184.17,
+                "receiveHeadersEnd": 184.3
+            },
+            "responseTime": 1693717997138.972,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "8BD250A7C9C7B5E554C909C001FED3BD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "5A7E94D2807A3406F896034850B6357D",
+        "loaderId": "5A7E94D2807A3406F896034850B6357D",
+        "documentURL": "https://package2021.blogspot.com/",
+        "request": {
+            "url": "https://package2021.blogspot.com/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4980.853018,
+        "wallTime": 1693717998.296176,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://package2021.blogspot.com/",
+            "status": 301,
+            "statusText": "Moved Permanently",
+            "headers": {
+                "Cache-Control": "private, max-age=0",
+                "Content-Encoding": "gzip",
+                "Content-Length": "180",
+                "Content-Security-Policy": "frame-ancestors 'self'",
+                "Content-Type": "text/html; charset=UTF-8",
+                "Date": "Sun, 03 Sep 2023 05:13:18 GMT",
+                "Expires": "Sun, 03 Sep 2023 05:13:18 GMT",
+                "Location": "https://package2021.blogspot.com/",
+                "Server": "GSE",
+                "X-Content-Type-Options": "nosniff",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-XSS-Protection": "1; mode=block"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 3556,
+            "remoteIPAddress": "74.125.24.132",
+            "remotePort": 80,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 433,
+            "timing": {
+                "requestTime": 4979.697763,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.667,
+                "dnsEnd": 4.934,
+                "connectStart": 4.934,
+                "connectEnd": 10.521,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 10.594,
+                "sendEnd": 10.795,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 1153.839,
+                "receiveHeadersEnd": 1153.907
+            },
+            "responseTime": 1693717998294.516,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "8BD250A7C9C7B5E554C909C001FED3BD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "78542.2",
+        "loaderId": "5A7E94D2807A3406F896034850B6357D",
+        "documentURL": "https://package2021.blogspot.com/",
+        "request": {
+            "url": "https://www.gstatic.com/external_hosted/clipboardjs/clipboard.min.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 4981.160565,
+        "wallTime": 1693717998.604072,
+        "initiator": {
+            "type": "parser",
+            "url": "https://package2021.blogspot.com/",
+            "lineNumber": 2438,
+            "columnNumber": 106
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "8BD250A7C9C7B5E554C909C001FED3BD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "78542.3",
+        "loaderId": "5A7E94D2807A3406F896034850B6357D",
+        "documentURL": "https://package2021.blogspot.com/",
+        "request": {
+            "url": "https://package2021.blogspot.com/responsive/sprite_v1_6.css.svg",
+            "urlFragment": "#ic_menu_black_24dp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 4981.16355,
+        "wallTime": 1693717998.606514,
+        "initiator": {
+            "type": "parser",
+            "url": "https://package2021.blogspot.com/",
+            "lineNumber": 2459,
+            "columnNumber": 112
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Other",
+        "frameId": "8BD250A7C9C7B5E554C909C001FED3BD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "78542.7",
+        "loaderId": "5A7E94D2807A3406F896034850B6357D",
+        "documentURL": "https://package2021.blogspot.com/",
+        "request": {
+            "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRCodp-wKdiS_AnaPRcDuTccjM8dtwU5zw0zWli17gog4ttw_1M0to-jtneosI3RcycNfWcGY-_l2S2Fjd_2ee-_1bv_xB73Znqsfl4yhD9AdPWXnahMK7v1NwbSbzySs/s220/DHL-squared-logo.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 4981.164963,
+        "wallTime": 1693717998.607972,
+        "initiator": {
+            "type": "parser",
+            "url": "https://package2021.blogspot.com/",
+            "lineNumber": 2584,
+            "columnNumber": 136
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8BD250A7C9C7B5E554C909C001FED3BD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "78542.8",
+        "loaderId": "5A7E94D2807A3406F896034850B6357D",
+        "documentURL": "https://package2021.blogspot.com/",
+        "request": {
+            "url": "https://resources.blogblog.com/blogblog/data/res/853146803-indie_compiled.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 4981.165488,
+        "wallTime": 1693717998.608475,
+        "initiator": {
+            "type": "parser",
+            "url": "https://package2021.blogspot.com/",
+            "lineNumber": 2584,
+            "columnNumber": 136
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "8BD250A7C9C7B5E554C909C001FED3BD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "78542.9",
+        "loaderId": "5A7E94D2807A3406F896034850B6357D",
+        "documentURL": "https://package2021.blogspot.com/",
+        "request": {
+            "url": "https://www.blogger.com/static/v1/widgets/774169911-widgets.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 4981.165852,
+        "wallTime": 1693717998.608829,
+        "initiator": {
+            "type": "parser",
+            "url": "https://package2021.blogspot.com/",
+            "lineNumber": 2586,
+            "columnNumber": 109
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "8BD250A7C9C7B5E554C909C001FED3BD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "78542.35",
+        "loaderId": "5A7E94D2807A3406F896034850B6357D",
+        "documentURL": "https://package2021.blogspot.com/",
+        "request": {
+            "url": "https://themes.googleusercontent.com/image?id=L1lcAxxz0CLgsDzixEprHJ2F38TyEjCyE3RSAjynQDks0lT1BDc1OxXKaTEdLc89HPvdB11X9FDw&options=w1600",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 4981.177328,
+        "wallTime": 1693717998.620369,
+        "initiator": {
+            "type": "parser",
+            "url": "https://package2021.blogspot.com/",
+            "lineNumber": 2586,
+            "columnNumber": 109
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8BD250A7C9C7B5E554C909C001FED3BD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "78542.27",
+        "loaderId": "5A7E94D2807A3406F896034850B6357D",
+        "documentURL": "https://package2021.blogspot.com/",
+        "request": {
+            "url": "https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://package2021.blogspot.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 4981.187508,
+        "wallTime": 1693717998.630517,
+        "initiator": {
+            "type": "parser",
+            "url": "https://package2021.blogspot.com/",
+            "lineNumber": 2586,
+            "columnNumber": 109
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "8BD250A7C9C7B5E554C909C001FED3BD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "78542.34",
+        "loaderId": "5A7E94D2807A3406F896034850B6357D",
+        "documentURL": "https://package2021.blogspot.com/",
+        "request": {
+            "url": "https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://package2021.blogspot.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 4981.191784,
+        "wallTime": 1693717998.634781,
+        "initiator": {
+            "type": "parser",
+            "url": "https://package2021.blogspot.com/",
+            "lineNumber": 2586,
+            "columnNumber": 109
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "8BD250A7C9C7B5E554C909C001FED3BD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "78542.39",
+        "loaderId": "5A7E94D2807A3406F896034850B6357D",
+        "documentURL": "https://package2021.blogspot.com/",
+        "request": {
+            "url": "https://www.blogger.com/img/blogger_logo_round_35.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 4981.461774,
+        "wallTime": 1693717998.904745,
+        "initiator": {
+            "type": "parser",
+            "url": "https://package2021.blogspot.com/",
+            "lineNumber": 2599,
+            "columnNumber": 8
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8BD250A7C9C7B5E554C909C001FED3BD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

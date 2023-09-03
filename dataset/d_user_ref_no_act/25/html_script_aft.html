@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+  <title>
+   ログイン - メルカリ スマホでかんたん フリマアプリ
+  </title>
+  <meta content="CMで話題！フリマアプリ「メルカリ」は、スマホから誰でも簡単に売り買いが楽しめるフリマアプリです。購入時はクレジットカード・キャリア決済・コンビニ・銀行ATMで支払いでき、品物が届いてから出品者に入金される独自システムで安心です。" name="description"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <link href="https://www.mercari.com/jp/login/" rel="canonical"/>
+  <link href="https://www.mercari.com/jp/login/" hreflang="ja" rel="alternate"/>
+  <link href="/jp/assets/css/app.jp.css?365456439" rel="stylesheet"/>
+  <link href="//pcweb-assets.mercdn.net/favicon.ico?3660596335" rel="shortcut icon"/>
+  <link href="//pcweb-assets.mercdn.net/apple-touch-icon.png?3660596335" rel="apple-touch-icon"/>
+  <link href="//pcweb-assets.mercdn.net/favicon-16x16.png?3660596335" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="//pcweb-assets.mercdn.net/favicon-32x32.png?3660596335" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="//pcweb-assets.mercdn.net/favicon-194x194.png?3660596335" rel="icon" sizes="194x194" type="image/png"/>
+  <link href="//pcweb-assets.mercdn.net/android-chrome-192x192.png?3660596335" rel="icon" sizes="192x192" type="image/png"/>
+  <link color="#ea352d" href="//pcweb-assets.mercdn.net/safari-pinned-tab.svg?3660596335" rel="mask-icon"/>
+  <meta content="#ffc40d" name="msapplication-TileColor"/>
+  <meta content="//pcweb-assets.mercdn.net/mstile-144x144.png?3660596335" name="msapplication-TileImage"/>
+  <meta content="#ea352d" name="theme-color"/>
+  <link href="//pcweb-assets.mercdn.net/apple-touch-icon-precomposed.png?3660596335" rel="apple-touch-icon-precomposed"/>
+  <link href="//pcweb-assets.mercdn.net/apple-touch-icon-57x57.png?3660596335" rel="apple-touch-icon" sizes="57x57"/>
+  <link href="//pcweb-assets.mercdn.net/apple-touch-icon-60x60.png?3660596335" rel="apple-touch-icon" sizes="60x60"/>
+  <link href="//pcweb-assets.mercdn.net/apple-touch-icon-72x72.png?3660596335" rel="apple-touch-icon" sizes="72x72"/>
+  <link href="//pcweb-assets.mercdn.net/apple-touch-icon-76x76.png?3660596335" rel="apple-touch-icon" sizes="76x76"/>
+  <link href="//pcweb-assets.mercdn.net/apple-touch-icon-114x114.png?3660596335" rel="apple-touch-icon" sizes="114x114"/>
+  <link href="//pcweb-assets.mercdn.net/apple-touch-icon-120x120.png?3660596335" rel="apple-touch-icon" sizes="120x120"/>
+  <link href="//pcweb-assets.mercdn.net/apple-touch-icon-144x144.png?3660596335" rel="apple-touch-icon" sizes="144x144"/>
+  <link href="//pcweb-assets.mercdn.net/apple-touch-icon-152x152.png?3660596335" rel="apple-touch-icon" sizes="152x152"/>
+  <link href="//pcweb-assets.mercdn.net/apple-touch-icon-180x180.png?3660596335" rel="apple-touch-icon" sizes="180x180"/>
+ </head>
+ <body>
+  <div class="single-container">
+   <header class="single-header">
+    <h1>
+     <a href="https://www.mercari.com/jp/">
+      <img alt="mercari" src="//pcweb-assets.mercdn.net/assets/img/common/common/logo.svg?3660596335"/>
+     </a>
+    </h1>
+   </header>
+   <main class="single-main">
+    <div class="login-panel">
+     <!--.login-no-accountp アカウントをお持ちでない方はこちら
+a(href='https://www.mercari.com/jp/signup/') 新規会員登録-->
+     <div class="login-form-inner">
+     </div>
+     <form action="/jp/login/" class="login_form_password" method="POST">
+      <div class="login-form-inner">
+       <div class="form-group">
+        <input class="login-input-text input-default" name="email" placeholder="電話番号" required="" type="text" value=""/>
+        <!--input.login-input-text.input-default(type='text', name='email', value='', placeholder='メールアドレス' required)-->
+       </div>
+       <div class="form-group">
+        <input class="login-input-text input-default" name="password" placeholder="パスワード" required="" type="password"/>
+       </div>
+       <button class="login-submit btn-default btn-red" type="submit">
+        ログイン
+       </button>
+       <a href="https://www.mercari.com/jp/password/reset/start/">
+        パスワードをお忘れの方
+       </a>
+      </div>
+     </form>
+    </div>
+    <form action="/jp/login/" id="login_form_facebook" method="POST" novalidate="novalidate">
+     <input name="nickname" type="hidden" value=""/>
+     <input name="email" type="hidden" value=""/>
+     <input name="facebook_user_id" type="hidden" value=""/>
+     <input name="facebook_access_token" type="hidden" value=""/>
+     <input name="login_type" type="hidden" value="facebook"/>
+    </form>
+    <form action="/jp/login/" id="login_form_google" method="POST" novalidate="novalidate">
+     <input name="nickname" type="hidden" value=""/>
+     <input name="email" type="hidden" value=""/>
+     <input name="google_user_id" type="hidden" value=""/>
+     <input name="google_access_token" type="hidden" value=""/>
+     <input name="login_type" type="hidden" value="google"/>
+    </form>
+   </main>
+   <footer class="single-footer">
+    <nav>
+     <ul class="clearfix">
+      <li>
+       <a href="https://www.mercari.com/jp/privacy/">
+        プライバシーポリシー
+       </a>
+      </li>
+      <li>
+       <a href="https://www.mercari.com/jp/tos/">
+        メルカリ利用規約
+       </a>
+      </li>
+      <li>
+       <a href="https://www.mercari.com/jp/tokutei/">
+        特定商取引に関する表記
+       </a>
+      </li>
+     </ul>
+    </nav>
+    <a class="single-footer-logo" href="https://www.mercari.com/jp/">
+     <img alt="mercari" height="65" src="//pcweb-assets.mercdn.net/assets/img/common/common/logo-gray.svg?3660596335" width="80"/>
+    </a>
+    <p>
+     <small>
+      © Mercari, Inc.
+     </small>
+    </p>
+   </footer>
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" src="https://code.jquery.com/jquery-2.2.4.min.js">
+  </script>
+ </body>
+</html>

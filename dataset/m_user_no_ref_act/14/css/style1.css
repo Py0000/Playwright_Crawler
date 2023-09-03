@@ -1,0 +1,75 @@
+/*åå§å*/
+html,body{
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hide{ display: none;}
+section .container{max-width: 1260px;width: 100%;min-height:100%;margin: 0 auto; display: flex;align-items: center;justify-content: center;}
+section .container .box{ height: 600px;width: 100%;display: flex;justify-content: center;  align-items: center;}
+/*å·¦ä¾§å¾çæ ·å¼*/
+section .container .box .errorTypeImg { margin-top: 50px;}
+section .container .box .errorTypeImg img{ max-width: 100%;}
+
+/*å³ä¾§æ ·å¼*/
+section .container .box .errorInfo{ min-width: 536px;margin-left: 50px;}
+section .container .box .errorInfo .siteLogo img{ max-height: 200px;max-width: 100%;}
+section .container .box .errorInfo .TypeInfo_CN { font-size: 60px;margin-top: 10px;font-weight: bold; display: none;}
+section .container .box .errorInfo .TypeInfo_EN { font-size: 42px;color: #ffffff; text-transform: uppercase;}
+section .container .box .errorInfo .ip { font-size: 18px;margin-bottom: 28px;}
+section .container .box .errorInfo .country { margin-bottom: 6px;display: flex;}
+section .container .box .errorInfo .country span{display: inline-block;}
+section .container .box .errorInfo .country .icon{width: 20px;height: 20px; vertical-align: top; margin-top: 2px;}
+section .container .box .errorInfo .country .icon img{ max-width: 100%;}
+section .container .box .errorInfo .country span.text{ max-width: 575px;margin-left: 12px; font-size: 14px;line-height: 26px;}
+section .container .box .errorInfo .service { margin-top: 30px;}
+section .container .box .errorInfo .service a{ background: url(../images/service.png)no-repeat center/100%;font-size: 20px;color: #fff; display: block;width: 166px;height: 64px;line-height: 68px;text-decoration: none;text-align: center;}
+
+/*å³ä¾§é£æ ¼ä¸å,å­ä½é¢è²ä¸å*/
+        /*é»è²èæ¯é£æ ¼*/
+section.black {background-color: #000;}
+section.black .container .box .errorInfo .TypeInfo_CN { color: #fff;}
+section.black .container .box .errorInfo .ip{color: #ffdc72;}
+section.black .container .box .errorInfo .country span.text{ color: #ccc;}
+/*è¯¥åç´ åªå¨603é¡µé¢ä¸ä¼åºç°*/
+section.black .container .box .errorInfo .time .itemEnd.text { color: #fff}
+/*è¯¥åç´ åªå¨608é¡µé¢ä¸ä¼åºç°*/
+section.black .container .box .errorInfo .typeerror_608 { max-width: 575px; color: #fff}
+
+        /*ç½è²èæ¯é£æ ¼*/
+section.white .container .box .errorInfo .TypeInfo_CN { color: #414655;}
+section.white .container .box .errorInfo .ip{color: #d8a00a;}
+section.white .container .box .errorInfo .country span.text{ color: #888888;}
+section.white .container .box .errorInfo .time .itemEnd.text{ color: #333}
+
+
+@media screen and (max-width:1024px){
+    section .container .box .errorInfo {padding-right: 20px;    margin-left: 0;}
+}
+@media screen and (max-width:768px){
+    section .container { justify-content: unset;align-items: unset;}
+    section .container .box {height: 100%; padding:  0 4vw;;align-items: unset;justify-content: unset;}
+    section .container .box .errorInfo {min-width: 100%;text-align: center;padding-right: 0;}
+    section .container .box .errorInfo .TypeInfo_CN {font-size: 9.333333333333334vw;margin-top: 2.933333333333333vw;}
+    section .container .box .errorInfo .TypeInfo_EN {font-size: 6vw;}
+    section .container .box .errorInfo .ip {font-size: 3.2vw;margin: 0;}
+    section .container .box .errorTypeImg {margin: 0;}
+    section .container .box .errorTypeImg img {max-width: 90%;}
+    section .container .box .errorInfo .siteLogo {margin-top: 13.333333333333334vw;}
+    section .container .box .errorInfo .country {margin-bottom: 2.4vw;}
+    section .container .box .errorInfo .country .icon {min-width: 5.333333333333334vw;height: 5.333333333333334vw;}
+    section .container .box .errorInfo .country span.text {max-width: 100%; text-align: left; margin-left: 2.666666666666667vw;    line-height: 5.333333333333334vw;font-size: 2.666666666666667vw;}
+    section .container .box .errorInfo .service { margin: 6.666666666666667vw 0 8vw;}
+    section .container .box .errorInfo .service a{ width: 29.333333333333332vw;height: 9.466666666666667vw;font-size: 3.5333333333333337vw;line-height: 10.466666666666667vw;margin: 0 auto;}
+}
+

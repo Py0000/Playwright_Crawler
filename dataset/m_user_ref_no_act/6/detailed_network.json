@@ -1,0 +1,258 @@
+[
+    {
+        "requestId": "45C798E083D2FF0C6E13DC0325C70D78",
+        "loaderId": "45C798E083D2FF0C6E13DC0325C70D78",
+        "documentURL": "http://r80q9c.webwave.dev/",
+        "request": {
+            "url": "http://r80q9c.webwave.dev/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 13495.700214,
+        "wallTime": 1693726513.143217,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "0541DF94579E9A37FDF59380E2F0A472",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "45C798E083D2FF0C6E13DC0325C70D78",
+        "loaderId": "45C798E083D2FF0C6E13DC0325C70D78",
+        "documentURL": "https://r80q9c.webwave.dev/",
+        "request": {
+            "url": "https://r80q9c.webwave.dev/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 13495.72015,
+        "wallTime": 1693726513.163272,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://r80q9c.webwave.dev/",
+            "status": 307,
+            "statusText": "Internal Redirect",
+            "headers": {
+                "Cross-Origin-Resource-Policy": "Cross-Origin",
+                "Location": "https://r80q9c.webwave.dev/",
+                "Non-Authoritative-Reason": "HSTS"
+            },
+            "mimeType": "",
+            "connectionReused": false,
+            "connectionId": 0,
+            "remoteIPAddress": "",
+            "remotePort": 0,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 0,
+            "timing": {
+                "requestTime": 13495.708741,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": -1,
+                "dnsEnd": -1,
+                "connectStart": -1,
+                "connectEnd": -1,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 0.125,
+                "sendEnd": 0.125,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 0.125,
+                "receiveHeadersEnd": 0.125
+            },
+            "responseTime": 1693726513151.78,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "0541DF94579E9A37FDF59380E2F0A472",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "188483.2",
+        "loaderId": "45C798E083D2FF0C6E13DC0325C70D78",
+        "documentURL": "https://r80q9c.webwave.dev/",
+        "request": {
+            "url": "https://r80q9c.webwave.dev/files/assets/com/webwave/staticContent/websiteRestrictionContent-5fa59b9e86ca582636d1bb42c67c8368.css",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13496.225443,
+        "wallTime": 1693726513.668454,
+        "initiator": {
+            "type": "parser",
+            "url": "https://r80q9c.webwave.dev/",
+            "lineNumber": 5,
+            "columnNumber": 138
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "0541DF94579E9A37FDF59380E2F0A472",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "cache-with-varnish",
+                    "value": "true",
+                    "domain": "r80q9c.webwave.dev",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 22,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "188483.3",
+        "loaderId": "45C798E083D2FF0C6E13DC0325C70D78",
+        "documentURL": "https://r80q9c.webwave.dev/",
+        "request": {
+            "url": "https://r80q9c.webwave.dev/files/assets/logo/brand-logo-dark-419d0d2aa630d34e8f97f934d09ab64f.svg",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13496.226459,
+        "wallTime": 1693726513.669485,
+        "initiator": {
+            "type": "parser",
+            "url": "https://r80q9c.webwave.dev/",
+            "lineNumber": 28,
+            "columnNumber": 92
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0541DF94579E9A37FDF59380E2F0A472",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "cache-with-varnish",
+                    "value": "true",
+                    "domain": "r80q9c.webwave.dev",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 22,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "188483.6",
+        "loaderId": "45C798E083D2FF0C6E13DC0325C70D78",
+        "documentURL": "https://r80q9c.webwave.dev/",
+        "request": {
+            "url": "https://r80q9c.webwave.dev/publishedWebsite/createRestrictionHrefValue/r80q9c",
+            "method": "POST",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13496.636034,
+        "wallTime": 1693726514.079916,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://r80q9c.webwave.dev/",
+                        "lineNumber": 14,
+                        "columnNumber": 21
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "0541DF94579E9A37FDF59380E2F0A472",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "cache-with-varnish",
+                    "value": "true",
+                    "domain": "r80q9c.webwave.dev",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 22,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

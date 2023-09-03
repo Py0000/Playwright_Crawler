@@ -1,0 +1,498 @@
+[
+    {
+        "requestId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "loaderId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "documentURL": "http://enolmeccanica.my.to/",
+        "request": {
+            "url": "http://enolmeccanica.my.to/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 13002.713224,
+        "wallTime": 1693726020.156192,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "40223311D5B5D911E6726ED1E296B744",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "loaderId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "documentURL": "https://enolmeccanica.my.to/",
+        "request": {
+            "url": "https://enolmeccanica.my.to/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 13002.798641,
+        "wallTime": 1693726020.241691,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://enolmeccanica.my.to/",
+            "status": 301,
+            "statusText": "Moved Permanently",
+            "headers": {
+                "Connection": "keep-alive",
+                "Content-Length": "162",
+                "Content-Type": "text/html",
+                "Date": "Sun, 03 Sep 2023 07:27:00 GMT",
+                "Location": "https://enolmeccanica.my.to/",
+                "Referrer-Policy": "same-origin",
+                "Server": "nginx",
+                "X-Content-Type-Options": "nosniff",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-Permitted-Cross-Domain-Policies": "master-only",
+                "X-XSS-Protection": "1; mode=block"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 5164,
+            "remoteIPAddress": "146.190.106.33",
+            "remotePort": 80,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 369,
+            "timing": {
+                "requestTime": 13002.71441,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 3.293,
+                "dnsEnd": 4.664,
+                "connectStart": 4.664,
+                "connectEnd": 42.846,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 43.021,
+                "sendEnd": 43.308,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 81.934,
+                "receiveHeadersEnd": 82.192
+            },
+            "responseTime": 1693726020239.257,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "40223311D5B5D911E6726ED1E296B744",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "181963.2",
+        "loaderId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "documentURL": "https://enolmeccanica.my.to/",
+        "request": {
+            "url": "https://voltronlc.com.tw/images/pdf-logo.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 13002.980221,
+        "wallTime": 1693726020.423188,
+        "initiator": {
+            "type": "parser",
+            "url": "https://enolmeccanica.my.to/",
+            "lineNumber": 503,
+            "columnNumber": 83
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "40223311D5B5D911E6726ED1E296B744",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "181963.3",
+        "loaderId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "documentURL": "https://enolmeccanica.my.to/",
+        "request": {
+            "url": "https://voltronlc.com.tw/images/100Secure.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 13002.98524,
+        "wallTime": 1693726020.428221,
+        "initiator": {
+            "type": "parser",
+            "url": "https://enolmeccanica.my.to/",
+            "lineNumber": 507,
+            "columnNumber": 83
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "40223311D5B5D911E6726ED1E296B744",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "181963.4",
+        "loaderId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "documentURL": "https://enolmeccanica.my.to/",
+        "request": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/AOL_Eraser.svg/200px-AOL_Eraser.svg.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 13002.986615,
+        "wallTime": 1693726020.429822,
+        "initiator": {
+            "type": "parser",
+            "url": "https://enolmeccanica.my.to/",
+            "lineNumber": 510,
+            "columnNumber": 140
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "40223311D5B5D911E6726ED1E296B744",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "181963.5",
+        "loaderId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "documentURL": "https://enolmeccanica.my.to/",
+        "request": {
+            "url": "https://voltronlc.com.tw/images/download.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 13002.987065,
+        "wallTime": 1693726020.430018,
+        "initiator": {
+            "type": "parser",
+            "url": "https://enolmeccanica.my.to/",
+            "lineNumber": 511,
+            "columnNumber": 87
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "40223311D5B5D911E6726ED1E296B744",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "181963.6",
+        "loaderId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "documentURL": "https://enolmeccanica.my.to/",
+        "request": {
+            "url": "https://voltronlc.com.tw/images/outlook-logo.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 13002.987524,
+        "wallTime": 1693726020.430535,
+        "initiator": {
+            "type": "parser",
+            "url": "https://enolmeccanica.my.to/",
+            "lineNumber": 512,
+            "columnNumber": 91
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "40223311D5B5D911E6726ED1E296B744",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "181963.7",
+        "loaderId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "documentURL": "https://enolmeccanica.my.to/",
+        "request": {
+            "url": "https://voltronlc.com.tw/images/webmail-logo.gif",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 13002.987865,
+        "wallTime": 1693726020.430822,
+        "initiator": {
+            "type": "parser",
+            "url": "https://enolmeccanica.my.to/",
+            "lineNumber": 513,
+            "columnNumber": 91
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "40223311D5B5D911E6726ED1E296B744",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "181963.8",
+        "loaderId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "documentURL": "https://enolmeccanica.my.to/",
+        "request": {
+            "url": "https://voltronlc.com.tw/images/yahoo-logo.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 13002.987987,
+        "wallTime": 1693726020.430933,
+        "initiator": {
+            "type": "parser",
+            "url": "https://enolmeccanica.my.to/",
+            "lineNumber": 514,
+            "columnNumber": 89
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "40223311D5B5D911E6726ED1E296B744",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "181963.9",
+        "loaderId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "documentURL": "https://enolmeccanica.my.to/",
+        "request": {
+            "url": "https://voltronlc.com.tw/images/email-logo.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 13002.988274,
+        "wallTime": 1693726020.431229,
+        "initiator": {
+            "type": "parser",
+            "url": "https://enolmeccanica.my.to/",
+            "lineNumber": 515,
+            "columnNumber": 89
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "40223311D5B5D911E6726ED1E296B744",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "181963.20",
+        "loaderId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "documentURL": "https://enolmeccanica.my.to/",
+        "request": {
+            "url": "https://esatups.com/anayo/bg.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://enolmeccanica.my.to/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 13003.012197,
+        "wallTime": 1693726020.455232,
+        "initiator": {
+            "type": "parser",
+            "url": "https://enolmeccanica.my.to/",
+            "lineNumber": 553,
+            "columnNumber": 15
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "40223311D5B5D911E6726ED1E296B744",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "181963.21",
+        "loaderId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "documentURL": "https://enolmeccanica.my.to/",
+        "request": {
+            "url": "https://voltronlc.com.tw/images/smallpdf.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://enolmeccanica.my.to/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 13003.032973,
+        "wallTime": 1693726020.47852,
+        "initiator": {
+            "type": "parser",
+            "url": "https://enolmeccanica.my.to/",
+            "lineNumber": 553,
+            "columnNumber": 15
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "40223311D5B5D911E6726ED1E296B744",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "181963.18",
+        "loaderId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "documentURL": "https://enolmeccanica.my.to/",
+        "request": {
+            "url": "https://enolmeccanica.my.to/fonts/et-line.woff",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://enolmeccanica.my.to/",
+                "Origin": "https://enolmeccanica.my.to",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 13003.057366,
+        "wallTime": 1693726020.500367,
+        "initiator": {
+            "type": "parser",
+            "url": "https://enolmeccanica.my.to/",
+            "lineNumber": 553,
+            "columnNumber": 15
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "40223311D5B5D911E6726ED1E296B744",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "181963.19",
+        "loaderId": "6E44246BB5DD13CD62563F0AF436E49E",
+        "documentURL": "https://enolmeccanica.my.to/",
+        "request": {
+            "url": "https://enolmeccanica.my.to/fonts/et-line.ttf",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://enolmeccanica.my.to/",
+                "Origin": "https://enolmeccanica.my.to",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 13003.185452,
+        "wallTime": 1693726020.628443,
+        "initiator": {
+            "type": "parser",
+            "url": "https://enolmeccanica.my.to/",
+            "lineNumber": 553,
+            "columnNumber": 15
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "40223311D5B5D911E6726ED1E296B744",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

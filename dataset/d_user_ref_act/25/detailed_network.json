@@ -1,0 +1,703 @@
+[
+    {
+        "requestId": "0C0176582A96C7323EC62B7CBE6D4502",
+        "loaderId": "0C0176582A96C7323EC62B7CBE6D4502",
+        "documentURL": "https://merucardi.com/",
+        "request": {
+            "url": "https://merucardi.com/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3838.965614,
+        "wallTime": 1693716856.408621,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "5F751F54D4ECA744B2E331CBAB57D033",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "0C0176582A96C7323EC62B7CBE6D4502",
+        "loaderId": "0C0176582A96C7323EC62B7CBE6D4502",
+        "documentURL": "https://merucardi.com/jp/login.html",
+        "request": {
+            "url": "https://merucardi.com/jp/login.html",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3839.230494,
+        "wallTime": 1693716856.673553,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://merucardi.com/",
+            "status": 302,
+            "statusText": "Found",
+            "headers": {
+                "Connection": "keep-alive",
+                "Content-Length": "72",
+                "Content-Type": "text/html; charset=utf-8",
+                "Date": "Sun, 03 Sep 2023 04:54:16 GMT",
+                "Location": "/jp/login.html",
+                "Server": "nginx/1.24.0",
+                "Vary": "Accept",
+                "X-Powered-By": "Express"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 7712,
+            "remoteIPAddress": "133.167.77.85",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 355,
+            "timing": {
+                "requestTime": 3838.966973,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.771,
+                "dnsEnd": 7.516,
+                "connectStart": 7.516,
+                "connectEnd": 178.527,
+                "sslStart": 90.425,
+                "sslEnd": 178.518,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 178.69,
+                "sendEnd": 178.834,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 262.481,
+                "receiveHeadersEnd": 262.582
+            },
+            "responseTime": 1693716856672.368,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.3",
+                "keyExchange": "",
+                "keyExchangeGroup": "X25519",
+                "cipher": "AES_128_GCM",
+                "certificateId": 0,
+                "subjectName": "merucardi.com",
+                "sanList": [
+                    "merucardi.com"
+                ],
+                "issuer": "R3",
+                "validFrom": 1693590875,
+                "validTo": 1701366874,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "serverSignatureAlgorithm": 2052,
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Document",
+        "frameId": "5F751F54D4ECA744B2E331CBAB57D033",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "64572.2",
+        "loaderId": "0C0176582A96C7323EC62B7CBE6D4502",
+        "documentURL": "https://merucardi.com/jp/login.html",
+        "request": {
+            "url": "https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 3839.341732,
+        "wallTime": 1693716856.784918,
+        "initiator": {
+            "type": "parser",
+            "url": "https://merucardi.com/jp/login.html",
+            "lineNumber": 3,
+            "columnNumber": 105
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "5F751F54D4ECA744B2E331CBAB57D033",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "mercar:sid",
+                    "value": "s%3A22eb79a8-412f-4d0e-b578-2d494bb5e320.qGbTZXOIplnIUfQAZJor4ckHAomMLFyXtaM1a7KwGn4",
+                    "domain": "merucardi.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 94,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "64572.3",
+        "loaderId": "0C0176582A96C7323EC62B7CBE6D4502",
+        "documentURL": "https://merucardi.com/jp/login.html",
+        "request": {
+            "url": "https://cdnjs.cloudflare.com/ajax/libs/Base64/1.1.0/base64.min.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 3839.342568,
+        "wallTime": 1693716856.785538,
+        "initiator": {
+            "type": "parser",
+            "url": "https://merucardi.com/jp/login.html",
+            "lineNumber": 4,
+            "columnNumber": 107
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "5F751F54D4ECA744B2E331CBAB57D033",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "mercar:sid",
+                    "value": "s%3A22eb79a8-412f-4d0e-b578-2d494bb5e320.qGbTZXOIplnIUfQAZJor4ckHAomMLFyXtaM1a7KwGn4",
+                    "domain": "merucardi.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 94,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "64572.6",
+        "loaderId": "0C0176582A96C7323EC62B7CBE6D4502",
+        "documentURL": "https://merucardi.com/jp/login.html",
+        "request": {
+            "url": "https://merucardi.com/jp/login?v=&_=1693716856986",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Accept": "*/*",
+                "Referer": "https://www.google.com",
+                "X-Requested-With": "XMLHttpRequest",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 3839.546466,
+        "wallTime": 1693716856.990796,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "e.ajax",
+                        "scriptId": "11",
+                        "url": "https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js",
+                        "lineNumber": 1,
+                        "columnNumber": 24731
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "13",
+                        "url": "https://merucardi.com/jp/login.html",
+                        "lineNumber": 15,
+                        "columnNumber": 10
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "5F751F54D4ECA744B2E331CBAB57D033",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "mercar:sid",
+                    "value": "s%3A22eb79a8-412f-4d0e-b578-2d494bb5e320.qGbTZXOIplnIUfQAZJor4ckHAomMLFyXtaM1a7KwGn4",
+                    "domain": "merucardi.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 94,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "64572.7",
+        "loaderId": "0C0176582A96C7323EC62B7CBE6D4502",
+        "documentURL": "https://merucardi.com/jp/login.html",
+        "request": {
+            "url": "https://merucardi.com/jp/assets/css/app.jp.css?365456439",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 3839.709712,
+        "wallTime": 1693716857.153062,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "success",
+                        "scriptId": "13",
+                        "url": "https://merucardi.com/jp/login.html",
+                        "lineNumber": 26,
+                        "columnNumber": 20
+                    },
+                    {
+                        "functionName": "y",
+                        "scriptId": "11",
+                        "url": "https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js",
+                        "lineNumber": 1,
+                        "columnNumber": 20275
+                    },
+                    {
+                        "functionName": "N.onreadystatechange",
+                        "scriptId": "11",
+                        "url": "https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js",
+                        "lineNumber": 1,
+                        "columnNumber": 24333
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "5F751F54D4ECA744B2E331CBAB57D033",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "mercar:sid",
+                    "value": "s%3A22eb79a8-412f-4d0e-b578-2d494bb5e320.qGbTZXOIplnIUfQAZJor4ckHAomMLFyXtaM1a7KwGn4",
+                    "domain": "merucardi.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 94,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "64572.8",
+        "loaderId": "0C0176582A96C7323EC62B7CBE6D4502",
+        "documentURL": "https://merucardi.com/jp/login.html",
+        "request": {
+            "url": "https://code.jquery.com/jquery-2.2.4.min.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://merucardi.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "Intervention": "<https://www.chromestatus.com/feature/5718547946799104>; level=\"warning\"",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 3839.712283,
+        "wallTime": 1693716857.155568,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "success",
+                        "scriptId": "13",
+                        "url": "https://merucardi.com/jp/login.html",
+                        "lineNumber": 26,
+                        "columnNumber": 20
+                    },
+                    {
+                        "functionName": "y",
+                        "scriptId": "11",
+                        "url": "https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js",
+                        "lineNumber": 1,
+                        "columnNumber": 20275
+                    },
+                    {
+                        "functionName": "N.onreadystatechange",
+                        "scriptId": "11",
+                        "url": "https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js",
+                        "lineNumber": 1,
+                        "columnNumber": 24333
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "5F751F54D4ECA744B2E331CBAB57D033",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "mercar:sid",
+                    "value": "s%3A22eb79a8-412f-4d0e-b578-2d494bb5e320.qGbTZXOIplnIUfQAZJor4ckHAomMLFyXtaM1a7KwGn4",
+                    "domain": "merucardi.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 94,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "64572.10",
+        "loaderId": "0C0176582A96C7323EC62B7CBE6D4502",
+        "documentURL": "https://merucardi.com/jp/login.html",
+        "request": {
+            "url": "https://pcweb-assets.mercdn.net/assets/img/common/common/logo.svg?3660596335",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 3839.720551,
+        "wallTime": 1693716857.163968,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "success",
+                        "scriptId": "13",
+                        "url": "https://merucardi.com/jp/login.html",
+                        "lineNumber": 26,
+                        "columnNumber": 20
+                    },
+                    {
+                        "functionName": "y",
+                        "scriptId": "11",
+                        "url": "https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js",
+                        "lineNumber": 1,
+                        "columnNumber": 20275
+                    },
+                    {
+                        "functionName": "N.onreadystatechange",
+                        "scriptId": "11",
+                        "url": "https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js",
+                        "lineNumber": 1,
+                        "columnNumber": 24333
+                    }
+                ]
+            },
+            "lineNumber": 0,
+            "columnNumber": 2932
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "5F751F54D4ECA744B2E331CBAB57D033",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "mercar:sid",
+                    "value": "s%3A22eb79a8-412f-4d0e-b578-2d494bb5e320.qGbTZXOIplnIUfQAZJor4ckHAomMLFyXtaM1a7KwGn4",
+                    "domain": "merucardi.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 94,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "64572.11",
+        "loaderId": "0C0176582A96C7323EC62B7CBE6D4502",
+        "documentURL": "https://merucardi.com/jp/login.html",
+        "request": {
+            "url": "https://pcweb-assets.mercdn.net/assets/img/common/common/logo-gray.svg?3660596335",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 3839.724363,
+        "wallTime": 1693716857.16753,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "success",
+                        "scriptId": "13",
+                        "url": "https://merucardi.com/jp/login.html",
+                        "lineNumber": 26,
+                        "columnNumber": 20
+                    },
+                    {
+                        "functionName": "y",
+                        "scriptId": "11",
+                        "url": "https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js",
+                        "lineNumber": 1,
+                        "columnNumber": 20275
+                    },
+                    {
+                        "functionName": "N.onreadystatechange",
+                        "scriptId": "11",
+                        "url": "https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js",
+                        "lineNumber": 1,
+                        "columnNumber": 24333
+                    }
+                ]
+            },
+            "lineNumber": 1,
+            "columnNumber": 1909
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "5F751F54D4ECA744B2E331CBAB57D033",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "mercar:sid",
+                    "value": "s%3A22eb79a8-412f-4d0e-b578-2d494bb5e320.qGbTZXOIplnIUfQAZJor4ckHAomMLFyXtaM1a7KwGn4",
+                    "domain": "merucardi.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 94,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "64572.15",
+        "loaderId": "0C0176582A96C7323EC62B7CBE6D4502",
+        "documentURL": "https://merucardi.com/jp/login.html",
+        "request": {
+            "url": "https://merucardi.com/jp/assets/fonts/SourceSansPro-Regular.ttf.woff2?37328315",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://merucardi.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 3840.170749,
+        "wallTime": 1693716857.613748,
+        "initiator": {
+            "type": "parser",
+            "url": "https://merucardi.com/jp/assets/css/app.jp.css?365456439"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "5F751F54D4ECA744B2E331CBAB57D033",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "mercar:sid",
+                    "value": "s%3A22eb79a8-412f-4d0e-b578-2d494bb5e320.qGbTZXOIplnIUfQAZJor4ckHAomMLFyXtaM1a7KwGn4",
+                    "domain": "merucardi.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 94,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "64572.18",
+        "loaderId": "0C0176582A96C7323EC62B7CBE6D4502",
+        "documentURL": "https://merucardi.com/jp/login.html",
+        "request": {
+            "url": "https://merucardi.com/jp/assets/fonts/SourceSansPro-Semibold.ttf.woff2?37328315",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://merucardi.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 3840.18742,
+        "wallTime": 1693716857.630425,
+        "initiator": {
+            "type": "parser",
+            "url": "https://merucardi.com/jp/assets/css/app.jp.css?365456439"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "5F751F54D4ECA744B2E331CBAB57D033",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "mercar:sid",
+                    "value": "s%3A22eb79a8-412f-4d0e-b578-2d494bb5e320.qGbTZXOIplnIUfQAZJor4ckHAomMLFyXtaM1a7KwGn4",
+                    "domain": "merucardi.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 94,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

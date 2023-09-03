@@ -1,0 +1,29 @@
+{
+    "website url": "http://www.gvpedia.com/Westpac/login/index3.html",
+    "hostname": "www.gvpedia.com",
+    "subject": {
+        "commonName": "*.gvpedia.com"
+    },
+    "issuer": {
+        "countryName": "US",
+        "organizationName": "Let's Encrypt",
+        "commonName": "R3"
+    },
+    "version": 3,
+    "not_before": "Jul 14 08:24:48 2023 GMT",
+    "not_after": "Oct 12 08:24:47 2023 GMT",
+    "valid_period": 90,
+    "serial_number": "0438C661CECCC9859BAA255A4B7B42A4604C",
+    "signature_algo": "sha256WithRSAEncryption",
+    "protocol_version": "TLSv1.3",
+    "alternate subject name": [
+        [
+            "DNS",
+            "*.gvpedia.com"
+        ],
+        [
+            "DNS",
+            "gvpedia.com"
+        ]
+    ]
+}

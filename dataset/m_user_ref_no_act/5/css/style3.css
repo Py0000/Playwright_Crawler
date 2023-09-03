@@ -1,0 +1,67 @@
+/*
+	Adapted from orbit ui sqmarket font settings
+*/
+
+@font-face {
+	font-family: "Square Market";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url("./sqmarket-regular.woff") format("woff"),
+		url("./sqmarket-regular.ttf") format("truetype");
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "Square Market";
+	font-style: italic;
+	font-weight: 400;
+	src:
+		url("./sqmarket-regular-italic.woff") format("woff"),
+		url("./sqmarket-regular-italic.ttf") format("truetype");
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "Square Market";
+	font-style: normal;
+	font-weight: 500;
+	src:
+		url("./sqmarket-medium.woff") format("woff"),
+		url("./sqmarket-medium.ttf") format("truetype");
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "Square Market";
+	font-style: italic;
+	font-weight: 500;
+	src:
+		url("./sqmarket-medium-italic.woff") format("woff"),
+		url("./sqmarket-medium-italic.ttf") format("truetype");
+	font-display: fallback;
+}
+
+/*
+	Note: The semibold (600) font face specification should not be required per fallback rules from MDN,
+	but without it, any font-weights 600 or above were getting faux-bolding in Chrome.
+*/
+@font-face {
+	font-family: "Square Market";
+	font-style: normal;
+	font-weight: 600;
+	src:
+		url("./sqmarket-medium.woff") format("woff"),
+		url("./sqmarket-medium.ttf") format("truetype");
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "Square Market";
+	font-style: italic;
+	font-weight: 600;
+	src:
+		url("./sqmarket-medium-italic.woff") format("woff"),
+		url("./sqmarket-medium-italic.ttf") format("truetype");
+	font-display: fallback;
+}

@@ -1,0 +1,60 @@
+{
+    "Domain": "merucardi.com",
+    "A": {
+        "IPv4 Address (Value)": [
+            "133.167.77.85"
+        ]
+    },
+    "AAAA": [
+        "No records found"
+    ],
+    "CAA": [
+        "No records found"
+    ],
+    "CNAME": [
+        "No records found"
+    ],
+    "MX": {
+        "Preference": [
+            10
+        ],
+        "Exchange": [
+            "merucardi.com."
+        ]
+    },
+    "NS": {
+        "Name Server": [
+            "ns1.quedomain.com.",
+            "ns3.quedomain.com.",
+            "ns2.quedomain.com."
+        ]
+    },
+    "SOA": {
+        "MNAME": [
+            "a.misconfigured.dns.server.invalid."
+        ],
+        "RNAME": [
+            "hostmaster.merucardi.com."
+        ],
+        "SERIAL": [
+            0
+        ],
+        "REFRESH": [
+            10800
+        ],
+        "RETRY": [
+            3600
+        ],
+        "EXPIRE": [
+            604800
+        ],
+        "MINIMUM": [
+            3600
+        ]
+    },
+    "TXT": {
+        "Text Data": [
+            "v=spf1 mx a ip4:133.167.77.85 ~all"
+        ]
+    }
+}

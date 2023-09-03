@@ -1,0 +1,67 @@
+{
+    "Domain": "4season.com.kh",
+    "A": {
+        "IPv4 Address (Value)": [
+            "203.176.128.88"
+        ]
+    },
+    "AAAA": [
+        "No records found"
+    ],
+    "CAA": [
+        "No records found"
+    ],
+    "CNAME": [
+        "No records found"
+    ],
+    "MX": {
+        "Preference": [
+            1,
+            5,
+            10,
+            5,
+            10
+        ],
+        "Exchange": [
+            "aspmx.l.google.com.",
+            "alt1.aspmx.l.google.com.",
+            "alt3.aspmx.l.google.com.",
+            "alt2.aspmx.l.google.com.",
+            "alt4.aspmx.l.google.com."
+        ]
+    },
+    "NS": {
+        "Name Server": [
+            "ns02.mekongcloud.net.",
+            "ns01.mekongcloud.net."
+        ]
+    },
+    "SOA": {
+        "MNAME": [
+            "ns01.mekongcloud.net."
+        ],
+        "RNAME": [
+            "sokchhay.chea.corp.mekongnet.com.kh."
+        ],
+        "SERIAL": [
+            2023071902
+        ],
+        "REFRESH": [
+            3600
+        ],
+        "RETRY": [
+            7200
+        ],
+        "EXPIRE": [
+            1209600
+        ],
+        "MINIMUM": [
+            86400
+        ]
+    },
+    "TXT": {
+        "Text Data": [
+            "v=spf1 ip4:203.176.128.88 +a +mx ~all"
+        ]
+    }
+}

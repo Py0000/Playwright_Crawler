@@ -1,0 +1,1045 @@
+[
+    {
+        "requestId": "00E212D96972560E6858775CAEE60BB5",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4319.44469,
+        "wallTime": 1693717336.887832,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "00E212D96972560E6858775CAEE60BB5",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4319.88495,
+        "wallTime": 1693717337.328029,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://login.yonetimmerkezi-tr.com/",
+            "status": 302,
+            "statusText": "Moved Temporarily",
+            "headers": {
+                "Connection": "Upgrade, Keep-Alive",
+                "Content-Length": "0",
+                "Content-Type": "text/html; charset=UTF-8",
+                "Date": "Sun, 03 Sep 2023 05:02:17 GMT",
+                "Keep-Alive": "timeout=5, max=75",
+                "Location": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "Server": "Apache",
+                "Upgrade": "h2,h2c"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 3806,
+            "remoteIPAddress": "162.144.1.5",
+            "remotePort": 80,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 282,
+            "timing": {
+                "requestTime": 4319.446126,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.921,
+                "dnsEnd": 7.907,
+                "connectStart": 7.907,
+                "connectEnd": 204.287,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 204.413,
+                "sendEnd": 205.619,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 436.235,
+                "receiveHeadersEnd": 436.349
+            },
+            "responseTime": 1693717337325.275,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.2",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/css/style.css",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.110873,
+        "wallTime": 1693717337.5545,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 23,
+            "columnNumber": 58
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.3",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/1.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.11326,
+        "wallTime": 1693717337.556519,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 74,
+            "columnNumber": 87
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.4",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/akbank.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.11386,
+        "wallTime": 1693717337.556824,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 91,
+            "columnNumber": 76
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.5",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/albaraka.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.11403,
+        "wallTime": 1693717337.557233,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 94,
+            "columnNumber": 80
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.6",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/alternatif.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.114441,
+        "wallTime": 1693717337.557629,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 97,
+            "columnNumber": 84
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.7",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/anadolu.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.114823,
+        "wallTime": 1693717337.557782,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 100,
+            "columnNumber": 78
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.8",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/deniz.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.114947,
+        "wallTime": 1693717337.557908,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 103,
+            "columnNumber": 74
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.9",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/fiba.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.115088,
+        "wallTime": 1693717337.559348,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 106,
+            "columnNumber": 72
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.10",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/finans.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.11665,
+        "wallTime": 1693717337.56147,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 109,
+            "columnNumber": 76
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.11",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/garanti.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.118741,
+        "wallTime": 1693717337.5617,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 112,
+            "columnNumber": 78
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.12",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/halk.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.118851,
+        "wallTime": 1693717337.561804,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 115,
+            "columnNumber": 72
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.13",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/hsbc.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.118957,
+        "wallTime": 1693717337.561897,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 118,
+            "columnNumber": 72
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.14",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/ing.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.119019,
+        "wallTime": 1693717337.561962,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 121,
+            "columnNumber": 70
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.15",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/isbank.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.119092,
+        "wallTime": 1693717337.562028,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 124,
+            "columnNumber": 76
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.16",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/kuveyt.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.119151,
+        "wallTime": 1693717337.562129,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 127,
+            "columnNumber": 76
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.17",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/odea.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.119732,
+        "wallTime": 1693717337.562676,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 130,
+            "columnNumber": 72
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.18",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/ptt.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.119817,
+        "wallTime": 1693717337.562757,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 133,
+            "columnNumber": 70
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.19",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/sekerbank.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.119883,
+        "wallTime": 1693717337.56282,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 136,
+            "columnNumber": 82
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.20",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/teb.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.119967,
+        "wallTime": 1693717337.562903,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 139,
+            "columnNumber": 70
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.21",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/turkiyefinans.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.12003,
+        "wallTime": 1693717337.562984,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 142,
+            "columnNumber": 90
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.22",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/vakif.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.120106,
+        "wallTime": 1693717337.563048,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 145,
+            "columnNumber": 74
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.23",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/ykb.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.120199,
+        "wallTime": 1693717337.563172,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 148,
+            "columnNumber": 70
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.24",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/banks/ziraat.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.120344,
+        "wallTime": 1693717337.5633,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 151,
+            "columnNumber": 76
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.25",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/js/script.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/basvuru/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.120505,
+        "wallTime": 1693717337.563467,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/basvuru/",
+            "lineNumber": 216,
+            "columnNumber": 41
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.49",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "http://login.yonetimmerkezi-tr.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 4320.53166,
+        "wallTime": 1693717337.974626,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/assets/css/style.css",
+            "lineNumber": 0,
+            "columnNumber": 0
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.50",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "http://login.yonetimmerkezi-tr.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 4320.532196,
+        "wallTime": 1693717337.975143,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/assets/css/style.css",
+            "lineNumber": 0,
+            "columnNumber": 0
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.216",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "http://login.yonetimmerkezi-tr.com/assets/images/header.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://login.yonetimmerkezi-tr.com/assets/css/style.css",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4320.629413,
+        "wallTime": 1693717338.07237,
+        "initiator": {
+            "type": "parser",
+            "url": "http://login.yonetimmerkezi-tr.com/assets/css/style.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.107",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://fonts.googleapis.com/",
+                "Origin": "http://login.yonetimmerkezi-tr.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 4320.633559,
+        "wallTime": 1693717338.076576,
+        "initiator": {
+            "type": "parser",
+            "url": "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70894.106",
+        "loaderId": "00E212D96972560E6858775CAEE60BB5",
+        "documentURL": "http://login.yonetimmerkezi-tr.com/basvuru/",
+        "request": {
+            "url": "https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://fonts.googleapis.com/",
+                "Origin": "http://login.yonetimmerkezi-tr.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 4320.646353,
+        "wallTime": 1693717338.089401,
+        "initiator": {
+            "type": "parser",
+            "url": "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "DB1A9A2CC8285FBCD723FD6E4A7900CE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

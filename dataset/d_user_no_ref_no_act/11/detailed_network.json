@@ -1,0 +1,3573 @@
+[
+    {
+        "requestId": "7BB0AA268BF49373E1E896E88B86E868",
+        "loaderId": "7BB0AA268BF49373E1E896E88B86E868",
+        "documentURL": "http://telegram-zh.biz/",
+        "request": {
+            "url": "http://telegram-zh.biz/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.171692,
+        "wallTime": 1693717282.614781,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "6BCA9DD582AF19E432F035B69603AB2C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "7BB0AA268BF49373E1E896E88B86E868",
+        "loaderId": "7BB0AA268BF49373E1E896E88B86E868",
+        "documentURL": "https://telegram-zh.biz/",
+        "request": {
+            "url": "https://telegram-zh.biz/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.337789,
+        "wallTime": 1693717282.780816,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://telegram-zh.biz/",
+            "status": 301,
+            "statusText": "Moved Permanently",
+            "headers": {
+                "Connection": "close",
+                "Content-Length": "165",
+                "Content-Type": "text/html",
+                "Date": "Sun, 03 Sep 2023 05:01:22 GMT",
+                "Location": "https://telegram-zh.biz/",
+                "Server": "NgxFence"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 3198,
+            "remoteIPAddress": "154.82.100.131",
+            "remotePort": 80,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 190,
+            "timing": {
+                "requestTime": 4265.175233,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.377,
+                "dnsEnd": 3.767,
+                "connectStart": 3.767,
+                "connectEnd": 83.035,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 83.186,
+                "sendEnd": 83.354,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 161.409,
+                "receiveHeadersEnd": 161.528
+            },
+            "responseTime": 1693717282779.555,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "6BCA9DD582AF19E432F035B69603AB2C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.2",
+        "loaderId": "7BB0AA268BF49373E1E896E88B86E868",
+        "documentURL": "https://telegram-zh.biz/",
+        "request": {
+            "url": "https://telegram-zh.biz/js/redirect.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.611551,
+        "wallTime": 1693717283.05452,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/",
+            "lineNumber": 13,
+            "columnNumber": 33
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "6BCA9DD582AF19E432F035B69603AB2C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.3",
+        "loaderId": "7BB0AA268BF49373E1E896E88B86E868",
+        "documentURL": "https://telegram-zh.biz/",
+        "request": {
+            "url": "https://telegram-zh.biz/js/config.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.613462,
+        "wallTime": 1693717283.056441,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/",
+            "lineNumber": 14,
+            "columnNumber": 31
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "6BCA9DD582AF19E432F035B69603AB2C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://telegram-zh.biz/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.703477,
+        "wallTime": 1693717283.146939,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "redirect",
+                        "scriptId": "5",
+                        "url": "https://telegram-zh.biz/js/redirect.js",
+                        "lineNumber": 45,
+                        "columnNumber": 15
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "5",
+                        "url": "https://telegram-zh.biz/js/redirect.js",
+                        "lineNumber": 47,
+                        "columnNumber": 0
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.7",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/bootstrap.min.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.822923,
+        "wallTime": 1693717283.266488,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 15,
+            "columnNumber": 66
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.8",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/telegram.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.824701,
+        "wallTime": 1693717283.267707,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 16,
+            "columnNumber": 76
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.9",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/gtm.js.download",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.825155,
+        "wallTime": 1693717283.268111,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 17,
+            "columnNumber": 57
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.10",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.825276,
+        "wallTime": 1693717283.268216,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 17,
+            "columnNumber": 106
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.11",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.825358,
+        "wallTime": 1693717283.268295,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 24,
+            "columnNumber": 47
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.12",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/t_logo.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.825441,
+        "wallTime": 1693717283.268392,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 122,
+            "columnNumber": 86
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.13",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/file/cbc986292284a428e2.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.825537,
+        "wallTime": 1693717283.268476,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 166,
+            "columnNumber": 76
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.14",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/file/66eebb00fd46acb1ce.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.825834,
+        "wallTime": 1693717283.268781,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 173,
+            "columnNumber": 76
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.15",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/dd4eeb46cc5efc0688.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.826005,
+        "wallTime": 1693717283.268949,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 191,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.16",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/d4b936ecc2c939f4fa.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.826098,
+        "wallTime": 1693717283.269056,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 204,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.17",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/7318c11715aa2ec45b.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.826196,
+        "wallTime": 1693717283.269138,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 217,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.18",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/7d57d7159cf4fbe9b2.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.826275,
+        "wallTime": 1693717283.269216,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 230,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.19",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/911807f65dfb4f8f20.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.826522,
+        "wallTime": 1693717283.269465,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 243,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.20",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/feb1e161b1d3608613.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.826615,
+        "wallTime": 1693717283.269577,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 256,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.21",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/9ce5fa5f3fb74460b4.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.826723,
+        "wallTime": 1693717283.269661,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 268,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.22",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/f3cec6c451d023c109.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.826981,
+        "wallTime": 1693717283.269924,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 281,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.23",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/b6c5dbc0e4f6553805.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.827228,
+        "wallTime": 1693717283.27018,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 294,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.24",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/main.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.827338,
+        "wallTime": 1693717283.270307,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 401,
+            "columnNumber": 28
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.25",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/download.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.827453,
+        "wallTime": 1693717283.27039,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 413,
+            "columnNumber": 36
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.26",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/v652eace1692a40cfa3763df669d7439c1639079717194",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "Origin": "https://telegram-zh.biz",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4265.827759,
+        "wallTime": 1693717283.27071,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 416,
+            "columnNumber": 421
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.32",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 4265.962368,
+        "wallTime": 1693717283.405467,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "15",
+                        "url": "https://telegram-zh.biz/TG_ZH/index.html",
+                        "lineNumber": 34,
+                        "columnNumber": 68
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "15",
+                        "url": "https://telegram-zh.biz/TG_ZH/index.html",
+                        "lineNumber": 35,
+                        "columnNumber": 6
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.34",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/img/t_main_Android_demo.mp4",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "Accept-Encoding": "identity;q=1, *;q=0",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "Range": "bytes=0-",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4266.024331,
+        "wallTime": 1693717283.467448,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 138,
+            "columnNumber": 175
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Media",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.35",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='%230088cc'><path d='M8 0.4C12.2 0.4 15.6 3.8 15.6 8 15.6 12.2 12.2 15.6 8 15.6 3.8 15.6 0.4 12.2 0.4 8 0.4 3.8 3.8 0.4 8 0.4ZM9.63 11.1L6.37 11.1C6.73 13.07 7.4 14.4 8 14.4 8.6 14.4 9.27 13.07 9.63 11.1ZM5.14 11.1L2.4 11.1C3.19 12.52 4.51 13.61 6.09 14.11 5.71 13.41 5.41 12.5 5.21 11.45L5.14 11.1ZM13.6 11.1L10.86 11.1C10.65 12.3 10.33 13.33 9.92 14.11 11.4 13.64 12.66 12.65 13.46 11.35L13.6 11.1ZM4.99 6.1L1.89 6.1C1.7 6.7 1.6 7.34 1.6 8 1.6 8.66 1.7 9.3 1.89 9.9L4.99 9.9C4.94 9.44 4.92 8.97 4.91 8.49L4.9 8 4.9 7.71C4.91 7.16 4.94 6.62 4.99 6.1ZM9.8 6.1L6.2 6.1C6.14 6.7 6.1 7.34 6.1 8 6.1 8.66 6.14 9.3 6.2 9.9L9.8 9.9C9.86 9.3 9.9 8.66 9.9 8 9.9 7.34 9.86 6.7 9.8 6.1ZM14.11 6.1L11.01 6.1C11.07 6.71 11.1 7.34 11.1 8 11.1 8.66 11.07 9.29 11.01 9.9L14.11 9.9C14.3 9.3 14.4 8.66 14.4 8 14.4 7.34 14.3 6.7 14.11 6.1ZM6.08 1.89L6.02 1.91C4.47 2.42 3.18 3.5 2.4 4.9L5.14 4.9C5.33 3.82 5.6 2.87 5.96 2.13L6.08 1.89ZM8 1.6L7.93 1.61C7.35 1.71 6.72 3.01 6.37 4.9L9.63 4.9C9.28 3.01 8.66 1.71 8.08 1.61L8 1.6ZM9.91 1.89L9.97 2C10.36 2.76 10.66 3.76 10.86 4.9L13.6 4.9C12.86 3.56 11.65 2.52 10.19 1.98L9.91 1.89Z'/></svg>",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 4266.030199,
+        "wallTime": 1693717283.473229,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/telegram.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.36",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/img/twitter.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index_files/telegram.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4266.031997,
+        "wallTime": 1693717283.474975,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/telegram.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.37",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/img/SiteLogos.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index_files/telegram.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4266.0404,
+        "wallTime": 1693717283.483396,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/telegram.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.38",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/img/SiteAndroid.jpg?2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index_files/telegram.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4266.045922,
+        "wallTime": 1693717283.493398,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/telegram.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.39",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/img/SiteiOS.jpg?2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index_files/telegram.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4266.086003,
+        "wallTime": 1693717283.539233,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/telegram.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.60",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/TG_ZH/img/SiteDesktop.jpg?2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index_files/telegram.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4267.089489,
+        "wallTime": 1693717284.532492,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index_files/telegram.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.61",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/img/t_main_iOS_demo.mp4",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "Accept-Encoding": "identity;q=1, *;q=0",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "Range": "bytes=0-",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4267.713049,
+        "wallTime": 1693717285.156028,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 320,
+            "columnNumber": 31
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Media",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.64",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/config.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4267.810573,
+        "wallTime": 1693717285.254429,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "configHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 117,
+                        "columnNumber": 16
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 120,
+                        "columnNumber": 0
+                    }
+                ]
+            },
+            "lineNumber": 14,
+            "columnNumber": 31
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.66",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/dev.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.254347,
+        "wallTime": 1693717285.697579,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.67",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t101.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.268129,
+        "wallTime": 1693717285.711184,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.68",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t108.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.26917,
+        "wallTime": 1693717285.712174,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.69",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t168.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.269609,
+        "wallTime": 1693717285.712578,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.70",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t188.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.27108,
+        "wallTime": 1693717285.716695,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.71",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t888.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.275745,
+        "wallTime": 1693717285.718802,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.72",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t110.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.276288,
+        "wallTime": 1693717285.719256,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.73",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t111.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.27665,
+        "wallTime": 1693717285.719614,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.74",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t112.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.276977,
+        "wallTime": 1693717285.719941,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.75",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t117.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.277271,
+        "wallTime": 1693717285.720234,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.76",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t118.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.277621,
+        "wallTime": 1693717285.720584,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.77",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t158.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.277958,
+        "wallTime": 1693717285.72094,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.78",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t109.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.278206,
+        "wallTime": 1693717285.721161,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.79",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t115.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.278397,
+        "wallTime": 1693717285.721355,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.80",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t121.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.27865,
+        "wallTime": 1693717285.721612,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.81",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t123.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.27913,
+        "wallTime": 1693717285.722173,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.82",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t125.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.280025,
+        "wallTime": 1693717285.723048,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.83",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t127.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.28059,
+        "wallTime": 1693717285.723579,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.84",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/js/downloadlist/t126.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4268.281089,
+        "wallTime": 1693717285.724087,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telegram-zh.biz/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.85",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.google-analytics.com/analytics.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 4268.295079,
+        "wallTime": 1693717285.738964,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "ib",
+                        "scriptId": "19",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+                        "lineNumber": 37,
+                        "columnNumber": 65
+                    },
+                    {
+                        "functionName": "Dq",
+                        "scriptId": "19",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+                        "lineNumber": 185,
+                        "columnNumber": 408
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "19",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+                        "lineNumber": 185,
+                        "columnNumber": 467
+                    },
+                    {
+                        "functionName": "Hf",
+                        "scriptId": "19",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+                        "lineNumber": 76,
+                        "columnNumber": 70
+                    },
+                    {
+                        "functionName": "Tf",
+                        "scriptId": "19",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+                        "lineNumber": 78,
+                        "columnNumber": 29
+                    },
+                    {
+                        "functionName": "Eq",
+                        "scriptId": "19",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+                        "lineNumber": 185,
+                        "columnNumber": 453
+                    },
+                    {
+                        "functionName": "mr",
+                        "scriptId": "19",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+                        "lineNumber": 205,
+                        "columnNumber": 100
+                    },
+                    {
+                        "functionName": "kr.flush",
+                        "scriptId": "19",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+                        "lineNumber": 208,
+                        "columnNumber": 103
+                    },
+                    {
+                        "functionName": "kr.push",
+                        "scriptId": "19",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+                        "lineNumber": 206,
+                        "columnNumber": 252
+                    },
+                    {
+                        "functionName": "config",
+                        "scriptId": "19",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+                        "lineNumber": 212,
+                        "columnNumber": 315
+                    },
+                    {
+                        "functionName": "ks",
+                        "scriptId": "19",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+                        "lineNumber": 223,
+                        "columnNumber": 237
+                    },
+                    {
+                        "functionName": "ms",
+                        "scriptId": "19",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+                        "lineNumber": 224,
+                        "columnNumber": 40
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "70381.86",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 4268.313582,
+        "wallTime": 1693717285.758363,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Vb",
+                        "scriptId": "20",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 49,
+                        "columnNumber": 76
+                    },
+                    {
+                        "functionName": "Gp",
+                        "scriptId": "20",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 205,
+                        "columnNumber": 0
+                    },
+                    {
+                        "functionName": "config",
+                        "scriptId": "20",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 231,
+                        "columnNumber": 156
+                    },
+                    {
+                        "functionName": "$s",
+                        "scriptId": "20",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 244,
+                        "columnNumber": 110
+                    },
+                    {
+                        "functionName": "b.push",
+                        "scriptId": "20",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 248,
+                        "columnNumber": 314
+                    },
+                    {
+                        "functionName": "Dv.b.push",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 277,
+                        "columnNumber": 164
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "19",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+                        "lineNumber": 226,
+                        "columnNumber": 302
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_ga",
+                    "value": "GA1.1.954705167.1693717286",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277285.931135,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga_VE3X12E1EV",
+                    "value": "GS1.1.1693717285.1.0.1693717285.0.0.0",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277285.901876,
+                    "size": 51,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "70381.87",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-VE3X12E1EV&l=dataLayer&cx=c",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 4268.318061,
+        "wallTime": 1693717285.761222,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Vb",
+                        "scriptId": "20",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 49,
+                        "columnNumber": 76
+                    },
+                    {
+                        "functionName": "Gp",
+                        "scriptId": "20",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 205,
+                        "columnNumber": 0
+                    },
+                    {
+                        "functionName": "config",
+                        "scriptId": "20",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 231,
+                        "columnNumber": 156
+                    },
+                    {
+                        "functionName": "$s",
+                        "scriptId": "20",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 244,
+                        "columnNumber": 110
+                    },
+                    {
+                        "functionName": "b.push",
+                        "scriptId": "20",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 248,
+                        "columnNumber": 314
+                    },
+                    {
+                        "functionName": "Dv.b.push",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 277,
+                        "columnNumber": 164
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "19",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+                        "lineNumber": 226,
+                        "columnNumber": 302
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_ga",
+                    "value": "GA1.1.954705167.1693717286",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277285.931135,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga_VE3X12E1EV",
+                    "value": "GS1.1.1693717285.1.0.1693717285.0.0.0",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277285.901876,
+                    "size": 51,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "70381.88",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VE3X12E1EV&gtm=2oe8v0&_p=1032711517&cid=954705167.1693717286&ul=en-gb&sr=1280x720&_z=ccd.v9B&_s=1&sid=1693717285&sct=1&seg=0&dl=https%3A%2F%2Ftelegram-zh.biz%2FTG_ZH%2Findex.html&dr=https%3A%2F%2Ftelegram-zh.biz%2F&dt=Telegram%E4%B8%AD%E6%96%87%E5%AE%98%E7%BD%91&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": ""
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "VeryLow",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 4268.494602,
+        "wallTime": 1693717285.943363,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Zb",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 50,
+                        "columnNumber": 24
+                    },
+                    {
+                        "functionName": "xB",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 367,
+                        "columnNumber": 395
+                    },
+                    {
+                        "functionName": "yB",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 362,
+                        "columnNumber": 106
+                    },
+                    {
+                        "functionName": "BB.D",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 366,
+                        "columnNumber": 0
+                    },
+                    {
+                        "functionName": "BB.add",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 367,
+                        "columnNumber": 20
+                    },
+                    {
+                        "functionName": "aa.Fh",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 385,
+                        "columnNumber": 325
+                    },
+                    {
+                        "functionName": "aa.xk",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 385,
+                        "columnNumber": 261
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 370,
+                        "columnNumber": 166
+                    },
+                    {
+                        "functionName": "$i",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 151,
+                        "columnNumber": 70
+                    },
+                    {
+                        "functionName": "mj",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 153,
+                        "columnNumber": 55
+                    },
+                    {
+                        "functionName": "aa.wk",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 370,
+                        "columnNumber": 150
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 390,
+                        "columnNumber": 574
+                    },
+                    {
+                        "functionName": "Au",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 255,
+                        "columnNumber": 111
+                    },
+                    {
+                        "functionName": "yu.flush",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 258,
+                        "columnNumber": 105
+                    },
+                    {
+                        "functionName": "yu.push",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 256,
+                        "columnNumber": 252
+                    },
+                    {
+                        "functionName": "config",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 262,
+                        "columnNumber": 315
+                    },
+                    {
+                        "functionName": "zv",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 273,
+                        "columnNumber": 72
+                    },
+                    {
+                        "functionName": "Dv.b.push",
+                        "scriptId": "21",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js(1)",
+                        "lineNumber": 277,
+                        "columnNumber": 314
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "19",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/js",
+                        "lineNumber": 226,
+                        "columnNumber": 302
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Ping",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_ga",
+                    "value": "GA1.1.954705167.1693717286",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277285.931135,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga_VE3X12E1EV",
+                    "value": "GS1.1.1693717285.1.0.1693717285.0.0.0",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277285.901876,
+                    "size": 51,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "70381.89",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.google-analytics.com/j/collect?v=1&_v=j101&a=1032711517&t=pageview&_s=1&dl=https%3A%2F%2Ftelegram-zh.biz%2FTG_ZH%2Findex.html&ul=en-gb&de=UTF-8&dt=Telegram%E4%B8%AD%E6%96%87%E5%AE%98%E7%BD%91&sd=24-bit&sr=1280x720&vp=1280x720&je=0&_u=YADAAUABAAAAACAAI~&jid=1229051688&gjid=1563651817&cid=954705167.1693717286&tid=UA-212845866-1&_gid=1849193074.1693717287&_r=1&_slc=1&gtm=2ou8v0&z=848277230",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "sec-ch-ua-platform": "\"\"",
+                "Referer": "https://telegram-zh.biz/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "Content-Type": "text/plain"
+            },
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": ""
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 4269.278343,
+        "wallTime": 1693717286.721702,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "wd",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 35,
+                        "columnNumber": 31
+                    },
+                    {
+                        "functionName": "pe",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 34,
+                        "columnNumber": 13
+                    },
+                    {
+                        "functionName": "Sa",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 40,
+                        "columnNumber": 221
+                    },
+                    {
+                        "functionName": "Ha.D",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 37,
+                        "columnNumber": 462
+                    },
+                    {
+                        "functionName": "pc.send",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 76,
+                        "columnNumber": 270
+                    },
+                    {
+                        "functionName": "X.b.<computed>",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 56,
+                        "columnNumber": 57
+                    },
+                    {
+                        "functionName": "Z.v",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 92,
+                        "columnNumber": 360
+                    },
+                    {
+                        "functionName": "Z.D",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 91,
+                        "columnNumber": 177
+                    },
+                    {
+                        "functionName": "N.N",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 95,
+                        "columnNumber": 307
+                    },
+                    {
+                        "functionName": "rc",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 85,
+                        "columnNumber": 499
+                    },
+                    {
+                        "functionName": "z",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 85,
+                        "columnNumber": 531
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 95,
+                        "columnNumber": 354
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 95,
+                        "columnNumber": 406
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_gid",
+                    "value": "GA1.2.1849193074.1693717287",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1693803686,
+                    "size": 31,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga",
+                    "value": "GA1.2.954705167.1693717286",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277286.691158,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_gat_gtag_UA_212845866_1",
+                    "value": "1",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1693717346,
+                    "size": 25,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga_VE3X12E1EV",
+                    "value": "GS1.1.1693717285.1.0.1693717285.0.0.0",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277285.901876,
+                    "size": 51,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "70381.90",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-NW6YF835DY&l=dataLayer&cx=c",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 4269.608705,
+        "wallTime": 1693717287.092727,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Jc",
+                        "scriptId": "45",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 81,
+                        "columnNumber": 469
+                    },
+                    {
+                        "functionName": "Dt",
+                        "scriptId": "45",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 283,
+                        "columnNumber": 3
+                    },
+                    {
+                        "functionName": "$u",
+                        "scriptId": "45",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 299,
+                        "columnNumber": 490
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "45",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 431,
+                        "columnNumber": 104
+                    },
+                    {
+                        "functionName": "Df",
+                        "scriptId": "45",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 116,
+                        "columnNumber": 102
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "45",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 293,
+                        "columnNumber": 213
+                    },
+                    {
+                        "functionName": "fv",
+                        "scriptId": "45",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 300,
+                        "columnNumber": 739
+                    },
+                    {
+                        "functionName": "Ov",
+                        "scriptId": "45",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 304,
+                        "columnNumber": 34
+                    },
+                    {
+                        "functionName": "Zw",
+                        "scriptId": "45",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 324,
+                        "columnNumber": 271
+                    },
+                    {
+                        "functionName": "bx",
+                        "scriptId": "45",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 329,
+                        "columnNumber": 54
+                    },
+                    {
+                        "functionName": "dx",
+                        "scriptId": "45",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 330,
+                        "columnNumber": 42
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "45",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 445,
+                        "columnNumber": 79
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "45",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 440,
+                        "columnNumber": 227
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "45",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 440,
+                        "columnNumber": 233
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "45",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 447,
+                        "columnNumber": 2
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_gid",
+                    "value": "GA1.2.1849193074.1693717287",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1693803686,
+                    "size": 31,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga",
+                    "value": "GA1.2.954705167.1693717286",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277286.691158,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_gat_gtag_UA_212845866_1",
+                    "value": "1",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1693717346,
+                    "size": 25,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga_VE3X12E1EV",
+                    "value": "GS1.1.1693717285.1.0.1693717285.0.0.0",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277285.901876,
+                    "size": 51,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "70381.92",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.google-analytics.com/collect?v=1&_v=j101&a=1032711517&t=pageview&_s=2&dl=https%3A%2F%2Ftelegram-zh.biz%2FTG_ZH%2Findex.html&ul=en-gb&de=UTF-8&dt=Telegram%E4%B8%AD%E6%96%87%E5%AE%98%E7%BD%91&sd=24-bit&sr=1280x720&vp=1280x720&je=0&_u=aADAAUABAAAAACAAI~&jid=&gjid=&cid=954705167.1693717286&tid=UA-212845866-1&_gid=1849193074.1693717287&gtm=457e38u0&jsscut=1&z=1134059793",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 4269.732686,
+        "wallTime": 1693717287.175664,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telegram-zh.biz/TG_ZH/index.html",
+            "lineNumber": 417,
+            "columnNumber": 21
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_gid",
+                    "value": "GA1.2.1849193074.1693717287",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1693803686,
+                    "size": 31,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga",
+                    "value": "GA1.2.954705167.1693717286",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277286.691158,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_gat_gtag_UA_212845866_1",
+                    "value": "1",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1693717346,
+                    "size": 25,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga_VE3X12E1EV",
+                    "value": "GS1.1.1693717285.1.0.1693717285.0.0.0",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277285.901876,
+                    "size": 51,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "70381.94",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-NW6YF835DY&cx=c&_slc=1",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telegram-zh.biz/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 4269.899521,
+        "wallTime": 1693717287.342924,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Id",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 23,
+                        "columnNumber": 54
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 74,
+                        "columnNumber": 185
+                    },
+                    {
+                        "functionName": "oc",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 36,
+                        "columnNumber": 326
+                    },
+                    {
+                        "functionName": "Ea",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 35,
+                        "columnNumber": 329
+                    },
+                    {
+                        "functionName": "g.onreadystatechange",
+                        "scriptId": "44",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 34,
+                        "columnNumber": 476
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_ga_VE3X12E1EV",
+                    "value": "GS1.1.1693717285.1.0.1693717287.0.0.0",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277287.288161,
+                    "size": 51,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_gat_gtag_UA_212845866_1",
+                    "value": "1",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1693717346,
+                    "size": 25,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_gid",
+                    "value": "GA1.2.1849193074.1693717287",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1693803686,
+                    "size": 31,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga",
+                    "value": "GA1.2.954705167.1693717286",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277286.691158,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "70381.95",
+        "loaderId": "233EBF28CE9FC1F27B1BE71D22A530DF",
+        "documentURL": "https://telegram-zh.biz/TG_ZH/index.html",
+        "request": {
+            "url": "https://telegram-zh.biz/cdn-cgi/rum?",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "sec-ch-ua-platform": "\"\"",
+                "Referer": "https://telegram-zh.biz/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "content-type": "application/json"
+            },
+            "postData": "{\"memory\":{\"totalJSHeapSize\":19300000,\"usedJSHeapSize\":17100000,\"jsHeapSizeLimit\":2190000000},\"resources\":[],\"referrer\":\"https://telegram-zh.biz/\",\"documentWriteIntervention\":false,\"errorCount\":0,\"eventType\":1,\"firstPaint\":1336.9000000003725,\"firstContentfulPaint\":1336.9000000003725,\"si\":100,\"startTime\":1693717283144.9,\"versions\":{\"fl\":\"2022.8.1\",\"js\":\"2021.12.0\",\"timings\":2},\"pageloadId\":\"6eeac651-5118-411a-81d0-4db4ecfe33ec\",\"location\":\"https://telegram-zh.biz/TG_ZH/index.html\",\"timingsV2\":{\"unloadEventStart\":0,\"unloadEventEnd\":0,\"domInteractive\":2112.5,\"domContentLoadedEventStart\":2142.2000000001863,\"domContentLoadedEventEnd\":2142.2000000001863,\"domComplete\":4472.799999999814,\"loadEventStart\":4472.799999999814,\"loadEventEnd\":4473.299999999814,\"type\":\"navigate\",\"redirectCount\":0,\"activationStart\":0,\"criticalCHRestart\":0,\"initiatorType\":\"navigation\",\"nextHopProtocol\":\"h2\",\"workerStart\":0,\"redirectStart\":0,\"redirectEnd\":0,\"fetchStart\":1.5,\"domainLookupStart\":1.5,\"domainLookupEnd\":1.5,\"connectStart\":1.5,\"connectEnd\":1.5,\"secureConnectionStart\":1.5,\"requestStart\":11,\"responseStart\":91,\"responseEnd\":93.5,\"transferSize\":5324,\"encodedBodySize\":5024,\"decodedBodySize\":20850,\"renderBlockingStatus\":\"non-blocking\",\"responseStatus\":200,\"firstInterimResponseStart\":0,\"name\":\"https://telegram-zh.biz/TG_ZH/index.html\",\"entryType\":\"navigation\",\"startTime\":0,\"duration\":4473.299999999814},\"siteToken\":\"dcd12857e43a4cbb8d8bbb05e9c1f99d\",\"st\":2}",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "eyJtZW1vcnkiOnsidG90YWxKU0hlYXBTaXplIjoxOTMwMDAwMCwidXNlZEpTSGVhcFNpemUiOjE3MTAwMDAwLCJqc0hlYXBTaXplTGltaXQiOjIxOTAwMDAwMDB9LCJyZXNvdXJjZXMiOltdLCJyZWZlcnJlciI6Imh0dHBzOi8vdGVsZWdyYW0temguYml6LyIsImRvY3VtZW50V3JpdGVJbnRlcnZlbnRpb24iOmZhbHNlLCJlcnJvckNvdW50IjowLCJldmVudFR5cGUiOjEsImZpcnN0UGFpbnQiOjEzMzYuOTAwMDAwMDAwMzcyNSwiZmlyc3RDb250ZW50ZnVsUGFpbnQiOjEzMzYuOTAwMDAwMDAwMzcyNSwic2kiOjEwMCwic3RhcnRUaW1lIjoxNjkzNzE3MjgzMTQ0LjksInZlcnNpb25zIjp7ImZsIjoiMjAyMi44LjEiLCJqcyI6IjIwMjEuMTIuMCIsInRpbWluZ3MiOjJ9LCJwYWdlbG9hZElkIjoiNmVlYWM2NTEtNTExOC00MTFhLTgxZDAtNGRiNGVjZmUzM2VjIiwibG9jYXRpb24iOiJodHRwczovL3RlbGVncmFtLXpoLmJpei9UR19aSC9pbmRleC5odG1sIiwidGltaW5nc1YyIjp7InVubG9hZEV2ZW50U3RhcnQiOjAsInVubG9hZEV2ZW50RW5kIjowLCJkb21JbnRlcmFjdGl2ZSI6MjExMi41LCJkb21Db250ZW50TG9hZGVkRXZlbnRTdGFydCI6MjE0Mi4yMDAwMDAwMDAxODYzLCJkb21Db250ZW50TG9hZGVkRXZlbnRFbmQiOjIxNDIuMjAwMDAwMDAwMTg2MywiZG9tQ29tcGxldGUiOjQ0NzIuNzk5OTk5OTk5ODE0LCJsb2FkRXZlbnRTdGFydCI6NDQ3Mi43OTk5OTk5OTk4MTQsImxvYWRFdmVudEVuZCI6NDQ3My4yOTk5OTk5OTk4MTQsInR5cGUiOiJuYXZpZ2F0ZSIsInJlZGlyZWN0Q291bnQiOjAsImFjdGl2YXRpb25TdGFydCI6MCwiY3JpdGljYWxDSFJlc3RhcnQiOjAsImluaXRpYXRvclR5cGUiOiJuYXZpZ2F0aW9uIiwibmV4dEhvcFByb3RvY29sIjoiaDIiLCJ3b3JrZXJTdGFydCI6MCwicmVkaXJlY3RTdGFydCI6MCwicmVkaXJlY3RFbmQiOjAsImZldGNoU3RhcnQiOjEuNSwiZG9tYWluTG9va3VwU3RhcnQiOjEuNSwiZG9tYWluTG9va3VwRW5kIjoxLjUsImNvbm5lY3RTdGFydCI6MS41LCJjb25uZWN0RW5kIjoxLjUsInNlY3VyZUNvbm5lY3Rpb25TdGFydCI6MS41LCJyZXF1ZXN0U3RhcnQiOjExLCJyZXNwb25zZVN0YXJ0Ijo5MSwicmVzcG9uc2VFbmQiOjkzLjUsInRyYW5zZmVyU2l6ZSI6NTMyNCwiZW5jb2RlZEJvZHlTaXplIjo1MDI0LCJkZWNvZGVkQm9keVNpemUiOjIwODUwLCJyZW5kZXJCbG9ja2luZ1N0YXR1cyI6Im5vbi1ibG9ja2luZyIsInJlc3BvbnNlU3RhdHVzIjoyMDAsImZpcnN0SW50ZXJpbVJlc3BvbnNlU3RhcnQiOjAsIm5hbWUiOiJodHRwczovL3RlbGVncmFtLXpoLmJpei9UR19aSC9pbmRleC5odG1sIiwiZW50cnlUeXBlIjoibmF2aWdhdGlvbiIsInN0YXJ0VGltZSI6MCwiZHVyYXRpb24iOjQ0NzMuMjk5OTk5OTk5ODE0fSwic2l0ZVRva2VuIjoiZGNkMTI4NTdlNDNhNGNiYjhkOGJiYjA1ZTljMWY5OWQiLCJzdCI6Mn0="
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4270.185794,
+        "wallTime": 1693717287.634543,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "r",
+                        "scriptId": "22",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/v652eace1692a40cfa3763df669d7439c1639079717194",
+                        "lineNumber": 0,
+                        "columnNumber": 8496
+                    },
+                    {
+                        "functionName": "t",
+                        "scriptId": "22",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/v652eace1692a40cfa3763df669d7439c1639079717194",
+                        "lineNumber": 0,
+                        "columnNumber": 6549
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "22",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/v652eace1692a40cfa3763df669d7439c1639079717194",
+                        "lineNumber": 0,
+                        "columnNumber": 6805
+                    },
+                    {
+                        "functionName": "j",
+                        "scriptId": "22",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/v652eace1692a40cfa3763df669d7439c1639079717194",
+                        "lineNumber": 0,
+                        "columnNumber": 6783
+                    },
+                    {
+                        "functionName": "I",
+                        "scriptId": "22",
+                        "url": "https://telegram-zh.biz/TG_ZH/index_files/v652eace1692a40cfa3763df669d7439c1639079717194",
+                        "lineNumber": 0,
+                        "columnNumber": 7039
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "0794C3F7E399D90F08D76F96125534D0",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_ga_VE3X12E1EV",
+                    "value": "GS1.1.1693717285.1.0.1693717287.0.0.0",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277287.288161,
+                    "size": 51,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_gat_gtag_UA_212845866_1",
+                    "value": "1",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1693717346,
+                    "size": 25,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_gid",
+                    "value": "GA1.2.1849193074.1693717287",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1693803686,
+                    "size": 31,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga",
+                    "value": "GA1.2.954705167.1693717286",
+                    "domain": ".telegram-zh.biz",
+                    "path": "/",
+                    "expires": 1728277286.691158,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

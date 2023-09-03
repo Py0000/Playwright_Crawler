@@ -1,0 +1,3498 @@
+[
+    {
+        "requestId": "2A39264057E87D61CDAD9D1471243EA9",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "http://dappcoin.info/",
+        "request": {
+            "url": "http://dappcoin.info/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14013.28363,
+        "wallTime": 1693727030.726594,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "2A39264057E87D61CDAD9D1471243EA9",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "https://dappcoin.info/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14013.401043,
+        "wallTime": 1693727030.844109,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://dappcoin.info/",
+            "status": 301,
+            "statusText": "Moved Permanently",
+            "headers": {
+                "CF-RAY": "800c5d368b196bb2-SIN",
+                "Cache-Control": "max-age=3600",
+                "Connection": "keep-alive",
+                "Date": "Sun, 03 Sep 2023 07:43:50 GMT",
+                "Expires": "Sun, 03 Sep 2023 08:43:50 GMT",
+                "Location": "https://dappcoin.info/",
+                "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+                "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=LHIpRyHX%2F%2B%2BSN5nhkeCbORTnJVvPeahS2C7s080rnUlHFspUhGGqfoXEl%2FTrJn77jfHwyUvrfztNXjZWqfPEE8tdTV4SKx6%2BntJwbLRJ6VKRtaexqNkPKxmNHXavdFLD\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+                "Server": "cloudflare",
+                "Transfer-Encoding": "chunked",
+                "Vary": "Accept-Encoding",
+                "alt-svc": "h3=\":443\"; ma=86400"
+            },
+            "mimeType": "",
+            "connectionReused": false,
+            "connectionId": 7738,
+            "remoteIPAddress": "172.67.151.120",
+            "remotePort": 80,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 652,
+            "timing": {
+                "requestTime": 14013.286086,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.514,
+                "dnsEnd": 16.071,
+                "connectStart": 16.071,
+                "connectEnd": 60.281,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 60.398,
+                "sendEnd": 60.771,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 113.642,
+                "receiveHeadersEnd": 113.8
+            },
+            "responseTime": 1693727030842.642,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.2",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "https://dappcoin.info/static/index.css",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14013.976449,
+        "wallTime": 1693727031.41941,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/",
+            "lineNumber": 2,
+            "columnNumber": 58
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.3",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "https://dappcoin.info/static/js/web3@1.6.1.min.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14013.977945,
+        "wallTime": 1693727031.421115,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/",
+            "lineNumber": 2,
+            "columnNumber": 113
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.4",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "https://dappcoin.info/static/js/web3modal@1.9.4.index.min.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14013.982947,
+        "wallTime": 1693727031.425947,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/",
+            "lineNumber": 2,
+            "columnNumber": 188
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.5",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "https://dappcoin.info/static/js/web3-provider@1.6.6.index.min.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14013.983581,
+        "wallTime": 1693727031.427579,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/",
+            "lineNumber": 2,
+            "columnNumber": 267
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.6",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14013.989324,
+        "wallTime": 1693727031.432282,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/",
+            "lineNumber": 2,
+            "columnNumber": 411
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.7",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "https://dappcoin.info/static/js/index.173589ff.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14013.991675,
+        "wallTime": 1693727031.434715,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/",
+            "lineNumber": 2,
+            "columnNumber": 461
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.20",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "https://dappcoin.info/static/js/pages-contract-contract~pages-contract-delivery~pages-home-home~pages-property-property~pages-quotat~27a45c3c.520f4103.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.118611,
+        "wallTime": 1693727032.564208,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "l.e",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 8777
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 300336
+                    },
+                    {
+                        "functionName": "wn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 25508
+                    },
+                    {
+                        "functionName": "rn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21885
+                    },
+                    {
+                        "functionName": "fn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 23506
+                    },
+                    {
+                        "functionName": "dn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 23037
+                    },
+                    {
+                        "functionName": "t.$createElement",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 24109
+                    },
+                    {
+                        "functionName": "render",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 342144
+                    },
+                    {
+                        "functionName": "t._render",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 24504
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28595
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31470
+                    },
+                    {
+                        "functionName": "En",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28609
+                    },
+                    {
+                        "functionName": "Mr.$mount",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68636
+                    },
+                    {
+                        "functionName": "init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21265
+                    },
+                    {
+                        "functionName": "m",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 45127
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 44756
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 49237
+                    },
+                    {
+                        "functionName": "An.t._update",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 27779
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28585
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31470
+                    },
+                    {
+                        "functionName": "En",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28609
+                    },
+                    {
+                        "functionName": "Mr.$mount",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68636
+                    },
+                    {
+                        "functionName": "init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21265
+                    },
+                    {
+                        "functionName": "m",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 45127
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 44756
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 49237
+                    },
+                    {
+                        "functionName": "An.t._update",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 27779
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28585
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31470
+                    },
+                    {
+                        "functionName": "En",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28609
+                    },
+                    {
+                        "functionName": "Mr.$mount",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68636
+                    },
+                    {
+                        "functionName": "init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21265
+                    },
+                    {
+                        "functionName": "m",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 45127
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 44756
+                    },
+                    {
+                        "functionName": "y",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 45741
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 44871
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 49237
+                    },
+                    {
+                        "functionName": "An.t._update",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 27779
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28585
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31470
+                    },
+                    {
+                        "functionName": "En",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28609
+                    },
+                    {
+                        "functionName": "Mr.$mount",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68636
+                    },
+                    {
+                        "functionName": "init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21265
+                    },
+                    {
+                        "functionName": "m",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 45127
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 44756
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 49456
+                    },
+                    {
+                        "functionName": "An.t._update",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 27779
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28585
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31470
+                    },
+                    {
+                        "functionName": "En",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28609
+                    },
+                    {
+                        "functionName": "Mr.$mount",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68636
+                    },
+                    {
+                        "functionName": "eb1c",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 394813
+                    },
+                    {
+                        "functionName": "l",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 8090
+                    },
+                    {
+                        "functionName": "0",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 9809
+                    },
+                    {
+                        "functionName": "l",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 8090
+                    },
+                    {
+                        "functionName": "a",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 430
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 9774
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 9779
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.21",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "https://dappcoin.info/static/js/pages-home-home.f733fe08.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.122149,
+        "wallTime": 1693727032.565262,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "l.e",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 8777
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 300453
+                    },
+                    {
+                        "functionName": "wn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 25508
+                    },
+                    {
+                        "functionName": "rn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21885
+                    },
+                    {
+                        "functionName": "fn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 23506
+                    },
+                    {
+                        "functionName": "dn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 23037
+                    },
+                    {
+                        "functionName": "t.$createElement",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 24109
+                    },
+                    {
+                        "functionName": "render",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 342144
+                    },
+                    {
+                        "functionName": "t._render",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 24504
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28595
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31470
+                    },
+                    {
+                        "functionName": "En",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28609
+                    },
+                    {
+                        "functionName": "Mr.$mount",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68636
+                    },
+                    {
+                        "functionName": "init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21265
+                    },
+                    {
+                        "functionName": "m",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 45127
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 44756
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 49237
+                    },
+                    {
+                        "functionName": "An.t._update",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 27779
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28585
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31470
+                    },
+                    {
+                        "functionName": "En",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28609
+                    },
+                    {
+                        "functionName": "Mr.$mount",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68636
+                    },
+                    {
+                        "functionName": "init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21265
+                    },
+                    {
+                        "functionName": "m",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 45127
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 44756
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 49237
+                    },
+                    {
+                        "functionName": "An.t._update",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 27779
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28585
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31470
+                    },
+                    {
+                        "functionName": "En",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28609
+                    },
+                    {
+                        "functionName": "Mr.$mount",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68636
+                    },
+                    {
+                        "functionName": "init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21265
+                    },
+                    {
+                        "functionName": "m",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 45127
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 44756
+                    },
+                    {
+                        "functionName": "y",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 45741
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 44871
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 49237
+                    },
+                    {
+                        "functionName": "An.t._update",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 27779
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28585
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31470
+                    },
+                    {
+                        "functionName": "En",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28609
+                    },
+                    {
+                        "functionName": "Mr.$mount",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68636
+                    },
+                    {
+                        "functionName": "init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21265
+                    },
+                    {
+                        "functionName": "m",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 45127
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 44756
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 49456
+                    },
+                    {
+                        "functionName": "An.t._update",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 27779
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28585
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31470
+                    },
+                    {
+                        "functionName": "En",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28609
+                    },
+                    {
+                        "functionName": "Mr.$mount",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68636
+                    },
+                    {
+                        "functionName": "eb1c",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 394813
+                    },
+                    {
+                        "functionName": "l",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 8090
+                    },
+                    {
+                        "functionName": "0",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 9809
+                    },
+                    {
+                        "functionName": "l",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 8090
+                    },
+                    {
+                        "functionName": "a",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 430
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 9774
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 9779
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.23",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "https://api-dappcoin.kcoinclean.com/system/config",
+            "method": "POST",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36",
+                "content-type": "application/x-www-form-urlencoded"
+            },
+            "postData": "p=%7B%22sid%22%3A%22%22%2C%22uid%22%3A%22%22%2C%22data%22%3A%7B%7D%7D",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "cD0lN0IlMjJzaWQlMjIlM0ElMjIlMjIlMkMlMjJ1aWQlMjIlM0ElMjIlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTdE"
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 14015.152043,
+        "wallTime": 1693727032.595927,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "l",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 45709
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 75724
+                    },
+                    {
+                        "functionName": "T",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 289624
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 457614
+                    },
+                    {
+                        "functionName": "post",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 97936
+                    },
+                    {
+                        "functionName": "apiPost",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 99723
+                    },
+                    {
+                        "functionName": "getConfig",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 15549
+                    },
+                    {
+                        "functionName": "init",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 100985
+                    },
+                    {
+                        "functionName": "autoInit",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 100895
+                    },
+                    {
+                        "functionName": "checkLogin",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 186370
+                    },
+                    {
+                        "functionName": "onShow",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 185445
+                    },
+                    {
+                        "functionName": "ee",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 11926
+                    },
+                    {
+                        "functionName": "Mr.__call_hook",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68496
+                    },
+                    {
+                        "functionName": "a",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 365843
+                    },
+                    {
+                        "functionName": "mounted",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 373697
+                    },
+                    {
+                        "functionName": "ee",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 11939
+                    },
+                    {
+                        "functionName": "Rn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 30013
+                    },
+                    {
+                        "functionName": "En",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28788
+                    },
+                    {
+                        "functionName": "Mr.$mount",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68636
+                    },
+                    {
+                        "functionName": "eb1c",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 394813
+                    },
+                    {
+                        "functionName": "l",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 8090
+                    },
+                    {
+                        "functionName": "0",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 9809
+                    },
+                    {
+                        "functionName": "l",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 8090
+                    },
+                    {
+                        "functionName": "a",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 430
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 9774
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 9779
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.25",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "https://dappcoin.info/static/song/message.mp3",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Accept-Encoding": "identity;q=1, *;q=0",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36",
+                "Range": "bytes=0-"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.188375,
+        "wallTime": 1693727032.631418,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/",
+            "lineNumber": 2,
+            "columnNumber": 477
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Media",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.26",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 14015.200734,
+        "wallTime": 1693727032.643739,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/static/index.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.27",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "https://api-dappcoin.kcoinclean.com/system/config",
+            "method": "POST",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36",
+                "content-type": "application/x-www-form-urlencoded"
+            },
+            "postData": "p=%7B%22sid%22%3A%22%22%2C%22uid%22%3A%22%22%2C%22data%22%3A%7B%7D%7D",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "cD0lN0IlMjJzaWQlMjIlM0ElMjIlMjIlMkMlMjJ1aWQlMjIlM0ElMjIlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTdE"
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 14015.26497,
+        "wallTime": 1693727032.708292,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "l",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 45709
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 75724
+                    },
+                    {
+                        "functionName": "T",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 289624
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 457614
+                    },
+                    {
+                        "functionName": "post",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 97936
+                    },
+                    {
+                        "functionName": "apiPost",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 99723
+                    },
+                    {
+                        "functionName": "getConfig",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 15549
+                    },
+                    {
+                        "functionName": "getData",
+                        "scriptId": "13",
+                        "url": "https://dappcoin.info/static/js/pages-home-home.f733fe08.js",
+                        "lineNumber": 0,
+                        "columnNumber": 12505
+                    },
+                    {
+                        "functionName": "onLoad",
+                        "scriptId": "13",
+                        "url": "https://dappcoin.info/static/js/pages-home-home.f733fe08.js",
+                        "lineNumber": 0,
+                        "columnNumber": 11715
+                    },
+                    {
+                        "functionName": "ee",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 11926
+                    },
+                    {
+                        "functionName": "Mr.__call_hook",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68496
+                    },
+                    {
+                        "functionName": "i",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 365675
+                    },
+                    {
+                        "functionName": "o",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 366253
+                    },
+                    {
+                        "functionName": "created",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 10822
+                    },
+                    {
+                        "functionName": "ee",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 11939
+                    },
+                    {
+                        "functionName": "Rn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 30013
+                    },
+                    {
+                        "functionName": "t._init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 35436
+                    },
+                    {
+                        "functionName": "o",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 36696
+                    },
+                    {
+                        "functionName": "an",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 22441
+                    },
+                    {
+                        "functionName": "init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21254
+                    },
+                    {
+                        "functionName": "m",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 45127
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 44756
+                    },
+                    {
+                        "functionName": "M",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 46359
+                    },
+                    {
+                        "functionName": "T",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 47521
+                    },
+                    {
+                        "functionName": "D",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 48144
+                    },
+                    {
+                        "functionName": "T",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 47064
+                    },
+                    {
+                        "functionName": "D",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 48144
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 49284
+                    },
+                    {
+                        "functionName": "An.t._update",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 27762
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28585
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr.run",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 32285
+                    },
+                    {
+                        "functionName": "Jn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 30492
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 13023
+                    },
+                    {
+                        "functionName": "ce",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 12418
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.28",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "https://api-dappcoin.kcoinclean.com/system/notice",
+            "method": "POST",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36",
+                "content-type": "application/x-www-form-urlencoded"
+            },
+            "postData": "p=%7B%22sid%22%3A%22%22%2C%22uid%22%3A%22%22%2C%22data%22%3A%7B%22pos%22%3A%22index%22%2C%22lang%22%3A%22en%22%7D%7D",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "cD0lN0IlMjJzaWQlMjIlM0ElMjIlMjIlMkMlMjJ1aWQlMjIlM0ElMjIlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIycG9zJTIyJTNBJTIyaW5kZXglMjIlMkMlMjJsYW5nJTIyJTNBJTIyZW4lMjIlN0QlN0Q="
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 14015.266274,
+        "wallTime": 1693727032.709416,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "l",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 45709
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 75724
+                    },
+                    {
+                        "functionName": "T",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 289624
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 457614
+                    },
+                    {
+                        "functionName": "post",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 97936
+                    },
+                    {
+                        "functionName": "apiPost",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 99723
+                    },
+                    {
+                        "functionName": "getNotice",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 17710
+                    },
+                    {
+                        "functionName": "getNotice",
+                        "scriptId": "13",
+                        "url": "https://dappcoin.info/static/js/pages-home-home.f733fe08.js",
+                        "lineNumber": 0,
+                        "columnNumber": 12765
+                    },
+                    {
+                        "functionName": "onLoad",
+                        "scriptId": "13",
+                        "url": "https://dappcoin.info/static/js/pages-home-home.f733fe08.js",
+                        "lineNumber": 0,
+                        "columnNumber": 11730
+                    },
+                    {
+                        "functionName": "ee",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 11926
+                    },
+                    {
+                        "functionName": "Mr.__call_hook",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68496
+                    },
+                    {
+                        "functionName": "i",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 365675
+                    },
+                    {
+                        "functionName": "o",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 366253
+                    },
+                    {
+                        "functionName": "created",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 10822
+                    },
+                    {
+                        "functionName": "ee",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 11939
+                    },
+                    {
+                        "functionName": "Rn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 30013
+                    },
+                    {
+                        "functionName": "t._init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 35436
+                    },
+                    {
+                        "functionName": "o",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 36696
+                    },
+                    {
+                        "functionName": "an",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 22441
+                    },
+                    {
+                        "functionName": "init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21254
+                    },
+                    {
+                        "functionName": "m",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 45127
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 44756
+                    },
+                    {
+                        "functionName": "M",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 46359
+                    },
+                    {
+                        "functionName": "T",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 47521
+                    },
+                    {
+                        "functionName": "D",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 48144
+                    },
+                    {
+                        "functionName": "T",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 47064
+                    },
+                    {
+                        "functionName": "D",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 48144
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 49284
+                    },
+                    {
+                        "functionName": "An.t._update",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 27762
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28585
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr.run",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 32285
+                    },
+                    {
+                        "functionName": "Jn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 30492
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 13023
+                    },
+                    {
+                        "functionName": "ce",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 12418
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.29",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "https://api-dappcoin.kcoinclean.com/system/notice",
+            "method": "POST",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36",
+                "content-type": "application/x-www-form-urlencoded"
+            },
+            "postData": "p=%7B%22sid%22%3A%22%22%2C%22uid%22%3A%22%22%2C%22data%22%3A%7B%22pos%22%3A%22banner%22%2C%22lang%22%3A%22en%22%7D%7D",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "cD0lN0IlMjJzaWQlMjIlM0ElMjIlMjIlMkMlMjJ1aWQlMjIlM0ElMjIlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIycG9zJTIyJTNBJTIyYmFubmVyJTIyJTJDJTIybGFuZyUyMiUzQSUyMmVuJTIyJTdEJTdE"
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 14015.267113,
+        "wallTime": 1693727032.710411,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "l",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 45709
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 75724
+                    },
+                    {
+                        "functionName": "T",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 289624
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 457614
+                    },
+                    {
+                        "functionName": "post",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 97936
+                    },
+                    {
+                        "functionName": "apiPost",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 99723
+                    },
+                    {
+                        "functionName": "getNotice",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 17710
+                    },
+                    {
+                        "functionName": "getBanner",
+                        "scriptId": "13",
+                        "url": "https://dappcoin.info/static/js/pages-home-home.f733fe08.js",
+                        "lineNumber": 0,
+                        "columnNumber": 12890
+                    },
+                    {
+                        "functionName": "onLoad",
+                        "scriptId": "13",
+                        "url": "https://dappcoin.info/static/js/pages-home-home.f733fe08.js",
+                        "lineNumber": 0,
+                        "columnNumber": 11747
+                    },
+                    {
+                        "functionName": "ee",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 11926
+                    },
+                    {
+                        "functionName": "Mr.__call_hook",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68496
+                    },
+                    {
+                        "functionName": "i",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 365675
+                    },
+                    {
+                        "functionName": "o",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 366253
+                    },
+                    {
+                        "functionName": "created",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 10822
+                    },
+                    {
+                        "functionName": "ee",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 11939
+                    },
+                    {
+                        "functionName": "Rn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 30013
+                    },
+                    {
+                        "functionName": "t._init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 35436
+                    },
+                    {
+                        "functionName": "o",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 36696
+                    },
+                    {
+                        "functionName": "an",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 22441
+                    },
+                    {
+                        "functionName": "init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21254
+                    },
+                    {
+                        "functionName": "m",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 45127
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 44756
+                    },
+                    {
+                        "functionName": "M",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 46359
+                    },
+                    {
+                        "functionName": "T",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 47521
+                    },
+                    {
+                        "functionName": "D",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 48144
+                    },
+                    {
+                        "functionName": "T",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 47064
+                    },
+                    {
+                        "functionName": "D",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 48144
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 49284
+                    },
+                    {
+                        "functionName": "An.t._update",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 27762
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28585
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr.run",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 32285
+                    },
+                    {
+                        "functionName": "Jn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 30492
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 13023
+                    },
+                    {
+                        "functionName": "ce",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 12418
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.30",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/",
+        "request": {
+            "url": "https://api-dappcoin.kcoinclean.com/system/currency",
+            "method": "POST",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36",
+                "content-type": "application/x-www-form-urlencoded"
+            },
+            "postData": "p=%7B%22sid%22%3A%22%22%2C%22uid%22%3A%22%22%2C%22data%22%3A%7B%7D%7D",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "cD0lN0IlMjJzaWQlMjIlM0ElMjIlMjIlMkMlMjJ1aWQlMjIlM0ElMjIlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTdE"
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 14015.26871,
+        "wallTime": 1693727032.712162,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "l",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 45709
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 75724
+                    },
+                    {
+                        "functionName": "T",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 289624
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 457614
+                    },
+                    {
+                        "functionName": "post",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 97936
+                    },
+                    {
+                        "functionName": "apiPost",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 99723
+                    },
+                    {
+                        "functionName": "refreshCur",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 16753
+                    },
+                    {
+                        "functionName": "onShow",
+                        "scriptId": "13",
+                        "url": "https://dappcoin.info/static/js/pages-home-home.f733fe08.js",
+                        "lineNumber": 0,
+                        "columnNumber": 11973
+                    },
+                    {
+                        "functionName": "ee",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 11939
+                    },
+                    {
+                        "functionName": "Mr.__call_hook",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68496
+                    },
+                    {
+                        "functionName": "i",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 365675
+                    },
+                    {
+                        "functionName": "o",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 366253
+                    },
+                    {
+                        "functionName": "created",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 6,
+                        "columnNumber": 10854
+                    },
+                    {
+                        "functionName": "ee",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 11939
+                    },
+                    {
+                        "functionName": "Rn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 30013
+                    },
+                    {
+                        "functionName": "t._init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 35436
+                    },
+                    {
+                        "functionName": "o",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 36696
+                    },
+                    {
+                        "functionName": "an",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 22441
+                    },
+                    {
+                        "functionName": "init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21254
+                    },
+                    {
+                        "functionName": "m",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 45127
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 44756
+                    },
+                    {
+                        "functionName": "M",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 46359
+                    },
+                    {
+                        "functionName": "T",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 47521
+                    },
+                    {
+                        "functionName": "D",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 48144
+                    },
+                    {
+                        "functionName": "T",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 47064
+                    },
+                    {
+                        "functionName": "D",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 48144
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 49284
+                    },
+                    {
+                        "functionName": "An.t._update",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 27762
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28585
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr.run",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 32285
+                    },
+                    {
+                        "functionName": "Jn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 30492
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 13023
+                    },
+                    {
+                        "functionName": "ce",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 12418
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.22",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/fonts/font_1841497_1lo5lhvbg4m.ef1e303d.ttf",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://dappcoin.info",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.348864,
+        "wallTime": 1693727032.791894,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.32",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/js/pages-guide-check.df918f09.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.393444,
+        "wallTime": 1693727032.836623,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "l.e",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 8777
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 333202
+                    },
+                    {
+                        "functionName": "wn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 25508
+                    },
+                    {
+                        "functionName": "rn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21885
+                    },
+                    {
+                        "functionName": "fn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 23506
+                    },
+                    {
+                        "functionName": "dn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 23037
+                    },
+                    {
+                        "functionName": "t.$createElement",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 24109
+                    },
+                    {
+                        "functionName": "render",
+                        "scriptId": "9",
+                        "url": "https://dappcoin.info/static/js/index.173589ff.js",
+                        "lineNumber": 0,
+                        "columnNumber": 361215
+                    },
+                    {
+                        "functionName": "t._render",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 24504
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28595
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31470
+                    },
+                    {
+                        "functionName": "En",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28609
+                    },
+                    {
+                        "functionName": "Mr.$mount",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 68636
+                    },
+                    {
+                        "functionName": "init",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 21265
+                    },
+                    {
+                        "functionName": "m",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 45127
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 44756
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 49456
+                    },
+                    {
+                        "functionName": "An.t._update",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 27762
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 28585
+                    },
+                    {
+                        "functionName": "nr.get",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 31552
+                    },
+                    {
+                        "functionName": "nr.run",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 32285
+                    },
+                    {
+                        "functionName": "Jn",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 30492
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 13023
+                    },
+                    {
+                        "functionName": "ce",
+                        "scriptId": "8",
+                        "url": "https://dappcoin.info/static/js/chunk-vendors.5ee5a6f3.js",
+                        "lineNumber": 152,
+                        "columnNumber": 12418
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.33",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/icons/header-message.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.399656,
+        "wallTime": 1693727032.842622,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.34",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/icons/menu.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.399877,
+        "wallTime": 1693727032.842875,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.35",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/icons/notice.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.40009,
+        "wallTime": 1693727032.843029,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.36",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/icons/list.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.400237,
+        "wallTime": 1693727032.843378,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.37",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/icons/home-contract.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.400594,
+        "wallTime": 1693727032.843534,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.38",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/icons/home-mining.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.400756,
+        "wallTime": 1693727032.843696,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.39",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/icons/home-transaction.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.402307,
+        "wallTime": 1693727032.848839,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.40",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/icons/home-newcoin.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.406571,
+        "wallTime": 1693727032.849577,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.41",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/icons/home-mock.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.406904,
+        "wallTime": 1693727032.849855,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.42",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/icons/home-loan.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.408035,
+        "wallTime": 1693727032.851003,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.43",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/icons/home-share.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.408259,
+        "wallTime": 1693727032.851201,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.44",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/icons/home-service.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.408433,
+        "wallTime": 1693727032.85138,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.45",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/img/logo.29795107.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.553964,
+        "wallTime": 1693727032.996969,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.46",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/img/phone.70f3a67b.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.556077,
+        "wallTime": 1693727032.999239,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.47",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/img/google.ca316662.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.557214,
+        "wallTime": 1693727033.000201,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.48",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/img/appstore.041db9cd.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.557905,
+        "wallTime": 1693727033.001142,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.19",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/Nunito-Bold.ttf",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://dappcoin.info",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.566023,
+        "wallTime": 1693727033.009031,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "194829.18",
+        "loaderId": "2A39264057E87D61CDAD9D1471243EA9",
+        "documentURL": "https://dappcoin.info/pages/guide/check",
+        "request": {
+            "url": "https://dappcoin.info/static/Nunito.ttf",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://dappcoin.info",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 14015.566347,
+        "wallTime": 1693727033.009294,
+        "initiator": {
+            "type": "parser",
+            "url": "https://dappcoin.info/pages/guide/check",
+            "lineNumber": 2,
+            "columnNumber": 485
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "7525E9A18F7C02F9D4208244C88B9B01",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

