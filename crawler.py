@@ -129,7 +129,7 @@ def get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_em
 
     # Save css scripts
     css_urls = page.eval_on_selector_all("link[rel='stylesheet']", "links => links.map(link => link.href)")
-    crawler_support.save_css_files(folder_path, css_urls)
+    crawler_support.save_css_files(folder_path, css_urls, actual_url)
 
     print("Actual url: ", actual_url)
     print("Url visited: ", visited_url)
@@ -211,9 +211,9 @@ def get_dataset(device_conf, ref_flag, act_flag, browser, device, url_list):
                 page.close()
                 context.close()
                 
-                # Scrape embedded link
-                referrer = url if ref_flag else referrer
-                error_list = scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, url, url_index, error_list)
+            # Scrape embedded link
+            referrer = url if ref_flag else referrer
+            error_list = scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, url, url_index, error_list)
                 
         except Exception as e:
             crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, f"Error occurred for url: {url}\n{e}")

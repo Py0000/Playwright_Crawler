@@ -121,6 +121,5 @@ def start_program(seed_url_list):
     analyze_mobile_bot_config_data()
 
 
-
 feeds = read_feeds_from_file("facebook.txt")
 start_program(feeds)

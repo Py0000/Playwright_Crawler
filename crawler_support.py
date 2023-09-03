@@ -155,7 +155,7 @@ def get_level_one_embedded_link(file_path):
 
 
 
-def save_css_files(folder_path, css_urls):
+def save_css_files(folder_path, css_urls, base_url):
     css_file_path = os.path.join(folder_path, util_def.CSS_FOLDER)
     if not os.path.exists(css_file_path):
         os.makedirs(css_file_path)
@@ -163,15 +163,20 @@ def save_css_files(folder_path, css_urls):
     for i, css_url in enumerate(css_urls):
         file_name = f"style{i+1}.css"
         file_path = os.path.join(css_file_path, file_name)
-        response = requests.get(css_url)
-        # Check if the request was successful
-        if response.status_code == 200:
+
+        parsed_url = urlparse(css_url)
+        if not parsed_url.scheme:
+            if urlparse(base_url).scheme:
+                css_url = urljoin(base_url, css_url)
+        try:
+            response = requests.get(css_url)
             with open(file_path, 'w', encoding='utf-8') as file:
                 file.write(response.text)
-        else:
+            
+        except Exception as e:
             with open(file_path, 'w', encoding='utf-8') as file:
                 file.write(f"Error obtaining css file from server for: {css_url}")
-    
+
     print("CSS files obtained and saved...")
 
 
