@@ -210,11 +210,11 @@ def get_dataset(device_conf, ref_flag, act_flag, browser, device, url_list):
                 crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, content)
                 page.close()
                 context.close()
-                """
+                
                 # Scrape embedded link
                 referrer = url if ref_flag else referrer
                 error_list = scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, device, embedded_path, url, url_index, error_list)
-                """
+                
         except Exception as e:
             crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, f"Error occurred for url: {url}\n{e}")
             crawler_support.save_crawled_url(folder_path, util_def.ERROR_URL_FLAG)

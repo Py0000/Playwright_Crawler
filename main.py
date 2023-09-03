@@ -122,5 +122,5 @@ def start_program(seed_url_list):
 
 
 
-feeds = read_feeds_from_file("feeds.txt")
+feeds = read_feeds_from_file("facebook.txt")
 start_program(feeds)
