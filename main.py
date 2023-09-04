@@ -37,13 +37,12 @@ def analyze_desktop_user_config_data():
 
 
 def crawl_desktop_bot_config(seed_url_list):
-
     print("\nConfigurations:\nUser-Agent: Desktop Bot\nReferrer: Google\nUser interaction: Enabled")
     crawler.crawl(util_def.DESKTOP_BOT, ref_flag=True, act_flag=True, url_list=seed_url_list)
 
     print("\nConfigurations:\nUser-Agent: Desktop Bot\nReferrer: None\nUser interaction: Not Enabled")
     crawler.crawl(util_def.DESKTOP_BOT, ref_flag=False, act_flag=False, url_list=seed_url_list)
-
+    
     print("\nConfigurations:\nUser-Agent: Desktop Bot\nReferrer: Google\nUser interaction: Not Enabled")
     crawler.crawl(util_def.DESKTOP_BOT, ref_flag=True, act_flag=False, url_list=seed_url_list)
 
@@ -110,16 +109,17 @@ def analyze_mobile_bot_config_data():
 
 
 def start_program(seed_url_list):
+    
     crawl_desktop_user_config(seed_url_list)
     crawl_desktop_bot_config(seed_url_list)
     crawl_mobile_user_config(seed_url_list)
     crawl_mobile_bot_config(seed_url_list)
-
+    
     analyze_desktop_user_config_data()
     analyze_desktop_bot_config_data()
     analyze_mobile_user_config_data()
     analyze_mobile_bot_config_data()
 
 
-feeds = read_feeds_from_file("facebook.txt")
+feeds = read_feeds_from_file("feeds_3.txt")
 start_program(feeds)

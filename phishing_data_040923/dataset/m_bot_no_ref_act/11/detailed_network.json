@@ -1,0 +1,1141 @@
+[
+    {
+        "requestId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://antai-mon-amendes-gouv.info/infospage.php",
+        "request": {
+            "url": "https://antai-mon-amendes-gouv.info/infospage.php",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3581.458062,
+        "wallTime": 1693788067.987883,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3582.593619,
+        "wallTime": 1693788069.123514,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://antai-mon-amendes-gouv.info/infospage.php",
+            "status": 302,
+            "statusText": "Found",
+            "headers": {
+                "Cache-Control": "no-store, no-cache, must-revalidate",
+                "Connection": "Keep-Alive",
+                "Content-Type": "text/html; charset=UTF-8",
+                "Date": "Mon, 04 Sep 2023 00:41:08 GMT",
+                "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+                "Keep-Alive": "timeout=5, max=100",
+                "Location": "https://www.mediapart.fr/",
+                "Pragma": "no-cache",
+                "Server": "Apache",
+                "Transfer-Encoding": "chunked",
+                "X-Powered-By": "PHP/8.0.30\nPleskLin"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 354,
+            "remoteIPAddress": "94.156.161.151",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 454,
+            "timing": {
+                "requestTime": 3581.459958,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.933,
+                "dnsEnd": 2.866,
+                "connectStart": 2.866,
+                "connectEnd": 818.748,
+                "sslStart": 269.964,
+                "sslEnd": 818.73,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 818.957,
+                "sendEnd": 819.727,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 1132.576,
+                "receiveHeadersEnd": 1132.634
+            },
+            "responseTime": 1693788069122.298,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.2",
+                "keyExchange": "ECDHE_RSA",
+                "keyExchangeGroup": "P-256",
+                "cipher": "AES_128_GCM",
+                "certificateId": 0,
+                "subjectName": "antai-mon-amendes-gouv.info",
+                "sanList": [
+                    "antai-mon-amendes-gouv.info",
+                    "www.antai-mon-amendes-gouv.info"
+                ],
+                "issuer": "R3",
+                "validFrom": 1693677495,
+                "validTo": 1701453494,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "serverSignatureAlgorithm": 1537,
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Document",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.2",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://targetemsecure.blob.core.windows.net/84e5c880-8719-4773-8dad-7c722eb16350/84e5c880871947738dad7c722eb16350_1.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 3582.811672,
+        "wallTime": 1693788069.341482,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/",
+            "lineNumber": 8,
+            "columnNumber": 175
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.3",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/translations",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3582.818276,
+        "wallTime": 1693788069.348595,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/",
+            "lineNumber": 161,
+            "columnNumber": 46
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.4",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3582.819247,
+        "wallTime": 1693788069.349526,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/",
+            "lineNumber": 162,
+            "columnNumber": 165
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.5",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/js/vendors.d46ea5256803ae6c.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3582.81992,
+        "wallTime": 1693788069.349708,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/",
+            "lineNumber": 163,
+            "columnNumber": 1448
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.6",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/js/commons.9d97e010410b9831.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3582.819996,
+        "wallTime": 1693788069.349783,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/",
+            "lineNumber": 163,
+            "columnNumber": 1589
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.7",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/js/home.0369bb6868f9b427.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3582.820077,
+        "wallTime": 1693788069.349864,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/",
+            "lineNumber": 164,
+            "columnNumber": 141
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.11",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://static.mediapart.fr/etmagine/default/files/2023/09/01/20230901-img-la-rentree-pour-presque-tous-les-enfants.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3582.840777,
+        "wallTime": 1693788069.370598,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/",
+            "lineNumber": 1353,
+            "columnNumber": 245
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.12",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/images/inserts/free-mortaza@2x.ed956e010b3d8a04.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3582.841081,
+        "wallTime": 1693788069.37087,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/",
+            "lineNumber": 4557,
+            "columnNumber": 665
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.45",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/assets/front/nouvelle_formule/maspero/fonts/PensumPro/PensumPro-Regular.2ff9bda49a5169c8.woff2",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css",
+                "Origin": "https://www.mediapart.fr",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3582.902754,
+        "wallTime": 1693788069.432582,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.38",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/assets/front/nouvelle_formule/maspero/fonts/AtlasGrotesk/AtlasGrotesk-Regular.ac98111ed9ac4632.woff2",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css",
+                "Origin": "https://www.mediapart.fr",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3582.914508,
+        "wallTime": 1693788069.444332,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.42",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/assets/front/nouvelle_formule/maspero/fonts/AtlasGrotesk/AtlasGrotesk-Bold.73c2f5b8b64d995f.woff2",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css",
+                "Origin": "https://www.mediapart.fr",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3582.921827,
+        "wallTime": 1693788069.451652,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.40",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/assets/front/nouvelle_formule/maspero/fonts/AtlasGrotesk/AtlasGrotesk-Medium.66355f40adbad027.woff2",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css",
+                "Origin": "https://www.mediapart.fr",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3582.922788,
+        "wallTime": 1693788069.452734,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.48",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/assets/front/nouvelle_formule/maspero/fonts/PensumPro/PensumPro-ExtraBold.2f15d1ec02926c4e.woff2",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css",
+                "Origin": "https://www.mediapart.fr",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3582.924297,
+        "wallTime": 1693788069.454102,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.47",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/assets/front/nouvelle_formule/maspero/fonts/PensumPro/PensumPro-Bold.ee3bf407b24cc9d2.woff2",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css",
+                "Origin": "https://www.mediapart.fr",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3582.924822,
+        "wallTime": 1693788069.454617,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.44",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/assets/front/nouvelle_formule/maspero/fonts/PensumDisplay/PensumDisplay-Black.0f16031e9dbed0bf.woff2",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css",
+                "Origin": "https://www.mediapart.fr",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3582.92502,
+        "wallTime": 1693788069.455075,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.20",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://static.mediapart.fr/etmagine/default/files/2023/09/01/20230901-img-quartier-pablo-picasso-nanterre-3.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3583.05108,
+        "wallTime": 1693788069.581094,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/",
+            "lineNumber": 3192,
+            "columnNumber": 50
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.21",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/images/mkt_banner/no_abo.083fe04de110e5e2.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3583.051806,
+        "wallTime": 1693788069.581597,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/",
+            "lineNumber": 3192,
+            "columnNumber": 50
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.22",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://static.mediapart.fr/etmagine/default/files/2023/08/30/20230828-img-nawell-madani-1-1.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3583.051948,
+        "wallTime": 1693788069.581734,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/",
+            "lineNumber": 3192,
+            "columnNumber": 50
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.23",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://static.mediapart.fr/etmagine/default/files/2023/08/28/20230828-img-la-jordanie-prise-dans-la-spirale-du-tourisme-de-masse-3.jpg",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3583.052313,
+        "wallTime": 1693788069.582106,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/",
+            "lineNumber": 3192,
+            "columnNumber": 50
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.46",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://www.mediapart.fr/assets/front/nouvelle_formule/maspero/fonts/PensumPro/PensumPro-RegularItalic.5d7dbd90e3f5cef4.woff2",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css",
+                "Origin": "https://www.mediapart.fr",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3583.212948,
+        "wallTime": 1693788069.742777,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/assets/build/default/front/nouvelle_formule/css/main.adda630906de4086.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.155",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJXaW5kb3dUZXh0IiBkPSJNMjAgM2gtMVYxaC0ydjJIN1YxSDV2Mkg0Yy0xLjEgMC0yIC45LTIgMnYxNmMwIDEuMS45IDIgMiAyaDE2YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJ6bTAgMThINFY4aDE2djEzeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz4=",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 3583.303175,
+        "wallTime": 1693788069.832994,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/",
+            "lineNumber": 14530,
+            "columnNumber": 134
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "28484.160",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://logs1406.xiti.com/hit.xiti?s=599064&idclient=1f6fb168-62f6-4448-a2fc-82a8107fe2f6&vc=false&vm=exempt&ts=1693788070130&vtag=5.29.4&ptag=js&r=393x727x24x24&re=393x727&hl=8x41x10&lng=en-GB&p=une_journal::accueil&s2=1&x1=[non_authentifie]&x2=[FR]&x8=[20230903]&x9=[0]&x19=1110235&ref=",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 3583.721304,
+        "wallTime": 1693788070.25112,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/",
+            "lineNumber": 15012,
+            "columnNumber": 1
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "atauthority",
+                    "value": "%7B%22name%22%3A%22atauthority%22%2C%22val%22%3A%7B%22authority_name%22%3A%22cnil%22%2C%22visitor_mode%22%3A%22exempt%22%7D%2C%22options%22%3A%7B%22end%22%3A%222024-10-05T00%3A41%3A10.017Z%22%2C%22path%22%3A%22%2F%22%7D%7D",
+                    "domain": ".mediapart.fr",
+                    "path": "/",
+                    "expires": 1728088870,
+                    "size": 233,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "atuserid",
+                    "value": "%7B%22name%22%3A%22atuserid%22%2C%22val%22%3A%221f6fb168-62f6-4448-a2fc-82a8107fe2f6%22%2C%22options%22%3A%7B%22end%22%3A%222024-10-05T00%3A41%3A10.012Z%22%2C%22path%22%3A%22%2F%22%7D%7D",
+                    "domain": ".mediapart.fr",
+                    "path": "/",
+                    "expires": 1728088870,
+                    "size": 194,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "28484.161",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://targetemsecure.blob.core.windows.net/84e5c880-8719-4773-8dad-7c722eb16350/84e5c880871947738dad7c722eb16350_2_1692801742.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 3583.975053,
+        "wallTime": 1693788070.506422,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "appendScript",
+                        "scriptId": "19",
+                        "url": "https://targetemsecure.blob.core.windows.net/84e5c880-8719-4773-8dad-7c722eb16350/84e5c880871947738dad7c722eb16350_1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 1202
+                    },
+                    {
+                        "functionName": "initializeSiteScript",
+                        "scriptId": "19",
+                        "url": "https://targetemsecure.blob.core.windows.net/84e5c880-8719-4773-8dad-7c722eb16350/84e5c880871947738dad7c722eb16350_1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 60311
+                    },
+                    {
+                        "functionName": "initialize",
+                        "scriptId": "19",
+                        "url": "https://targetemsecure.blob.core.windows.net/84e5c880-8719-4773-8dad-7c722eb16350/84e5c880871947738dad7c722eb16350_1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 59736
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "19",
+                        "url": "https://targetemsecure.blob.core.windows.net/84e5c880-8719-4773-8dad-7c722eb16350/84e5c880871947738dad7c722eb16350_1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 61476
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "19",
+                        "url": "https://targetemsecure.blob.core.windows.net/84e5c880-8719-4773-8dad-7c722eb16350/84e5c880871947738dad7c722eb16350_1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 61490
+                    },
+                    {
+                        "functionName": "i",
+                        "scriptId": "19",
+                        "url": "https://targetemsecure.blob.core.windows.net/84e5c880-8719-4773-8dad-7c722eb16350/84e5c880871947738dad7c722eb16350_1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 109
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "19",
+                        "url": "https://targetemsecure.blob.core.windows.net/84e5c880-8719-4773-8dad-7c722eb16350/84e5c880871947738dad7c722eb16350_1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 901
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "19",
+                        "url": "https://targetemsecure.blob.core.windows.net/84e5c880-8719-4773-8dad-7c722eb16350/84e5c880871947738dad7c722eb16350_1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 910
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "atauthority",
+                    "value": "%7B%22name%22%3A%22atauthority%22%2C%22val%22%3A%7B%22authority_name%22%3A%22cnil%22%2C%22visitor_mode%22%3A%22exempt%22%7D%2C%22options%22%3A%7B%22end%22%3A%222024-10-05T00%3A41%3A10.017Z%22%2C%22path%22%3A%22%2F%22%7D%7D",
+                    "domain": ".mediapart.fr",
+                    "path": "/",
+                    "expires": 1728088870,
+                    "size": 233,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "atuserid",
+                    "value": "%7B%22name%22%3A%22atuserid%22%2C%22val%22%3A%221f6fb168-62f6-4448-a2fc-82a8107fe2f6%22%2C%22options%22%3A%7B%22end%22%3A%222024-10-05T00%3A41%3A10.012Z%22%2C%22path%22%3A%22%2F%22%7D%7D",
+                    "domain": ".mediapart.fr",
+                    "path": "/",
+                    "expires": 1728088870,
+                    "size": 194,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "28484.162",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://logs1406.xiti.com/hit.xiti?s=599064&idclient=1f6fb168-62f6-4448-a2fc-82a8107fe2f6&vc=false&vm=exempt&ts=1693788070512&vtag=5.29.4&ptag=js&r=393x727x24x24&re=393x727&hl=8x41x10&lng=en-GB&ati=PUB-[PRIVACY]-[votre_choix_pour_vos_donnees]------&type=AT",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 3583.983635,
+        "wallTime": 1693788070.513451,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mediapart.fr/",
+            "lineNumber": 15012,
+            "columnNumber": 1
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "atauthority",
+                    "value": "%7B%22name%22%3A%22atauthority%22%2C%22val%22%3A%7B%22authority_name%22%3A%22cnil%22%2C%22visitor_mode%22%3A%22exempt%22%7D%2C%22options%22%3A%7B%22end%22%3A%222024-10-05T00%3A41%3A10.017Z%22%2C%22path%22%3A%22%2F%22%7D%7D",
+                    "domain": ".mediapart.fr",
+                    "path": "/",
+                    "expires": 1728088870,
+                    "size": 233,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "atuserid",
+                    "value": "%7B%22name%22%3A%22atuserid%22%2C%22val%22%3A%221f6fb168-62f6-4448-a2fc-82a8107fe2f6%22%2C%22options%22%3A%7B%22end%22%3A%222024-10-05T00%3A41%3A10.012Z%22%2C%22path%22%3A%22%2F%22%7D%7D",
+                    "domain": ".mediapart.fr",
+                    "path": "/",
+                    "expires": 1728088870,
+                    "size": 194,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "28484.163",
+        "loaderId": "752DBCA32DD1AFF29FB697B915E472A5",
+        "documentURL": "https://www.mediapart.fr/",
+        "request": {
+            "url": "https://cdn.polyfill.io/v3/polyfill.min.js?features=es6&gated=true",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.mediapart.fr/",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 3584.307637,
+        "wallTime": 1693788070.841036,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "r",
+                        "scriptId": "23",
+                        "url": "https://targetemsecure.blob.core.windows.net/84e5c880-8719-4773-8dad-7c722eb16350/84e5c880871947738dad7c722eb16350_2_1692801742.js",
+                        "lineNumber": 0,
+                        "columnNumber": 61791
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "23",
+                        "url": "https://targetemsecure.blob.core.windows.net/84e5c880-8719-4773-8dad-7c722eb16350/84e5c880871947738dad7c722eb16350_2_1692801742.js",
+                        "lineNumber": 0,
+                        "columnNumber": 61955
+                    },
+                    {
+                        "functionName": "n",
+                        "scriptId": "23",
+                        "url": "https://targetemsecure.blob.core.windows.net/84e5c880-8719-4773-8dad-7c722eb16350/84e5c880871947738dad7c722eb16350_2_1692801742.js",
+                        "lineNumber": 0,
+                        "columnNumber": 109
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "23",
+                        "url": "https://targetemsecure.blob.core.windows.net/84e5c880-8719-4773-8dad-7c722eb16350/84e5c880871947738dad7c722eb16350_2_1692801742.js",
+                        "lineNumber": 0,
+                        "columnNumber": 901
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "23",
+                        "url": "https://targetemsecure.blob.core.windows.net/84e5c880-8719-4773-8dad-7c722eb16350/84e5c880871947738dad7c722eb16350_2_1692801742.js",
+                        "lineNumber": 0,
+                        "columnNumber": 911
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "A50490A5B759BF5150B34E4A4F70E443",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "atauthority",
+                    "value": "%7B%22name%22%3A%22atauthority%22%2C%22val%22%3A%7B%22authority_name%22%3A%22cnil%22%2C%22visitor_mode%22%3A%22exempt%22%7D%2C%22options%22%3A%7B%22end%22%3A%222024-10-05T00%3A41%3A10.017Z%22%2C%22path%22%3A%22%2F%22%7D%7D",
+                    "domain": ".mediapart.fr",
+                    "path": "/",
+                    "expires": 1728088870,
+                    "size": 233,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "atuserid",
+                    "value": "%7B%22name%22%3A%22atuserid%22%2C%22val%22%3A%221f6fb168-62f6-4448-a2fc-82a8107fe2f6%22%2C%22options%22%3A%7B%22end%22%3A%222024-10-05T00%3A41%3A10.012Z%22%2C%22path%22%3A%22%2F%22%7D%7D",
+                    "domain": ".mediapart.fr",
+                    "path": "/",
+                    "expires": 1728088870,
+                    "size": 194,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]
