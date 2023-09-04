@@ -1,0 +1,1897 @@
+[
+    {
+        "requestId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://www.meta.com/",
+        "request": {
+            "url": "https://www.meta.com/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 82362.930985,
+        "wallTime": 1693749927.105914,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/oidc/?app_id=800455417652954&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fwww.meta.com%2Foidc%2Fcallback%2F&locale=en_US&state=ATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q",
+        "request": {
+            "url": "https://auth.meta.com/oidc/?app_id=800455417652954&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fwww.meta.com%2Foidc%2Fcallback%2F&locale=en_US&state=ATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 82363.215637,
+        "wallTime": 1693749927.390721,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://www.meta.com/",
+            "status": 302,
+            "statusText": "",
+            "headers": {
+                "alt-svc": "h3=\":443\"; ma=86400",
+                "cache-control": "private, no-cache, no-store, must-revalidate",
+                "content-length": "0",
+                "content-security-policy": "default-src 'self' data:;script-src 'self' 'unsafe-eval' 'unsafe-inline' data: *.fbcdn.net *.youtube.com connect.facebook.net *.oculus.com;style-src 'self' 'unsafe-inline' data: *.fbcdn.net 'unsafe-eval' *.oculus.com;connect-src *.fbcdn.net www.meta.com *.www.meta.com meta.ada.support www.facebook.com/tr/ gw.conversionsapigateway.com secure.facebook.com/payments/generate_token *.oculus.com;font-src data: *.fbcdn.net *.oculus.com;img-src 'self' blob: data: *.fbcdn.net *.fbsbx.com *.oculuscdn.com *.youtube.com *.ytimg.com www.facebook.com/tr/ *.cdninstagram.com *.oculus.com;media-src blob: data: *.fbcdn.net *.cdninstagram.com *.oculuscdn.com;child-src blob: data: *.fbcdn.net;frame-src data: *.fbcdn.net www.meta.com/tealium/ *.www.meta.com/tealium/ *.youtube.com www.meta.com/payments/ *.www.meta.com/payments/ centinelapi.cardinalcommerce.com centinelapistag.cardinalcommerce.com *.fbthirdpartypixel.com meta.ada.support;worker-src blob: data: *.fbcdn.net;block-all-mixed-content;upgrade-insecure-requests;report-uri https://www.facebook.com/csp/reporting/?minimize=0;",
+                "content-type": "text/html; charset=\"utf-8\"",
+                "cross-origin-opener-policy": "same-origin-allow-popups",
+                "cross-origin-resource-policy": "rollout",
+                "date": "Sun, 03 Sep 2023 14:05:27 GMT",
+                "document-policy": "force-load-at-top",
+                "expires": "Sat, 01 Jan 2000 00:00:00 GMT",
+                "feature-policy": "document-domain none",
+                "location": "https://auth.meta.com/oidc/?app_id=800455417652954&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fwww.meta.com%2Foidc%2Fcallback%2F&locale=en_US&state=ATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q",
+                "origin-agent-cluster": "?1",
+                "permissions-policy": "accelerometer=(), ambient-light-sensor=(), bluetooth=(), camera=(self), gyroscope=(), hid=(), idle-detection=(), magnetometer=(), microphone=(self), midi=(), payment=(), screen-wake-lock=(), serial=(), usb=()",
+                "pragma": "no-cache",
+                "strict-transport-security": "max-age=31536000; preload; includeSubDomains",
+                "x-content-type-options": "nosniff",
+                "x-fb-debug": "u2toqJ9oCxxNQVaowQH1pOh+UGhPnPT9Wao/J9UNqu5P1z+EEqGIx1+RL+b0WRPFLTKbc6r9RVjaM7P+JtV8Ag==",
+                "x-frame-options": "DENY",
+                "x-xss-protection": "0"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 5045,
+            "remoteIPAddress": "157.240.7.20",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 1955,
+            "timing": {
+                "requestTime": 82362.931784,
+                "proxyStart": 0.369,
+                "proxyEnd": 0.751,
+                "dnsStart": 0.789,
+                "dnsEnd": 1.17,
+                "connectStart": 1.17,
+                "connectEnd": 9.822,
+                "sslStart": 3.901,
+                "sslEnd": 9.816,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 9.961,
+                "sendEnd": 10.055,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersEnd": 282.702
+            },
+            "responseTime": 1693749927389.352,
+            "protocol": "h2",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.3",
+                "keyExchange": "",
+                "keyExchangeGroup": "X25519",
+                "cipher": "AES_128_GCM",
+                "certificateId": 0,
+                "subjectName": "*.meta.com",
+                "sanList": [
+                    "*.meta.com",
+                    "meta.com"
+                ],
+                "issuer": "DigiCert SHA2 High Assurance Server CA",
+                "validFrom": 1686528000,
+                "validTo": 1694390399,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "serverSignatureAlgorithm": 2052,
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Document",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 82363.473718,
+        "wallTime": 1693749927.648794,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://auth.meta.com/oidc/?app_id=800455417652954&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fwww.meta.com%2Foidc%2Fcallback%2F&locale=en_US&state=ATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q",
+            "status": 302,
+            "statusText": "",
+            "headers": {
+                "alt-svc": "h3=\":443\"; ma=86400",
+                "cache-control": "private, no-cache, no-store, must-revalidate",
+                "content-length": "0",
+                "content-security-policy": "default-src * data: blob:;script-src auth.meta.com *.auth.meta.com *.facebook.com *.fbcdn.net *.facebook.net 'unsafe-inline' 'unsafe-eval' blob: data: 'self';style-src data: blob: 'unsafe-inline' * *.meta.com *.facebook.com auth.meta.com *.auth.meta.com;connect-src 'self' auth.meta.com *.auth.meta.com *.facebook.com facebook.com *.fbcdn.net *.facebook.net wss://*.facebook.com:* attachment.fbsbx.com blob: *.cdninstagram.com *.graph.meta.com;font-src data: *.fbcdn.net *.facebook.com;img-src auth.meta.com *.auth.meta.com *.fbcdn.net *.facebook.com *.facebook.net *.fbsbx.com *.cdninstagram.com *.oculuscdn.com data: blob:;frame-src api.yoti.com auth.meta.com *.auth.meta.com *.fbsbx.com;upgrade-insecure-requests;report-uri https://www.facebook.com/csp/reporting/?minimize=0;require-trusted-types-for 'script';",
+                "content-type": "text/html; charset=\"utf-8\"",
+                "cross-origin-opener-policy": "same-origin-allow-popups",
+                "cross-origin-resource-policy": "rollout",
+                "date": "Sun, 03 Sep 2023 14:05:27 GMT",
+                "document-policy": "force-load-at-top",
+                "expires": "Sat, 01 Jan 2000 00:00:00 GMT",
+                "feature-policy": "document-domain none",
+                "location": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+                "origin-agent-cluster": "?1",
+                "permissions-policy": "accelerometer=(), ambient-light-sensor=(), bluetooth=(), camera=(), gyroscope=(), hid=(), idle-detection=(), magnetometer=(), microphone=(), midi=(), payment=(), screen-wake-lock=(), serial=(), usb=()",
+                "pragma": "no-cache",
+                "strict-transport-security": "max-age=31536000; preload; includeSubDomains",
+                "x-content-type-options": "nosniff",
+                "x-fb-debug": "VV5+8jmbxwFIgs2JHKbjf1N3GA6pEZKhSKszQmrQ2dZAyAxG1KcPRi4QBtMsQE+f8xyqcbvgmtUmzJJOpEeE5g==",
+                "x-frame-options": "DENY",
+                "x-xss-protection": "0"
+            },
+            "mimeType": "text/html",
+            "connectionReused": true,
+            "connectionId": 5045,
+            "remoteIPAddress": "157.240.7.20",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 1376,
+            "timing": {
+                "requestTime": 82363.216316,
+                "proxyStart": 0.19,
+                "proxyEnd": 0.604,
+                "dnsStart": -1,
+                "dnsEnd": -1,
+                "connectStart": -1,
+                "connectEnd": -1,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 1.141,
+                "sendEnd": 1.286,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersEnd": 256.295
+            },
+            "responseTime": 1693749927647.499,
+            "protocol": "h2",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.3",
+                "keyExchange": "",
+                "keyExchangeGroup": "X25519",
+                "cipher": "AES_128_GCM",
+                "certificateId": 0,
+                "subjectName": "*.meta.com",
+                "sanList": [
+                    "*.meta.com",
+                    "meta.com"
+                ],
+                "issuer": "DigiCert SHA2 High Assurance Server CA",
+                "validFrom": 1686528000,
+                "validTo": 1694390399,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "serverSignatureAlgorithm": 2052,
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Document",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "15540.2",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y0/l/0,cross/kKVi88HTT0QWPrndevEYn8zyEpb6SJKFF.css?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://auth.meta.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 82363.840489,
+        "wallTime": 1693749928.014651,
+        "initiator": {
+            "type": "parser",
+            "url": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+            "lineNumber": 5,
+            "columnNumber": 244
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.3",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://auth.meta.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 82363.840933,
+        "wallTime": 1693749928.015094,
+        "initiator": {
+            "type": "parser",
+            "url": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+            "lineNumber": 6,
+            "columnNumber": 160
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.5",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3ilvf4/yw/l/en_GB/R_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50-Iol5_Q1mg8mwXB9yB0Sb1LgvwffuKmeXT4jdv1LF0ALJiszZ4moV-o_w2A5XW_yOYqRQbeLXMHosMbX4_u7ccNHVFmjsN0FtbFsRP_5_83ocS_S7ily-MN_ul7EtbOHeiY8pB9RJLb8Ab0JcsiPsI9n-A6pJGlLU1__udhAxSddE2JoCIGLHKV7urFKVHLmUShPaEPcTX_vo0HF8KYCsB1RhHQHqdpt9LEmfWwXuLFQIlbTZz2mcLT1E8g6aLgTU3C3XPfFXEwv1iqfI_zp55HfXW__mMUjf-SKozNZp.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://auth.meta.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 82363.841405,
+        "wallTime": 1693749928.015582,
+        "initiator": {
+            "type": "parser",
+            "url": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+            "lineNumber": 7,
+            "columnNumber": 490
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.7",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://auth.meta.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 82363.841879,
+        "wallTime": 1693749928.016021,
+        "initiator": {
+            "type": "parser",
+            "url": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+            "lineNumber": 8,
+            "columnNumber": 215
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.9",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3i9Sr4/y2/l/en_GB/L-3uOKSDCpi.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://auth.meta.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 82363.842176,
+        "wallTime": 1693749928.016311,
+        "initiator": {
+            "type": "parser",
+            "url": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+            "lineNumber": 9,
+            "columnNumber": 171
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.11",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/30mFzFj35Zf.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://auth.meta.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 82363.842554,
+        "wallTime": 1693749928.016693,
+        "initiator": {
+            "type": "parser",
+            "url": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+            "lineNumber": 10,
+            "columnNumber": 160
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.13",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3idBq4/ye/l/en_GB/clJHflV4TRE.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://auth.meta.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 82363.843088,
+        "wallTime": 1693749928.017274,
+        "initiator": {
+            "type": "parser",
+            "url": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+            "lineNumber": 11,
+            "columnNumber": 171
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.72",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://auth.meta.com/images/comet/frl/Meta-Primary-Logo-2x.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "viewport-width": "1280",
+                "sec-ch-ua-platform-version": "\"\"",
+                "Referer": "https://www.google.com",
+                "dpr": "1",
+                "sec-ch-ua-full-version-list": "",
+                "sec-ch-ua-model": "\"\"",
+                "sec-ch-prefers-color-scheme": "light",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 82364.140669,
+        "wallTime": 1693749928.314848,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.73",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://auth.meta.com/images/comet/frl/Facebook-Logo.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "viewport-width": "1280",
+                "sec-ch-ua-platform-version": "\"\"",
+                "Referer": "https://www.google.com",
+                "dpr": "1",
+                "sec-ch-ua-full-version-list": "",
+                "sec-ch-ua-model": "\"\"",
+                "sec-ch-prefers-color-scheme": "light",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 82364.151255,
+        "wallTime": 1693749928.325424,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.74",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://auth.meta.com/images/comet/frl/Instagram-Logo-Color.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "viewport-width": "1280",
+                "sec-ch-ua-platform-version": "\"\"",
+                "Referer": "https://www.google.com",
+                "dpr": "1",
+                "sec-ch-ua-full-version-list": "",
+                "sec-ch-ua-model": "\"\"",
+                "sec-ch-prefers-color-scheme": "light",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 82364.151547,
+        "wallTime": 1693749928.325685,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.32",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/ye/r/ndhgOwkNmDs.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://auth.meta.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 82364.17132,
+        "wallTime": 1693749928.345479,
+        "initiator": {
+            "type": "parser",
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y0/l/0,cross/kKVi88HTT0QWPrndevEYn8zyEpb6SJKFF.css?_nc_x=Ij3Wp8lg5Kz"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.30",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/y2/r/6YirsaXqsap.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://auth.meta.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 82364.171642,
+        "wallTime": 1693749928.345777,
+        "initiator": {
+            "type": "parser",
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y0/l/0,cross/kKVi88HTT0QWPrndevEYn8zyEpb6SJKFF.css?_nc_x=Ij3Wp8lg5Kz"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.78",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Z5idmnnp69Y.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://auth.meta.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 82364.207341,
+        "wallTime": 1693749928.38229,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "L",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 3151
+                    },
+                    {
+                        "functionName": "loadResources",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 16161
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "34",
+                        "url": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+                        "lineNumber": 46,
+                        "columnNumber": 155
+                    },
+                    {
+                        "functionName": "applyWithGuard",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 10431
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 11165
+                    },
+                    {
+                        "functionName": "N",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 2342
+                    },
+                    {
+                        "functionName": "U",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 3044
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.79",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://auth.meta.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 82364.208432,
+        "wallTime": 1693749928.382598,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "L",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 3151
+                    },
+                    {
+                        "functionName": "loadResources",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 16161
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "34",
+                        "url": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+                        "lineNumber": 46,
+                        "columnNumber": 155
+                    },
+                    {
+                        "functionName": "applyWithGuard",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 10431
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 11165
+                    },
+                    {
+                        "functionName": "N",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 2342
+                    },
+                    {
+                        "functionName": "U",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 3044
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.80",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/WXrifMBVaZV.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://auth.meta.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 82364.20868,
+        "wallTime": 1693749928.382898,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "L",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 3151
+                    },
+                    {
+                        "functionName": "loadResources",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 16161
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "34",
+                        "url": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+                        "lineNumber": 46,
+                        "columnNumber": 155
+                    },
+                    {
+                        "functionName": "applyWithGuard",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 10431
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 11165
+                    },
+                    {
+                        "functionName": "N",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 2342
+                    },
+                    {
+                        "functionName": "U",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 3044
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.81",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yY/r/YT7n1sgH1lv.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://auth.meta.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 82364.209056,
+        "wallTime": 1693749928.383269,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "L",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 3151
+                    },
+                    {
+                        "functionName": "loadResources",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 16161
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "34",
+                        "url": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+                        "lineNumber": 46,
+                        "columnNumber": 155
+                    },
+                    {
+                        "functionName": "applyWithGuard",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 10431
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 11165
+                    },
+                    {
+                        "functionName": "N",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 2342
+                    },
+                    {
+                        "functionName": "U",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 3044
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.86",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://auth.meta.com/images/oculus/logos/oculus.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "viewport-width": "1280",
+                "sec-ch-ua-platform-version": "\"\"",
+                "Referer": "https://www.google.com",
+                "dpr": "1",
+                "sec-ch-ua-full-version-list": "",
+                "sec-ch-ua-model": "\"\"",
+                "sec-ch-prefers-color-scheme": "light",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 82364.231896,
+        "wallTime": 1693749928.406098,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.87",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://auth.meta.com/ajax/bz?__a=1&__ccg=UNKNOWN&__comet_req=1&__hs=19603.HYP%3Acomet_loggedout_pkg.2.1..0.0&__hsi=7274600545598006810&__jssesw=1&__req=1&__rev=1008425252&__s=i82d62%3Aljwmbr%3A1ml8gt&__spin_b=trunk&__spin_r=1008425252&__spin_t=1693749927&__user=0&dpr=1&jazoest=21058&lsd=AVqOvnzrLDk&ph=C3",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "viewport-width": "1280",
+                "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundarySddNyNOsdDXaTQJy",
+                "sec-ch-ua-platform-version": "\"\"",
+                "Referer": "https://www.google.com",
+                "dpr": "1",
+                "sec-ch-ua-full-version-list": "",
+                "sec-ch-ua-model": "\"\"",
+                "sec-ch-prefers-color-scheme": "light",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "postData": "------WebKitFormBoundarySddNyNOsdDXaTQJy\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1693749928420\r\n------WebKitFormBoundarySddNyNOsdDXaTQJy\r\nContent-Disposition: form-data; name=\"q\"\r\n\r\n[{\"app_id\":\"713378262994144\",\"posts\":[[\"falco:meta_account_web_client_event\",{\"e\":\"{\\\"app_id\\\":\\\"156749723264603\\\",\\\"client_session_id\\\":null,\\\"device_id\\\":null,\\\"device_serial\\\":\\\"\\\",\\\"event_flow\\\":\\\"login_flow\\\",\\\"native_app_id\\\":null,\\\"step\\\":\\\"login_landing\\\",\\\"url\\\":\\\"https://auth.meta.com/\\\",\\\"utm_source\\\":\\\"meta.com\\\",\\\"event_name\\\":\\\"page_load_login_landing_page\\\",\\\"event_type\\\":\\\"page_load\\\",\\\"event_id\\\":\\\"3d34613f-b819-42f6-b1fa-6209cfca27aa\\\"}\",\"r\":1,\"d\":\"$^|Acbs2ON4HKxOw6aY9i1jIaw2aRFlBTTQt7nqz2rSjITfggCNeRsaBU-YRwFdwoUuKlxL0kAbZOuQH-v9VtdOFRO6V-XhZwM|fd.AcauMvsgAt2CwHOuRRbrgoaa7rYQRamYoDWcAMrwReG5sn3PSNqECDDERh7bBMz660XPfXlgxLP79GjsSfvgSvfa\",\"s\":\"i82d62:ljwmbr:1ml8gt\",\"t\":1693749928140.85,\"id\":{\"appScopedIdentity\":\"0\",\"claim\":\"hmac.AR3Sex5FkJkCz9N5_UDXgX7nsJIbq7Wb_kHyUlPpYkYHkkoP\"}},1693749928420.1,0,729]],\"trigger\":\"falco:meta_account_web_client_event\",\"user\":\"0\",\"webSessionId\":\"i82d62:ljwmbr:1ml8gt\"}]\r\n------WebKitFormBoundarySddNyNOsdDXaTQJy--\r\n",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "LS0tLS0tV2ViS2l0Rm9ybUJvdW5kYXJ5U2RkTnlOT3NkRFhhVFFKeQ0KQ29udGVudC1EaXNwb3NpdGlvbjogZm9ybS1kYXRhOyBuYW1lPSJ0cyINCg0KMTY5Mzc0OTkyODQyMA0KLS0tLS0tV2ViS2l0Rm9ybUJvdW5kYXJ5U2RkTnlOT3NkRFhhVFFKeQ0KQ29udGVudC1EaXNwb3NpdGlvbjogZm9ybS1kYXRhOyBuYW1lPSJxIg0KDQpbeyJhcHBfaWQiOiI3MTMzNzgyNjI5OTQxNDQiLCJwb3N0cyI6W1siZmFsY286bWV0YV9hY2NvdW50X3dlYl9jbGllbnRfZXZlbnQiLHsiZSI6IntcImFwcF9pZFwiOlwiMTU2NzQ5NzIzMjY0NjAzXCIsXCJjbGllbnRfc2Vzc2lvbl9pZFwiOm51bGwsXCJkZXZpY2VfaWRcIjpudWxsLFwiZGV2aWNlX3NlcmlhbFwiOlwiXCIsXCJldmVudF9mbG93XCI6XCJsb2dpbl9mbG93XCIsXCJuYXRpdmVfYXBwX2lkXCI6bnVsbCxcInN0ZXBcIjpcImxvZ2luX2xhbmRpbmdcIixcInVybFwiOlwiaHR0cHM6Ly9hdXRoLm1ldGEuY29tL1wiLFwidXRtX3NvdXJjZVwiOlwibWV0YS5jb21cIixcImV2ZW50X25hbWVcIjpcInBhZ2VfbG9hZF9sb2dpbl9sYW5kaW5nX3BhZ2VcIixcImV2ZW50X3R5cGVcIjpcInBhZ2VfbG9hZFwiLFwiZXZlbnRfaWRcIjpcIjNkMzQ2MTNmLWI4MTktNDJmNi1iMWZhLTYyMDljZmNhMjdhYVwifSIsInIiOjEsImQiOiIkXnxBY2JzMk9ONEhLeE93NmFZOWkxaklhdzJhUkZsQlRUUXQ3bnF6MnJTaklUZmdnQ05lUnNhQlUtWVJ3RmR3b1V1S2x4TDBrQWJaT3VRSC12OVZ0ZE9GUk82Vi1YaFp3TXxmZC5BY2F1TXZzZ0F0MkN3SE91UlJicmdvYWE3cllRUmFtWW9EV2NBTXJ3UmVHNXNuM1BTTnFFQ0RERVJoN2JCTXo2NjBYUGZYbGd4TFA3OUdqc1NmdmdTdmZhIiwicyI6Imk4MmQ2MjpsandtYnI6MW1sOGd0IiwidCI6MTY5Mzc0OTkyODE0MC44NSwiaWQiOnsiYXBwU2NvcGVkSWRlbnRpdHkiOiIwIiwiY2xhaW0iOiJobWFjLkFSM1NleDVGa0prQ3o5TjVfVURYZ1g3bnNKSWJxN1diX2tIeVVsUHBZa1lIa2tvUCJ9fSwxNjkzNzQ5OTI4NDIwLjEsMCw3MjldXSwidHJpZ2dlciI6ImZhbGNvOm1ldGFfYWNjb3VudF93ZWJfY2xpZW50X2V2ZW50IiwidXNlciI6IjAiLCJ3ZWJTZXNzaW9uSWQiOiJpODJkNjI6bGp3bWJyOjFtbDhndCJ9XQ0KLS0tLS0tV2ViS2l0Rm9ybUJvdW5kYXJ5U2RkTnlOT3NkRFhhVFFKeS0tDQo="
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 82364.256089,
+        "wallTime": 1693749928.432911,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "send",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10677,
+                        "columnNumber": 2279
+                    },
+                    {
+                        "functionName": "_handleSignalPost",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10686,
+                        "columnNumber": 3057
+                    },
+                    {
+                        "functionName": "post",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10686,
+                        "columnNumber": 9537
+                    },
+                    {
+                        "functionName": "M",
+                        "scriptId": "57",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Z5idmnnp69Y.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 7,
+                        "columnNumber": 4209
+                    },
+                    {
+                        "functionName": "logCritical",
+                        "scriptId": "57",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Z5idmnnp69Y.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 7,
+                        "columnNumber": 4819
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "57",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Z5idmnnp69Y.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 7,
+                        "columnNumber": 9509
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "57",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Z5idmnnp69Y.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 7,
+                        "columnNumber": 9564
+                    },
+                    {
+                        "functionName": "b.$19",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10605,
+                        "columnNumber": 2573
+                    },
+                    {
+                        "functionName": "b.setHandler",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10605,
+                        "columnNumber": 2512
+                    },
+                    {
+                        "functionName": "a.setHandler",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10605,
+                        "columnNumber": 2318
+                    },
+                    {
+                        "functionName": "a",
+                        "scriptId": "57",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Z5idmnnp69Y.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 7,
+                        "columnNumber": 8689
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 338,
+                        "columnNumber": 1421
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 149,
+                        "columnNumber": 1504
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_js_datr",
+                    "value": "p5L0ZPYWNnJblg7gPUZa7MM1",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1728309928,
+                    "size": 32,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "meta_csrf",
+                    "value": "ccIBVhX9hI92_eoVyA4pIf",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1693753528,
+                    "size": 31,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "15540.88",
+        "loaderId": "36F653DCA7770A14F3C2EC7E9DD7D3E3",
+        "documentURL": "https://auth.meta.com/?redirect_uri=https%3A%2F%2Fauth.meta.com%2Foidc%2F%3Fapp_id%3D800455417652954%26scope%3Dopenid%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.com%252Foidc%252Fcallback%252F%26state%3DATCP7PSxBRaT8MdQuZg5Wyy7tTDsyBuW5igtf6o3BNBJ3jzHFd8GsNZEcR5yNIq5_wVWr4GfFDiqNOIrqQibcnUTLpviBK6d20oHJ5k16pUdK0fzrgLLifUuaYkQ5TFNRFxYC1a5RJqV7P0osMk_vJSYaDeIIql1FcewUYOylkFjQHSNlbXC9H9tEeUeSn343M8HcZKDqMr2j2hcUbJrEmeLuigi0nGCK-lggx-T8Jn5XEEbcaLOIiCkk8s4CfDCXAUQE70q&utm_source=meta.com&source_app_id=800455417652954",
+        "request": {
+            "url": "https://auth.meta.com/ajax/bz?__a=1&__ccg=UNKNOWN&__comet_req=1&__hs=19603.HYP%3Acomet_loggedout_pkg.2.1..0.0&__hsi=7274600545598006810&__jssesw=1&__req=2&__rev=1008425252&__s=i82d62%3Aljwmbr%3A1ml8gt&__spin_b=trunk&__spin_r=1008425252&__spin_t=1693749927&__user=0&dpr=1&jazoest=21058&lsd=AVqOvnzrLDk&ph=C3",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "viewport-width": "1280",
+                "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundaryahcuVAQPmMVugvaF",
+                "sec-ch-ua-platform-version": "\"\"",
+                "Referer": "https://www.google.com",
+                "dpr": "1",
+                "sec-ch-ua-full-version-list": "",
+                "sec-ch-ua-model": "\"\"",
+                "sec-ch-prefers-color-scheme": "light",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "postData": "------WebKitFormBoundaryahcuVAQPmMVugvaF\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1693749928447\r\n------WebKitFormBoundaryahcuVAQPmMVugvaF\r\nContent-Disposition: form-data; name=\"q\"\r\n\r\n[{\"app_id\":\"713378262994144\",\"posts\":[[\"falco:bd_pdc_signals\",{\"e\":\"{\\\"asid\\\":\\\"0aade788-3e55-47c6-a008-f51fe2936509\\\",\\\"ct\\\":1659080345,\\\"sjd\\\":\\\"zSbiu5feR01iZY8CZdJn6KffWULYN/9jn5Gt5OBOpMTOUvBvhaoE5qTQjTePsu40eP1vLmnc96b5K+EoI1b7g4B9whYLOcW+wS+Xnvvcl9uT1aKGvrbRhnpe74QP0KlUHUwlj2V2bAm1WqBxH297Xw==\\\",\\\"sid\\\":-1}\",\"r\":1,\"d\":\"$^|Acbs2ON4HKxOw6aY9i1jIaw2aRFlBTTQt7nqz2rSjITfggCNeRsaBU-YRwFdwoUuKlxL0kAbZOuQH-v9VtdOFRO6V-XhZwM|fd.AcauMvsgAt2CwHOuRRbrgoaa7rYQRamYoDWcAMrwReG5sn3PSNqECDDERh7bBMz660XPfXlgxLP79GjsSfvgSvfa\",\"s\":\"i82d62:ljwmbr:1ml8gt\",\"t\":1693749928226.35,\"id\":{\"appScopedIdentity\":\"0\",\"claim\":\"hmac.AR3Sex5FkJkCz9N5_UDXgX7nsJIbq7Wb_kHyUlPpYkYHkkoP\"}},1693749928447.5,0,599]],\"trigger\":\"falco:bd_pdc_signals\",\"user\":\"0\",\"webSessionId\":\"i82d62:ljwmbr:1ml8gt\"}]\r\n------WebKitFormBoundaryahcuVAQPmMVugvaF--\r\n",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "LS0tLS0tV2ViS2l0Rm9ybUJvdW5kYXJ5YWhjdVZBUVBtTVZ1Z3ZhRg0KQ29udGVudC1EaXNwb3NpdGlvbjogZm9ybS1kYXRhOyBuYW1lPSJ0cyINCg0KMTY5Mzc0OTkyODQ0Nw0KLS0tLS0tV2ViS2l0Rm9ybUJvdW5kYXJ5YWhjdVZBUVBtTVZ1Z3ZhRg0KQ29udGVudC1EaXNwb3NpdGlvbjogZm9ybS1kYXRhOyBuYW1lPSJxIg0KDQpbeyJhcHBfaWQiOiI3MTMzNzgyNjI5OTQxNDQiLCJwb3N0cyI6W1siZmFsY286YmRfcGRjX3NpZ25hbHMiLHsiZSI6IntcImFzaWRcIjpcIjBhYWRlNzg4LTNlNTUtNDdjNi1hMDA4LWY1MWZlMjkzNjUwOVwiLFwiY3RcIjoxNjU5MDgwMzQ1LFwic2pkXCI6XCJ6U2JpdTVmZVIwMWlaWThDWmRKbjZLZmZXVUxZTi85am41R3Q1T0JPcE1UT1V2QnZoYW9FNXFUUWpUZVBzdTQwZVAxdkxtbmM5NmI1SytFb0kxYjdnNEI5d2hZTE9jVyt3UytYbnZ2Y2w5dVQxYUtHdnJiUmhucGU3NFFQMEtsVUhVd2xqMlYyYkFtMVdxQnhIMjk3WHc9PVwiLFwic2lkXCI6LTF9IiwiciI6MSwiZCI6IiRefEFjYnMyT040SEt4T3c2YVk5aTFqSWF3MmFSRmxCVFRRdDducXoyclNqSVRmZ2dDTmVSc2FCVS1ZUndGZHdvVXVLbHhMMGtBYlpPdVFILXY5VnRkT0ZSTzZWLVhoWndNfGZkLkFjYXVNdnNnQXQyQ3dIT3VSUmJyZ29hYTdyWVFSYW1Zb0RXY0FNcndSZUc1c24zUFNOcUVDRERFUmg3YkJNejY2MFhQZlhsZ3hMUDc5R2pzU2Z2Z1N2ZmEiLCJzIjoiaTgyZDYyOmxqd21icjoxbWw4Z3QiLCJ0IjoxNjkzNzQ5OTI4MjI2LjM1LCJpZCI6eyJhcHBTY29wZWRJZGVudGl0eSI6IjAiLCJjbGFpbSI6ImhtYWMuQVIzU2V4NUZrSmtDejlONV9VRFhnWDduc0pJYnE3V2Jfa0h5VWxQcFlrWUhra29QIn19LDE2OTM3NDk5Mjg0NDcuNSwwLDU5OV1dLCJ0cmlnZ2VyIjoiZmFsY286YmRfcGRjX3NpZ25hbHMiLCJ1c2VyIjoiMCIsIndlYlNlc3Npb25JZCI6Imk4MmQ2MjpsandtYnI6MW1sOGd0In1dDQotLS0tLS1XZWJLaXRGb3JtQm91bmRhcnlhaGN1VkFRUG1NVnVndmFGLS0NCg=="
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 82364.274653,
+        "wallTime": 1693749928.450291,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "send",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10677,
+                        "columnNumber": 2279
+                    },
+                    {
+                        "functionName": "_handleSignalPost",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10686,
+                        "columnNumber": 3057
+                    },
+                    {
+                        "functionName": "post",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10686,
+                        "columnNumber": 9537
+                    },
+                    {
+                        "functionName": "M",
+                        "scriptId": "57",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Z5idmnnp69Y.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 7,
+                        "columnNumber": 4209
+                    },
+                    {
+                        "functionName": "logCritical",
+                        "scriptId": "57",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Z5idmnnp69Y.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 7,
+                        "columnNumber": 4819
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "57",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Z5idmnnp69Y.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 7,
+                        "columnNumber": 9509
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "57",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Z5idmnnp69Y.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 7,
+                        "columnNumber": 9564
+                    },
+                    {
+                        "functionName": "b.$19",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10605,
+                        "columnNumber": 2573
+                    },
+                    {
+                        "functionName": "b.wrapAndEnqueueItem",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10605,
+                        "columnNumber": 4633
+                    },
+                    {
+                        "functionName": "B",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10607,
+                        "columnNumber": 2578
+                    },
+                    {
+                        "functionName": "C",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10607,
+                        "columnNumber": 2754
+                    },
+                    {
+                        "functionName": "logCritical",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10607,
+                        "columnNumber": 3499
+                    },
+                    {
+                        "functionName": "_postSignalsHelper",
+                        "scriptId": "58",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 2790
+                    },
+                    {
+                        "functionName": "postHeartbeat",
+                        "scriptId": "58",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 6627
+                    },
+                    {
+                        "functionName": "collectHeartbeat",
+                        "scriptId": "58",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 6429
+                    },
+                    {
+                        "functionName": "collectHeartbeatTimes",
+                        "scriptId": "58",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 5866
+                    },
+                    {
+                        "functionName": "startHeartbeat",
+                        "scriptId": "58",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 5544
+                    },
+                    {
+                        "functionName": "startHeartbeatDelayed",
+                        "scriptId": "58",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 5148
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "58",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 1023
+                    },
+                    {
+                        "functionName": "k",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10650,
+                        "columnNumber": 380
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10650,
+                        "columnNumber": 2475
+                    },
+                    {
+                        "functionName": "a.<computed>",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10650,
+                        "columnNumber": 742
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10650,
+                        "columnNumber": 1125
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10650,
+                        "columnNumber": 1489
+                    },
+                    {
+                        "functionName": "g",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10650,
+                        "columnNumber": 1457
+                    },
+                    {
+                        "functionName": "a.<computed>",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10650,
+                        "columnNumber": 742
+                    },
+                    {
+                        "functionName": "i.async",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10650,
+                        "columnNumber": 1652
+                    },
+                    {
+                        "functionName": "startSignalCollection",
+                        "scriptId": "58",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 593
+                    },
+                    {
+                        "functionName": "a",
+                        "scriptId": "58",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 108,
+                        "columnNumber": 186
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "58",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 45,
+                        "columnNumber": 1957
+                    },
+                    {
+                        "functionName": "applyWithGuard",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 10431
+                    },
+                    {
+                        "functionName": "a",
+                        "scriptId": "58",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 45,
+                        "columnNumber": 1908
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iw804/yT/l/en_GB/9CT04_FlspDpeU8tdBSByEIV6KRmDqrX4-U_Cr_3XusK8A9wLFcm9pO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 506,
+                        "columnNumber": 575
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "7",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 149,
+                        "columnNumber": 1504
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "109CB70E1881802D0C7B7B0CB9422B7C",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_js_datr",
+                    "value": "p5L0ZPYWNnJblg7gPUZa7MM1",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1728309928,
+                    "size": 32,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "meta_csrf",
+                    "value": "ccIBVhX9hI92_eoVyA4pIf",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1693753528,
+                    "size": 31,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "locale",
+                    "value": "en_US",
+                    "domain": ".auth.meta.com",
+                    "path": "/",
+                    "expires": 1694354727.647626,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

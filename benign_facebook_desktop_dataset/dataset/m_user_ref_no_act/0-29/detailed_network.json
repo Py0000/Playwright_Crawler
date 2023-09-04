@@ -1,0 +1,3764 @@
+[
+    {
+        "requestId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://m.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8",
+        "request": {
+            "url": "https://m.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 86066.812729,
+        "wallTime": 1693753630.987065,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 86067.045,
+        "wallTime": 1693753631.219504,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://m.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8",
+            "status": 301,
+            "statusText": "",
+            "headers": {
+                "accept-ch": "viewport-width,dpr,Sec-CH-Prefers-Color-Scheme,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Platform-Version,Sec-CH-UA-Model",
+                "accept-ch-lifetime": "4838400",
+                "alt-svc": "h3=\":443\"; ma=86400",
+                "cache-control": "private, no-cache, no-store, must-revalidate",
+                "content-length": "0",
+                "content-security-policy": "default-src data: blob: 'self' https://*.fbsbx.com 'unsafe-inline' *.facebook.com *.fbcdn.net 'unsafe-eval';script-src *.facebook.com *.fbcdn.net *.facebook.net *.google-analytics.com *.google.com 127.0.0.1:* 'unsafe-inline' blob: data: 'self' connect.facebook.net 'unsafe-eval';style-src fonts.googleapis.com *.fbcdn.net data: *.facebook.com 'unsafe-inline';connect-src *.facebook.com facebook.com *.fbcdn.net *.facebook.net wss://*.facebook.com:* wss://*.whatsapp.com:* wss://*.fbcdn.net attachment.fbsbx.com ws://localhost:* blob: *.cdninstagram.com 'self' http://localhost:3103 wss://gateway.facebook.com wss://edge-chat.facebook.com wss://snaptu-d.facebook.com wss://kaios-d.facebook.com/ v.whatsapp.net *.fbsbx.com *.fb.com;font-src data: *.gstatic.com *.facebook.com *.fbcdn.net *.fbsbx.com;img-src *.fbcdn.net *.facebook.com data: https://*.fbsbx.com *.tenor.co media.tenor.com facebook.com *.cdninstagram.com fbsbx.com fbcdn.net *.giphy.com connect.facebook.net *.carriersignal.info blob: android-webview-video-poster: googleads.g.doubleclick.net www.googleadservices.com *.whatsapp.net *.fb.com *.oculuscdn.com;media-src *.cdninstagram.com blob: *.fbcdn.net *.fbsbx.com www.facebook.com *.facebook.com https://*.giphy.com data:;frame-src *.doubleclick.net *.google.com *.facebook.com www.googleadservices.com *.fbsbx.com fbsbx.com data: www.instagram.com *.fbcdn.net https://paywithmybank.com https://sandbox.paywithmybank.com;worker-src blob: *.facebook.com data:;",
+                "content-type": "text/html; charset=utf-8",
+                "cross-origin-opener-policy": "same-origin-allow-popups",
+                "cross-origin-resource-policy": "same-origin",
+                "date": "Sun, 03 Sep 2023 15:07:10 GMT",
+                "document-policy": "force-load-at-top",
+                "expires": "Sat, 01 Jan 2000 00:00:00 GMT",
+                "location": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+                "origin-agent-cluster": "?0",
+                "permissions-policy": "accelerometer=(self), ambient-light-sensor=(), bluetooth=(), camera=(), gyroscope=(self), hid=(), idle-detection=(), magnetometer=(), microphone=(), midi=(), payment=(), screen-wake-lock=(), serial=(), usb=()",
+                "pragma": "no-cache",
+                "report-to": "{\"max_age\":259200,\"endpoints\":[{\"url\":\"https:\\/\\/m.facebook.com\\/ajax\\/mtouch_error_reports\\/\"}]}",
+                "strict-transport-security": "max-age=15552000; preload; includeSubDomains",
+                "x-content-type-options": "nosniff",
+                "x-fb-debug": "5Z1rQ9o0qfbBnIHeQ2sLj/FuszDKWGx38jj8z2CEi9grholdNT3JFc2L9nTyAqYg7CffZbbLAJf7yJoKbG13aQ==",
+                "x-frame-options": "DENY",
+                "x-xss-protection": "0"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 13239,
+            "remoteIPAddress": "157.240.7.35",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 2274,
+            "timing": {
+                "requestTime": 86066.813526,
+                "proxyStart": 0.464,
+                "proxyEnd": 0.785,
+                "dnsStart": 0.823,
+                "dnsEnd": 1.147,
+                "connectStart": 1.147,
+                "connectEnd": 10.979,
+                "sslStart": 4.658,
+                "sslEnd": 10.966,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 11.247,
+                "sendEnd": 11.41,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersEnd": 230.4
+            },
+            "responseTime": 1693753631218.785,
+            "protocol": "h2",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.3",
+                "keyExchange": "",
+                "keyExchangeGroup": "X25519",
+                "cipher": "AES_128_GCM",
+                "certificateId": 0,
+                "subjectName": "*.facebook.com",
+                "sanList": [
+                    "*.facebook.com",
+                    "*.facebook.net",
+                    "*.fbcdn.net",
+                    "*.fbsbx.com",
+                    "*.m.facebook.com",
+                    "*.messenger.com",
+                    "*.xx.fbcdn.net",
+                    "*.xy.fbcdn.net",
+                    "*.xz.fbcdn.net",
+                    "facebook.com",
+                    "messenger.com"
+                ],
+                "issuer": "DigiCert SHA2 High Assurance Server CA",
+                "validFrom": 1686528000,
+                "validTo": 1694390399,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "serverSignatureAlgorithm": 1027,
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Document",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "27456.2",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yy/l/0,cross/kKVi88HTT0QK0dTdV3BioaX7t1iO1eXNMaWdE7mD1jURWPrndevEYn8zyEpb6SJKFFDzUSipvyKyKHNSpSUTp_kHniEfe-1jsdB.css?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 86067.378962,
+        "wallTime": 1693753631.553569,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 3,
+            "columnNumber": 334
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.3",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 86067.379487,
+        "wallTime": 1693753631.554056,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 4,
+            "columnNumber": 160
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.5",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 86067.380243,
+        "wallTime": 1693753631.55483,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 5,
+            "columnNumber": 303
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.7",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3ikxR4/yY/l/en_GB/qvshuwRC1zxTykkqPsFVwMT4jdv1LF0ALJiszZ4moV-oYNcP3R_YFNE_w2A5XW_yOYKonWAy51XLtqRQbeLXMHos5RfG76cB5GQQ6O_UFLGP-lzTUR-xAOqeAVFmjsN0FtbF_S7ily-MN_uVIhR8q-R4DOR_RZoDBCCukpB9RJLb8Ab005Y_NINuzPmdhAxSddE2Jo2WovxgTIrQK30mFzFj35Zfqdpt9LEmfWwoznuaC3mHWZ2mcLT1E8g6aYwDglrM-7a0XEwv1iqfI_zJuh-HzznTLJKpDLwJ-Zqowp55HfXW__mMziC7kyfz8pwUjf-SKozNZp.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 86067.380688,
+        "wallTime": 1693753631.555266,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 6,
+            "columnNumber": 490
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.9",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3i9Sr4/y2/l/en_GB/L-3uOKSDCpi.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 86067.381168,
+        "wallTime": 1693753631.555737,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 7,
+            "columnNumber": 171
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.11",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3idBq4/ye/l/en_GB/clJHflV4TRE.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 86067.381532,
+        "wallTime": 1693753631.5561,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 8,
+            "columnNumber": 171
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.13",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/K_CfSUkqgDs.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 86067.381902,
+        "wallTime": 1693753631.556486,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 9,
+            "columnNumber": 160
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.15",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/dzWBvIuEeWL.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 86067.382313,
+        "wallTime": 1693753631.556889,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 10,
+            "columnNumber": 160
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.17",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3i4X-4/y-/l/en_GB/MbX4_u7ccNH.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 86067.38272,
+        "wallTime": 1693753631.557293,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 11,
+            "columnNumber": 171
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.19",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3i83W4/yH/l/en_GB/bdHKHAeHqKS.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 86067.383142,
+        "wallTime": 1693753631.557712,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 12,
+            "columnNumber": 171
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.21",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "data:application/x-javascript; charset=utf-8;base64,Oy8qRkJfUEtHX0RFTElNKi8KCnZhciBkYXRhRWxlbWVudD1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiZW52anNvbiIpO2lmKGRhdGFFbGVtZW50IT1udWxsKXt2YXIgY29weVZhcmlhYmxlcz1mdW5jdGlvbihhKXtmb3IodmFyIGIgaW4gdmFyaWFibGVzKWFbYl09dmFyaWFibGVzW2JdfSx2YXJpYWJsZXM9SlNPTi5wYXJzZShkYXRhRWxlbWVudC50ZXh0Q29udGVudCk7d2luZG93LnJlcXVpcmVMYXp5P3dpbmRvdy5yZXF1aXJlTGF6eShbIkVudiJdLGNvcHlWYXJpYWJsZXMpOih3aW5kb3cuRW52PXdpbmRvdy5FbnZ8fHt9LGNvcHlWYXJpYWJsZXMod2luZG93LkVudikpfQovLyMgc291cmNlVVJMPWh0dHBzOi8vc3RhdGljLnh4LmZiY2RuLm5ldC9yc3JjLnBocC92My95TC9yL2RiZ3JNc25EMThwLmpzP19uY194PUlqM1dwOGxnNUt6Cg==",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 86067.397298,
+        "wallTime": 1693753631.571915,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 0,
+            "columnNumber": 67642
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.22",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "data:application/x-javascript; charset=utf-8;base64,Oy8qRkJfUEtHX0RFTElNKi8KCl9fYW5ub3RhdG9yPWZ1bmN0aW9uKGEpe3JldHVybiBhfSxfX2Rfc3R1Yj1bXSxfX2Q9ZnVuY3Rpb24oYSxiLGMsZCxlKXtfX2Rfc3R1Yi5wdXNoKFthLGIsYyxkLGVdKX0sX19ybF9zdHViPVtdLHJlcXVpcmVMYXp5PWZ1bmN0aW9uKCl7X19ybF9zdHViLnB1c2goYXJndW1lbnRzKX07Ci8vIyBzb3VyY2VVUkw9aHR0cHM6Ly9zdGF0aWMueHguZmJjZG4ubmV0L3JzcmMucGhwL3YzL3lYL3IvUkJDYnp3T0NsU3IuanM/X25jX3g9SWozV3A4bGc1S3oK",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 86067.399509,
+        "wallTime": 1693753631.574076,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 0,
+            "columnNumber": 68187
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.23",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "data:application/x-javascript; charset=utf-8;base64,Oy8qRkJfUEtHX0RFTElNKi8KCm5vd19pbmw9ZnVuY3Rpb24oKXt2YXIgYT13aW5kb3cucGVyZm9ybWFuY2U7cmV0dXJuIGEmJmEubm93JiZhLnRpbWluZyYmYS50aW1pbmcubmF2aWdhdGlvblN0YXJ0P2Z1bmN0aW9uKCl7cmV0dXJuIGEubm93KCkrYS50aW1pbmcubmF2aWdhdGlvblN0YXJ0fTpmdW5jdGlvbigpe3JldHVybiBuZXcgRGF0ZSgpLmdldFRpbWUoKX19KCk7Ci8vIyBzb3VyY2VVUkw9aHR0cHM6Ly9zdGF0aWMueHguZmJjZG4ubmV0L3JzcmMucGhwL3YzL3k0L3IvTW1RbzJYVG91ejcuanM/X25jX3g9SWozV3A4bGc1S3oK",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 86067.399882,
+        "wallTime": 1693753631.574444,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 0,
+            "columnNumber": 68772
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.24",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "data:application/x-javascript; charset=utf-8;base64,Oy8qRkJfUEtHX0RFTElNKi8KCl9idGxkcj17fSxxcGxfaW5sPWZ1bmN0aW9uKCl7dmFyIGE9e307cmV0dXJuIGZ1bmN0aW9uKGIsYyxkKXtpZighYilyZXR1cm4gYTthW2JdfHwoYVtiXT17fSk7YVtiXVtjXT1kfHxub3dfaW5sKCl9fSgpLHFwbF90YWc9ZnVuY3Rpb24oKXt2YXIgYT1bXTtyZXR1cm4gZnVuY3Rpb24oYil7aWYoIWIpcmV0dXJuIGE7YS5wdXNoKGIpfX0oKTsKLy8jIHNvdXJjZVVSTD1odHRwczovL3N0YXRpYy54eC5mYmNkbi5uZXQvcnNyYy5waHAvdjMveUovci81NzVvRUh1T2x5MC5qcz9fbmNfeD1JajNXcDhsZzVLego=",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 86067.400325,
+        "wallTime": 1693753631.574879,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 0,
+            "columnNumber": 69361
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.25",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "data:application/x-javascript; charset=utf-8;base64,Oy8qRkJfUEtHX0RFTElNKi8KCnZhciBkYXRhRWxlbWVudD1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiX19lcW1jIik7aWYoZGF0YUVsZW1lbnQhPW51bGwpe3ZhciBwYXJhbXM9SlNPTi5wYXJzZShkYXRhRWxlbWVudC50ZXh0Q29udGVudCksdXJpPXBhcmFtcy51LGV2ZW50X2lkPXBhcmFtcy5lLHNjcmlwdF9wYXRoPXBhcmFtcy5zLHdlaWdodD1wYXJhbXMudyxmYl9kdHNnPXBhcmFtcy5mLGxzZD1wYXJhbXMubDtpZihuYXZpZ2F0b3Iuc2VuZEJlYWNvbil7dmFyIG1hcms9ZnVuY3Rpb24oYSxiKXt2YXIgYz1wJiZwLm5vdz9NYXRoLmZsb29yKHAubm93KCkpOk1hdGgubWF4KERhdGUubm93KCktc3RhcnQsMCk7YT0iZXZlbnRfaWQ9IitldmVudF9pZCsoYT09bnVsbD8iIjoiJm1hcmtlcl9pZD0iK2EpKyImbWFya2VyX3BhZ2VfdGltZT0iK2MrIiZzY3JpcHRfcGF0aD0iK2VuY29kZVVSSUNvbXBvbmVudChzY3JpcHRfcGF0aCkrIiZ3ZWlnaHQ9Iit3ZWlnaHQrKGI/IiZjbGllbnRfc3RhcnQ9MSI6IiIpKyhmYl9kdHNnPyImZmJfZHRzZz0iK2VuY29kZVVSSUNvbXBvbmVudChmYl9kdHNnKToiIikrKGxzZD8iJmxzZD0iK2VuY29kZVVSSUNvbXBvbmVudChsc2QpOiIiKTtjPW5ldyBCbG9iKFthXSx7dHlwZToiYXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkIn0pO25hdmlnYXRvci5zZW5kQmVhY29uKHVyaSxjKX0sc3RhcnQ9RGF0ZS5ub3coKSxwPXdpbmRvdy5wZXJmb3JtYW5jZTttYXJrKHdlaWdodD4wPyJDbGllbnRTY3JpcHRTdGFydCI6bnVsbCwhMCk7d2VpZ2h0PjAmJndpbmRvdy5hZGRFdmVudExpc3RlbmVyKCJiZWZvcmV1bmxvYWQiLGZ1bmN0aW9uKCl7bWFyaygiQ2xpZW50VW5sb2FkIiwhMSl9KX19Ci8vIyBzb3VyY2VVUkw9aHR0cHM6Ly9zdGF0aWMueHguZmJjZG4ubmV0L3JzcmMucGhwL3YzL3lvL3Ivck1qVVYzdGxnNS0uanM/X25jX3g9SWozV3A4bGc1S3oK",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 86067.400708,
+        "wallTime": 1693753631.575316,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 0,
+            "columnNumber": 71046
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.26",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/ajax/qm/?__a=1&__user=0&__comet_req=1&jazoest=2902",
+            "method": "POST",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "dpr": "2.75",
+                "sec-ch-prefers-color-scheme": "light",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36",
+                "viewport-width": "393",
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            "hasPostData": true,
+            "mixedContentType": "none",
+            "initialPriority": "VeryLow",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 86067.402153,
+        "wallTime": 1693753631.577044,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "mark",
+                        "scriptId": "8",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/rMjUV3tlg5-.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 2,
+                        "columnNumber": 658
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "8",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/rMjUV3tlg5-.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 2,
+                        "columnNumber": 715
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Ping",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.27",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "data:application/x-javascript; charset=utf-8;base64,Oy8qRkJfUEtHX0RFTElNKi8KCihmdW5jdGlvbihhKXtmdW5jdGlvbiBiKGIpe2lmKCF3aW5kb3cub3BlbkRhdGFiYXNlKXJldHVybjtiLklfQU1fSU5DT0dOSVRPX0FORF9JX1JFQUxMWV9ORUVEX1dFQlNRTD1mdW5jdGlvbihhLGIsYyxkKXtyZXR1cm4gd2luZG93Lm9wZW5EYXRhYmFzZShhLGIsYyxkKX07d2luZG93Lm9wZW5EYXRhYmFzZT1mdW5jdGlvbigpe3Rocm93IG5ldyBFcnJvcigpfX1iKGEpfSkodGhpcyk7Ci8vIyBzb3VyY2VVUkw9aHR0cHM6Ly9zdGF0aWMueHguZmJjZG4ubmV0L3JzcmMucGhwL3YzL3lSL3IvLXBWQzBQRjQ0ZFkuanM/X25jX3g9SWozV3A4bGc1S3oK",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 86067.403351,
+        "wallTime": 1693753631.577938,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 0,
+            "columnNumber": 71667
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.28",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+        "request": {
+            "url": "data:application/x-javascript; charset=utf-8;base64,Oy8qRkJfUEtHX0RFTElNKi8KCmZ1bmN0aW9uIHBhcmVudElzTm90SGVhZE5vckJvZHkoYSl7cmV0dXJuIGEucGFyZW50RWxlbWVudCE9PWRvY3VtZW50LmJvZHkmJmEucGFyZW50RWxlbWVudCE9PWRvY3VtZW50LmhlYWR9ZnVuY3Rpb24gaXNUYWdTdXBwb3J0ZWQoYSl7cmV0dXJuIGEubm9kZU5hbWU9PT0iU0NSSVBUInx8YS5ub2RlTmFtZT09PSJMSU5LIiYmKChhPWdldE5vZGVEYXRhU2V0KGEpKT09bnVsbD92b2lkIDA6YS5hc3luY0Nzcyl9ZnVuY3Rpb24gZ2V0Tm9kZURhdGFTZXQoYSl7cmV0dXJuIShhLmRhdGFzZXQgaW5zdGFuY2VvZiB3aW5kb3cuRE9NU3RyaW5nTWFwKT9udWxsOmEuZGF0YXNldH1mdW5jdGlvbiBhZGRMb2FkRXZlbnRMaXN0ZW5lcnMoYSl7dmFyIGI7dHJ5e2lmKGEubm9kZVR5cGUhPT1Ob2RlLkVMRU1FTlRfTk9ERSlyZXR1cm59Y2F0Y2goYSl7cmV0dXJufWlmKHBhcmVudElzTm90SGVhZE5vckJvZHkoYSl8fCFpc1RhZ1N1cHBvcnRlZChhKSlyZXR1cm47dmFyIGM9KGI9Z2V0Tm9kZURhdGFTZXQoYSkpPT1udWxsP3ZvaWQgMDpiLmJvb3Rsb2FkZXJIYXNoO2lmKGMhPW51bGwmJmMhPT0iIil7dmFyIGQ9bnVsbCxlPWZ1bmN0aW9uKCl7d2luZG93Ll9idGxkcltjXT0xLGQ9PW51bGw/dm9pZCAwOmQoKX07ZD1mdW5jdGlvbigpe2EucmVtb3ZlRXZlbnRMaXN0ZW5lcigibG9hZCIsZSksYS5yZW1vdmVFdmVudExpc3RlbmVyKCJlcnJvciIsZSl9O2EuYWRkRXZlbnRMaXN0ZW5lcigibG9hZCIsZSk7YS5hZGRFdmVudExpc3RlbmVyKCJlcnJvciIsZSl9fShmdW5jdGlvbigpe0FycmF5LmZyb20oZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnc2NyaXB0LGxpbmtbZGF0YS1hc3luYy1jc3M9IjEiXScpKS5mb3JFYWNoKGZ1bmN0aW9uKGEpe3JldHVybiBhZGRMb2FkRXZlbnRMaXN0ZW5lcnMoYSl9KTt2YXIgYT1uZXcgTXV0YXRpb25PYnNlcnZlcihmdW5jdGlvbihhLGIpe2EuZm9yRWFjaChmdW5jdGlvbihhKXthLnR5cGU9PT0iY2hpbGRMaXN0IiYmQXJyYXkuZnJvbShhLmFkZGVkTm9kZXMpLmZvckVhY2goZnVuY3Rpb24oYSl7YWRkTG9hZEV2ZW50TGlzdGVuZXJzKGEpfSl9KX0pO2Eub2JzZXJ2ZShkb2N1bWVudC5nZXRFbGVtZW50c0J5VGFnTmFtZSgiaHRtbCIpWzBdLHthdHRyaWJ1dGVzOiExLGNoaWxkTGlzdDohMCxzdWJ0cmVlOiEwfSl9KSgpOwovLyMgc291cmNlVVJMPWh0dHBzOi8vc3RhdGljLnh4LmZiY2RuLm5ldC9yc3JjLnBocC92My95dS9yL2VtbUZmRnNUVXRELmpzP19uY194PUlqM1dwOGxnNUt6Cg==",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 86067.405215,
+        "wallTime": 1693753631.57989,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&wtsid=rdr_1b9BIZpPl983KzOl9&_rdr",
+            "lineNumber": 0,
+            "columnNumber": 73544
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.102",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/ajax/bulk-route-definitions/",
+            "method": "POST",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36",
+                "viewport-width": "393",
+                "Content-Type": "application/x-www-form-urlencoded",
+                "X-FB-LSD": "AVrITDacl48",
+                "Referer": "https://www.google.com",
+                "X-ASBD-ID": "129477",
+                "dpr": "2.75",
+                "sec-ch-prefers-color-scheme": "light"
+            },
+            "postData": "route_urls[0]=%2Fprivacy%2Fcenter%2F%3Fentry_point%3Dfacebook_page_footer%26refid%3D8%26wtsid%3Drdr_1b9BIZpPl983KzOl9%26_rdr&routing_namespace=privacy_center&__user=0&__a=1&__req=1&__hs=19603.HYP%3Acomet_loggedout_pkg.2.1..0.0&dpr=1&__ccg=EXCELLENT&__rev=1008425594&__s=rdfdxb%3A9k3mdc%3Ax9ool9&__hsi=7274616453699130088&__dyn=7xe6E5q5U5ObwKBAo2vwAxu13w8CewSwMwNwcy0im3y4o0B-q1ew65xO2O1Vw8G1nzU1vohwnU2lwa90Fw4Hw9O7Udo6qU5a1gxe2Gew9O22362W2K0zE5W0PU1bobodEGdw46wbS1LwTwNwbO1pwr86C1nwro&__csr=iN4h8CiHAWU89GhrGuVqyqByUgxefCgKa8WUC8ACBGdye9g-F998nKjUhgO6oBx2bxe5oC5onxyqeK6ovK18DgkyErxeBzrwpo6a6U0ulWuU0Be1GHmE0Rl0l81zUca-0jT-fm048E0FRwEw7gw21zau073o1saw0oefw3QvixvgaU0eWEixjng0Vu05TS0m605Fo1cqx7w1Eit2FE1Yo08f21S0i603qAj80aGwbS0ke0-_w2_Cbw2Domxu3m05OOKt2F6024m0hG4o2LBg&__comet_req=1&lsd=AVrITDacl48&jazoest=2902&__spin_r=1008425594&__spin_b=trunk&__spin_t=1693753631",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "cm91dGVfdXJsc1swXT0lMkZwcml2YWN5JTJGY2VudGVyJTJGJTNGZW50cnlfcG9pbnQlM0RmYWNlYm9va19wYWdlX2Zvb3RlciUyNnJlZmlkJTNEOCUyNnd0c2lkJTNEcmRyXzFiOUJJWnBQbDk4M0t6T2w5JTI2X3JkciZyb3V0aW5nX25hbWVzcGFjZT1wcml2YWN5X2NlbnRlciZfX3VzZXI9MCZfX2E9MSZfX3JlcT0xJl9faHM9MTk2MDMuSFlQJTNBY29tZXRfbG9nZ2Vkb3V0X3BrZy4yLjEuLjAuMCZkcHI9MSZfX2NjZz1FWENFTExFTlQmX19yZXY9MTAwODQyNTU5NCZfX3M9cmRmZHhiJTNBOWszbWRjJTNBeDlvb2w5Jl9faHNpPTcyNzQ2MTY0NTM2OTkxMzAwODgmX19keW49N3hlNkU1cTVVNU9id0tCQW8ydndBeHUxM3c4Q2V3U3dNd053Y3kwaW0zeTRvMEItcTFldzY1eE8yTzFWdzhHMW56VTF2b2h3blUybHdhOTBGdzRIdzlPN1VkbzZxVTVhMWd4ZTJHZXc5TzIyMzYyVzJLMHpFNVcwUFUxYm9ib2RFR2R3NDZ3YlMxTHdUd053Yk8xcHdyODZDMW53cm8mX19jc3I9aU40aDhDaUhBV1U4OUdockd1VnF5cUJ5VWd4ZWZDZ0thOFdVQzhBQ0JHZHllOWctRjk5OG5LalVoZ082b0J4MmJ4ZTVvQzVvbnh5cWVLNm92SzE4RGdreUVyeGVCenJ3cG82YTZVMHVsV3VVMEJlMUdIbUUwUmwwbDgxelVjYS0walQtZm0wNDhFMEZSd0V3N2d3MjF6YXUwNzNvMXNhdzBvZWZ3M1F2aXh2Z2FVMGVXRWl4am5nMFZ1MDVUUzBtNjA1Rm8xY3F4N3cxRWl0MkZFMVlvMDhmMjFTMGk2MDNxQWo4MGFHd2JTMGtlMC1fdzJfQ2J3MkRvbXh1M20wNU9PS3QyRjYwMjRtMGhHNG8yTEJnJl9fY29tZXRfcmVxPTEmbHNkPUFWcklURGFjbDQ4Jmphem9lc3Q9MjkwMiZfX3NwaW5fcj0xMDA4NDI1NTk0Jl9fc3Bpbl9iPXRydW5rJl9fc3Bpbl90PTE2OTM3NTM2MzE="
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 86067.768327,
+        "wallTime": 1693753631.949396,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "c.send",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3i9Sr4/y2/l/en_GB/L-3uOKSDCpi.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 648,
+                        "columnNumber": 5175
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 442,
+                        "columnNumber": 2428
+                    },
+                    {
+                        "functionName": "p",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 442,
+                        "columnNumber": 1807
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 442,
+                        "columnNumber": 2524
+                    },
+                    {
+                        "functionName": "a",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 442,
+                        "columnNumber": 545
+                    },
+                    {
+                        "functionName": "b",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 445,
+                        "columnNumber": 1268
+                    },
+                    {
+                        "functionName": "q",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 445,
+                        "columnNumber": 1065
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 445,
+                        "columnNumber": 1416
+                    },
+                    {
+                        "functionName": "a",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 445,
+                        "columnNumber": 1956
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 445,
+                        "columnNumber": 2352
+                    },
+                    {
+                        "functionName": "applyWithGuard",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 10431
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 11165
+                    },
+                    {
+                        "functionName": "N",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 2342
+                    },
+                    {
+                        "functionName": "U",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 3044
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.103",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/images/assets_DO_NOT_HARDCODE/company_brand_privacy_center_policy/Privacy-SafetyGuide-Hero-WWW.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "dpr": "2.75",
+                "sec-ch-prefers-color-scheme": "light",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36",
+                "viewport-width": "393"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 86068.097812,
+        "wallTime": 1693753632.272386,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.104",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/images/assets_DO_NOT_HARDCODE/company_brand_privacy_center_policy/Privacy-2021-CompanyBrand-14-Mobile.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "dpr": "2.75",
+                "sec-ch-prefers-color-scheme": "light",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36",
+                "viewport-width": "393"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 86068.109126,
+        "wallTime": 1693753632.28382,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.105",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/images/assets_DO_NOT_HARDCODE/company_brand_privacy_center_policy/Privacy-2021-CompanyBrand-08-Mobile.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "dpr": "2.75",
+                "sec-ch-prefers-color-scheme": "light",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36",
+                "viewport-width": "393"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 86068.109685,
+        "wallTime": 1693753632.284401,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.106",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/images/assets_DO_NOT_HARDCODE/company_brand_privacy_center_policy/Privacy-2021-CompanyBrand-24A-Mobile.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "dpr": "2.75",
+                "sec-ch-prefers-color-scheme": "light",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36",
+                "viewport-width": "393"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 86068.123303,
+        "wallTime": 1693753632.297925,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.107",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/images/assets_DO_NOT_HARDCODE/company_brand_privacy_center_policy/Privacy-2021-CompanyBrand-05A-Mobile.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "dpr": "2.75",
+                "sec-ch-prefers-color-scheme": "light",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36",
+                "viewport-width": "393"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 86068.123955,
+        "wallTime": 1693753632.298531,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.108",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/images/assets_DO_NOT_HARDCODE/company_brand_privacy_center_policy/Privacy-2021-CompanyBrand-28-Mobile.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "dpr": "2.75",
+                "sec-ch-prefers-color-scheme": "light",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36",
+                "viewport-width": "393"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 86068.140937,
+        "wallTime": 1693753632.315534,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.109",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/images/assets_DO_NOT_HARDCODE/company_brand_privacy_center_policy/Privacy-TeensGuide-Hero-WWW.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "dpr": "2.75",
+                "sec-ch-prefers-color-scheme": "light",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36",
+                "viewport-width": "393"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 86068.163531,
+        "wallTime": 1693753632.33814,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.110",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/images/assets_DO_NOT_HARDCODE/company_brand_privacy_center_policy/Privacy-LocationGuide-Hero-WWW-.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "dpr": "2.75",
+                "sec-ch-prefers-color-scheme": "light",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36",
+                "viewport-width": "393"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 86068.164011,
+        "wallTime": 1693753632.33863,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.111",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/images/assets_DO_NOT_HARDCODE/company_brand_privacy_center_policy/Privacy-3rdPartyDataGuideV2-Hero01-16x7-WWW.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "dpr": "2.75",
+                "sec-ch-prefers-color-scheme": "light",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36",
+                "viewport-width": "393"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 86068.182494,
+        "wallTime": 1693753632.357104,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.112",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/images/assets_DO_NOT_HARDCODE/company_brand_privacy_center_policy/Privacy-2021-CompanyBrand-57-Mobile.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "dpr": "2.75",
+                "sec-ch-prefers-color-scheme": "light",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36",
+                "viewport-width": "393"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 86068.217637,
+        "wallTime": 1693753632.392268,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.88",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/yU/r/WXBYOaYZuYu.woff2",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 86068.276103,
+        "wallTime": 1693753632.450679,
+        "initiator": {
+            "type": "parser",
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yy/l/0,cross/kKVi88HTT0QK0dTdV3BioaX7t1iO1eXNMaWdE7mD1jURWPrndevEYn8zyEpb6SJKFFDzUSipvyKyKHNSpSUTp_kHniEfe-1jsdB.css?_nc_x=Ij3Wp8lg5Kz"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.60",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/y2/r/6YirsaXqsap.woff2",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 86068.276341,
+        "wallTime": 1693753632.450897,
+        "initiator": {
+            "type": "parser",
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yy/l/0,cross/kKVi88HTT0QK0dTdV3BioaX7t1iO1eXNMaWdE7mD1jURWPrndevEYn8zyEpb6SJKFFDzUSipvyKyKHNSpSUTp_kHniEfe-1jsdB.css?_nc_x=Ij3Wp8lg5Kz"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.64",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/y8/r/WF8VhTuShVE.woff2",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 86068.276537,
+        "wallTime": 1693753632.451083,
+        "initiator": {
+            "type": "parser",
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yy/l/0,cross/kKVi88HTT0QK0dTdV3BioaX7t1iO1eXNMaWdE7mD1jURWPrndevEYn8zyEpb6SJKFFDzUSipvyKyKHNSpSUTp_kHniEfe-1jsdB.css?_nc_x=Ij3Wp8lg5Kz"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.62",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/ye/r/ndhgOwkNmDs.woff2",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 86068.276978,
+        "wallTime": 1693753632.45153,
+        "initiator": {
+            "type": "parser",
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yy/l/0,cross/kKVi88HTT0QK0dTdV3BioaX7t1iO1eXNMaWdE7mD1jURWPrndevEYn8zyEpb6SJKFFDzUSipvyKyKHNSpSUTp_kHniEfe-1jsdB.css?_nc_x=Ij3Wp8lg5Kz"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.123",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 86068.353504,
+        "wallTime": 1693753632.528208,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "L",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 3151
+                    },
+                    {
+                        "functionName": "loadResources",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 16161
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 240,
+                        "columnNumber": 268
+                    },
+                    {
+                        "functionName": "applyWithGuard",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 10431
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 11165
+                    },
+                    {
+                        "functionName": "N",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 2342
+                    },
+                    {
+                        "functionName": "U",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 3044
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.124",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Z5idmnnp69Y.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 86068.35402,
+        "wallTime": 1693753632.528641,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "L",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 3151
+                    },
+                    {
+                        "functionName": "loadResources",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 16161
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 240,
+                        "columnNumber": 268
+                    },
+                    {
+                        "functionName": "applyWithGuard",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 10431
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 11165
+                    },
+                    {
+                        "functionName": "N",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 2342
+                    },
+                    {
+                        "functionName": "U",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 3044
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.125",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/JcsiPsI9n-A.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 86068.35436,
+        "wallTime": 1693753632.528985,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "L",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 3151
+                    },
+                    {
+                        "functionName": "loadResources",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 16161
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 240,
+                        "columnNumber": 268
+                    },
+                    {
+                        "functionName": "applyWithGuard",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 10431
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 11165
+                    },
+                    {
+                        "functionName": "N",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 2342
+                    },
+                    {
+                        "functionName": "U",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 3044
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.126",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/WXrifMBVaZV.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 86068.354784,
+        "wallTime": 1693753632.529387,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "L",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 3151
+                    },
+                    {
+                        "functionName": "loadResources",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 16161
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 240,
+                        "columnNumber": 268
+                    },
+                    {
+                        "functionName": "applyWithGuard",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 10431
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 11165
+                    },
+                    {
+                        "functionName": "N",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 2342
+                    },
+                    {
+                        "functionName": "U",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 3044
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.127",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yY/r/YT7n1sgH1lv.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 86068.355116,
+        "wallTime": 1693753632.529725,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "L",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 3151
+                    },
+                    {
+                        "functionName": "loadResources",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 167,
+                        "columnNumber": 16161
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 240,
+                        "columnNumber": 268
+                    },
+                    {
+                        "functionName": "applyWithGuard",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 10431
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 11165
+                    },
+                    {
+                        "functionName": "N",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 2342
+                    },
+                    {
+                        "functionName": "U",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 3044
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.133",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/ajax/bulk-route-definitions/",
+            "method": "POST",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36",
+                "viewport-width": "393",
+                "Content-Type": "application/x-www-form-urlencoded",
+                "X-FB-LSD": "AVrITDacl48",
+                "Referer": "https://www.google.com",
+                "X-ASBD-ID": "129477",
+                "dpr": "2.75",
+                "sec-ch-prefers-color-scheme": "light"
+            },
+            "postData": "route_urls[0]=%2Fprivacy%2Fcenter&route_urls[1]=%2Fprivacy%2Fcenter%2Fsearch&route_urls[2]=%2Fprivacy%2Fdialog%2Fnavigation&route_urls[3]=%2Fprivacy%2Fguide%2Fglobal_safety&route_urls[4]=%2Fprivacy%2Fguide%2Fsharing&route_urls[5]=%2Fprivacy%2Fguide%2Fsecurity&route_urls[6]=%2Fprivacy%2Fguide%2Fcollection&route_urls[7]=%2Fprivacy%2Fguide%2Fuse&route_urls[8]=%2Fprivacy%2Fguide%2Fads&route_urls[9]=%2Fprivacy%2Fguide%2Fteens&route_urls[10]=%2Fprivacy%2Fguide%2Flocation&route_urls[11]=%2Fprivacy%2Fguide%2Factivityv2&route_urls[12]=%2Fprivacy%2Fpolicy&routing_namespace=privacy_center&__user=0&__a=1&__req=2&__hs=19603.HYP%3Acomet_loggedout_pkg.2.1..0.0&dpr=1&__ccg=EXCELLENT&__rev=1008425594&__s=rdfdxb%3A9k3mdc%3Ax9ool9&__hsi=7274616453699130088&__dyn=7xeUmwlEnwn8K2WnFw9-2i5U4e0yoW3q32360CEbo19oe8hw2nVE4W0om78b87C0yE5ufz81s8hwnU2lwv89k2C1Fwc60D8vwRwlE-U5a1gxe2Gew9O22362W2K0zK1swa-7-0iK2S3qazo11E2ZwrUdUcobU2cwmo6O1FwlU6S&__csr=iN4qCiHJqU89GhrGuVqyqByUgxefCgKa8WUC8ACBGdye9g-F998nKjUhgO6oBx2bxe5oC5onxyqeK6ovK18DgkyErxeBzrwpo6a6U0ulWuU0Be1GHmE0Rl0l81zUca-0jT-fm048E0FRwEw7gw21zau073o1saw0oefw3QvixvgaU0eWEixjng0Vu05TS0m605Fo1cqx7w1Eit2FE1Yo08f21S0i603qAj80aGwbS0ke0-_w2_Cbw2Domxu3m05OOKt2F6024m0hG4o2LBg&__comet_req=1&lsd=AVrITDacl48&jazoest=2902&__spin_r=1008425594&__spin_b=trunk&__spin_t=1693753631",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "cm91dGVfdXJsc1swXT0lMkZwcml2YWN5JTJGY2VudGVyJnJvdXRlX3VybHNbMV09JTJGcHJpdmFjeSUyRmNlbnRlciUyRnNlYXJjaCZyb3V0ZV91cmxzWzJdPSUyRnByaXZhY3klMkZkaWFsb2clMkZuYXZpZ2F0aW9uJnJvdXRlX3VybHNbM109JTJGcHJpdmFjeSUyRmd1aWRlJTJGZ2xvYmFsX3NhZmV0eSZyb3V0ZV91cmxzWzRdPSUyRnByaXZhY3klMkZndWlkZSUyRnNoYXJpbmcmcm91dGVfdXJsc1s1XT0lMkZwcml2YWN5JTJGZ3VpZGUlMkZzZWN1cml0eSZyb3V0ZV91cmxzWzZdPSUyRnByaXZhY3klMkZndWlkZSUyRmNvbGxlY3Rpb24mcm91dGVfdXJsc1s3XT0lMkZwcml2YWN5JTJGZ3VpZGUlMkZ1c2Umcm91dGVfdXJsc1s4XT0lMkZwcml2YWN5JTJGZ3VpZGUlMkZhZHMmcm91dGVfdXJsc1s5XT0lMkZwcml2YWN5JTJGZ3VpZGUlMkZ0ZWVucyZyb3V0ZV91cmxzWzEwXT0lMkZwcml2YWN5JTJGZ3VpZGUlMkZsb2NhdGlvbiZyb3V0ZV91cmxzWzExXT0lMkZwcml2YWN5JTJGZ3VpZGUlMkZhY3Rpdml0eXYyJnJvdXRlX3VybHNbMTJdPSUyRnByaXZhY3klMkZwb2xpY3kmcm91dGluZ19uYW1lc3BhY2U9cHJpdmFjeV9jZW50ZXImX191c2VyPTAmX19hPTEmX19yZXE9MiZfX2hzPTE5NjAzLkhZUCUzQWNvbWV0X2xvZ2dlZG91dF9wa2cuMi4xLi4wLjAmZHByPTEmX19jY2c9RVhDRUxMRU5UJl9fcmV2PTEwMDg0MjU1OTQmX19zPXJkZmR4YiUzQTlrM21kYyUzQXg5b29sOSZfX2hzaT03Mjc0NjE2NDUzNjk5MTMwMDg4Jl9fZHluPTd4ZVVtd2xFbnduOEsyV25GdzktMmk1VTRlMHlvVzNxMzIzNjBDRWJvMTlvZThodzJuVkU0VzBvbTc4Yjg3QzB5RTV1Zno4MXM4aHduVTJsd3Y4OWsyQzFGd2M2MEQ4dndSd2xFLVU1YTFneGUyR2V3OU8yMjM2MlcySzB6SzFzd2EtNy0waUsyUzNxYXpvMTFFMlp3clVkVWNvYlUyY3dtbzZPMUZ3bFU2UyZfX2Nzcj1pTjRxQ2lISnFVODlHaHJHdVZxeXFCeVVneGVmQ2dLYThXVUM4QUNCR2R5ZTlnLUY5OThuS2pVaGdPNm9CeDJieGU1b0M1b254eXFlSzZvdksxOERna3lFcnhlQnpyd3BvNmE2VTB1bFd1VTBCZTFHSG1FMFJsMGw4MXpVY2EtMGpULWZtMDQ4RTBGUndFdzdndzIxemF1MDczbzFzYXcwb2VmdzNRdml4dmdhVTBlV0VpeGpuZzBWdTA1VFMwbTYwNUZvMWNxeDd3MUVpdDJGRTFZbzA4ZjIxUzBpNjAzcUFqODBhR3diUzBrZTAtX3cyX0NidzJEb214dTNtMDVPT0t0MkY2MDI0bTBoRzRvMkxCZyZfX2NvbWV0X3JlcT0xJmxzZD1BVnJJVERhY2w0OCZqYXpvZXN0PTI5MDImX19zcGluX3I9MTAwODQyNTU5NCZfX3NwaW5fYj10cnVuayZfX3NwaW5fdD0xNjkzNzUzNjMx"
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 86068.363552,
+        "wallTime": 1693753632.538555,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "c.send",
+                        "scriptId": "13",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3i9Sr4/y2/l/en_GB/L-3uOKSDCpi.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 648,
+                        "columnNumber": 5175
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 442,
+                        "columnNumber": 2428
+                    },
+                    {
+                        "functionName": "p",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 442,
+                        "columnNumber": 1807
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 442,
+                        "columnNumber": 2524
+                    },
+                    {
+                        "functionName": "a",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 442,
+                        "columnNumber": 545
+                    },
+                    {
+                        "functionName": "b",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 445,
+                        "columnNumber": 1268
+                    },
+                    {
+                        "functionName": "q",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 445,
+                        "columnNumber": 1065
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 445,
+                        "columnNumber": 1416
+                    },
+                    {
+                        "functionName": "a",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 445,
+                        "columnNumber": 1956
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 445,
+                        "columnNumber": 2352
+                    },
+                    {
+                        "functionName": "applyWithGuard",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 10431
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 11165
+                    },
+                    {
+                        "functionName": "N",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 2342
+                    },
+                    {
+                        "functionName": "U",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 221,
+                        "columnNumber": 3044
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.134",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/ajax/bz?__a=1&__ccg=EXCELLENT&__comet_req=1&__hs=19603.HYP%3Acomet_loggedout_pkg.2.1..0.0&__hsi=7274616453699130088&__req=3&__rev=1008425594&__s=rdfdxb%3A9k3mdc%3Ax9ool9&__spin_b=trunk&__spin_r=1008425594&__spin_t=1693753631&__user=0&dpr=1&jazoest=2902&lsd=AVrITDacl48&ph=C3",
+            "method": "POST",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "dpr": "2.75",
+                "sec-ch-prefers-color-scheme": "light",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36",
+                "viewport-width": "393",
+                "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundary3cKHXF3lmtedfNQN"
+            },
+            "postData": "------WebKitFormBoundary3cKHXF3lmtedfNQN\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1693753632645\r\n------WebKitFormBoundary3cKHXF3lmtedfNQN\r\nContent-Disposition: form-data; name=\"q\"\r\n\r\n[{\"app_id\":\"2220391788200892\",\"posts\":[[\"falco:bd_pdc_signals\",{\"e\":\"{\\\"asid\\\":\\\"964329bf-ca53-4f4f-8692-8b8e3061f8f5\\\",\\\"ct\\\":1659080345,\\\"sjd\\\":\\\"APIpm2/o3A4aiy9K8oSPQcN5usLg0LCWnjGW8QZ4k3waEl/eXnqn2gW3MA9Jq+whDnDx1hvt8LrBchExO6fZ74ijQCgdhTzquxzJwDDvamGcjFcjCqpMRM2PI2c3YCFtakt/gnYgpbK0Y2RG1KpRh+kHmXCnCBHZQoHV1Z1/RGgGvdcJ2aea4A==\\\",\\\"sid\\\":-1}\",\"r\":1,\"d\":\"$^|Acbs2ON4HKxOw6aY9i1jIaw2aRFlBTTQt7nqz2rSjITfggCNeRsaBU-YRwFdwoUuKlxL0kAbZOuQH-v9VtdOFRO6V-XhZwM|fd.AcbJ-zVebZHpIfRnESSovI7y0I0VJn2xKIilVh4pW5uR5VYlNhQn-fhMDSrvdwEhFtJ-TiA7NYuVnYijyeQZEDRP\",\"s\":\"rdfdxb:9k3mdc:x9ool9\",\"t\":1693753632360.75},1693753632645.1,0,536]],\"trigger\":\"falco:bd_pdc_signals\",\"user\":\"0\",\"webSessionId\":\"rdfdxb:9k3mdc:x9ool9\"}]\r\n------WebKitFormBoundary3cKHXF3lmtedfNQN--\r\n",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "LS0tLS0tV2ViS2l0Rm9ybUJvdW5kYXJ5M2NLSFhGM2xtdGVkZk5RTg0KQ29udGVudC1EaXNwb3NpdGlvbjogZm9ybS1kYXRhOyBuYW1lPSJ0cyINCg0KMTY5Mzc1MzYzMjY0NQ0KLS0tLS0tV2ViS2l0Rm9ybUJvdW5kYXJ5M2NLSFhGM2xtdGVkZk5RTg0KQ29udGVudC1EaXNwb3NpdGlvbjogZm9ybS1kYXRhOyBuYW1lPSJxIg0KDQpbeyJhcHBfaWQiOiIyMjIwMzkxNzg4MjAwODkyIiwicG9zdHMiOltbImZhbGNvOmJkX3BkY19zaWduYWxzIix7ImUiOiJ7XCJhc2lkXCI6XCI5NjQzMjliZi1jYTUzLTRmNGYtODY5Mi04YjhlMzA2MWY4ZjVcIixcImN0XCI6MTY1OTA4MDM0NSxcInNqZFwiOlwiQVBJcG0yL28zQTRhaXk5SzhvU1BRY041dXNMZzBMQ1duakdXOFFaNGszd2FFbC9lWG5xbjJnVzNNQTlKcSt3aERuRHgxaHZ0OExyQmNoRXhPNmZaNzRpalFDZ2RoVHpxdXh6SndERHZhbUdjakZjakNxcE1STTJQSTJjM1lDRnRha3QvZ25ZZ3BiSzBZMlJHMUtwUmgra0htWENuQ0JIWlFvSFYxWjEvUkdnR3ZkY0oyYWVhNEE9PVwiLFwic2lkXCI6LTF9IiwiciI6MSwiZCI6IiRefEFjYnMyT040SEt4T3c2YVk5aTFqSWF3MmFSRmxCVFRRdDducXoyclNqSVRmZ2dDTmVSc2FCVS1ZUndGZHdvVXVLbHhMMGtBYlpPdVFILXY5VnRkT0ZSTzZWLVhoWndNfGZkLkFjYkotelZlYlpIcElmUm5FU1Nvdkk3eTBJMFZKbjJ4S0lpbFZoNHBXNXVSNVZZbE5oUW4tZmhNRFNydmR3RWhGdEotVGlBN05ZdVZuWWlqeWVRWkVEUlAiLCJzIjoicmRmZHhiOjlrM21kYzp4OW9vbDkiLCJ0IjoxNjkzNzUzNjMyMzYwLjc1fSwxNjkzNzUzNjMyNjQ1LjEsMCw1MzZdXSwidHJpZ2dlciI6ImZhbGNvOmJkX3BkY19zaWduYWxzIiwidXNlciI6IjAiLCJ3ZWJTZXNzaW9uSWQiOiJyZGZkeGI6OWszbWRjOng5b29sOSJ9XQ0KLS0tLS0tV2ViS2l0Rm9ybUJvdW5kYXJ5M2NLSFhGM2xtdGVkZk5RTi0tDQo="
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 86068.472453,
+        "wallTime": 1693753632.64879,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "send",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10612,
+                        "columnNumber": 2279
+                    },
+                    {
+                        "functionName": "_handleSignalPost",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10621,
+                        "columnNumber": 3057
+                    },
+                    {
+                        "functionName": "post",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10621,
+                        "columnNumber": 9537
+                    },
+                    {
+                        "functionName": "M",
+                        "scriptId": "30",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Z5idmnnp69Y.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 7,
+                        "columnNumber": 4209
+                    },
+                    {
+                        "functionName": "logCritical",
+                        "scriptId": "30",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Z5idmnnp69Y.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 7,
+                        "columnNumber": 4819
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "30",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Z5idmnnp69Y.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 7,
+                        "columnNumber": 9509
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "30",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Z5idmnnp69Y.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 7,
+                        "columnNumber": 9564
+                    },
+                    {
+                        "functionName": "b.$19",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10540,
+                        "columnNumber": 2573
+                    },
+                    {
+                        "functionName": "b.wrapAndEnqueueItem",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10540,
+                        "columnNumber": 4633
+                    },
+                    {
+                        "functionName": "B",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10542,
+                        "columnNumber": 2578
+                    },
+                    {
+                        "functionName": "C",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10542,
+                        "columnNumber": 2754
+                    },
+                    {
+                        "functionName": "logCritical",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10542,
+                        "columnNumber": 3499
+                    },
+                    {
+                        "functionName": "_postSignalsHelper",
+                        "scriptId": "29",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 2790
+                    },
+                    {
+                        "functionName": "postHeartbeat",
+                        "scriptId": "29",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 6627
+                    },
+                    {
+                        "functionName": "collectHeartbeat",
+                        "scriptId": "29",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 6429
+                    },
+                    {
+                        "functionName": "collectHeartbeatTimes",
+                        "scriptId": "29",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 5866
+                    },
+                    {
+                        "functionName": "startHeartbeat",
+                        "scriptId": "29",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 5544
+                    },
+                    {
+                        "functionName": "startHeartbeatDelayed",
+                        "scriptId": "29",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 5148
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "29",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 1023
+                    },
+                    {
+                        "functionName": "k",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10585,
+                        "columnNumber": 380
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10585,
+                        "columnNumber": 2475
+                    },
+                    {
+                        "functionName": "a.<computed>",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10585,
+                        "columnNumber": 742
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10585,
+                        "columnNumber": 1125
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10585,
+                        "columnNumber": 1489
+                    },
+                    {
+                        "functionName": "g",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10585,
+                        "columnNumber": 1457
+                    },
+                    {
+                        "functionName": "a.<computed>",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10585,
+                        "columnNumber": 742
+                    },
+                    {
+                        "functionName": "i.async",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10585,
+                        "columnNumber": 1652
+                    },
+                    {
+                        "functionName": "startSignalCollection",
+                        "scriptId": "29",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 107,
+                        "columnNumber": 593
+                    },
+                    {
+                        "functionName": "a",
+                        "scriptId": "29",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 108,
+                        "columnNumber": 186
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "29",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 45,
+                        "columnNumber": 1957
+                    },
+                    {
+                        "functionName": "applyWithGuard",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 58,
+                        "columnNumber": 10431
+                    },
+                    {
+                        "functionName": "a",
+                        "scriptId": "29",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iUHI4/yb/l/en_GB/XJWpWwHjPCC.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 45,
+                        "columnNumber": 1908
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 314,
+                        "columnNumber": 257
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/kIVpvOgjzIO.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 149,
+                        "columnNumber": 1504
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "wd",
+                    "value": "393x727",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1694358432,
+                    "size": 9,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "dpr",
+                    "value": "2.75",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1694358432,
+                    "size": 7,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.135",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://scontent.xx.fbcdn.net/hads-ak-prn2/1487645_6012475414660_1439393861_n.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 86068.505442,
+        "wallTime": 1693753632.680007,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "wd",
+                    "value": "393x727",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1694358432,
+                    "size": 9,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "dpr",
+                    "value": "2.75",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1694358432,
+                    "size": 7,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27456.138",
+        "loaderId": "F1CFDCFB61E77C897C00E3FF4361A187",
+        "documentURL": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer&refid=8&_rdr",
+        "request": {
+            "url": "https://www.facebook.com/ajax/bz?__a=1&__ccg=EXCELLENT&__comet_req=1&__hs=19603.HYP%3Acomet_loggedout_pkg.2.1..0.0&__hsi=7274616453699130088&__req=4&__rev=1008425594&__s=rdfdxb%3A9k3mdc%3Ax9ool9&__spin_b=trunk&__spin_r=1008425594&__spin_t=1693753631&__user=0&dpr=1&jazoest=2902&lsd=AVrITDacl48&ph=C3",
+            "method": "POST",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "dpr": "2.75",
+                "sec-ch-prefers-color-scheme": "light",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36",
+                "viewport-width": "393",
+                "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundary0rYIYgQffWsxkRGp"
+            },
+            "hasPostData": true,
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 86069.117565,
+        "wallTime": 1693753633.292222,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "send",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10612,
+                        "columnNumber": 2279
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "14",
+                        "url": "https://static.xx.fbcdn.net/rsrc.php/v3iKJl4/yo/l/en_GB/9CT04_FlspDpeU8tdBSByEOPokfrx9oOFQZEeFS_hBfAjmpTSpnCacd8A9wLFcm9pOR_Fm6CUBN1YzyPghHOtAUkBrM8aRcIL50zCwLWl8kWTD-Iol5_Q1mg8msoRI3s-ll5mwXB9yB0Sb1.js?_nc_x=Ij3Wp8lg5Kz",
+                        "lineNumber": 10621,
+                        "columnNumber": 6299
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "062DE93165473915AD40F3C9818E147F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "wd",
+                    "value": "393x727",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1694358432,
+                    "size": 9,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "dpr",
+                    "value": "2.75",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1694358432,
+                    "size": 7,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "fr",
+                    "value": "01d4Q8NVQSpoTZNB6..Bk9KEe.mY.AAA.0.0.Bk9KEe.AWWe6HkFzo4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701529631.21898,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "HqH0ZNxZcwj_ZrM9ktd7_Qq4",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728313631.218947,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]
