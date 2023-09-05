@@ -127,6 +127,10 @@ def get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_em
     # Save all client-side scripts
     get_client_side_script(page, folder_path)
 
+    # Save css scripts
+    css_urls = page.eval_on_selector_all("link[rel='stylesheet']", "links => links.map(link => link.href)")
+    crawler_support.save_css_files(folder_path, css_urls, actual_url)
+
     print("Actual url: ", actual_url)
     print("Url visited: ", visited_url)
     print("User-Agent:", page.evaluate('''() => window.navigator.userAgent'''))

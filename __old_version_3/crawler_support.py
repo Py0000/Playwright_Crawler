@@ -154,6 +154,32 @@ def get_level_one_embedded_link(file_path):
     return url_list
 
 
+
+def save_css_files(folder_path, css_urls, base_url):
+    css_file_path = os.path.join(folder_path, util_def.CSS_FOLDER)
+    if not os.path.exists(css_file_path):
+        os.makedirs(css_file_path)
+
+    for i, css_url in enumerate(css_urls):
+        file_name = f"style{i+1}.css"
+        file_path = os.path.join(css_file_path, file_name)
+
+        parsed_url = urlparse(css_url)
+        if not parsed_url.scheme:
+            if urlparse(base_url).scheme:
+                css_url = urljoin(base_url, css_url)
+        try:
+            response = requests.get(css_url)
+            with open(file_path, 'w', encoding='utf-8') as file:
+                file.write(response.text)
+            
+        except Exception as e:
+            with open(file_path, 'w', encoding='utf-8') as file:
+                file.write(f"Error obtaining css file from server for: {css_url}")
+
+    print("CSS files obtained and saved...")
+
+
 def save_more_detailed_network_logs(folder_path, data):
     print("Saving more detailed network logs...")
     file_dir = os.path.join(folder_path, util_def.DETAILED_NETWORK_FILE)
