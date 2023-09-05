@@ -1,3 +1,0 @@
-{
-    "script_1": "\n            document.addEventListener('DOMContentLoaded', function(){\n                const Http = new XMLHttpRequest();\n                const url= '/publishedWebsite/createRestrictionHrefValue/r80q9c';\n                Http.open(\"POST\", url);\n                Http.send();\n                Http.onload = (e) => {\n                    document.querySelector('a.link-to-page').setAttribute(\"href\", Http.responseText);\n                }\n            });\n        "
-}
