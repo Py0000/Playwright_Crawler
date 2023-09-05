@@ -121,5 +121,5 @@ def start_program(seed_url_list):
     analyze_mobile_bot_config_data()
 
 
-feeds = read_feeds_from_file("feeds_3.txt")
+feeds = read_feeds_from_file("feeds_benign.txt")
 start_program(feeds)

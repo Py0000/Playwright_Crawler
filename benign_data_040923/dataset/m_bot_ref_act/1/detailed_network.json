@@ -1,0 +1,736 @@
+[
+    {
+        "requestId": "3C745EBD533014B8D85FA3BB983684AD",
+        "loaderId": "3C745EBD533014B8D85FA3BB983684AD",
+        "documentURL": "https://www.facebook.com/",
+        "request": {
+            "url": "https://www.facebook.com/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 172357.223446,
+        "wallTime": 1693839919.417198,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "49B28556C16ED7288A81B1157E718335",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "3C745EBD533014B8D85FA3BB983684AD",
+        "loaderId": "3C745EBD533014B8D85FA3BB983684AD",
+        "documentURL": "https://m.facebook.com/",
+        "request": {
+            "url": "https://m.facebook.com/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 172357.459887,
+        "wallTime": 1693839919.653886,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://www.facebook.com/",
+            "status": 302,
+            "statusText": "",
+            "headers": {
+                "alt-svc": "h3=\":443\"; ma=86400",
+                "content-length": "0",
+                "content-type": "text/html; charset=\"utf-8\"",
+                "date": "Mon, 04 Sep 2023 15:05:19 GMT",
+                "location": "https://m.facebook.com/",
+                "strict-transport-security": "max-age=15552000; preload",
+                "x-fb-debug": "8KkS/ZoZacNk6q4T8d38bj6T63tEyj1rU6//O64SCV5VTcDZb41xkN9SfvH9r/Jd7gDqMclS9H/acHvj0Xh/ZQ=="
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 407,
+            "remoteIPAddress": "157.240.235.35",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 212,
+            "timing": {
+                "requestTime": 172357.224272,
+                "proxyStart": 0.366,
+                "proxyEnd": 0.774,
+                "dnsStart": 0.822,
+                "dnsEnd": 1.228,
+                "connectStart": 1.228,
+                "connectEnd": 9.468,
+                "sslStart": 4.492,
+                "sslEnd": 9.462,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 9.625,
+                "sendEnd": 9.733,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersEnd": 219.33
+            },
+            "responseTime": 1693839919637.028,
+            "protocol": "h2",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.3",
+                "keyExchange": "",
+                "keyExchangeGroup": "X25519",
+                "cipher": "AES_128_GCM",
+                "certificateId": 0,
+                "subjectName": "*.facebook.com",
+                "sanList": [
+                    "*.facebook.com",
+                    "*.facebook.net",
+                    "*.fbcdn.net",
+                    "*.fbsbx.com",
+                    "*.m.facebook.com",
+                    "*.messenger.com",
+                    "*.xx.fbcdn.net",
+                    "*.xy.fbcdn.net",
+                    "*.xz.fbcdn.net",
+                    "facebook.com",
+                    "messenger.com"
+                ],
+                "issuer": "DigiCert SHA2 High Assurance Server CA",
+                "validFrom": 1686614400,
+                "validTo": 1694476799,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "serverSignatureAlgorithm": 1027,
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Document",
+        "frameId": "49B28556C16ED7288A81B1157E718335",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "25540.2",
+        "loaderId": "3C745EBD533014B8D85FA3BB983684AD",
+        "documentURL": "https://m.facebook.com/",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yY/l/0,cross/hORzknZG8kX.css?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://m.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 172357.858451,
+        "wallTime": 1693839920.052876,
+        "initiator": {
+            "type": "parser",
+            "url": "https://m.facebook.com/",
+            "lineNumber": 0,
+            "columnNumber": 568
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "49B28556C16ED7288A81B1157E718335",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "sb",
+                    "value": "L_L1ZCG7U4zqjBmwpfsP6HjA",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728399919.944113,
+                    "size": 26,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "fr",
+                    "value": "0L2O77EFMXaB5q6Yc..Bk9fIv.hP.AAA.0.0.Bk9fIv.AWU1ti8oS-E",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701615919.944083,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "L_L1ZL-81VCgYtho9me--YVu",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728399919.944024,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "25540.3",
+        "loaderId": "3C745EBD533014B8D85FA3BB983684AD",
+        "documentURL": "https://m.facebook.com/",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yK/l/0,cross/eHdvs8Q_hxZ.css?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://m.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 172357.858987,
+        "wallTime": 1693839920.053383,
+        "initiator": {
+            "type": "parser",
+            "url": "https://m.facebook.com/",
+            "lineNumber": 0,
+            "columnNumber": 758
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "49B28556C16ED7288A81B1157E718335",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "sb",
+                    "value": "L_L1ZCG7U4zqjBmwpfsP6HjA",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728399919.944113,
+                    "size": 26,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "fr",
+                    "value": "0L2O77EFMXaB5q6Yc..Bk9fIv.hP.AAA.0.0.Bk9fIv.AWU1ti8oS-E",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701615919.944083,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "L_L1ZL-81VCgYtho9me--YVu",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728399919.944024,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "25540.4",
+        "loaderId": "3C745EBD533014B8D85FA3BB983684AD",
+        "documentURL": "https://m.facebook.com/",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yk/l/0,cross/lbt034Z_5sD.css?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://m.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 172357.859288,
+        "wallTime": 1693839920.05371,
+        "initiator": {
+            "type": "parser",
+            "url": "https://m.facebook.com/",
+            "lineNumber": 0,
+            "columnNumber": 948
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "49B28556C16ED7288A81B1157E718335",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "sb",
+                    "value": "L_L1ZCG7U4zqjBmwpfsP6HjA",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728399919.944113,
+                    "size": 26,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "fr",
+                    "value": "0L2O77EFMXaB5q6Yc..Bk9fIv.hP.AAA.0.0.Bk9fIv.AWU1ti8oS-E",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701615919.944083,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "L_L1ZL-81VCgYtho9me--YVu",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728399919.944024,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "25540.5",
+        "loaderId": "3C745EBD533014B8D85FA3BB983684AD",
+        "documentURL": "https://m.facebook.com/",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/sDidh9JNs8K.js?_nc_x=Ij3Wp8lg5Kz",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Origin": "https://m.facebook.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 172357.859638,
+        "wallTime": 1693839920.054055,
+        "initiator": {
+            "type": "parser",
+            "url": "https://m.facebook.com/",
+            "lineNumber": 0,
+            "columnNumber": 1974
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "49B28556C16ED7288A81B1157E718335",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "sb",
+                    "value": "L_L1ZCG7U4zqjBmwpfsP6HjA",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728399919.944113,
+                    "size": 26,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "fr",
+                    "value": "0L2O77EFMXaB5q6Yc..Bk9fIv.hP.AAA.0.0.Bk9fIv.AWU1ti8oS-E",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701615919.944083,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "L_L1ZL-81VCgYtho9me--YVu",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728399919.944024,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "25540.6",
+        "loaderId": "3C745EBD533014B8D85FA3BB983684AD",
+        "documentURL": "https://m.facebook.com/",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 172357.860015,
+        "wallTime": 1693839920.054407,
+        "initiator": {
+            "type": "parser",
+            "url": "https://m.facebook.com/",
+            "lineNumber": 0,
+            "columnNumber": 8290
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "49B28556C16ED7288A81B1157E718335",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "sb",
+                    "value": "L_L1ZCG7U4zqjBmwpfsP6HjA",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728399919.944113,
+                    "size": 26,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "fr",
+                    "value": "0L2O77EFMXaB5q6Yc..Bk9fIv.hP.AAA.0.0.Bk9fIv.AWU1ti8oS-E",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701615919.944083,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "L_L1ZL-81VCgYtho9me--YVu",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728399919.944024,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "25540.7",
+        "loaderId": "3C745EBD533014B8D85FA3BB983684AD",
+        "documentURL": "https://m.facebook.com/",
+        "request": {
+            "url": "https://facebook.com/security/hsts-pixel.gif",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 172357.860211,
+        "wallTime": 1693839920.0546,
+        "initiator": {
+            "type": "parser",
+            "url": "https://m.facebook.com/",
+            "lineNumber": 0,
+            "columnNumber": 12790
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "49B28556C16ED7288A81B1157E718335",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "sb",
+                    "value": "L_L1ZCG7U4zqjBmwpfsP6HjA",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728399919.944113,
+                    "size": 26,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "fr",
+                    "value": "0L2O77EFMXaB5q6Yc..Bk9fIv.hP.AAA.0.0.Bk9fIv.AWU1ti8oS-E",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701615919.944083,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "L_L1ZL-81VCgYtho9me--YVu",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728399919.944024,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "25540.14",
+        "loaderId": "3C745EBD533014B8D85FA3BB983684AD",
+        "documentURL": "https://m.facebook.com/",
+        "request": {
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/cvj8rfO8RgU.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 172357.926186,
+        "wallTime": 1693839920.120568,
+        "initiator": {
+            "type": "parser",
+            "url": "https://static.xx.fbcdn.net/rsrc.php/v3/yY/l/0,cross/hORzknZG8kX.css?_nc_x=Ij3Wp8lg5Kz"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "49B28556C16ED7288A81B1157E718335",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "wd",
+                    "value": "393x727",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 9,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "m_pixel_ratio",
+                    "value": "2.75",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 17,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "sb",
+                    "value": "L_L1ZCG7U4zqjBmwpfsP6HjA",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728399919.944113,
+                    "size": 26,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "fr",
+                    "value": "0L2O77EFMXaB5q6Yc..Bk9fIv.hP.AAA.0.0.Bk9fIv.AWU1ti8oS-E",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1701615919.944083,
+                    "size": 57,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "datr",
+                    "value": "L_L1ZL-81VCgYtho9me--YVu",
+                    "domain": ".facebook.com",
+                    "path": "/",
+                    "expires": 1728399919.944024,
+                    "size": 28,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]
