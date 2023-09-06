@@ -37,3 +37,31 @@ def get_screenshot(page, folder_path, file_name):
     path = os.path.join(folder_path, file_name)
     crawler_support.save_screenshot(page, path)
     print("Screenshot Captured...")
+
+
+# Get client-side scripts
+client_side_scripts_injection_code = '''() => {
+    const scripts = [];
+    const scriptElements = document.querySelectorAll('script');
+    scriptElements.forEach(script => {
+        if (script.src) {
+            scripts.push(script.src);
+        } else {
+            scripts.push(script.innerText);
+        }
+    });
+    return scripts;
+}'''
+
+"""
+def get_click_through_injection_code(url):
+    click_through_injection_code = f'''() => {{
+            let a = document.createElement('a');
+            a.href = "{url}";
+            a.textContent = "Url";
+            a.id = "urlId";  
+            document.body.appendChild(a);
+        }}'''
+    
+    return click_through_injection_code
+"""

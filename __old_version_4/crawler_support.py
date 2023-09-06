@@ -120,20 +120,6 @@ def save_embedded_url(file_path, url, base_url, added_url_set):
     return added_url_set
 
 
-# Get client-side scripts
-client_side_scripts_injection_code = '''() => {
-    const scripts = [];
-    const scriptElements = document.querySelectorAll('script');
-    scriptElements.forEach(script => {
-        if (script.src) {
-            scripts.push(script.src);
-        } else {
-            scripts.push(script.innerText);
-        }
-    });
-    return scripts;
-}'''
-
 
 def save_client_side_script(folder_path, data):
     file = os.path.join(os.getcwd(), folder_path, util_def.CLIENT_SIDE_SCRIPT_FILE)

@@ -62,7 +62,6 @@ def analyze_desktop_bot_config_data():
 
 
 
-import time
 def start_program(seed_url_list):
     crawl_desktop_user_config(seed_url_list)
     crawl_desktop_bot_config(seed_url_list)

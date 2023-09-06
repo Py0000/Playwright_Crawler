@@ -34,7 +34,7 @@ def move_mouse_smoothly_top_left_bottom_right(page):
             page.mouse.move(x, y)
 
             # Add a small delay to simulate smooth movement (adjust the time for your desired smoothness)
-            time.sleep(random.uniform(0.002, 0.008))
+            time.sleep(random.uniform(0.003, 0.005))
 
         print("Mouse moved sucessful...")
     except Exception as e:
@@ -62,6 +62,7 @@ def page_scroll_helper(page, current_height):
 
 def page_scroll(page):
     last_height = page.evaluate('() => document.documentElement.scrollHeight')
+    last_height = last_height/random.randint(3, 5)
 
     try:
         current_height = 0
@@ -74,7 +75,7 @@ def page_scroll(page):
             # Continue while loop to scroll if possible
             # Otherwise stop scrolling
             new_height = page.evaluate('() => document.documentElement.scrollHeight')
-            if (new_height == last_height):
+            if (new_height >= last_height):
                 break
 
             last_height = new_height

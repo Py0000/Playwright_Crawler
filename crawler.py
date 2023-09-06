@@ -33,7 +33,7 @@ def get_server_side_data(device_conf, ref_flag, act_flag, browser, folder_path, 
     try:
         page.route('**/*', lambda route, request: 
                 route.abort() if 'script' in request.resource_type else route.continue_())
-
+        
         page.goto(actual_url)
 
         if act_flag:
@@ -54,7 +54,7 @@ def get_server_side_data(device_conf, ref_flag, act_flag, browser, folder_path, 
 
 
 def get_client_side_script(page, folder_path):
-    client_side_scripts = page.evaluate(crawler_support.client_side_scripts_injection_code)
+    client_side_scripts = page.evaluate(crawler_utilities.client_side_scripts_injection_code)
 
     # Format client-side scripts for better readability
     # Create a dictionary to store the client-side script data
@@ -216,7 +216,7 @@ def get_dataset(device_conf, ref_flag, act_flag, browser, url, index):
 def crawl(device_conf, ref_flag, act_flag, url, index):
     util.generate_crawling_base_folders(device_conf, ref_flag, act_flag)
 
-     # Create the playwright object and browser object
+    # Create the playwright object and browser object
     p = sync_playwright().start()
     
     # Set the user_agent in the browser object for desktop crawler

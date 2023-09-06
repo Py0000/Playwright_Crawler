@@ -280,9 +280,11 @@ def create_json(soup, url, dataset_folder_name, output_folder_name, is_aft_flag)
 
 def extract_features(device_conf, ref_flag, act_flag):
     print("\nExtracting HTML features...\n")
+    print(f"Extract HTML features for {device_conf} {'ref' if ref_flag else 'no ref'} {'act' if act_flag else 'no act'} before client-side rendering")
     create_dataframe(device_conf, ref_flag, act_flag, is_aft_flag=True)
+    print(f"\nExtract HTML features for {device_conf} {'ref' if ref_flag else 'no ref'} {'act' if act_flag else 'no act'} after client-side rendering")
     create_dataframe(device_conf, ref_flag, act_flag, is_aft_flag=False)
-    print("\nHTML features extracted...")
+    print("\nHTML features extracted...\n")
 
 
 #create_dataframe(util_def.DESKTOP_USER, ref_flag=True, act_flag=True, is_aft_flag=True)
