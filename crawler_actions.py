@@ -92,25 +92,9 @@ def dismiss_js_alert(page):
     except Exception as e:
         print("ALERT NOT DISMISSED: ", e)
 
-def touchscreen(page):
-    try:
-        page_size = page.evaluate('''() => ({ width: document.documentElement.clientWidth, height: document.documentElement.clientHeight })''')
-        #bottom_x, bottom_y = page_size['width'] / 2, page_size['height']
-        top_x, top_y = page_size['width'] / 2, 0
-        page.touchscreen.tap(top_x, top_y)
-        print(f"Touch at: {top_x}, {top_y}")
-    
-    except Exception as e:
-        print(f"Error tapping on screen: {e}")
-
 
 def desktop_user_mouse_movement(page):
     dismiss_js_alert(page)
     move_mouse_smoothly_top_left_bottom_right(page)
     mouse_click(page, 'left')
     mouse_click(page, "right")
-
-
-def mobile_user_hand_gesture(page):
-    dismiss_js_alert(page)
-    touchscreen(page)

@@ -24,10 +24,7 @@ def check_and_execute_user_actions(device_conf, act_flag, page):
     if not act_flag:
         pass
     else:
-        if util.desktop_configuration_checker(device_conf):
-            crawler_actions.desktop_user_mouse_movement(page)
-        else:
-            crawler_actions.mobile_user_hand_gesture(page)
+        crawler_actions.desktop_user_mouse_movement(page)
 
 
 def check_and_execute_scroll(page, act_flag):

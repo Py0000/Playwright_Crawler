@@ -39,20 +39,6 @@ def generate_crawling_folder_for_url(device_config, ref_flag, act_flag, url_inde
 
 
 
-def desktop_configuration_checker(device_config):
-    isDesktopBot = util_def.DESKTOP_BOT == device_config
-    isDesktopUser = util_def.DESKTOP_USER == device_config
-    isDesktop = isDesktopBot or isDesktopUser
-    return isDesktop
-
-
-def mobile_configuration_checker(device_config):
-    isMobileBot = util_def.MOBILE_BOT == device_config
-    isMobileUser = util_def.MOBILE_USER == device_config
-    isMobile = isMobileBot or isMobileUser
-    return isMobile
-
-
 def get_analysis_folder_path(dataset_folder_path):
     # Splitting path into components
     parts = os.path.normpath(dataset_folder_path).split(os.sep)

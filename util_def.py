@@ -1,8 +1,6 @@
 ##### Related to configurations #####
 DESKTOP_USER = "d_user"
 DESKTOP_BOT = "d_bot"
-MOBILE_USER = "m_user"
-MOBILE_BOT = "m_bot"
 
 REF_SET = "ref"
 NO_REF_SET = "no_ref"
@@ -13,7 +11,6 @@ NO_USER_ACT_SET = "no_act"
 ###### Related to user-agents & Referrer ######
 DESKTOP_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
 DESKTOP_BOT_AGENT = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
-MOBILE_BOT_AGENT = "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.75 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
 
 DESKTOP_USER_AGENT_MAP = {
     DESKTOP_USER: [f"--user-agent={DESKTOP_USER_AGENT}"],
