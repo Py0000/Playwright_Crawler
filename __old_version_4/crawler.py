@@ -40,7 +40,7 @@ def get_server_side_data(device_conf, ref_flag, act_flag, browser, folder_path, 
         
         # Gets the html content 
         crawler_utilities.get_screenshot(page, folder_path, util_def.SCREENSHOT_BEF_FILE)
-        server_html_script = requests.get(actual_url).text
+        server_html_script = page.content()
         soup = BeautifulSoup(server_html_script, "lxml")
 
         crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_BEF_FILE, soup.prettify())
@@ -82,7 +82,7 @@ def capture_more_detailed_network_logs(page, act_flag):
         captured_events.append(captured_event)
     
     client.on("Network.requestWillBeSent", capture_request)
-    crawler_utilities.wait_for_page_to_load(page, act_flag)
+    crawler_utilities.wait_for_page_to_load(page)
 
     return client, captured_events
 
@@ -100,7 +100,7 @@ def get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_em
     html_content = page.content()
     soup = BeautifulSoup(html_content, "lxml")
     visited_url = page.url
-
+    
     # Gets embedded link (to be use for further crawling if needed)
     embedded_file_path = ""
     if not is_embedded:
@@ -132,7 +132,7 @@ def scrape_content(device_conf, act_flag, page, folder_path, ref_url, actual_url
 
     client, captured_events = capture_more_detailed_network_logs(page, act_flag)
     page.goto(actual_url)
-    crawler_utilities.wait_for_page_to_load(page, act_flag)
+    crawler_utilities.wait_for_page_to_load(page)
 
     client.detach()
     crawler_support.save_more_detailed_network_logs(folder_path, captured_events)
@@ -184,11 +184,9 @@ def get_dataset(device_conf, ref_flag, act_flag, browser, url_list):
         url_index = str(url_list.index(url))
         folder_path = util.generate_crawling_folder_for_url(device_conf, ref_flag, act_flag, url_index)
         page, context, referrer = setup_crawler_context(ref_flag, browser, folder_path)
-        
+
         certificate_extractor.extract_certificate_info(url, folder_path)
-
         dns_extractor.extract_dns_records(url, folder_path)
-
         get_server_side_data(device_conf, ref_flag, act_flag, browser, folder_path, url)
 
         try:
@@ -198,11 +196,11 @@ def get_dataset(device_conf, ref_flag, act_flag, browser, url_list):
                 crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, content)
                 page.close()
                 context.close()
-               
+            """
             # Scrape embedded link
             referrer = url if ref_flag else referrer
             error_list = scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, embedded_path, url, url_index, error_list)
-              
+            """     
         except Exception as e:
             crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, f"Error occurred for url: {url}\n{e}")
             crawler_support.save_crawled_url(folder_path, util_def.ERROR_URL_FLAG)
@@ -210,14 +208,13 @@ def get_dataset(device_conf, ref_flag, act_flag, browser, url_list):
             page.close()
             context.close()
             continue
-        
-        time.sleep(random.randint(10, 20))
+
+        time.sleep(random.randint(10, 15))
        
 
 
 
 def crawl(device_conf, ref_flag, act_flag, url_list):
-    print("\nCrawling in progress...\n")
     util.generate_crawling_base_folders(device_conf, ref_flag, act_flag)
 
     # Create the playwright object and browser object
@@ -225,7 +222,7 @@ def crawl(device_conf, ref_flag, act_flag, url_list):
     
     # Set the user_agent in the browser object for desktop crawler
     custom_user_agent = util_def.DESKTOP_USER_AGENT_MAP.get(device_conf)
-    browser = p.chromium.launch(headless=True, slow_mo=50, args=custom_user_agent)
+    browser = p.chromium.launch(headless=True, args=custom_user_agent)
     
     # Start crawling the urls to get the required dataset
     get_dataset(device_conf, ref_flag, act_flag, browser, url_list)

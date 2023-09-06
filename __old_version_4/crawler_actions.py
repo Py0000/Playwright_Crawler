@@ -14,7 +14,7 @@ def mouse_click(page, direction):
 
 def move_mouse_smoothly_top_left_bottom_right(page):
     try:
-        steps = 100
+        steps = random.randint(3,5)
 
         start_x = 0
         start_y = 0
@@ -34,7 +34,7 @@ def move_mouse_smoothly_top_left_bottom_right(page):
             page.mouse.move(x, y)
 
             # Add a small delay to simulate smooth movement (adjust the time for your desired smoothness)
-            time.sleep(random.uniform(0.005, 0.01))
+            time.sleep(random.uniform(0.002, 0.008))
 
         print("Mouse moved sucessful...")
     except Exception as e:

@@ -64,15 +64,12 @@ def analyze_desktop_bot_config_data():
 
 import time
 def start_program(seed_url_list):
-    start = time.time()
-    #crawl_desktop_user_config(seed_url_list)
-    #crawl_desktop_bot_config(seed_url_list)
-    end = time.time()
+    crawl_desktop_user_config(seed_url_list)
+    crawl_desktop_bot_config(seed_url_list)
     
-    #analyze_desktop_user_config_data()
+    analyze_desktop_user_config_data()
     analyze_desktop_bot_config_data()
-    print("Time to crawl one url: ", end-start)
 
 
-#feeds = read_feeds_from_file("feeds_benign.txt")
-start_program(["https://www.google.com"])
+feeds = read_feeds_from_file("feeds_benign.txt")
+start_program(["https://www.facebook.com"])

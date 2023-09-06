@@ -4,10 +4,7 @@ import crawler_actions
 import crawler_support
 import util
 
-def wait_for_page_to_load(page, act_flag):
-    if act_flag:
-        crawler_actions.move_mouse_smoothly_top_left_bottom_right(page)
-    
+def wait_for_page_to_load(page):
     try:
         # Wait for the page to load completely (wait for the load event)
         page.wait_for_load_state('domcontentloaded')
