@@ -1,0 +1,3 @@
+{
+    "script_1": "\n    \t\tfunction count() {\n \n    \t\tvar startTime = document.getElementById('hms').innerHTML;\n    \t\tvar pieces = startTime.split(\":\");\n    \t\tvar time = new Date();    time.setHours(pieces[0]);\n    \t\ttime.setMinutes(pieces[1]);\n    \t\ttime.setSeconds(pieces[2]);\n    \t\tvar timedif = new Date(time.valueOf() - 1000);\n    \t\tvar newtime = timedif.toTimeString().split(\" \")[0];\n    \t\tdocument.getElementById('hms').innerHTML=newtime;\n    \t\tsetTimeout(count, 1000);\n\t\t}\n\t\tcount();\n \n\t\t"
+}

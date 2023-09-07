@@ -88,10 +88,10 @@ def start_program(seed_url_list):
         crawl_no_ref_act(url, url_index)
 
     print("\nCrawling done...")
-
+    """
     analyze_desktop_user_config_data()
     analyze_desktop_bot_config_data()
+    """
 
-
-feeds = read_feeds_from_file("feeds_benign.txt")
+feeds = read_feeds_from_file("feeds_phishing_070923.txt")
 start_program(feeds)

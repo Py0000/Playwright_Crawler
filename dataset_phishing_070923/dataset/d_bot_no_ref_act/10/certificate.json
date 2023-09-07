@@ -1,0 +1,29 @@
+{
+    "website url": "https://us.uspsz.com/",
+    "hostname": "us.uspsz.com",
+    "subject": {
+        "commonName": "uspsz.com"
+    },
+    "issuer": {
+        "countryName": "US",
+        "organizationName": "Google Trust Services LLC",
+        "commonName": "GTS CA 1P5"
+    },
+    "version": 3,
+    "not_before": "Jul 11 14:16:11 2023 GMT",
+    "not_after": "Oct  9 14:16:10 2023 GMT",
+    "valid_period": 90,
+    "serial_number": "A97BE8254A8867C3111ABA91B8B596DA",
+    "signature_algo": "sha256WithRSAEncryption",
+    "protocol_version": "TLSv1.3",
+    "alternate subject name": [
+        [
+            "DNS",
+            "uspsz.com"
+        ],
+        [
+            "DNS",
+            "*.uspsz.com"
+        ]
+    ]
+}
