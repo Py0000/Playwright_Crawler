@@ -1,0 +1,326 @@
+[
+    {
+        "requestId": "56E7619EB8C23F3DB7CEDA589E2879D9",
+        "loaderId": "56E7619EB8C23F3DB7CEDA589E2879D9",
+        "documentURL": "http://my-bt-enterprises.webflow.io/",
+        "request": {
+            "url": "http://my-bt-enterprises.webflow.io/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 13829.797274,
+        "wallTime": 1694174173.69722,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "3764FC417BC05D64E47A716BDDB3C950",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "56E7619EB8C23F3DB7CEDA589E2879D9",
+        "loaderId": "56E7619EB8C23F3DB7CEDA589E2879D9",
+        "documentURL": "https://my-bt-enterprises.webflow.io/",
+        "request": {
+            "url": "https://my-bt-enterprises.webflow.io/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 13830.072387,
+        "wallTime": 1694174173.972672,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://my-bt-enterprises.webflow.io/",
+            "status": 301,
+            "statusText": "Moved Permanently",
+            "headers": {
+                "Accept-Ranges": "bytes",
+                "Cache-Control": "private",
+                "Connection": "keep-alive",
+                "Content-Length": "166",
+                "Content-Type": "text/html",
+                "Date": "Fri, 08 Sep 2023 11:56:13 GMT",
+                "Location": "https://my-bt-enterprises.webflow.io/",
+                "Vary": "x-wf-forwarded-proto",
+                "X-Cache": "MISS, MISS",
+                "X-Cache-Hits": "0, 0",
+                "X-Served-By": "cache-iad-kiad7000107-IAD, cache-qpg1268-QPG",
+                "X-Timer": "S1694174174.717837,VS0,VE250"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 54,
+            "remoteIPAddress": "199.232.46.188",
+            "remotePort": 80,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 403,
+            "timing": {
+                "requestTime": 13829.799623,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.171,
+                "dnsEnd": 1.659,
+                "connectStart": 1.659,
+                "connectEnd": 7.937,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 8.026,
+                "sendEnd": 8.667,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 271.438,
+                "receiveHeadersEnd": 271.533
+            },
+            "responseTime": 1694174173970.917,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "3764FC417BC05D64E47A716BDDB3C950",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "73423.2",
+        "loaderId": "56E7619EB8C23F3DB7CEDA589E2879D9",
+        "documentURL": "https://my-bt-enterprises.webflow.io/",
+        "request": {
+            "url": "https://uploads-ssl.webflow.com/64be5251d7f493a4a710348e/css/my-bt-enterprises.webflow.66a951ca5.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 13830.124857,
+        "wallTime": 1694174174.024774,
+        "initiator": {
+            "type": "parser",
+            "url": "https://my-bt-enterprises.webflow.io/",
+            "lineNumber": 0,
+            "columnNumber": 620
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "3764FC417BC05D64E47A716BDDB3C950",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "73423.3",
+        "loaderId": "56E7619EB8C23F3DB7CEDA589E2879D9",
+        "documentURL": "https://my-bt-enterprises.webflow.io/",
+        "request": {
+            "url": "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64be5251d7f493a4a710348e",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://my-bt-enterprises.webflow.io",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 13830.125176,
+        "wallTime": 1694174174.025097,
+        "initiator": {
+            "type": "parser",
+            "url": "https://my-bt-enterprises.webflow.io/",
+            "lineNumber": 0,
+            "columnNumber": 4136
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "3764FC417BC05D64E47A716BDDB3C950",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "73423.4",
+        "loaderId": "56E7619EB8C23F3DB7CEDA589E2879D9",
+        "documentURL": "https://my-bt-enterprises.webflow.io/",
+        "request": {
+            "url": "https://uploads-ssl.webflow.com/64be5251d7f493a4a710348e/js/webflow.d2c3cd8ad.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 13830.125498,
+        "wallTime": 1694174174.025394,
+        "initiator": {
+            "type": "parser",
+            "url": "https://my-bt-enterprises.webflow.io/",
+            "lineNumber": 0,
+            "columnNumber": 4263
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "3764FC417BC05D64E47A716BDDB3C950",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "73423.6",
+        "loaderId": "56E7619EB8C23F3DB7CEDA589E2879D9",
+        "documentURL": "https://my-bt-enterprises.webflow.io/",
+        "request": {
+            "url": "https://uploads-ssl.webflow.com/64be5251d7f493a4a710348e/64be52777b1cd77bf85afe4b_btheader-p-1600.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 13830.775356,
+        "wallTime": 1694174174.675294,
+        "initiator": {
+            "type": "parser",
+            "url": "https://my-bt-enterprises.webflow.io/",
+            "lineNumber": 0,
+            "columnNumber": 4263
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "3764FC417BC05D64E47A716BDDB3C950",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "73423.7",
+        "loaderId": "56E7619EB8C23F3DB7CEDA589E2879D9",
+        "documentURL": "https://my-bt-enterprises.webflow.io/",
+        "request": {
+            "url": "https://uploads-ssl.webflow.com/64be5251d7f493a4a710348e/64be527ab2a38d8caef1f57f_btside.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 13830.776748,
+        "wallTime": 1694174174.676867,
+        "initiator": {
+            "type": "parser",
+            "url": "https://my-bt-enterprises.webflow.io/",
+            "lineNumber": 0,
+            "columnNumber": 4263
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "3764FC417BC05D64E47A716BDDB3C950",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "73423.8",
+        "loaderId": "56E7619EB8C23F3DB7CEDA589E2879D9",
+        "documentURL": "https://my-bt-enterprises.webflow.io/",
+        "request": {
+            "url": "https://uploads-ssl.webflow.com/64be5251d7f493a4a710348e/64be5273b40e27828d0c1eaa_bt-bottom-p-1600.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 13830.778146,
+        "wallTime": 1694174174.67806,
+        "initiator": {
+            "type": "parser",
+            "url": "https://my-bt-enterprises.webflow.io/",
+            "lineNumber": 0,
+            "columnNumber": 4263
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "3764FC417BC05D64E47A716BDDB3C950",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

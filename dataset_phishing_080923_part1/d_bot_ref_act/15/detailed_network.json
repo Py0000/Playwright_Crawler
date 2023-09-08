@@ -1,0 +1,311 @@
+[
+    {
+        "requestId": "6DEC4E2091EFB0FE45F0A5874328BC60",
+        "loaderId": "6DEC4E2091EFB0FE45F0A5874328BC60",
+        "documentURL": "http://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+        "request": {
+            "url": "http://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2815.9946,
+        "wallTime": 1694163159.894602,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "2175B3D491E0DB76C35397E0DB435FB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "6DEC4E2091EFB0FE45F0A5874328BC60",
+        "loaderId": "6DEC4E2091EFB0FE45F0A5874328BC60",
+        "documentURL": "https://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+        "request": {
+            "url": "https://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2815.996544,
+        "wallTime": 1694163159.896578,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+            "status": 307,
+            "statusText": "Internal Redirect",
+            "headers": {
+                "Cross-Origin-Resource-Policy": "Cross-Origin",
+                "Location": "https://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+                "Non-Authoritative-Reason": "HSTS"
+            },
+            "mimeType": "",
+            "connectionReused": false,
+            "connectionId": 0,
+            "remoteIPAddress": "",
+            "remotePort": 0,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 0,
+            "timing": {
+                "requestTime": 2815.99546,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": -1,
+                "dnsEnd": -1,
+                "connectStart": -1,
+                "connectEnd": -1,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 0.068,
+                "sendEnd": 0.068,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 0.068,
+                "receiveHeadersEnd": 0.068
+            },
+            "responseTime": 1694163159895.385,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "2175B3D491E0DB76C35397E0DB435FB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "46832.2",
+        "loaderId": "6DEC4E2091EFB0FE45F0A5874328BC60",
+        "documentURL": "https://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+        "request": {
+            "url": "https://codesandbox.io/public/sse-hooks/sse-hooks.f742b80f43c5a2e0e619b0d97b5886cd.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 2818.504097,
+        "wallTime": 1694163162.404019,
+        "initiator": {
+            "type": "parser",
+            "url": "https://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+            "lineNumber": 3,
+            "columnNumber": 128
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "2175B3D491E0DB76C35397E0DB435FB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "46832.3",
+        "loaderId": "6DEC4E2091EFB0FE45F0A5874328BC60",
+        "documentURL": "https://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+        "request": {
+            "url": "https://codesandbox.io/static/js/banner.0b5d84a2b.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 2818.505035,
+        "wallTime": 1694163162.404953,
+        "initiator": {
+            "type": "parser",
+            "url": "https://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+            "lineNumber": 4,
+            "columnNumber": 95
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "2175B3D491E0DB76C35397E0DB435FB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "46832.4",
+        "loaderId": "6DEC4E2091EFB0FE45F0A5874328BC60",
+        "documentURL": "https://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+        "request": {
+            "url": "https://code.jquery.com/jquery-3.4.1.min.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 2818.505461,
+        "wallTime": 1694163162.405367,
+        "initiator": {
+            "type": "parser",
+            "url": "https://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+            "lineNumber": 13,
+            "columnNumber": 84
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "2175B3D491E0DB76C35397E0DB435FB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "46832.6",
+        "loaderId": "6DEC4E2091EFB0FE45F0A5874328BC60",
+        "documentURL": "https://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+        "request": {
+            "url": "https://codesandbox.io/static/js/watermark-button.f4f9aed52.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://raspy-salad-6f4e.e4gblc4e.workers.dev",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 2818.571897,
+        "wallTime": 1694163162.471804,
+        "initiator": {
+            "type": "parser",
+            "url": "https://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+            "lineNumber": 39,
+            "columnNumber": 114
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "2175B3D491E0DB76C35397E0DB435FB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "DE8D7F9D054B5F8B5BA5C91EC55AD9D8",
+        "loaderId": "DE8D7F9D054B5F8B5BA5C91EC55AD9D8",
+        "documentURL": "blob:https://raspy-salad-6f4e.e4gblc4e.workers.dev/7c7bab9a-6752-43cb-b975-40750304c0cc",
+        "request": {
+            "url": "blob:https://raspy-salad-6f4e.e4gblc4e.workers.dev/7c7bab9a-6752-43cb-b975-40750304c0cc",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2819.548716,
+        "wallTime": 1694163163.448653,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "saveFile",
+                        "scriptId": "12",
+                        "url": "https://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+                        "lineNumber": 31,
+                        "columnNumber": 6
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://raspy-salad-6f4e.e4gblc4e.workers.dev/",
+                        "lineNumber": 18,
+                        "columnNumber": 2
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "11",
+                        "url": "https://code.jquery.com/jquery-3.4.1.min.js",
+                        "lineNumber": 1,
+                        "columnNumber": 29452
+                    },
+                    {
+                        "functionName": "t",
+                        "scriptId": "11",
+                        "url": "https://code.jquery.com/jquery-3.4.1.min.js",
+                        "lineNumber": 1,
+                        "columnNumber": 29754
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "2175B3D491E0DB76C35397E0DB435FB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

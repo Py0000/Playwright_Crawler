@@ -1,0 +1,3415 @@
+[
+    {
+        "requestId": "E2309477290AEB2D54EC5EE6C6950D19",
+        "loaderId": "E2309477290AEB2D54EC5EE6C6950D19",
+        "documentURL": "http://telygram.com/",
+        "request": {
+            "url": "http://telygram.com/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.10658,
+        "wallTime": 1694162634.008427,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "B147DD51CC75E4ED18A56F0B52B698AD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "E2309477290AEB2D54EC5EE6C6950D19",
+        "loaderId": "E2309477290AEB2D54EC5EE6C6950D19",
+        "documentURL": "https://telygram.com/",
+        "request": {
+            "url": "https://telygram.com/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.338333,
+        "wallTime": 1694162634.238443,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://telygram.com/",
+            "status": 301,
+            "statusText": "Moved Permanently",
+            "headers": {
+                "Connection": "close",
+                "Content-Length": "165",
+                "Content-Type": "text/html",
+                "Date": "Fri, 08 Sep 2023 08:43:54 GMT",
+                "Location": "https://telygram.com/",
+                "Server": "NgxFence"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 32,
+            "remoteIPAddress": "154.82.100.47",
+            "remotePort": 80,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 187,
+            "timing": {
+                "requestTime": 2290.10963,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.219,
+                "dnsEnd": 2.092,
+                "connectStart": 2.092,
+                "connectEnd": 140.471,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 140.958,
+                "sendEnd": 141.845,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 224.14,
+                "receiveHeadersEnd": 224.314
+            },
+            "responseTime": 1694162634233.627,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "B147DD51CC75E4ED18A56F0B52B698AD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.2",
+        "loaderId": "E2309477290AEB2D54EC5EE6C6950D19",
+        "documentURL": "https://telygram.com/",
+        "request": {
+            "url": "https://telygram.com/js/redirect.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.606153,
+        "wallTime": 1694162634.506065,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/",
+            "lineNumber": 13,
+            "columnNumber": 33
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "B147DD51CC75E4ED18A56F0B52B698AD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.3",
+        "loaderId": "E2309477290AEB2D54EC5EE6C6950D19",
+        "documentURL": "https://telygram.com/",
+        "request": {
+            "url": "https://telygram.com/js/config.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.606492,
+        "wallTime": 1694162634.506384,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/",
+            "lineNumber": 14,
+            "columnNumber": 31
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "B147DD51CC75E4ED18A56F0B52B698AD",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "59C90109F446EA1BD6076938FF5A0359",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://telygram.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.772652,
+        "wallTime": 1694162634.672777,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "redirect",
+                        "scriptId": "4",
+                        "url": "https://telygram.com/js/redirect.js",
+                        "lineNumber": 45,
+                        "columnNumber": 15
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://telygram.com/js/redirect.js",
+                        "lineNumber": 47,
+                        "columnNumber": 0
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.7",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/bootstrap.min.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.878362,
+        "wallTime": 1694162634.778272,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 15,
+            "columnNumber": 66
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.8",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/telegram.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.878656,
+        "wallTime": 1694162634.778557,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 16,
+            "columnNumber": 76
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.9",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/gtm.js.download",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.878872,
+        "wallTime": 1694162634.778759,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 17,
+            "columnNumber": 57
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.10",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.878961,
+        "wallTime": 1694162634.778877,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 17,
+            "columnNumber": 106
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.11",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.879095,
+        "wallTime": 1694162634.778982,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 24,
+            "columnNumber": 47
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.12",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/t_logo.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.879439,
+        "wallTime": 1694162634.77934,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 122,
+            "columnNumber": 86
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.13",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/file/cbc986292284a428e2.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.879559,
+        "wallTime": 1694162634.779441,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 166,
+            "columnNumber": 76
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.14",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/file/66eebb00fd46acb1ce.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.87964,
+        "wallTime": 1694162634.779521,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 173,
+            "columnNumber": 76
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.15",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/dd4eeb46cc5efc0688.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.879777,
+        "wallTime": 1694162634.779674,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 191,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.16",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/d4b936ecc2c939f4fa.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.879882,
+        "wallTime": 1694162634.779766,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 204,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.17",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/7318c11715aa2ec45b.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.880141,
+        "wallTime": 1694162634.780037,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 217,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.18",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/7d57d7159cf4fbe9b2.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.880229,
+        "wallTime": 1694162634.780118,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 230,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.19",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/911807f65dfb4f8f20.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.880305,
+        "wallTime": 1694162634.780185,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 243,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.20",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/feb1e161b1d3608613.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.880382,
+        "wallTime": 1694162634.780266,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 256,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.21",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/9ce5fa5f3fb74460b4.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.88046,
+        "wallTime": 1694162634.780342,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 268,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.22",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/f3cec6c451d023c109.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.880534,
+        "wallTime": 1694162634.780416,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 281,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.23",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/b6c5dbc0e4f6553805.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.88064,
+        "wallTime": 1694162634.780523,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 294,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.24",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/main.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.88072,
+        "wallTime": 1694162634.780606,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 401,
+            "columnNumber": 28
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.25",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/download.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.880854,
+        "wallTime": 1694162634.780749,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 413,
+            "columnNumber": 36
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.26",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/index_files/v652eace1692a40cfa3763df669d7439c1639079717194",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "Origin": "https://telygram.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2290.880997,
+        "wallTime": 1694162634.780892,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 416,
+            "columnNumber": 421
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.32",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 2290.984838,
+        "wallTime": 1694162634.884899,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "15",
+                        "url": "https://telygram.com/TG_ZH/index.html",
+                        "lineNumber": 34,
+                        "columnNumber": 68
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "15",
+                        "url": "https://telygram.com/TG_ZH/index.html",
+                        "lineNumber": 35,
+                        "columnNumber": 6
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.55",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='%230088cc'><path d='M8 0.4C12.2 0.4 15.6 3.8 15.6 8 15.6 12.2 12.2 15.6 8 15.6 3.8 15.6 0.4 12.2 0.4 8 0.4 3.8 3.8 0.4 8 0.4ZM9.63 11.1L6.37 11.1C6.73 13.07 7.4 14.4 8 14.4 8.6 14.4 9.27 13.07 9.63 11.1ZM5.14 11.1L2.4 11.1C3.19 12.52 4.51 13.61 6.09 14.11 5.71 13.41 5.41 12.5 5.21 11.45L5.14 11.1ZM13.6 11.1L10.86 11.1C10.65 12.3 10.33 13.33 9.92 14.11 11.4 13.64 12.66 12.65 13.46 11.35L13.6 11.1ZM4.99 6.1L1.89 6.1C1.7 6.7 1.6 7.34 1.6 8 1.6 8.66 1.7 9.3 1.89 9.9L4.99 9.9C4.94 9.44 4.92 8.97 4.91 8.49L4.9 8 4.9 7.71C4.91 7.16 4.94 6.62 4.99 6.1ZM9.8 6.1L6.2 6.1C6.14 6.7 6.1 7.34 6.1 8 6.1 8.66 6.14 9.3 6.2 9.9L9.8 9.9C9.86 9.3 9.9 8.66 9.9 8 9.9 7.34 9.86 6.7 9.8 6.1ZM14.11 6.1L11.01 6.1C11.07 6.71 11.1 7.34 11.1 8 11.1 8.66 11.07 9.29 11.01 9.9L14.11 9.9C14.3 9.3 14.4 8.66 14.4 8 14.4 7.34 14.3 6.7 14.11 6.1ZM6.08 1.89L6.02 1.91C4.47 2.42 3.18 3.5 2.4 4.9L5.14 4.9C5.33 3.82 5.6 2.87 5.96 2.13L6.08 1.89ZM8 1.6L7.93 1.61C7.35 1.71 6.72 3.01 6.37 4.9L9.63 4.9C9.28 3.01 8.66 1.71 8.08 1.61L8 1.6ZM9.91 1.89L9.97 2C10.36 2.76 10.66 3.76 10.86 4.9L13.6 4.9C12.86 3.56 11.65 2.52 10.19 1.98L9.91 1.89Z'/></svg>",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 2290.99953,
+        "wallTime": 1694162634.899497,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index_files/telegram.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.56",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/img/twitter.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index_files/telegram.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.000605,
+        "wallTime": 1694162634.900776,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index_files/telegram.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.57",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/img/SiteLogos.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index_files/telegram.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.002241,
+        "wallTime": 1694162634.902147,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index_files/telegram.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.58",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/img/SiteAndroid.jpg?2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index_files/telegram.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.002668,
+        "wallTime": 1694162634.902569,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index_files/telegram.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.59",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/img/SiteiOS.jpg?2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index_files/telegram.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.010111,
+        "wallTime": 1694162634.910042,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index_files/telegram.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.60",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/TG_ZH/img/SiteDesktop.jpg?2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index_files/telegram.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.011512,
+        "wallTime": 1694162634.911608,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index_files/telegram.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.61",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/img/t_main_Android_demo.mp4",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "Accept-Encoding": "identity;q=1, *;q=0",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "Range": "bytes=0-",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.271123,
+        "wallTime": 1694162635.17118,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 401,
+            "columnNumber": 37
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Media",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.62",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/img/t_main_iOS_demo.mp4",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "Accept-Encoding": "identity;q=1, *;q=0",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "Range": "bytes=0-",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.273668,
+        "wallTime": 1694162635.173619,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 401,
+            "columnNumber": 37
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Media",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.64",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/config.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.311703,
+        "wallTime": 1694162635.211787,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "configHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 117,
+                        "columnNumber": 16
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 120,
+                        "columnNumber": 0
+                    }
+                ]
+            },
+            "lineNumber": 14,
+            "columnNumber": 31
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.66",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/dev.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.317129,
+        "wallTime": 1694162635.217188,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.67",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t101.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.318228,
+        "wallTime": 1694162635.218215,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.68",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t108.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.32014,
+        "wallTime": 1694162635.221543,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.69",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t168.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.322501,
+        "wallTime": 1694162635.222456,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.70",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t188.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.323392,
+        "wallTime": 1694162635.223355,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.71",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t888.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.324901,
+        "wallTime": 1694162635.224844,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.72",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t110.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.325838,
+        "wallTime": 1694162635.225776,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.73",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t111.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.326405,
+        "wallTime": 1694162635.226325,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.74",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t112.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.326807,
+        "wallTime": 1694162635.226715,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.75",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t117.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.327132,
+        "wallTime": 1694162635.227044,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.76",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t118.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.329267,
+        "wallTime": 1694162635.229594,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.77",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t158.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.33219,
+        "wallTime": 1694162635.232134,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.78",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t109.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.332975,
+        "wallTime": 1694162635.233012,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.79",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t115.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.333817,
+        "wallTime": 1694162635.233752,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.80",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t121.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.335312,
+        "wallTime": 1694162635.235463,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.81",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t123.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.337626,
+        "wallTime": 1694162635.237623,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.82",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t125.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.338628,
+        "wallTime": 1694162635.238804,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.83",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t127.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.340587,
+        "wallTime": 1694162635.240526,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.84",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/js/downloadlist/t126.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2291.341777,
+        "wallTime": 1694162635.241764,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "indexConfHelper",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 103,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "script.onload",
+                        "scriptId": "17",
+                        "url": "https://telygram.com/js/download.js",
+                        "lineNumber": 112,
+                        "columnNumber": 4
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.85",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 2291.396147,
+        "wallTime": 1694162635.296593,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Xb",
+                        "scriptId": "19",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 51,
+                        "columnNumber": 118
+                    },
+                    {
+                        "functionName": "Jp",
+                        "scriptId": "19",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 206,
+                        "columnNumber": 0
+                    },
+                    {
+                        "functionName": "config",
+                        "scriptId": "19",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 232,
+                        "columnNumber": 156
+                    },
+                    {
+                        "functionName": "ct",
+                        "scriptId": "19",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 245,
+                        "columnNumber": 110
+                    },
+                    {
+                        "functionName": "et",
+                        "scriptId": "19",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 246,
+                        "columnNumber": 42
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.86",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-VE3X12E1EV&l=dataLayer&cx=c",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 2291.402941,
+        "wallTime": 1694162635.302907,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Xb",
+                        "scriptId": "19",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 51,
+                        "columnNumber": 118
+                    },
+                    {
+                        "functionName": "Jp",
+                        "scriptId": "19",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 206,
+                        "columnNumber": 0
+                    },
+                    {
+                        "functionName": "config",
+                        "scriptId": "19",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 232,
+                        "columnNumber": 156
+                    },
+                    {
+                        "functionName": "ct",
+                        "scriptId": "19",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 245,
+                        "columnNumber": 110
+                    },
+                    {
+                        "functionName": "et",
+                        "scriptId": "19",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5X96JGP",
+                        "lineNumber": 246,
+                        "columnNumber": 42
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.87",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.google-analytics.com/analytics.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 2291.522092,
+        "wallTime": 1694162635.423519,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "ib",
+                        "scriptId": "22",
+                        "url": "https://telygram.com/TG_ZH/index_files/js",
+                        "lineNumber": 37,
+                        "columnNumber": 65
+                    },
+                    {
+                        "functionName": "Dq",
+                        "scriptId": "22",
+                        "url": "https://telygram.com/TG_ZH/index_files/js",
+                        "lineNumber": 185,
+                        "columnNumber": 408
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "22",
+                        "url": "https://telygram.com/TG_ZH/index_files/js",
+                        "lineNumber": 185,
+                        "columnNumber": 467
+                    },
+                    {
+                        "functionName": "Hf",
+                        "scriptId": "22",
+                        "url": "https://telygram.com/TG_ZH/index_files/js",
+                        "lineNumber": 76,
+                        "columnNumber": 70
+                    },
+                    {
+                        "functionName": "Tf",
+                        "scriptId": "22",
+                        "url": "https://telygram.com/TG_ZH/index_files/js",
+                        "lineNumber": 78,
+                        "columnNumber": 29
+                    },
+                    {
+                        "functionName": "Eq",
+                        "scriptId": "22",
+                        "url": "https://telygram.com/TG_ZH/index_files/js",
+                        "lineNumber": 185,
+                        "columnNumber": 453
+                    },
+                    {
+                        "functionName": "mr",
+                        "scriptId": "22",
+                        "url": "https://telygram.com/TG_ZH/index_files/js",
+                        "lineNumber": 205,
+                        "columnNumber": 100
+                    },
+                    {
+                        "functionName": "kr.flush",
+                        "scriptId": "22",
+                        "url": "https://telygram.com/TG_ZH/index_files/js",
+                        "lineNumber": 208,
+                        "columnNumber": 103
+                    },
+                    {
+                        "functionName": "kr.push",
+                        "scriptId": "22",
+                        "url": "https://telygram.com/TG_ZH/index_files/js",
+                        "lineNumber": 206,
+                        "columnNumber": 252
+                    },
+                    {
+                        "functionName": "config",
+                        "scriptId": "22",
+                        "url": "https://telygram.com/TG_ZH/index_files/js",
+                        "lineNumber": 212,
+                        "columnNumber": 315
+                    },
+                    {
+                        "functionName": "ks",
+                        "scriptId": "22",
+                        "url": "https://telygram.com/TG_ZH/index_files/js",
+                        "lineNumber": 223,
+                        "columnNumber": 237
+                    },
+                    {
+                        "functionName": "ms",
+                        "scriptId": "22",
+                        "url": "https://telygram.com/TG_ZH/index_files/js",
+                        "lineNumber": 224,
+                        "columnNumber": 40
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.89",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-NW6YF835DY&l=dataLayer&cx=c",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 2291.656881,
+        "wallTime": 1694162635.577362,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Kc",
+                        "scriptId": "24",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 83,
+                        "columnNumber": 508
+                    },
+                    {
+                        "functionName": "Gt",
+                        "scriptId": "24",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 285,
+                        "columnNumber": 3
+                    },
+                    {
+                        "functionName": "cv",
+                        "scriptId": "24",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 301,
+                        "columnNumber": 490
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "24",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 437,
+                        "columnNumber": 104
+                    },
+                    {
+                        "functionName": "Ff",
+                        "scriptId": "24",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 119,
+                        "columnNumber": 102
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "24",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 295,
+                        "columnNumber": 213
+                    },
+                    {
+                        "functionName": "iv",
+                        "scriptId": "24",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 302,
+                        "columnNumber": 739
+                    },
+                    {
+                        "functionName": "Rv",
+                        "scriptId": "24",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 306,
+                        "columnNumber": 34
+                    },
+                    {
+                        "functionName": "bx",
+                        "scriptId": "24",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 326,
+                        "columnNumber": 271
+                    },
+                    {
+                        "functionName": "ex",
+                        "scriptId": "24",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 331,
+                        "columnNumber": 54
+                    },
+                    {
+                        "functionName": "gx",
+                        "scriptId": "24",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 332,
+                        "columnNumber": 42
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "24",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 451,
+                        "columnNumber": 128
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "24",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 446,
+                        "columnNumber": 291
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "24",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 446,
+                        "columnNumber": 297
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "24",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=UA-212845866-1&l=dataLayer&cx=c",
+                        "lineNumber": 454,
+                        "columnNumber": 2
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22139.92",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VE3X12E1EV&gtm=2oe8v0&_p=1793259334&cid=1907618361.1694162636&ul=en-gb&sr=1280x720&_z=ccd.v9B&_s=1&sid=1694162635&sct=1&seg=0&dl=https%3A%2F%2Ftelygram.com%2FTG_ZH%2Findex.html&dr=https%3A%2F%2Ftelygram.com%2F&dt=Telegram%E4%B8%AD%E6%96%87%E5%AE%98%E7%BD%91&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": ""
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "VeryLow",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 2292.034427,
+        "wallTime": 1694162635.935672,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Zb",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 50,
+                        "columnNumber": 24
+                    },
+                    {
+                        "functionName": "xB",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 367,
+                        "columnNumber": 395
+                    },
+                    {
+                        "functionName": "yB",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 362,
+                        "columnNumber": 106
+                    },
+                    {
+                        "functionName": "BB.D",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 366,
+                        "columnNumber": 0
+                    },
+                    {
+                        "functionName": "BB.add",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 367,
+                        "columnNumber": 20
+                    },
+                    {
+                        "functionName": "aa.Fh",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 385,
+                        "columnNumber": 325
+                    },
+                    {
+                        "functionName": "aa.xk",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 385,
+                        "columnNumber": 261
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 370,
+                        "columnNumber": 166
+                    },
+                    {
+                        "functionName": "$i",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 151,
+                        "columnNumber": 70
+                    },
+                    {
+                        "functionName": "mj",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 153,
+                        "columnNumber": 55
+                    },
+                    {
+                        "functionName": "aa.wk",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 370,
+                        "columnNumber": 150
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 390,
+                        "columnNumber": 574
+                    },
+                    {
+                        "functionName": "Au",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 255,
+                        "columnNumber": 111
+                    },
+                    {
+                        "functionName": "yu.flush",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 258,
+                        "columnNumber": 105
+                    },
+                    {
+                        "functionName": "yu.push",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 256,
+                        "columnNumber": 252
+                    },
+                    {
+                        "functionName": "config",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 262,
+                        "columnNumber": 315
+                    },
+                    {
+                        "functionName": "zv",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 273,
+                        "columnNumber": 72
+                    },
+                    {
+                        "functionName": "Bv",
+                        "scriptId": "23",
+                        "url": "https://telygram.com/TG_ZH/index_files/js(1)",
+                        "lineNumber": 274,
+                        "columnNumber": 20
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Ping",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_ga",
+                    "value": "GA1.1.1907618361.1694162636",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1728722635.932252,
+                    "size": 30,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga_VE3X12E1EV",
+                    "value": "GS1.1.1694162635.1.0.1694162635.0.0.0",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1728722635.929577,
+                    "size": 51,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "22139.93",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.google-analytics.com/j/collect?v=1&_v=j101&a=1793259334&t=pageview&_s=1&dl=https%3A%2F%2Ftelygram.com%2FTG_ZH%2Findex.html&ul=en-gb&de=UTF-8&dt=Telegram%E4%B8%AD%E6%96%87%E5%AE%98%E7%BD%91&sd=24-bit&sr=1280x720&vp=1280x720&je=0&_u=YADAAUABAAAAACAAI~&jid=1492959979&gjid=2071221311&cid=1907618361.1694162636&tid=UA-212845866-1&_gid=844008320.1694162636&_r=1&_slc=1&gtm=2ou8v0&z=1273236984",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "sec-ch-ua-platform": "\"\"",
+                "Referer": "https://telygram.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "Content-Type": "text/plain"
+            },
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": ""
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 2292.176793,
+        "wallTime": 1694162636.077111,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "wd",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 35,
+                        "columnNumber": 31
+                    },
+                    {
+                        "functionName": "pe",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 34,
+                        "columnNumber": 13
+                    },
+                    {
+                        "functionName": "Sa",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 40,
+                        "columnNumber": 221
+                    },
+                    {
+                        "functionName": "Ha.D",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 37,
+                        "columnNumber": 462
+                    },
+                    {
+                        "functionName": "pc.send",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 76,
+                        "columnNumber": 270
+                    },
+                    {
+                        "functionName": "X.b.<computed>",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 56,
+                        "columnNumber": 57
+                    },
+                    {
+                        "functionName": "Z.v",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 92,
+                        "columnNumber": 360
+                    },
+                    {
+                        "functionName": "Z.D",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 91,
+                        "columnNumber": 177
+                    },
+                    {
+                        "functionName": "N.N",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 95,
+                        "columnNumber": 307
+                    },
+                    {
+                        "functionName": "rc",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 85,
+                        "columnNumber": 499
+                    },
+                    {
+                        "functionName": "z",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 85,
+                        "columnNumber": 531
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 95,
+                        "columnNumber": 354
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 95,
+                        "columnNumber": 406
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_gid",
+                    "value": "GA1.2.844008320.1694162636",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1694249036,
+                    "size": 30,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_gat_gtag_UA_212845866_1",
+                    "value": "1",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1694162696,
+                    "size": 25,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga",
+                    "value": "GA1.2.1907618361.1694162636",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1728722636.071483,
+                    "size": 30,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga_VE3X12E1EV",
+                    "value": "GS1.1.1694162635.1.0.1694162635.0.0.0",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1728722635.929577,
+                    "size": 51,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "22139.94",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.google-analytics.com/collect?v=1&_v=j101&a=1793259334&t=pageview&_s=2&dl=https%3A%2F%2Ftelygram.com%2FTG_ZH%2Findex.html&ul=en-gb&de=UTF-8&dt=Telegram%E4%B8%AD%E6%96%87%E5%AE%98%E7%BD%91&sd=24-bit&sr=1280x720&vp=1280x720&je=0&_u=YADAAUABAAAAACAAI~&jid=&gjid=&cid=1907618361.1694162636&tid=UA-212845866-1&_gid=844008320.1694162636&gtm=457e3960&jsscut=1&z=1864759927",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 2292.189726,
+        "wallTime": 1694162636.089657,
+        "initiator": {
+            "type": "parser",
+            "url": "https://telygram.com/TG_ZH/index.html",
+            "lineNumber": 417,
+            "columnNumber": 21
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_gid",
+                    "value": "GA1.2.844008320.1694162636",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1694249036,
+                    "size": 30,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_gat_gtag_UA_212845866_1",
+                    "value": "1",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1694162696,
+                    "size": 25,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga",
+                    "value": "GA1.2.1907618361.1694162636",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1728722636.071483,
+                    "size": 30,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga_VE3X12E1EV",
+                    "value": "GS1.1.1694162635.1.0.1694162635.0.0.0",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1728722635.929577,
+                    "size": 51,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "22139.95",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-NW6YF835DY&cx=c&_slc=1",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://telygram.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 2292.231775,
+        "wallTime": 1694162636.135848,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Id",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 23,
+                        "columnNumber": 54
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 74,
+                        "columnNumber": 185
+                    },
+                    {
+                        "functionName": "oc",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 36,
+                        "columnNumber": 326
+                    },
+                    {
+                        "functionName": "Ea",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 35,
+                        "columnNumber": 329
+                    },
+                    {
+                        "functionName": "g.onreadystatechange",
+                        "scriptId": "26",
+                        "url": "https://www.google-analytics.com/analytics.js",
+                        "lineNumber": 34,
+                        "columnNumber": 476
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_gid",
+                    "value": "GA1.2.844008320.1694162636",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1694249036,
+                    "size": 30,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_gat_gtag_UA_212845866_1",
+                    "value": "1",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1694162696,
+                    "size": 25,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga",
+                    "value": "GA1.2.1907618361.1694162636",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1728722636.071483,
+                    "size": 30,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga_VE3X12E1EV",
+                    "value": "GS1.1.1694162635.1.0.1694162635.0.0.0",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1728722635.929577,
+                    "size": 51,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "22139.96",
+        "loaderId": "59C90109F446EA1BD6076938FF5A0359",
+        "documentURL": "https://telygram.com/TG_ZH/index.html",
+        "request": {
+            "url": "https://telygram.com/cdn-cgi/rum?",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "sec-ch-ua-platform": "\"\"",
+                "Referer": "https://telygram.com/TG_ZH/index.html",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "content-type": "application/json"
+            },
+            "postData": "{\"memory\":{\"totalJSHeapSize\":19300000,\"usedJSHeapSize\":16100000,\"jsHeapSizeLimit\":2190000000},\"resources\":[],\"referrer\":\"https://telygram.com/\",\"documentWriteIntervention\":false,\"errorCount\":0,\"eventType\":1,\"firstPaint\":508.79999999981374,\"firstContentfulPaint\":508.79999999981374,\"si\":100,\"startTime\":1694162634671.4,\"versions\":{\"fl\":\"2022.8.1\",\"js\":\"2021.12.0\",\"timings\":2},\"pageloadId\":\"2744f088-bac5-4374-888a-85261241004a\",\"location\":\"https://telygram.com/TG_ZH/index.html\",\"timingsV2\":{\"unloadEventStart\":0,\"unloadEventEnd\":0,\"domInteractive\":572,\"domContentLoadedEventStart\":1276.2999999998137,\"domContentLoadedEventEnd\":1276.2999999998137,\"domComplete\":2325.5,\"loadEventStart\":2325.5,\"loadEventEnd\":2326,\"type\":\"navigate\",\"redirectCount\":0,\"activationStart\":0,\"criticalCHRestart\":0,\"initiatorType\":\"navigation\",\"nextHopProtocol\":\"h2\",\"workerStart\":0,\"redirectStart\":0,\"redirectEnd\":0,\"fetchStart\":1.1000000000931323,\"domainLookupStart\":1.1000000000931323,\"domainLookupEnd\":1.1000000000931323,\"connectStart\":1.1000000000931323,\"connectEnd\":1.1000000000931323,\"secureConnectionStart\":1.1000000000931323,\"requestStart\":3.5,\"responseStart\":91.39999999990687,\"responseEnd\":94,\"transferSize\":5324,\"encodedBodySize\":5024,\"decodedBodySize\":20850,\"renderBlockingStatus\":\"non-blocking\",\"responseStatus\":200,\"firstInterimResponseStart\":0,\"name\":\"https://telygram.com/TG_ZH/index.html\",\"entryType\":\"navigation\",\"startTime\":0,\"duration\":2326},\"siteToken\":\"dcd12857e43a4cbb8d8bbb05e9c1f99d\",\"st\":2}",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "eyJtZW1vcnkiOnsidG90YWxKU0hlYXBTaXplIjoxOTMwMDAwMCwidXNlZEpTSGVhcFNpemUiOjE2MTAwMDAwLCJqc0hlYXBTaXplTGltaXQiOjIxOTAwMDAwMDB9LCJyZXNvdXJjZXMiOltdLCJyZWZlcnJlciI6Imh0dHBzOi8vdGVseWdyYW0uY29tLyIsImRvY3VtZW50V3JpdGVJbnRlcnZlbnRpb24iOmZhbHNlLCJlcnJvckNvdW50IjowLCJldmVudFR5cGUiOjEsImZpcnN0UGFpbnQiOjUwOC43OTk5OTk5OTk4MTM3NCwiZmlyc3RDb250ZW50ZnVsUGFpbnQiOjUwOC43OTk5OTk5OTk4MTM3NCwic2kiOjEwMCwic3RhcnRUaW1lIjoxNjk0MTYyNjM0NjcxLjQsInZlcnNpb25zIjp7ImZsIjoiMjAyMi44LjEiLCJqcyI6IjIwMjEuMTIuMCIsInRpbWluZ3MiOjJ9LCJwYWdlbG9hZElkIjoiMjc0NGYwODgtYmFjNS00Mzc0LTg4OGEtODUyNjEyNDEwMDRhIiwibG9jYXRpb24iOiJodHRwczovL3RlbHlncmFtLmNvbS9UR19aSC9pbmRleC5odG1sIiwidGltaW5nc1YyIjp7InVubG9hZEV2ZW50U3RhcnQiOjAsInVubG9hZEV2ZW50RW5kIjowLCJkb21JbnRlcmFjdGl2ZSI6NTcyLCJkb21Db250ZW50TG9hZGVkRXZlbnRTdGFydCI6MTI3Ni4yOTk5OTk5OTk4MTM3LCJkb21Db250ZW50TG9hZGVkRXZlbnRFbmQiOjEyNzYuMjk5OTk5OTk5ODEzNywiZG9tQ29tcGxldGUiOjIzMjUuNSwibG9hZEV2ZW50U3RhcnQiOjIzMjUuNSwibG9hZEV2ZW50RW5kIjoyMzI2LCJ0eXBlIjoibmF2aWdhdGUiLCJyZWRpcmVjdENvdW50IjowLCJhY3RpdmF0aW9uU3RhcnQiOjAsImNyaXRpY2FsQ0hSZXN0YXJ0IjowLCJpbml0aWF0b3JUeXBlIjoibmF2aWdhdGlvbiIsIm5leHRIb3BQcm90b2NvbCI6ImgyIiwid29ya2VyU3RhcnQiOjAsInJlZGlyZWN0U3RhcnQiOjAsInJlZGlyZWN0RW5kIjowLCJmZXRjaFN0YXJ0IjoxLjEwMDAwMDAwMDA5MzEzMjMsImRvbWFpbkxvb2t1cFN0YXJ0IjoxLjEwMDAwMDAwMDA5MzEzMjMsImRvbWFpbkxvb2t1cEVuZCI6MS4xMDAwMDAwMDAwOTMxMzIzLCJjb25uZWN0U3RhcnQiOjEuMTAwMDAwMDAwMDkzMTMyMywiY29ubmVjdEVuZCI6MS4xMDAwMDAwMDAwOTMxMzIzLCJzZWN1cmVDb25uZWN0aW9uU3RhcnQiOjEuMTAwMDAwMDAwMDkzMTMyMywicmVxdWVzdFN0YXJ0IjozLjUsInJlc3BvbnNlU3RhcnQiOjkxLjM5OTk5OTk5OTkwNjg3LCJyZXNwb25zZUVuZCI6OTQsInRyYW5zZmVyU2l6ZSI6NTMyNCwiZW5jb2RlZEJvZHlTaXplIjo1MDI0LCJkZWNvZGVkQm9keVNpemUiOjIwODUwLCJyZW5kZXJCbG9ja2luZ1N0YXR1cyI6Im5vbi1ibG9ja2luZyIsInJlc3BvbnNlU3RhdHVzIjoyMDAsImZpcnN0SW50ZXJpbVJlc3BvbnNlU3RhcnQiOjAsIm5hbWUiOiJodHRwczovL3RlbHlncmFtLmNvbS9UR19aSC9pbmRleC5odG1sIiwiZW50cnlUeXBlIjoibmF2aWdhdGlvbiIsInN0YXJ0VGltZSI6MCwiZHVyYXRpb24iOjIzMjZ9LCJzaXRlVG9rZW4iOiJkY2QxMjg1N2U0M2E0Y2JiOGQ4YmJiMDVlOWMxZjk5ZCIsInN0IjoyfQ=="
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2293.158609,
+        "wallTime": 1694162637.058964,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "r",
+                        "scriptId": "27",
+                        "url": "https://telygram.com/TG_ZH/index_files/v652eace1692a40cfa3763df669d7439c1639079717194",
+                        "lineNumber": 0,
+                        "columnNumber": 8496
+                    },
+                    {
+                        "functionName": "t",
+                        "scriptId": "27",
+                        "url": "https://telygram.com/TG_ZH/index_files/v652eace1692a40cfa3763df669d7439c1639079717194",
+                        "lineNumber": 0,
+                        "columnNumber": 6549
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "27",
+                        "url": "https://telygram.com/TG_ZH/index_files/v652eace1692a40cfa3763df669d7439c1639079717194",
+                        "lineNumber": 0,
+                        "columnNumber": 6805
+                    },
+                    {
+                        "functionName": "j",
+                        "scriptId": "27",
+                        "url": "https://telygram.com/TG_ZH/index_files/v652eace1692a40cfa3763df669d7439c1639079717194",
+                        "lineNumber": 0,
+                        "columnNumber": 6783
+                    },
+                    {
+                        "functionName": "I",
+                        "scriptId": "27",
+                        "url": "https://telygram.com/TG_ZH/index_files/v652eace1692a40cfa3763df669d7439c1639079717194",
+                        "lineNumber": 0,
+                        "columnNumber": 7039
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "0CE3CA06EBEDD2EBED17EB76839F8F1B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_gid",
+                    "value": "GA1.2.844008320.1694162636",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1694249036,
+                    "size": 30,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_gat_gtag_UA_212845866_1",
+                    "value": "1",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1694162696,
+                    "size": 25,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga",
+                    "value": "GA1.2.1907618361.1694162636",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1728722636.071483,
+                    "size": 30,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga_VE3X12E1EV",
+                    "value": "GS1.1.1694162635.1.0.1694162635.0.0.0",
+                    "domain": ".telygram.com",
+                    "path": "/",
+                    "expires": 1728722635.929577,
+                    "size": 51,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

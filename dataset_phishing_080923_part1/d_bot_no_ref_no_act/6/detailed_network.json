@@ -1,0 +1,257 @@
+[
+    {
+        "requestId": "C9E9121ACA1DE9B15932E07B686385B6",
+        "loaderId": "C9E9121ACA1DE9B15932E07B686385B6",
+        "documentURL": "http://veytb6.webwave.dev/",
+        "request": {
+            "url": "http://veytb6.webwave.dev/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2053.366892,
+        "wallTime": 1694162397.266946,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "8D0174100BBC20B7CE8920F1F21FE3C8",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "C9E9121ACA1DE9B15932E07B686385B6",
+        "loaderId": "C9E9121ACA1DE9B15932E07B686385B6",
+        "documentURL": "https://veytb6.webwave.dev/",
+        "request": {
+            "url": "https://veytb6.webwave.dev/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2053.369545,
+        "wallTime": 1694162397.26968,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://veytb6.webwave.dev/",
+            "status": 307,
+            "statusText": "Internal Redirect",
+            "headers": {
+                "Cross-Origin-Resource-Policy": "Cross-Origin",
+                "Location": "https://veytb6.webwave.dev/",
+                "Non-Authoritative-Reason": "HSTS"
+            },
+            "mimeType": "",
+            "connectionReused": false,
+            "connectionId": 0,
+            "remoteIPAddress": "",
+            "remotePort": 0,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 0,
+            "timing": {
+                "requestTime": 2053.368673,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": -1,
+                "dnsEnd": -1,
+                "connectStart": -1,
+                "connectEnd": -1,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 0.121,
+                "sendEnd": 0.121,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 0.121,
+                "receiveHeadersEnd": 0.121
+            },
+            "responseTime": 1694162397268.652,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "8D0174100BBC20B7CE8920F1F21FE3C8",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16640.2",
+        "loaderId": "C9E9121ACA1DE9B15932E07B686385B6",
+        "documentURL": "https://veytb6.webwave.dev/",
+        "request": {
+            "url": "https://veytb6.webwave.dev/files/staticContent/5.8.1/websitesResources/unavailableWebsiteModule-2c90ec1d1522815b8cdc826cc432a7ab.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://veytb6.webwave.dev/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2053.831512,
+        "wallTime": 1694162397.731448,
+        "initiator": {
+            "type": "parser",
+            "url": "https://veytb6.webwave.dev/",
+            "lineNumber": 3,
+            "columnNumber": 155
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "8D0174100BBC20B7CE8920F1F21FE3C8",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "cache-with-varnish",
+                    "value": "true",
+                    "domain": "veytb6.webwave.dev",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 22,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "16640.3",
+        "loaderId": "C9E9121ACA1DE9B15932E07B686385B6",
+        "documentURL": "https://veytb6.webwave.dev/",
+        "request": {
+            "url": "https://veytb6.webwave.dev/files/staticContent/5.8.1/websitesResources/unavailableWebsiteModule-5e28befe5640809c73b31f54026720b2.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://veytb6.webwave.dev/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2053.832246,
+        "wallTime": 1694162397.732165,
+        "initiator": {
+            "type": "parser",
+            "url": "https://veytb6.webwave.dev/",
+            "lineNumber": 20,
+            "columnNumber": 148
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "8D0174100BBC20B7CE8920F1F21FE3C8",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "cache-with-varnish",
+                    "value": "true",
+                    "domain": "veytb6.webwave.dev",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 22,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "16640.4",
+        "loaderId": "C9E9121ACA1DE9B15932E07B686385B6",
+        "documentURL": "https://veytb6.webwave.dev/",
+        "request": {
+            "url": "https://veytb6.webwave.dev/files/assets/webpack/unavailableWebsite.bundle-c29b783e47f7e38a49a9aa9bde023566.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://veytb6.webwave.dev/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 2053.832569,
+        "wallTime": 1694162397.73247,
+        "initiator": {
+            "type": "parser",
+            "url": "https://veytb6.webwave.dev/",
+            "lineNumber": 21,
+            "columnNumber": 120
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "8D0174100BBC20B7CE8920F1F21FE3C8",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "cache-with-varnish",
+                    "value": "true",
+                    "domain": "veytb6.webwave.dev",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 22,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

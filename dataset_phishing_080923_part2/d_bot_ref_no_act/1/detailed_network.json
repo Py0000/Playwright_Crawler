@@ -1,0 +1,661 @@
+[
+    {
+        "requestId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "http://ingloriousdjt.com/",
+        "request": {
+            "url": "http://ingloriousdjt.com/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 13321.510225,
+        "wallTime": 1694173665.41025,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "https://ingloriousdjt.com/",
+        "request": {
+            "url": "https://ingloriousdjt.com/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 13321.661992,
+        "wallTime": 1694173665.562418,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://ingloriousdjt.com/",
+            "status": 301,
+            "statusText": "Moved Permanently",
+            "headers": {
+                "CF-RAY": "8036f5617ae944b2-SIN",
+                "Cache-Control": "max-age=3600",
+                "Connection": "keep-alive",
+                "Date": "Fri, 08 Sep 2023 11:47:45 GMT",
+                "Expires": "Fri, 08 Sep 2023 12:47:45 GMT",
+                "Location": "https://ingloriousdjt.com/",
+                "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+                "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=yH0E%2B7JGl%2BldURFcAwX3fLHAk7BSrFTkWqPrqf215NiiLr8qt%2FoF%2F8pWhR%2BaRaXAzOWO3ZX4p3h02TWA3SFsVkEJlu%2Fy%2FfNtbEOyuwdVWe%2BEAhHfsinBOgAjtaZTRnsUTfQCNA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+                "Server": "cloudflare",
+                "Transfer-Encoding": "chunked",
+                "Vary": "Accept-Encoding",
+                "alt-svc": "h3=\":443\"; ma=86400"
+            },
+            "mimeType": "",
+            "connectionReused": false,
+            "connectionId": 107,
+            "remoteIPAddress": "104.21.73.61",
+            "remotePort": 80,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 674,
+            "timing": {
+                "requestTime": 13321.511111,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.263,
+                "dnsEnd": 1.215,
+                "connectStart": 1.215,
+                "connectEnd": 78.875,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 78.972,
+                "sendEnd": 88.216,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 149.861,
+                "receiveHeadersEnd": 149.97
+            },
+            "responseTime": 1694173665560.829,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "63634.2",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "https://ingloriousdjt.com/",
+        "request": {
+            "url": "https://ingloriousdjt.com/css/Untitled1.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13322.4837,
+        "wallTime": 1694173666.38362,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ingloriousdjt.com/",
+            "lineNumber": 8,
+            "columnNumber": 48
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "63634.3",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "https://ingloriousdjt.com/",
+        "request": {
+            "url": "https://ingloriousdjt.com/css/index.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13322.484346,
+        "wallTime": 1694173666.384246,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ingloriousdjt.com/",
+            "lineNumber": 9,
+            "columnNumber": 44
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "63634.4",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "https://ingloriousdjt.com/",
+        "request": {
+            "url": "https://ingloriousdjt.com/images/2.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13322.48457,
+        "wallTime": 1694173666.384458,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ingloriousdjt.com/",
+            "lineNumber": 46,
+            "columnNumber": 39
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "63634.5",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "https://ingloriousdjt.com/",
+        "request": {
+            "url": "https://ingloriousdjt.com/images/3.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13322.484656,
+        "wallTime": 1694173666.384536,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ingloriousdjt.com/",
+            "lineNumber": 47,
+            "columnNumber": 39
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "63634.6",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "https://ingloriousdjt.com/",
+        "request": {
+            "url": "https://ingloriousdjt.com/images/4.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13322.484732,
+        "wallTime": 1694173666.384615,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ingloriousdjt.com/",
+            "lineNumber": 48,
+            "columnNumber": 39
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "63634.7",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "https://ingloriousdjt.com/",
+        "request": {
+            "url": "https://ingloriousdjt.com/images/5.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13322.484805,
+        "wallTime": 1694173666.384685,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ingloriousdjt.com/",
+            "lineNumber": 49,
+            "columnNumber": 39
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "63634.8",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "https://ingloriousdjt.com/",
+        "request": {
+            "url": "https://ingloriousdjt.com/images/6.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13322.484874,
+        "wallTime": 1694173666.384757,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ingloriousdjt.com/",
+            "lineNumber": 50,
+            "columnNumber": 39
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "63634.9",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "https://ingloriousdjt.com/",
+        "request": {
+            "url": "https://ingloriousdjt.com/images/rst1.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13322.484959,
+        "wallTime": 1694173666.384864,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ingloriousdjt.com/",
+            "lineNumber": 52,
+            "columnNumber": 53
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "63634.10",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "https://ingloriousdjt.com/",
+        "request": {
+            "url": "https://ingloriousdjt.com/images/on.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13322.485078,
+        "wallTime": 1694173666.384968,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ingloriousdjt.com/",
+            "lineNumber": 117,
+            "columnNumber": 65
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "63634.11",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "https://ingloriousdjt.com/",
+        "request": {
+            "url": "https://ingloriousdjt.com/images/frgt.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13322.485163,
+        "wallTime": 1694173666.385044,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ingloriousdjt.com/",
+            "lineNumber": 136,
+            "columnNumber": 88
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "63634.12",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "https://ingloriousdjt.com/",
+        "request": {
+            "url": "https://ingloriousdjt.com/images/fts1.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13322.485233,
+        "wallTime": 1694173666.385116,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ingloriousdjt.com/",
+            "lineNumber": 138,
+            "columnNumber": 65
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "63634.13",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "https://ingloriousdjt.com/",
+        "request": {
+            "url": "https://ingloriousdjt.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13322.485329,
+        "wallTime": 1694173666.385215,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ingloriousdjt.com/",
+            "lineNumber": 142,
+            "columnNumber": 133
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "63634.26",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "https://ingloriousdjt.com/",
+        "request": {
+            "url": "https://ingloriousdjt.com/images/1.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 13323.230905,
+        "wallTime": 1694173667.130808,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ingloriousdjt.com/css/index.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "63634.27",
+        "loaderId": "1DC340C8E045B270D372ADC9BF6E6039",
+        "documentURL": "https://ingloriousdjt.com/",
+        "request": {
+            "url": "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 13323.262899,
+        "wallTime": 1694173667.163607,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://ingloriousdjt.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+                        "lineNumber": 0,
+                        "columnNumber": 10717
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://ingloriousdjt.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+                        "lineNumber": 0,
+                        "columnNumber": 4281
+                    },
+                    {
+                        "functionName": "t.forEach",
+                        "scriptId": "4",
+                        "url": "https://ingloriousdjt.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+                        "lineNumber": 0,
+                        "columnNumber": 4239
+                    },
+                    {
+                        "functionName": "t.insertPreloadHints",
+                        "scriptId": "4",
+                        "url": "https://ingloriousdjt.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+                        "lineNumber": 0,
+                        "columnNumber": 10418
+                    },
+                    {
+                        "functionName": "x",
+                        "scriptId": "4",
+                        "url": "https://ingloriousdjt.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+                        "lineNumber": 0,
+                        "columnNumber": 2860
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://ingloriousdjt.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+                        "lineNumber": 0,
+                        "columnNumber": 12168
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://ingloriousdjt.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+                        "lineNumber": 0,
+                        "columnNumber": 12325
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://ingloriousdjt.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+                        "lineNumber": 0,
+                        "columnNumber": 12328
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "AFB6226AC57705ED98FC32C1C3DA682B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

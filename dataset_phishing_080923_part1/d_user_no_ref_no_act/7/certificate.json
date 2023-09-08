@@ -1,0 +1,29 @@
+{
+    "website url": "https://usps.postsale.cc/go/TrackConfirmAction",
+    "hostname": "usps.postsale.cc",
+    "subject": {
+        "commonName": "postsale.cc"
+    },
+    "issuer": {
+        "countryName": "US",
+        "organizationName": "Google Trust Services LLC",
+        "commonName": "GTS CA 1P5"
+    },
+    "version": 3,
+    "not_before": "Aug 16 18:24:43 2023 GMT",
+    "not_after": "Nov 14 18:24:42 2023 GMT",
+    "valid_period": 90,
+    "serial_number": "C487709CDCE487C213643C47DFA5D5D4",
+    "signature_algo": "sha256WithRSAEncryption",
+    "protocol_version": "TLSv1.3",
+    "alternate subject name": [
+        [
+            "DNS",
+            "postsale.cc"
+        ],
+        [
+            "DNS",
+            "*.postsale.cc"
+        ]
+    ]
+}

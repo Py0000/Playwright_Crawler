@@ -1,0 +1,134 @@
+[
+    {
+        "requestId": "64670B6D55D737129E699EA876E2B7AA",
+        "loaderId": "64670B6D55D737129E699EA876E2B7AA",
+        "documentURL": "http://ams3.digitaloceanspaces.com/jdjjdjduudududdds/microsoftonline.htm",
+        "request": {
+            "url": "http://ams3.digitaloceanspaces.com/jdjjdjduudududdds/microsoftonline.htm",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3000.135836,
+        "wallTime": 1694163344.035804,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "AA8660E140E906715FEA21B1BC56D7CF",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "64670B6D55D737129E699EA876E2B7AA",
+        "loaderId": "64670B6D55D737129E699EA876E2B7AA",
+        "documentURL": "https://ams3.digitaloceanspaces.com/jdjjdjduudududdds/microsoftonline.htm",
+        "request": {
+            "url": "https://ams3.digitaloceanspaces.com/jdjjdjduudududdds/microsoftonline.htm",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3000.688406,
+        "wallTime": 1694163344.588503,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://ams3.digitaloceanspaces.com/jdjjdjduudududdds/microsoftonline.htm",
+            "status": 302,
+            "statusText": "Found",
+            "headers": {
+                "content-length": "0",
+                "date": "Fri, 08 Sep 2023 08:55:44 GMT",
+                "location": "https://ams3.digitaloceanspaces.com/jdjjdjduudududdds/microsoftonline.htm",
+                "x-envoy-upstream-healthchecked-cluster": ""
+            },
+            "mimeType": "",
+            "connectionReused": false,
+            "connectionId": 35,
+            "remoteIPAddress": "5.101.110.225",
+            "remotePort": 80,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 205,
+            "timing": {
+                "requestTime": 3000.13666,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.171,
+                "dnsEnd": 1.143,
+                "connectStart": 1.143,
+                "connectEnd": 274.139,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 275.015,
+                "sendEnd": 275.748,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 549.268,
+                "receiveHeadersEnd": 549.337
+            },
+            "responseTime": 1694163344585.784,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "AA8660E140E906715FEA21B1BC56D7CF",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "51064.2",
+        "loaderId": "64670B6D55D737129E699EA876E2B7AA",
+        "documentURL": "https://ams3.digitaloceanspaces.com/jdjjdjduudududdds/microsoftonline.htm",
+        "request": {
+            "url": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L8 0 L4 7 Z'/></svg>",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 3001.548297,
+        "wallTime": 1694163345.448244,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "AA8660E140E906715FEA21B1BC56D7CF",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

@@ -1,0 +1,59 @@
+{
+    "Domain": "netyis.com",
+    "A": {
+        "IPv4 Address (Value)": [
+            "113.30.148.85"
+        ]
+    },
+    "AAAA": [
+        "No records found"
+    ],
+    "CAA": [
+        "No records found"
+    ],
+    "CNAME": [
+        "No records found"
+    ],
+    "MX": {
+        "Preference": [
+            10
+        ],
+        "Exchange": [
+            "mail.netyis.com."
+        ]
+    },
+    "NS": {
+        "Name Server": [
+            "ns1.netyis.com.",
+            "ns2.netyis.com."
+        ]
+    },
+    "SOA": {
+        "MNAME": [
+            "ns2.netyis.com."
+        ],
+        "RNAME": [
+            "int.ironks.com."
+        ],
+        "SERIAL": [
+            2023080307
+        ],
+        "REFRESH": [
+            10800
+        ],
+        "RETRY": [
+            3600
+        ],
+        "EXPIRE": [
+            1209600
+        ],
+        "MINIMUM": [
+            10800
+        ]
+    },
+    "TXT": {
+        "Text Data": [
+            "v=spf1 +a +mx +a:jolly-williamson.113-30-148-85.plesk.page -all"
+        ]
+    }
+}

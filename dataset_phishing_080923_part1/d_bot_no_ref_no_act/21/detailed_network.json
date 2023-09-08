@@ -1,0 +1,300 @@
+[
+    {
+        "requestId": "4468838F31E97138883AAF2C694DBA30",
+        "loaderId": "4468838F31E97138883AAF2C694DBA30",
+        "documentURL": "http://optusnet-com.blogspot.dk/",
+        "request": {
+            "url": "http://optusnet-com.blogspot.dk/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3690.313806,
+        "wallTime": 1694164034.213778,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "D26AB648F329229C9BEBB57651CC38F1",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "4468838F31E97138883AAF2C694DBA30",
+        "loaderId": "4468838F31E97138883AAF2C694DBA30",
+        "documentURL": "http://optusnet-com.blogspot.com/",
+        "request": {
+            "url": "http://optusnet-com.blogspot.com/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3690.568237,
+        "wallTime": 1694164034.46853,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://optusnet-com.blogspot.dk/",
+            "status": 302,
+            "statusText": "Moved Temporarily",
+            "headers": {
+                "Cache-Control": "private, max-age=0",
+                "Content-Encoding": "gzip",
+                "Content-Length": "179",
+                "Content-Security-Policy": "frame-ancestors 'self'",
+                "Content-Type": "text/html; charset=UTF-8",
+                "Date": "Fri, 08 Sep 2023 09:07:14 GMT",
+                "Expires": "Fri, 08 Sep 2023 09:07:14 GMT",
+                "Location": "http://optusnet-com.blogspot.com/",
+                "Server": "GSE",
+                "X-Content-Type-Options": "nosniff",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-XSS-Protection": "1; mode=block"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 40,
+            "remoteIPAddress": "142.251.12.132",
+            "remotePort": 80,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 433,
+            "timing": {
+                "requestTime": 3690.315229,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.339,
+                "dnsEnd": 1.968,
+                "connectStart": 1.968,
+                "connectEnd": 16.762,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 16.857,
+                "sendEnd": 17.235,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 250.912,
+                "receiveHeadersEnd": 251.044
+            },
+            "responseTime": 1694164034465.998,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "D26AB648F329229C9BEBB57651CC38F1",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "4468838F31E97138883AAF2C694DBA30",
+        "loaderId": "4468838F31E97138883AAF2C694DBA30",
+        "documentURL": "https://optusnet-com.blogspot.com/",
+        "request": {
+            "url": "https://optusnet-com.blogspot.com/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 3690.865343,
+        "wallTime": 1694164034.765412,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://optusnet-com.blogspot.com/",
+            "status": 301,
+            "statusText": "Moved Permanently",
+            "headers": {
+                "Cache-Control": "private, max-age=0",
+                "Content-Encoding": "gzip",
+                "Content-Length": "178",
+                "Content-Security-Policy": "frame-ancestors 'self'",
+                "Content-Type": "text/html; charset=UTF-8",
+                "Date": "Fri, 08 Sep 2023 09:07:14 GMT",
+                "Expires": "Fri, 08 Sep 2023 09:07:14 GMT",
+                "Location": "https://optusnet-com.blogspot.com/",
+                "Server": "GSE",
+                "X-Content-Type-Options": "nosniff",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-XSS-Protection": "1; mode=block"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 46,
+            "remoteIPAddress": "142.251.12.132",
+            "remotePort": 80,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 434,
+            "timing": {
+                "requestTime": 3690.569206,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.314,
+                "dnsEnd": 1.165,
+                "connectStart": 1.165,
+                "connectEnd": 15.929,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 16.012,
+                "sendEnd": 16.484,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 294.444,
+                "receiveHeadersEnd": 294.578
+            },
+            "responseTime": 1694164034763.506,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "D26AB648F329229C9BEBB57651CC38F1",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "58416.2",
+        "loaderId": "4468838F31E97138883AAF2C694DBA30",
+        "documentURL": "https://optusnet-com.blogspot.com/",
+        "request": {
+            "url": "https://www.gstatic.com/external_hosted/clipboardjs/clipboard.min.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://optusnet-com.blogspot.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 3691.45054,
+        "wallTime": 1694164035.350457,
+        "initiator": {
+            "type": "parser",
+            "url": "https://optusnet-com.blogspot.com/",
+            "lineNumber": 27,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "D26AB648F329229C9BEBB57651CC38F1",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "58416.3",
+        "loaderId": "4468838F31E97138883AAF2C694DBA30",
+        "documentURL": "https://optusnet-com.blogspot.com/",
+        "request": {
+            "url": "https://pastebin.com/raw/RD9kQSUh",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://optusnet-com.blogspot.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 3691.45096,
+        "wallTime": 1694164035.350864,
+        "initiator": {
+            "type": "parser",
+            "url": "https://optusnet-com.blogspot.com/",
+            "lineNumber": 40,
+            "columnNumber": 62
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "D26AB648F329229C9BEBB57651CC38F1",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "58416.4",
+        "loaderId": "4468838F31E97138883AAF2C694DBA30",
+        "documentURL": "https://optusnet-com.blogspot.com/",
+        "request": {
+            "url": "https://www.blogger.com/static/v1/widgets/940443484-widgets.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://optusnet-com.blogspot.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 3691.451175,
+        "wallTime": 1694164035.351066,
+        "initiator": {
+            "type": "parser",
+            "url": "https://optusnet-com.blogspot.com/",
+            "lineNumber": 42,
+            "columnNumber": 100
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "D26AB648F329229C9BEBB57651CC38F1",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]
