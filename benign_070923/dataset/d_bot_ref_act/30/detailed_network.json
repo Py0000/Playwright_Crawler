@@ -1,0 +1,832 @@
+[
+    {
+        "requestId": "5782DF087ABD63D7D744FB9C41E2424F",
+        "loaderId": "5782DF087ABD63D7D744FB9C41E2424F",
+        "documentURL": "https://allegro.pl/",
+        "request": {
+            "url": "https://allegro.pl/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 427490.922655,
+        "wallTime": 1694095050.813825,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "C13F0FAACE9D7441B28D7B7FECFC2E77",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "4652.2",
+        "loaderId": "5782DF087ABD63D7D744FB9C41E2424F",
+        "documentURL": "https://allegro.pl/",
+        "request": {
+            "url": "https://ct.captcha-delivery.com/c.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 427491.73411,
+        "wallTime": 1694095051.625204,
+        "initiator": {
+            "type": "parser",
+            "url": "https://allegro.pl/",
+            "lineNumber": 0,
+            "columnNumber": 557
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "C13F0FAACE9D7441B28D7B7FECFC2E77",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "datadome",
+                    "value": "6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1725631051.619568,
+                    "size": 136,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_cmuid",
+                    "value": "9b952ccf-0b06-4451-b50a-dccf477f5b9d",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1728655051,
+                    "size": 42,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "E58388AF6F198610FBDA675982FE18F2",
+        "loaderId": "E58388AF6F198610FBDA675982FE18F2",
+        "documentURL": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+        "request": {
+            "url": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://allegro.pl/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 427491.767076,
+        "wallTime": 1694095051.658313,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://ct.captcha-delivery.com/c.js",
+                        "lineNumber": 37,
+                        "columnNumber": 13
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://ct.captcha-delivery.com/c.js",
+                        "lineNumber": 157,
+                        "columnNumber": 2
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "ED8F6F540F238223ED058F2C1415C771",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "datadome",
+                    "value": "6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1725631051.619568,
+                    "size": 136,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_cmuid",
+                    "value": "9b952ccf-0b06-4451-b50a-dccf477f5b9d",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1728655051,
+                    "size": 42,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "4652.5",
+        "loaderId": "E58388AF6F198610FBDA675982FE18F2",
+        "documentURL": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+        "request": {
+            "url": "https://static.captcha-delivery.com/captcha/assets/tpl/6dc485c0c428c35b53577b146dc6f9179f55ef9ad41b327a2a179998839364bf/index.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 427491.802867,
+        "wallTime": 1694095051.693874,
+        "initiator": {
+            "type": "parser",
+            "url": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+            "lineNumber": 15,
+            "columnNumber": 159
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "ED8F6F540F238223ED058F2C1415C771",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "datadome",
+                    "value": "6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1725631051.619568,
+                    "size": 136,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_cmuid",
+                    "value": "9b952ccf-0b06-4451-b50a-dccf477f5b9d",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1728655051,
+                    "size": 42,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "4652.6",
+        "loaderId": "E58388AF6F198610FBDA675982FE18F2",
+        "documentURL": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+        "request": {
+            "url": "https://static.captcha-delivery.com/common/fonts/open-sans/font-face.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 427491.803121,
+        "wallTime": 1694095051.694121,
+        "initiator": {
+            "type": "parser",
+            "url": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+            "lineNumber": 16,
+            "columnNumber": 111
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "ED8F6F540F238223ED058F2C1415C771",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "datadome",
+                    "value": "6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1725631051.619568,
+                    "size": 136,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_cmuid",
+                    "value": "9b952ccf-0b06-4451-b50a-dccf477f5b9d",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1728655051,
+                    "size": 42,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "4652.7",
+        "loaderId": "E58388AF6F198610FBDA675982FE18F2",
+        "documentURL": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+        "request": {
+            "url": "https://static.captcha-delivery.com/captcha/assets/set/37ca9da7a4047cf662ff2aa1f6d4f3d8b022ad6a/logo.png?update_cache=7888483593749699839",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 427491.803352,
+        "wallTime": 1694095051.694352,
+        "initiator": {
+            "type": "parser",
+            "url": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+            "lineNumber": 430,
+            "columnNumber": 222
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "ED8F6F540F238223ED058F2C1415C771",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "datadome",
+                    "value": "6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1725631051.619568,
+                    "size": 136,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_cmuid",
+                    "value": "9b952ccf-0b06-4451-b50a-dccf477f5b9d",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1728655051,
+                    "size": 42,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "4652.10",
+        "loaderId": "E58388AF6F198610FBDA675982FE18F2",
+        "documentURL": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+        "request": {
+            "url": "https://fonts.googleapis.com/css2?family=Roboto&display=swap",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 427491.823129,
+        "wallTime": 1694095051.714273,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "17",
+                        "url": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+                        "lineNumber": 23,
+                        "columnNumber": 18
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "ED8F6F540F238223ED058F2C1415C771",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "datadome",
+                    "value": "6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1725631051.619568,
+                    "size": 136,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_cmuid",
+                    "value": "9b952ccf-0b06-4451-b50a-dccf477f5b9d",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1728655051,
+                    "size": 42,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "4652.11",
+        "loaderId": "E58388AF6F198610FBDA675982FE18F2",
+        "documentURL": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+        "request": {
+            "url": "https://js.datadome.co/tags.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 427491.824793,
+        "wallTime": 1694095051.71589,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "18",
+                        "url": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+                        "lineNumber": 423,
+                        "columnNumber": 146
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "18",
+                        "url": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+                        "lineNumber": 423,
+                        "columnNumber": 164
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "ED8F6F540F238223ED058F2C1415C771",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "datadome",
+                    "value": "6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1725631051.619568,
+                    "size": 136,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_cmuid",
+                    "value": "9b952ccf-0b06-4451-b50a-dccf477f5b9d",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1728655051,
+                    "size": 42,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "4652.16",
+        "loaderId": "E58388AF6F198610FBDA675982FE18F2",
+        "documentURL": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+        "request": {
+            "url": "https://static.captcha-delivery.com/common/fonts/open-sans/open-sans.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://geo.captcha-delivery.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 427491.831245,
+        "wallTime": 1694095051.722258,
+        "initiator": {
+            "type": "parser",
+            "url": "https://static.captcha-delivery.com/common/fonts/open-sans/font-face.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "ED8F6F540F238223ED058F2C1415C771",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "datadome",
+                    "value": "6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1725631051.619568,
+                    "size": 136,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_cmuid",
+                    "value": "9b952ccf-0b06-4451-b50a-dccf477f5b9d",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1728655051,
+                    "size": 42,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "4652.18",
+        "loaderId": "E58388AF6F198610FBDA675982FE18F2",
+        "documentURL": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+        "request": {
+            "url": "https://dd-dashboard-images.s3-eu-west-1.amazonaws.com/captcha/page-customization/14214/allegro.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 427491.84523,
+        "wallTime": 1694095051.73625,
+        "initiator": {
+            "type": "parser",
+            "url": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+            "lineNumber": 951,
+            "columnNumber": 1
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "ED8F6F540F238223ED058F2C1415C771",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "datadome",
+                    "value": "6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1725631051.619568,
+                    "size": 136,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_cmuid",
+                    "value": "9b952ccf-0b06-4451-b50a-dccf477f5b9d",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1728655051,
+                    "size": 42,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "4652.19",
+        "loaderId": "E58388AF6F198610FBDA675982FE18F2",
+        "documentURL": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+        "request": {
+            "url": "https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://geo.captcha-delivery.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 427491.849202,
+        "wallTime": 1694095051.740222,
+        "initiator": {
+            "type": "parser",
+            "url": "https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "ED8F6F540F238223ED058F2C1415C771",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "datadome",
+                    "value": "6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1725631051.619568,
+                    "size": 136,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_cmuid",
+                    "value": "9b952ccf-0b06-4451-b50a-dccf477f5b9d",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1728655051,
+                    "size": 42,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "4652.20",
+        "loaderId": "E58388AF6F198610FBDA675982FE18F2",
+        "documentURL": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAUFcvBznp-bAAdA5vnw%3D%3D&hash=77DC0FFBAA0B77570F6B414F8E5BDB&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&t=bv&referer=https%3A%2F%2Fallegro.pl%2F&s=29701&e=0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a",
+        "request": {
+            "url": "https://api-js.datadome.co/js/",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "sec-ch-ua-platform": "\"\"",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "Content-type": "application/x-www-form-urlencoded"
+            },
+            "postData": "jsData=%7B%22opts%22%3A%22responsePage%22%2C%22ttst%22%3A101.30000001192093%2C%22ifov%22%3Afalse%2C%22tagpu%22%3A7.16448110850707%2C%22glvd%22%3A%22Google%20Inc.%20(Google)%22%2C%22glrd%22%3A%22ANGLE%20(Google%2C%20Vulkan%201.3.0%20(SwiftShader%20Device%20(Subzero)%20(0x0000C0DE))%2C%20SwiftShader%20driver)%22%2C%22hc%22%3A8%2C%22br_oh%22%3A808%2C%22br_ow%22%3A1296%2C%22ua%22%3A%22Mozilla%2F5.0%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko%3B%20compatible%3B%20Googlebot%2F2.1%3B%20%2Bhttp%3A%2F%2Fwww.google.com%2Fbot.html)%20Chrome%2F115.0.0.0%20Safari%2F537.36%22%2C%22wbd%22%3Atrue%2C%22wdif%22%3Atrue%2C%22wdifrm%22%3Afalse%2C%22npmtm%22%3Afalse%2C%22br_h%22%3A720%2C%22br_w%22%3A1280%2C%22nddc%22%3A0%2C%22rs_h%22%3A720%2C%22rs_w%22%3A1280%2C%22rs_cd%22%3A24%2C%22phe%22%3Afalse%2C%22nm%22%3Afalse%2C%22jsf%22%3Afalse%2C%22lg%22%3A%22en-GB%22%2C%22pr%22%3A1%2C%22ars_h%22%3A720%2C%22ars_w%22%3A1280%2C%22tz%22%3A-480%2C%22str_ss%22%3Atrue%2C%22str_ls%22%3Atrue%2C%22str_idb%22%3Atrue%2C%22str_odb%22%3Atrue%2C%22plgod%22%3Afalse%2C%22plg%22%3A0%2C%22plgne%22%3A%22NA%22%2C%22plgre%22%3A%22NA%22%2C%22plgof%22%3A%22NA%22%2C%22plggt%22%3A%22NA%22%2C%22pltod%22%3Afalse%2C%22hcovdr%22%3Afalse%2C%22plovdr%22%3Afalse%2C%22ftsovdr%22%3Afalse%2C%22hcovdr2%22%3Afalse%2C%22plovdr2%22%3Afalse%2C%22ftsovdr2%22%3Afalse%2C%22lb%22%3Afalse%2C%22eva%22%3A33%2C%22lo%22%3Atrue%2C%22ts_mtp%22%3A0%2C%22ts_tec%22%3Afalse%2C%22ts_tsa%22%3Afalse%2C%22vnd%22%3A%22Google%20Inc.%22%2C%22bid%22%3A%22NA%22%2C%22mmt%22%3A%22empty%22%2C%22plu%22%3A%22empty%22%2C%22hdn%22%3Afalse%2C%22awe%22%3Afalse%2C%22geb%22%3Afalse%2C%22dat%22%3Afalse%2C%22med%22%3A%22defined%22%2C%22aco%22%3A%22probably%22%2C%22acots%22%3Afalse%2C%22acmp%22%3A%22probably%22%2C%22acmpts%22%3Atrue%2C%22acw%22%3A%22probably%22%2C%22acwts%22%3Afalse%2C%22acma%22%3A%22%22%2C%22acmats%22%3Afalse%2C%22acaa%22%3A%22%22%2C%22acaats%22%3Afalse%2C%22ac3%22%3A%22%22%2C%22ac3ts%22%3Afalse%2C%22acf%22%3A%22probably%22%2C%22acfts%22%3Afalse%2C%22acmp4%22%3A%22maybe%22%2C%22acmp4ts%22%3Afalse%2C%22acmp3%22%3A%22probably%22%2C%22acmp3ts%22%3Afalse%2C%22acwm%22%3A%22maybe%22%2C%22acwmts%22%3Afalse%2C%22ocpt%22%3Afalse%2C%22vco%22%3A%22probably%22%2C%22vcots%22%3Afalse%2C%22vch%22%3A%22%22%2C%22vchts%22%3Afalse%2C%22vcw%22%3A%22probably%22%2C%22vcwts%22%3Atrue%2C%22vc3%22%3A%22%22%2C%22vc3ts%22%3Afalse%2C%22vcmp%22%3A%22%22%2C%22vcmpts%22%3Afalse%2C%22vcq%22%3A%22%22%2C%22vcqts%22%3Afalse%2C%22vc1%22%3A%22probably%22%2C%22vc1ts%22%3Atrue%2C%22dvm%22%3A8%2C%22sqt%22%3Afalse%2C%22so%22%3A%22landscape-primary%22%2C%22wdw%22%3Afalse%2C%22ecpc%22%3Afalse%2C%22lgs%22%3Atrue%2C%22lgsod%22%3Afalse%2C%22psn%22%3Atrue%2C%22edp%22%3Atrue%2C%22addt%22%3Atrue%2C%22wsdc%22%3Atrue%2C%22ccsr%22%3Atrue%2C%22nuad%22%3Atrue%2C%22bcda%22%3Afalse%2C%22idn%22%3Atrue%2C%22capi%22%3Afalse%2C%22svde%22%3Afalse%2C%22vpbq%22%3Atrue%2C%22ucdv%22%3Afalse%2C%22spwn%22%3Afalse%2C%22emt%22%3Afalse%2C%22bfr%22%3Afalse%2C%22dbov%22%3Afalse%2C%22prm%22%3Atrue%2C%22tzp%22%3A%22Asia%2FSingapore%22%2C%22cvs%22%3Atrue%2C%22usb%22%3A%22defined%22%2C%22jset%22%3A1694095051%7D&eventCounters=%5B%5D&jsType=ch&cid=6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2&ddk=77DC0FFBAA0B77570F6B414F8E5BDB&Referer=https%253A%252F%252Fgeo.captcha-delivery.com%252Fcaptcha%252F%253FinitialCid%253DAHrlqAAAAAMAUFcvBznp-bAAdA5vnw%25253D%25253D%2526hash%253D77DC0FFBAA0B77570F6B414F8E5BDB%2526cid%253D6On1IEs0Gon86WuHyu9jsrMMoER%7EtSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2%2526t%253Dbv%2526referer%253Dhttps%25253A%25252F%25252Fallegro.pl%25252F%2526s%253D29701%2526e%253D0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a&request=%252Fcaptcha%252F%253FinitialCid%253DAHrlqAAAAAMAUFcvBznp-bAAdA5vnw%25253D%25253D%2526hash%253D77DC0FFBAA0B77570F6B414F8E5BDB%2526cid%253D6On1IEs0Gon86WuHyu9jsrMMoER%7EtSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2%2526t%253Dbv%2526referer%253Dhttps%25253A%25252F%25252Fallegro.pl%25252F%2526s%253D29701%2526e%253D0e5552fe26d8368fb61de5a2675e78138bbd1954f72da64a752dd3b3d6f0344a&responsePage=hard-block&ddv=4.13.0",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "anNEYXRhPSU3QiUyMm9wdHMlMjIlM0ElMjJyZXNwb25zZVBhZ2UlMjIlMkMlMjJ0dHN0JTIyJTNBMTAxLjMwMDAwMDAxMTkyMDkzJTJDJTIyaWZvdiUyMiUzQWZhbHNlJTJDJTIydGFncHUlMjIlM0E3LjE2NDQ4MTEwODUwNzA3JTJDJTIyZ2x2ZCUyMiUzQSUyMkdvb2dsZSUyMEluYy4lMjAoR29vZ2xlKSUyMiUyQyUyMmdscmQlMjIlM0ElMjJBTkdMRSUyMChHb29nbGUlMkMlMjBWdWxrYW4lMjAxLjMuMCUyMChTd2lmdFNoYWRlciUyMERldmljZSUyMChTdWJ6ZXJvKSUyMCgweDAwMDBDMERFKSklMkMlMjBTd2lmdFNoYWRlciUyMGRyaXZlciklMjIlMkMlMjJoYyUyMiUzQTglMkMlMjJicl9vaCUyMiUzQTgwOCUyQyUyMmJyX293JTIyJTNBMTI5NiUyQyUyMnVhJTIyJTNBJTIyTW96aWxsYSUyRjUuMCUyMEFwcGxlV2ViS2l0JTJGNTM3LjM2JTIwKEtIVE1MJTJDJTIwbGlrZSUyMEdlY2tvJTNCJTIwY29tcGF0aWJsZSUzQiUyMEdvb2dsZWJvdCUyRjIuMSUzQiUyMCUyQmh0dHAlM0ElMkYlMkZ3d3cuZ29vZ2xlLmNvbSUyRmJvdC5odG1sKSUyMENocm9tZSUyRjExNS4wLjAuMCUyMFNhZmFyaSUyRjUzNy4zNiUyMiUyQyUyMndiZCUyMiUzQXRydWUlMkMlMjJ3ZGlmJTIyJTNBdHJ1ZSUyQyUyMndkaWZybSUyMiUzQWZhbHNlJTJDJTIybnBtdG0lMjIlM0FmYWxzZSUyQyUyMmJyX2glMjIlM0E3MjAlMkMlMjJicl93JTIyJTNBMTI4MCUyQyUyMm5kZGMlMjIlM0EwJTJDJTIycnNfaCUyMiUzQTcyMCUyQyUyMnJzX3clMjIlM0ExMjgwJTJDJTIycnNfY2QlMjIlM0EyNCUyQyUyMnBoZSUyMiUzQWZhbHNlJTJDJTIybm0lMjIlM0FmYWxzZSUyQyUyMmpzZiUyMiUzQWZhbHNlJTJDJTIybGclMjIlM0ElMjJlbi1HQiUyMiUyQyUyMnByJTIyJTNBMSUyQyUyMmFyc19oJTIyJTNBNzIwJTJDJTIyYXJzX3clMjIlM0ExMjgwJTJDJTIydHolMjIlM0EtNDgwJTJDJTIyc3RyX3NzJTIyJTNBdHJ1ZSUyQyUyMnN0cl9scyUyMiUzQXRydWUlMkMlMjJzdHJfaWRiJTIyJTNBdHJ1ZSUyQyUyMnN0cl9vZGIlMjIlM0F0cnVlJTJDJTIycGxnb2QlMjIlM0FmYWxzZSUyQyUyMnBsZyUyMiUzQTAlMkMlMjJwbGduZSUyMiUzQSUyMk5BJTIyJTJDJTIycGxncmUlMjIlM0ElMjJOQSUyMiUyQyUyMnBsZ29mJTIyJTNBJTIyTkElMjIlMkMlMjJwbGdndCUyMiUzQSUyMk5BJTIyJTJDJTIycGx0b2QlMjIlM0FmYWxzZSUyQyUyMmhjb3ZkciUyMiUzQWZhbHNlJTJDJTIycGxvdmRyJTIyJTNBZmFsc2UlMkMlMjJmdHNvdmRyJTIyJTNBZmFsc2UlMkMlMjJoY292ZHIyJTIyJTNBZmFsc2UlMkMlMjJwbG92ZHIyJTIyJTNBZmFsc2UlMkMlMjJmdHNvdmRyMiUyMiUzQWZhbHNlJTJDJTIybGIlMjIlM0FmYWxzZSUyQyUyMmV2YSUyMiUzQTMzJTJDJTIybG8lMjIlM0F0cnVlJTJDJTIydHNfbXRwJTIyJTNBMCUyQyUyMnRzX3RlYyUyMiUzQWZhbHNlJTJDJTIydHNfdHNhJTIyJTNBZmFsc2UlMkMlMjJ2bmQlMjIlM0ElMjJHb29nbGUlMjBJbmMuJTIyJTJDJTIyYmlkJTIyJTNBJTIyTkElMjIlMkMlMjJtbXQlMjIlM0ElMjJlbXB0eSUyMiUyQyUyMnBsdSUyMiUzQSUyMmVtcHR5JTIyJTJDJTIyaGRuJTIyJTNBZmFsc2UlMkMlMjJhd2UlMjIlM0FmYWxzZSUyQyUyMmdlYiUyMiUzQWZhbHNlJTJDJTIyZGF0JTIyJTNBZmFsc2UlMkMlMjJtZWQlMjIlM0ElMjJkZWZpbmVkJTIyJTJDJTIyYWNvJTIyJTNBJTIycHJvYmFibHklMjIlMkMlMjJhY290cyUyMiUzQWZhbHNlJTJDJTIyYWNtcCUyMiUzQSUyMnByb2JhYmx5JTIyJTJDJTIyYWNtcHRzJTIyJTNBdHJ1ZSUyQyUyMmFjdyUyMiUzQSUyMnByb2JhYmx5JTIyJTJDJTIyYWN3dHMlMjIlM0FmYWxzZSUyQyUyMmFjbWElMjIlM0ElMjIlMjIlMkMlMjJhY21hdHMlMjIlM0FmYWxzZSUyQyUyMmFjYWElMjIlM0ElMjIlMjIlMkMlMjJhY2FhdHMlMjIlM0FmYWxzZSUyQyUyMmFjMyUyMiUzQSUyMiUyMiUyQyUyMmFjM3RzJTIyJTNBZmFsc2UlMkMlMjJhY2YlMjIlM0ElMjJwcm9iYWJseSUyMiUyQyUyMmFjZnRzJTIyJTNBZmFsc2UlMkMlMjJhY21wNCUyMiUzQSUyMm1heWJlJTIyJTJDJTIyYWNtcDR0cyUyMiUzQWZhbHNlJTJDJTIyYWNtcDMlMjIlM0ElMjJwcm9iYWJseSUyMiUyQyUyMmFjbXAzdHMlMjIlM0FmYWxzZSUyQyUyMmFjd20lMjIlM0ElMjJtYXliZSUyMiUyQyUyMmFjd210cyUyMiUzQWZhbHNlJTJDJTIyb2NwdCUyMiUzQWZhbHNlJTJDJTIydmNvJTIyJTNBJTIycHJvYmFibHklMjIlMkMlMjJ2Y290cyUyMiUzQWZhbHNlJTJDJTIydmNoJTIyJTNBJTIyJTIyJTJDJTIydmNodHMlMjIlM0FmYWxzZSUyQyUyMnZjdyUyMiUzQSUyMnByb2JhYmx5JTIyJTJDJTIydmN3dHMlMjIlM0F0cnVlJTJDJTIydmMzJTIyJTNBJTIyJTIyJTJDJTIydmMzdHMlMjIlM0FmYWxzZSUyQyUyMnZjbXAlMjIlM0ElMjIlMjIlMkMlMjJ2Y21wdHMlMjIlM0FmYWxzZSUyQyUyMnZjcSUyMiUzQSUyMiUyMiUyQyUyMnZjcXRzJTIyJTNBZmFsc2UlMkMlMjJ2YzElMjIlM0ElMjJwcm9iYWJseSUyMiUyQyUyMnZjMXRzJTIyJTNBdHJ1ZSUyQyUyMmR2bSUyMiUzQTglMkMlMjJzcXQlMjIlM0FmYWxzZSUyQyUyMnNvJTIyJTNBJTIybGFuZHNjYXBlLXByaW1hcnklMjIlMkMlMjJ3ZHclMjIlM0FmYWxzZSUyQyUyMmVjcGMlMjIlM0FmYWxzZSUyQyUyMmxncyUyMiUzQXRydWUlMkMlMjJsZ3NvZCUyMiUzQWZhbHNlJTJDJTIycHNuJTIyJTNBdHJ1ZSUyQyUyMmVkcCUyMiUzQXRydWUlMkMlMjJhZGR0JTIyJTNBdHJ1ZSUyQyUyMndzZGMlMjIlM0F0cnVlJTJDJTIyY2NzciUyMiUzQXRydWUlMkMlMjJudWFkJTIyJTNBdHJ1ZSUyQyUyMmJjZGElMjIlM0FmYWxzZSUyQyUyMmlkbiUyMiUzQXRydWUlMkMlMjJjYXBpJTIyJTNBZmFsc2UlMkMlMjJzdmRlJTIyJTNBZmFsc2UlMkMlMjJ2cGJxJTIyJTNBdHJ1ZSUyQyUyMnVjZHYlMjIlM0FmYWxzZSUyQyUyMnNwd24lMjIlM0FmYWxzZSUyQyUyMmVtdCUyMiUzQWZhbHNlJTJDJTIyYmZyJTIyJTNBZmFsc2UlMkMlMjJkYm92JTIyJTNBZmFsc2UlMkMlMjJwcm0lMjIlM0F0cnVlJTJDJTIydHpwJTIyJTNBJTIyQXNpYSUyRlNpbmdhcG9yZSUyMiUyQyUyMmN2cyUyMiUzQXRydWUlMkMlMjJ1c2IlMjIlM0ElMjJkZWZpbmVkJTIyJTJDJTIyanNldCUyMiUzQTE2OTQwOTUwNTElN0QmZXZlbnRDb3VudGVycz0lNUIlNUQmanNUeXBlPWNoJmNpZD02T24xSUVzMEdvbjg2V3VIeXU5anNyTU1vRVJ+dFN3b1NvdkNOMEw1SVZHc09KZHFFczJFdVJmanFCVW5zYzNjYW95cTNuSHl6Q25kYXBMSkpjb2gySDg3M1Zka3FRM3QwZDB6NjUxQWZUaFVQNWk3dzRUZ29NTGg4MG85VVlZMiZkZGs9NzdEQzBGRkJBQTBCNzc1NzBGNkI0MTRGOEU1QkRCJlJlZmVyZXI9aHR0cHMlMjUzQSUyNTJGJTI1MkZnZW8uY2FwdGNoYS1kZWxpdmVyeS5jb20lMjUyRmNhcHRjaGElMjUyRiUyNTNGaW5pdGlhbENpZCUyNTNEQUhybHFBQUFBQU1BVUZjdkJ6bnAtYkFBZEE1dm53JTI1MjUzRCUyNTI1M0QlMjUyNmhhc2glMjUzRDc3REMwRkZCQUEwQjc3NTcwRjZCNDE0RjhFNUJEQiUyNTI2Y2lkJTI1M0Q2T24xSUVzMEdvbjg2V3VIeXU5anNyTU1vRVIlN0V0U3dvU292Q04wTDVJVkdzT0pkcUVzMkV1UmZqcUJVbnNjM2Nhb3lxM25IeXpDbmRhcExKSmNvaDJIODczVmRrcVEzdDBkMHo2NTFBZlRoVVA1aTd3NFRnb01MaDgwbzlVWVkyJTI1MjZ0JTI1M0RidiUyNTI2cmVmZXJlciUyNTNEaHR0cHMlMjUyNTNBJTI1MjUyRiUyNTI1MkZhbGxlZ3JvLnBsJTI1MjUyRiUyNTI2cyUyNTNEMjk3MDElMjUyNmUlMjUzRDBlNTU1MmZlMjZkODM2OGZiNjFkZTVhMjY3NWU3ODEzOGJiZDE5NTRmNzJkYTY0YTc1MmRkM2IzZDZmMDM0NGEmcmVxdWVzdD0lMjUyRmNhcHRjaGElMjUyRiUyNTNGaW5pdGlhbENpZCUyNTNEQUhybHFBQUFBQU1BVUZjdkJ6bnAtYkFBZEE1dm53JTI1MjUzRCUyNTI1M0QlMjUyNmhhc2glMjUzRDc3REMwRkZCQUEwQjc3NTcwRjZCNDE0RjhFNUJEQiUyNTI2Y2lkJTI1M0Q2T24xSUVzMEdvbjg2V3VIeXU5anNyTU1vRVIlN0V0U3dvU292Q04wTDVJVkdzT0pkcUVzMkV1UmZqcUJVbnNjM2Nhb3lxM25IeXpDbmRhcExKSmNvaDJIODczVmRrcVEzdDBkMHo2NTFBZlRoVVA1aTd3NFRnb01MaDgwbzlVWVkyJTI1MjZ0JTI1M0RidiUyNTI2cmVmZXJlciUyNTNEaHR0cHMlMjUyNTNBJTI1MjUyRiUyNTI1MkZhbGxlZ3JvLnBsJTI1MjUyRiUyNTI2cyUyNTNEMjk3MDElMjUyNmUlMjUzRDBlNTU1MmZlMjZkODM2OGZiNjFkZTVhMjY3NWU3ODEzOGJiZDE5NTRmNzJkYTY0YTc1MmRkM2IzZDZmMDM0NGEmcmVzcG9uc2VQYWdlPWhhcmQtYmxvY2smZGR2PTQuMTMuMA=="
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 427492.003897,
+        "wallTime": 1694095051.89514,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "<computed>",
+                        "scriptId": "21",
+                        "url": "https://js.datadome.co/tags.js",
+                        "lineNumber": 1,
+                        "columnNumber": 231910
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "21",
+                        "url": "https://js.datadome.co/tags.js",
+                        "lineNumber": 1,
+                        "columnNumber": 267498
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "ED8F6F540F238223ED058F2C1415C771",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "datadome",
+                    "value": "6On1IEs0Gon86WuHyu9jsrMMoER~tSwoSovCN0L5IVGsOJdqEs2EuRfjqBUnsc3caoyq3nHyzCndapLJJcoh2H873VdkqQ3t0d0z651AfThUP5i7w4TgoMLh80o9UYY2",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1725631051.619568,
+                    "size": 136,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_cmuid",
+                    "value": "9b952ccf-0b06-4451-b50a-dccf477f5b9d",
+                    "domain": ".allegro.pl",
+                    "path": "/",
+                    "expires": 1728655051,
+                    "size": 42,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

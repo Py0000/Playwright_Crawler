@@ -46,12 +46,12 @@ def page_scroll_helper(page, current_height):
 
     while True:
         # randomly break the scoll to make it more like human scrolling
-        rand_scoll_divider = random.randint(3,10)
+        rand_scoll_divider = random.randint(6,10)
         scroll_distance = page_height / rand_scoll_divider
 
         # scroll to selected portion of page with random small delays
         page.evaluate(f'window.scrollTo(0, {current_height + scroll_distance});')
-        time.sleep(random.uniform(0.5, 1.0))
+        time.sleep(random.uniform(0.02, 0.05))
 
         current_height += scroll_distance
         if (current_height >= page_height):
@@ -62,7 +62,7 @@ def page_scroll_helper(page, current_height):
 
 def page_scroll(page):
     last_height = page.evaluate('() => document.documentElement.scrollHeight')
-    last_height = last_height/random.randint(3, 5)
+    last_height = last_height/random.randint(4, 6)
 
     try:
         current_height = 0

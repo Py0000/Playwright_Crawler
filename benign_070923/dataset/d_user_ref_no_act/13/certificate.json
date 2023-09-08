@@ -1,0 +1,33 @@
+{
+    "website url": "https://azure.microsoft.com/en-us/",
+    "hostname": "azure.microsoft.com",
+    "subject": {
+        "countryName": "US",
+        "stateOrProvinceName": "WA",
+        "localityName": "Redmond",
+        "organizationName": "Microsoft Corporation",
+        "commonName": "azure.microsoft.com"
+    },
+    "issuer": {
+        "countryName": "US",
+        "organizationName": "Microsoft Corporation",
+        "commonName": "Microsoft Azure TLS Issuing CA 05"
+    },
+    "version": 3,
+    "not_before": "Oct 28 22:44:52 2022 GMT",
+    "not_after": "Oct 23 22:44:52 2023 GMT",
+    "valid_period": 360,
+    "serial_number": "33006479BFE30713C26149CA380000006479BF",
+    "signature_algo": "sha384WithRSAEncryption",
+    "protocol_version": "TLSv1.3",
+    "alternate subject name": [
+        [
+            "DNS",
+            "dialtone.azure.microsoft.com"
+        ],
+        [
+            "DNS",
+            "azure.microsoft.com"
+        ]
+    ]
+}

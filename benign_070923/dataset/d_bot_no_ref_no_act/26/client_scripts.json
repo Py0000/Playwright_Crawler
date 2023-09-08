@@ -1,0 +1,3 @@
+{
+    "script_1": "\ntry {\n   if (typeof window.MtBts === 'undefined') {\n    window.MtBts = function() {\n\tmetric = function(url, wait)\n\t{\t\n            setTimeout(function() {\n                var e = new Image();\n                e.src = url;\n            }, wait);\n\t}\n\tvar intervals = [0, 10];\n\tvar inlen = intervals.length;\n\tfor (var k = 0; k < inlen; ++k)\n            this.metric(\"https://pixel.mathtag.com/comp/img?mt_id=99&ns=xx&bcdv=\"+k, intervals[k] * 1000);\n    };\n    window.MtBts()\n}\n/**/\n\n}\ncatch(ex)\n{\n   new Image().src=\"//pixel.mathtag.com/error/img?error_domain=wrap_iframe&what=\"+encodeURIComponent(ex.message);\n}\n"
+}

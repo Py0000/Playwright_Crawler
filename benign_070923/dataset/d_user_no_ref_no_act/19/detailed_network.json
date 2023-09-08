@@ -1,0 +1,1398 @@
+[
+    {
+        "requestId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.icloud.com/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425852.354295,
+        "wallTime": 1694093412.24533,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.2",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://cdn.apple-cloudkit.com/ck/2/cloudkit.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 425852.381121,
+        "wallTime": 1694093412.271857,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.icloud.com/",
+            "lineNumber": 57,
+            "columnNumber": 95
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.3",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.apple.com/wss/fonts/?families=SF+Pro,v3",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 425852.382829,
+        "wallTime": 1694093412.273764,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 111,
+                        "columnNumber": 1005
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 111,
+                        "columnNumber": 1020
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.4",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.apple.com/wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "Origin": "https://www.icloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 425852.38334,
+        "wallTime": 1694093412.274119,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 111,
+                        "columnNumber": 1201
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 111,
+                        "columnNumber": 1217
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.5",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_regular.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "Origin": "https://www.icloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 425852.383761,
+        "wallTime": 1694093412.274544,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 111,
+                        "columnNumber": 1201
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 111,
+                        "columnNumber": 1217
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.6",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.apple.com/wss/fonts/SF-Pro-Display/v3/sf-pro-display_semibold.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "Origin": "https://www.icloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 425852.384154,
+        "wallTime": 1694093412.274915,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 111,
+                        "columnNumber": 1201
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 111,
+                        "columnNumber": 1217
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.7",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_semibold.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "Origin": "https://www.icloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 425852.384654,
+        "wallTime": 1694093412.2754,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 111,
+                        "columnNumber": 1201
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 111,
+                        "columnNumber": 1217
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.8",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_light.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "Origin": "https://www.icloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 425852.384935,
+        "wallTime": 1694093412.275675,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 111,
+                        "columnNumber": 1201
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 111,
+                        "columnNumber": 1217
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.9",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_bold.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "Origin": "https://www.icloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 425852.385193,
+        "wallTime": 1694093412.275922,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 111,
+                        "columnNumber": 1201
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "9",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 111,
+                        "columnNumber": 1217
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.10",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://setup.icloud.com/setup/ws/1/validate?clientBuildNumber=2317Hotfix57&clientMasteringNumber=2317Hotfix57&clientId=3aac6f2d-065f-4945-8f76-bca750c21794",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425852.417723,
+        "wallTime": 1694093412.309361,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 247,
+                        "columnNumber": 36
+                    },
+                    {
+                        "functionName": "earlyFetchAuthenticationDetails",
+                        "scriptId": "11",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 254,
+                        "columnNumber": 10
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 280,
+                        "columnNumber": 38
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 448,
+                        "columnNumber": 2
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Fetch",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.11",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.icloud.com/system/icloud.com/current/static/wallpaper.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": true
+        },
+        "timestamp": 425852.427218,
+        "wallTime": 1694093412.317976,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 344,
+                        "columnNumber": 18
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://www.icloud.com/",
+                        "lineNumber": 448,
+                        "columnNumber": 2
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.12",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425852.431973,
+        "wallTime": 1694093412.322694,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.icloud.com/",
+            "lineNumber": 454,
+            "columnNumber": 121
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.13",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425852.432419,
+        "wallTime": 1694093412.323186,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.icloud.com/",
+            "lineNumber": 456,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.126",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/images@1x.bin",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425852.699007,
+        "wallTime": 1694093412.661408,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "n",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 2694
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 2702
+                    },
+                    {
+                        "functionName": "__CW_loadBinaries",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 2706
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 3039
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.127",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.icloud.com/system/icloud.com/current/en-gb/strings.json?clientBuildNumber=2317Hotfix57&clientMasteringNumber=2317Hotfix57&clientId=3aac6f2d-065f-4945-8f76-bca750c21794",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425852.948465,
+        "wallTime": 1694093412.873798,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Hd",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 1713815
+                    },
+                    {
+                        "functionName": "e.fetchURL",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 1715436
+                    },
+                    {
+                        "functionName": "e.fetchJSON",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 1715754
+                    },
+                    {
+                        "functionName": "r.fetchStringsJson",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 1897863
+                    },
+                    {
+                        "functionName": "r.setCurrentLocaleAndRegionFormat",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 1897499
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 3080061
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 3081470
+                    },
+                    {
+                        "functionName": "n",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 3716
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 4663
+                    },
+                    {
+                        "functionName": "n",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 3716
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 4548
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 4559
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Fetch",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.128",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.icloud.com/locales/5/en-GB.json?clientBuildNumber=2317Hotfix57&clientMasteringNumber=2317Hotfix57&clientId=3aac6f2d-065f-4945-8f76-bca750c21794",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425852.983978,
+        "wallTime": 1694093412.875182,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Hd",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 1713815
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 1898428
+                    },
+                    {
+                        "functionName": "i",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 1898497
+                    },
+                    {
+                        "functionName": "n.credentials",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 1898851
+                    },
+                    {
+                        "functionName": "r.loadRegionFormattingRules",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 1898890
+                    },
+                    {
+                        "functionName": "r.setCurrentLocaleAndRegionFormat",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 1897581
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 3080061
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 3081470
+                    },
+                    {
+                        "functionName": "n",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 3716
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 4663
+                    },
+                    {
+                        "functionName": "n",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 3716
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 4548
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 4559
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Fetch",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.129",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 425852.996348,
+        "wallTime": 1694093412.887085,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.icloud.com/",
+            "lineNumber": 461,
+            "columnNumber": 15
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.136",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "blob:https://www.icloud.com/e1353ea7-db08-4549-9402-87f3827552f8",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425853.102862,
+        "wallTime": 1694093412.993613,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.icloud.com/",
+            "lineNumber": 461,
+            "columnNumber": 15
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.137",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "blob:https://www.icloud.com/7b2d1d96-50d0-44bd-8a36-a6aa6f5e478a",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425853.103204,
+        "wallTime": 1694093412.993928,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.icloud.com/",
+            "lineNumber": 461,
+            "columnNumber": 15
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.138",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "blob:https://www.icloud.com/d36b8457-e9e6-4332-94e7-5793787dbe57",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425853.103441,
+        "wallTime": 1694093412.994169,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.icloud.com/",
+            "lineNumber": 461,
+            "columnNumber": 15
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.139",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "blob:https://www.icloud.com/6a2a2f8e-14b2-4823-9171-569287f333b4",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425853.103671,
+        "wallTime": 1694093412.994393,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.icloud.com/",
+            "lineNumber": 461,
+            "columnNumber": 15
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.140",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "blob:https://www.icloud.com/8dae9aa0-9217-4c2d-910c-bc3f3835c392",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425853.103902,
+        "wallTime": 1694093412.994632,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.icloud.com/",
+            "lineNumber": 461,
+            "columnNumber": 15
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.141",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "blob:https://www.icloud.com/f40761aa-924c-4a43-b476-ce069284b4c6",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425853.104125,
+        "wallTime": 1694093412.994847,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.icloud.com/",
+            "lineNumber": 461,
+            "columnNumber": 15
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.142",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "data:text/css;base64,LmNsb3Vkb3MtYWxlcnQgLmFsZXJ0LW1haW4tY29udGVudCAuYWxlcnQtaWNvbntiYWNrZ3JvdW5kLWltYWdlOnVybCgiYmxvYjpodHRwczovL3d3dy5pY2xvdWQuY29tL2UxMzUzZWE3LWRiMDgtNDU0OS05NDAyLTg3ZjM4Mjc1NTJmOCIpfQouY2xvdWRvcy1hbGVydCAuYWxlcnQtbWFpbi1jb250ZW50IC5hbGVydC1pY29uLmljbG91ZC1pY29ue2JhY2tncm91bmQtaW1hZ2U6dXJsKCJibG9iOmh0dHBzOi8vd3d3LmljbG91ZC5jb20vN2IyZDFkOTYtNTBkMC00NGJkLThhMzYtYTZhYTZmNWU0NzhhIil9Ci5jbG91ZG9zLWFsZXJ0IC5hbGVydC1tYWluLWNvbnRlbnQgLmFsZXJ0LWljb24ucGhvdG9zLWljb257YmFja2dyb3VuZC1pbWFnZTp1cmwoImJsb2I6aHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9kMzZiODQ1Ny1lOWU2LTQzMzItOTRlNy01NzkzNzg3ZGJlNTciKX0KLmRvY3VtZW50LXJvdyAuaWNvbiAuZXhjZWwtaWNvbntiYWNrZ3JvdW5kLWltYWdlOnVybCgiYmxvYjpodHRwczovL3d3dy5pY2xvdWQuY29tLzZhMmEyZjhlLTE0YjItNDgyMy05MTcxLTU2OTI4N2YzMzNiNCIpfQouZG9jdW1lbnQtcm93IC5pY29uIC5wcHQtaWNvbntiYWNrZ3JvdW5kLWltYWdlOnVybCgiYmxvYjpodHRwczovL3d3dy5pY2xvdWQuY29tLzhkYWU5YWEwLTkyMTctNGMyZC05MTBjLWJjM2YzODM1YzM5MiIpfQouZG9jdW1lbnQtcm93IC5pY29uIC53b3JkLWljb257YmFja2dyb3VuZC1pbWFnZTp1cmwoImJsb2I6aHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9mNDA3NjFhYS05MjRjLTRhNDMtYjQ3Ni1jZTA2OTI4NGI0YzYiKX0K",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 425853.118693,
+        "wallTime": 1694093413.009515,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 1544
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 1559
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.143",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://appleid.cdn-apple.com/appleauth/static/jsapi/authService.latest.min.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 425853.124671,
+        "wallTime": 1694093413.015664,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "r.updateConfiguration",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 1583205
+                    },
+                    {
+                        "functionName": "lY",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 3070182
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/main.js",
+                        "lineNumber": 10,
+                        "columnNumber": 3049258
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.144",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/fc2b7d9c646c188a2aed32221a4fe795.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425853.138136,
+        "wallTime": 1694093413.028862,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.icloud.com/",
+            "lineNumber": 461,
+            "columnNumber": 15
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.145",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/e6ffc52737977fe1700d423a10874d0b.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425853.138378,
+        "wallTime": 1694093413.029105,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.icloud.com/",
+            "lineNumber": 461,
+            "columnNumber": 15
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.146",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.icloud.com/system/icloud.com/2317Hotfix57/en-us/cb89b6112cb1d8e18fac821612c25717.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425853.138582,
+        "wallTime": 1694093413.029299,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.icloud.com/",
+            "lineNumber": 461,
+            "columnNumber": 15
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "16720.153",
+        "loaderId": "6FEE868127EBBAB2D91D646BDF3E5904",
+        "documentURL": "https://www.icloud.com/",
+        "request": {
+            "url": "https://www.icloud.com/system/icloud.com/current/static/fpo@1x.mp4",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.icloud.com/",
+                "Accept-Encoding": "identity;q=1, *;q=0",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "Range": "bytes=0-",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425853.18331,
+        "wallTime": 1694093413.074039,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.icloud.com/",
+            "lineNumber": 461,
+            "columnNumber": 15
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Media",
+        "frameId": "32D21B44C9CA8AB030E410686E634261",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

@@ -1,0 +1,514 @@
+[
+    {
+        "requestId": "8EE327650A6F44F79A6C48E900C42AD2",
+        "loaderId": "8EE327650A6F44F79A6C48E900C42AD2",
+        "documentURL": "https://www.wikipedia.org/",
+        "request": {
+            "url": "https://www.wikipedia.org/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425244.277368,
+        "wallTime": 1694092804.168046,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "46B662674746A39C04156AD5F557E9A4",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "25508.2",
+        "loaderId": "8EE327650A6F44F79A6C48E900C42AD2",
+        "documentURL": "https://www.wikipedia.org/",
+        "request": {
+            "url": "https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.wikipedia.org/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425244.317814,
+        "wallTime": 1694092804.208566,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wikipedia.org/",
+            "lineNumber": 29,
+            "columnNumber": 270
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "46B662674746A39C04156AD5F557E9A4",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "NetworkProbeLimit",
+                    "value": "0.001",
+                    "domain": "www.wikipedia.org",
+                    "path": "/",
+                    "expires": 1694096404.221194,
+                    "size": 22,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "WMF-Last-Access-Global",
+                    "value": "07-Sep-2023",
+                    "domain": ".wikipedia.org",
+                    "path": "/",
+                    "expires": 1696853446.20044,
+                    "size": 33,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "GeoIP",
+                    "value": "SG:::1.29:103.85:v4",
+                    "domain": ".wikipedia.org",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 24,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "WMF-Last-Access",
+                    "value": "07-Sep-2023",
+                    "domain": "www.wikipedia.org",
+                    "path": "/",
+                    "expires": 1696853446.200392,
+                    "size": 26,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "25508.3",
+        "loaderId": "8EE327650A6F44F79A6C48E900C42AD2",
+        "documentURL": "https://www.wikipedia.org/",
+        "request": {
+            "url": "https://www.wikipedia.org/portal/wikipedia.org/assets/js/index-86c7e2579d.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.wikipedia.org/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425244.318228,
+        "wallTime": 1694092804.208928,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wikipedia.org/",
+            "lineNumber": 818,
+            "columnNumber": 65
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "46B662674746A39C04156AD5F557E9A4",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "NetworkProbeLimit",
+                    "value": "0.001",
+                    "domain": "www.wikipedia.org",
+                    "path": "/",
+                    "expires": 1694096404.229994,
+                    "size": 22,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "WMF-Last-Access-Global",
+                    "value": "07-Sep-2023",
+                    "domain": ".wikipedia.org",
+                    "path": "/",
+                    "expires": 1696853446.20044,
+                    "size": 33,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "GeoIP",
+                    "value": "SG:::1.29:103.85:v4",
+                    "domain": ".wikipedia.org",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 24,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "WMF-Last-Access",
+                    "value": "07-Sep-2023",
+                    "domain": "www.wikipedia.org",
+                    "path": "/",
+                    "expires": 1696853446.200392,
+                    "size": 26,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "25508.4",
+        "loaderId": "8EE327650A6F44F79A6C48E900C42AD2",
+        "documentURL": "https://www.wikipedia.org/",
+        "request": {
+            "url": "https://www.wikipedia.org/portal/wikipedia.org/assets/js/gt-ie9-ce3fe8e88d.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.wikipedia.org/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425244.318456,
+        "wallTime": 1694092804.209199,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wikipedia.org/",
+            "lineNumber": 820,
+            "columnNumber": 66
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "46B662674746A39C04156AD5F557E9A4",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "NetworkProbeLimit",
+                    "value": "0.001",
+                    "domain": "www.wikipedia.org",
+                    "path": "/",
+                    "expires": 1694096404.229994,
+                    "size": 22,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "WMF-Last-Access-Global",
+                    "value": "07-Sep-2023",
+                    "domain": ".wikipedia.org",
+                    "path": "/",
+                    "expires": 1696853446.20044,
+                    "size": 33,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "GeoIP",
+                    "value": "SG:::1.29:103.85:v4",
+                    "domain": ".wikipedia.org",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 24,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "WMF-Last-Access",
+                    "value": "07-Sep-2023",
+                    "domain": "www.wikipedia.org",
+                    "path": "/",
+                    "expires": 1696853446.200392,
+                    "size": 26,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "25508.8",
+        "loaderId": "8EE327650A6F44F79A6C48E900C42AD2",
+        "documentURL": "https://www.wikipedia.org/",
+        "request": {
+            "url": "https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-8bb90067.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.wikipedia.org/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425244.3315,
+        "wallTime": 1694092804.222255,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wikipedia.org/",
+            "lineNumber": 818,
+            "columnNumber": 74
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "46B662674746A39C04156AD5F557E9A4",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "NetworkProbeLimit",
+                    "value": "0.001",
+                    "domain": "www.wikipedia.org",
+                    "path": "/",
+                    "expires": 1694096404.247519,
+                    "size": 22,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "WMF-Last-Access-Global",
+                    "value": "07-Sep-2023",
+                    "domain": ".wikipedia.org",
+                    "path": "/",
+                    "expires": 1696853446.20044,
+                    "size": 33,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "GeoIP",
+                    "value": "SG:::1.29:103.85:v4",
+                    "domain": ".wikipedia.org",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 24,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "WMF-Last-Access",
+                    "value": "07-Sep-2023",
+                    "domain": "www.wikipedia.org",
+                    "path": "/",
+                    "expires": 1696853446.200392,
+                    "size": 26,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "25508.9",
+        "loaderId": "8EE327650A6F44F79A6C48E900C42AD2",
+        "documentURL": "https://www.wikipedia.org/",
+        "request": {
+            "url": "https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikinews-logo_sister.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.wikipedia.org/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 425244.352785,
+        "wallTime": 1694092804.243541,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wikipedia.org/",
+            "lineNumber": 818,
+            "columnNumber": 74
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "46B662674746A39C04156AD5F557E9A4",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "NetworkProbeLimit",
+                    "value": "0.001",
+                    "domain": "www.wikipedia.org",
+                    "path": "/",
+                    "expires": 1694096404.247519,
+                    "size": 22,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "WMF-Last-Access-Global",
+                    "value": "07-Sep-2023",
+                    "domain": ".wikipedia.org",
+                    "path": "/",
+                    "expires": 1696853446.20044,
+                    "size": 33,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "GeoIP",
+                    "value": "SG:::1.29:103.85:v4",
+                    "domain": ".wikipedia.org",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 24,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "WMF-Last-Access",
+                    "value": "07-Sep-2023",
+                    "domain": "www.wikipedia.org",
+                    "path": "/",
+                    "expires": 1696853446.200392,
+                    "size": 26,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

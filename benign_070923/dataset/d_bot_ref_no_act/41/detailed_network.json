@@ -1,0 +1,136 @@
+[
+    {
+        "requestId": "A7E088C9043A9BE162E0996A037EDF5D",
+        "loaderId": "A7E088C9043A9BE162E0996A037EDF5D",
+        "documentURL": "https://www.atb.com/",
+        "request": {
+            "url": "https://www.atb.com/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 429237.398177,
+        "wallTime": 1694096797.28902,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "6105BA6C8FBF4640720A23CF9C7F435E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "24388.2",
+        "loaderId": "A7E088C9043A9BE162E0996A037EDF5D",
+        "documentURL": "https://www.atb.com/",
+        "request": {
+            "url": "https://www.atb.com/cdn-cgi/styles/cf.errors.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 429237.538491,
+        "wallTime": 1694096797.429305,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.atb.com/",
+            "lineNumber": 12,
+            "columnNumber": 81
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "6105BA6C8FBF4640720A23CF9C7F435E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "24388.4",
+        "loaderId": "A7E088C9043A9BE162E0996A037EDF5D",
+        "documentURL": "https://www.atb.com/",
+        "request": {
+            "url": "https://www.atb.com/cdn-cgi/images/browser-bar.png?1376755637",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 429237.584556,
+        "wallTime": 1694096797.475343,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.atb.com/cdn-cgi/styles/cf.errors.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "6105BA6C8FBF4640720A23CF9C7F435E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "24388.5",
+        "loaderId": "A7E088C9043A9BE162E0996A037EDF5D",
+        "documentURL": "https://www.atb.com/",
+        "request": {
+            "url": "https://www.atb.com/cdn-cgi/images/cf-no-screenshot-error.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 429237.584851,
+        "wallTime": 1694096797.475625,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.atb.com/cdn-cgi/styles/cf.errors.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "6105BA6C8FBF4640720A23CF9C7F435E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

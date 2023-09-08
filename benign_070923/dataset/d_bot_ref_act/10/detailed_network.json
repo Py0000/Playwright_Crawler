@@ -1,0 +1,4422 @@
+[
+    {
+        "requestId": "387F835411EF7C46F77FF50C5794707C",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://outlook.live.com/owa/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 424637.38643,
+        "wallTime": 1694092197.277331,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "27624.2",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.59865,
+        "wallTime": 1694092197.490838,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 0,
+            "columnNumber": 2222
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.3",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/javascripts/vh-check.min.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.600325,
+        "wallTime": 1694092197.491886,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 23,
+            "columnNumber": 110
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.4",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/javascripts/jquery-3.6.0.min.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.601415,
+        "wallTime": 1694092197.49296,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 23,
+            "columnNumber": 220
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.5",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/javascripts/lazyload.min.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.601938,
+        "wallTime": 1694092197.493466,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 23,
+            "columnNumber": 326
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.6",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/javascripts/jquery.onscreen.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.60328,
+        "wallTime": 1694092197.494884,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 23,
+            "columnNumber": 435
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.7",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/javascripts/device-utils.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.60393,
+        "wallTime": 1694092197.495458,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 23,
+            "columnNumber": 541
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.8",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/javascripts/dom-scripts.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.604373,
+        "wallTime": 1694092197.495875,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 23,
+            "columnNumber": 646
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.9",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.605471,
+        "wallTime": 1694092197.497085,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 23,
+            "columnNumber": 765
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.10",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/mobile-scenario-triptych-android-01.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.606394,
+        "wallTime": 1694092197.497911,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 20045
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.11",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/mobile-scenario-triptych-android-02.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.606618,
+        "wallTime": 1694092197.498129,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 20199
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.12",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/mobile-scenario-triptych-android-03.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.60679,
+        "wallTime": 1694092197.498299,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 20353
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.13",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/mobile-scenario-triptych-ios-01.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.606965,
+        "wallTime": 1694092197.498511,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 20811
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.14",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/mobile-scenario-triptych-ios-02.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.607234,
+        "wallTime": 1694092197.498796,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 20961
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.15",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/mobile-scenario-triptych-ios-03.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.607583,
+        "wallTime": 1694092197.4991,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 21111
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.17",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://web.vortex-extended.data.microsoft.com/collect/v1/t.js?ver=%272.1%27&name=%27Ms.Webi.PageView%27&time=%272023-09-07T13%3A09%3A57.561Z%27&os=%27Unknown%27&appId=%27JS%3AOutlookCom%27&-ver=%271.0%27&-impressionGuid=%27baa14ef6-776b-4ff4-82ee-9fbea4544e71%27&-pageName=%27Undefined%27&-uri=%27https%3A%2F%2Foutlook.live.com%2Fowa%2F%27&-referrerUri=%27https%3A%2F%2Fwww.google.com%2F%27&-resHeight=720&-resWidth=1280&-pageTags=%27%7B%22metaTags%22%3A%7B%7D%7D%27&-behavior=0&*baseType=%27Ms.Content.PageView%27&*cookieEnabled=true&*isJs=true&*title=%27Outlook%20%E2%80%93%20free%20personal%20email%20and%20calendar%20from%20Microsoft%27&*isLoggedIn=false&*flashInstalled=false&ext-javascript-ver=%271.1%27&ext-javascript-libVer=%274.3.5%27&ext-javascript-domain=%27outlook.live.com%27&ext-javascript-userConsent=false&$mscomCookies=false",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.678751,
+        "wallTime": 1694092197.571696,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "bt",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 17662
+                    },
+                    {
+                        "functionName": "awa.writeEvent",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 23955
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 13207
+                    },
+                    {
+                        "functionName": "awa.vortexEvents.SendOrScheduleEvent",
+                        "scriptId": "12",
+                        "url": "https://outlook.live.com/owa/",
+                        "lineNumber": 8,
+                        "columnNumber": 12
+                    },
+                    {
+                        "functionName": "f",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 44965
+                    },
+                    {
+                        "functionName": "ct",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 39151
+                    },
+                    {
+                        "functionName": "ui",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 34492
+                    },
+                    {
+                        "functionName": "awa.init",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 21601
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://outlook.live.com/owa/",
+                        "lineNumber": 22,
+                        "columnNumber": 12
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.25",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://www.clarity.ms/tag/7z24oshlqt",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.741111,
+        "wallTime": 1694092197.632822,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "19",
+                        "url": "https://outlook.live.com/owa/",
+                        "lineNumber": 141,
+                        "columnNumber": 52
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "19",
+                        "url": "https://outlook.live.com/owa/",
+                        "lineNumber": 142,
+                        "columnNumber": 6
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "3C23A3DE78C7BBC3231BE44FF79A106A",
+        "loaderId": "3C23A3DE78C7BBC3231BE44FF79A106A",
+        "documentURL": "https://outlook.live.com/owa/prefetch.aspx",
+        "request": {
+            "url": "https://outlook.live.com/owa/prefetch.aspx",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://outlook.live.com/owa/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 424637.770093,
+        "wallTime": 1694092197.660969,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28137
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "88DA748E363F2982AC4AFD9371AD9CF3",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.37",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/fabric-close-x.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.77405,
+        "wallTime": 1694092197.665588,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.38",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/download-app-badge-ios.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.776043,
+        "wallTime": 1694092197.667583,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.39",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/download-app-badge-android.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.776765,
+        "wallTime": 1694092197.668311,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.40",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/masthead-alt-06-wide-large.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.779475,
+        "wallTime": 1694092197.671035,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.41",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/ms-wordmark-white.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.783769,
+        "wallTime": 1694092197.675351,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.42",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/triangle-up.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.786458,
+        "wallTime": 1694092197.679652,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.43",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/outlook-icon.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.79123,
+        "wallTime": 1694092197.682897,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.44",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/security-feature-microsoft.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.797063,
+        "wallTime": 1694092197.688633,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.45",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/security-feature-encryption.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.799404,
+        "wallTime": 1694092197.690971,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.46",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/security-feature-attachments.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.801283,
+        "wallTime": 1694092197.692865,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.47",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/premium-diamond-03.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.803248,
+        "wallTime": 1694092197.694833,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.48",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/security-feature-onedrive.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.804576,
+        "wallTime": 1694092197.697071,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.49",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/productivity-app-drop-shadow.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.808438,
+        "wallTime": 1694092197.699977,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.50",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/hotmail-ornament.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.820009,
+        "wallTime": 1694092197.711556,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.51",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/glyph-apple.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.828175,
+        "wallTime": 1694092197.71976,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.52",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/glyph-googleplay.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.828792,
+        "wallTime": 1694092197.720937,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.28",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/fonts/segoeui-regular.woff",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://outlook.live.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.832405,
+        "wallTime": 1694092197.725632,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.29",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/fonts/segoeui-semibold.woff",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://outlook.live.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424637.83645,
+        "wallTime": 1694092197.728061,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.53",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://web.vortex-extended.data.microsoft.com/collect/v1/t.js?ver=%272.1%27&name=%27Ms.Webi.PageView%27&time=%272023-09-07T13%3A09%3A57.561Z%27&os=%27Unknown%27&appId=%27JS%3AOutlookCom%27&-ver=%271.0%27&-impressionGuid=%27baa14ef6-776b-4ff4-82ee-9fbea4544e71%27&-pageName=%27Undefined%27&-uri=%27https%3A%2F%2Foutlook.live.com%2Fowa%2F%27&-referrerUri=%27https%3A%2F%2Fwww.google.com%2F%27&-resHeight=720&-resWidth=1280&-pageTags=%27%7B%22metaTags%22%3A%7B%7D%7D%27&-behavior=0&*baseType=%27Ms.Content.PageView%27&*cookieEnabled=true&*isJs=true&*title=%27Outlook%20%E2%80%93%20free%20personal%20email%20and%20calendar%20from%20Microsoft%27&*isLoggedIn=false&*flashInstalled=false&ext-javascript-ver=%271.1%27&ext-javascript-libVer=%274.3.5%27&ext-javascript-domain=%27outlook.live.com%27&ext-javascript-userConsent=false&$mscomCookies=false",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.098461,
+        "wallTime": 1694092197.990226,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "bt",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 17662
+                    },
+                    {
+                        "functionName": "awa.writeEvent",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 23955
+                    },
+                    {
+                        "functionName": "r.onerror",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 17622
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.55",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/arrow-rightward-blue.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.443635,
+        "wallTime": 1694092198.335172,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/stylesheets/compiled.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.56",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/accessibility-scene.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.472196,
+        "wallTime": 1694092198.363792,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.57",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/outlook-mobile-apps-ios.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.486269,
+        "wallTime": 1694092198.377822,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.58",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/outlook-mobile-apps-android.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.486875,
+        "wallTime": 1694092198.378397,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.59",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/efficient-commuter.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.487343,
+        "wallTime": 1694092198.378873,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.60",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/everything-in-one-place-scenario-base.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.488055,
+        "wallTime": 1694092198.379587,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.61",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/everything-in-one-place-scenario-02.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.488665,
+        "wallTime": 1694092198.380279,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.62",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/everything-in-one-place-scenario-03.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.492195,
+        "wallTime": 1694092198.38385,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.63",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/everything-in-one-place-scenario-04.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.495201,
+        "wallTime": 1694092198.386788,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.64",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/everything-in-one-place-scenario-05.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.496937,
+        "wallTime": 1694092198.388494,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.65",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/security-large.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.498728,
+        "wallTime": 1694092198.390286,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.66",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/productivity-app-correct-ratio-powerpoint.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.50051,
+        "wallTime": 1694092198.392087,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.67",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/productivity-app-correct-ratio-word.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.501517,
+        "wallTime": 1694092198.394586,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.68",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/productivity-app-correct-ratio-excel.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.504422,
+        "wallTime": 1694092198.396022,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.69",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/app-icons-in-orbit-base.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.506163,
+        "wallTime": 1694092198.397844,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.70",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/apps-suite-icon-word.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.507191,
+        "wallTime": 1694092198.398763,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.71",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/apps-suite-icon-powerpoint.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.509043,
+        "wallTime": 1694092198.400617,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.72",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/apps-suite-icon-onedrive.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.510168,
+        "wallTime": 1694092198.401699,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.73",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/apps-suite-icon-onenote.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.512347,
+        "wallTime": 1694092198.403993,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.74",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/apps-suite-icon-skype.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.513241,
+        "wallTime": 1694092198.404792,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.75",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/apps-suite-icon-excel.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.515588,
+        "wallTime": 1694092198.407364,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.76",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/mother-and-child-reunion.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.516606,
+        "wallTime": 1694092198.408169,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.77",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/coffee-shop-exterior.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.517445,
+        "wallTime": 1694092198.408965,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.78",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/apps-suite-icon-outlook.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.519207,
+        "wallTime": 1694092198.41359,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.79",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://ow2.res.office365.com/owalanding/2023.8.17.01/images/premium-appeal.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.523258,
+        "wallTime": 1694092198.414839,
+        "initiator": {
+            "type": "parser",
+            "url": "https://outlook.live.com/owa/",
+            "lineNumber": 143,
+            "columnNumber": 28163
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.80",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://web.vortex-extended.data.microsoft.com/collect/v1/t.js?ver=%272.1%27&name=%27Ms.Webi.ContentUpdate%27&time=%272023-09-07T13%3A09%3A58.757Z%27&os=%27Unknown%27&appId=%27JS%3AOutlookCom%27&-ver=%271.0%27&-impressionGuid=%27baa14ef6-776b-4ff4-82ee-9fbea4544e71%27&-pageName=%27Undefined%27&-uri=%27https%3A%2F%2Foutlook.live.com%2Fowa%2F%27&-pageTags=%27%7B%22metaTags%22%3A%7B%7D%2C%22timing%22%3A%22%7B%5C%22first-paint%5C%22%3A710.3999999761581%2C%5C%22first-contentful-paint%5C%22%3A710.3999999761581%2C%5C%22navigationStart%5C%22%3A1694092197277%2C%5C%22unloadEventStart%5C%22%3A0%2C%5C%22unloadEventEnd%5C%22%3A0%2C%5C%22redirectStart%5C%22%3A0%2C%5C%22redirectEnd%5C%22%3A0%2C%5C%22fetchStart%5C%22%3A1694092197277%2C%5C%22domainLookupStart%5C%22%3A1694092197281%2C%5C%22domainLookupEnd%5C%22%3A1694092197289%2C%5C%22connectStart%5C%22%3A1694092197289%2C%5C%22connectEnd%5C%22%3A1694092197307%2C%5C%22secureConnectionStart%5C%22%3A1694092197293%2C%5C%22requestStart%5C%22%3A1694092197307%2C%5C%22responseStart%5C%22%3A1694092197476%2C%5C%22responseEnd%5C%22%3A1694092197482%2C%5C%22domLoading%5C%22%3A1694092197485%2C%5C%22domInteractive%5C%22%3A1694092198094%2C%5C%22domContentLoadedEventStart%5C%22%3A1694092198094%2C%5C%22domContentLoadedEventEnd%5C%22%3A1694092198095%2C%5C%22domComplete%5C%22%3A1694092198716%2C%5C%22loadEventStart%5C%22%3A1694092198716%2C%5C%22loadEventEnd%5C%22%3A1694092198716%7D%22%7D%27&-pageHeight=11764&-vpHeight=720&-vpWidth=1280&-behavior=0&-vScrollOffset=0&-hScrollOffset=0&-contentVer=%272.0%27&-content=%27%5B%7B%22cN%22%3A%22DISMISS%22%2C%22sN%22%3A%22P1%22%2C%22pV%22%3A%221%22%7D%2C%7B%22cN%22%3A%22APPSTORE%22%2C%22sN%22%3A%22P1%22%2C%22pV%22%3A%221%22%7D%2C%7B%22cN%22%3A%22PLAYSTORE%22%2C%22sN%22%3A%22P1%22%2C%22pV%22%3A%221%22%7D%2C%7B%22cN%22%3A%22SIGNUP%22%2C%22sN%22%3A%22P4%22%2C%22pV%22%3A%221%22%7D%2C%7B%22cN%22%3A%22MICROSOFT%22%2C%22sN%22%3A%22P6%22%2C%22pV%22%3A%221%22%7D%2C%7B%22cN%22%3A%22PREMIUM%22%2C%22sN%22%3A%22P6%22%2C%22pV%22%3A%221%22%7D%2C%7B%22cN%22%3A%22SIGNIN%22%2C%22sN%22%3A%22P6%22%2C%22pV%22%3A%221%22%7D%5D%27&*baseType=%27Ms.Content.ContentUpdate%27&*title=%27Outlook%20%E2%80%93%20free%20personal%20email%20and%20calendar%20from%20Microsoft%27&*cookieEnabled=true&*isJs=true&*isDomComplete=true&*isLoggedIn=false&*pageLoadTime=1439&ext-javascript-ver=%271.1%27&ext-javascript-libVer=%274.3.5%27&ext-javascript-domain=%27outlook.live.com%27&ext-javascript-userConsent=false&$mscomCookies=false",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.86738,
+        "wallTime": 1694092198.759612,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "bt",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 17662
+                    },
+                    {
+                        "functionName": "awa.writeEvent",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 23955
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 13251
+                    },
+                    {
+                        "functionName": "awa.vortexEvents.SendOrScheduleEvent",
+                        "scriptId": "12",
+                        "url": "https://outlook.live.com/owa/",
+                        "lineNumber": 8,
+                        "columnNumber": 12
+                    },
+                    {
+                        "functionName": "f",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 44965
+                    },
+                    {
+                        "functionName": "b",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 40817
+                    },
+                    {
+                        "functionName": "lt",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 39181
+                    },
+                    {
+                        "functionName": "ei",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 36045
+                    },
+                    {
+                        "functionName": "oi",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 36104
+                    },
+                    {
+                        "functionName": "st",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 35963
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 35939
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "27624.81",
+        "loaderId": "387F835411EF7C46F77FF50C5794707C",
+        "documentURL": "https://outlook.live.com/owa/",
+        "request": {
+            "url": "https://web.vortex-extended.data.microsoft.com/collect/v1/t.js?ver=%272.1%27&name=%27Ms.Webi.ContentUpdate%27&time=%272023-09-07T13%3A09%3A58.757Z%27&os=%27Unknown%27&appId=%27JS%3AOutlookCom%27&-ver=%271.0%27&-impressionGuid=%27baa14ef6-776b-4ff4-82ee-9fbea4544e71%27&-pageName=%27Undefined%27&-uri=%27https%3A%2F%2Foutlook.live.com%2Fowa%2F%27&-pageTags=%27%7B%22metaTags%22%3A%7B%7D%2C%22timing%22%3A%22%7B%5C%22first-paint%5C%22%3A710.3999999761581%2C%5C%22first-contentful-paint%5C%22%3A710.3999999761581%2C%5C%22navigationStart%5C%22%3A1694092197277%2C%5C%22unloadEventStart%5C%22%3A0%2C%5C%22unloadEventEnd%5C%22%3A0%2C%5C%22redirectStart%5C%22%3A0%2C%5C%22redirectEnd%5C%22%3A0%2C%5C%22fetchStart%5C%22%3A1694092197277%2C%5C%22domainLookupStart%5C%22%3A1694092197281%2C%5C%22domainLookupEnd%5C%22%3A1694092197289%2C%5C%22connectStart%5C%22%3A1694092197289%2C%5C%22connectEnd%5C%22%3A1694092197307%2C%5C%22secureConnectionStart%5C%22%3A1694092197293%2C%5C%22requestStart%5C%22%3A1694092197307%2C%5C%22responseStart%5C%22%3A1694092197476%2C%5C%22responseEnd%5C%22%3A1694092197482%2C%5C%22domLoading%5C%22%3A1694092197485%2C%5C%22domInteractive%5C%22%3A1694092198094%2C%5C%22domContentLoadedEventStart%5C%22%3A1694092198094%2C%5C%22domContentLoadedEventEnd%5C%22%3A1694092198095%2C%5C%22domComplete%5C%22%3A1694092198716%2C%5C%22loadEventStart%5C%22%3A1694092198716%2C%5C%22loadEventEnd%5C%22%3A1694092198716%7D%22%7D%27&-pageHeight=11764&-vpHeight=720&-vpWidth=1280&-behavior=0&-vScrollOffset=0&-hScrollOffset=0&-contentVer=%272.0%27&-content=%27%5B%7B%22cN%22%3A%22DISMISS%22%2C%22sN%22%3A%22P1%22%2C%22pV%22%3A%221%22%7D%2C%7B%22cN%22%3A%22APPSTORE%22%2C%22sN%22%3A%22P1%22%2C%22pV%22%3A%221%22%7D%2C%7B%22cN%22%3A%22PLAYSTORE%22%2C%22sN%22%3A%22P1%22%2C%22pV%22%3A%221%22%7D%2C%7B%22cN%22%3A%22SIGNUP%22%2C%22sN%22%3A%22P4%22%2C%22pV%22%3A%221%22%7D%2C%7B%22cN%22%3A%22MICROSOFT%22%2C%22sN%22%3A%22P6%22%2C%22pV%22%3A%221%22%7D%2C%7B%22cN%22%3A%22PREMIUM%22%2C%22sN%22%3A%22P6%22%2C%22pV%22%3A%221%22%7D%2C%7B%22cN%22%3A%22SIGNIN%22%2C%22sN%22%3A%22P6%22%2C%22pV%22%3A%221%22%7D%5D%27&*baseType=%27Ms.Content.ContentUpdate%27&*title=%27Outlook%20%E2%80%93%20free%20personal%20email%20and%20calendar%20from%20Microsoft%27&*cookieEnabled=true&*isJs=true&*isDomComplete=true&*isLoggedIn=false&*pageLoadTime=1439&ext-javascript-ver=%271.1%27&ext-javascript-libVer=%274.3.5%27&ext-javascript-domain=%27outlook.live.com%27&ext-javascript-userConsent=false&$mscomCookies=false",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 424638.880468,
+        "wallTime": 1694092198.772123,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "bt",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 17662
+                    },
+                    {
+                        "functionName": "awa.writeEvent",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 23955
+                    },
+                    {
+                        "functionName": "r.onerror",
+                        "scriptId": "11",
+                        "url": "https://az725175.vo.msecnd.net/scripts/jsll-4.js",
+                        "lineNumber": 0,
+                        "columnNumber": 17622
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "BB889E56F30AC62F95C350593DC95A42",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "logonLatency",
+                    "value": "LGN01=638296889969935652",
+                    "domain": ".live.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 36,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ClientId",
+                    "value": "A4480C813D064C55A6B11ECC4590078F",
+                    "domain": "outlook.live.com",
+                    "path": "/",
+                    "expires": 1725714597.476785,
+                    "size": 40,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,85 @@
+[
+    {
+        "requestId": "EB01B3D922E5DA1BDFD7D6A53FF2BEB4",
+        "loaderId": "EB01B3D922E5DA1BDFD7D6A53FF2BEB4",
+        "documentURL": "https://www.office.com/",
+        "request": {
+            "url": "https://www.office.com/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 424858.020218,
+        "wallTime": 1694092417.910913,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "ACD714A6BCD79852861D8C8BF8AF1DE7",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "5272.2",
+        "loaderId": "EB01B3D922E5DA1BDFD7D6A53FF2BEB4",
+        "documentURL": "https://www.office.com/",
+        "request": {
+            "url": "https://res.cdn.office.net/officehub/officestartresources/error_light.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.office.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 424858.047291,
+        "wallTime": 1694092417.938367,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.office.com/",
+            "lineNumber": 0,
+            "columnNumber": 299
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "ACD714A6BCD79852861D8C8BF8AF1DE7",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "MUID",
+                    "value": "15B7D60C60EA6FAE147FC589618F6E73",
+                    "domain": ".office.com",
+                    "path": "/",
+                    "expires": 1727788418.931361,
+                    "size": 36,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]
