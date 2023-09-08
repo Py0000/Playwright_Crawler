@@ -1,0 +1,53 @@
+{
+    "website url": "https://www.bancoestado.cl/",
+    "hostname": "www.bancoestado.cl",
+    "subject": {
+        "serialNumber": "97030000-7",
+        "jurisdictionCountryName": "CL",
+        "businessCategory": "Private Organization",
+        "countryName": "CL",
+        "stateOrProvinceName": "Región Metropolitana de Santiago",
+        "organizationName": "Banco del Estado de Chile",
+        "commonName": "www.bancoestado.cl"
+    },
+    "issuer": {
+        "countryName": "GB",
+        "stateOrProvinceName": "Greater Manchester",
+        "localityName": "Salford",
+        "organizationName": "Sectigo Limited",
+        "commonName": "Sectigo RSA Extended Validation Secure Server CA"
+    },
+    "version": 3,
+    "not_before": "Apr 19 00:00:00 2023 GMT",
+    "not_after": "Apr 18 23:59:59 2024 GMT",
+    "valid_period": 365,
+    "serial_number": "E1E8D1A4F1F12A100D7A6AD47D346690",
+    "signature_algo": "sha256WithRSAEncryption",
+    "protocol_version": "TLSv1.3",
+    "alternate subject name": [
+        [
+            "DNS",
+            "www.bancoestado.cl"
+        ],
+        [
+            "DNS",
+            "bancaempresas.bancoestado.cl"
+        ],
+        [
+            "DNS",
+            "bancapersonas.bancoestado.cl"
+        ],
+        [
+            "DNS",
+            "corporativo.bancoestado.cl"
+        ],
+        [
+            "DNS",
+            "empresas.bancoestado.cl"
+        ],
+        [
+            "DNS",
+            "personas.bancoestado.cl"
+        ]
+    ]
+}

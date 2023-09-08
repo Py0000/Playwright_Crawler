@@ -1,0 +1,70 @@
+[
+    {
+        "requestId": "1FC4F4F261F3467CB952E390552AC98E",
+        "loaderId": "1FC4F4F261F3467CB952E390552AC98E",
+        "documentURL": "https://www.bancoestado.cl/",
+        "request": {
+            "url": "https://www.bancoestado.cl/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 65159.811861,
+        "wallTime": 1694164482.190734,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "14573AA3E4CE82A3061FBB4D356B9DDF",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "2980.2",
+        "loaderId": "1FC4F4F261F3467CB952E390552AC98E",
+        "documentURL": "https://www.bancoestado.cl/",
+        "request": {
+            "url": "https://www.bancoestado.cl/imagenes/comun2015/404/img/logo-banco-estado.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 65159.840857,
+        "wallTime": 1694164482.219298,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.bancoestado.cl/",
+            "lineNumber": 3,
+            "columnNumber": 148
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "14573AA3E4CE82A3061FBB4D356B9DDF",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

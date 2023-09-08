@@ -1,0 +1,69 @@
+[
+    {
+        "requestId": "D55BA1E1A943A1DB02648B594A53E7F6",
+        "loaderId": "D55BA1E1A943A1DB02648B594A53E7F6",
+        "documentURL": "https://www.schwab.com/",
+        "request": {
+            "url": "https://www.schwab.com/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 68912.985616,
+        "wallTime": 1694168235.364324,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "ECCC3155B7343F3EE466B68B431AEA34",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "22772.2",
+        "loaderId": "D55BA1E1A943A1DB02648B594A53E7F6",
+        "documentURL": "https://www.schwab.com/",
+        "request": {
+            "url": "https://content.schwab.com/apperror/logo.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.schwab.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 68913.019959,
+        "wallTime": 1694168235.398173,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.schwab.com/",
+            "lineNumber": 7,
+            "columnNumber": 102
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "ECCC3155B7343F3EE466B68B431AEA34",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]
