@@ -93,5 +93,5 @@ def start_program(seed_url_list):
     analyze_desktop_bot_config_data()
     """
 
-feeds = read_feeds_from_file("z_feeds_urls/benign_070923.txt")
+feeds = read_feeds_from_file("z_feeds_urls/benign_080923.txt")
 start_program(feeds)
