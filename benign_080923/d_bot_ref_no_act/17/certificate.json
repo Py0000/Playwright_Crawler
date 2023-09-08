@@ -1,0 +1,46 @@
+{
+    "website url": "https://www.bell.ca/",
+    "hostname": "www.bell.ca",
+    "subject": {
+        "countryName": "CA",
+        "stateOrProvinceName": "Ontario",
+        "localityName": "Ottawa",
+        "organizationName": "Bell Canada",
+        "commonName": "www.bell.ca"
+    },
+    "issuer": {
+        "countryName": "US",
+        "organizationName": "Entrust, Inc.",
+        "organizationalUnitName": "(c) 2012 Entrust, Inc. - for authorized use only",
+        "commonName": "Entrust Certification Authority - L1K"
+    },
+    "version": 3,
+    "not_before": "Dec 23 18:40:24 2022 GMT",
+    "not_after": "Jan 23 18:40:24 2024 GMT",
+    "valid_period": 396,
+    "serial_number": "5244FF244452248B79C01C3B800F7A6B",
+    "signature_algo": "sha256WithRSAEncryption",
+    "protocol_version": "TLSv1.3",
+    "alternate subject name": [
+        [
+            "DNS",
+            "www.bell.ca"
+        ],
+        [
+            "DNS",
+            "ProductionCDN-www.bell.ca"
+        ],
+        [
+            "DNS",
+            "PrdCDN-www.bell.ca"
+        ],
+        [
+            "DNS",
+            "PfoCDN-www.bell.ca"
+        ],
+        [
+            "DNS",
+            "aliant.bell.ca"
+        ]
+    ]
+}

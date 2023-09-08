@@ -1,0 +1,65 @@
+{
+    "Domain": "www.bn.com.pe",
+    "A": {
+        "IPv4 Address (Value)": [
+            "200.48.202.43"
+        ]
+    },
+    "AAAA": [
+        "No records found"
+    ],
+    "CAA": [
+        "No records found"
+    ],
+    "CNAME": {
+        "Host Name Alias": [
+            "bn.com.pe."
+        ]
+    },
+    "MX": {
+        "Preference": [
+            10
+        ],
+        "Exchange": [
+            "smtp.bn.com.pe."
+        ]
+    },
+    "NS": {
+        "Name Server": [
+            "dns1.unired.net.pe.",
+            "dns2.unired.net.pe."
+        ]
+    },
+    "SOA": {
+        "MNAME": [
+            "dns1.unired.net.pe."
+        ],
+        "RNAME": [
+            "hostmaster.unired.net.pe."
+        ],
+        "SERIAL": [
+            2016073841
+        ],
+        "REFRESH": [
+            28800
+        ],
+        "RETRY": [
+            7200
+        ],
+        "EXPIRE": [
+            604800
+        ],
+        "MINIMUM": [
+            86400
+        ]
+    },
+    "TXT": {
+        "Text Data": [
+            "MS=79356CFFB37BBAF255410E3C5740663106962238\t",
+            "MS=ms30725881",
+            "facebook-domain-verification=01ec8zzsx0gv9ojtzxgn40kws20iam",
+            "atlassian-domain-verification=/n6h9xrkhGY5hC0suH4bjSwz7qJK5pcBqfRtw/wrIjjVCktOjmPdofdb3Ea3mz7G",
+            "v=spf1 ip4:200.48.202.54 ip4:200.48.202.39 include:_spf.aldeamo.com include:_spf.movistarsms.com  include:spf.protection.outlook.com -all"
+        ]
+    }
+}
