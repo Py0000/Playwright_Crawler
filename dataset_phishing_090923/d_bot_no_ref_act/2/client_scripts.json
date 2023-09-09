@@ -1,0 +1,6 @@
+{
+    "script_1": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IoxrLNdlTyI.O/m=gapi_iframes_style_common/rt=j/sv=1/d=1/ed=1/rs=AHpOoo9N48n3oloz8UTxoCozKcpUKaADkg/cb=gapi.loaded_0?le=scs",
+    "script_2": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+    "script_3": "\n        function closePopup(wnd) {\n          \n          setTimeout(function() {\n              wnd.open('', '_self', '');\n              wnd.close();\n          }, 100);\n        }\n      ",
+    "script_4": "\n          window.___gcfg = {\n            lang: \"en_GB\",\n            parsetags: 'onload'\n          };\n          (function() {\n            var po = document.createElement('script');\n            po.type = 'text/javascript';\n            po.async = true;\n            po.src = \"https://apis.google.com/js/platform:gapi.iframes.style.common.js\";\n            var s = document.getElementsByTagName('script')[0];\n            s.parentNode.insertBefore(po, s);\n          })();\n        "
+}

@@ -1,0 +1,497 @@
+[
+    {
+        "requestId": "F3351A3FB23A431CF46C77713F987127",
+        "loaderId": "F3351A3FB23A431CF46C77713F987127",
+        "documentURL": "https://www.ameli.fr/",
+        "request": {
+            "url": "https://www.ameli.fr/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 8366.70453,
+        "wallTime": 1694246227.276548,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "ADA09277179961EF933F70156B2306D9",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "109020.2",
+        "loaderId": "F3351A3FB23A431CF46C77713F987127",
+        "documentURL": "https://www.ameli.fr/",
+        "request": {
+            "url": "https://www.ameli.fr/cdn-cgi/styles/challenges.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ameli.fr/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "same-origin",
+            "isSameSite": true
+        },
+        "timestamp": 8366.914072,
+        "wallTime": 1694246227.485976,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ameli.fr/",
+            "lineNumber": 0,
+            "columnNumber": 366
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "ADA09277179961EF933F70156B2306D9",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "109020.4",
+        "loaderId": "F3351A3FB23A431CF46C77713F987127",
+        "documentURL": "https://www.ameli.fr/?__cf_chl_rt_tk=Um.GXfc1kFbSsrIoTDG4w6mkkLeGyXLGrnEIOKzCcAs-1694246227-0-gaNycGzNCuU",
+        "request": {
+            "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ameli.fr/?__cf_chl_rt_tk=Um.GXfc1kFbSsrIoTDG4w6mkkLeGyXLGrnEIOKzCcAs-1694246227-0-gaNycGzNCuU",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": true
+        },
+        "timestamp": 8366.964874,
+        "wallTime": 1694246227.53713,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://www.ameli.fr/",
+                        "lineNumber": 0,
+                        "columnNumber": 5899
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://www.ameli.fr/",
+                        "lineNumber": 0,
+                        "columnNumber": 5917
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "ADA09277179961EF933F70156B2306D9",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "109020.5",
+        "loaderId": "F3351A3FB23A431CF46C77713F987127",
+        "documentURL": "https://www.ameli.fr/",
+        "request": {
+            "url": "https://challenges.cloudflare.com/turnstile/v0/b/8827f912/api.js?onload=barZ0&render=explicit",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "Origin": "https://www.ameli.fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 8367.066874,
+        "wallTime": 1694246227.639138,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "gi",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 154207
+                    },
+                    {
+                        "functionName": "gh",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 132653
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 150794
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 150550
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "ADA09277179961EF933F70156B2306D9",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "109020.6",
+        "loaderId": "F3351A3FB23A431CF46C77713F987127",
+        "documentURL": "https://www.ameli.fr/",
+        "request": {
+            "url": "https://www.ameli.fr/favicon.ico",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ameli.fr/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": true
+        },
+        "timestamp": 8367.070682,
+        "wallTime": 1694246227.642595,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ameli.fr/",
+            "lineNumber": 0,
+            "columnNumber": 5945
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "ADA09277179961EF933F70156B2306D9",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "109020.7",
+        "loaderId": "F3351A3FB23A431CF46C77713F987127",
+        "documentURL": "https://www.ameli.fr/",
+        "request": {
+            "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAANlBMVEUAAAAxMTEwMDAxMTExMTEwMDAwMDAwMDAxMTExMTExMTEwMDAwMDAxMTExMTEwMDAwMDAxMTHB9N+uAAAAEXRSTlMA3zDvfyBAEJC/n3BQz69gX7VMkcMAAAGySURBVEjHnZZbFoMgDEQJiDzVuv/NtgbtFGuQ4/zUKpeMIQbUhXSKE5l1XSn4pFWHRm/WShT1HRLWC01LGxFEVkCc30eYkLJ1Sjk9pvkw690VY6k8DWP9OM9yMG0Koi+mi8XA36NXmW0UXra4eJ3iwHfrfXVlgL0NqqGBHdqfeQhMmyJ48WDuKP81h3+SMPeRKkJcSXiLUK4XTHCjESOnz1VUXQoc6lgi2x4cI5aTQ201Mt8wHysI5fc05M5c81uZEtHcMKhxZ7iYEty1GfhLvGKpm+EYkdGxm1F5axmcB93DoORIbXfdN7f+hlFuyxtDP+sxtBnF43cIYwaZAWRgzxIoiXEMESoPlMhwLRDXeK772CAzXEdBRV7cmnoVBp0OSlyGidEzJTFq5hhcsA5388oSGM6b5p+qjpZrBlMS9xj4AwXmz108ukU1IomM3ceiW0CDwHCqp1NjAqXlFrbga+xuloQJ+tuyfbIBPNpqnmxqT7dPaOnZqBfhSBCteJAxWj58zLk2xgg+SPGYM6dRO6WczSnIxxwEExRaO+UyCUhbOp7CGQ+kxSUfNtLQFC+Po29vvy7jj4y0yAAAAABJRU5ErkJggg==",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 8367.071348,
+        "wallTime": 1694246227.643253,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ameli.fr/",
+            "lineNumber": 0,
+            "columnNumber": 5945
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "ADA09277179961EF933F70156B2306D9",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "109020.8",
+        "loaderId": "F3351A3FB23A431CF46C77713F987127",
+        "documentURL": "https://www.ameli.fr/",
+        "request": {
+            "url": "blob:https://www.ameli.fr/39e099fb-cc8b-4d5f-b145-683652345194",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.ameli.fr/",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "same-origin",
+            "isSameSite": true
+        },
+        "timestamp": 8367.103293,
+        "wallTime": 1694246227.675203,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ameli.fr/",
+            "lineNumber": 0,
+            "columnNumber": 5945
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Other",
+        "frameId": "ADA09277179961EF933F70156B2306D9",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "109020.9",
+        "loaderId": "F3351A3FB23A431CF46C77713F987127",
+        "documentURL": "https://www.ameli.fr/",
+        "request": {
+            "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/flow/ov1/1565880280:1694243317:bgM3v24iAlZRT3lDptj9BSInZZW-3aT18cXhO5gvDHc/803de0e9fa444933/c3a5770dafd1c9f",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "Content-type": "application/x-www-form-urlencoded",
+                "Referer": "https://www.ameli.fr/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "CF-Challenge": "c3a5770dafd1c9f",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "postData": "v_803de0e9fa444933=nzOpGpnpmpWpRDQ-DQap7iDz5js7sgQfiuSgemSQ81QOMSQEQxQ9i5e5YsFQnpsfQ3QsWcSQwigDQjig%2bK1QDxPQsuSskQ3hmBtxp5mQepuxg1FY5Qxh5QcSyeYewqSsU8Q7fQaQ5zv1rkDWSSHQQy9MzDfwp2spsHQ1zQxpQNsOOFQ1ZQ9NpO8psuQ3mFQDZZQ1YCf-uQpstj2wzENvrQxICfQNp31Ssstis5QQZQOCxEqckUMOQdsRusTdOl3Gp1KGpAjh1QDiffyI9amCx-6OpefdPPzwXlk3dH5q9Z2NUjQRWLHUVda2w8dK2tzYfdW7pS9Ob7yEsUJjrmwQQ4iQ8NY+MzCFDHFUEFCG0winszOfBPO4spe0S4QCT0fO-e33rfpwQM0jFrePWmwm9gZjszN3bHS0fX3nCWuF+ssZsCFwMFOp+t0ZpND8RQiUCp01QkdHQYQHOlffbgKlQN21P76di7QzQZeVVgx5ZgRNnQ3KfufdU8kcjr5kQQ9pzNDY4s4kDi8Qw7PUSV1iSOTSQOqmXDpuky-kr9grQn0bgQl8xUQ4sLcz6duHQyNyjjsrHpQsF0-Q1tRcBVcWvQXCCCCgg-ej0s7sGiiCcY3wDipMZshQj3L8LBescWne3Z37d12Vw7239Qie-M1gZ-1ci0XC01eP13Qz1PNQLCHDies1OUmbNWx0ZC07QSNQKj1bQGyzkSuQckQe3c1sj31-QmQSfgOUPQPE3cbCJQc4sFsinVNkri0fQOHSzOjASDDS7pDQcH0ZgrbSdR1MVdgphRsDSJsCgGcgOXpwsCy28sugZ1R5nUgDuQcTSG5pggVgpkgl3QgDwkS-Q45pjSUwS1gnaiORAafB5SgZnyp5QeNNQO10UgQjsE5fTC2DZj07O7MfesQNPuDXwfqDZ1gOUSyDxgci0U3r8ggQcb0i1zRkVOrWODsQ$sryYLRnXcQPsp8ePUDXpuaDOeQqkicQqyzdiS3cD0UkrwDw5OuCwsOgspgiwQzk1UPfHXGfuQSH0s2YHNssis0e1YcsSj1sdrnSjSGHXiNcHZNsZQcM8JHZ7Qu1iC0E1Je0GnJ9sC1zZiYQSUPsUpjQrQ8lS513jssafXSe7zb0z1zvNICrSxrkpA1i1YNgsjaJSHm1wUVtlZZDsOORMpY+Mc1issCkXpizNm7piOrLPzjU3Q4kl1i1sOFgljcGYbOjdI4$yJsSspshNjUNUg3r7kALSHszgZ7PEgQshsgQLusUXe075OMf1kp4staQQDEipfO1UvdsiJpdXc6sbDOxSukrjSEkQUO51icQdRZ+qcQSnN+5ieSEkOHsekOePsaSwhOkpgQekQTN27VJRgnbi0GgG-QuH1Z3J5ipujHNuSjQOcsfjcHg5sOpM2w5eseHZv2rvOKXwQinNAPiHgVsitPSnSJQu5Qksp5pUPuwzXqtWpHppsOTSuQ88pjH7puf1YvSCkcwpekO8QygrNsgEOLRVO1wpfjnwxpkSXS3GzA$l-SJC2OrvCwvkWOjjjLpdmcKpj13KplsljHAR1FQg0yDY5-5pJlYDwgiDS5SUPj0-QngG5SNpsQy30gQnSMf8PpkCwjCZ8QudU047YnSkxZfzDCOj3QtpGKVkQFfkc+iYp15HnajS3e90zQp1mspJSygV30Or3r3Q1Rss85p1psrCQCsqqj5jOp9DxQUpSVFQs6wpUpFQu3D3pNiKsSs7sU7RNiuPNsZ1a7pNStQhsaQYDvyQdpWp3PNDi3QHPNQ133wrfOJQI5cgQO+vQD0K5csNyYxz$USQusSwXDSksK5GyQHkNOJQWyOQYyim0wUpQ",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "dl84MDNkZTBlOWZhNDQ0OTMzPW56T3BHcG5wbXBXcFJEUS1EUWFwN2lEejVqczdzZ1FmaXVTZ2VtU1E4MVFPTVNRRVF4UTlpNWU1WXNGUW5wc2ZRM1FzV2NTUXdpZ0RRamlnJTJiSzFRRHhQUXN1U3NrUTNobUJ0eHA1bVFlcHV4ZzFGWTVReGg1UWNTeWVZZXdxU3NVOFE3ZlFhUTV6djFya0RXU1NIUVF5OU16RGZ3cDJzcHNIUTF6UXhwUU5zT09GUTFaUTlOcE84cHN1UTNtRlFEWlpRMVlDZi11UXBzdGoyd3pFTnZyUXhJQ2ZRTnAzMVNzc3RpczVRUVpRT0N4RXFja1VNT1Fkc1J1c1RkT2wzR3AxS0dwQWpoMVFEaWZmeUk5YW1DeC02T3BlZmRQUHp3WGxrM2RINXE5WjJOVWpRUldMSFVWZGEydzhkSzJ0ellmZFc3cFM5T2I3eUVzVUpqcm13UVE0aVE4TlkrTXpDRkRIRlVFRkNHMHdpbnN6T2ZCUE80c3BlMFM0UUNUMGZPLWUzM3JmcHdRTTBqRnJlUFdtd205Z1pqc3pOM2JIUzBmWDNuQ1d1Ritzc1pzQ0Z3TUZPcCt0MFpwTkQ4UlFpVUNwMDFRa2RIUVlRSE9sZmZiZ0tsUU4yMVA3NmRpN1F6UVplVlZneDVaZ1JOblEzS2Z1ZmRVOGtjanI1a1FROXB6TkRZNHM0a0RpOFF3N1BVU1YxaVNPVFNRT3FtWERwdWt5LWtyOWdyUW4wYmdRbDh4VVE0c0xjejZkdUhReU55ampzckhwUXNGMC1RMXRSY0JWY1d2UVhDQ0NDZ2ctZWowczdzR2lpQ2NZM3dEaXBNWnNoUWozTDhMQmVzY1duZTNaMzdkMTJWdzcyMzlRaWUtTTFnWi0xY2kwWEMwMWVQMTNRejFQTlFMQ0hEaWVzMU9VbWJOV3gwWkMwN1FTTlFLajFiUUd5emtTdVFja1FlM2Mxc2ozMS1RbVFTZmdPVVBRUEUzY2JDSlFjNHNGc2luVk5rcmkwZlFPSFN6T2pBU0REUzdwRFFjSDBaZ3JiU2RSMU1WZGdwaFJzRFNKc0NnR2NnT1hwd3NDeTI4c3VnWjFSNW5VZ0R1UWNUU0c1cGdnVmdwa2dsM1FnRHdrUy1RNDVwalNVd1MxZ25haU9SQWFmQjVTZ1pueXA1UWVOTlFPMTBVZ1Fqc0U1ZlRDMkRaajA3TzdNZmVzUU5QdURYd2ZxRFoxZ09VU3lEeGdjaTBVM3I4Z2dRY2IwaTF6UmtWT3JXT0RzUSRzcnlZTFJuWGNRUHNwOGVQVURYcHVhRE9lUXFraWNRcXl6ZGlTM2NEMFVrcndEdzVPdUN3c09nc3BnaXdRemsxVVBmSFhHZnVRU0gwczJZSE5zc2lzMGUxWWNzU2oxc2RyblNqU0dIWGlOY0haTnNaUWNNOEpIWjdRdTFpQzBFMUplMEduSjlzQzF6WmlZUVNVUHNVcGpRclE4bFM1MTNqc3NhZlhTZTd6YjB6MXp2TklDclN4cmtwQTFpMVlOZ3NqYUpTSG0xd1VWdGxaWkRzT09STXBZK01jMWlzc0NrWHBpek5tN3BpT3JMUHpqVTNRNGtsMWkxc09GZ2xqY0dZYk9qZEk0JHlKc1NzcHNoTmpVTlVnM3I3a0FMU0hzemdaN1BFZ1FzaHNnUUx1c1VYZTA3NU9NZjFrcDRzdGFRUURFaXBmTzFVdmRzaUpwZFhjNnNiRE94U3VrcmpTRWtRVU81MWljUWRSWitxY1FTbk4rNWllU0VrT0hzZWtPZVBzYVN3aE9rcGdRZWtRVE4yN1ZKUmduYmkwR2dHLVF1SDFaM0o1aXB1akhOdVNqUU9jc2ZqY0hnNXNPcE0ydzVlc2VIWnYycnZPS1h3UWluTkFQaUhnVnNpdFBTblNKUXU1UWtzcDVwVVB1d3pYcXRXcEhwcHNPVFN1UTg4cGpIN3B1ZjFZdlNDa2N3cGVrTzhReWdyTnNnRU9MUlZPMXdwZmpud3hwa1NYUzNHekEkbC1TSkMyT3J2Q3d2a1dPampqTHBkbWNLcGoxM0twbHNsakhBUjFGUWcweURZNS01cEpsWUR3Z2lEUzVTVVBqMC1RbmdHNVNOcHNReTMwZ1FuU01mOFBwa0N3akNaOFF1ZFUwNDdZblNreFpmekRDT2ozUXRwR0tWa1FGZmtjK2lZcDE1SG5halMzZTkwelFwMW1zcEpTeWdWMzBPcjNyM1ExUnNzODVwMXBzckNRQ3NxcWo1ak9wOUR4UVVwU1ZGUXM2d3BVcEZRdTNEM3BOaUtzU3M3c1U3Uk5pdVBOc1oxYTdwTlN0UWhzYVFZRHZ5UWRwV3AzUE5EaTNRSFBOUTEzM3dyZk9KUUk1Y2dRTyt2UUQwSzVjc055WXh6JFVTUXVzU3dYRFNrc0s1R3lRSGtOT0pRV3lPUVl5aW0wd1VwUQ=="
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "same-origin",
+            "isSameSite": true
+        },
+        "timestamp": 8367.181992,
+        "wallTime": 1694246227.754127,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "fy.<computed>",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 11554
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "ADA09277179961EF933F70156B2306D9",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "4D14BC487030F297CD8BF9E3A7490874",
+        "loaderId": "4D14BC487030F297CD8BF9E3A7490874",
+        "documentURL": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/if/ov2/av0/rcv0/0/0aofc/0x4AAAAAAAAjq6WYeRDKmebM/light/normal",
+        "request": {
+            "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/if/ov2/av0/rcv0/0/0aofc/0x4AAAAAAAAjq6WYeRDKmebM/light/normal",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 8367.28173,
+        "wallTime": 1694246227.854801,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "_",
+                        "scriptId": "14",
+                        "url": "https://challenges.cloudflare.com/turnstile/v0/b/8827f912/api.js?onload=barZ0&render=explicit",
+                        "lineNumber": 0,
+                        "columnNumber": 18415
+                    },
+                    {
+                        "functionName": "fZ",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 149722
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 123777
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 123934
+                    },
+                    {
+                        "functionName": "fS",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 123970
+                    },
+                    {
+                        "functionName": "fZ",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 149722
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 123777
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 123934
+                    },
+                    {
+                        "functionName": "fS",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 123970
+                    },
+                    {
+                        "functionName": "fZ",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 149699
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 123777
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 123934
+                    },
+                    {
+                        "functionName": "fS",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 123970
+                    },
+                    {
+                        "functionName": "fZ",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 149699
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 123777
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 123934
+                    },
+                    {
+                        "functionName": "fS",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 123970
+                    },
+                    {
+                        "functionName": "i.<computed>",
+                        "scriptId": "12",
+                        "url": "https://www.ameli.fr/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803de0e9fa444933",
+                        "lineNumber": 0,
+                        "columnNumber": 11481
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "B1354EB8ECB37EA3189C827B76D5E8BC",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

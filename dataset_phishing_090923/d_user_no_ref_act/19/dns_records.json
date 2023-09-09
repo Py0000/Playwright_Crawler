@@ -1,0 +1,64 @@
+{
+    "Domain": "emrr.mc",
+    "A": {
+        "IPv4 Address (Value)": [
+            "87.254.230.60"
+        ]
+    },
+    "AAAA": [
+        "No records found"
+    ],
+    "CAA": [
+        "No records found"
+    ],
+    "CNAME": [
+        "No records found"
+    ],
+    "MX": {
+        "Preference": [
+            10,
+            15,
+            20
+        ],
+        "Exchange": [
+            "mail.emrr.mc.",
+            "mx0.emrr.mc.",
+            "mx1.emrr.mc."
+        ]
+    },
+    "NS": {
+        "Name Server": [
+            "ns2.monaco-telecom.net.",
+            "ns1.monaco-telecom.mc."
+        ]
+    },
+    "SOA": {
+        "MNAME": [
+            "ns1.monaco-telecom.mc."
+        ],
+        "RNAME": [
+            "noc.monaco-telecom.mc."
+        ],
+        "SERIAL": [
+            2020022901
+        ],
+        "REFRESH": [
+            28800
+        ],
+        "RETRY": [
+            7200
+        ],
+        "EXPIRE": [
+            2419200
+        ],
+        "MINIMUM": [
+            172800
+        ]
+    },
+    "TXT": {
+        "Text Data": [
+            "spf2.0/pra ip4:92.243.0.233 ip4:92.243.5.70 ip4:90.85.40.241 ip4:87.254.230.60 ip4:195.78.26.0/25 include:outbound.mailhop.org ~all",
+            "v=spf1 a ip4:92.243.0.233 ip4:92.243.5.70 ip4:90.85.40.241 ip4:87.254.230.60 ip4:195.78.26.0/25 include:outbound.mailhop.org ~all"
+        ]
+    }
+}

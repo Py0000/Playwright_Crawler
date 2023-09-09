@@ -1,0 +1,41 @@
+{
+    "website url": "https://www.dhl.com/",
+    "hostname": "www.dhl.com",
+    "subject": {
+        "countryName": "DE",
+        "stateOrProvinceName": "Nordrhein-Westfalen",
+        "localityName": "Bonn",
+        "organizationName": "Deutsche Post AG",
+        "commonName": "www.dhl.com"
+    },
+    "issuer": {
+        "countryName": "DE",
+        "organizationName": "Deutsche Post AG",
+        "commonName": "DPDHL Global TLS CA - I5"
+    },
+    "version": 3,
+    "not_before": "Jul 31 14:59:53 2023 GMT",
+    "not_after": "Jul 30 14:58:53 2024 GMT",
+    "valid_period": 365,
+    "serial_number": "01B3F0B36D4F3269E52FC64640513D8F",
+    "signature_algo": "sha256WithRSAEncryption",
+    "protocol_version": "TLSv1.3",
+    "alternate subject name": [
+        [
+            "DNS",
+            "dhlcom-pst.dhl.com"
+        ],
+        [
+            "DNS",
+            "dhlcom-pst-ru.dhl.com"
+        ],
+        [
+            "DNS",
+            "dhli.dhl.com"
+        ],
+        [
+            "DNS",
+            "www.dhl.com"
+        ]
+    ]
+}

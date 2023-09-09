@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html data-ng-app="myLifeApp" id="ng-app" lang="en-US" xmlns:ng="http://angularjs.org">
+ <head>
+  <title>
+   My Benefits
+         - TELUS Health
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+  <!-- inject global vairables-->
+  <!-- run buildcssfromless-->
+  <link href="/Apps/MyLifePortalApp/lib/normalize/normalize.min.css" rel="stylesheet" type="text/css"/>
+  <link href="/Apps/MyLifePortalApp/lib/flowplayer/skin/functional.css" rel="stylesheet" type="text/css"/>
+  <link href="/Apps/MyLifePortalApp/compiled/Lessfile_-880950109.css" media="all" rel="stylesheet" type="text/css"/>
+  <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-P5KDVTG">
+  </script>
+  <script type="text/javascript">
+   var _ga_accountid = "G-E244MVPC6Y";
+            var _ga_rollup_accountid = "G-89DKM0S4PX";
+            var _ga_clientid = "ROGERS";
+            var _ga_data = "";
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ 'ua_analytics_id': _ga_accountid });
+            window.dataLayer.push({ 'ua_rollup_analytics_id': _ga_rollup_accountid });
+            var custom_dimension_offset = 7; // we have 7 predefined demographics in google analytics already, so next will be named custom_dimension_8
+            var ua_client_id = { 'ua_client_id': 'ROGERS' };
+            var ua_user_login_status = { 'ua_user_login_status': 'False' };
+            var ua_user_login_method = { 'ua_user_login_method': 'regular' };
+            var ua_user_portal_id = { 'ua_user_portal_id': '0' };
+            var ua_is_admin = { 'ua_is_admin': 'false' };
+            var ua_tool_name = { 'ua_tool_name': '' };
+            var ua_tool_version = { 'ua_tool_version': '' };
+
+            var ua_demographic_main = [];
+            var ua_demographic_rollup = [{ 'DBPLAN': '' }, { 'DBSTATUS': '' }, { 'DBGROUP': '' }, { 'DBDEPARTMENT': '' }, { 'DBSUBSTATUS': '' }, { 'SBCWORKSTATUS': '' }, { 'SBCELIGSET': '' }, { 'SBCEMPSTAT': '' }, { 'PFEMPSTAT': '' }, { 'PFDIV': '' }, { 'PFSTATUS': '' }, { 'PFPLANCODE': '' }, { 'DCHasPEA_Bal': '' }];
+
+            function populate_demo() {
+                window.dataLayer.push(ua_client_id, ua_user_login_status, ua_user_login_method, ua_user_portal_id, ua_tool_name, ua_tool_version, ua_is_admin);
+                for (var i = 0; i < ua_demographic_main.length; i++) {
+                    window.dataLayer.push(ua_demographic_main[i]);
+                }
+                for (var i = 0; i < ua_demographic_rollup.length; i++) {
+                    window.dataLayer.push(ua_demographic_rollup[i]);
+                }
+            }
+            populate_demo();
+
+            _ga_data = _ga_data.replace(new RegExp('&quot;', 'g'), '"');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+   (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-P5KDVTG');
+  </script>
+  <!-- End Google Tag Manager -->
+  <!-- TODO: should be always defined, but funcs could be defined as empty if analytics is OFF -->
+  <script>
+   var page_path = window.location.pathname;
+            function ua_record_page_view(page_title) {
+                window.dataLayer.push({
+                    'event': 'virtualPageViewEvent',
+                    'virtualPagePath': page_path,
+                    'virtualPageTitle': page_title
+                });
+            }
+            function ua_track_event(event_category, event_action, event_label) {
+                window.dataLayer.push({
+                    'event': 'portalEvent',
+                    'ua_event_category': event_category,
+                    'ua_event_action': event_action,
+                    'ua_event_label': event_label
+                });
+            }
+            function ua_record_page_cancel(page_path) {
+                window.dataLayer.push({
+                    'event': 'virtualPageCancelEvent',
+                    'virtualPageCancelPath': page_path
+                });
+            }
+  </script>
+ </head>
+ <body>
+  <div id="container-main" ng-controller="wpCoreController as coreVm" role="main" tabindex="0">
+   <div>
+    <div ng-view="">
+    </div>
+    <wp-page-footer site-map="static">
+    </wp-page-footer>
+   </div>
+  </div>
+  <script src="/respdes/js/browser-detection.js">
+  </script>
+  <script type="text/javascript">
+   // show browser warning message
+    var version = browserDectection.detectIE();
+    if (version !== false && version == -1) {
+        window.location.replace("/system/BrowserUpgrade");
+    }
+  </script>
+  <script type="text/javascript">
+   localStorage.setItem("wptoken", 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlZGMyMjhkYy0wY2UzLTQ1NGUtOGUwNi02ZWZjZTEyNDlkMWIiLCJzdGF0ZVRva2VuIjoiUW1NMlZURjZiWFpoZDJWUmEyeFlkR0ZSY2poWmNHaGxNekZ5ZDFRNFFtWkhkVW9yYzB4M1VHRmhOMFozVHl0R1dEa3piWGgxTUhBaElVMTVNWEJhWTNNIiwiY2xpZW50Q29kZSI6IiIsImVtcGxveWVlSWQiOiIwIiwiZXhwaXJ5IjoiNjAiLCJyZWZyZXNoX3Rva2VuIjoiTVdabGN6RjFNbEJXZW5CUlYyRkZOVVpvT1doaFUzQTJPVzloWVdSR1lrWnNkRWhPUVhaT01IRkNOSE5RVVVOb2RuZFpUa3RWTVhJM2J6WXhja2hTY1E9PSIsImlhdCI6MTY5NDI2MDc2OSwibmJmIjoxNjk0MjYwNzY5LCJleHAiOjE2OTQyNjQzNjksImlzcyI6Imh0dHA6Ly93d3cubW9ybmVhdXNoZXBlbGwuY29tIiwiYXVkIjoiZGVmYXVsdCJ9._Fh06kNzMbcsElupHyJqetKq1wBrKVMMQL7xz8gsHFs')
+        localStorage.setItem('wpApiGateway', 'https://wps-apigateway.morneaushepell.com/');
+        localStorage.setItem("baseUrl", 'http://avantages-sociaux-rogers.com')
+        localStorage.setItem('locale', 'en-CA');
+        localStorage.setItem('clientCode', 'ROGERS2');
+        if('')
+        localStorage.setItem('AppInsightsConnectionString', '');
+  </script>
+  <script src="/Content/js/app-insights.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   var $buoop = { required: { e: -2, i: 11, f: -2, o: -2, s: -2, c: -2 }, domain: "/Content/js/libs/browser-update", reminder: 0, reminderClosed: 24, text: "<b>Some features may not work properly with your browser. To get the best experience, it is recommended to use the latest version of one of these browsers: Chrome, Safari, Mozilla Firefox, or Microsoft Edge/IE. </b>  <a{ignore_but}>Close</a>", mobile: false, api: 2021.06 };
+        function $buo_f() {
+            var e = document.createElement("script");
+            e.src = "/Content/js/libs/browser-update/update.min.js";
+            document.body.appendChild(e);
+        };
+        try { document.addEventListener("DOMContentLoaded", $buo_f, false) }
+    catch (e) { window.attachEvent("onload", $buo_f) }
+  </script>
+  <link href="/Tools/DBMembershipSelector/Content/site.3.min.css" rel="stylesheet" type="text/css"/>
+  <script src="/bundles/Javascript_cshtml_scripts_0?v=p_QkymZwXPstRn1rlDlQ9crajjf4yKpkkzgpYV_eEfc1">
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function () {
+        if (self !== top) {
+            $.ajax({
+                url: '/System/Resolution/' + screen.width + "_" + screen.height,
+                type: 'GET',
+                success: function () {
+
+                }
+            });
+        }
+    });
+  </script>
+  <script>
+   var enableIdleWatch = false;
+        $(document).ready(function () {
+            setInterval(function () {
+                location.reload();
+            },  1800000 );
+        });
+  </script>
+  <!-- ScreenSharing.cshtml Start -->
+  <!-- Modal box for screen share pop up -->
+  <div class="modal" id="SS-modal-popup" style="display:none;">
+   <div class="modal-wrapper">
+    <div class="modal-body">
+     <p id="modal-body-text">
+     </p>
+    </div>
+    <div class="modal-footer">
+     <button class="cancel" id="SS-cancel">
+      Cancel
+     </button>
+     <button class="confirm" id="SS-confirm">
+      Confirm
+     </button>
+    </div>
+   </div>
+  </div>
+  <!-- must do this before including jquery-ui -->
+  <script type="text/javascript">
+   // change name of jquery ui tabs to prevent conflict with jquery tools tabs
+   // WebPortal.int_plugins_no_conflict_ready();
+    var employeeId = 0;
+    var employeeName = ' ' + '';
+    var tokenId = '0';
+
+    var SSmodal = document.getElementById("SS-modal-popup");
+
+    window.onclick = function (event) {
+        if (event.target == SSmodal) {
+            SSmodal.style.display = "none";
+        }
+    }
+  </script>
+  <script src="/Downloaded/567150665.js?638298396934923981" type="text/javascript">
+  </script>
+  <script src="/signalr/hubs">
+  </script>
+  <link href="/Downloaded/Lessfile_260421648.css" rel="stylesheet" type="text/css"/>
+  <!-- ScreenSharing.cshtml End -->
+  <input name="__RequestVerificationToken" type="hidden" value="iZQojcRkX9EkaGmGVrHA8UlDEKOIrMKedVmfSQnMRap2KbGbe6MA0drPPZovme_L-4NJ5fi8qfMjU2ptHdQlPg9b3zzn1Zws5F1tTe09J_M1"/>
+  <script type="text/javascript">
+   if (window.top != window.self) { // inside iframe then redirect to login in parent
+            window.top.location.href = "/Account/Login/MustAuthLogin";
+        }
+  </script>
+  <script src="/Content/js/libs/browser-update/update.min.js">
+  </script>
+ </body>
+</html>

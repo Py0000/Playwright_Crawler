@@ -1,0 +1,37 @@
+{
+    "website url": "http://workprotocoles-com.webs.com/",
+    "hostname": "workprotocoles-com.webs.com",
+    "subject": {
+        "countryName": "US",
+        "stateOrProvinceName": "California",
+        "localityName": "San Francisco",
+        "organizationName": "Cloudflare, Inc.",
+        "commonName": "sni.cloudflaressl.com"
+    },
+    "issuer": {
+        "countryName": "US",
+        "organizationName": "Cloudflare, Inc.",
+        "commonName": "Cloudflare Inc ECC CA-3"
+    },
+    "version": 3,
+    "not_before": "May 10 00:00:00 2023 GMT",
+    "not_after": "May  9 23:59:59 2024 GMT",
+    "valid_period": 365,
+    "serial_number": "014B445E3366B8EC76E6F071349F3A3A",
+    "signature_algo": "ecdsa-with-SHA256",
+    "protocol_version": "TLSv1.2",
+    "alternate subject name": [
+        [
+            "DNS",
+            "sni.cloudflaressl.com"
+        ],
+        [
+            "DNS",
+            "webs.com"
+        ],
+        [
+            "DNS",
+            "*.webs.com"
+        ]
+    ]
+}

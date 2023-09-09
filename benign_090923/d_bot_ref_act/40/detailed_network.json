@@ -1,0 +1,422 @@
+[
+    {
+        "requestId": "91EF4BF97FF31C5C6CD71F5425AE3C4E",
+        "loaderId": "91EF4BF97FF31C5C6CD71F5425AE3C4E",
+        "documentURL": "https://www.landers.ph/",
+        "request": {
+            "url": "https://www.landers.ph/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 8021.452915,
+        "wallTime": 1694245882.02492,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "372D2DD2ACC498177ABF00947EBD442D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "103188.2",
+        "loaderId": "91EF4BF97FF31C5C6CD71F5425AE3C4E",
+        "documentURL": "https://www.landers.ph/",
+        "request": {
+            "url": "https://www.landers.ph/cdn-cgi/styles/challenges.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 8021.641967,
+        "wallTime": 1694245882.21387,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.landers.ph/",
+            "lineNumber": 0,
+            "columnNumber": 366
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "372D2DD2ACC498177ABF00947EBD442D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "103188.4",
+        "loaderId": "91EF4BF97FF31C5C6CD71F5425AE3C4E",
+        "documentURL": "https://www.landers.ph/?__cf_chl_rt_tk=l9PA8wAYU.RrQk_3IdpG49d0ZFRporiDrGVD30N22jg-1694245882-0-gaNycGzNDBA",
+        "request": {
+            "url": "https://www.landers.ph/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803dd87baebc3f7d",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 8021.694935,
+        "wallTime": 1694245882.267373,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://www.landers.ph/",
+                        "lineNumber": 0,
+                        "columnNumber": 6200
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://www.landers.ph/",
+                        "lineNumber": 0,
+                        "columnNumber": 6218
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "372D2DD2ACC498177ABF00947EBD442D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "103188.5",
+        "loaderId": "91EF4BF97FF31C5C6CD71F5425AE3C4E",
+        "documentURL": "https://www.landers.ph/",
+        "request": {
+            "url": "https://challenges.cloudflare.com/turnstile/v0/b/8827f912/api.js?onload=barZ0&render=explicit",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.landers.ph",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 8021.815219,
+        "wallTime": 1694245882.387534,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "fO",
+                        "scriptId": "12",
+                        "url": "https://www.landers.ph/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803dd87baebc3f7d",
+                        "lineNumber": 0,
+                        "columnNumber": 154298
+                    },
+                    {
+                        "functionName": "fN",
+                        "scriptId": "12",
+                        "url": "https://www.landers.ph/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803dd87baebc3f7d",
+                        "lineNumber": 0,
+                        "columnNumber": 137036
+                    },
+                    {
+                        "functionName": "tcKJt",
+                        "scriptId": "12",
+                        "url": "https://www.landers.ph/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803dd87baebc3f7d",
+                        "lineNumber": 0,
+                        "columnNumber": 139530
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.landers.ph/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803dd87baebc3f7d",
+                        "lineNumber": 0,
+                        "columnNumber": 141649
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.landers.ph/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803dd87baebc3f7d",
+                        "lineNumber": 0,
+                        "columnNumber": 141013
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "372D2DD2ACC498177ABF00947EBD442D",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "103188.6",
+        "loaderId": "91EF4BF97FF31C5C6CD71F5425AE3C4E",
+        "documentURL": "https://www.landers.ph/",
+        "request": {
+            "url": "https://www.landers.ph/favicon.ico",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 8021.818451,
+        "wallTime": 1694245882.390357,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.landers.ph/",
+            "lineNumber": 0,
+            "columnNumber": 6246
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "372D2DD2ACC498177ABF00947EBD442D",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "103188.7",
+        "loaderId": "91EF4BF97FF31C5C6CD71F5425AE3C4E",
+        "documentURL": "https://www.landers.ph/",
+        "request": {
+            "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAANlBMVEUAAAAxMTEwMDAxMTExMTEwMDAwMDAwMDAxMTExMTExMTEwMDAwMDAxMTExMTEwMDAwMDAxMTHB9N+uAAAAEXRSTlMA3zDvfyBAEJC/n3BQz69gX7VMkcMAAAGySURBVEjHnZZbFoMgDEQJiDzVuv/NtgbtFGuQ4/zUKpeMIQbUhXSKE5l1XSn4pFWHRm/WShT1HRLWC01LGxFEVkCc30eYkLJ1Sjk9pvkw690VY6k8DWP9OM9yMG0Koi+mi8XA36NXmW0UXra4eJ3iwHfrfXVlgL0NqqGBHdqfeQhMmyJ48WDuKP81h3+SMPeRKkJcSXiLUK4XTHCjESOnz1VUXQoc6lgi2x4cI5aTQ201Mt8wHysI5fc05M5c81uZEtHcMKhxZ7iYEty1GfhLvGKpm+EYkdGxm1F5axmcB93DoORIbXfdN7f+hlFuyxtDP+sxtBnF43cIYwaZAWRgzxIoiXEMESoPlMhwLRDXeK772CAzXEdBRV7cmnoVBp0OSlyGidEzJTFq5hhcsA5388oSGM6b5p+qjpZrBlMS9xj4AwXmz108ukU1IomM3ceiW0CDwHCqp1NjAqXlFrbga+xuloQJ+tuyfbIBPNpqnmxqT7dPaOnZqBfhSBCteJAxWj58zLk2xgg+SPGYM6dRO6WczSnIxxwEExRaO+UyCUhbOp7CGQ+kxSUfNtLQFC+Po29vvy7jj4y0yAAAAABJRU5ErkJggg==",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 8021.819315,
+        "wallTime": 1694245882.391861,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.landers.ph/",
+            "lineNumber": 0,
+            "columnNumber": 6246
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "372D2DD2ACC498177ABF00947EBD442D",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "103188.8",
+        "loaderId": "91EF4BF97FF31C5C6CD71F5425AE3C4E",
+        "documentURL": "https://www.landers.ph/",
+        "request": {
+            "url": "blob:https://www.landers.ph/b7199624-8ed6-4af7-9fbc-8e2cc2632ddc",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 8021.843125,
+        "wallTime": 1694245882.415026,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.landers.ph/",
+            "lineNumber": 0,
+            "columnNumber": 6246
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Other",
+        "frameId": "372D2DD2ACC498177ABF00947EBD442D",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "103188.9",
+        "loaderId": "91EF4BF97FF31C5C6CD71F5425AE3C4E",
+        "documentURL": "https://www.landers.ph/",
+        "request": {
+            "url": "https://www.landers.ph/cdn-cgi/challenge-platform/h/b/flow/ov1/1387315513:1694243365:8M_9xMK6_mCmT4Pc-xLY7GKAE6d2nBWEZWDGGICCRPA/803dd87baebc3f7d/e231185b927f5f1",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "Content-type": "application/x-www-form-urlencoded",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "CF-Challenge": "e231185b927f5f1",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "postData": "v_803dd87baebc3f7d=TY69v9T9P9l9ueC4eCg9$1cXZNywfCO6CTeC-yyCVCf9NYe8elCzcCN1CPCxf7CwyneCf1nau--IYCcCry3cCBvfCnehZZCSHzZCNreQ3$vol$w-CI9nyES-v$3qB0CeAC4pf79Czx7$95Ce7SHfsoZelZCz5YCXxIZPdQ7Cc-bN9CgrWE6P1qChpZ5FO5C4piWTwoCw$3Mz9P5RZZCX13TBB5YKHYC$%2b1CU$CTCe-RXWE3gNvCK7Z5C0tCTshKvBq8veyC74YCelZyNlLHjpQPX6pWTr9pj5xMzM64r81+QEYCwdfAQ$RQQJzKPoxBowOEO3$6e5Ar1Hw$4rPtw3CL9CTrfcXKFnm0JpKKIVDQ-w9qwAn$DA91zu7AuUWQ5CrNLtEF9CRstt6qQ3y-npr9Ztp9b3Z4+tqWY$5vD+vRUaXp$DK+Kd+2CaXU$2qeouCW-6lCCM6rrwTZ814T-bTA633VngK9CwNn3CXfr9CVUX-ngJQaR$BQcVLxEKntwxYxwYKNEsUELu9VgEfeA-Uf7H6oO1J3RXEaA--LP-9Ly7EESMY2BqDfaTCCG3CpOHpcX+3-wEYbBC+qqHT6RwfdcyOK$zBHo3yZT5E8Z6x3ZvtEEMMThTx0i-Z1nCOwCfN1DBCOTr4SrPWp47ireqvKU3NQ409vWY6-EbyBb+EAFISNQre5KKtZCCULiMeBLp+w6N53paWhMwEwZwu$49wuZ0C5C9RgaeSF9mqyF1tBJKy43Xw14eSAL73RNMKuZrQ9OJKC6uMFCO9Pzpjs1N1-I97hPnP6$5uCR6OqY7$3xV7Urnf$Q+3UBCZCZ7QsHqz9+zGTCDwyWAYCqe1+xyKpWBEwCwuDwZDeAzpN39wISutz9RntNMpBJV$ZBJCyDBIwHX3Xy$OH64rgcYCyOufTrg39hpvufy$5pRUMoBRn3XeAw-cKBhpT9+f3ScVzX3BBV$FM6ApMBJ03N3fL9YnP-u7BE$$QHLeCOcurp8pRR$G4Vn3ZpU03xECv3SBtzyDwYN16HL4rrBqRPbco46x3Xc$z-Y46pugw3yh6F3iw1r9b4YepS3R43QCPB9xCqeqKnChMPCZL9QqON5Q923X8u$4rKOqzpacs+UjIULYurfeoAvSN9Rw1rZRco+GZO50QW-oh5w9q6y+HE$UQC++$UJ9fCbAahMFhEw3S3X7Uo3jFCLuyPC6E-WhieS7QjNEwwVn77$1nczyH39wZR3ZK3SqRrQjw6KCwE5Opx7Oz9W1P$$+z$wC1B17Go-o3yA-+HH7p6LiFeUwQSxAFo3V+03ae9RUawjFomHwjG8qTECd-vR1+WmG9C85r97chXC6CBB3jeZFGZpaV$GhVL4vOLN9d3U4CKwNw1Dg13ynM1$Ui-W49E91Fo39vusQn-ceZB-e3QCqF3Mn9Kyz3ZN5xnCr$63+L$RBK72s3CeIsq9ciD4K2AdemFCEp9eI8u746Z1cx943a411CZyfZ3EQpanC7UMeSw2r5Y+$53fN3geBrZywLNpj3fTZZcAf3RsVFIQwlWA1CG89Tb63DcuROjpJq8OJD6N1apVZ1cErUnP61xCDC1By0ZB3NnhpRW60$rp3eo-oW9SNr9Wyb-C7CFoST9KVcAeqy$VQpn7eGgAL9a9fnl-v-1N98C63GqOBE0C5U$uo--LAF1K3K9Pq2-ZAZC3F-9E9tCUco39w1u3$Cz417Y4$q3GCA3HT6nCl97COnlZGW$rC70juZ38eIxPpplcoB9L1m9139C1D9R6Lujdh3VeYE9-UQ3Gcj6646Vpi-9coW6RZR3SCtf-KprZ83XwCC",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "dl84MDNkZDg3YmFlYmMzZjdkPVRZNjl2OVQ5UDlsOXVlQzRlQ2c5JDFjWFpOeXdmQ082Q1RlQy15eUNWQ2Y5TlllOGVsQ3pjQ04xQ1BDeGY3Q3d5bmVDZjFuYXUtLUlZQ2NDcnkzY0NCdmZDbmVoWlpDU0h6WkNOcmVRMyR2b2wkdy1DSTlueUVTLXYkM3FCMENlQUM0cGY3OUN6eDckOTVDZTdTSGZzb1plbFpDejVZQ1h4SVpQZFE3Q2MtYk45Q2dyV0U2UDFxQ2hwWjVGTzVDNHBpV1R3b0N3JDNNejlQNVJaWkNYMTNUQkI1WUtIWUMkJTJiMUNVJENUQ2UtUlhXRTNnTnZDSzdaNUMwdENUc2hLdkJxOHZleUM3NFlDZWxaeU5sTEhqcFFQWDZwV1RyOXBqNXhNek02NHI4MStRRVlDd2RmQVEkUlFRSnpLUG94Qm93T0VPMyQ2ZTVBcjFIdyQ0clB0dzNDTDlDVHJmY1hLRm5tMEpwS0tJVkRRLXc5cXdBbiREQTkxenU3QXVVV1E1Q3JOTHRFRjlDUnN0dDZxUTN5LW5wcjladHA5YjNaNCt0cVdZJDV2RCt2UlVhWHAkREsrS2QrMkNhWFUkMnFlb3VDVy02bENDTTZycndUWjgxNFQtYlRBNjMzVm5nSzlDd05uM0NYZnI5Q1ZVWC1uZ0pRYVIkQlFjVkx4RUtudHd4WXh3WUtORXNVRUx1OVZnRWZlQS1VZjdINm9PMUozUlhFYUEtLUxQLTlMeTdFRVNNWTJCcURmYVRDQ0czQ3BPSHBjWCszLXdFWWJCQytxcUhUNlJ3ZmRjeU9LJHpCSG8zeVpUNUU4WjZ4M1p2dEVFTU1UaFR4MGktWjFuQ093Q2ZOMURCQ09UcjRTclBXcDQ3aXJlcXZLVTNOUTQwOXZXWTYtRWJ5QmIrRUFGSVNOUXJlNUtLdFpDQ1VMaU1lQkxwK3c2TjUzcGFXaE13RXdad3UkNDl3dVowQzVDOVJnYWVTRjltcXlGMXRCSkt5NDNYdzE0ZVNBTDczUk5NS3VaclE5T0pLQzZ1TUZDTzlQenBqczFOMS1JOTdoUG5QNiQ1dUNSNk9xWTckM3hWN1VybmYkUSszVUJDWkNaN1FzSHF6OSt6R1RDRHd5V0FZQ3FlMSt4eUtwV0JFd0N3dUR3WkRlQXpwTjM5d0lTdXR6OVJudE5NcEJKViRaQkpDeURCSXdIWDNYeSRPSDY0cmdjWUN5T3VmVHJnMzlocHZ1ZnkkNXBSVU1vQlJuM1hlQXctY0tCaHBUOStmM1NjVnpYM0JCViRGTTZBcE1CSjAzTjNmTDlZblAtdTdCRSQkUUhMZUNPY3VycDhwUlIkRzRWbjNacFUwM3hFQ3YzU0J0enlEd1lOMTZITDRyckJxUlBiY280NngzWGMkei1ZNDZwdWd3M3loNkYzaXcxcjliNFllcFMzUjQzUUNQQjl4Q3FlcUtuQ2hNUENaTDlRcU9ONVE5MjNYOHUkNHJLT3F6cGFjcytVaklVTFl1cmZlb0F2U045UncxclpSY28rR1pPNTBRVy1vaDV3OXE2eStIRSRVUUMrKyRVSjlmQ2JBYWhNRmhFdzNTM1g3VW8zakZDTHV5UEM2RS1XaGllUzdRak5Fd3dWbjc3JDFuY3p5SDM5d1pSM1pLM1NxUnJRanc2S0N3RTVPcHg3T3o5VzFQJCQreiR3QzFCMTdHby1vM3lBLStISDdwNkxpRmVVd1FTeEFGbzNWKzAzYWU5UlVhd2pGb21Id2pHOHFURUNkLXZSMStXbUc5Qzg1cjk3Y2hYQzZDQkIzamVaRkdacGFWJEdoVkw0dk9MTjlkM1U0Q0t3TncxRGcxM3luTTEkVWktVzQ5RTkxRm8zOXZ1c1FuLWNlWkItZTNRQ3FGM01uOUt5ejNaTjV4bkNyJDYzK0wkUkJLNzJzM0NlSXNxOWNpRDRLMkFkZW1GQ0VwOWVJOHU3NDZaMWN4OTQzYTQxMUNaeWZaM0VRcGFuQzdVTWVTdzJyNVkrJDUzZk4zZ2VCclp5d0xOcGozZlRaWmNBZjNSc1ZGSVF3bFdBMUNHODlUYjYzRGN1Uk9qcEpxOE9KRDZOMWFwVloxY0VyVW5QNjF4Q0RDMUJ5MFpCM05uaHBSVzYwJHJwM2VvLW9XOVNOcjlXeWItQzdDRm9TVDlLVmNBZXF5JFZRcG43ZUdnQUw5YTlmbmwtdi0xTjk4QzYzR3FPQkUwQzVVJHVvLS1MQUYxSzNLOVBxMi1aQVpDM0YtOUU5dENVY28zOXcxdTMkQ3o0MTdZNCRxM0dDQTNIVDZuQ2w5N0NPbmxaR1ckckM3MGp1WjM4ZUl4UHBwbGNvQjlMMW05MTM5QzFEOVI2THVqZGgzVmVZRTktVVEzR2NqNjY0NlZwaS05Y29XNlJaUjNTQ3RmLUtwclo4M1h3Q0M="
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 8021.935081,
+        "wallTime": 1694245882.507202,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "fy.<computed>",
+                        "scriptId": "12",
+                        "url": "https://www.landers.ph/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803dd87baebc3f7d",
+                        "lineNumber": 0,
+                        "columnNumber": 12646
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "372D2DD2ACC498177ABF00947EBD442D",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "C3EB3B51C03B1679FE9E3119CBF0AFC2",
+        "loaderId": "C3EB3B51C03B1679FE9E3119CBF0AFC2",
+        "documentURL": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/if/ov2/av0/rcv0/0/p0s70/0x4AAAAAAADnPIDROrmt1Wwj/light/normal",
+        "request": {
+            "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/if/ov2/av0/rcv0/0/p0s70/0x4AAAAAAADnPIDROrmt1Wwj/light/normal",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 8022.039901,
+        "wallTime": 1694245882.612135,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "_",
+                        "scriptId": "14",
+                        "url": "https://challenges.cloudflare.com/turnstile/v0/b/8827f912/api.js?onload=barZ0&render=explicit",
+                        "lineNumber": 0,
+                        "columnNumber": 18415
+                    },
+                    {
+                        "functionName": "hV",
+                        "scriptId": "12",
+                        "url": "https://www.landers.ph/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803dd87baebc3f7d",
+                        "lineNumber": 0,
+                        "columnNumber": 151522
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.landers.ph/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803dd87baebc3f7d",
+                        "lineNumber": 0,
+                        "columnNumber": 153094
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "12",
+                        "url": "https://www.landers.ph/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803dd87baebc3f7d",
+                        "lineNumber": 0,
+                        "columnNumber": 153410
+                    },
+                    {
+                        "functionName": "hO",
+                        "scriptId": "12",
+                        "url": "https://www.landers.ph/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=803dd87baebc3f7d",
+                        "lineNumber": 0,
+                        "columnNumber": 153457
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "14",
+                        "url": "https://challenges.cloudflare.com/turnstile/v0/b/8827f912/api.js?onload=barZ0&render=explicit",
+                        "lineNumber": 0,
+                        "columnNumber": 29906
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "27257029E9B6E1BE4B7B828224124F1A",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

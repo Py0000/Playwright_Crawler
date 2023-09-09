@@ -1,0 +1,1119 @@
+[
+    {
+        "requestId": "4380B9599325BD21C2078FD2B8506384",
+        "loaderId": "4380B9599325BD21C2078FD2B8506384",
+        "documentURL": "https://emrr.mc/",
+        "request": {
+            "url": "https://emrr.mc/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23443.624524,
+        "wallTime": 1694261304.196453,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "34B3C5C27F98EDD92772638BF33D83EC",
+        "loaderId": "34B3C5C27F98EDD92772638BF33D83EC",
+        "documentURL": "https://emrr.mc/owa",
+        "request": {
+            "url": "https://emrr.mc/owa",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://emrr.mc/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23445.630739,
+        "wallTime": 1694261306.202694,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://emrr.mc/",
+                        "lineNumber": 1,
+                        "columnNumber": 10
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "34B3C5C27F98EDD92772638BF33D83EC",
+        "loaderId": "34B3C5C27F98EDD92772638BF33D83EC",
+        "documentURL": "https://emrr.mc/owa/",
+        "request": {
+            "url": "https://emrr.mc/owa/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://emrr.mc/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23446.029726,
+        "wallTime": 1694261306.60176,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://emrr.mc/",
+                        "lineNumber": 1,
+                        "columnNumber": 10
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://emrr.mc/owa",
+            "status": 301,
+            "statusText": "Moved Permanently",
+            "headers": {
+                "Connection": "close",
+                "Content-Length": "0",
+                "Date": "Sat, 09 Sep 2023 12:08:25 GMT",
+                "Location": "/owa/",
+                "X-Powered-By": "ASP.NET",
+                "X-UA-Compatible": "IE=EmulateIE7"
+            },
+            "mimeType": "",
+            "connectionReused": true,
+            "connectionId": 49,
+            "remoteIPAddress": "87.254.230.60",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 181,
+            "timing": {
+                "requestTime": 23445.631907,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": -1,
+                "dnsEnd": -1,
+                "connectStart": -1,
+                "connectEnd": -1,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 0.3,
+                "sendEnd": 1.916,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 395.963,
+                "receiveHeadersEnd": 396.055
+            },
+            "responseTime": 1694261306599.716,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.2",
+                "keyExchange": "RSA",
+                "cipher": "AES_128_CBC",
+                "mac": "HMAC-SHA1",
+                "certificateId": 0,
+                "subjectName": "exchange.emrr.mc",
+                "sanList": [
+                    "exchange.emrr.mc",
+                    "autodiscover.emrr.mc",
+                    "emrr.mc"
+                ],
+                "issuer": "Gandi Standard SSL CA 2",
+                "validFrom": 1669075200,
+                "validTo": 1702252799,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Document",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "34B3C5C27F98EDD92772638BF33D83EC",
+        "loaderId": "34B3C5C27F98EDD92772638BF33D83EC",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?url=https://emrr.mc/owa/&reason=0",
+        "request": {
+            "url": "https://emrr.mc/owa/auth/logon.aspx?url=https://emrr.mc/owa/&reason=0",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://emrr.mc/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23446.441707,
+        "wallTime": 1694261307.013816,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://emrr.mc/",
+                        "lineNumber": 1,
+                        "columnNumber": 10
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://emrr.mc/owa/",
+            "status": 302,
+            "statusText": "Moved Temporarily",
+            "headers": {
+                "Content-Length": "0",
+                "Date": "Sat, 09 Sep 2023 12:08:25 GMT",
+                "Location": "https://emrr.mc/owa/auth/logon.aspx?url=https://emrr.mc/owa/&reason=0"
+            },
+            "mimeType": "",
+            "connectionReused": true,
+            "connectionId": 51,
+            "remoteIPAddress": "87.254.230.60",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 310,
+            "timing": {
+                "requestTime": 23446.030514,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": -1,
+                "dnsEnd": -1,
+                "connectStart": -1,
+                "connectEnd": -1,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 0.249,
+                "sendEnd": 0.444,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 409.532,
+                "receiveHeadersEnd": 410.029
+            },
+            "responseTime": 1694261307011.892,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.2",
+                "keyExchange": "RSA",
+                "cipher": "AES_128_CBC",
+                "mac": "HMAC-SHA1",
+                "certificateId": 0,
+                "subjectName": "exchange.emrr.mc",
+                "sanList": [
+                    "exchange.emrr.mc",
+                    "autodiscover.emrr.mc",
+                    "emrr.mc"
+                ],
+                "issuer": "Gandi Standard SSL CA 2",
+                "validFrom": 1669075200,
+                "validTo": 1702252799,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Document",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "314753.3",
+        "loaderId": "34B3C5C27F98EDD92772638BF33D83EC",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?url=https://emrr.mc/owa/&reason=0",
+        "request": {
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/logon.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://emrr.mc/owa/auth/logon.aspx?url=https://emrr.mc/owa/&reason=0",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23446.880723,
+        "wallTime": 1694261307.452636,
+        "initiator": {
+            "type": "parser",
+            "url": "https://emrr.mc/owa/auth/logon.aspx?url=https://emrr.mc/owa/&reason=0",
+            "lineNumber": 9,
+            "columnNumber": 89
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "314753.4",
+        "loaderId": "34B3C5C27F98EDD92772638BF33D83EC",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?url=https://emrr.mc/owa/&reason=0",
+        "request": {
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/owafont.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://emrr.mc/owa/auth/logon.aspx?url=https://emrr.mc/owa/&reason=0",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23446.881191,
+        "wallTime": 1694261307.453076,
+        "initiator": {
+            "type": "parser",
+            "url": "https://emrr.mc/owa/auth/logon.aspx?url=https://emrr.mc/owa/&reason=0",
+            "lineNumber": 10,
+            "columnNumber": 91
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "314753.5",
+        "loaderId": "34B3C5C27F98EDD92772638BF33D83EC",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?url=https://emrr.mc/owa/&reason=0",
+        "request": {
+            "url": "https://emrr.mc/owa/14.3.487.0/scripts/premium/flogon.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://emrr.mc/owa/auth/logon.aspx?url=https://emrr.mc/owa/&reason=0",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23446.881414,
+        "wallTime": 1694261307.453292,
+        "initiator": {
+            "type": "parser",
+            "url": "https://emrr.mc/owa/auth/logon.aspx?url=https://emrr.mc/owa/&reason=0",
+            "lineNumber": 11,
+            "columnNumber": 79
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "29A5D3E47B21B2998F01EE2F367B7612",
+        "loaderId": "29A5D3E47B21B2998F01EE2F367B7612",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+        "request": {
+            "url": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://emrr.mc/owa/auth/logon.aspx?url=https://emrr.mc/owa/&reason=0",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23448.263623,
+        "wallTime": 1694261308.835572,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "redir",
+                        "scriptId": "5",
+                        "url": "https://emrr.mc/owa/14.3.487.0/scripts/premium/flogon.js",
+                        "lineNumber": 0,
+                        "columnNumber": 1556
+                    },
+                    {
+                        "functionName": "window.onload",
+                        "scriptId": "5",
+                        "url": "https://emrr.mc/owa/14.3.487.0/scripts/premium/flogon.js",
+                        "lineNumber": 0,
+                        "columnNumber": 51
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "314753.10",
+        "loaderId": "29A5D3E47B21B2998F01EE2F367B7612",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+        "request": {
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/logon.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23448.666751,
+        "wallTime": 1694261309.238648,
+        "initiator": {
+            "type": "parser",
+            "url": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+            "lineNumber": 9,
+            "columnNumber": 89
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "314753.11",
+        "loaderId": "29A5D3E47B21B2998F01EE2F367B7612",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+        "request": {
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/owafont.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23448.667001,
+        "wallTime": 1694261309.238873,
+        "initiator": {
+            "type": "parser",
+            "url": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+            "lineNumber": 10,
+            "columnNumber": 91
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "314753.12",
+        "loaderId": "29A5D3E47B21B2998F01EE2F367B7612",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+        "request": {
+            "url": "https://emrr.mc/owa/14.3.487.0/scripts/premium/flogon.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23448.66744,
+        "wallTime": 1694261309.239323,
+        "initiator": {
+            "type": "parser",
+            "url": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+            "lineNumber": 11,
+            "columnNumber": 79
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "314753.13",
+        "loaderId": "29A5D3E47B21B2998F01EE2F367B7612",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+        "request": {
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/lgntopl.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23448.667642,
+        "wallTime": 1694261309.239519,
+        "initiator": {
+            "type": "parser",
+            "url": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+            "lineNumber": 103,
+            "columnNumber": 85
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "314753.14",
+        "loaderId": "29A5D3E47B21B2998F01EE2F367B7612",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+        "request": {
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/lgntopr.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23448.668197,
+        "wallTime": 1694261309.240102,
+        "initiator": {
+            "type": "parser",
+            "url": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+            "lineNumber": 105,
+            "columnNumber": 85
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "314753.15",
+        "loaderId": "29A5D3E47B21B2998F01EE2F367B7612",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+        "request": {
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/lgnexlogo.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23448.66848,
+        "wallTime": 1694261309.240376,
+        "initiator": {
+            "type": "parser",
+            "url": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+            "lineNumber": 230,
+            "columnNumber": 143
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "314753.16",
+        "loaderId": "29A5D3E47B21B2998F01EE2F367B7612",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+        "request": {
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/lgnbotl.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23448.668601,
+        "wallTime": 1694261309.240496,
+        "initiator": {
+            "type": "parser",
+            "url": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+            "lineNumber": 244,
+            "columnNumber": 85
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "314753.17",
+        "loaderId": "29A5D3E47B21B2998F01EE2F367B7612",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+        "request": {
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/lgnbotr.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23448.668748,
+        "wallTime": 1694261309.240627,
+        "initiator": {
+            "type": "parser",
+            "url": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+            "lineNumber": 246,
+            "columnNumber": 85
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "314753.26",
+        "loaderId": "29A5D3E47B21B2998F01EE2F367B7612",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+        "request": {
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/lgntopm.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://emrr.mc/owa/14.3.487.0/themes/resources/logon.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23448.678245,
+        "wallTime": 1694261309.250147,
+        "initiator": {
+            "type": "parser",
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/logon.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "314753.27",
+        "loaderId": "29A5D3E47B21B2998F01EE2F367B7612",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+        "request": {
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/lgnleft.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://emrr.mc/owa/14.3.487.0/themes/resources/logon.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23448.678745,
+        "wallTime": 1694261309.250635,
+        "initiator": {
+            "type": "parser",
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/logon.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "314753.28",
+        "loaderId": "29A5D3E47B21B2998F01EE2F367B7612",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+        "request": {
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/lgnright.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://emrr.mc/owa/14.3.487.0/themes/resources/logon.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23448.685832,
+        "wallTime": 1694261309.257758,
+        "initiator": {
+            "type": "parser",
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/logon.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "314753.29",
+        "loaderId": "29A5D3E47B21B2998F01EE2F367B7612",
+        "documentURL": "https://emrr.mc/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2femrr.mc%2fowa%2f",
+        "request": {
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/lgnbotm.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://emrr.mc/owa/14.3.487.0/themes/resources/logon.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 23448.686489,
+        "wallTime": 1694261309.258382,
+        "initiator": {
+            "type": "parser",
+            "url": "https://emrr.mc/owa/14.3.487.0/themes/resources/logon.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DF23373E5ACC4CAE8BA139F38B5A019A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "OutlookSession",
+                    "value": "82be10888df04f3fbc273f8b45f828b1",
+                    "domain": "emrr.mc",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 46,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

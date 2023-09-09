@@ -1,0 +1,4443 @@
+[
+    {
+        "requestId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/",
+        "request": {
+            "url": "https://www.societegenerale.com/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14614.799518,
+        "wallTime": 1694252475.371516,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "http://www.societegenerale.com/fr",
+        "request": {
+            "url": "http://www.societegenerale.com/fr",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14615.633608,
+        "wallTime": 1694252476.205735,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://www.societegenerale.com/",
+            "status": 301,
+            "statusText": "Moved Permanently",
+            "headers": {
+                "Age": "0",
+                "Cache-Control": "max-age=21600, public",
+                "Connection": "keep-alive",
+                "Content-Type": "text/html; charset=UTF-8",
+                "Content-language": "fr",
+                "Date": "Sat, 09 Sep 2023 09:41:16 GMT",
+                "ETag": "\"1694246687\"",
+                "Last-Modified": "Sat, 09 Sep 2023 08:04:47 GMT",
+                "Location": "http://www.societegenerale.com/fr",
+                "Server": "Apache",
+                "Strict-Transport-Security": "max-age=31536000; includeSubDomains\nmax-age=31536000",
+                "Transfer-Encoding": "chunked",
+                "X-Cache": "MISS",
+                "X-Cacheable": "NO:Not Cacheable",
+                "X-Content-Type-Options": "nosniff",
+                "X-Drupal-Route-Normalizer": "1",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-Iinfo": "16-81384238-81384242 NNNN CT(222 230 0) RT(1694252474855 19) q(0 0 5 0) r(7 7) U24",
+                "X-UA-Compatible": "IE=edge",
+                "countryCode": "",
+                "vary": "Accept-Encoding"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 134,
+            "remoteIPAddress": "103.28.249.215",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 1202,
+            "timing": {
+                "requestTime": 14614.80063,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.531,
+                "dnsEnd": 1.56,
+                "connectStart": 1.56,
+                "connectEnd": 99.888,
+                "sslStart": 40.579,
+                "sslEnd": 99.879,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 100.021,
+                "sendEnd": 100.223,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 831.313,
+                "receiveHeadersEnd": 831.65
+            },
+            "responseTime": 1694252476203.789,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.3",
+                "keyExchange": "",
+                "keyExchangeGroup": "X25519",
+                "cipher": "AES_128_GCM",
+                "certificateId": 0,
+                "subjectName": "societegenerale.com",
+                "sanList": [
+                    "societegenerale.com",
+                    "www.societegenerale.com",
+                    "www.investors.societegenerale.com",
+                    "investors.societegenerale.com",
+                    "p-backend.societegenerale.com"
+                ],
+                "issuer": "DigiCert Global G2 TLS RSA SHA256 2020 CA1",
+                "validFrom": 1691366400,
+                "validTo": 1722988799,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "serverSignatureAlgorithm": 2052,
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Document",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/fr",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14615.63572,
+        "wallTime": 1694252476.207644,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://www.societegenerale.com/fr",
+            "status": 307,
+            "statusText": "Internal Redirect",
+            "headers": {
+                "Cross-Origin-Resource-Policy": "Cross-Origin",
+                "Location": "https://www.societegenerale.com/fr",
+                "Non-Authoritative-Reason": "HSTS"
+            },
+            "mimeType": "",
+            "connectionReused": false,
+            "connectionId": 0,
+            "remoteIPAddress": "",
+            "remotePort": 0,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 0,
+            "timing": {
+                "requestTime": 14615.634359,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": -1,
+                "dnsEnd": -1,
+                "connectStart": -1,
+                "connectEnd": -1,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 0.025,
+                "sendEnd": 0.025,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 0.025,
+                "receiveHeadersEnd": 0.025
+            },
+            "responseTime": 1694252476206.23,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "226227.2",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/themes/custom/sg_refonte/assets/font/woff/SourceSansPro-Regular.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "Origin": "https://www.societegenerale.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": true
+        },
+        "timestamp": 14615.914449,
+        "wallTime": 1694252476.486355,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 29,
+            "columnNumber": 125
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.3",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/themes/custom/sg_refonte/assets/font/woff/SourceSansPro-Bold.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "Origin": "https://www.societegenerale.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": true
+        },
+        "timestamp": 14615.91481,
+        "wallTime": 1694252476.486711,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 30,
+            "columnNumber": 122
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.4",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/themes/custom/sg_refonte/assets/font/woff/Montserrat-ExtraBold.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "Origin": "https://www.societegenerale.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": true
+        },
+        "timestamp": 14615.915023,
+        "wallTime": 1694252476.486902,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 31,
+            "columnNumber": 124
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.5",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/themes/custom/sg_refonte/assets/font/woff/Montserrat-SemiBold.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "Origin": "https://www.societegenerale.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": true
+        },
+        "timestamp": 14615.915186,
+        "wallTime": 1694252476.487064,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 32,
+            "columnNumber": 123
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.6",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/sites/default/files/css/css_T_47jBxLJYer1RWSAMwySnap9T5VgJ2nq-Yu_UeaXxE.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14615.915347,
+        "wallTime": 1694252476.487222,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 46,
+            "columnNumber": 125
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.7",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/sites/default/files/css/css_D5EGTrMgn7NUUXY6NtdROYxd1bxfml6iDag7cfV-o2g.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14615.915745,
+        "wallTime": 1694252476.487767,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 47,
+            "columnNumber": 124
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.8",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/sites/default/files/image/logo/01_.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14615.916108,
+        "wallTime": 1694252476.487989,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 85,
+            "columnNumber": 141
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.9",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/themes/custom/sg_refonte/assets/images/logos/logo-simple.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14615.916209,
+        "wallTime": 1694252476.488249,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 136,
+            "columnNumber": 149
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.10",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/sites/default/files/styles/banniere_principale_desktop/public/image/2023-09/20230908_Stade-Coupe-Monde-Rugby_3_1920x1067.jpg?h=82d80682&amp;itok=I3tji2CC%201x",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": true
+        },
+        "timestamp": 14615.916753,
+        "wallTime": 1694252476.488643,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 506,
+            "columnNumber": 244
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.11",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/sites/default/files/styles/banniere_principale_mobile/public/image/2023-09/20230908_Stade-Coupe-Monde-Rugby_3_1920x1067.jpg?h=82d80682&amp;itok=xoTMJiXp%201x",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": true
+        },
+        "timestamp": 14615.916869,
+        "wallTime": 1694252476.488745,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 507,
+            "columnNumber": 243
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.13",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/sites/default/files/styles/banniere_principale_desktop/public/image/2023-09/20230908_Stade-Coupe-Monde-Rugby_3_1920x1067.jpg?h=82d80682&itok=I3tji2CC",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14615.917019,
+        "wallTime": 1694252476.488897,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 514,
+            "columnNumber": 214
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.27",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20693%20411'%2F%3E",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 14615.931054,
+        "wallTime": 1694252476.502969,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 562,
+            "columnNumber": 91
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.32",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%201200%20630'%2F%3E",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 14615.933652,
+        "wallTime": 1694252476.50557,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 688,
+            "columnNumber": 91
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.33",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%201920%201067'%2F%3E",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 14615.935934,
+        "wallTime": 1694252476.507849,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 754,
+            "columnNumber": 91
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.38",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/themes/custom/sg_refonte/assets/images/contrib/placeholder-footer.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14615.960123,
+        "wallTime": 1694252476.532041,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 1018,
+            "columnNumber": 13
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.40",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CIntersectionObserverEntry%2CURL%2CObject.assign%2CArray.from%2CArray.prototype.includes%2CString.prototype.includes%2CElement.prototype.matches%2CPromise%2CPromise.prototype.finally",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 14615.961717,
+        "wallTime": 1694252476.533662,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 1021,
+            "columnNumber": 261
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.41",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14615.962598,
+        "wallTime": 1694252476.534494,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 1022,
+            "columnNumber": 88
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.42",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 14615.963756,
+        "wallTime": 1694252476.535665,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 1023,
+            "columnNumber": 82
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.43",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/sites/default/files/js/js_bcKLuY948wTWpwizWs6iFglQuK5ZmVSTOfaodbrhAvE.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14615.964208,
+        "wallTime": 1694252476.536258,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 1024,
+            "columnNumber": 88
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.44",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=553670105",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14615.964618,
+        "wallTime": 1694252476.536497,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 1026,
+            "columnNumber": 126
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.42",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://unpkg.com/@lottiefiles/lottie-player@2.0.2/dist/lottie-player.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.societegenerale.com/",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 14616.131917,
+        "wallTime": 1694252476.703986,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 1023,
+            "columnNumber": 82
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js",
+            "status": 302,
+            "statusText": "",
+            "headers": {
+                "date": "Sat, 09 Sep 2023 09:41:16 GMT",
+                "via": "1.1 fly.io",
+                "x-content-type-options": "nosniff",
+                "cf-cache-status": "HIT",
+                "fly-request-id": "01H9WN1BB8AWVBVZ12MMTB28CX-sin",
+                "server": "cloudflare",
+                "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+                "age": "31",
+                "vary": "Accept, Accept-Encoding",
+                "content-type": "text/plain; charset=utf-8",
+                "access-control-allow-origin": "*",
+                "location": "/@lottiefiles/lottie-player@2.0.2/dist/lottie-player.js",
+                "cache-control": "public, s-maxage=600, max-age=60",
+                "cf-ray": "803e797b582449f6-SIN"
+            },
+            "mimeType": "text/plain",
+            "connectionReused": false,
+            "connectionId": 196,
+            "remoteIPAddress": "104.16.122.175",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 308,
+            "timing": {
+                "requestTime": 14615.965244,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 2.327,
+                "dnsEnd": 6.002,
+                "connectStart": 6.002,
+                "connectEnd": 97.519,
+                "sslStart": 49.13,
+                "sslEnd": 97.508,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 98.002,
+                "sendEnd": 98.538,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 161.371,
+                "receiveHeadersEnd": 161.659
+            },
+            "responseTime": 1694252476698.529,
+            "protocol": "h2",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.3",
+                "keyExchange": "",
+                "keyExchangeGroup": "X25519",
+                "cipher": "AES_128_GCM",
+                "certificateId": 0,
+                "subjectName": "sni.cloudflaressl.com",
+                "sanList": [
+                    "*.unpkg.com",
+                    "sni.cloudflaressl.com",
+                    "unpkg.com"
+                ],
+                "issuer": "Cloudflare Inc ECC CA-3",
+                "validFrom": 1682985600,
+                "validTo": 1714607999,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "serverSignatureAlgorithm": 1027,
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Script",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.45",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 14616.647201,
+        "wallTime": 1694252477.219282,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "14",
+                        "url": "https://www.societegenerale.com/fr",
+                        "lineNumber": 1016,
+                        "columnNumber": 144
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "14",
+                        "url": "https://www.societegenerale.com/fr",
+                        "lineNumber": 1017,
+                        "columnNumber": 8
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.60",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/themes/custom/sg_refonte/assets/images/icon/search.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/sites/default/files/css/css_D5EGTrMgn7NUUXY6NtdROYxd1bxfml6iDag7cfV-o2g.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14616.661373,
+        "wallTime": 1694252477.233275,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/sites/default/files/css/css_D5EGTrMgn7NUUXY6NtdROYxd1bxfml6iDag7cfV-o2g.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.61",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/themes/custom/sg_refonte/assets/images/icon/cross-white.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/sites/default/files/css/css_D5EGTrMgn7NUUXY6NtdROYxd1bxfml6iDag7cfV-o2g.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14616.673506,
+        "wallTime": 1694252477.245403,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/sites/default/files/css/css_D5EGTrMgn7NUUXY6NtdROYxd1bxfml6iDag7cfV-o2g.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.62",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/themes/custom/sg_refonte/assets/images/icon/chevron-down-black.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/sites/default/files/css/css_D5EGTrMgn7NUUXY6NtdROYxd1bxfml6iDag7cfV-o2g.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14616.674401,
+        "wallTime": 1694252477.246291,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/sites/default/files/css/css_D5EGTrMgn7NUUXY6NtdROYxd1bxfml6iDag7cfV-o2g.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.63",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/themes/custom/sg_refonte/assets/images/icon/chevron-down-white.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/sites/default/files/css/css_D5EGTrMgn7NUUXY6NtdROYxd1bxfml6iDag7cfV-o2g.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14616.676493,
+        "wallTime": 1694252477.248394,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/sites/default/files/css/css_D5EGTrMgn7NUUXY6NtdROYxd1bxfml6iDag7cfV-o2g.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.64",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/themes/custom/sg_refonte/assets/images/icon/bourse.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/sites/default/files/css/css_D5EGTrMgn7NUUXY6NtdROYxd1bxfml6iDag7cfV-o2g.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14616.681009,
+        "wallTime": 1694252477.252908,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/sites/default/files/css/css_D5EGTrMgn7NUUXY6NtdROYxd1bxfml6iDag7cfV-o2g.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.65",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/themes/custom/sg_refonte/assets/images/icon/website.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/sites/default/files/css/css_D5EGTrMgn7NUUXY6NtdROYxd1bxfml6iDag7cfV-o2g.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14616.682305,
+        "wallTime": 1694252477.2542,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/sites/default/files/css/css_D5EGTrMgn7NUUXY6NtdROYxd1bxfml6iDag7cfV-o2g.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.66",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/themes/custom/sg_refonte/assets/images/contrib/map.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14616.684951,
+        "wallTime": 1694252477.256859,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 1018,
+            "columnNumber": 13
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.67",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/themes/custom/sg_refonte/assets/images/icon/pdf.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/sites/default/files/css/css_D5EGTrMgn7NUUXY6NtdROYxd1bxfml6iDag7cfV-o2g.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14616.685997,
+        "wallTime": 1694252477.257889,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/sites/default/files/css/css_D5EGTrMgn7NUUXY6NtdROYxd1bxfml6iDag7cfV-o2g.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.70",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CIntersectionObserverEntry%2CURL%2CObject.assign%2CArray.from%2CArray.prototype.includes%2CString.prototype.includes%2CElement.prototype.matches%2CPromise%2CPromise.prototype.finally",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryLow",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 14616.836431,
+        "wallTime": 1694252477.408334,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 1022,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Other",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.71",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://static.hotjar.com/c/hotjar-3368408.js?sv=7",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 14616.937218,
+        "wallTime": 1694252477.509609,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Kc",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 117,
+                        "columnNumber": 508
+                    },
+                    {
+                        "functionName": "BF",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 403,
+                        "columnNumber": 568
+                    },
+                    {
+                        "functionName": "CF",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 404,
+                        "columnNumber": 160
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 173,
+                        "columnNumber": 306
+                    },
+                    {
+                        "functionName": "hd.invoke",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 121,
+                        "columnNumber": 1180
+                    },
+                    {
+                        "functionName": "db",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 104,
+                        "columnNumber": 605
+                    },
+                    {
+                        "functionName": "cb",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 104,
+                        "columnNumber": 404
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 140,
+                        "columnNumber": 381
+                    },
+                    {
+                        "functionName": "hd.invoke",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 121,
+                        "columnNumber": 1180
+                    },
+                    {
+                        "functionName": "db",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 104,
+                        "columnNumber": 605
+                    },
+                    {
+                        "functionName": "eb.F",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 104,
+                        "columnNumber": 1065
+                    },
+                    {
+                        "functionName": "Oe",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 148,
+                        "columnNumber": 37
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 378,
+                        "columnNumber": 193
+                    },
+                    {
+                        "functionName": "Ff",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 158,
+                        "columnNumber": 119
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 331,
+                        "columnNumber": 213
+                    },
+                    {
+                        "functionName": "iv",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 333,
+                        "columnNumber": 1040
+                    },
+                    {
+                        "functionName": "Rv",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 337,
+                        "columnNumber": 34
+                    },
+                    {
+                        "functionName": "bx",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 357,
+                        "columnNumber": 271
+                    },
+                    {
+                        "functionName": "ex",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 362,
+                        "columnNumber": 54
+                    },
+                    {
+                        "functionName": "gx",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 363,
+                        "columnNumber": 42
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.75",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://sdk.privacy-center.org/415bfedc-6dd5-40a1-accb-c5d40e32a005/loader.js?target=www.societegenerale.com",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 14617.258421,
+        "wallTime": 1694252477.830522,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "21",
+                        "url": "",
+                        "lineNumber": 3,
+                        "columnNumber": 255
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "21",
+                        "url": "",
+                        "lineNumber": 3,
+                        "columnNumber": 274
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "21",
+                        "url": "",
+                        "lineNumber": 3,
+                        "columnNumber": 316
+                    },
+                    {
+                        "functionName": "f.aa",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 88,
+                        "columnNumber": 228
+                    },
+                    {
+                        "functionName": "f.ja",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 87,
+                        "columnNumber": 426
+                    },
+                    {
+                        "functionName": "f.X",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 85,
+                        "columnNumber": 406
+                    },
+                    {
+                        "functionName": "f.D",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 83,
+                        "columnNumber": 444
+                    },
+                    {
+                        "functionName": "f.write",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 83,
+                        "columnNumber": 69
+                    },
+                    {
+                        "functionName": "f",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 90,
+                        "columnNumber": 214
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 89,
+                        "columnNumber": 278
+                    },
+                    {
+                        "functionName": "t.streams",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 91,
+                        "columnNumber": 29
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 458,
+                        "columnNumber": 579
+                    },
+                    {
+                        "functionName": "Zt",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 323,
+                        "columnNumber": 902
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 458,
+                        "columnNumber": 391
+                    },
+                    {
+                        "functionName": "b",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 458,
+                        "columnNumber": 308
+                    },
+                    {
+                        "functionName": "Ff",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 158,
+                        "columnNumber": 102
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 331,
+                        "columnNumber": 213
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 103,
+                        "columnNumber": 129
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 332,
+                        "columnNumber": 400
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 332,
+                        "columnNumber": 140
+                    },
+                    {
+                        "functionName": "iv",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 333,
+                        "columnNumber": 1040
+                    },
+                    {
+                        "functionName": "Rv",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 337,
+                        "columnNumber": 34
+                    },
+                    {
+                        "functionName": "bx",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 357,
+                        "columnNumber": 271
+                    },
+                    {
+                        "functionName": "ex",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 362,
+                        "columnNumber": 54
+                    },
+                    {
+                        "functionName": "b.push",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 366,
+                        "columnNumber": 314
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 365,
+                        "columnNumber": 302
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.76",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/getvalue.php",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Accept": "*/*",
+                "Referer": "https://www.societegenerale.com/fr",
+                "X-Requested-With": "XMLHttpRequest",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14617.271524,
+        "wallTime": 1694252477.843967,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "send",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 1,
+                        "columnNumber": 83140
+                    },
+                    {
+                        "functionName": "ajax",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 1,
+                        "columnNumber": 78717
+                    },
+                    {
+                        "functionName": "E.<computed>",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 1,
+                        "columnNumber": 80770
+                    },
+                    {
+                        "functionName": "C",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 122,
+                        "columnNumber": 416
+                    },
+                    {
+                        "functionName": "H",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 122,
+                        "columnNumber": 297
+                    },
+                    {
+                        "functionName": "init",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 123,
+                        "columnNumber": 335
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 124,
+                        "columnNumber": 76
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 1,
+                        "columnNumber": 30309
+                    },
+                    {
+                        "functionName": "t",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 1,
+                        "columnNumber": 30611
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.77",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/fr/base-documentaire",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryLow",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14617.291082,
+        "wallTime": 1694252477.863235,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 5,
+                        "columnNumber": 596
+                    },
+                    {
+                        "functionName": "o",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 5,
+                        "columnNumber": 470
+                    },
+                    {
+                        "functionName": "i",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 5,
+                        "columnNumber": 810
+                    },
+                    {
+                        "functionName": "a",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 5,
+                        "columnNumber": 1228
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 5,
+                        "columnNumber": 1186
+                    },
+                    {
+                        "functionName": "f",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 5,
+                        "columnNumber": 1099
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Other",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.78",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/fr/mecenat-et-sponsoring/sport/rugby",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryLow",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14617.291967,
+        "wallTime": 1694252477.86389,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 5,
+                        "columnNumber": 596
+                    },
+                    {
+                        "functionName": "o",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 5,
+                        "columnNumber": 470
+                    },
+                    {
+                        "functionName": "i",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 5,
+                        "columnNumber": 810
+                    },
+                    {
+                        "functionName": "a",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 5,
+                        "columnNumber": 1228
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 5,
+                        "columnNumber": 1186
+                    },
+                    {
+                        "functionName": "f",
+                        "scriptId": "15",
+                        "url": "https://www.societegenerale.com/sites/default/files/js/js_dKxGGkGovxQ1ihHLvri7sF-ByafuoD9EpPgUg0mDqEo.js",
+                        "lineNumber": 5,
+                        "columnNumber": 1099
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Other",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.79",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://www.societegenerale.com/_Incapsula_Resource?SWKMTFSR=1&e=0.17504147355376398",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14617.497946,
+        "wallTime": 1694252478.06986,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.societegenerale.com/fr",
+            "lineNumber": 1028,
+            "columnNumber": 1
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "___utmvc",
+                    "value": "UmEoztNz5mLmkMye7d3UZhkND7f48zpKPcp7b5PMkdVr/7isMoP9eLclRm8uLL0S648nm4aSJxdWM2ZbAtkR13PMWSsTdq0CDvao44iaR+IQxtSq1lqgvnbM/IHsIViF+K+rKvBwvqyIZk2S347PhK/i6k/O9tZUFQvdFJGyvDa3Dpa7AbqkRxy0cr4/TUkRCrUM7l1mKHGGYSQsd91EQJRvxtzObvdXbbg31pEyQ3OUwJaVjJK7CZDZyaEkGbeDNZysoIfmPSoZBncbkWBNfHByCDBEui/CBVfgP3BuZbf0zeAA1sjL7Swqspmzt65EbF5t4ycvwTP8geEoNfSRo167y5vlcTlrrdqTLyqO/ScrB56D6Mj1aHk4vA6uI77vXZtSrJrq2NTBVESjKIvgP/UvaWj71rwnvVv3W+H8uwwDgJcxv1W4Ufuuw1tWeIQCi5qQ0bhKvUZJ9doV/08tNAuaw6/HYJV1uwFyAKiiCCDVwKVfAmGXN9rWmpVw2UZ2Qhp2CL6iIJt0RGBdx70IJ2Qo+po7rryJlWDaWJ0q/gjFjOM6SUyXE9/Oon1YDhU9a8sN/u0XQEBfB2yEjoPCXltmf++soHwd2hMRrZzlnmyhLjoZ5DJs5Mk0p7MgVljsRRmveT/1pCtK5Mxf91X58p91cMuUjLdDnfQJEUBNKpUEwtBky15E49nbLsebEhQ6vXmRqiwE9VOqvPA331qmb/sm6VhKmrk42wx5dnWBobU8gdZCzx4sgdXXhTSaXWUqmzfQxSe9oNsYDASSK1xYJfw8aHof15q6b5RWBjdj886tQvbV5HPzDsePJV6YMz1wvSQekhpjOoJhqhyuuUndWg8/07Cu1aE9tqaXTYB3+OFOAC2xBeoXbPjnvhZZPfIkcJL6N+FAOs1W5PVE1Ge0FvU9ztazHQM/yg+2y9ILMnmyrw3vaF+fk75jaUgm4YWUIi9l6/hlC1G/sTVVgQcVFQtBKgXwJpDkXXTC/ha8rj6KMCZ3jV9+mDsEG8+fBeKAMtKvJqTMWtIOmj6cW8oo0bWiyqCJL7omq+HsFkABK9Mfa424Xd+pGl/RjDnKpcHZVkjNNDt9oEXp5zs/F9k8edAN224eDlo+/ikJhEbd7w8T4O51tR6K48qPB0WbQ52scx7/EIeDsxCyqmamVj5ENDLRB0CySptIN2JaOIVGEINKqiXoNPK3zyUFn7EkyCJM3ZdOC+BE7r2SRKxVhRjEfG4ippeeRW34CP5+51GBRtFe9+buKooBAihj0uCt+Ra9iTm4ZecVgasHycfN40+U2BG6r6M9/Vm82jIv3EeTUBFlNZ8peFSGa2AOKBgMFG1GLvavTbQNxWbyGY0xL0xS/4Frj0kBANaogaRW5ULu/rplXDRpVSJgDew8uPT1k+oP2t6PMaKp974/uBNJYvfxONOVbDKp1sQfuYGelu5iZam/IMhB9ZlSOnU9vrh+KtDlDHBTRyCcsMa6to4Ndj2d3X+WfNZK02XH1aykrD7bhpyjWluT2116o8g//tO3FrBfAubZbS5RdQUum9YGQkVD/lUSsP7CJu4RJJTqWVyZVgOlNVu5jKvYI5azrYD9KcdMZYPvsH52jSY3q57uh1D00chr+Y8JP6yvu+rdc8e+iKgO1m9v3d61HIk0rLKHHSPHlMwO2D6VGfJ7dbBcQerfXqjLKBFk3zWaPu5/1l7WmKpTze5+rnW3lDhMTNcoGCsZIlRdKWhVuOaSKy62uz7ukWevTIrerZ4zBIniHAmuO2efrAJZnuPc/HPQ3p/MNOkpRP4m5+aEr2f/p/+CBH5Mry3t5pQjvF42l5u1v3+Nn/wsIO91WmjbfdRywoaFRl/KdZTvwArPJ77dH8al7tmG3cNxuf9mPuYY2TGcX8CloLuULqoUeqC4zkC+pMl29lpKkAQC3BE0GOkccphBH2wQkPsr4L2m7oLkGZj75CYBYYo+Gr20eWpyXgHzHBYb0n1XGd3IRpMGyCn+dHH0eNbFyUXTeGXpk+k8rAvFClPYbVWSOxM7BRLXoNeqaBZRmofD2ixpx7DQc+QoSAJw3WsR+l4PWZg3DzPQbPuRjuFe7oTbSRb4HZvsLm4JBCUkC04ZSl6T8nMPHT15CV7smj77FDnROQkSnqKxOfCv6xAIXq1Ci94e+AuzSyQMUgUgjqKRigmp5JlU6+o2sdTFe+2YqFOO3r5L6YlEPmhbAFnmnR/sijRJLSwKdDKfaZJqrkn7bBMA4XEXwlfiEBFrwSVm643PYeZZd8EusTDxMTWGAP9lcqoRwR+OaaVKy+WDGnjB9X+owi/doB7X5n8fccRgAQN8wiDjdis0HEbeYrAFafnaX2yGcCanoOLxt/9Jqy8jZ6Orf7YwDyH3xKy/L96rcg0LdX0BHgpl7wgMgwqtI5vOliBUAvKGfK7p3YHGdB22Wf3YyFXm9y66VkOU00/8LWeuAhbQeYN/7RVv0WPG3fU01AQflyV0LO8OH4TnEFDs+2RroKi+tn3eWbrcrDmGxkJMXOiPbau+QVRtcjGKqSJ9zCTqRQRFeSaG0Hol25+W51uXonsFsyMaUvswnVzaOLquGnpGISDT+K4j5Pq8gWJcERwLe0OL+g1QRICB2VUD+aP6b1lXh/TZ39bxpuisV5CeBSMkhQP1ATw53CJtMKaZr+ShLietD3EewlctzSGCjr+Kr0L3CfC1XREG52kUlspS1kgg7JnuZVtqW5CoN8kIXho6hu+TgHh4xCY/l0aa6iUCQpjEvvGxnKu7+cs87aMe3q7Nv1NyMu14KJX2oIMp2eLPTzwvsFzhr3cj4MH70GNJnx8Ah1gsZGlnZXN0PTE5MzYzNCxzPTliODA4MTYxNzg5NjYyYjM4Yzg5YTA5Yzg4OWE5Y2FjYTQ3ZDY0N2Q4MzZiOGE2YmE1ODI3NmEwODQ5Zjk0YjJhMjhiYWM2NjgzYTA3MDcz",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": 1694252498,
+                    "size": 2964,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.81",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://sdk.privacy-center.org/sdk/a55f6b821dd824b653f96b71c35c0f5c3394b0bf/modern/sdk.a55f6b821dd824b653f96b71c35c0f5c3394b0bf.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 14617.864551,
+        "wallTime": 1694252478.437131,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "e",
+                        "scriptId": "90",
+                        "url": "https://sdk.privacy-center.org/415bfedc-6dd5-40a1-accb-c5d40e32a005/loader.js?target=www.societegenerale.com",
+                        "lineNumber": 0,
+                        "columnNumber": 27949
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "90",
+                        "url": "https://sdk.privacy-center.org/415bfedc-6dd5-40a1-accb-c5d40e32a005/loader.js?target=www.societegenerale.com",
+                        "lineNumber": 0,
+                        "columnNumber": 28164
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "90",
+                        "url": "https://sdk.privacy-center.org/415bfedc-6dd5-40a1-accb-c5d40e32a005/loader.js?target=www.societegenerale.com",
+                        "lineNumber": 0,
+                        "columnNumber": 28174
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.83",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://tag.aticdn.net/piano-analytics.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.societegenerale.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 14618.3562,
+        "wallTime": 1694252478.928263,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Kc",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 117,
+                        "columnNumber": 508
+                    },
+                    {
+                        "functionName": "BF",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 403,
+                        "columnNumber": 401
+                    },
+                    {
+                        "functionName": "CF",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 404,
+                        "columnNumber": 160
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 173,
+                        "columnNumber": 306
+                    },
+                    {
+                        "functionName": "hd.invoke",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 121,
+                        "columnNumber": 1180
+                    },
+                    {
+                        "functionName": "db",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 104,
+                        "columnNumber": 605
+                    },
+                    {
+                        "functionName": "cb",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 104,
+                        "columnNumber": 404
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 140,
+                        "columnNumber": 381
+                    },
+                    {
+                        "functionName": "hd.invoke",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 121,
+                        "columnNumber": 1180
+                    },
+                    {
+                        "functionName": "db",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 104,
+                        "columnNumber": 605
+                    },
+                    {
+                        "functionName": "eb.F",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 104,
+                        "columnNumber": 1065
+                    },
+                    {
+                        "functionName": "Oe",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 148,
+                        "columnNumber": 37
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 378,
+                        "columnNumber": 193
+                    },
+                    {
+                        "functionName": "Ff",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 158,
+                        "columnNumber": 119
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 331,
+                        "columnNumber": 213
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 103,
+                        "columnNumber": 129
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 332,
+                        "columnNumber": 400
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 332,
+                        "columnNumber": 140
+                    },
+                    {
+                        "functionName": "iv",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 333,
+                        "columnNumber": 1040
+                    },
+                    {
+                        "functionName": "Rv",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 337,
+                        "columnNumber": 34
+                    },
+                    {
+                        "functionName": "bx",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 357,
+                        "columnNumber": 271
+                    },
+                    {
+                        "functionName": "ex",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 362,
+                        "columnNumber": 54
+                    },
+                    {
+                        "functionName": "b.push",
+                        "scriptId": "16",
+                        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MRBXF8P&gtm_auth=PWj49MRyaH8xJ3CJBPlbDA&gtm_preview=env-1&gtm_cookies_win=x",
+                        "lineNumber": 366,
+                        "columnNumber": 314
+                    },
+                    {
+                        "functionName": "pushToDataLayer",
+                        "scriptId": "91",
+                        "url": "https://sdk.privacy-center.org/sdk/a55f6b821dd824b653f96b71c35c0f5c3394b0bf/modern/sdk.a55f6b821dd824b653f96b71c35c0f5c3394b0bf.js",
+                        "lineNumber": 1,
+                        "columnNumber": 249905
+                    },
+                    {
+                        "functionName": "setupVendors",
+                        "scriptId": "91",
+                        "url": "https://sdk.privacy-center.org/sdk/a55f6b821dd824b653f96b71c35c0f5c3394b0bf/modern/sdk.a55f6b821dd824b653f96b71c35c0f5c3394b0bf.js",
+                        "lineNumber": 1,
+                        "columnNumber": 250157
+                    },
+                    {
+                        "functionName": "setup",
+                        "scriptId": "91",
+                        "url": "https://sdk.privacy-center.org/sdk/a55f6b821dd824b653f96b71c35c0f5c3394b0bf/modern/sdk.a55f6b821dd824b653f96b71c35c0f5c3394b0bf.js",
+                        "lineNumber": 1,
+                        "columnNumber": 249962
+                    },
+                    {
+                        "functionName": "setup",
+                        "scriptId": "91",
+                        "url": "https://sdk.privacy-center.org/sdk/a55f6b821dd824b653f96b71c35c0f5c3394b0bf/modern/sdk.a55f6b821dd824b653f96b71c35c0f5c3394b0bf.js",
+                        "lineNumber": 1,
+                        "columnNumber": 254956
+                    },
+                    {
+                        "functionName": "run",
+                        "scriptId": "91",
+                        "url": "https://sdk.privacy-center.org/sdk/a55f6b821dd824b653f96b71c35c0f5c3394b0bf/modern/sdk.a55f6b821dd824b653f96b71c35c0f5c3394b0bf.js",
+                        "lineNumber": 1,
+                        "columnNumber": 252159
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "91",
+                        "url": "https://sdk.privacy-center.org/sdk/a55f6b821dd824b653f96b71c35c0f5c3394b0bf/modern/sdk.a55f6b821dd824b653f96b71c35c0f5c3394b0bf.js",
+                        "lineNumber": 1,
+                        "columnNumber": 334454
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "didomi_token",
+                    "value": "eyJ1c2VyX2lkIjoiMThhNzk1MTMtMThhZS02OWViLWJjNDMtZDk2OTZmOTJhYTRhIiwiY3JlYXRlZCI6IjIwMjMtMDktMDlUMDk6NDE6MTguOTA2WiIsInVwZGF0ZWQiOiIyMDIzLTA5LTA5VDA5OjQxOjE4LjkwNloiLCJ2ZXJzaW9uIjpudWxsfQ==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1710063678,
+                    "size": 200,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "226227.85",
+        "loaderId": "7EBF8A4C5FA4C52C5F5B7CE655A10101",
+        "documentURL": "https://www.societegenerale.com/fr",
+        "request": {
+            "url": "https://logs1409.xiti.com/event?s=611139&idclient=lmbu6jgs73nu3utx",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "sec-ch-ua-platform": "\"\"",
+                "Referer": "https://www.societegenerale.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "Content-Type": "text/plain;charset=UTF-8"
+            },
+            "postData": "{\"events\":[{\"name\":\"page.display\",\"data\":{\"content_type\":\"website\",\"content_publication_date\":\"2020-05-05T16:15:09.000Z\",\"content_modified_at\":\"2023-09-08T09:27:39+02:00\",\"content_title\":\"Soci\u00e9t\u00e9 G\u00e9n\u00e9rale\",\"content_description\":\"Un leader europ\u00e9en des services financiers depuis plus de 150 ans, Soci\u00e9t\u00e9 G\u00e9n\u00e9rale s\u2019appuie sur trois m\u00e9tiers compl\u00e9mentaires, la Banque de d\u00e9tail en France, la Banque de d\u00e9tail et Services Financiers Internationaux et la Banque de Grande Client\u00e8le et Solutions Investisseurs.\",\"page\":\"/fr\",\"page_chapter1\":\"about\",\"page_chapter2\":\"\",\"page_chapter3\":\"\",\"site_level2\":\"fr\",\"visitor_privacy_consent\":true,\"visitor_privacy_mode\":\"optin\",\"event_collection_platform\":\"js\",\"event_collection_version\":\"6.10.0\",\"device_timestamp_utc\":1694252479060,\"device_local_hour\":1694252479060,\"device_hour\":17,\"has_access\":\"anon\",\"pageview_id\":\"lmbu6jgsgmbbii44\",\"device_screen_width\":1280,\"device_screen_height\":720,\"device_display_width\":1280,\"device_display_height\":720,\"browser_language\":\"en\",\"browser_language_local\":\"GB\",\"previous_url\":\"\",\"page_title_html\":\"Groupe Soci\u00e9t\u00e9 G\u00e9n\u00e9rale\",\"event_url_full\":\"https://www.societegenerale.com/fr\",\"ch_ua\":[],\"ch_ua_arch\":\"\",\"ch_ua_bitness\":\"\",\"ch_ua_full_version_list\":[],\"ch_ua_mobile\":false,\"ch_ua_model\":\"\",\"ch_ua_platform\":\"\",\"ch_ua_platform_version\":\"\",\"ch_ua_full_version\":\"\"}}]}",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "eyJldmVudHMiOlt7Im5hbWUiOiJwYWdlLmRpc3BsYXkiLCJkYXRhIjp7ImNvbnRlbnRfdHlwZSI6IndlYnNpdGUiLCJjb250ZW50X3B1YmxpY2F0aW9uX2RhdGUiOiIyMDIwLTA1LTA1VDE2OjE1OjA5LjAwMFoiLCJjb250ZW50X21vZGlmaWVkX2F0IjoiMjAyMy0wOS0wOFQwOToyNzozOSswMjowMCIsImNvbnRlbnRfdGl0bGUiOiJTb2Npw6l0w6kgR8OpbsOpcmFsZSIsImNvbnRlbnRfZGVzY3JpcHRpb24iOiJVbiBsZWFkZXIgZXVyb3DDqWVuIGRlcyBzZXJ2aWNlcyBmaW5hbmNpZXJzIGRlcHVpcyBwbHVzIGRlIDE1MCBhbnMsIFNvY2nDqXTDqSBHw6luw6lyYWxlIHPigJlhcHB1aWUgc3VyIHRyb2lzIG3DqXRpZXJzIGNvbXBsw6ltZW50YWlyZXMsIGxhIEJhbnF1ZSBkZSBkw6l0YWlsIGVuIEZyYW5jZSwgbGEgQmFucXVlIGRlIGTDqXRhaWwgZXQgU2VydmljZXMgRmluYW5jaWVycyBJbnRlcm5hdGlvbmF1eCBldCBsYSBCYW5xdWUgZGUgR3JhbmRlIENsaWVudMOobGUgZXQgU29sdXRpb25zIEludmVzdGlzc2V1cnMuIiwicGFnZSI6Ii9mciIsInBhZ2VfY2hhcHRlcjEiOiJhYm91dCIsInBhZ2VfY2hhcHRlcjIiOiIiLCJwYWdlX2NoYXB0ZXIzIjoiIiwic2l0ZV9sZXZlbDIiOiJmciIsInZpc2l0b3JfcHJpdmFjeV9jb25zZW50Ijp0cnVlLCJ2aXNpdG9yX3ByaXZhY3lfbW9kZSI6Im9wdGluIiwiZXZlbnRfY29sbGVjdGlvbl9wbGF0Zm9ybSI6ImpzIiwiZXZlbnRfY29sbGVjdGlvbl92ZXJzaW9uIjoiNi4xMC4wIiwiZGV2aWNlX3RpbWVzdGFtcF91dGMiOjE2OTQyNTI0NzkwNjAsImRldmljZV9sb2NhbF9ob3VyIjoxNjk0MjUyNDc5MDYwLCJkZXZpY2VfaG91ciI6MTcsImhhc19hY2Nlc3MiOiJhbm9uIiwicGFnZXZpZXdfaWQiOiJsbWJ1Nmpnc2dtYmJpaTQ0IiwiZGV2aWNlX3NjcmVlbl93aWR0aCI6MTI4MCwiZGV2aWNlX3NjcmVlbl9oZWlnaHQiOjcyMCwiZGV2aWNlX2Rpc3BsYXlfd2lkdGgiOjEyODAsImRldmljZV9kaXNwbGF5X2hlaWdodCI6NzIwLCJicm93c2VyX2xhbmd1YWdlIjoiZW4iLCJicm93c2VyX2xhbmd1YWdlX2xvY2FsIjoiR0IiLCJwcmV2aW91c191cmwiOiIiLCJwYWdlX3RpdGxlX2h0bWwiOiJHcm91cGUgU29jacOpdMOpIEfDqW7DqXJhbGUiLCJldmVudF91cmxfZnVsbCI6Imh0dHBzOi8vd3d3LnNvY2lldGVnZW5lcmFsZS5jb20vZnIiLCJjaF91YSI6W10sImNoX3VhX2FyY2giOiIiLCJjaF91YV9iaXRuZXNzIjoiIiwiY2hfdWFfZnVsbF92ZXJzaW9uX2xpc3QiOltdLCJjaF91YV9tb2JpbGUiOmZhbHNlLCJjaF91YV9tb2RlbCI6IiIsImNoX3VhX3BsYXRmb3JtIjoiIiwiY2hfdWFfcGxhdGZvcm1fdmVyc2lvbiI6IiIsImNoX3VhX2Z1bGxfdmVyc2lvbiI6IiJ9fV19"
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "VeryLow",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 14618.496262,
+        "wallTime": 1694252479.068686,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "post",
+                        "scriptId": "96",
+                        "url": "https://tag.aticdn.net/piano-analytics.js",
+                        "lineNumber": 0,
+                        "columnNumber": 5452
+                    },
+                    {
+                        "functionName": "Hn",
+                        "scriptId": "96",
+                        "url": "https://tag.aticdn.net/piano-analytics.js",
+                        "lineNumber": 0,
+                        "columnNumber": 45685
+                    },
+                    {
+                        "functionName": "w",
+                        "scriptId": "96",
+                        "url": "https://tag.aticdn.net/piano-analytics.js",
+                        "lineNumber": 0,
+                        "columnNumber": 8407
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "96",
+                        "url": "https://tag.aticdn.net/piano-analytics.js",
+                        "lineNumber": 0,
+                        "columnNumber": 44167
+                    },
+                    {
+                        "functionName": "Tn",
+                        "scriptId": "96",
+                        "url": "https://tag.aticdn.net/piano-analytics.js",
+                        "lineNumber": 0,
+                        "columnNumber": 44242
+                    },
+                    {
+                        "functionName": "w",
+                        "scriptId": "96",
+                        "url": "https://tag.aticdn.net/piano-analytics.js",
+                        "lineNumber": 0,
+                        "columnNumber": 8407
+                    },
+                    {
+                        "functionName": "F",
+                        "scriptId": "96",
+                        "url": "https://tag.aticdn.net/piano-analytics.js",
+                        "lineNumber": 0,
+                        "columnNumber": 8768
+                    },
+                    {
+                        "functionName": "w",
+                        "scriptId": "96",
+                        "url": "https://tag.aticdn.net/piano-analytics.js",
+                        "lineNumber": 0,
+                        "columnNumber": 8407
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "96",
+                        "url": "https://tag.aticdn.net/piano-analytics.js",
+                        "lineNumber": 0,
+                        "columnNumber": 44053
+                    },
+                    {
+                        "functionName": "Nn",
+                        "scriptId": "96",
+                        "url": "https://tag.aticdn.net/piano-analytics.js",
+                        "lineNumber": 0,
+                        "columnNumber": 44130
+                    },
+                    {
+                        "functionName": "w",
+                        "scriptId": "96",
+                        "url": "https://tag.aticdn.net/piano-analytics.js",
+                        "lineNumber": 0,
+                        "columnNumber": 8407
+                    },
+                    {
+                        "functionName": "Ln",
+                        "scriptId": "96",
+                        "url": "https://tag.aticdn.net/piano-analytics.js",
+                        "lineNumber": 0,
+                        "columnNumber": 45466
+                    },
+                    {
+                        "functionName": "w",
+                        "scriptId": "96",
+                        "url": "https://tag.aticdn.net/piano-analytics.js",
+                        "lineNumber": 0,
+                        "columnNumber": 8407
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "96",
+                        "url": "https://tag.aticdn.net/piano-analytics.js",
+                        "lineNumber": 0,
+                        "columnNumber": 43239
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Ping",
+        "frameId": "D6A65430C6C4B07C4383E01277FC5002",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_pctx",
+                    "value": "%7Bu%7DN4IgrgzgpgThIC4B2YA2qA05owMoBcBDfSREQpAeyRCwgEt8oBJAE0RXSwH18yBbAEwAGAJwAWYZAA%2BqfgCMwANgBW9eAF8gA",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1728380479,
+                    "size": 111,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_pcid",
+                    "value": "%7B%22browserId%22%3A%22lmbu6jgs73nu3utx%22%2C%22_t%22%3A%22m20940up%7Clmbu6jip%22%7D",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1728380479,
+                    "size": 90,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "didomi_token",
+                    "value": "eyJ1c2VyX2lkIjoiMThhNzk1MTMtMThhZS02OWViLWJjNDMtZDk2OTZmOTJhYTRhIiwiY3JlYXRlZCI6IjIwMjMtMDktMDlUMDk6NDE6MTguOTA2WiIsInVwZGF0ZWQiOiIyMDIzLTA5LTA5VDA5OjQxOjE4LjkwNloiLCJ2ZXJzaW9uIjpudWxsfQ==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1710063678,
+                    "size": 200,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "pa_privacy",
+                    "value": "%22optin%22",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1728380479,
+                    "size": 21,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "incap_ses_1565_898321",
+                    "value": "b3gRfsQT2j6R8rzNov+3Fbs9/GQAAAAALppN4XjoV+S2f2acRMiDng==",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 77,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "visid_incap_898321",
+                    "value": "YFLuBmF9QTWo/UocSbgUaLo9/GQAAAAAQUIPAAAAAAADjWp2oIIox6qxvmOUK4F8",
+                    "domain": ".societegenerale.com",
+                    "path": "/",
+                    "expires": 1725723788.204181,
+                    "size": 82,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "SOCGENLB",
+                    "value": "30dfa3dbeb9a5909c0268c86f1cc6ef0883a61f82f4c2fd803d49f718b4d460d048bcbed",
+                    "domain": "www.societegenerale.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 80,
+                    "httpOnly": true,
+                    "secure": true,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

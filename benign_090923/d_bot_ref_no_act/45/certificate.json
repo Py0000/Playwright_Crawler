@@ -1,0 +1,33 @@
+{
+    "website url": "https://www.luno.com/",
+    "hostname": "www.luno.com",
+    "subject": {
+        "countryName": "US",
+        "stateOrProvinceName": "California",
+        "localityName": "San Francisco",
+        "organizationName": "Cloudflare, Inc.",
+        "commonName": "luno.com"
+    },
+    "issuer": {
+        "countryName": "US",
+        "organizationName": "Cloudflare, Inc.",
+        "commonName": "Cloudflare Inc ECC CA-3"
+    },
+    "version": 3,
+    "not_before": "Apr 10 00:00:00 2023 GMT",
+    "not_after": "Apr  9 23:59:59 2024 GMT",
+    "valid_period": 365,
+    "serial_number": "0354E2311A29E9FC89E8F8414C61AD7C",
+    "signature_algo": "ecdsa-with-SHA256",
+    "protocol_version": "TLSv1.3",
+    "alternate subject name": [
+        [
+            "DNS",
+            "luno.com"
+        ],
+        [
+            "DNS",
+            "*.luno.com"
+        ]
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "website url": "https://www.ameli.fr/",
+    "hostname": "www.ameli.fr",
+    "subject": {
+        "countryName": "FR",
+        "localityName": "PARIS",
+        "organizationName": "CAISSE NATIONALE D'ASSURANCE MALADIE",
+        "commonName": "ameli.fr",
+        "serialNumber": "S272871919"
+    },
+    "issuer": {
+        "countryName": "FR",
+        "organizationName": "DHIMYOTIS",
+        "organizationalUnitName": "0002 48146308100036",
+        "organizationIdentifier": "NTRFR-48146308100036",
+        "commonName": "Certigna Services CA"
+    },
+    "version": 3,
+    "not_before": "May 14 22:00:00 2023 GMT",
+    "not_after": "May 13 21:59:59 2024 GMT",
+    "valid_period": 365,
+    "serial_number": "2082211897DC96A17AEB2353A296062B",
+    "signature_algo": "sha256WithRSAEncryption",
+    "protocol_version": "TLSv1.3",
+    "alternate subject name": [
+        [
+            "DNS",
+            "assurance-maladie.ameli.fr"
+        ],
+        [
+            "DNS",
+            "www.assurance-maladie.ameli.fr"
+        ],
+        [
+            "DNS",
+            "ameli.fr"
+        ],
+        [
+            "DNS",
+            "www.ameli.fr"
+        ]
+    ]
+}

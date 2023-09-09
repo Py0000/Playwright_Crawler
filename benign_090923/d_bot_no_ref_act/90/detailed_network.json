@@ -1,0 +1,69 @@
+[
+    {
+        "requestId": "76E91806EEADBDC0BAB8976AA7877C3B",
+        "loaderId": "76E91806EEADBDC0BAB8976AA7877C3B",
+        "documentURL": "https://www.sparkasse.de/",
+        "request": {
+            "url": "https://www.sparkasse.de/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14737.378478,
+        "wallTime": 1694252597.950622,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "802CF38E1D32D95125587474E725DC71",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "229579.2",
+        "loaderId": "76E91806EEADBDC0BAB8976AA7877C3B",
+        "documentURL": "https://www.sparkasse.de/",
+        "request": {
+            "url": "https://www.sparkasse.de/x-myracloud/proof2.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.sparkasse.de/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 14738.288372,
+        "wallTime": 1694252598.860364,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.sparkasse.de/",
+            "lineNumber": 2,
+            "columnNumber": 60
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "802CF38E1D32D95125587474E725DC71",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

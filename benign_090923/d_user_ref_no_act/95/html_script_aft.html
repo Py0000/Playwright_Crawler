@@ -1,0 +1,4199 @@
+<!DOCTYPE html>
+<html class="js responsive js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" dir="ltr" lang="en-AU">
+ <!--<![endif]-->
+ <head>
+  <script async="" src="https://vxml4.plavxml.com/sited/ref/integration.jsp?sessid=15a76c083c6d4bc2971354799e38e2b2&amp;uacid=1249424339.1694253619" type="text/javascript">
+  </script>
+  <script async="async" src="https://smetrics.suncorp.com.au/b/ss/sunmasterprod/10/JS-2.23.0/s53240711142469?AQB=1&amp;ndh=1&amp;pf=1&amp;callback=s_c_il[1].doPostbacks&amp;et=1&amp;t=9%2F8%2F2023%2018%3A0%3A19%206%20-480&amp;d.&amp;nsid=0&amp;jsonv=1&amp;.d&amp;mid=75571895001074895984600671249684226203&amp;aamlh=3&amp;vmt=4BD129AD&amp;ce=UTF-8&amp;ns=suncorp&amp;cdp=3&amp;pageName=au%3Asun%3Ahomepage&amp;g=https%3A%2F%2Fwww.suncorp.com.au%2F&amp;events=event136&amp;v1=au%3Asun%3Ahomepage&amp;c4=au%3Asun%3Ahomepage&amp;v8=D%3Dc9&amp;c9=8%3A00%20PM%7CSaturday&amp;v26=be493cfe822cf579221c&amp;c42=be493cfe822cf579221c&amp;c43=prod&amp;c49=D%3Dg&amp;c50=D%3D%22E%20%7C%20sun-bw-prod%20%7C%20Thu%20Aug%2031%2006%3A58%3A32%20GMT%202023%20%7C%20%22%2BHost%2B%22%20%7C%20AppM%202.23.0%20%7C%20AT%202.10.1%22&amp;c60=2023-09-09T10%3A00%3A19.823Z&amp;v76=75571895001074895984600671249684226203&amp;v77=B18A79628EE0B0AF7381BD06A724CED8&amp;v88=sun&amp;pe=lnk_o&amp;pev2=iva%20%7C%20loads&amp;s=1280x720&amp;c=24&amp;j=1.6&amp;v=N&amp;k=Y&amp;bw=1280&amp;bh=720&amp;mcorgid=223234B85278553C0A490D44%40AdobeOrg&amp;lrt=365&amp;AQE=1" type="text/javascript">
+  </script>
+  <script async="true" src="https://www.google-analytics.com/analytics.js" type="text/javascript">
+  </script>
+  <script async="" src="https://vxml4.plavxml.com/sited/ref/phnumint_md_gp.jsp?clib=0&amp;sessid=&amp;m_id=1257&amp;cids=&amp;gcids=&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;orilpg=&amp;extTrkStr=&amp;extTrkAction=&amp;domain=.suncorp.com.au&amp;anupd=1&amp;dref=https%3A%2F%2Fwww.google.com%2F&amp;ref2=https%3A%2F%2Fwww.suncorp.com.au%2F&amp;cachebuster=1694253620844" type="text/javascript">
+  </script>
+  <script async="async" src="https://smetrics.suncorp.com.au/b/ss/sunmasterprod/10/JS-2.23.0/s55412408533965?AQB=1&amp;ndh=1&amp;pf=1&amp;callback=s_c_il[1].doPostbacks&amp;et=1&amp;t=9%2F8%2F2023%2018%3A0%3A18%206%20-480&amp;d.&amp;nsid=0&amp;jsonv=1&amp;.d&amp;sdid=3EA52F151A45FA36-558AEA3E84878674&amp;mid=75571895001074895984600671249684226203&amp;aamlh=3&amp;vmt=4BD129AD&amp;ce=UTF-8&amp;ns=suncorp&amp;cdp=3&amp;pageName=au%3Asun%3Ahomepage&amp;g=https%3A%2F%2Fwww.suncorp.com.au%2F&amp;r=https%3A%2F%2Fwww.google.com%2F&amp;c.&amp;getQueryParam=4.0&amp;apl=4.0&amp;vAPI=P&amp;scd.&amp;mcvid=75571895001074895984600671249684226203&amp;said=B18A79628EE0B0AF7381BD06A724CED8&amp;dataLayer.&amp;environment=prod&amp;metricsServer=suncorp.com.au&amp;siteID=au%3Asun&amp;rsID=sun&amp;pageName=au%3Asun%3Ahomepage&amp;.dataLayer&amp;uriData.&amp;host=www.suncorp.com.au&amp;hostname=www.suncorp.com.au&amp;pathname=%2F&amp;protocol=https%3A&amp;origin=https%3A%2F%2Fwww.suncorp.com.au&amp;.uriData&amp;.scd&amp;.c&amp;ch=au%3Asun%3Ahomepage&amp;server=www.suncorp.com.au&amp;events=event97&amp;aamb=RKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y&amp;v1=au%3Asun%3Ahomepage&amp;h1=au%7Csun%7Chomepage&amp;c4=au%3Asun%3Ahomepage&amp;v8=D%3Dc9&amp;c9=8%3A00%20PM%7CSaturday&amp;c43=prod&amp;c49=D%3Dg&amp;c50=D%3D%22E%20%7C%20sun-bw-prod%20%7C%20Thu%20Aug%2031%2006%3A58%3A32%20GMT%202023%20%7C%20%22%2BHost%2B%22%20%7C%20AppM%202.23.0%20%7C%20AT%202.10.1%22&amp;c51=new&amp;v51=new&amp;c57=24&amp;c60=2023-09-09T10%3A00%3A18.458Z&amp;v76=75571895001074895984600671249684226203&amp;v77=B18A79628EE0B0AF7381BD06A724CED8&amp;v88=sun&amp;s=1280x720&amp;c=24&amp;j=1.6&amp;v=N&amp;k=Y&amp;bw=1280&amp;bh=720&amp;mcorgid=223234B85278553C0A490D44%40AdobeOrg&amp;AQE=1" type="text/javascript">
+  </script>
+  <script async="true" src="https://www.googletagmanager.com/gtag/js?id=UA-135539136-4&amp;l=dataLayerGTAG&amp;cx=c" type="text/javascript">
+  </script>
+  <script async="true" src="https://www.googletagmanager.com/dclk/ns/v1.js" type="text/javascript">
+  </script>
+  <script async="" src="https://connect.facebook.net/signals/config/348849782610142?v=2.9.125&amp;r=stable&amp;domain=www.suncorp.com.au">
+  </script>
+  <script src="https://connect.facebook.net/en_US/fbevents.js">
+  </script>
+  <script src="//vxml4.plavxml.com/sited/ref/ctrk/1257">
+  </script>
+  <script async="" src="//atag.adgile.media/tag.js" type="text/javascript">
+  </script>
+  <script async="true" src="https://www.googletagmanager.com/gtag/js?id=DC-5048776&amp;l=dataLayerGTAG&amp;cx=c" type="text/javascript">
+  </script>
+  <script async="" src="//www.googletagmanager.com/gtag/js?id=DC-5048776&amp;l=dataLayerGTAG" type="text/javascript">
+  </script>
+  <script async="" src="https://assets1.suncorp.com.au/suncorp/sun-bw-prod/code/cca5910e27533151f338424958969c5d.js?conditionId0=488375&amp;conditionId1=424878&amp;conditionId2=487551&amp;conditionId3=4903975" type="text/javascript">
+  </script>
+  <script async="" src="https://assets1.suncorp.com.au/suncorp/sun-bw-prod/code/a7f5d772b1046a48b4b5b856816c901c.js?conditionId0=4859941" type="text/javascript">
+  </script>
+  <script async="" src="https://assets1.suncorp.com.au/suncorp/sun-bw-prod/code/3dd479775884e0a7917c6c3370f93258.js?conditionId0=4914571&amp;conditionId1=4955102&amp;conditionId2=4947171&amp;conditionId3=386237" type="text/javascript">
+  </script>
+  <script async="" src="https://assets1.suncorp.com.au/suncorp/sun-bw-prod/code/666c8fbf40930144932b05a23cf770b2.js?conditionId0=323745" type="text/javascript">
+  </script>
+  <script async="" src="https://assets1.suncorp.com.au/suncorp/sun-bw-prod/code/e8ec8e81b55d3b5ae10d0191bd32907c.js?conditionId0=423121" type="text/javascript">
+  </script>
+  <script src="https://assets1.suncorp.com.au/suncorp/sun-bw-prod/serverComponent.php?namespace=Bootstrapper&amp;staticJsPath=/suncorp/sun-bw-prod/code/&amp;publishedOn=Thu Aug 31 06:58:32 GMT 2023&amp;ClientID=615&amp;PageID=https%3A%2F%2Fwww.suncorp.com.au%2F&amp;custDomain=assets1.suncorp.com.au">
+  </script>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <link href="/etc.clientlibs/suncorp-clientlibs/styles/suncorp/viewstyles_suncorp.lc-314750a6e0d303f81d624447a1797804-lc.min.css" rel="stylesheet" type="text/css"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <link href="/etc/designs/suncorp/suncorp/global-design/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="/etc/designs/suncorp/suncorp/global-design/favicon.ico" rel="apple-touch-icon"/>
+  <title>
+   Suncorp Australia | Insurance and Banking
+  </title>
+  <meta content="Suncorp is One of Australia's Largest Financial Services Brands Offering Home and Motor Insurance, Life Insurance, and Banking" name="description"/>
+  <link href="https://www.suncorp.com.au/" rel="canonical"/>
+  <meta content="" http-equiv="keywords"/>
+  <meta content="23 Aug 2023 05:53:27 UTC" http-equiv="Last-Modified"/>
+  <meta content="Suncorp" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="en_AU" property="og:locale"/>
+  <meta content="https://www.suncorp.com.au/" property="og:url"/>
+  <meta content="Suncorp" property="og:site_name"/>
+  <meta content="https://www.suncorp.com.au/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo.png" property="og:image"/>
+  <meta content="https://www.suncorp.com.au/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo.png" property="twitter:image"/>
+  <meta content="@SuncorpGroup" property="twitter:site"/>
+  <meta content="@SuncorpGroup" property="twitter:creator"/>
+  <meta content="summary_large_image" property="twitter:card"/>
+  <meta content="https://www.suncorp.com.au/" property="twitter:url"/>
+  <meta content="Suncorp" property="twitter:title"/>
+  <link href="/content/dam/suncorp/corporate/images/icons/ios/icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+  <link href="/content/dam/suncorp/corporate/images/icons/ios/icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+  <link href="/content/dam/suncorp/corporate/images/icons/ios/icon-57x57.png" rel="apple-touch-icon"/>
+  <link href="/content/dam/suncorp/corporate/images/icons/ios/icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+  <link href="/content/dam/suncorp/corporate/images/icons/ios/icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+  <link href="/content/dam/suncorp/corporate/images/icons/ios/icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+  <link href="/content/dam/suncorp/corporate/images/icons/ios/icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+  <script id="gtag" src="https://www.googletagmanager.com/gtag/js?id=G-8SWCM0DCWS&amp;l=dataLayerGTAG" type="text/javascript">
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"Organization","name":"suncorp","url":"https://www.suncorp.com.au/","contactPoint":{"@type":"ContactPoint","telephone":"(+61) 13 11 55","contactType":"Customer Service"},"sameAs":["https://twitter.com/SuncorpGroup","https://www.youtube.com/user/suncorpinsurance","https://en.wikipedia.org/wiki/Suncorp_Group","https://www.linkedin.com/company/suncorp","https://www.facebook.com/SuncorpInsurance/","https://plus.google.com/105865690766378955701"],"description":"Suncorp Group includes leading general insurance, banking, life insurance and superannuation brands in Australia and New Zealand.","foundingLocation":"Queensland","foundingDate":"1996","logo":"http://www.suncorp.com.au/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo.png","address":[{"postOfficeBoxNumber":"PO Box 1453","addressRegion":"Queensland","addressCountry":"Australia","postalCode":"4001","contactType":"General Enquiries"},{"streetAddress":"Customer Relations Unit Suncorp-Metway Ltd","addressRegion":"Queensland","addressCountry":"Australia","postalCode":"4001","contactType":"Compliments, Complaints, Problem Resolution"}]}
+  </script>
+  <script type="application/ld+json">
+   {}
+  </script>
+  <script src="/etc.clientlibs/suncorp-clientlibs/styles/jquery.lc-e122e9399f7e45d1282df356d3ab371d-lc.min.js">
+  </script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.15.7/dev/polyfiller.js"></script> -->
+  <script type="text/javascript">
+   function  parseQueryString( queryString ) {
+                var params = {}, queries, temp, i, l;
+                // Split into key/value pairs
+                queries = queryString.split("&");
+                // Convert the array of strings into an object
+                for ( i = 0, l = queries.length; i < l; i++ ) {
+                    temp = queries[i].split('=');
+                    params[temp[0]] = temp[1];
+                }
+                return params;
+            }
+
+            <!--//--><![CDATA[//><!--
+
+            var jsonString = {"environment":"PROD","metricsServer":"suncorp.com.au","dataModel":{},"siteID":"au:sun","rsID":"sun","htmlElement":{},"pageName":"au:sun:homepage"};
+            var dataLayer = jsonString;
+            var params = "";
+            var queryString = window.location.search;
+            queryString = queryString.substring(1);
+            if(queryString != ""){
+                params = parseQueryString(queryString);
+            }
+
+            $.each(dataLayer, function( key, value ) {
+                if(key.indexOf("config-") >= 0){
+                    var newKey = key.split("config-");
+
+                    if(typeof(value) == 'object'){
+                        var numOfItem = 0, numOfDeletedItem = 0;
+                        $.each(value, function( objProp, objVal ) {
+                            numOfItem++;
+                            if(params != ""){
+                                if(params.hasOwnProperty(objVal)){
+                                    dataLayer[key][objProp] = params[objVal];
+                                }else{
+                                    delete dataLayer[key][objProp];
+                                    numOfDeletedItem++;
+                                }
+                            }else{
+                                delete dataLayer[key][objProp];
+                                numOfDeletedItem++;
+                            }
+                        });
+
+                        if(numOfItem != numOfDeletedItem){
+                            dataLayer[newKey[1]] = dataLayer[key];
+                            delete dataLayer[key];
+                        }else{
+                            delete dataLayer[key];
+                        }
+                    }else{
+                        if(params != ""){
+                            if(params.hasOwnProperty(value)){
+                                dataLayer[key] = params[value];
+                                dataLayer[newKey[1]] = dataLayer[key];
+                                delete dataLayer[key];
+                            }else{
+                                delete dataLayer[key];
+                            }
+                        }else{
+                            delete dataLayer[key];
+                        }
+                    }
+                }
+            });
+
+            //--><!]]>
+  </script>
+  <script src="//assets1.suncorp.com.au/suncorp/sun-bw-prod/Bootstrap.js" type="text/javascript">
+  </script>
+  <style id="webAnalytics_CSS_perso_element" media="all" title="" type="text/css">
+  </style>
+  <meta data-register="true" id="campaignContextHub"/>
+  <!-- getConfig  flag set  false for all the brands to avoid configretrieval Ajax call, add this code incase of headlibs.jsp overriding!!! -->
+  <script>
+   var chatConfig = {};
+        chatConfig.getConfig = false;
+  </script>
+  <!-- ends-->
+  <script>
+   document.documentElement.className = document.documentElement.className.replace("no-js", "js");
+  </script>
+  <style data-styled="active" data-styled-version="5.3.3">
+  </style>
+  <style data-jss="" data-meta="MuiTouchRipple">
+   .MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-ripple {
+  opacity: 0;
+  position: absolute;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.MuiTouchRipple-ripplePulsate {
+  animation-duration: 200ms;
+}
+.MuiTouchRipple-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiTouchRipple-childLeaving {
+  opacity: 0;
+  animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-childPulsate {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+  </style>
+  <style data-jss="" data-meta="MuiButtonBase">
+   .MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    -webkit-print-color-adjust: exact;
+  }
+}
+  </style>
+  <style data-jss="" data-meta="MuiFab">
+   .MuiFab-root {
+  color: rgba(0, 0, 0, 0.87);
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  font-size: 0.875rem;
+  min-width: 0;
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  box-sizing: border-box;
+  min-height: 36px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 50%;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  background-color: #e0e0e0;
+}
+.MuiFab-root:active {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiFab-root:hover {
+  text-decoration: none;
+  background-color: #d5d5d5;
+}
+.MuiFab-root.Mui-focusVisible {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiFab-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+@media (hover: none) {
+  .MuiFab-root:hover {
+    background-color: #e0e0e0;
+  }
+}
+.MuiFab-root:hover.Mui-disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiFab-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiFab-primary {
+  color: #FFFFFF;
+  background-color: #FFCD05;
+}
+.MuiFab-primary:hover {
+  background-color: rgb(178, 143, 3);
+}
+@media (hover: none) {
+  .MuiFab-primary:hover {
+    background-color: #FFCD05;
+  }
+}
+.MuiFab-secondary {
+  color: #FFFFFF;
+  background-color: #008C80;
+}
+.MuiFab-secondary:hover {
+  background-color: rgb(0, 98, 89);
+}
+@media (hover: none) {
+  .MuiFab-secondary:hover {
+    background-color: #008C80;
+  }
+}
+.MuiFab-extended {
+  width: auto;
+  height: 48px;
+  padding: 0 16px;
+  min-width: 48px;
+  min-height: auto;
+  border-radius: 24px;
+}
+.MuiFab-extended.MuiFab-sizeSmall {
+  width: auto;
+  height: 34px;
+  padding: 0 8px;
+  min-width: 34px;
+  border-radius: 17px;
+}
+.MuiFab-extended.MuiFab-sizeMedium {
+  width: auto;
+  height: 40px;
+  padding: 0 16px;
+  min-width: 40px;
+  border-radius: 20px;
+}
+.MuiFab-colorInherit {
+  color: inherit;
+}
+.MuiFab-sizeSmall {
+  width: 40px;
+  height: 40px;
+}
+.MuiFab-sizeMedium {
+  width: 48px;
+  height: 48px;
+}
+  </style>
+  <meta content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9" http-equiv="origin-trial"/>
+  <meta content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9" http-equiv="origin-trial"/>
+ </head>
+ <body class="suncorp-global-page sg-Menu-container">
+  <div class="Page" data-pageloadfromtop="">
+   <div class="Main" id="browser-messages">
+    <div class="Main-content">
+     <section class="BgPlaceholder BgPlaceholder--white">
+      <div class="Middle-column Middle-column--Nil">
+       <div class="sg-Cell sg-Cell--error" id="browserVersion">
+        <div class="default rte" data-startnum="0">
+         <p style="text-align: center;">
+          Your browser version is no longer supported, so you may experience issues while using this site.
+          <br/>
+          Please
+          <a class="sg-Type--link" href="http://outdatedbrowser.com/en" target="_blank">
+           upgrade to a current browser
+          </a>
+          to enjoy the best experience.
+         </p>
+        </div>
+       </div>
+      </div>
+     </section>
+    </div>
+   </div>
+   <noscript>
+    <div class="Main" id="browser-messages">
+     <div class="Main-content">
+      <section class="BgPlaceholder BgPlaceholder--white">
+       <div class="Middle-column Middle-column--Nil">
+        <div class="sg-Cell sg-Cell--error">
+         <div class="default rte" data-startnum="0">
+          <p style="text-align: center;">
+           This site will not function correctly without JavaScript enabled.
+          </p>
+          <p style="text-align: center;">
+           Please enable JavaScript in your browser.
+          </p>
+         </div>
+        </div>
+       </div>
+      </section>
+     </div>
+    </div>
+   </noscript>
+   <div>
+    <div class="">
+     <div class="sg-Cell sg-u-bgPrimary key-event one-pixel-margin-bottom" data-forcedclose="true" style="display: block;">
+      <div class="Main-content">
+       <div class="key-event--details" data-event-id="fraud-scams-03-10-22" data-page-path="/content/suncorp/website/en/home/notifications/fraud-scams-alert/jcr:content/par/notification">
+        <div class="sg-Grid overflow-hidden">
+         <div class="sg-Grid-row">
+          <div class="sg-Grid-col12 sg-Grid-col12--large sg-Grid-col12--xlarge">
+           <div class="text-image verticalMiddle textIcon" style="padding: 0 0 0 0">
+            <div class="image-wrapper">
+             <i class="vs-icon--mediumHidden vs-icon--largeHidden vs-icon--XLargeHidden Icon--xxxlarge Icon-alert--secondary Icon">
+             </i>
+             <i class="vs-icon--smallHidden vs-icon--largeHidden vs-icon--XLargeHidden Icon--xxxlarge Icon-alert--secondary Icon">
+             </i>
+             <i class="vs-icon--smallHidden vs-icon--mediumHidden vs-icon--XLargeHidden Icon--xxxlarge Icon-alert--secondary Icon">
+             </i>
+             <i class="Icon Icon-alert--secondary Icon--xxlarge vs-icon--smallHidden vs-icon--mediumHidden vs-icon--largeHidden">
+             </i>
+            </div>
+            <div class="text-wrapper">
+             <div class="default rte" data-startnum="0">
+              <p>
+               <span class="sg-Type--size14 sg-Type--size14ltMedium rte-spacesmall--top">
+                Protecting you against fraud and scams is our priority, learn more about how you can
+                <a class="default" href="/banking/security.html">
+                 protect yourself
+                </a>
+                .
+               </span>
+              </p>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="key-event-close-btn">
+         <a class="close Icon Icon--medium Icon-cross--light" href="javascript:void(0);">
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <header class="Header">
+    <div class="Header-desktop">
+     <div class="HeaderInfo">
+      <div class="HeaderInfo-content sg-u-clearfix">
+       <ul>
+        <li class="BrandShared-serviceLinks Header-desktop-element">
+         <div class="callUs-Desktop">
+          <article>
+           <div class="callUs-wrapper">
+            <div class="HeaderInfo-callUsIcon">
+            </div>
+            <div class="HeaderInfo-callUs--section">
+             <span class="HeaderInfo-callUs">
+             </span>
+             <span class="HeaderInfo-phone--link">
+              <a class="sg-Type--linkInverse sg-Type--size18 HeaderInfo-phoneNumber" href="/contact-us.html" target="_self">
+              </a>
+             </span>
+            </div>
+            <span class="HeaderInfo-phone--number">
+             <a class="HeaderInfo-phoneNumber" href="/contact-us.html">
+              <span class="Icon Icon-phone--secondary Icon--medium">
+              </span>
+              <span class="HeaderInfo-contactNumber">
+              </span>
+             </a>
+            </span>
+            <span class="HeaderInfo-callUs">
+             <a class="sg-Type--tipLink sg-Type--size12 js-Tooltip" data-content-id="#TooltipExample_1">
+             </a>
+            </span>
+           </div>
+          </article>
+         </div>
+         <div class="HeaderInfo-service-locator">
+          <div class="text-image sg-u-clearfix sg-u-textCenter textIcon" style="padding: 0 0 0 0">
+           <div class="image-wrapper">
+            <i class="Icon Icon-location--text Icon--small">
+            </i>
+           </div>
+           <div class="default rte" data-startnum="0">
+            <p>
+             <a class="default" href="/secure/service-locator.html">
+              <span class="sg-Type--colourText">
+               Locate us
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+          <div class="section">
+          </div>
+          <div class="iparys_inherited">
+          </div>
+         </div>
+         <div class="HeaderInfo-contact-us">
+          <div class="text-image sg-u-clearfix sg-u-textCenter textIcon" style="padding: 0 0 0 0">
+           <div class="image-wrapper">
+            <i class="Icon Icon-customerCentric--text Icon--small">
+            </i>
+           </div>
+           <div class="default rte" data-startnum="0">
+            <p>
+             <a href="/contact-us.html">
+              <span class="sg-Type--colourText">
+               Contact us
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+          <div class="section">
+          </div>
+          <div class="iparys_inherited">
+          </div>
+         </div>
+        </li>
+        <li class="BrandShared-navigation Header-desktop-element">
+         <div class="HeaderInfo-logo">
+          <div class="image base parbase section">
+           <div class="img-wrapper" style="width:px">
+            <div class="image-data-container sg-u-hidden">
+             <div data-src="/content/dam/suncorp/corporate/images/logos/suncorp-logo-179x52.png" data-type="desktop">
+             </div>
+             <div data-height="52" data-src="/content/dam/suncorp/corporate/images/logos/suncorp-logo-358x104.png" data-type="twoxDesktop" data-width="179">
+             </div>
+             <div data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile.png" data-type="smartphoneSmall">
+             </div>
+             <div data-height="44" data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile_2x.png" data-type="twoxSmartphoneSmall" data-width="150">
+             </div>
+             <div data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile.png" data-type="smartphone">
+             </div>
+             <div data-height="44" data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile_2x.png" data-type="twoxSmartphone" data-width="150">
+             </div>
+             <div data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo.png" data-type="smartphoneLarge">
+             </div>
+             <div data-height="52" data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_2x.png" data-type="twoxSmartphoneLarge" data-width="179">
+             </div>
+            </div>
+            <a class="Image-linkWrapper" href="https://www.suncorp.com.au">
+             <img alt="Suncorp logo" class="cq-dd-image" data-emptytext="Image" id="img_all_views_7979292376122425825" src="/content/dam/suncorp/corporate/images/logos/suncorp-logo-179x52.png"/>
+             <noscript>
+              <img alt="Suncorp logo" class="cq-dd-image" data-emptytext="Image" src="/_jcr_content/header/suncorp-logo/image.img.png/1615935271962.png"/>
+             </noscript>
+            </a>
+           </div>
+          </div>
+          <div class="section">
+          </div>
+          <div class="iparys_inherited">
+          </div>
+         </div>
+         <div class="BrandShared-siteLinks">
+          <ul class="">
+           <li class="">
+            <a class="" href="/banking/" linkpath="/content/suncorp/website/en/home/banking.html" target="_self">
+             Banking
+            </a>
+           </li>
+           <li class="">
+            <a class="" href="/banking/home-loans.html" linkpath="/content/suncorp/website/en/home/banking/home-loans.html" target="_self">
+             Home Loans
+            </a>
+           </li>
+           <li class="">
+            <a class="" href="/insurance/" linkpath="/content/suncorp/website/en/home/insurance.html" target="_self">
+             Insurance
+            </a>
+           </li>
+           <li class="">
+            <a class="" href="/about-us" linkpath="/content/suncorp/website/en/home/about-us.html" target="_self">
+             About Us
+            </a>
+           </li>
+          </ul>
+         </div>
+         <div class="BrandShared-right">
+          <div class="HeaderInfo-search">
+           <a class="SearchIcon" href="javascript:void(0);">
+            <span class="Icon Icon--medium Icon-search--default">
+            </span>
+            <span class="SubmitSearchIcon-text">
+             Search
+            </span>
+           </a>
+           <div class="SearchBox">
+            <form action="/search.html" id="search_head">
+             <div class="searchBox-input-group">
+              <span class="Icon Input-prefix-icon Icon--medium Icon-search--default">
+              </span>
+              <input class="sg-Input" maxlength="50" name="q" placeholder="Search..." type="search"/>
+              <div class="SearchBoxCloseIcon">
+               <a href="javascript:void(0);">
+                <span class="Icon Icon--medium Icon-cross--default">
+                </span>
+                <span>
+                 Close
+                </span>
+               </a>
+              </div>
+             </div>
+             <button class="sg-Btn sg-Btn--primary header-searchBtn" type="submit">
+              <span>
+               Search
+              </span>
+             </button>
+            </form>
+           </div>
+          </div>
+          <div class="HeaderInfo-login">
+           <div class="staticLinksMenu section">
+            <ul class="custom-js-static-links-menu sg-Menu sg-Menu--bar sg-Menu--buttonBar js-Menu--navMenu dropdown-login-btn" style="max-height: none;">
+             <li class="sg-Menu-item">
+              <a aria-expanded="false" aria-haspopup="true" class="Login-Menu-btn sg-Btn--secondary sg-Menu-link sg-Menu-btn sg-Btn Login-Menu-btn sg-Btn--secondary" href="javascript:void(0);">
+               <i class="Icon Icon-lock--default Icon--small">
+               </i>
+               <span class="sg-Menu-text">
+                Log in to
+               </span>
+              </a>
+              <ul class="sg-Menu sg-Menu--list sg-Menu--flyout dropdown-login-btn">
+               <li class="sg-Menu-item sg-Menu-item--backLink">
+                <a class="sg-Menu-link sg-Menu-link--current" href="javascript:void(0);">
+                 <span class="sg-Menu-text">
+                  Back
+                 </span>
+                </a>
+               </li>
+               <li class="sg-Menu-item sg-Menu-item--header">
+                <div class="sg-Menu-header">
+                 <span class="sg-Menu-text">
+                  Banking
+                 </span>
+                </div>
+               </li>
+               <li class="sg-Menu-item">
+                <a class="sg-Menu-link static-link-menu-padding" href="/banking/secure/internet-banking.html" rel="noopener" target="_blank">
+                 <span class="sg-Menu-text">
+                  Internet Banking
+                 </span>
+                </a>
+               </li>
+               <li class="sg-Menu-item sg-Menu-item--header">
+                <div class="sg-Menu-header">
+                 <span class="sg-Menu-text">
+                  Insurance
+                 </span>
+                </div>
+               </li>
+               <li class="sg-Menu-item">
+                <a class="sg-Menu-link static-link-menu-padding" href="/secure/login/my-insurance-manager.html" rel="noopener" target="_blank">
+                 <span class="sg-Menu-text">
+                  My Suncorp
+                 </span>
+                </a>
+               </li>
+               <li class="sg-Menu-item">
+                <a class="sg-Menu-link static-link-menu-padding" href="/secure/login/health-services.html" rel="noopener" target="_blank">
+                 <span class="sg-Menu-text">
+                  Health Online Services
+                 </span>
+                </a>
+               </li>
+              </ul>
+             </li>
+            </ul>
+            <!--mobile-view -->
+           </div>
+           <div class="section">
+           </div>
+           <div class="iparys_inherited">
+           </div>
+          </div>
+         </div>
+        </li>
+        <li class="HeaderInfo-logo Header-mobile">
+         <article>
+          <div class="image base parbase section">
+           <div class="img-wrapper" style="width:px">
+            <div class="image-data-container sg-u-hidden">
+             <div data-src="/content/dam/suncorp/corporate/images/logos/suncorp-logo-179x52.png" data-type="desktop">
+             </div>
+             <div data-height="52" data-src="/content/dam/suncorp/corporate/images/logos/suncorp-logo-358x104.png" data-type="twoxDesktop" data-width="179">
+             </div>
+             <div data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile.png" data-type="smartphoneSmall">
+             </div>
+             <div data-height="44" data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile_2x.png" data-type="twoxSmartphoneSmall" data-width="150">
+             </div>
+             <div data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile.png" data-type="smartphone">
+             </div>
+             <div data-height="44" data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile_2x.png" data-type="twoxSmartphone" data-width="150">
+             </div>
+             <div data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo.png" data-type="smartphoneLarge">
+             </div>
+             <div data-height="52" data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_2x.png" data-type="twoxSmartphoneLarge" data-width="179">
+             </div>
+            </div>
+            <a class="Image-linkWrapper" href="https://www.suncorp.com.au">
+             <img alt="Suncorp logo" class="cq-dd-image" data-emptytext="Image" id="img_all_views_2930810724353669499" src="/content/dam/suncorp/corporate/images/logos/suncorp-logo-179x52.png"/>
+             <noscript>
+              <img alt="Suncorp logo" class="cq-dd-image" data-emptytext="Image" src="/_jcr_content/header/suncorp-logo/image.img.png/1615935271962.png"/>
+             </noscript>
+            </a>
+           </div>
+          </div>
+          <div class="section">
+          </div>
+          <div class="iparys_inherited">
+          </div>
+         </article>
+        </li>
+        <li class="HeaderInfo-callUsAndSearch Header-mobile">
+         <div class="HeaderInfo-callUs-wrapper">
+          <article>
+           <div class="callUs-wrapper">
+            <div class="HeaderInfo-callUsIcon">
+            </div>
+            <div class="HeaderInfo-callUs--section">
+             <span class="HeaderInfo-callUs">
+             </span>
+             <span class="HeaderInfo-phone--link">
+              <a class="sg-Type--linkInverse sg-Type--size18 HeaderInfo-phoneNumber" href="/contact-us.html" target="_self">
+              </a>
+             </span>
+            </div>
+            <span class="HeaderInfo-phone--number">
+             <a class="HeaderInfo-phoneNumber" href="/contact-us.html">
+              <span class="Icon Icon-phone--secondary Icon--medium">
+              </span>
+              <span class="HeaderInfo-contactNumber">
+              </span>
+             </a>
+            </span>
+            <span class="HeaderInfo-callUs">
+             <a class="sg-Type--tipLink sg-Type--size12 js-Tooltip" data-content-id="#TooltipExample_1">
+             </a>
+            </span>
+           </div>
+          </article>
+         </div>
+         <div class="HeaderInfo-search">
+          <a class="SearchIcon" href="javascript:void(0);">
+           <span class="Icon Icon--medium Icon-search--default">
+           </span>
+           <span class="HeaderInfo-search--text">
+            Search
+           </span>
+          </a>
+          <a class="SearchBoxCloseIcon" href="javascript:void(0);">
+           <span class="Icon Icon--medium Icon-cross--default">
+           </span>
+           <span class="HeaderInfo-search--text">
+            Close
+           </span>
+          </a>
+          <div class="SearchBox">
+           <form action="/search.html" id="search_head">
+            <input class="SearchInputBox sg-Input" maxlength="50" name="q" placeholder="Search..." type="search"/>
+            <button class="SubmitSearchIcon" type="submit">
+             <span class="Icon Icon--medium Icon-search--default">
+             </span>
+            </button>
+           </form>
+          </div>
+         </div>
+        </li>
+        <li class="greenBar">
+        </li>
+        <li class="BrandSecond-navigation">
+         <script type="text/javascript">
+          $(document).ready(function () {
+				$(".sg-Menu-text:contains('Payments')").click(function(){
+                    var pathname = window.location.href;
+                    if(pathname.includes('/insurance/')){
+                        webAnalytics.publish("homepage header | payments | click");
+                    }else if(pathname.includes('gio')){
+                        webAnalytics.publish("homepage header | payments | click");
+                    }
+                });
+               });
+         </script>
+         <div class="Secondary-navigation">
+          <div class="Navigation-wrapper">
+           <ol class="sg-Menu sg-Menu--bar js-Menu--navMenu sg-Menu--barMegaMenu sg-Menu--secondary sg-Menu--responsiveLeft sg-Menu--collapseXlarge js-Menu--uncollapsed sg-Menu--pushContent sg-Menu--hasOverlay" data-container="body" id="mobile-nav-menu" style="max-height: none;">
+            <li class="sg-Menu-item mobile-order__-9 customer-mobile-nav--PrimaryBackground xLargeHidden primaryNavMobileLink">
+             <a aria-expanded="false" aria-haspopup="true" class="sg-Menu-link sg-Menu-link--iconLeftMedium js--ensighten-event" href="/login.html">
+              <span class="sg-Menu-text">
+               Suncorp Customers Login
+              </span>
+              <i class="sg-Menu-icon Icon-lock--text">
+              </i>
+             </a>
+             <div class="sg-Menu-megaMenu cms-Menu-minHeight" style="height: 0px; display: none;">
+              <div class="sg-Menu-megaMenuColumn sg-Menu-megaMenuColumnHasMenu">
+               <ol aria-hidden="true" class="sg-Menu sg-Menu--list sg-Menu--flyout">
+                <li class="sg-Menu-item sg-Menu-item--backLink">
+                 <a class="sg-Menu-link" href="javascript:void(0);">
+                  <span class="sg-Menu-text">
+                   Back
+                  </span>
+                 </a>
+                </li>
+                <li class="sg-Menu-item sg-Menu-item--header sg-Menu-item--header-mobile">
+                </li>
+                <div class="default rte" data-startnum="0">
+                 <li class="sg-Menu-item" role="menuitem">
+                  <span class="sg-Menu-link sg-Type--colourText sg-Type--bold sg-Type--size16">
+                   Banking
+                  </span>
+                 </li>
+                </div>
+                <li class="sg-Menu-item" role="menuitem">
+                 <a aria-focus="false" aria-haspopup="false" class="sg-Menu-link" href="/banking/secure/internet-banking.html" target="_self">
+                  <span class="sg-Menu-text">
+                   <span>
+                    Internet Banking
+                   </span>
+                  </span>
+                 </a>
+                </li>
+                <div class="default rte" data-startnum="0">
+                 <li class="sg-Menu-item" role="menuitem">
+                  <span class="sg-Menu-link sg-Type--colourText sg-Type--bold sg-Type--size16">
+                   Insurance
+                  </span>
+                 </li>
+                </div>
+                <li class="sg-Menu-item" role="menuitem">
+                 <a aria-focus="false" aria-haspopup="false" class="sg-Menu-link" href="/secure/login/my-insurance-manager.html" target="_self">
+                  <span class="sg-Menu-text">
+                   <span>
+                    My Suncorp
+                   </span>
+                  </span>
+                 </a>
+                </li>
+                <li class="sg-Menu-item" role="menuitem">
+                 <a aria-focus="false" aria-haspopup="false" class="sg-Menu-link" href="/secure/login/health-services.html" target="_self">
+                  <span class="sg-Menu-text">
+                   <span>
+                    Health Online Services
+                   </span>
+                  </span>
+                 </a>
+                </li>
+                <div class="default rte" data-startnum="0">
+                 <p>
+                 </p>
+                 <li class="sg-Menu-item" role="menuitem">
+                  <span class="sg-Menu-link sg-Type--colourText sg-Type--bold sg-Type--size16">
+                   Suncorp App
+                  </span>
+                 </li>
+                 <p>
+                 </p>
+                </div>
+                <li class="sg-Menu-item" role="menuitem">
+                 <a aria-focus="false" aria-haspopup="false" class="sg-Menu-link" href="/mobile-app.html" target="_self">
+                  <span class="sg-Menu-text">
+                   <span>
+                    Suncorp App
+                   </span>
+                  </span>
+                 </a>
+                </li>
+               </ol>
+              </div>
+             </div>
+            </li>
+            <li class="sg-Menu-item mobile-order__9 customer-mobile-nav--WarmgreylightBackground xLargeHidden primaryNavMobileLink">
+             <a aria-haspopup="false" class="sg-Menu-link sg-Menu-link--iconLeftMedium js--ensighten-event" href="/contact-us.html">
+              <span class="sg-Menu-text">
+               Contact Us
+              </span>
+              <i class="sg-Menu-icon Icon-phone--text">
+              </i>
+             </a>
+            </li>
+            <li class="sg-Menu-item mobile-order__10 customer-mobile-nav--WarmgreylightBackground xLargeHidden primaryNavMobileLink">
+             <a aria-haspopup="false" class="sg-Menu-link sg-Menu-link--iconLeftMedium js--ensighten-event" href="/secure/service-locator.html">
+              <span class="sg-Menu-text">
+               Locate Us
+              </span>
+              <i class="sg-Menu-icon Icon-location--text">
+              </i>
+             </a>
+            </li>
+            <li class="sg-Menu-item mobile-order__-10 customer-mobile-nav--LightBackground xLargeHidden primaryBrandsLink">
+             <a aria-haspopup="false" class="sg-Menu-link is-current sg-Menu-link--iconLeftMedium js--ensighten-event" href="/">
+              <span class="sg-Menu-text">
+               Home
+              </span>
+              <i class="sg-Menu-icon Icon-home--text">
+              </i>
+             </a>
+            </li>
+            <li class="sg-Menu-item mobile-order__-1 customer-mobile-nav--LightBackground xLargeHidden primaryBrandsLink">
+             <a aria-haspopup="false" class="sg-Menu-link js--ensighten-event" href="/banking/">
+              <span class="sg-Menu-text">
+               Personal Banking
+              </span>
+             </a>
+            </li>
+            <li class="sg-Menu-item mobile-order__0 customer-mobile-nav--LightBackground xLargeHidden primaryBrandsLink">
+             <a aria-haspopup="false" class="sg-Menu-link js--ensighten-event" href="/banking/home-loans.html">
+              <span class="sg-Menu-text">
+               Home Loans
+              </span>
+             </a>
+            </li>
+            <li class="sg-Menu-item mobile-order__0 customer-mobile-nav--LightBackground xLargeHidden primaryBrandsLink">
+             <a aria-haspopup="false" class="sg-Menu-link js--ensighten-event" href="/banking/business.html">
+              <span class="sg-Menu-text">
+               Business Banking
+              </span>
+             </a>
+            </li>
+            <li class="sg-Menu-item mobile-order__1 customer-mobile-nav--LightBackground xLargeHidden primaryBrandsLink">
+             <a aria-haspopup="false" class="sg-Menu-link js--ensighten-event" href="/insurance/">
+              <span class="sg-Menu-text">
+               Insurance
+              </span>
+             </a>
+            </li>
+            <li class="sg-Menu-item mobile-order__3 customer-mobile-nav--LightBackground xLargeHidden primaryBrandsLink">
+             <a aria-haspopup="false" class="sg-Menu-link js--ensighten-event" href="/about-us">
+              <span class="sg-Menu-text">
+               About Us
+              </span>
+             </a>
+            </li>
+            <!-- Added iparsys at the Navigation -->
+            <li class="sg-Menu-item mobile-order__10 sg-image-link">
+             <div class="section">
+             </div>
+             <div class="iparys_inherited">
+             </div>
+            </li>
+           </ol>
+           <button aria-controls="mobile-nav-menu" class="sg-Menu--mobileMenuBtn js--ensighten-event sg-Menu--collapseXlarge" data-event-details="StickyNav-Insurance-Insurance-3-1-HambMenuClick" data-event-type="event">
+            <i class="sg-Menu--mobileMenuBtnIcon">
+            </i>
+            <span class="hamburger-menulabel">
+             Menu
+            </span>
+           </button>
+           <style>
+            .sg-Menu--flyoutOpen .cms-Menu-minHeight {
+			                min-height:300px !important;
+			                }
+			                .isMobile .sg-Menu--flyoutOpen .cms-Menu-minHeight {
+			                min-height:0 !important;
+			                }
+           </style>
+          </div>
+         </div>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+    <div class="Header-mobile">
+     <div class="HeaderInfo">
+      <div class="HeaderInfo-content sg-u-clearfix">
+       <ul>
+        <li class="BrandSecond-navigation">
+         <div class="Secondary-navigation">
+          <div class="Navigation-wrapper">
+           <ol class="sg-Menu sg-Menu--bar js-Menu--navMenu sg-Menu--barMegaMenu sg-Menu--primary sg-Menu--responsiveLeft sg-Menu--collapseXlarge js-Menu--uncollapsed sg-Menu--pushContent sg-Menu--hasOverlay" data-container="body" id="mobile-nav-menu-suncorp" style="max-height: none;">
+            <li class="sg-Menu-item mobile-order__-9 customer-mobile-nav--PrimaryBackground xLargeHidden primaryNavMobileLink">
+             <a aria-expanded="false" aria-haspopup="true" class="sg-Menu-link sg-Menu-link--iconLeftMedium js--ensighten-event" href="/login.html">
+              <span class="sg-Menu-text">
+               Suncorp Customers Login
+              </span>
+              <i class="sg-Menu-icon Icon-lock--text">
+              </i>
+             </a>
+             <div class="sg-Menu-megaMenu cms-Menu-minHeight" style="height: 0px; display: none;">
+              <div class="sg-Menu-megaMenuColumn sg-Menu-megaMenuColumnHasMenu">
+               <ol aria-hidden="true" class="sg-Menu sg-Menu--list sg-Menu--flyout">
+                <li class="sg-Menu-item sg-Menu-item--backLink">
+                 <a class="sg-Menu-link" href="javascript:void(0);">
+                  <span class="sg-Menu-text">
+                   Back
+                  </span>
+                 </a>
+                </li>
+                <li class="sg-Menu-item sg-Menu-item--header sg-Menu-item--header-mobile">
+                </li>
+                <div class="default rte" data-startnum="0">
+                 <li class="sg-Menu-item" role="menuitem">
+                  <span class="sg-Menu-link sg-Type--colourText sg-Type--bold sg-Type--size16">
+                   Banking
+                  </span>
+                 </li>
+                </div>
+                <li class="sg-Menu-item" role="menuitem">
+                 <a aria-focus="false" aria-haspopup="false" class="sg-Menu-link" href="/banking/secure/internet-banking.html" target="_self">
+                  <span class="sg-Menu-text">
+                   <span>
+                    Internet Banking
+                   </span>
+                  </span>
+                 </a>
+                </li>
+                <div class="default rte" data-startnum="0">
+                 <li class="sg-Menu-item" role="menuitem">
+                  <span class="sg-Menu-link sg-Type--colourText sg-Type--bold sg-Type--size16">
+                   Insurance
+                  </span>
+                 </li>
+                </div>
+                <li class="sg-Menu-item" role="menuitem">
+                 <a aria-focus="false" aria-haspopup="false" class="sg-Menu-link" href="/secure/login/my-insurance-manager.html" target="_self">
+                  <span class="sg-Menu-text">
+                   <span>
+                    My Suncorp
+                   </span>
+                  </span>
+                 </a>
+                </li>
+                <li class="sg-Menu-item" role="menuitem">
+                 <a aria-focus="false" aria-haspopup="false" class="sg-Menu-link" href="/secure/login/health-services.html" target="_self">
+                  <span class="sg-Menu-text">
+                   <span>
+                    Health Online Services
+                   </span>
+                  </span>
+                 </a>
+                </li>
+                <div class="default rte" data-startnum="0">
+                 <p>
+                 </p>
+                 <li class="sg-Menu-item" role="menuitem">
+                  <span class="sg-Menu-link sg-Type--colourText sg-Type--bold sg-Type--size16">
+                   Suncorp App
+                  </span>
+                 </li>
+                 <p>
+                 </p>
+                </div>
+                <li class="sg-Menu-item" role="menuitem">
+                 <a aria-focus="false" aria-haspopup="false" class="sg-Menu-link" href="/mobile-app.html" target="_self">
+                  <span class="sg-Menu-text">
+                   <span>
+                    Suncorp App
+                   </span>
+                  </span>
+                 </a>
+                </li>
+               </ol>
+              </div>
+             </div>
+            </li>
+            <li class="sg-Menu-item mobile-order__9 customer-mobile-nav--WarmgreylightBackground xLargeHidden primaryNavMobileLink">
+             <a aria-haspopup="false" class="sg-Menu-link sg-Menu-link--iconLeftMedium js--ensighten-event" href="/contact-us.html">
+              <span class="sg-Menu-text">
+               Contact Us
+              </span>
+              <i class="sg-Menu-icon Icon-phone--text">
+              </i>
+             </a>
+            </li>
+            <li class="sg-Menu-item mobile-order__10 customer-mobile-nav--WarmgreylightBackground xLargeHidden primaryNavMobileLink">
+             <a aria-haspopup="false" class="sg-Menu-link sg-Menu-link--iconLeftMedium js--ensighten-event" href="/secure/service-locator.html">
+              <span class="sg-Menu-text">
+               Locate Us
+              </span>
+              <i class="sg-Menu-icon Icon-location--text">
+              </i>
+             </a>
+            </li>
+            <li class="sg-Menu-item mobile-order__-10 customer-mobile-nav--LightBackground xLargeHidden primaryBrandsLink">
+             <a aria-haspopup="false" class="sg-Menu-link is-current sg-Menu-link--iconLeftMedium js--ensighten-event" href="/">
+              <span class="sg-Menu-text">
+               Home
+              </span>
+              <i class="sg-Menu-icon Icon-home--text">
+              </i>
+             </a>
+            </li>
+            <li class="sg-Menu-item mobile-order__-1 customer-mobile-nav--LightBackground xLargeHidden primaryBrandsLink">
+             <a aria-haspopup="false" class="sg-Menu-link js--ensighten-event" href="/banking/">
+              <span class="sg-Menu-text">
+               Personal Banking
+              </span>
+             </a>
+            </li>
+            <li class="sg-Menu-item mobile-order__0 customer-mobile-nav--LightBackground xLargeHidden primaryBrandsLink">
+             <a aria-haspopup="false" class="sg-Menu-link js--ensighten-event" href="/banking/home-loans.html">
+              <span class="sg-Menu-text">
+               Home Loans
+              </span>
+             </a>
+            </li>
+            <li class="sg-Menu-item mobile-order__0 customer-mobile-nav--LightBackground xLargeHidden primaryBrandsLink">
+             <a aria-haspopup="false" class="sg-Menu-link js--ensighten-event" href="/banking/business.html">
+              <span class="sg-Menu-text">
+               Business Banking
+              </span>
+             </a>
+            </li>
+            <li class="sg-Menu-item mobile-order__1 customer-mobile-nav--LightBackground xLargeHidden primaryBrandsLink">
+             <a aria-haspopup="false" class="sg-Menu-link js--ensighten-event" href="/insurance/">
+              <span class="sg-Menu-text">
+               Insurance
+              </span>
+             </a>
+            </li>
+            <li class="sg-Menu-item mobile-order__3 customer-mobile-nav--LightBackground xLargeHidden primaryBrandsLink">
+             <a aria-haspopup="false" class="sg-Menu-link js--ensighten-event" href="/about-us">
+              <span class="sg-Menu-text">
+               About Us
+              </span>
+             </a>
+            </li>
+            <!-- Added iparsys at the Navigation -->
+            <li class="sg-Menu-item mobile-order__10 sg-image-link">
+             <div class="section">
+             </div>
+             <div class="iparys_inherited">
+             </div>
+            </li>
+           </ol>
+           <button aria-controls="mobile-nav-menu-suncorp" class="sg-Menu--mobileMenuBtn js--ensighten-event sg-Menu--collapseXlarge" data-event-details="StickyNav-Insurance-Insurance-3-1-HambMenuClick" data-event-type="event">
+            <i class="sg-Menu--mobileMenuBtnIcon">
+            </i>
+            <span class="hamburger-menulabel">
+             Menu
+            </span>
+           </button>
+           <style>
+            .sg-Menu--flyoutOpen .cms-Menu-minHeight {
+                min-height:300px !important;
+                }
+                .isMobile .sg-Menu--flyoutOpen .cms-Menu-minHeight {
+                min-height:0 !important;
+                }
+           </style>
+          </div>
+         </div>
+        </li>
+        <li class="BrandShared-serviceLinks Header-desktop-element">
+         <div class="callUs-Desktop">
+          <article>
+           <div class="callUs-wrapper">
+            <div class="HeaderInfo-callUsIcon">
+            </div>
+            <div class="HeaderInfo-callUs--section">
+             <span class="HeaderInfo-callUs">
+             </span>
+             <span class="HeaderInfo-phone--link">
+              <a class="sg-Type--linkInverse sg-Type--size18 HeaderInfo-phoneNumber" href="/contact-us.html" target="_self">
+              </a>
+             </span>
+            </div>
+            <span class="HeaderInfo-phone--number">
+             <a class="HeaderInfo-phoneNumber" href="/contact-us.html">
+              <span class="Icon Icon-phone--secondary Icon--medium">
+              </span>
+              <span class="HeaderInfo-contactNumber">
+              </span>
+             </a>
+            </span>
+            <span class="HeaderInfo-callUs">
+             <a class="sg-Type--tipLink sg-Type--size12 js-Tooltip" data-content-id="#TooltipExample_1">
+             </a>
+            </span>
+           </div>
+          </article>
+         </div>
+         <div class="HeaderInfo-service-locator">
+          <div class="text-image sg-u-clearfix sg-u-textCenter textIcon" style="padding: 0 0 0 0">
+           <div class="image-wrapper">
+            <i class="Icon Icon-location--text Icon--small">
+            </i>
+           </div>
+           <div class="default rte" data-startnum="0">
+            <p>
+             <a class="default" href="/secure/service-locator.html">
+              <span class="sg-Type--colourText">
+               Locate us
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+          <div class="section">
+          </div>
+          <div class="iparys_inherited">
+          </div>
+         </div>
+         <div class="HeaderInfo-contact-us">
+          <div class="text-image sg-u-clearfix sg-u-textCenter textIcon" style="padding: 0 0 0 0">
+           <div class="image-wrapper">
+            <i class="Icon Icon-customerCentric--text Icon--small">
+            </i>
+           </div>
+           <div class="default rte" data-startnum="0">
+            <p>
+             <a href="/contact-us.html">
+              <span class="sg-Type--colourText">
+               Contact us
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+          <div class="section">
+          </div>
+          <div class="iparys_inherited">
+          </div>
+         </div>
+        </li>
+        <li class="BrandShared-navigation Header-desktop-element">
+         <div class="HeaderInfo-logo">
+          <div class="image base parbase section">
+           <div class="img-wrapper" style="width:px">
+            <div class="image-data-container sg-u-hidden">
+             <div data-src="/content/dam/suncorp/corporate/images/logos/suncorp-logo-179x52.png" data-type="desktop">
+             </div>
+             <div data-height="52" data-src="/content/dam/suncorp/corporate/images/logos/suncorp-logo-358x104.png" data-type="twoxDesktop" data-width="179">
+             </div>
+             <div data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile.png" data-type="smartphoneSmall">
+             </div>
+             <div data-height="44" data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile_2x.png" data-type="twoxSmartphoneSmall" data-width="150">
+             </div>
+             <div data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile.png" data-type="smartphone">
+             </div>
+             <div data-height="44" data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile_2x.png" data-type="twoxSmartphone" data-width="150">
+             </div>
+             <div data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo.png" data-type="smartphoneLarge">
+             </div>
+             <div data-height="52" data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_2x.png" data-type="twoxSmartphoneLarge" data-width="179">
+             </div>
+            </div>
+            <a class="Image-linkWrapper" href="https://www.suncorp.com.au">
+             <img alt="Suncorp logo" class="cq-dd-image" data-emptytext="Image" id="img_all_views_1326319953597403006" src="/content/dam/suncorp/corporate/images/logos/suncorp-logo-179x52.png"/>
+             <noscript>
+              <img alt="Suncorp logo" class="cq-dd-image" data-emptytext="Image" src="/_jcr_content/header/suncorp-logo/image.img.png/1615935271962.png"/>
+             </noscript>
+            </a>
+           </div>
+          </div>
+          <div class="section">
+          </div>
+          <div class="iparys_inherited">
+          </div>
+         </div>
+         <div class="BrandShared-siteLinks">
+          <ul class="">
+           <li class="">
+            <a class="" href="/banking/" linkpath="/content/suncorp/website/en/home/banking.html" target="_self">
+             Banking
+            </a>
+           </li>
+           <li class="">
+            <a class="" href="/banking/home-loans.html" linkpath="/content/suncorp/website/en/home/banking/home-loans.html" target="_self">
+             Home Loans
+            </a>
+           </li>
+           <li class="">
+            <a class="" href="/insurance/" linkpath="/content/suncorp/website/en/home/insurance.html" target="_self">
+             Insurance
+            </a>
+           </li>
+           <li class="">
+            <a class="" href="/about-us" linkpath="/content/suncorp/website/en/home/about-us.html" target="_self">
+             About Us
+            </a>
+           </li>
+          </ul>
+         </div>
+         <div class="BrandShared-right">
+          <div class="HeaderInfo-search">
+           <a class="SearchIcon" href="javascript:void(0);">
+            <span class="Icon Icon--medium Icon-search--default">
+            </span>
+            <span class="SubmitSearchIcon-text">
+             Search
+            </span>
+           </a>
+           <div class="SearchBox">
+            <form action="/search.html" id="search_head">
+             <div class="searchBox-input-group">
+              <span class="Icon Input-prefix-icon Icon--medium Icon-search--default">
+              </span>
+              <input class="sg-Input" maxlength="50" name="q" placeholder="Search..." type="search"/>
+              <div class="SearchBoxCloseIcon">
+               <a href="javascript:void(0);">
+                <span class="Icon Icon--medium Icon-cross--default">
+                </span>
+                <span>
+                 Close
+                </span>
+               </a>
+              </div>
+             </div>
+             <button class="sg-Btn sg-Btn--primary header-searchBtn" type="submit">
+              <span>
+               Search
+              </span>
+             </button>
+            </form>
+           </div>
+          </div>
+          <div class="HeaderInfo-login">
+           <div class="staticLinksMenu section">
+            <ul class="custom-js-static-links-menu sg-Menu sg-Menu--bar sg-Menu--buttonBar js-Menu--navMenu dropdown-login-btn" style="max-height: none;">
+             <li class="sg-Menu-item">
+              <a aria-expanded="false" aria-haspopup="true" class="Login-Menu-btn sg-Btn--secondary sg-Menu-link sg-Menu-btn sg-Btn Login-Menu-btn sg-Btn--secondary" href="javascript:void(0);">
+               <i class="Icon Icon-lock--default Icon--small">
+               </i>
+               <span class="sg-Menu-text">
+                Log in to
+               </span>
+              </a>
+              <ul class="sg-Menu sg-Menu--list sg-Menu--flyout dropdown-login-btn">
+               <li class="sg-Menu-item sg-Menu-item--backLink">
+                <a class="sg-Menu-link sg-Menu-link--current" href="javascript:void(0);">
+                 <span class="sg-Menu-text">
+                  Back
+                 </span>
+                </a>
+               </li>
+               <li class="sg-Menu-item sg-Menu-item--header">
+                <div class="sg-Menu-header">
+                 <span class="sg-Menu-text">
+                  Banking
+                 </span>
+                </div>
+               </li>
+               <li class="sg-Menu-item">
+                <a class="sg-Menu-link static-link-menu-padding" href="/banking/secure/internet-banking.html" rel="noopener" target="_blank">
+                 <span class="sg-Menu-text">
+                  Internet Banking
+                 </span>
+                </a>
+               </li>
+               <li class="sg-Menu-item sg-Menu-item--header">
+                <div class="sg-Menu-header">
+                 <span class="sg-Menu-text">
+                  Insurance
+                 </span>
+                </div>
+               </li>
+               <li class="sg-Menu-item">
+                <a class="sg-Menu-link static-link-menu-padding" href="/secure/login/my-insurance-manager.html" rel="noopener" target="_blank">
+                 <span class="sg-Menu-text">
+                  My Suncorp
+                 </span>
+                </a>
+               </li>
+               <li class="sg-Menu-item">
+                <a class="sg-Menu-link static-link-menu-padding" href="/secure/login/health-services.html" rel="noopener" target="_blank">
+                 <span class="sg-Menu-text">
+                  Health Online Services
+                 </span>
+                </a>
+               </li>
+              </ul>
+             </li>
+            </ul>
+            <!--mobile-view -->
+           </div>
+           <div class="section">
+           </div>
+           <div class="iparys_inherited">
+           </div>
+          </div>
+         </div>
+        </li>
+        <li class="HeaderInfo-logo Header-mobile">
+         <article>
+          <div class="image base parbase section">
+           <div class="img-wrapper" style="width:px">
+            <div class="image-data-container sg-u-hidden">
+             <div data-src="/content/dam/suncorp/corporate/images/logos/suncorp-logo-179x52.png" data-type="desktop">
+             </div>
+             <div data-height="52" data-src="/content/dam/suncorp/corporate/images/logos/suncorp-logo-358x104.png" data-type="twoxDesktop" data-width="179">
+             </div>
+             <div data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile.png" data-type="smartphoneSmall">
+             </div>
+             <div data-height="44" data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile_2x.png" data-type="twoxSmartphoneSmall" data-width="150">
+             </div>
+             <div data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile.png" data-type="smartphone">
+             </div>
+             <div data-height="44" data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_Mobile_2x.png" data-type="twoxSmartphone" data-width="150">
+             </div>
+             <div data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo.png" data-type="smartphoneLarge">
+             </div>
+             <div data-height="52" data-src="/content/dam/suncorp/corporate/images/logos/Suncorp_New_Logo_2x.png" data-type="twoxSmartphoneLarge" data-width="179">
+             </div>
+            </div>
+            <a class="Image-linkWrapper" href="https://www.suncorp.com.au">
+             <img alt="Suncorp logo" class="cq-dd-image" data-emptytext="Image" id="img_all_views_1667774719338541594" src="/content/dam/suncorp/corporate/images/logos/suncorp-logo-179x52.png"/>
+             <noscript>
+              <img alt="Suncorp logo" class="cq-dd-image" data-emptytext="Image" src="/_jcr_content/header/suncorp-logo/image.img.png/1615935271962.png"/>
+             </noscript>
+            </a>
+           </div>
+          </div>
+          <div class="section">
+          </div>
+          <div class="iparys_inherited">
+          </div>
+         </article>
+        </li>
+        <li class="HeaderInfo-callUsAndSearch Header-mobile">
+         <div class="HeaderInfo-callUs-wrapper">
+          <article>
+           <div class="callUs-wrapper">
+            <div class="HeaderInfo-callUsIcon">
+            </div>
+            <div class="HeaderInfo-callUs--section">
+             <span class="HeaderInfo-callUs">
+             </span>
+             <span class="HeaderInfo-phone--link">
+              <a class="sg-Type--linkInverse sg-Type--size18 HeaderInfo-phoneNumber" href="/contact-us.html" target="_self">
+              </a>
+             </span>
+            </div>
+            <span class="HeaderInfo-phone--number">
+             <a class="HeaderInfo-phoneNumber" href="/contact-us.html">
+              <span class="Icon Icon-phone--secondary Icon--medium">
+              </span>
+              <span class="HeaderInfo-contactNumber">
+              </span>
+             </a>
+            </span>
+            <span class="HeaderInfo-callUs">
+             <a class="sg-Type--tipLink sg-Type--size12 js-Tooltip" data-content-id="#TooltipExample_1">
+             </a>
+            </span>
+           </div>
+          </article>
+         </div>
+         <div class="HeaderInfo-search">
+          <a class="SearchIcon" href="javascript:void(0);">
+           <span class="Icon Icon--medium Icon-search--default">
+           </span>
+           <span class="HeaderInfo-search--text">
+            Search
+           </span>
+          </a>
+          <a class="SearchBoxCloseIcon" href="javascript:void(0);">
+           <span class="Icon Icon--medium Icon-cross--default">
+           </span>
+           <span class="HeaderInfo-search--text">
+            Close
+           </span>
+          </a>
+          <div class="SearchBox">
+           <form action="/search.html" id="search_head">
+            <input class="SearchInputBox sg-Input" maxlength="50" name="q" placeholder="Search..." type="search"/>
+            <button class="SubmitSearchIcon" type="submit">
+             <span class="Icon Icon--medium Icon-search--default">
+             </span>
+            </button>
+           </form>
+          </div>
+         </div>
+        </li>
+       </ul>
+       <span class="greenBarMobile">
+       </span>
+      </div>
+     </div>
+    </div>
+   </header>
+   <main class="Main">
+    <div class="Main-content">
+     <div class="Middle-column">
+     </div>
+     <div class="canvas__container" id="weather-alert">
+      <section class="BgPlaceholder show-both">
+       <div class="canvas__bg_image BgPlaceholder BgPlaceholder--noBackground" id="fxnvcrnoohe">
+       </div>
+       <div class="Middle-column Middle-column--Nil---Top Middle-column--Nil---Bottom">
+       </div>
+      </section>
+     </div>
+     <div class="canvas__container" id="blank-canvas">
+      <section class="BgPlaceholder show-both">
+       <div class="canvas__bg_image BgPlaceholder BgPlaceholder--white" id="lqbtjy">
+       </div>
+       <div class="Middle-column Middle-column--Nil---Top Middle-column--Nil---Bottom">
+       </div>
+      </section>
+     </div>
+     <div class="canvas__container">
+      <section class="BgPlaceholder sg-u-mediumAndSmallHidden canvas--responsive_image" style="min-height:363px;">
+       <div class="canvas__bg_image BgPlaceholder BgPlaceholder--responsive-image" id="zeifauik" style="background-position: center center; " title="">
+       </div>
+       <noscript>
+        <img alt="" class="canvas__bg_image BgPlaceholder BgPlaceholder--responsive-image" src="/content/dam/suncorp/bank/images/home-page/CIA-product-canstar-banner-1600x430.jpg" style="background-position: center center; " title=""/>
+       </noscript>
+       <div class="Middle-column Middle-column--Thinner---Top Middle-column--Thin---Bottom canvas__content_with_image">
+        <div class="sg-Grid overflow-hidden">
+         <div class="sg-Grid-row">
+          <div class="sg-Grid-col12 sg-Grid-col12--large sg-Grid-col6--xlarge">
+           <div class="colBoxContainer colBoxContainer--center">
+            <div backgroundopacity="1" class="sg-Cell AbstractBadge-image u-noBorder contentBoxContainer" id="ContentBoxContainer_f7234486ec434edfbdb2adef6b1b1ac3">
+             <div class="default rte" data-startnum="0">
+              <p class="sg-Type--tagLineDark">
+               Carbon Insights account
+              </p>
+             </div>
+             <div class="default rte" data-startnum="0">
+              <h1>
+               <span class="sg-Type--colourLight sg-Type--colourDarkXlarge sg-Type--size36">
+                Say no to monthly account keeping fees.
+               </span>
+              </h1>
+              <h1>
+               <span class="sg-Type--colourLight sg-Type--colourDarkXlarge sg-Type--size36">
+                Say yes to the Carbon Insights account.
+               </span>
+              </h1>
+              <p>
+               <a class="sg-Btn sg-Btn--primary" href="/banking/bank-accounts/everyday-accounts.html?intCMP=SUN:BK:PD:EDO:OSL:20230525:1234">
+                Explore our Everyday Accounts
+               </a>
+              </p>
+             </div>
+            </div>
+            <style>
+             #ContentBoxContainer_f7234486ec434edfbdb2adef6b1b1ac3.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:20px 20px 22px 15px;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_f7234486ec434edfbdb2adef6b1b1ac3.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:5px 20px 0 20px;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_f7234486ec434edfbdb2adef6b1b1ac3.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_f7234486ec434edfbdb2adef6b1b1ac3.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+            </style>
+           </div>
+          </div>
+          <div class="sg-Grid-col12 sg-Grid-col12--large sg-Grid-col6--xlarge">
+           <div class="colBoxContainer colBoxContainer--start">
+            <div backgroundopacity="1" class="sg-Cell AbstractBadge-image u-noBorder contentBoxContainer" id="ContentBoxContainer_2b4a359ffc6e4bf0b1742c59b58beb5e">
+            </div>
+            <style>
+             #ContentBoxContainer_2b4a359ffc6e4bf0b1742c59b58beb5e.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_2b4a359ffc6e4bf0b1742c59b58beb5e.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: -20px;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_2b4a359ffc6e4bf0b1742c59b58beb5e.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: -50px;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_2b4a359ffc6e4bf0b1742c59b58beb5e.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+            </style>
+            <script>
+             function backgroundColorInDifferentViewportContentBoxContainer_2b4a359ffc6e4bf0b1742c59b58beb5e(){
+
+            var $container = $("#ContentBoxContainer_2b4a359ffc6e4bf0b1742c59b58beb5e");
+            var backgroundColor = "sg-Cell";
+            var backgroundOpacity = "1";
+            var backgroundstyleXLargeViewport = "sg-Box";
+            var backgroundstyleLargeViewport = "sg-Cell--secondary";
+            var backgroundstyleMediumViewport = "sg-Box";
+            var backgroundstyleOpacityXLargeViewport = 100;
+            var backgroundstyleOpacityLargeViewport = 100;
+            var backgroundstyleOpacityMediumViewport = 100;
+            var xLargeEnableOverrideBackground = false;
+            var largeEnableOverrideBackground = true;
+            var mediumEnableOverrideBackground = false;
+
+
+            $container.removeClass(function(index, className){
+                return (className.match(/\bsg-Cell--\S+/g) || []).join(' ');
+            })
+            if(Modernizr.mq('(min-width:701px) and (max-width: 950px)')){
+                if(xLargeEnableOverrideBackground){
+                    $container.attr('backgroundopacity',backgroundstyleOpacityXLargeViewport/100);
+                    $container.addClass(backgroundstyleXLargeViewport)
+                }else{
+                    if($container.attr('class').match('(\w*sg-u-border.*)')) {
+                        $container.removeClass($container.attr('class').match('(\w*sg-u-border.*)')[0]);
+                    }
+                    $container.attr('backgroundopacity',backgroundOpacity)
+                    $container.addClass(backgroundColor);
+                }
+            }else if(Modernizr.mq('(min-width:501px) and (max-width: 700px)')){
+                if(largeEnableOverrideBackground){
+                    $container.attr('backgroundopacity',backgroundstyleOpacityLargeViewport/100);
+                    $container.addClass(backgroundstyleLargeViewport)
+                }else{
+                    if($container.attr('class').match('(\w*sg-u-border.*)')) {
+                        $container.removeClass($container.attr('class').match('(\w*sg-u-border.*)')[0]);
+                    }
+                    $container.attr('backgroundopacity',backgroundOpacity)
+                    $container.addClass(backgroundColor);
+                }
+            }else if(Modernizr.mq('(max-width: 500px)')){
+                if(mediumEnableOverrideBackground){
+                    $container.addClass(backgroundstyleMediumViewport)
+                    $container.attr('backgroundopacity',backgroundstyleOpacityMediumViewport/100);
+                }else{
+                    if($container.attr('class').match('(\w*sg-u-border.*)')) {
+                        $container.removeClass($container.attr('class').match('(\w*sg-u-border.*)')[0]);
+                    }
+                    $container.attr('backgroundopacity',backgroundOpacity)
+                    $container.addClass(backgroundColor);
+                }
+            }else{
+                if($container.attr('class').match('(\w*sg-u-border.*)')) {
+                    $container.removeClass($container.attr('class').match('(\w*sg-u-border.*)')[0]);
+                }
+                $container.attr('backgroundopacity',backgroundOpacity);
+                $container.addClass(backgroundColor);
+            }
+        }
+        $(document).ready(function () {
+            backgroundColorInDifferentViewportContentBoxContainer_2b4a359ffc6e4bf0b1742c59b58beb5e();
+            $(window).on('load resize',function(){
+                backgroundColorInDifferentViewportContentBoxContainer_2b4a359ffc6e4bf0b1742c59b58beb5e();
+            });
+        });
+            </script>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+      <style>
+       .lt-ie10 #zeifauik.BgPlaceholder--image {
+                    
+                    
+                        background-image: url('/content/dam/suncorp/bank/images/home-page/CIA-product-canstar-banner-1600x430.jpg');
+                    
+                }
+
+                .lt-ie10.lt-ie9 #zeifauik.BgPlaceholder--image {
+                    background-image: none;
+                    -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='\2f content\2f dam\2fsuncorp\2f bank\2fimages\2fhome-page\2f CIA-product-canstar-banner-1600x430.jpg', sizingMethod='scale');
+                    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='\2f content\2f dam\2fsuncorp\2f bank\2fimages\2fhome-page\2f CIA-product-canstar-banner-1600x430.jpg', sizingMethod='scale');
+                }
+
+                @media all and (max-width : 950px) {
+                    
+                }
+
+                @media only screen and (min-width: 701px) {
+                    #zeifauik.BgPlaceholder--image, #zeifauik.BgPlaceholder--responsive-image {
+                        
+                        
+                            background-image: url('/content/dam/suncorp/bank/images/home-page/CIA-product-canstar-banner-1600x430.jpg');
+                        
+                    }
+                    
+                    
+                }
+                @media only screen and (min-width: 501px) and (max-width: 700px) {
+                    #zeifauik.BgPlaceholder--image, #zeifauik.BgPlaceholder--responsive-image {
+                        
+                        
+                            background-image: url('/content/dam/suncorp/bank/images/home-page/CIA-product-canstar-banner-1600x430.jpg/jcr:content/renditions/cq5dam.thumbnail.700.700.png');
+                        
+                    }
+
+                    
+                    
+                }
+                @media only screen and (min-width: 351px) and (max-width: 500px) {
+                    #zeifauik.BgPlaceholder--image, #zeifauik.BgPlaceholder--responsive-image {
+                        
+                        
+                            background-image:url('/content/dam/suncorp/bank/images/home-page/CIA-product-canstar-banner-1600x430.jpg/jcr:content/renditions/cq5dam.thumbnail.500.500.png');
+                        
+                    }
+
+                    
+                    
+                }
+                @media only screen and (max-width: 350px) {
+                    #zeifauik.BgPlaceholder--image, #zeifauik.BgPlaceholder--responsive-image {
+                        
+                        
+                            background-image:url('/content/dam/suncorp/bank/images/home-page/CIA-product-canstar-banner-1600x430.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png');
+                        
+                    }
+                    
+                    
+                }
+      </style>
+     </div>
+     <div class="canvas__container">
+      <section class="BgPlaceholder lazyload sg-u-largeHidden canvas__contents--align_bottom">
+       <div class="canvas__bg_image BgPlaceholder BgPlaceholder--noBackground" id="ccpzhsfs">
+       </div>
+       <div class="Middle-column Middle-column--Thinner---Top Middle-column--Nil---Bottom canvas__contents--align_bottom">
+        <div class="sg-Flextable sg-Flextable--1cols js-TableStripe hideIconMobile sg-Flextable--alignTop sg-Flextable--alignLeft" id="FlexibleTable_d10636fe-995d-4045-98d2-2fd57e6f6cb1">
+         <div class="sg-Flextable-cell sg-Flextable-cell--secondary Flextable-cell--removeRTEParaBottomMargin u-noPadding" style="order:1;-webkit-order:1;-ms-flex-order:1;border: none;">
+          <div class="innerPadding">
+           <div backgroundopacity="NaN" class="sg-Cell undefined AbstractBadge-image contentBoxContainer" id="ContentBoxContainer_b044680122d4401480d2eb72740289ad" style="background-color: rgba(0, 0, 0, 0);">
+            <div class="default rte" data-startnum="0">
+             <p class="rte-spacemedium--both" style="text-align: center;">
+              <span class="sg-Type--tagLineDark sg-u-widthLarge sg-Type--colourLight">
+               CARBON INSIGHTS ACCOUNT
+              </span>
+             </p>
+            </div>
+            <div class="default rte" data-startnum="0">
+             <h3 style="text-align: center;">
+              <span class="rte-spacesmall--top">
+               Say no to monthly account keeping fees.
+              </span>
+             </h3>
+             <h3 style="text-align: center;">
+              <span class="rte-spacesmall--top rte-spacemedium--bottom">
+               Say yes to the Carbon Insights account.
+              </span>
+             </h3>
+             <p style="text-align: center;">
+              <a class="sg-Btn sg-Btn--primary" href="/banking/bank-accounts/everyday-accounts.html?intCMP=SUN:BK:PD:EDO:OSL:20230525:1234">
+               Explore our Everyday Accounts
+              </a>
+             </p>
+             <p>
+             </p>
+            </div>
+           </div>
+           <style>
+            #ContentBoxContainer_b044680122d4401480d2eb72740289ad.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_b044680122d4401480d2eb72740289ad.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_b044680122d4401480d2eb72740289ad.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_b044680122d4401480d2eb72740289ad.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+           </style>
+          </div>
+         </div>
+         <div class="sg-Flextable-cell sg-Flextable-cell--secondary Flextable-cell--removeRTEParaBottomMargin u-noPadding is-striped" style="order:2;-webkit-order:2;-ms-flex-order:2;border: none;">
+          <div class="innerPadding">
+           <div class="adaptive-image lazyload" data-alt="" data-class=" " data-picture="" data-style="margin:0 0 0 0;" style="min-height: 70px; min-width: 70px;">
+            <div data-media="(min-width: 1px)" data-src="/_jcr_content/par/canvas_1816006958_co/pars/flexible_table_copy/cell_11/data_par/adaptiveimage_copy_c.img.280.high.png/1687866132265.png">
+            </div>
+            <!--Portrait mobile-->
+            <div data-media="(min-width: 320px)" data-src="/_jcr_content/par/canvas_1816006958_co/pars/flexible_table_copy/cell_11/data_par/adaptiveimage_copy_c.img.500.high.png/1687866132265.png">
+            </div>
+            <!--Portrait mobile-->
+            <div data-media="(min-width: 500px)" data-src="/_jcr_content/par/canvas_1816006958_co/pars/flexible_table_copy/cell_11/data_par/adaptiveimage_copy_c.img.700.high.png/1687866132265.png">
+            </div>
+            <!--Portrait iPad-->
+            <div data-media="(min-width: 700px)" data-src="/_jcr_content/par/canvas_1816006958_co/pars/flexible_table_copy/cell_11/data_par/adaptiveimage_copy_c.img.980.high.png/1687866132265.png">
+            </div>
+            <!--Portrait iPad-->
+            <div data-media="(min-width: 980px)" data-src="/_jcr_content/par/canvas_1816006958_co/pars/flexible_table_copy/cell_11/data_par/adaptiveimage_copy_c.img.full.high.png/1687866132265.png">
+            </div>
+            <!--Desktop-->
+            <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.-->
+            <noscript>
+             <img src="/_jcr_content/par/canvas_1816006958_co/pars/flexible_table_copy/cell_11/data_par/adaptiveimage_copy_c.img.320.low.png/1687866132265.png" style="margin:0 0 0 0;"/>
+            </noscript>
+           </div>
+          </div>
+         </div>
+        </div>
+        <style>
+         #FlexibleTable_d10636fe-995d-4045-98d2-2fd57e6f6cb1 {
+            margin: 0 0 0 0;
+        }
+        </style>
+       </div>
+      </section>
+     </div>
+     <div class="canvas__container" id="links-bank-insurance">
+      <section class="BgPlaceholder show-both" style="min-height:300px;">
+       <div class="canvas__bg_image BgPlaceholder BgPlaceholder--noBackground" id="dyaocjkaysp">
+       </div>
+       <div class="Middle-column Middle-column--Nil---Top Middle-column--Thin---Bottom">
+        <div class="sg-Grid">
+         <div class="sg-Grid-row sg-Grid-row--spaceBetweenCols">
+          <div class="sg-Grid-col12 sg-Grid-col12--large sg-Grid-col6--xlarge grid-column">
+           <div class="colBoxContainer lastContentSink">
+            <div backgroundopacity="1" class="sg-Cell sg-Cell--light sg-u-borderSecondary sg-u-boxShadow--small sg-u-radiusSmall AbstractBadge-image u-noBorder content-box-border-top-primary contentBoxContainer" id="ContentBoxContainer_75627d4ec6d847c8800080432b4d9a57" style="border-top-width:8px !important; border-top-style: solid !important;">
+             <div class="default rte" data-startnum="0">
+              <h2 class="sg-Type--heading2">
+               <span>
+                <a class="sg-Type--linkInverse sg-Type--colourDark" href="/banking/?intCMP=SUN:BK:PL:NPS:OSL:20180328:3118">
+                 Banking
+                </a>
+                <i class="sg-Btn--iconRightSmall Icon--small Icon-arrowRight--secondary" style="margin: -5px -33px -4px 6px;">
+                </i>
+               </span>
+              </h2>
+             </div>
+             <div class="sg-Grid overflow-hidden">
+              <div class="sg-Grid-row">
+               <div class="sg-Grid-col12 sg-Grid-col7--large sg-Grid-col7--xlarge sg-Grid-col--stretch">
+                <div class="default rte" data-startnum="0">
+                 <p>
+                  <a class="sg-Type--iconText Icon-arrowRight--secondary sg-Type--linkInverse" href="/banking/home-loans.html?intCMP=SUN:BK:PL:HLN:OSL:20190513:0021">
+                   Home loans
+                  </a>
+                 </p>
+                 <p>
+                  <a class="sg-Type--iconText Icon-arrowRight--secondary sg-Type--linkInverse" href="/banking/bank-accounts/everyday-accounts.html?intCMP=SUN:BK:PD:EDO:OSL:20210216:0543">
+                   Everyday Accounts
+                  </a>
+                 </p>
+                 <p>
+                  <a class="sg-Type--iconText Icon-arrowRight--secondary sg-Type--linkInverse" href="/banking/bank-accounts/savings-accounts.html?intCMP=SUN:BK:PD:GRS:OSL:20210216:0544">
+                   Savings Accounts &amp; Term Deposits
+                  </a>
+                 </p>
+                </div>
+               </div>
+               <div class="sg-Grid-col12 sg-Grid-col5--large sg-Grid-col5--xlarge sg-Grid-col--stretch">
+                <div class="default rte" data-startnum="0">
+                 <p>
+                  <a class="sg-Type--iconText Icon-arrowRight--secondary sg-Type--linkInverse" href="/banking/credit-cards.html?intCMP=SUN:BK:IV:TDP:OSL:20210216:0545">
+                   Credit Cards
+                  </a>
+                 </p>
+                 <p>
+                  <a class="sg-Type--iconText Icon-arrowRight--secondary sg-Type--linkInverse" href="/banking/business.html?intCMP=SUN:BK:BB:NPS:OSL:20190328:3259">
+                   Business banking
+                  </a>
+                 </p>
+                 <p>
+                  <span class="rte-spacemedium--bottom">
+                   <a class="sg-Type--iconText Icon-arrowRight--secondary sg-Type--linkInverse" href="/banking/paylater.html?intCMP=SUN:BK:PD:EDO:OSL:20220907:1094">
+                    Buy now, Pay Later
+                   </a>
+                  </span>
+                 </p>
+                </div>
+               </div>
+              </div>
+             </div>
+             <div class="sg-Grid overflow-hidden">
+              <div class="sg-Grid-row">
+               <div class="sg-Grid-col12 sg-Grid-col7--large sg-Grid-col7--xlarge sg-Grid-col--stretch">
+                <div class="default rte" data-startnum="0">
+                 <p>
+                  <a class="sg-Btn sg-Btn sg-u-width10of10 sg-Btn--primary" href="/banking/secure/internet-banking.html?intCMP=SUN:BK:PL:NPS:OSL:20180328:3122" rel="noopener" target="_blank">
+                   Log in to Internet Banking
+                  </a>
+                 </p>
+                </div>
+               </div>
+               <div class="sg-Grid-col12 sg-Grid-col5--large sg-Grid-col5--xlarge sg-Grid-col--stretch">
+               </div>
+              </div>
+             </div>
+            </div>
+            <style>
+             #ContentBoxContainer_75627d4ec6d847c8800080432b4d9a57.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: -7% 0 0 0;
+            padding:15px 20px 5px 20px;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_75627d4ec6d847c8800080432b4d9a57.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 20px 0 0 0;
+            padding:15px 20px 25px 20px;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_75627d4ec6d847c8800080432b4d9a57.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 20px 0 0 0;
+            padding:15px 20px 25px 20px;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_75627d4ec6d847c8800080432b4d9a57.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 20px 0 0 0;
+            padding:15px 20px 25px 20px;
+        }
+        }
+            </style>
+           </div>
+          </div>
+          <div class="sg-Grid-col12 sg-Grid-col12--large sg-Grid-col6--xlarge sg-Grid-col--stretch colBoxContainer lastContentSink">
+           <div backgroundopacity="1" class="sg-Cell sg-Cell--light sg-u-borderSecondary sg-u-boxShadow--small sg-u-radiusSmall AbstractBadge-image u-noBorder content-box-border-top-primary contentBoxContainer" id="ContentBoxContainer_d8d7c4bb3ff14a9ea6f49299593c243b" style="border-top-width:8px !important; border-top-style: solid !important;">
+            <div class="default rte" data-startnum="0">
+             <h2 class="sg-Type--heading2">
+              <span>
+               <a class="sg-Type--linkInverse sg-Type--colourDark" href="/insurance/?intCMP=SUN:GI:PI:NPS:OSL:20180328:3130">
+                Insurance
+               </a>
+               <i class="sg-Btn--iconRightSmall Icon--small Icon-arrowRight--secondary" style="margin: -5px -33px -4px 6px;">
+               </i>
+              </span>
+             </h2>
+            </div>
+            <div class="sg-Grid overflow-hidden">
+             <div class="sg-Grid-row">
+              <div class="sg-Grid-col12 sg-Grid-col6--large sg-Grid-col6--xlarge sg-Grid-col--stretch">
+               <div class="default rte" data-startnum="0">
+                <p>
+                 <a class="sg-Type--iconText Icon-arrowRight--dark sg-Type--linkInverse" href="/insurance/car.html?intCMP=SUN:GI:PI:NPS:OSL:20210216:0548">
+                  Car Insurance
+                 </a>
+                </p>
+                <p>
+                 <a class="sg-Type--iconText Icon-arrowRight--dark sg-Type--linkInverse" href="/insurance/home.html?intCMP=SUN:GI:PI:NPS:OSL:20180328:3131">
+                  Home Insurance
+                 </a>
+                </p>
+                <p>
+                 <a class="sg-Type--iconText Icon-arrowRight--dark sg-Type--linkInverse" href="/insurance/ctp.html?intCMP=SUN:GI:PI:CTP:OSL:20180328:3133">
+                  Queensland CTP
+                 </a>
+                </p>
+               </div>
+              </div>
+              <div class="sg-Grid-col12 sg-Grid-col6--large sg-Grid-col6--xlarge sg-Grid-col--stretch">
+               <div class="default rte" data-startnum="0">
+                <p>
+                 <a class="sg-Type--iconText Icon-arrowRight--dark sg-Type--linkInverse" href="/insurance/life.html?intCMP=SUN:WM:RK:NPS:OSL:20210216:0549">
+                  Life &amp; Income
+                 </a>
+                </p>
+                <p>
+                 <a class="sg-Type--iconText Icon-arrowRight--dark sg-Type--linkInverse" href="/insurance/health.html?intCMP=SUN:GI:PI:HEA:OSL:20210216:0550">
+                  Health Insurance
+                 </a>
+                </p>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="sg-Grid">
+             <div class="sg-Grid-row">
+              <div class="sg-Grid-col12 sg-Grid-col6--large sg-Grid-col6--xlarge sg-Grid-col--stretch">
+               <div class="default rte" data-startnum="0">
+                <p>
+                 <a class="sg-Btn sg-Btn--primary experience-modal newmodal sg-u-width10of10" data-content-id="#undefined" data-content-path="javascript:void(0);" data-expfragment-target="/experience-fragments/suncorp/insurance/get_a_quote/i-want-to-get-a-quote/i-want-to-get-a-quote" data-modalxfid="#experience-modal" data-path="javascript:void(0);#undefined" data-toggle="modal" href="javascript:void(0);">
+                  Get a quote
+                 </a>
+                </p>
+               </div>
+              </div>
+              <div class="sg-Grid-col12 sg-Grid-col6--large sg-Grid-col6--xlarge sg-Grid-col--stretch">
+               <div class="default rte" data-startnum="0">
+                <p>
+                 <a class="sg-Btn sg-Btn--secondary sg-u-width10of10" href="/secure/login/my-insurance-manager.html?intCMP=SUN:GI:PI:NPS:OSL:20210216:0551">
+                  Log in to My Suncorp
+                 </a>
+                </p>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <style>
+            #ContentBoxContainer_d8d7c4bb3ff14a9ea6f49299593c243b.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: -7% 0 0 0;
+            padding:15px 20px 5px 20px;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_d8d7c4bb3ff14a9ea6f49299593c243b.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 20px 0 0 0;
+            padding:15px 20px 25px 20px;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_d8d7c4bb3ff14a9ea6f49299593c243b.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 20px 0 0 0;
+            padding:15px 20px 25px 20px;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_d8d7c4bb3ff14a9ea6f49299593c243b.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 20px 0 0 0;
+            padding:15px 20px 25px 20px;
+        }
+        }
+           </style>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+     </div>
+     <div class="canvas__container" id="offers-news-insights">
+      <section class="BgPlaceholder lazyload show-both" style="min-height:150px;">
+       <div class="canvas__bg_image BgPlaceholder BgPlaceholder--white" id="xzpekn">
+       </div>
+       <div class="Middle-column Middle-column--Nil---Top Middle-column--Thin---Bottom">
+        <div class="default rte" data-startnum="0">
+         <h2 style="text-align: center;">
+          <span class="rte-spacemedium--bottom">
+           Offers, news &amp; insights
+          </span>
+         </h2>
+        </div>
+        <div class="sg-Flextable sg-Flextable--2cols sg-Flextable--collapseXlarge hideIconMobile sg-Flextable--alignMiddle sg-Flextable--alignLeft" id="FlexibleTable_c01504a0-8482-4d80-9065-4d6fed1194e6">
+         <div class="sg-Flextable-cell sg-Flextable-cell--neutral Flextable-cell--removeRTEParaBottomMargin u-noPadding flexible-table-border-right-default" style="order:1;-webkit-order:1;-ms-flex-order:1;border: none;border-right-width:0px;">
+          <div class="innerPadding">
+           <div class="adaptive-image lazyload" data-alt="House with a sunny clear background" data-class=" " data-picture="" style="min-height: 70px; min-width: 70px;">
+            <div data-media="(min-width: 1px)" data-src="/_jcr_content/par/canvas/pars/flexible_table_copy/cell_11/data_par/adaptiveimage.img.280.high.jpg/1683594843041.jpg">
+            </div>
+            <!--Portrait mobile-->
+            <div data-media="(min-width: 320px)" data-src="/_jcr_content/par/canvas/pars/flexible_table_copy/cell_11/data_par/adaptiveimage.img.500.high.jpg/1683594843041.jpg">
+            </div>
+            <!--Portrait mobile-->
+            <div data-media="(min-width: 500px)" data-src="/_jcr_content/par/canvas/pars/flexible_table_copy/cell_11/data_par/adaptiveimage.img.700.high.jpg/1683594843041.jpg">
+            </div>
+            <!--Portrait iPad-->
+            <div data-media="(min-width: 700px)" data-src="/_jcr_content/par/canvas/pars/flexible_table_copy/cell_11/data_par/adaptiveimage.img.980.high.jpg/1683594843041.jpg">
+            </div>
+            <!--Portrait iPad-->
+            <div data-media="(min-width: 980px)" data-src="/_jcr_content/par/canvas/pars/flexible_table_copy/cell_11/data_par/adaptiveimage.img.full.high.jpg/1683594843041.jpg">
+            </div>
+            <!--Desktop-->
+            <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.-->
+            <noscript>
+             <img alt="House with a sunny clear background" src="/_jcr_content/par/canvas/pars/flexible_table_copy/cell_11/data_par/adaptiveimage.img.320.low.jpg/1683594843041.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </div>
+         <div class="sg-Flextable-cell sg-Flextable-cell--neutral Flextable-cell--removeRTEParaBottomMargin sg-u-padding--x4 flexible-table-border-left-default" style="order:1;-webkit-order:1;-ms-flex-order:1;border: none;border-left-width:0px;">
+          <div class="innerPadding">
+           <div class="default rte" data-startnum="0">
+            <h3 class="rte-spacenone--top">
+             <span class="sg-Type--colourDark">
+              Know more about your home's resilience needs.
+             </span>
+            </h3>
+            <p class="sg-Type--colourDark">
+             <span class="rte-spacemedium--bottom">
+              If your home could talk, what would it say? Would it worry about the weather getting wilder? Suncorp’s Resilience Hub is a wealth of resources on all the actions you can take to help prepare your home for extreme weather.
+             </span>
+            </p>
+            <p>
+             <a class="sg-Btn sg-Btn--secondary sg-u-widthSmall" href="/insurance/resilience.html">
+              Find out more
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <style>
+         #FlexibleTable_c01504a0-8482-4d80-9065-4d6fed1194e6 {
+            
+        }
+        </style>
+       </div>
+      </section>
+     </div>
+     <div class="canvas__container" id="latest-news">
+      <section class="BgPlaceholder lazyload show-both" style="min-height:200px;">
+       <div class="canvas__bg_image BgPlaceholder BgPlaceholder--white" id="huivrzyxe">
+       </div>
+       <div class="Middle-column Middle-column--Thin---Top Middle-column--Thinner---Bottom">
+        <div class="sg-Flextable sg-Flextable--3cols sg-Flextable--collapseLarge hideIconMobile sg-Flextable--margins sg-Flextable--alignTop sg-Flextable--alignLeft" id="FlexibleTable_84beedc1-42f2-43ff-8101-5e568d49cae5">
+         <div class="sg-Flextable-cell sg-Flextable-cell--light Flextable-cell--removeRTEParaBottomMargin custom-cell-no-overlay u-noPadding sg-u-boxShadow--small sg-u-marginBottom--x4 flexible-table-border-top-secondary" style="order:1;-webkit-order:1;-ms-flex-order:1;border-top-width:5px;border-top-style: solid;">
+          <div class="innerPadding">
+           <div backgroundopacity="1" class="sg-Cell AbstractBadge-image u-noBorder contentBoxContainer" id="ContentBoxContainer_99fdf378d36d4db290cabe5598a7ea98">
+            <div class="default rte" data-startnum="0">
+             <p style="text-align: center;">
+              <i class="Icon-leaf--secondary Icon--xxlarge Icon--circle">
+              </i>
+             </p>
+             <p class="rte-spacesmall--bottom rte-spacemedium--top" style="text-align: center;">
+              <span class="sg-Type--tagLineSecondary">
+               New
+              </span>
+             </p>
+             <p>
+              <span class="sg-Type--heading5 sg-Type--colourDark rte-spacemedium--both">
+               We've joined forces with OzHarvest
+              </span>
+             </p>
+             <p>
+              <span class="rte-spacesmall--bottom">
+               Suncorp Bank has partnered with Australia's leading food rescue organisation, OzHarvest. Together, we're committed to helping you save food, money and the planet.
+              </span>
+             </p>
+             <p>
+              <a class="sg-Type--iconText Icon-arrowRight--default sg-Type--linkInverse" href="/banking/ozharvest.html">
+               Find out more
+              </a>
+             </p>
+            </div>
+           </div>
+           <style>
+            #ContentBoxContainer_99fdf378d36d4db290cabe5598a7ea98.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: -50px 0 0 0;
+            padding:20px 20px 20px 20px;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_99fdf378d36d4db290cabe5598a7ea98.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_99fdf378d36d4db290cabe5598a7ea98.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_99fdf378d36d4db290cabe5598a7ea98.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+           </style>
+          </div>
+         </div>
+         <div class="sg-Flextable-cell sg-Flextable-cell--light Flextable-cell--removeRTEParaBottomMargin custom-cell-no-overlay u-noPadding sg-u-boxShadow--small sg-u-marginBottom--x4 flexible-table-border-top-secondary" style="order:1;-webkit-order:1;-ms-flex-order:1;border-top-width:5px;border-top-style: solid;">
+          <div class="innerPadding">
+           <div backgroundopacity="1" class="sg-Cell AbstractBadge-image u-noBorder contentBoxContainer" id="ContentBoxContainer_a983f835716744f78dd7704ab4446abb">
+            <div class="default rte" data-startnum="0">
+             <p style="text-align: center;">
+              <i class="Icon-award--secondary Icon--xxlarge Icon--circle">
+              </i>
+             </p>
+             <p class="rte-spacesmall--bottom rte-spacemedium--top" style="text-align: center;">
+              <span class="sg-Type--tagLineSecondary">
+               Award-winning Insurance
+              </span>
+             </p>
+             <p>
+              <span class="sg-Type--heading5 sg-Type--colourDark rte-spacemedium--both">
+               Trusted insurance – with the awards to prove it
+              </span>
+             </p>
+             <p>
+              <span class="rte-spacesmall--bottom">
+               <a class="default" href="https://www.canstar.com.au/" rel="noopener nofollow" target="_blank">
+                Canstar
+               </a>
+               has given Suncorp Contents Insurance their stamp of approval for outstanding value in 2022, while Suncorp Car Insurance has been recognised for outstanding claims service, 8 years in a row.
+              </span>
+             </p>
+             <p>
+              <a class="sg-Type--iconText Icon-arrowRight--default sg-Type--linkInverse" href="/insurance/">
+               Find out more
+              </a>
+             </p>
+            </div>
+           </div>
+           <style>
+            #ContentBoxContainer_a983f835716744f78dd7704ab4446abb.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: -50px 0 0 0;
+            padding:20px 20px 20px 20px;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_a983f835716744f78dd7704ab4446abb.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_a983f835716744f78dd7704ab4446abb.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_a983f835716744f78dd7704ab4446abb.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+           </style>
+          </div>
+         </div>
+         <div class="sg-Flextable-cell sg-Flextable-cell--light Flextable-cell--removeRTEParaBottomMargin custom-cell-no-overlay u-noPadding sg-u-boxShadow--small sg-u-marginBottom--x4 flexible-table-border-top-secondary" style="order:1;-webkit-order:1;-ms-flex-order:1;border-top-width:5px;border-top-style: solid;">
+          <div class="innerPadding">
+           <div backgroundopacity="1" class="sg-Cell AbstractBadge-image u-noBorder contentBoxContainer" id="ContentBoxContainer_5744dae434b4447591e3125f408c32f3">
+            <div class="default rte" data-startnum="0">
+             <p style="text-align: center;">
+              <i class="Icon-landlord--secondary Icon--xxlarge Icon--circle">
+              </i>
+             </p>
+             <p class="rte-spacesmall--bottom rte-spacemedium--top" style="text-align: center;">
+              <span class="sg-Type--tagLineSecondary">
+               Limited time offer
+              </span>
+             </p>
+             <p>
+              <span class="sg-Type--heading5 sg-Type--colourDark rte-spacemedium--both">
+               Goodbye annual home loan fee
+              </span>
+             </p>
+             <p>
+              <span class="rte-spacesmall--bottom">
+               Save up to $11,250
+               <sup>
+                ^
+               </sup>
+               over a 30-year loan term, with no annual home loan fee for the life of your loan.
+              </span>
+             </p>
+             <p>
+              <span class="rte-spacesmall--bottom">
+               Eligible new home loan package ≥150K.
+              </span>
+             </p>
+             <p>
+              <a class="sg-Type--iconText Icon-arrowRight--default sg-Type--linkInverse" href="/banking/home-loans.html?intCMP=SUN:BK:PL:HLN:OSL:20211217:0844">
+               Discover home loans
+              </a>
+             </p>
+            </div>
+           </div>
+           <style>
+            #ContentBoxContainer_5744dae434b4447591e3125f408c32f3.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: -50px 0 0 0;
+            padding:20px 20px 20px 20px;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_5744dae434b4447591e3125f408c32f3.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_5744dae434b4447591e3125f408c32f3.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_5744dae434b4447591e3125f408c32f3.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+           </style>
+          </div>
+         </div>
+        </div>
+        <style>
+         #FlexibleTable_84beedc1-42f2-43ff-8101-5e568d49cae5 {
+            
+        }
+        </style>
+       </div>
+      </section>
+     </div>
+     <div class="canvas__container" id="tools-tips">
+      <section class="BgPlaceholder lazyload show-both" style="min-height:400px;">
+       <div class="canvas__bg_image BgPlaceholder sg-u-bgONESUNlightestgreen" id="yjgejyb">
+       </div>
+       <div class="Middle-column Middle-column--Thin---Top Middle-column--Thin---Bottom">
+        <div class="rte" data-startnum="0">
+         <h2 style="text-align: center;">
+          <span class="rte-spacelarge--bottom">
+           Tools and Tips
+          </span>
+         </h2>
+        </div>
+        <div class="sg-Grid">
+         <div class="sg-Grid-row">
+          <div class="sg-Grid-col12 sg-Grid-col12--large sg-Grid-col3--xlarge sg-Grid-col--stretch">
+           <div backgroundopacity="1" class="sg-Cell sg-Cell--light sg-u-borderSecondary AbstractBadge-image contentBoxContainer" id="ContentBoxContainer_2dba1abc14ef4180ac5789caa7d93ac6">
+            <div backgroundopacity="1" class="sg-Cell AbstractBadge-image u-noBorder contentBoxContainer" id="ContentBoxContainer_56ed55619ca64873a3c589025b0b9b8f">
+             <div class="default rte" data-startnum="0">
+              <p style="text-align: center;">
+               <span class="rte-spacemedium--top sg-Type--bold sg-Type--colourDark">
+                Plan ahead
+               </span>
+              </p>
+              <p style="text-align: center;">
+               Use our banking calculators to find out how much you could borrow, earn or save.
+              </p>
+              <p style="text-align: center;">
+               <a>
+               </a>
+               <a class="sg-Type--linkInverse" href="/banking/calculators.html?intCMP=SUN:BK:FP:NPS:OSL:20210216:0552">
+                <span class="rte-spacelarge--bottom">
+                 Explore our calculators
+                </span>
+               </a>
+              </p>
+             </div>
+            </div>
+            <style>
+             #ContentBoxContainer_56ed55619ca64873a3c589025b0b9b8f.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 0 0 0 0;
+            padding:0;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_56ed55619ca64873a3c589025b0b9b8f.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_56ed55619ca64873a3c589025b0b9b8f.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_56ed55619ca64873a3c589025b0b9b8f.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+            </style>
+           </div>
+           <style>
+            #ContentBoxContainer_2dba1abc14ef4180ac5789caa7d93ac6.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_2dba1abc14ef4180ac5789caa7d93ac6.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_2dba1abc14ef4180ac5789caa7d93ac6.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_2dba1abc14ef4180ac5789caa7d93ac6.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 10px 0 0 0;
+            padding:none;
+        }
+        }
+           </style>
+          </div>
+          <div class="sg-Grid-col12 sg-Grid-col12--large sg-Grid-col3--xlarge sg-Grid-col--stretch">
+           <div backgroundopacity="1" class="sg-Cell sg-Cell--light sg-u-borderSecondary AbstractBadge-image contentBoxContainer" id="ContentBoxContainer_d6232f5737eb471087b1168203e05893">
+            <div backgroundopacity="1" class="sg-Cell AbstractBadge-image u-noBorder contentBoxContainer" id="ContentBoxContainer_00a03bd46d0d427ca1f557bd17f18054">
+             <div class="default rte" data-startnum="0">
+              <p style="text-align: center;">
+               <span class="rte-spacemedium--top sg-Type--bold sg-Type--colourDark">
+                Our latest rates
+               </span>
+              </p>
+              <p style="text-align: center;">
+               Compare rates for home lending, saving and more.
+              </p>
+              <p style="text-align: center;">
+               <a>
+               </a>
+               <a class="sg-Type--linkInverse" href="/banking/interest-rates.html?intCMP=SUN:BK:IV:NPS:OSL:20210216:0553">
+                View interest rates
+               </a>
+              </p>
+             </div>
+            </div>
+            <style>
+             #ContentBoxContainer_00a03bd46d0d427ca1f557bd17f18054.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 0 0 0 0;
+            padding:0;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_00a03bd46d0d427ca1f557bd17f18054.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_00a03bd46d0d427ca1f557bd17f18054.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_00a03bd46d0d427ca1f557bd17f18054.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+            </style>
+           </div>
+           <style>
+            #ContentBoxContainer_d6232f5737eb471087b1168203e05893.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_d6232f5737eb471087b1168203e05893.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 40px 0 0 0;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_d6232f5737eb471087b1168203e05893.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 40px 0 0 0;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_d6232f5737eb471087b1168203e05893.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 40px 0 0 0;
+            padding:none;
+        }
+        }
+           </style>
+          </div>
+          <div class="sg-Grid-col12 sg-Grid-col12--large sg-Grid-col3--xlarge sg-Grid-col--stretch">
+           <div backgroundopacity="1" class="sg-Cell sg-Cell--light sg-u-borderSecondary AbstractBadge-image contentBoxContainer" id="ContentBoxContainer_5cb5e6f07727494184b0959ccf285f60">
+            <div backgroundopacity="1" class="sg-Cell AbstractBadge-image u-noBorder contentBoxContainer" id="ContentBoxContainer_df5c0271fd0d4823b76db2c4518023ab">
+             <div class="default rte" data-startnum="0">
+              <p style="text-align: center;">
+               <span class="rte-spacemedium--top sg-Type--bold sg-Type--colourDark">
+                Ways to save
+               </span>
+              </p>
+              <p style="text-align: center;">
+               See if you can shave some dollars off your insurance policy.
+              </p>
+              <p style="text-align: center;">
+               <a>
+               </a>
+               <a class="sg-Type--linkInverse" href="/insurance/ways-to-save.html?intCMP=SUN:GI:PI:NPS:OSL:20190328:3260">
+                Find out more
+               </a>
+              </p>
+             </div>
+            </div>
+            <style>
+             #ContentBoxContainer_df5c0271fd0d4823b76db2c4518023ab.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 0 0 0 0;
+            padding:0;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_df5c0271fd0d4823b76db2c4518023ab.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_df5c0271fd0d4823b76db2c4518023ab.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_df5c0271fd0d4823b76db2c4518023ab.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+            </style>
+           </div>
+           <style>
+            #ContentBoxContainer_5cb5e6f07727494184b0959ccf285f60.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_5cb5e6f07727494184b0959ccf285f60.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 50px 0 0 0;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_5cb5e6f07727494184b0959ccf285f60.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 50px 0 0 0;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_5cb5e6f07727494184b0959ccf285f60.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 40px 0 0 0;
+            padding:none;
+        }
+        }
+           </style>
+          </div>
+          <div class="sg-Grid-col12 sg-Grid-col12--large sg-Grid-col3--xlarge sg-Grid-col--stretch">
+           <div backgroundopacity="1" class="sg-Cell sg-Cell--light sg-u-borderSecondary AbstractBadge-image contentBoxContainer" id="ContentBoxContainer_4782a09887f7488ab120e1b0f5a14ac6">
+            <div backgroundopacity="1" class="sg-Cell AbstractBadge-image u-noBorder contentBoxContainer" id="ContentBoxContainer_01cc579309164ff1a02e53df271b6497">
+             <div class="default rte" data-startnum="0">
+              <p style="text-align: center;">
+               <span class="rte-spacemedium--top sg-Type--bold sg-Type--colourDark">
+                Car &amp; home ownership
+               </span>
+              </p>
+              <p style="text-align: center;">
+               Buying? Selling? Upgrading? We can help every step of the way.
+              </p>
+              <p style="text-align: center;">
+               <a>
+               </a>
+               <a class="sg-Type--linkInverse" href="/buying-selling-owning.html?intCMP=SUN:BK:PL:NPS:OSL:20210216:0554">
+                Find out how
+               </a>
+              </p>
+             </div>
+            </div>
+            <style>
+             #ContentBoxContainer_01cc579309164ff1a02e53df271b6497.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 0 0 0 0;
+            padding:0;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_01cc579309164ff1a02e53df271b6497.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_01cc579309164ff1a02e53df271b6497.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_01cc579309164ff1a02e53df271b6497.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+            </style>
+           </div>
+           <style>
+            #ContentBoxContainer_4782a09887f7488ab120e1b0f5a14ac6.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_4782a09887f7488ab120e1b0f5a14ac6.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 50px 0 0 0;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_4782a09887f7488ab120e1b0f5a14ac6.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 50px 0 0 0;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_4782a09887f7488ab120e1b0f5a14ac6.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: 40px 0 0 0;
+            padding:none;
+        }
+        }
+           </style>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+     </div>
+     <div class="canvas__container" id="financial-difficulty">
+      <section class="BgPlaceholder lazyload show-both">
+       <div class="canvas__bg_image BgPlaceholder BgPlaceholder--white" id="ugdbgp">
+       </div>
+       <div class="Middle-column Middle-column--Thin---Top Middle-column--Thin---Bottom">
+        <div backgroundopacity="1" class="sg-Cell sg-Cell--neutral sg-u-noBoxShadow AbstractBadge-image u-noBorder content-box-border-top-secondary contentBoxContainer" id="ContentBoxContainer_0ce7fa0eb43048ef99d72123e0f97437" style="border-top-width:3px !important; border-top-style: solid !important;">
+         <div class="sg-Grid overflow-hidden">
+          <div class="sg-Grid-row">
+           <div class="sg-Grid-col12 sg-Grid-col5--large sg-Grid-col5--xlarge">
+            <div class="default rte" data-startnum="0">
+             <p style="text-align: left;">
+              <span class="rte-spacesmall--top sg-Type--size24">
+               Are you
+               <br/>
+               experiencing
+               <br/>
+               financial difficulty?
+              </span>
+             </p>
+            </div>
+           </div>
+           <div class="sg-Grid-col12 sg-Grid-col7--large sg-Grid-col7--xlarge">
+            <div class="customicon rte" data-icon-class="Icon-arrowRight--default" data-icon-size="sg-List-iconXsmall" data-startnum="0">
+             <p>
+              Are you experiencing or expecting a period in which you are unable to meet your financial commitments? Here at Suncorp, we’re committed to helping you out.
+             </p>
+             <ul class="sg-List-iconXsmall">
+              <li class="Icon-arrowRight--default">
+               <a>
+               </a>
+               <a class="default" href="/banking/help-support/financial-difficulty.html?intCMP=SUN:BK:PL:NPS:OSL:20210216:0558">
+                Information for Bank customers
+               </a>
+              </li>
+              <li class="Icon-arrowRight--default">
+               <a>
+               </a>
+               <a class="default" href="/insurance/financial-hardship-policy.html?intCMP=SUN:GI:PI:NPS:OSL:20210216:0559">
+                Information for Insurance customers
+               </a>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <style>
+         #ContentBoxContainer_0ce7fa0eb43048ef99d72123e0f97437.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        @media only screen and (max-width: 950px) {
+        #ContentBoxContainer_0ce7fa0eb43048ef99d72123e0f97437.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        #ContentBoxContainer_0ce7fa0eb43048ef99d72123e0f97437.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        #ContentBoxContainer_0ce7fa0eb43048ef99d72123e0f97437.AbstractBadge-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            margin: none;
+            padding:none;
+        }
+        }
+        </style>
+       </div>
+      </section>
+     </div>
+     <div class="canvas__container">
+      <section class="BgPlaceholder lazyload show-both">
+       <div class="canvas__bg_image BgPlaceholder BgPlaceholder--neutral" id="wgntbgk">
+       </div>
+       <div class="Middle-column Middle-column--Thin---Top Middle-column--Thin---Bottom">
+        <div class="sg-Accordion sg-Accordion--block">
+         <button aria-controls="Content-things-you-should-know" class="sg-Accordion-label js-Accordion is-selected" data-event-details="Accordion" data-event-type="Accordion" id="things-you-should-know" role="tab" type="button">
+          Things you should know
+         </button>
+         <div aria-expanded="true" aria-labelledby="things-you-should-know" class="sg-Accordion-content is-open" id="Content-things-you-should-know" role="tabpanel">
+          <a id="#crw">
+          </a>
+          <div class="default rte" data-startnum="0">
+           <p class="sg-Type--size14">
+            <span class="sg-Type--bold">
+             Home Package Plus Annual Fee
+            </span>
+           </p>
+           <p class="sg-Type--size14">
+            ^ $375 annual package fee will be charged and reimbursed while package is active. Savings based on 30-year loan term. Offer subject to change.
+           </p>
+          </div>
+          <div class="default rte" data-startnum="0">
+           <p class="sg-Type--size14">
+            Banking products are issued by Suncorp-Metway Ltd ABN 66 010 831 722 AFSL No 229882 Australian Credit Licence 229882 (“Suncorp Bank”) to approved applicants only. Please read the relevant Product Information Document, Lending Fees and Charges and Home Package Plus Terms and Conditions before making a decision regarding any Suncorp Bank products. Fees, charges, terms and conditions apply and are available on request or on our
+            <a class="default" href="/banking/help-support/documents-forms.html" rel="noopener" target="_blank">
+             Product Information Documents and Forms page
+            </a>
+            .
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+     </div>
+     <div class="sg-Tooltip js-TooltipContent" id="safety-net" style="max-width: 500px">
+      <div class="sg-Tooltip-arrow js-Arrow">
+      </div>
+      <div class="sg-Tooltip-header">
+       <button class="sg-Tooltip-headerBtnClose js-closeModal">
+        <span class="sg-u-visuallyhidden">
+         Close
+        </span>
+       </button>
+       <p class="sg-Tooltip-headerTitle sg-Type--heading5">
+        Safety Net
+       </p>
+      </div>
+      <div class="sg-Tooltip-body">
+       <article>
+        <div class="default rte" data-startnum="0">
+         <p>
+          Safety net home protection provides an additional percentage of your nominated sum insured.  This means that if your home is damaged and the cost of repairing or replacing it is more than you have nominated, we can increase your sum insured by a percentage depending on the level of cover you have selected.
+         </p>
+        </div>
+       </article>
+      </div>
+     </div>
+     <div class="sg-Tooltip js-TooltipContent" id="free-safety-net" style="max-width: 500px">
+      <div class="sg-Tooltip-arrow js-Arrow">
+      </div>
+      <div class="sg-Tooltip-header">
+       <button class="sg-Tooltip-headerBtnClose js-closeModal">
+        <span class="sg-u-visuallyhidden">
+         Close
+        </span>
+       </button>
+       <p class="sg-Tooltip-headerTitle sg-Type--heading5">
+        1 Year free Safety Net Protection
+       </p>
+      </div>
+      <div class="sg-Tooltip-body">
+       <article>
+        <div class="default rte" data-startnum="0">
+         <p>
+          Quote and purchase online from 30th Sept 2022 – 12th Jan 2023. Not available with any other offers. Free for first period of insurance.
+          <a class="sg-Type--link" href="/insurance/free-safety-net-conditions.html">
+           T&amp;C's apply
+          </a>
+         </p>
+        </div>
+       </article>
+      </div>
+     </div>
+     <div class="sg-Tooltip js-TooltipContent" id="comparison-rate" style="max-width: 500px">
+      <div class="sg-Tooltip-arrow js-Arrow">
+      </div>
+      <div class="sg-Tooltip-header">
+       <button class="sg-Tooltip-headerBtnClose js-closeModal">
+        Close
+       </button>
+       <p class="sg-Tooltip-headerTitle sg-Type--heading5">
+        Comparison rate
+       </p>
+      </div>
+      <div class="sg-Tooltip-body">
+       <article>
+        <div class="default rte" data-startnum="0">
+         <p>
+          A comparison rate is a rate that indicates the true cost of a loan. This rate incorporates certain fees and charges that are applicable for the chosen product.
+         </p>
+        </div>
+       </article>
+      </div>
+     </div>
+     <div class="sg-Tooltip js-TooltipContent" id="variable-rate" style="max-width: 500px">
+      <div class="sg-Tooltip-arrow js-Arrow">
+      </div>
+      <div class="sg-Tooltip-header">
+       <button class="sg-Tooltip-headerBtnClose js-closeModal">
+        Close
+       </button>
+       <p class="sg-Tooltip-headerTitle sg-Type--heading5">
+        Variable rate
+       </p>
+      </div>
+      <div class="sg-Tooltip-body">
+       <article>
+        <div class="default rte" data-startnum="0">
+         A rate that is variable and is subject to change over the loan term.
+        </div>
+       </article>
+      </div>
+     </div>
+     <div aria-hidden="true" aria-labelledby="myModalLabel-bankapplyenquire" class="sg-Modal sg-Modal--animate sg-Modal--center" id="bankapplyenquire" role="dialog" tabindex="-1">
+      <div class="sg-Modal-wrapper" style="max-width: 520px;">
+       <div class="sg-Modal-content">
+        <div class="sg-Modal-header">
+         <button class="sg-Modal-headerBtnClose" data-dismiss="sgmodal" type="button">
+          Close
+         </button>
+         <p class="sg-Modal-headerTitle sg-Type--heading4" id="myModalLabel-bankapplyenquire">
+          Find out more
+         </p>
+        </div>
+        <div class="sg-Modal-body">
+         <article>
+          <div class="default rte" data-startnum="0">
+           <p>
+            <span class="sg-Type--colourSecondary">
+             <strong>
+              Existing customer?
+             </strong>
+             <a class="sg-Type--linkInverse" href="/banking/secure/internet-banking.html?intCMP=SUN:BK:PL:NPS:OSL:20180328:3123" rel="noopener" target="_blank">
+              Log in to Internet Banking
+             </a>
+             to apply directly
+            </span>
+           </p>
+          </div>
+          <div class="SplitLine" style="width:auto;height:4px;margin:10px auto;background-color:#d3cece;">
+          </div>
+          <div class="sg-Flextable sg-Flextable--1cols TableIcon--small hideIconMobile sg-Flextable--alignTop sg-Flextable--alignLeft" id="FlexibleTable_1b3c1714-1f93-4ecd-a274-0a4fba072742">
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin custom-cell-no-overlay cellIcon" style="order:1;-webkit-order:1;-ms-flex-order:1;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-home--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/banking/home-loans.html?intCMP=SUN:BK:PL:HLN:OSL:20190513:0023">
+                Home Loans
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin cellIcon" style="order:2;-webkit-order:2;-ms-flex-order:2;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-dollar--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/banking/bank-accounts/everyday-accounts.html?intCMP=SUN:BK:PL:NPS:OSL:20180328:3124" rel="noopener" target="_blank">
+                Bank Accounts
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin custom-cell-no-overlay cellIcon" style="order:3;-webkit-order:3;-ms-flex-order:3;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-personalLoan--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/banking/business.html?intCMP=SUN:BK:BB:NPS:OSL:20210216:0546">
+                Business Banking
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin custom-cell-no-overlay cellIcon" style="order:4;-webkit-order:4;-ms-flex-order:4;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-termDeposit--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/banking/investments.html?intCMP=SUN:WM:IV:NPS:OSL:20210216:0547">
+                Investments
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin custom-cell-no-overlay cellIcon" style="order:5;-webkit-order:5;-ms-flex-order:5;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-creditCard--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/banking/credit-cards.html?intCMP=SUN:BK:PL:NPS:OSL:20180328:3128">
+                Credit cards
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+          </div>
+          <style>
+           #FlexibleTable_1b3c1714-1f93-4ecd-a274-0a4fba072742 {
+            
+        }
+          </style>
+         </article>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div aria-hidden="true" aria-labelledby="myModalLabel-insurancequote" class="sg-Modal sg-Modal--animate sg-Modal--center" id="insurancequote" role="dialog" tabindex="-1">
+      <div class="sg-Modal-wrapper" style="max-width: 570px;">
+       <div class="sg-Modal-content">
+        <div class="sg-Modal-header">
+         <button class="sg-Modal-headerBtnClose" data-dismiss="sgmodal" type="button">
+          Close
+         </button>
+         <p class="sg-Modal-headerTitle sg-Type--heading4" id="myModalLabel-insurancequote">
+          Get a quote
+         </p>
+        </div>
+        <div class="sg-Modal-body">
+         <article>
+          <div class="sg-Flextable sg-Flextable--2cols sg-Flextable--collapseMedium TableIcon--small hideIconMobile sg-Flextable--alignTop sg-Flextable--alignLeft" id="FlexibleTable_fb504b3c-d776-40fc-8ce6-3ac3a3133690">
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin custom-cell-no-overlay cellIcon" style="order:1;-webkit-order:1;-ms-flex-order:1;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-homeContents--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/insurance/secure/home-contents-extras-get-a-quote.html">
+                Home &amp; Contents Insurance
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin custom-cell-no-overlay cellIcon" style="order:2;-webkit-order:2;-ms-flex-order:2;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-home--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/insurance/secure/building-insurance-extras-get-a-quote.html">
+                Building Only Insurance
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin custom-cell-no-overlay cellIcon" style="order:3;-webkit-order:3;-ms-flex-order:3;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-contents--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/insurance/secure/contents-insurance-extras-get-a-quote.html">
+                Contents Only Insurance
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin custom-cell-no-overlay cellIcon" style="order:4;-webkit-order:4;-ms-flex-order:4;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-landlord--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/insurance/secure/landlord-insurance-get-a-quote.html">
+                Landlord Insurance
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin custom-cell-no-overlay cellIcon" style="order:5;-webkit-order:5;-ms-flex-order:5;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-motor--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/insurance/secure/car-insurance-comprehensive-get-a-quote.html">
+                Comprehensive Car Insurance
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin custom-cell-no-overlay cellIcon" style="order:6;-webkit-order:6;-ms-flex-order:6;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-motorFire--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/insurance/secure/car-insurance-third-party-get-a-quote.html">
+                Third Party Car Insurance
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin custom-cell-no-overlay cellIcon" style="order:7;-webkit-order:7;-ms-flex-order:7;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-motorcycle--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/insurance/motorcycle.html">
+                Motorcycle Insurance
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin cellIcon" style="order:1;-webkit-order:1;-ms-flex-order:1;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-ctp--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/insurance/ctp.html#quote" rel="noopener" target="_blank">
+                CTP Insurance
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin cellIcon" style="order:2;-webkit-order:2;-ms-flex-order:2;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-caravan--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/insurance/caravan.html">
+                Caravan Insurance
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin cellIcon" style="order:3;-webkit-order:3;-ms-flex-order:3;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-travel--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/insurance/secure/travel-insurance-get-a-quote.html">
+                Travel Insurance
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin cellIcon" style="order:4;-webkit-order:4;-ms-flex-order:4;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-health--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/insurance/health.html?intCMP=SUN:GI:PI:HEA:OSL:20161207:1762#quote">
+                Health Insurance
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin cellIcon" style="order:5;-webkit-order:5;-ms-flex-order:5;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-life--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/insurance/life.html">
+                Life Insurance
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin cellIcon" style="order:6;-webkit-order:6;-ms-flex-order:6;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-incomeProtect--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/insurance/life.html">
+                Income Protection
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="sg-Flextable-cell sg-Flextable-cell--underline Flextable-cell--removeRTEParaBottomMargin cellIcon" style="order:7;-webkit-order:7;-ms-flex-order:7;">
+            <div class="innerPadding">
+             <i class="Icon Icon--small Icon-funeral--default">
+             </i>
+             <div class="default rte" data-startnum="0">
+              <p>
+               <a class="sg-Type--linkInverse" href="/insurance/life/funeral.html">
+                Funeral Insurance
+               </a>
+              </p>
+             </div>
+            </div>
+           </div>
+          </div>
+          <style>
+           #FlexibleTable_fb504b3c-d776-40fc-8ce6-3ac3a3133690 {
+            
+        }
+          </style>
+         </article>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="sg-Tooltip js-TooltipContent" id="substantially-damaged" style="max-width: 500px">
+      <div class="sg-Tooltip-arrow js-Arrow">
+      </div>
+      <div class="sg-Tooltip-header">
+       <button class="sg-Tooltip-headerBtnClose js-closeModal">
+        <span class="sg-u-visuallyhidden">
+         Close
+        </span>
+       </button>
+       <p class="sg-Tooltip-headerTitle sg-Type--heading5">
+        Substantially Damaged
+       </p>
+      </div>
+      <div class="sg-Tooltip-body">
+       <article>
+        <div class="default rte" data-startnum="0">
+         <p>
+          When your home is substantially damaged by an insured event (meaning the cost for us to repair is at least $50,000 or 10% of your home sum insured, whichever is more). Please Refer to PDS for Full Details.
+         </p>
+        </div>
+       </article>
+      </div>
+     </div>
+     <div aria-hidden="true" aria-labelledby="myModalLabel-resilience-options" class="sg-Modal sg-Modal--center" id="resilience-options" role="dialog" tabindex="-1">
+      <div class="sg-Modal-wrapper" style="max-width: 700px;">
+       <div class="sg-Modal-content">
+        <div class="sg-Modal-header">
+         <button class="sg-Modal-headerBtnClose" data-dismiss="sgmodal" type="button">
+          <span class="sg-u-visuallyhidden">
+           Close
+          </span>
+         </button>
+         <p class="sg-Modal-headerTitle sg-Type--heading4" id="myModalLabel-resilience-options">
+          Examples of resilience options
+         </p>
+        </div>
+        <div class="sg-Modal-body">
+         <article>
+          <div class="sg-Grid">
+           <div class="sg-Grid-row">
+            <div class="sg-Grid-col6 sg-Grid-col6--large sg-Grid-col3--xlarge">
+             <div class="sg-List-tick rte" data-startnum="0">
+              <p style="text-align: center;">
+               <i class="Icon-storm--default Icon--medium sg-u-imageReplacement">
+               </i>
+              </p>
+              <p>
+               <span class="sg-Type--bold rte-spacesmall--top">
+                Cyclone and storm
+               </span>
+              </p>
+              <p>
+               <i class="Icon-tick--default Icon--xsmall sg-u-imageReplacement">
+               </i>
+               Swap existing materials for more resilient materials (eg tiles instead of carpet)
+              </p>
+              <p>
+               <i class="Icon-tick--default Icon--xsmall sg-u-imageReplacement">
+               </i>
+               Install cyclone washers and roof sarking
+              </p>
+              <p>
+               <i class="Icon-tick--default Icon--xsmall sg-u-imageReplacement">
+               </i>
+               Install cyclone shutters / metal roller blinds / garage door bracing
+              </p>
+             </div>
+            </div>
+            <div class="sg-Grid-col6 sg-Grid-col6--large sg-Grid-col3--xlarge">
+             <div class="sg-List-tick rte" data-startnum="0">
+              <p style="text-align: center;">
+               <i class="Icon-flood--default Icon--medium sg-u-imageReplacement">
+               </i>
+              </p>
+              <p style="text-align: center;">
+               <span class="sg-Type--bold rte-spacesmall--top">
+                Flood
+               </span>
+              </p>
+              <p>
+               <i class="Icon-tick--default Icon--xsmall sg-u-imageReplacement">
+               </i>
+               Swap existing materials for more resilient materials (eg tiles instead of carpet)
+              </p>
+              <p>
+               <i class="Icon-tick--default Icon--xsmall sg-u-imageReplacement">
+               </i>
+               Raise external services around the home (eg air conditioning units, hot water systems, pool pump)
+              </p>
+             </div>
+            </div>
+            <div class="sg-Grid-col6 sg-Grid-col6--large sg-Grid-col3--xlarge">
+             <div class="sg-List-tick rte" data-startnum="0">
+              <p style="text-align: center;">
+               <i class="Icon-bushfire--default Icon--medium sg-u-imageReplacement">
+               </i>
+              </p>
+              <p style="text-align: center;">
+               <span class="sg-Type--bold rte-spacesmall--top">
+                Bushfire
+               </span>
+              </p>
+              <p>
+               <i class="Icon-tick--default Icon--xsmall sg-u-imageReplacement">
+               </i>
+               Install metal gutters and metal gutter guards with apertures less than 1.8mm
+              </p>
+              <p>
+               <i class="Icon-tick--default Icon--xsmall sg-u-imageReplacement">
+               </i>
+               Install draught stoppers for windows and doors
+              </p>
+              <p>
+               <i class="Icon-tick--default Icon--xsmall sg-u-imageReplacement">
+               </i>
+               Install roof sprinklers
+              </p>
+             </div>
+            </div>
+            <div class="sg-Grid-col6 sg-Grid-col6--large sg-Grid-col3--xlarge">
+             <div class="sg-List-tick rte" data-startnum="0">
+              <p style="text-align: center;">
+               <i class="Icon-claim--default Icon--medium sg-u-imageReplacement">
+               </i>
+              </p>
+              <p style="text-align: center;">
+               <span class="sg-Type--bold rte-spacesmall--top">
+                Working claims
+               </span>
+              </p>
+              <p>
+               <i class="Icon-tick--default Icon--xsmall sg-u-imageReplacement">
+               </i>
+               Replace and install all flexi hoses in the home
+              </p>
+              <p>
+               <i class="Icon-tick--default Icon--xsmall sg-u-imageReplacement">
+               </i>
+               Install solid core doors or upgrade deadlocks
+              </p>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="default rte" data-startnum="0">
+           <p>
+            <span class="rte-spacemedium--top sg-Type--size14">
+             The above are examples only. Resiliency building enhancements will be discussed with eligible customers who meet the claim requirements and will depend on the level of cover they hold.
+            </span>
+           </p>
+          </div>
+         </article>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div aria-hidden="true" aria-labelledby="myModalLabel-experience-modal" class="sg-Modal sg-Modal--animate experience-modal sg-Modal--center sg-Modal--lite" id="experience-modal" role="dialog" tabindex="-1">
+      <div class="sg-Modal-wrapper" style="max-width: 800px;">
+       <div class="sg-Modal-content">
+        <div class="sg-Modal-header">
+         <button class="sg-Modal-headerBtnClose Icon-cross--text" data-dismiss="sgmodal" type="button">
+          <span class="sg-u-visuallyhidden">
+           Close
+          </span>
+         </button>
+        </div>
+        <div class="sg-Modal-body sg-u-noMargin">
+         <article>
+         </article>
+        </div>
+       </div>
+      </div>
+     </div>
+     <script>
+      var frame = document.createElement('iframe');
+	frame.style.display = 'none';
+	frame.style.width = '1px';
+	frame.style.height = '1px';
+	frame.src = 'https://activate.suncorp.com.au/no-content?ca_pch=4&pch=4&ca_pct=B&pct=B&ca_pai=ons001&pai=ons001&ca_pei=2&pei=2&ca_pbrd=1&pbrd=1&&cw_pdlit={servertime}&pdlit={servertime}&ci_pdic=1';
+	frame.title = 'No Content';
+	document.body.appendChild(frame);
+     </script>
+     <div class="qualtrics-survey">
+     </div>
+    </div>
+   </main>
+   <div>
+    <div class="Footer">
+     <div class="Footer-onCall Footer-redesign">
+      <div class="Footer-onCall-content">
+       <div class="Footer-call-left">
+        <label>
+         Suncorp
+        </label>
+        <span class="Footer-call-link">
+         <a href="tel:">
+          <label>
+          </label>
+          <label>
+          </label>
+         </a>
+        </span>
+       </div>
+       <span class="Footer-call-right">
+       </span>
+      </div>
+     </div>
+     <div class="Footer-content Footer-redesign">
+      <div class="Footer-bottomLinks">
+       <div class="Footer-linkRow">
+        <article>
+         <ul class="sg-List-unstyled Footer-linkList">
+          <li class="Footer-linkList-link Footer-linkColumnTitle">
+           Log in or Manage
+          </li>
+          <li class="Footer-linkList-link">
+           <a class="" href="/banking/secure/internet-banking.html" linkpath="/content/suncorp/website/en/secure/banking/internet-banking.html" target="_self">
+            Internet Banking
+           </a>
+          </li>
+          <li class="Footer-linkList-link">
+           <a class="" href="/secure/login/my-insurance-manager.html" linkpath="/content/suncorp/website/en/secure/login/my-insurance-manager.html" target="_self">
+            My Suncorp
+           </a>
+          </li>
+          <li class="Footer-linkList-link">
+           <a class="" href="/secure/login/health-services.html" linkpath="/content/suncorp/website/en/secure/login/health-services.html" target="_self">
+            Health Online Services
+           </a>
+          </li>
+         </ul>
+        </article>
+        <article>
+         <ul class="sg-List-unstyled Footer-linkList">
+          <li class="Footer-linkList-link Footer-linkColumnTitle">
+           Help &amp; Support
+          </li>
+          <li class="Footer-linkList-link">
+           <a class="" href="/contact-us.html" linkpath="/content/suncorp/website/en/home/contact-us.html" target="_self">
+            Contact us
+           </a>
+          </li>
+          <li class="Footer-linkList-link">
+           <a class="" href="/insurance/claims.html" linkpath="/content/suncorp/website/en/home/insurance/claims.html" target="_self">
+            Make a claim
+           </a>
+          </li>
+          <li class="Footer-linkList-link">
+           <a class="" href="/locate-us.html" linkpath="/content/suncorp/website/en/home/locate-us.html" target="_self">
+            Find a branch or ATM
+           </a>
+          </li>
+          <li class="Footer-linkList-link">
+           <a class="" href="/banking/help-support/financial-difficulty.html" linkpath="/content/suncorp/website/en/home/banking/help-support/financial-difficulty.html" target="_self">
+            Financial difficulty
+           </a>
+          </li>
+          <li class="Footer-linkList-link">
+           <a class="" href="/contact-us/customer-relations.html" linkpath="/content/suncorp/website/en/home/contact-us/customer-relations.html" target="_self">
+            Customer Relations and Complaints
+           </a>
+          </li>
+         </ul>
+        </article>
+        <article>
+         <ul class="sg-List-unstyled Footer-linkList">
+          <li class="Footer-linkList-link Footer-linkColumnTitle">
+           Helpful links
+          </li>
+          <li class="Footer-linkList-link">
+           <a class="" href="/about-us/legal/downloads.html" linkpath="/content/suncorp/website/en/home/about-us/legal/downloads.html" target="_self">
+            Product Documents
+           </a>
+          </li>
+          <li class="Footer-linkList-link">
+           <a class="" href="/banking/help-support/ways-to-bank/suncorp-app.html" linkpath="/content/suncorp/website/en/home/banking/help-support/ways-to-bank/suncorp-app.html" target="_self">
+            Suncorp App
+           </a>
+          </li>
+          <li class="Footer-linkList-link">
+           <a class="" href="/about-us/news.html" linkpath="/content/suncorp/website/en/home/about-us/news.html" rel="noopener" target="_blank">
+            News &amp; Media
+           </a>
+          </li>
+          <li class="Footer-linkList-link">
+           <a class="" href="/about-us" linkpath="/content/suncorp/website/en/home/about-us.html">
+            About us
+           </a>
+          </li>
+         </ul>
+        </article>
+       </div>
+      </div>
+     </div>
+     <div class="Footer-bottom Footer-redesign">
+      <div class="Footer-Links-social">
+       <div class="Footer-links">
+        <ul class="sg-List-unstyledHorizontal Footer-bottomLinks--links">
+         <li class="highlight">
+          <a class="" href="/" linkpath="/content/suncorp/website/en/home.html" target="_self">
+           SUNCORP
+          </a>
+         </li>
+         <li class="">
+          <a class="" href="/banking/" linkpath="/content/suncorp/website/en/home/banking.html" target="_self">
+           BANKING
+          </a>
+         </li>
+         <li class="">
+          <a class="" href="/insurance/" linkpath="/content/suncorp/website/en/home/insurance.html" target="_self">
+           INSURANCE
+          </a>
+         </li>
+         <li class="">
+          <a class="" href="http://www.suncorpgroup.com.au/" linkpath="http://www.suncorpgroup.com.au/" target="_self">
+           SUNCORP GROUP LIMITED SITE
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="Footer-socialMedia">
+        <ul class="sg-List-unstyledHorizontal sg-u-clearfix">
+         <li class="social-links-item">
+          <a href="https://www.facebook.com/suncorpAUNZ/" rel="noopener" target="_blank">
+           <img alt="Facebook" src="/content/dam/suncorp/corporate/images/icons/light/icon-facebook--light-24x24.png"/>
+           <span>
+           </span>
+          </a>
+         </li>
+         <li class="social-links-item">
+          <a href="https://twitter.com/suncorp?lang=en" rel="noopener" target="_blank">
+           <img alt="Twitter" src="/content/dam/suncorp/corporate/images/icons/light/icon-twitter--light-29x24.png"/>
+           <span>
+           </span>
+          </a>
+         </li>
+         <li class="social-links-item">
+          <a href="https://www.youtube.com/user/suncorpinsurance" rel="noopener" target="_blank">
+           <img alt="Youtube" src="/content/dam/suncorp/corporate/images/icons/light/icon-youtube--light-31x24.png"/>
+           <span>
+           </span>
+          </a>
+         </li>
+         <li class="social-links-item">
+          <a href="https://suncorp.mcxplatform.com.au/cgi-bin/qwebcorporate.dll?idx=8WMVX6" rel="noopener" target="_blank">
+           <span>
+            Feedback
+           </span>
+          </a>
+         </li>
+         <li class="social-links-item">
+          <a href="/learn-about.html" rel="noopener" target="_blank">
+           <span>
+            Learn
+           </span>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="Footer-disclaimer">
+      <div class="Footer-disclaimer--content">
+       <div class="default rte" data-startnum="0">
+        <p>
+         <span class="sg-Type--size12">
+          <a href="/about-us/legal.html">
+           Legal information
+          </a>
+          <a href="/about-us/legal/privacy.html">
+           Privacy policy
+          </a>
+          <a class="default" href="/about-us/legal/online-terms.html">
+           Online Terms
+          </a>
+          <span class="sg-Type--size12">
+           <a href="/about-us/legal/cookie-and-data-policy.html">
+            Cookie &amp; data policy
+           </a>
+           <a href="/about-us/legal/accessibility.html">
+            Accessibility
+           </a>
+           <a href="/sitemap.html">
+            Sitemap
+           </a>
+          </span>
+         </span>
+        </p>
+       </div>
+       <div class="sg-Grid">
+        <div class="sg-Grid-row">
+         <div class="sg-Grid-col12 sg-Grid-col12--large sg-Grid-col6--xlarge">
+          <div class="default rte" data-startnum="0">
+           <p>
+            <span class="sg-Type--size12">
+             Products and services including banking, home loans and insurance are provided by different entities of the Suncorp Group.  Suncorp Bank (Suncorp-Metway Ltd ABN 66 010 831 722) is only liable for the banking and home loan products or services it provides and not the products and services of other companies in the Suncorp Group.
+            </span>
+           </p>
+           <p>
+            <span class="sg-Type--size12">
+             BANKING
+             <br/>
+             Banking and home loan products are issued by Suncorp-Metway Ltd (“Suncorp Bank”) ABN 66 010 831 722 AFSL No 229882 Australian Credit Licence 229882. Please read the relevant
+             <u>
+              <a class="default" href="/banking/help-support/documents-forms.html" rel="noopener" target="_blank">
+               Product Information Document and Terms &amp; Conditions
+              </a>
+             </u>
+             before opening an account. Fees, charges, terms and conditions apply and are available on request.
+            </span>
+           </p>
+           <p>
+            <span class="sg-Type--size12">
+             Any advice has been prepared without taking into account your particular objectives, financial situation or needs, so you should consider whether it is appropriate for you before acting on it. Please read the relevant
+             <a class="default" href="/banking/help-support/documents-forms.html" rel="noopener" target="_blank">
+              Product Information Document, and/or Terms and Conditions
+             </a>
+             before applying for any Suncorp Bank product.
+             <a class="sg-Type--link" href="/banking/help-support/documents-forms.html#tmd" rel="noopener" target="_blank">
+              Target Market Determinations (“TMDs”)
+             </a>
+             are also available. Copies of historical TMDs for credit card products can be obtained by calling
+             <a class="default" href="tel:131155">
+              13 11 55
+             </a>
+             .
+            </span>
+           </p>
+           <p>
+            <span class="sg-Type--size12">
+             INSURANCE
+             <br/>
+             Any advice has been prepared without taking into account your particular objectives, financial situation or needs, so you should consider whether it is appropriate for you before acting on it. Please read the relevant
+             <a class="default" href="/insurance/policy-documents.html" rel="noopener" target="_blank">
+              Product Disclosure Statement
+             </a>
+             before you make any decision regarding this product. The
+             <a class="default" href="/insurance/policy-documents.html" rel="noopener" target="_blank">
+              Target Market Determination
+             </a>
+             is also available.
+            </span>
+           </p>
+           <p>
+            <span class="sg-Type--size12">
+             GENERAL INSURANCE
+             <br/>
+             General Insurance (including Home Building, Home Contents, Landlord, Strata, Car, CTP, Motorcycle, Caravan, Motorhome, Boat Insurance, Business Insurance and Barristers Insurance) is issued by AAI Limited ABN 48 005 297 807 trading as Suncorp Insurance.
+            </span>
+           </p>
+           <p>
+            <span class="sg-Type--size12">
+             SUNCORP HEALTH INSURANCE
+             <br/>
+             Suncorp Health Insurance is issued by nib health funds limited ABN 83 000 124 381 (nib) a registered private health insurer and is marketed by Platform CoVentures Pty Ltd ABN 82 626 829 623 (PC), a Suncorp Group company. PC is an authorised agent of nib and receives commission from nib. Read the
+             <a class="default" href="/content/dam/suncorp/insurance/suncorp-insurance/documents/health/suncorp-health-insurance-policy-booklet.pdf" rel="noopener" target="_blank">
+              policy booklet
+             </a>
+             before buying this insurance.
+            </span>
+           </p>
+          </div>
+         </div>
+         <div class="sg-Grid-col12 sg-Grid-col12--large sg-Grid-col6--xlarge">
+          <div class="default rte" data-startnum="0">
+           <p>
+            <span class="sg-Type--size12">
+             SUNCORP LIFE INSURANCE
+             <br/>
+             Suncorp Life Insurance products, other than in some circumstances the Redundancy Benefit, are issued by TAL Life Limited ABN 70 050 109 450 AFSL 237848 (TAL Life) which is part of the TAL Dai-ichi Life Australia Pty Limited ABN 97 150 070 483 group of companies (TAL). TAL companies are not part of the Suncorp Group. TAL Life uses the Suncorp brand under licence from the Suncorp Group. Redundancy Benefit provided on or before 31st March 2020 was issued by AAI Limited ABN 48 005 297 807 AFSL 230859 (AAI) which is part of the Suncorp Group. New Redundancy Benefit policies and renewals offered from 1st April 2020 are issued by TAL Life. The different entities of TAL and the Suncorp Group of companies are not responsible for, or liable in respect of, products and services provided by the other.
+            </span>
+           </p>
+           <p>
+            <span class="sg-Type--size12">
+             Any advice on this page in connection with the Life products is general in nature and is provided by Platform Ventures Pty Ltd ABN 35 626 745 177 AFS Representative Number 001266101 (PV). PV is part of the Suncorp Group and an authorised representative of TAL Direct Pty Limited ABN 39 084 666 017 AFSL 243260 (TAL Direct). General advice does not take into account your individual needs, objectives or financial situation. Before you decide to buy or to continue to hold a Life Product you must read the relevant
+             <u>
+              <a class="default" href="/insurance/policy-documents.html">
+               Product Disclosure Statement
+              </a>
+             </u>
+             . The
+             <u>
+              <a class="default" href="/insurance/policy-documents.html">
+               Target Market Determination (TMD)
+              </a>
+             </u>
+             for the product is also available.
+            </span>
+           </p>
+           <p>
+            <span class="sg-Type--size12">
+             TAL Life is proud to have adopted the
+             <a class="default" href="/life-insurance-code-of-practice.html">
+              Life Insurance Code of Practice (Code)
+             </a>
+             . The Code has been developed voluntarily by the Life Insurance industry to promote high standards of service to consumers, provide a benchmark of consistency within the industry, and establish a framework for professional behaviour and responsibilities.
+            </span>
+           </p>
+           <p>
+            <span class="sg-Type--size12">
+             TRAVEL
+             <br/>
+             Insurance issued by AAI Limited ABN 48 005 297 807 trading as Vero Insurance.
+            </span>
+           </p>
+           <p>
+            <span class="sg-Type--size12">
+             COOKIE AND DATA POLICY
+             <br/>
+             We use cookies and other related technologies to improve and tailor your website experience. See our
+             <a class="default" href="/about-us/legal/cookie-and-data-policy.html">
+              Cookie and Data Policy
+             </a>
+             . This policy provides information about how Suncorp collects and uses data related to your online activity, and how you can choose to remain anonymous.
+            </span>
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="section">
+       </div>
+       <div class="iparys_inherited">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="suncorp-chatbot">
+    <div class="sc-bBHxTw fvUaPL">
+     <div class="sc-iwjdpV hUkomr" id="suncorp-chatbot-icon-container">
+      <button aria-label="Chat" class="MuiButtonBase-root MuiFab-root MuiFab-primary" tabindex="0" type="button">
+       <span class="MuiFab-label">
+        <i class="Icon-speech--default Icon--large">
+        </i>
+       </span>
+       <span class="MuiTouchRipple-root">
+       </span>
+      </button>
+     </div>
+     <div class="sc-cxpSdN ftiLSb" id="suncorp-chatbot-window-container">
+     </div>
+    </div>
+    ,
+   </div>
+   <script src="https://chat.suncorp.com.au/chatbot-ui/v1.0/suncorp/index.js">
+   </script>
+   <script type="text/javascript">
+    var delayCall;
+
+			function DelayOnLoadFunction() {
+				delayCall = setTimeout(SendAnalyticsDataOnLoad, 2000);
+			}
+
+			function SendAnalyticsDataOnClick() {
+				if(typeof dataLayer != "undefined" && window.webAnalytics) {
+					window.webAnalytics.publish("event", "iva chat clicked");
+				}
+
+			}
+			function SendAnalyticsDataOnLoad() {
+				if(typeof dataLayer != "undefined" && window.webAnalytics) {
+					window.webAnalytics.publish('event', "iva | loads");
+				}
+			}
+
+			$(document).ready(function () {
+				DelayOnLoadFunction();
+			});
+
+			$(document).on( "click", "button.MuiButtonBase-root", function() {
+				SendAnalyticsDataOnClick();
+			});
+   </script>
+   <div class="section">
+   </div>
+   <div class="iparys_inherited">
+   </div>
+  </div>
+  <iframe src="https://activate.suncorp.com.au/no-content?ca_pch=4&amp;pch=4&amp;ca_pct=B&amp;pct=B&amp;ca_pai=ons001&amp;pai=ons001&amp;ca_pei=2&amp;pei=2&amp;ca_pbrd=1&amp;pbrd=1&amp;&amp;cw_pdlit={servertime}&amp;pdlit={servertime}&amp;ci_pdic=1" style="display: none; width: 1px; height: 1px;" title="No Content">
+  </iframe>
+  <div class="error-msg">
+  </div>
+  <form id="secureapp">
+   <input id="securelinks" name="securePagePath" type="hidden" value="/content/suncorp/website/en/secure.maintenance.json"/>
+  </form>
+  <script src="/etc.clientlibs/suncorp-clientlibs/styles/commons.lc-d5bf32ea6d69e5efc1c005a0f19dd609-lc.min.js">
+  </script>
+  <script src="/etc.clientlibs/suncorp-clientlibs/styles/suncorp/viewstyles_suncorp.lc-fbe095e1812634155b147805c70b3a25-lc.min.js">
+  </script>
+  <iframe class="aamIframeLoaded" id="destination_publishing_iframe_suncorp_0" name="destination_publishing_iframe_suncorp_0_name" sandbox="allow-scripts allow-same-origin" src="https://suncorp.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.suncorp.com.au" style="display: none; width: 0px; height: 0px;" title="Adobe ID Syncing iFrame">
+  </iframe>
+  <script async="" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=1&amp;cb=669706843" type="text/javascript">
+  </script>
+  <div class="mboxDefault at-element-marker" id="c-target-global-mbox" style="display: none; visibility: hidden;">
+  </div>
+  <div id="cboxOverlay" style="display: none;">
+  </div>
+  <div class="" id="colorbox" role="dialog" style="display: none;" tabindex="-1">
+   <div id="cboxWrapper">
+    <div>
+     <div id="cboxTopLeft" style="float: left;">
+     </div>
+     <div id="cboxTopCenter" style="float: left;">
+     </div>
+     <div id="cboxTopRight" style="float: left;">
+     </div>
+    </div>
+    <div style="clear: left;">
+     <div id="cboxMiddleLeft" style="float: left;">
+     </div>
+     <div id="cboxContent" style="float: left;">
+      <div id="cboxTitle" style="float: left;">
+      </div>
+      <div id="cboxCurrent" style="float: left;">
+      </div>
+      <button id="cboxPrevious" type="button">
+      </button>
+      <button id="cboxNext" type="button">
+      </button>
+      <button id="cboxSlideshow">
+      </button>
+      <div id="cboxLoadingOverlay" style="float: left;">
+      </div>
+      <div id="cboxLoadingGraphic" style="float: left;">
+      </div>
+     </div>
+     <div id="cboxMiddleRight" style="float: left;">
+     </div>
+    </div>
+    <div style="clear: left;">
+     <div id="cboxBottomLeft" style="float: left;">
+     </div>
+     <div id="cboxBottomCenter" style="float: left;">
+     </div>
+     <div id="cboxBottomRight" style="float: left;">
+     </div>
+    </div>
+   </div>
+   <div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;">
+   </div>
+  </div>
+  <div class="sg-Menu-overlay" style="display: none;">
+  </div>
+  <iframe height="0" src="https://5048776.fls.doubleclick.net/activityi;src=5048776;type=subrco;cat=sunco003;ord=2080707973144;auiddc=1110178145.1694253618;gtm=45fe3960;uaa=;uab=;uafvl=;uamb=0;uam=;uap=;uapv=;uaw=0;epver=2;~oref=https%3A%2F%2Fwww.suncorp.com.au%2F?" style="display: none; visibility: hidden;" width="0">
+  </iframe>
+  <script async="" src="//intercept.inmoment.com.au/intercept/v1/init/3007/Ckxh2WsZ8hda2YxL5Zg==?testing=false" type="text/javascript">
+  </script>
+  <div class="sg-Tooltip sg-Tooltip--animate js-TooltipContent" id="TooltipExample_1">
+   <div class="sg-Tooltip-arrow js-Arrow">
+   </div>
+   <div class="sg-Tooltip-header">
+    <button class="sg-Tooltip-headerBtnClose js-closeModal">
+    </button>
+    <div class="sg-Tooltip-headerTitle sg-Type--heading5">
+    </div>
+   </div>
+   <div class="sg-Tooltip-body">
+    <p>
+     <span class="sg-Type--colourLight">
+      1
+     </span>
+    </p>
+   </div>
+  </div>
+  <div class="sg-Tooltip sg-Tooltip--animate js-TooltipContent" id="TooltipExample_1">
+   <div class="sg-Tooltip-arrow js-Arrow">
+   </div>
+   <div class="sg-Tooltip-header">
+    <button class="sg-Tooltip-headerBtnClose js-closeModal">
+    </button>
+    <div class="sg-Tooltip-headerTitle sg-Type--heading5">
+    </div>
+   </div>
+   <div class="sg-Tooltip-body">
+    <p>
+     <span class="sg-Type--colourLight">
+      1
+     </span>
+    </p>
+   </div>
+  </div>
+  <div class="sg-Tooltip sg-Tooltip--animate js-TooltipContent" id="TooltipExample_1">
+   <div class="sg-Tooltip-arrow js-Arrow">
+   </div>
+   <div class="sg-Tooltip-header">
+    <button class="sg-Tooltip-headerBtnClose js-closeModal">
+    </button>
+    <div class="sg-Tooltip-headerTitle sg-Type--heading5">
+    </div>
+   </div>
+   <div class="sg-Tooltip-body">
+    <p>
+     <span class="sg-Type--colourLight">
+      1
+     </span>
+    </p>
+   </div>
+  </div>
+  <div class="sg-Tooltip sg-Tooltip--animate js-TooltipContent" id="TooltipExample_1">
+   <div class="sg-Tooltip-arrow js-Arrow">
+   </div>
+   <div class="sg-Tooltip-header">
+    <button class="sg-Tooltip-headerBtnClose js-closeModal">
+    </button>
+    <div class="sg-Tooltip-headerTitle sg-Type--heading5">
+    </div>
+   </div>
+   <div class="sg-Tooltip-body">
+    <p>
+     <span class="sg-Type--colourLight">
+      1
+     </span>
+    </p>
+   </div>
+  </div>
+  <script async="" crossorigin="anonymous" src="https://intercept-client.inmoment.com.au/intercept-client-v1.25.0.js" type="text/javascript">
+  </script>
+  <script async="" crossorigin="anonymous" src="https://intercept.inmoment.com.au/intercept/v1/customJS/3007/Ckxh2WsZ8hda2YxL5Zg==?loadTestCustomJS=false" type="text/javascript">
+  </script>
+ </body>
+</html>

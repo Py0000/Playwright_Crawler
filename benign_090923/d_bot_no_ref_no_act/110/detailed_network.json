@@ -1,0 +1,1361 @@
+[
+    {
+        "requestId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/",
+        "request": {
+            "url": "https://www.wib-bank.net/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 18110.595359,
+        "wallTime": 1694255971.167326,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://www.wib-bank.net/personal",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 18111.17597,
+        "wallTime": 1694255971.748912,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://www.wib-bank.net/",
+            "status": 302,
+            "statusText": "",
+            "headers": {
+                "cache-control": "max-age=3600",
+                "content-length": "0",
+                "content-security-policy": "default-src 'self' *.cookiebot.com *.zdassets.com *.zendesk.com *.usersnap.com *.zopim.com maps.googleapis.com wss:; img-src 'self' *.cloudfront.net https://*.googleapis.com https://*.gstatic.com *.google.com *.googleusercontent.com data: *.ytimg.com; script-src 'self' static.zdassets.com *.cookiebot.com *.zendesk.com *.usersnap.com *.zopim.com *.cloudflare.com *.pingdom.net https://*.google-analytics.com https://maps.googleapis.com 'sha256-lF53z/fI1DTqP0KUWNetcxSLgMIi0XcoQykEBpplCsc=' 'sha256-lF53z/fI1DTqP0KUWNetcxSLgMIi0XcoQykEBpplCsc=' 'sha256-dAMs3/Yp2SSUrhzjwbwLmPPB0soj/thHemUrM4u00O8=' blob:  https://maps.googleapis.com/maps/api/js 'sha256-7jh7AGfLiQNn8g5oAhq1ZJ06qedydgANKWb7lnBxTZ8=' https://maps.googleapis.com/maps-api-v3/api/js/ 'sha256-FDyPg8CqqIpPAfGVKx1YeKduyLs0ghNYWII21wL+7HM=' 'sha256-4kQREEOmUv5TSuiC/TVAHDGEyEEx1pu3+6iGFZbmfEU=' 'sha256-nErDqV6ch/d6RKKIfm52KopCfqXJGumT4b4W5Gidf9Q=' 'sha256-Hyj3Wh3VpX7DF/56So9bvKj4aX7nlE5SO5TqfV2CO3s='; base-uri 'self'; object-src 'none'; style-src 'self' fonts.googleapis.com *.gstatic.com 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com; frame-ancestors 'self'; frame-src 'self' *.google.com *.cookiebot.com https://*.youtube.com; connect-src 'self' https://*.googleapis.com https://*.g.doubleclick.net https://*.google-analytics.com *.google.com https://*.gstatic.com https://*.cookiebot.com https://*.pingdom.net data: blob: *.zdassets.com *.zendesk.com *.zopim.com wss:; worker-src 'self' blob:;",
+                "content-type": "text/html; charset=UTF-8",
+                "date": "Sat, 09 Sep 2023 10:39:31 GMT",
+                "link": "<https://www.wib-bank.net/>; rel=\"canonical\"",
+                "location": "https://www.wib-bank.net/personal",
+                "referrer-policy": "same-origin",
+                "server": "Apache",
+                "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+                "x-content-type-options": "nosniff",
+                "x-frame-options": "sameorigin",
+                "x-powered-by": "Craft CMS",
+                "x-xss-protection": "1; mode=block"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 138,
+            "remoteIPAddress": "20.23.230.83",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 1441,
+            "timing": {
+                "requestTime": 18110.596559,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.674,
+                "dnsEnd": 1.473,
+                "connectStart": 1.473,
+                "connectEnd": 345.941,
+                "sslStart": 163.574,
+                "sslEnd": 345.934,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 346.168,
+                "sendEnd": 346.73,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 576.36,
+                "receiveHeadersEnd": 576.722
+            },
+            "responseTime": 1694255971744.854,
+            "protocol": "h2",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.3",
+                "keyExchange": "",
+                "keyExchangeGroup": "X25519",
+                "cipher": "AES_256_GCM",
+                "certificateId": 0,
+                "subjectName": "www.wib-bank.net",
+                "sanList": [
+                    "www.wib-bank.net",
+                    "wib-bank.net"
+                ],
+                "issuer": "Entrust Certification Authority - L1M",
+                "validFrom": 1692388146,
+                "validTo": 1726688945,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "serverSignatureAlgorithm": 2052,
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Document",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.2",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://www.wib-bank.net/dist/css/app.css?id=e4fc53c8eacaef843f44f77a97c2d29d",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.wib-bank.net/personal",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "same-origin",
+            "isSameSite": true
+        },
+        "timestamp": 18111.399743,
+        "wallTime": 1694255971.971651,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 8,
+            "columnNumber": 90
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.3",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://static.zdassets.com/ekr/snippet.js?key=176ad872-d222-42e4-9759-f2e6f30791d3",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.400073,
+        "wallTime": 1694255971.972194,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 20,
+            "columnNumber": 153
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.4",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://rum-static.pingdom.net/pa-5ef0f4a78e83fa001500043e.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.400868,
+        "wallTime": 1694255971.972767,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 21,
+            "columnNumber": 88
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.5",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://consent.cookiebot.com/uc.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.400998,
+        "wallTime": 1694255971.972873,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 85,
+            "columnNumber": 42
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.6",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/utilities/CMB_LOGO_Full-Version_PMS_WT.svg?v=1680136101",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.401097,
+        "wallTime": 1694255971.972972,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 130,
+            "columnNumber": 169
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.7",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/utilities/AW.svg?v=1657108881",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.401181,
+        "wallTime": 1694255971.973053,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 134,
+            "columnNumber": 132
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.8",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/utilities/15082_MCB_LOGO_Full-Version_PMS_WT.svg?v=1680136088",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.401259,
+        "wallTime": 1694255971.973132,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 150,
+            "columnNumber": 175
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.9",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/utilities/BQ.svg?v=1657108907",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.401349,
+        "wallTime": 1694255971.973242,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 154,
+            "columnNumber": 134
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.11",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/utilities/CW.svg?v=1657108770",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.401502,
+        "wallTime": 1694255971.973398,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 174,
+            "columnNumber": 134
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.12",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/utilities/WIB_LOGO_Full-Version_A_PMS.svg?v=1680136127",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.401612,
+        "wallTime": 1694255971.973485,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 190,
+            "columnNumber": 168
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.13",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/utilities/SX.svg?v=1657108949",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.401694,
+        "wallTime": 1694255971.973569,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 194,
+            "columnNumber": 139
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.16",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/headerImages/Sint-Maarten/3435_mcb_homepage_tutorialsolb__1592244127.jpg?v=1693309812",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.544005,
+        "wallTime": 1694255972.116263,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 1143,
+            "columnNumber": 280
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.17",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/headerImages/Sint-Maarten/3804_wib_introcc_1600x900__1636989994.jpg?v=1692801146",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.544713,
+        "wallTime": 1694255972.116587,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 1149,
+            "columnNumber": 275
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.18",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/headerImages/Sint-Maarten/DSC4440.jpg?v=1693227852",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.544824,
+        "wallTime": 1694255972.116693,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 1155,
+            "columnNumber": 245
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.19",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/contentImages/Sint-Maarten/_634x634_crop_center-center_none/Chip-tap-Win.jpg?v=1693766861",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.544892,
+        "wallTime": 1694255972.116766,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 1281,
+            "columnNumber": 559
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.20",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/contentImages/Sint-Maarten/_AUTOx634_crop_center-center_none/SXM-Xtravaganza.jpg?v=1693766883",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.544973,
+        "wallTime": 1694255972.116849,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 1305,
+            "columnNumber": 554
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.21",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/headerImages/_634x634_crop_center-center_none/mcb_fees__1494968760.jpg?v=1693498818",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.545064,
+        "wallTime": 1694255972.116937,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 1329,
+            "columnNumber": 548
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.22",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/contentImages/_AUTOx250_crop_center-center_none/DSC5763.jpg?v=1693301834",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.545149,
+        "wallTime": 1694255972.117019,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 1362,
+            "columnNumber": 471
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.23",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/contentImages/Sint-Maarten/_AUTOx250_crop_center-center_none/WIBPhotoshootImagesJuly20-212023-22.jpg?v=1693368772",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.545215,
+        "wallTime": 1694255972.117083,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 1383,
+            "columnNumber": 625
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.24",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/contentImages/Sint-Maarten/_AUTOx250_crop_center-center_none/WIBPhotoshootImagesJuly20-212023-32.jpg?v=1693368750",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.545279,
+        "wallTime": 1694255972.117146,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 1404,
+            "columnNumber": 625
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.25",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/contentImages/_AUTOx250_crop_center-center_none/MCB-Summer-Loans-2022-29.jpg?v=1693301836",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.545344,
+        "wallTime": 1694255972.117212,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 1424,
+            "columnNumber": 539
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.26",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/contentImages/compressed-mcb-home-page1.jpg?v=1680032938",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.545405,
+        "wallTime": 1694255972.117272,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 1473,
+            "columnNumber": 523
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.27",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/contentImages/unsplash_7TI-3jUObYg_2022-07-06-114658_fthb.jpg?v=1657108018",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.545467,
+        "wallTime": 1694255972.117334,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 1499,
+            "columnNumber": 575
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.28",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://d1zwpj0nw967gp.cloudfront.net/utilities/_50xAUTO_crop_center-center_none/wib-sintmaarten-logo-footer.png?v=1693301838",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.545527,
+        "wallTime": 1694255972.117396,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 1524,
+            "columnNumber": 520
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.29",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://www.wib-bank.net/dist/js/app.js?id=1438b56a2ed041921d36e388a8227ae0",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.wib-bank.net/personal",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "same-origin",
+            "isSameSite": true
+        },
+        "timestamp": 18111.54576,
+        "wallTime": 1694255972.117629,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/personal",
+            "lineNumber": 1679,
+            "columnNumber": 72
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.30",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://ekr.zdassets.com/compose/176ad872-d222-42e4-9759-f2e6f30791d3",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18111.596798,
+        "wallTime": 1694255972.168879,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://static.zdassets.com/ekr/snippet.js?key=176ad872-d222-42e4-9759-f2e6f30791d3",
+                        "lineNumber": 0,
+                        "columnNumber": 6779
+                    },
+                    {
+                        "functionName": "getProducts",
+                        "scriptId": "4",
+                        "url": "https://static.zdassets.com/ekr/snippet.js?key=176ad872-d222-42e4-9759-f2e6f30791d3",
+                        "lineNumber": 0,
+                        "columnNumber": 6492
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://static.zdassets.com/ekr/snippet.js?key=176ad872-d222-42e4-9759-f2e6f30791d3",
+                        "lineNumber": 0,
+                        "columnNumber": 10036
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Fetch",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.45",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://www.wib-bank.net/assets/fonts/KievitSlabWeb-W03-Book.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.wib-bank.net/dist/css/app.css?id=e4fc53c8eacaef843f44f77a97c2d29d",
+                "Origin": "https://www.wib-bank.net",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "same-origin",
+            "isSameSite": true
+        },
+        "timestamp": 18111.63093,
+        "wallTime": 1694255972.202852,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/dist/css/app.css?id=e4fc53c8eacaef843f44f77a97c2d29d"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.46",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://www.wib-bank.net/assets/fonts/KievitOT-Book.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.wib-bank.net/dist/css/app.css?id=e4fc53c8eacaef843f44f77a97c2d29d",
+                "Origin": "https://www.wib-bank.net",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "same-origin",
+            "isSameSite": true
+        },
+        "timestamp": 18111.635536,
+        "wallTime": 1694255972.207458,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/dist/css/app.css?id=e4fc53c8eacaef843f44f77a97c2d29d"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.48",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://www.wib-bank.net/assets/fonts/KievitOT-Medium.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.wib-bank.net/dist/css/app.css?id=e4fc53c8eacaef843f44f77a97c2d29d",
+                "Origin": "https://www.wib-bank.net",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "same-origin",
+            "isSameSite": true
+        },
+        "timestamp": 18111.635846,
+        "wallTime": 1694255972.207741,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/dist/css/app.css?id=e4fc53c8eacaef843f44f77a97c2d29d"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.44",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://www.wib-bank.net/assets/fonts/kievitSlab/medium/bb333af9-fe65-46eb-b868-3038785f57a4.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.wib-bank.net/dist/css/app.css?id=e4fc53c8eacaef843f44f77a97c2d29d",
+                "Origin": "https://www.wib-bank.net",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "same-origin",
+            "isSameSite": true
+        },
+        "timestamp": 18111.762099,
+        "wallTime": 1694255972.334055,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.wib-bank.net/dist/css/app.css?id=e4fc53c8eacaef843f44f77a97c2d29d"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "274452.71",
+        "loaderId": "AAD27EF2D0FE88AE0710522E13F6210D",
+        "documentURL": "https://www.wib-bank.net/personal",
+        "request": {
+            "url": "https://rum-collector-2.pingdom.net/img/beacon.gif?id=5ef0f4a78e83fa001500043e&sAW=1280&sAH=720&bIW=1280&bIH=720&pD=24&dPR=1&or=landscape-primary&nT=0&rC=1&nS=0&cS=581&cE=581&dLE=581&dLS=581&fS=581&hS=-1&rE=581&rS=1&reS=584&resS=794&resE=948&uEE=-1&uES=-1&dL=802&dI=1519&dCLES=1519&dCLEE=1519&dC=1519&lES=1519&lEE=1530&s=nt&title=Home%20-%20Personal%20-%20The%20Windward%20Islands%20Bank&path=https%3A%2F%2Fwww.wib-bank.net%2Fpersonal&ref=&sId=6ul0fakq&sST=1694255972&sIS=1&rV=0&v=1.4.1",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18112.14325,
+        "wallTime": 1694255972.715489,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "s",
+                        "scriptId": "7",
+                        "url": "https://rum-static.pingdom.net/pa-5ef0f4a78e83fa001500043e.js",
+                        "lineNumber": 0,
+                        "columnNumber": 1162
+                    },
+                    {
+                        "functionName": "get",
+                        "scriptId": "7",
+                        "url": "https://rum-static.pingdom.net/pa-5ef0f4a78e83fa001500043e.js",
+                        "lineNumber": 0,
+                        "columnNumber": 1265
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "7",
+                        "url": "https://rum-static.pingdom.net/pa-5ef0f4a78e83fa001500043e.js",
+                        "lineNumber": 0,
+                        "columnNumber": 5957
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "7",
+                        "url": "https://rum-static.pingdom.net/pa-5ef0f4a78e83fa001500043e.js",
+                        "lineNumber": 0,
+                        "columnNumber": 5964
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "XHR",
+        "frameId": "8CFB526C78727EA031A417E067095EBC",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "CookieConsent",
+                    "value": "{stamp:%27-1%27%2Cnecessary:true%2Cpreferences:true%2Cstatistics:true%2Cmarketing:true%2Cmethod:%27implied%27%2Cver:1%2Cutc:1694255972470}",
+                    "domain": "www.wib-bank.net",
+                    "path": "/",
+                    "expires": 1696847972,
+                    "size": 151,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "274452.72",
+        "loaderId": "92DA179DF17FA04670DA297F44FF3DC3",
+        "documentURL": "about:blank",
+        "request": {
+            "url": "https://static.zdassets.com/web_widget/classic/latest/web-widget-main-4b22769.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "same-origin",
+            "isSameSite": false
+        },
+        "timestamp": 18112.579201,
+        "wallTime": 1694255973.151246,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://static.zdassets.com/ekr/snippet.js?key=176ad872-d222-42e4-9759-f2e6f30791d3",
+                        "lineNumber": 0,
+                        "columnNumber": 4053
+                    },
+                    {
+                        "functionName": "injectAssets",
+                        "scriptId": "4",
+                        "url": "https://static.zdassets.com/ekr/snippet.js?key=176ad872-d222-42e4-9759-f2e6f30791d3",
+                        "lineNumber": 0,
+                        "columnNumber": 4038
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "4",
+                        "url": "https://static.zdassets.com/ekr/snippet.js?key=176ad872-d222-42e4-9759-f2e6f30791d3",
+                        "lineNumber": 0,
+                        "columnNumber": 5211
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "C27FA8D30C69EDDCE3E4C4921468540A",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "CookieConsent",
+                    "value": "{stamp:%27-1%27%2Cnecessary:true%2Cpreferences:true%2Cstatistics:true%2Cmarketing:true%2Cmethod:%27implied%27%2Cver:1%2Cutc:1694255972470}",
+                    "domain": "www.wib-bank.net",
+                    "path": "/",
+                    "expires": 1696847972,
+                    "size": 151,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

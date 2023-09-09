@@ -1,0 +1,187 @@
+[
+    {
+        "requestId": "99B6F620BFF79DE88DDCCC71D59C8497",
+        "loaderId": "99B6F620BFF79DE88DDCCC71D59C8497",
+        "documentURL": "https://www.fedex.com/",
+        "request": {
+            "url": "https://www.fedex.com/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4772.66939,
+        "wallTime": 1694242633.24137,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "2C0DD832854C75E594E93E0A31C1DB9C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "45213.2",
+        "loaderId": "99B6F620BFF79DE88DDCCC71D59C8497",
+        "documentURL": "https://www.fedex.com/",
+        "request": {
+            "url": "https://www.fedex.com/waf/failover-objects/fedexascend.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.fedex.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4773.583666,
+        "wallTime": 1694242634.155573,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.fedex.com/",
+            "lineNumber": 6,
+            "columnNumber": 84
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "2C0DD832854C75E594E93E0A31C1DB9C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "Rbt",
+                    "value": "f0",
+                    "domain": "www.fedex.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 5,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "45213.3",
+        "loaderId": "99B6F620BFF79DE88DDCCC71D59C8497",
+        "documentURL": "https://www.fedex.com/",
+        "request": {
+            "url": "https://www.fedex.com/waf/failover-objects/corp_logo.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.fedex.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4773.584275,
+        "wallTime": 1694242634.156173,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.fedex.com/",
+            "lineNumber": 13,
+            "columnNumber": 294
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "2C0DD832854C75E594E93E0A31C1DB9C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "Rbt",
+                    "value": "f0",
+                    "domain": "www.fedex.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 5,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "45213.4",
+        "loaderId": "99B6F620BFF79DE88DDCCC71D59C8497",
+        "documentURL": "https://www.fedex.com/",
+        "request": {
+            "url": "https://www.fedex.com/waf/failover-objects/spacer.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.fedex.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 4773.584542,
+        "wallTime": 1694242634.156459,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.fedex.com/",
+            "lineNumber": 16,
+            "columnNumber": 293
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "2C0DD832854C75E594E93E0A31C1DB9C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "Rbt",
+                    "value": "f0",
+                    "domain": "www.fedex.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 5,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

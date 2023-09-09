@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <script>
+   window.prerenderReady = false
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <style>
+   @charset "UTF-8";a,body,div,h1,h2,h4,html,img,p,span,strong{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}details,footer,header,main,menu,nav,section{display:block}body{line-height:1}*,::after,::before{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0;font-family:HelvNeueOrange,"Helvetica Neue",Helvetica,Arial,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.42857;color:#000;text-align:left;background-color:#fff}h1,h2,h4{margin-top:0;margin-bottom:1.875rem}p{margin-top:0;margin-bottom:.9375rem}strong{font-weight:bolder}a{color:#000;text-decoration:none;background-color:transparent}img{vertical-align:middle;border-style:none}h1,h2,h4{margin-bottom:1.875rem;font-family:inherit;font-weight:700;line-height:1.1;color:inherit}h1{font-size:2.125rem}h2{font-size:1.875rem}h4{font-size:1.375rem}@media (max-width:735.98px){h1{font-size:1.625rem}h2{font-size:1.5rem}h4{font-size:1.25rem}}.lead{font-size:1rem;font-weight:400}h2::after{position:absolute;bottom:0;left:0;width:1.875rem;height:.375rem;content:"";background:#ff7900}.standard,body{font-size:.875rem}.standard,p{padding-top:.5rem;padding-bottom:.625rem}h1{max-width:37.5rem;padding-top:0;padding-bottom:.5rem;line-height:1.17647}h2{position:relative;z-index:0;max-width:37.5rem;padding-top:0;padding-bottom:.9375rem;line-height:1.13333}h4{max-width:37.5rem;padding-top:.375rem;padding-bottom:.625rem;line-height:1.18182}.lead{padding-top:.4375rem;padding-bottom:.625rem;line-height:1.375}@media (max-width:735.98px){.standard,body{font-size:.875rem;line-height:1.42857}.standard,p{padding-top:.5rem;padding-bottom:.625rem}h1{padding-top:.25rem;padding-bottom:.625rem;line-height:1.15385}h2{padding-top:.3125rem;padding-bottom:1rem;line-height:1.16667}h4{padding-top:.3125rem;padding-bottom:.6875rem;line-height:1.2}.lead{padding-top:.4375rem;padding-bottom:.625rem;font-size:1rem;line-height:1.375}}@media (min-width:1200px){.standard,body{font-size:1rem;line-height:1.375}.standard,p{padding-top:.4375rem;padding-bottom:.625rem}h1{padding-top:0;padding-bottom:.375rem;font-size:2.625rem;line-height:1.19048}h2{padding-top:0;padding-bottom:.875rem;font-size:2.125rem;line-height:1.17647}h4{padding-top:.25rem;padding-bottom:.625rem;font-size:1.625rem;line-height:1.15385}.lead{padding-top:.375rem;padding-bottom:.625rem;font-size:1.125rem;line-height:1.33333}}.container-fluid{margin-right:auto;margin-left:auto;padding-right:15px;padding-left:15px;margin-right:0;margin-left:0;width:auto}@media (min-width:480px){.container-fluid{padding-right:15px;padding-left:15px}}@media (min-width:736px){.container-fluid{padding-right:15px;padding-left:15px}}@media (min-width:960px){.container-fluid{padding-right:15px;padding-left:15px}}@media (min-width:1200px){.container-fluid{padding-right:15px;padding-left:15px}}@media (min-width:1440px){.container-fluid{padding-right:15px;padding-left:15px}}@media (min-width:480px){.container-fluid{margin-right:0;margin-left:0}}@media (min-width:736px){.container-fluid{margin-right:1.5625%;margin-left:1.5625%}}@media (min-width:960px){.container-fluid{margin-right:3.125%;margin-left:3.125%}}@media (min-width:1200px){.container-fluid{margin-right:3.125%;margin-left:3.125%}}@media (min-width:1440px){.container-fluid{margin-right:45px;margin-left:45px}}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}@media (min-width:480px){.row{margin-right:-15px;margin-left:-15px}}@media (min-width:736px){.row{margin-right:-15px;margin-left:-15px}}@media (min-width:960px){.row{margin-right:-15px;margin-left:-15px}}@media (min-width:1200px){.row{margin-right:-15px;margin-left:-15px}}@media (min-width:1440px){.row{margin-right:-15px;margin-left:-15px}}.no-gutters{margin-right:0;margin-left:0}.no-gutters>[class*=col-]{padding-right:0;padding-left:0}.col-12,.col-4,.col-6,.col-lg-12,.col-lg-4,.col-lg-6,.col-lg-8{position:relative;width:100%;padding-right:15px;padding-left:15px}@media (min-width:480px){.col-12,.col-4,.col-6,.col-lg-12,.col-lg-4,.col-lg-6,.col-lg-8{padding-right:15px;padding-left:15px}}@media (min-width:736px){.col-12,.col-4,.col-6,.col-lg-12,.col-lg-4,.col-lg-6,.col-lg-8{padding-right:15px;padding-left:15px}}@media (min-width:960px){.col-12,.col-4,.col-6,.col-lg-12,.col-lg-4,.col-lg-6,.col-lg-8{padding-right:15px;padding-left:15px}}.col-4{flex:0 0 33.33333%;max-width:33.33333%}.col-6{flex:0 0 50%;max-width:50%}.col-12{flex:0 0 100%;max-width:100%}@media (min-width:960px){.col-lg-4{flex:0 0 33.33333%;max-width:33.33333%}.col-lg-6{flex:0 0 50%;max-width:50%}.col-lg-8{flex:0 0 66.66667%;max-width:66.66667%}.col-lg-12{flex:0 0 100%;max-width:100%}}.site-width{max-width:1440px;margin:auto}.btn{display:inline-block;font-family:HelvNeueOrange,"Helvetica Neue",Helvetica,Arial,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-weight:700;color:#000;text-align:center;vertical-align:middle;background-color:transparent;border:1px solid transparent;padding:.8125rem 2.8125rem;font-size:1rem;line-height:1.375rem;border-radius:0}a.btn{text-decoration:none}.btn-secondary{color:#000;background-color:transparent;border-color:#000}.btn-secondary.btn-inverse{color:#000;background-color:#fff;border-color:#fff}.btn{max-width:18.75rem;white-space:normal}.btn-secondary{color:#000;background-color:transparent;border-color:#000}.btn-secondary.btn-inverse{color:#fff;background-color:transparent;border-color:#fff}.bg-info{background-color:#26b2ff!important}.bg-gray1{background-color:#333!important}.bg-gray2{background-color:#f4f4f4!important}.d-none{display:none!important}.d-block{display:block!important}.d-flex{display:flex!important}@media (min-width:960px){.d-lg-none{display:none!important}}.flex-column{flex-direction:column!important}.flex-shrink-0{flex-shrink:0!important}.align-items-center{align-items:center!important}.align-self-start{align-self:flex-start!important}.w-100{width:100%!important}.h-100{height:100%!important}.m-0{margin:0!important}.my-0{margin-top:0!important}.my-0{margin-bottom:0!important}.mt-1,.my-1{margin-top:.9375rem!important}.mr-1{margin-right:.9375rem!important}.mb-1,.my-1{margin-bottom:.9375rem!important}.ml-1{margin-left:.9375rem!important}.mb-2{margin-bottom:1.875rem!important}.mt--1{margin-top:-.9375rem!important}.mr--1{margin-right:-.9375rem!important}.py-0{padding-top:0!important}.py-0{padding-bottom:0!important}.pt-1{padding-top:.9375rem!important}.px-1{padding-right:.9375rem!important}.pb-1{padding-bottom:.9375rem!important}.px-1{padding-left:.9375rem!important}@media (min-width:1200px){.mb-xl-3{margin-bottom:2.8125rem!important}}.font-weight-bold{font-weight:700!important}.text-secondary{color:#000!important}.text-gray3{color:#555!important}.btn,body{font-family:o-HelveticaNeue,Arial,sans-serif}.site-width{min-width:736px}body .btn{max-width:100%}.zone-perso{display:flex;flex-direction:column;background:#000;color:#fff;padding:8px 35px 25px 43.4px;font-weight:700;min-height:183px}.zone-perso.zone-perso-prospect{background:#333}@media (min-width:960px) and (max-width:1199px){.zone-perso{padding-left:30px}}@media (max-width:959px){.zone-perso.zone-perso-prospect{min-height:270px;padding:40px 30px 45px 30px}.zone-perso.zone-perso-prospect .title{padding-bottom:.9375rem}}.zone-perso .title{font-weight:700;font-size:1.625rem;line-height:2rem;padding-bottom:0;margin-bottom:0}.zone-perso .intro{margin:0;padding-top:0;font-weight:700;font-size:1rem}@media (min-width:960px) and (max-width:1199px){.zone-perso .intro{font-size:.875rem}}@media (max-width:959px){.zone-perso .intro{max-width:400px}}.autopromo-prospect{height:270px;overflow:hidden}.search-form{padding-left:0}.o-search-input{min-height:calc(45rem / 16)}#hp-prospect .search-form{margin:12px 5px 16px 5px;min-height:calc(45rem / 16);padding-left:0;box-shadow:5px 5px 0 0 #555;background:#fff}@media (min-width:960px){ #hp-prospect .search-form{margin-left:calc(3.125% + 30px)}}@media (max-width:959px){ #hp-prospect .search-form{margin-left:calc(1.5625% + 15px);margin-right:calc(1.5625% + 20px)}}.tag-rm{position:relative;width:300px;min-height:250px;margin:0 auto;background:#fff}.o-carousel{background-color:#f4f4f4}.o-carousel::after,.o-carousel::before{content:"";position:absolute;z-index:1;width:50px;top:0;bottom:0}.o-carousel::before{left:0}.o-carousel::after{right:0}.o-media{opacity:0}.bg-info{background-color:#e9f7ff!important}#o-header .ribbon-tmp{height:110px;background:#000}#o-header .ribbon-tmp .logo-tmp{margin-left:calc(1.5625% + 15px);margin-top:calc(110px - (15px + 50px))}@media (min-width:960px){ #o-header .ribbon-tmp .logo-tmp{margin-left:calc(3.125% + 15px)}}@media (min-width:1440px){ #o-header .ribbon-tmp .logo-tmp{margin-left:calc(((100vw - 1440px)/ 2) + 52px)}}.o-search-form{opacity:0}.glide-carousel{overflow:hidden;font-size:0;background-color:#f4f4f4}.mb-0,.my-0{margin-bottom:0!important}.standard{font-size:1rem;line-height:1.375}.lead{padding-top:.375rem;padding-bottom:.625rem;font-size:1.125rem;line-height:1.33333}.reco-parcours-prospect .ob1-tag{background:#ffcd0b;font-weight:700;padding: 0.125rem 0.625rem 0.25rem;font-size: 0.875rem;line-height: 1.4285714286;color: #000;position:absolute;top:0;left:0;}.ob1-card{border:0.0625rem solid #ccc;box-shadow:0.125rem 0.125rem #ccc;}.reco-parcours-prospect{background:#fff;position:relative;}@media (min-width:480px){.col-sm-4{flex:0 0 33.3333333333%;max-width:33.3333333333%;}}
+  </style>
+  <noscript>
+   <link href="https://cdn.woopic.com/18d8339538654b1dbf96a30e92745731/css/hp.a7417cfb2455aff6ab1e.css" rel="stylesheet" type="text/css"/>
+  </noscript>
+  <link crossorigin="" href="https://cdn.woopic.com" rel="preconnect"/>
+  <link href="https://cdn.woopic.com" rel="dns-prefetch"/>
+  <link href="https://c.woopic.com" rel="preconnect"/>
+  <link href="https://c.woopic.com" rel="dns-prefetch"/>
+  <link href="https://proxymedia.woopic.com" rel="preconnect"/>
+  <link href="https://proxymedia.woopic.com" rel="dns-prefetch"/>
+  <script>
+   var zgifJalons = { start: { t: new Date() } }
+
+    try {
+      o_idzone = {"ACCESS_NETWORK":"","ACCOUNT_COST_CENTER":null,"ACCOUNT_MULTIBAL":false,"ACCOUNT_NETWORK":"","ACCOUNT_OPTION_MCS":false,"ACCOUNT_OPTION_QUAD":false,"ACCOUNT_PRO":false,"BACKEND_ENV":"prod","BROWSER_FAMILY":"Chrome","BROWSER_MAJOR":"114","BROWSER_MINOR":null,"CADAP_VERSION":"23.0.0","CLIENT_ID":"fgikOPelzJpDTnOBhl0ACqRu","CLIENT_ID_EXPIRATION_DATE":1709801310,"COMMON_ZIP_CODE":null,"COMPANY_SIREN":"","COMPANY_SIRET":"","COMPANY_TRADINGNAME":"","DEVICE_IS_ROBOT":"0","DEVICE_POLARIS":"1","DEVICE_TYPE":"desktop","HPIZ_VERSION":"3.20.2","IDENT_FORM_URL":"https://login.orange.fr/","MOBILE_BRAND":"","MOBILE_COMMERCIAL_SEGMENT":"","MOBILE_MODEL":"","MOBILE_NETWORK_TYPE":"","MOBILE_OFFER_TYPE":"","NETWORK_COUNTRY_CODE":"SG","NETWORK_ISP_NAME":"Singtel Fibre","NETWORK_POOL":"","NETWORK_TYPE":"","OS_FAMILY":"Windows","OS_MAJOR":"10","OS_MINOR":null,"PUBPERSO_VAR1":null,"PUBPERSO_VAR2":null,"PUBPERSO_VAR3":null,"PUBPERSO_VAR4":null,"PUBPERSO_VAR5":false,"PUBPERSO_VAR6":"","REQUEST_ID":"fgikOPelzJpDTnOBhl0ACqRu","STB_LAST_CNX_AGE":null,"TECH_CACHE_INDICS":"FETCHED,SAVED","TECH_CONTRAH_INDICS":"FETCHED","TECH_CONTRAH_REQDUR":0,"TECH_CONTRAH_REQSTS":0,"TECH_CONTRAH_STATUS":1,"TECH_NET_INDICS":"","TECH_NET_STATUS":0,"TECH_PNS_INDICS":"PNS,CACHED","TECH_PNS_REQDUR":23091,"TECH_PNS_REQSTS":0,"TECH_PNS_STATUS":160,"TECH_SIG_SIGTTL":30,"TECH_SIG_SIGVER":4,"TECH_SIG_STATUS":0,"TECH_SIU_INDICS":"","TECH_SIU_REQDUR":0,"TECH_SIU_REQSTS":412,"TECH_SIU_STATUS":0,"TECH_WSP_INDICS":"FETCHED","TECH_WSP_REQDUR":0,"TECH_WSP_REQSTS":412,"TECH_WSP_STATUS":1,"UAF_VERSION":"0.5.1","USER_AVATAR_TINY_PICTURE_URL":"https://proxymedia.woopic.com/api/v1/images/1211%2Favatars%2F0.png","USER_BDP_ALLOWED":null,"USER_BDP_DISPLAY":null,"USER_BIMOBILE_TAGPRO":null,"USER_CITY_NAME":null,"USER_CONSENT_CMP":{"c1":1,"c2":1,"c3":1,"c4":1,"c5":1,"c6":1,"c7":1,"c8":1,"c9":1,"c10":1,"c11":1,"c12":1,"c13":1,"c14":1,"c15":1,"c16":1,"c17":1,"c18":1,"c19":1,"c20":1,"c21":1,"c22":1,"c23":1,"c24":1,"c25":1,"c26":1,"c27":1,"c28":1,"c29":1,"c30":1,"c31":1,"c32":1},"USER_COOKIE_CONSENT":null,"USER_DEFINED_MSISDN":null,"USER_EXTERNAL_ID_HASH":"","USER_FIRST_NAME":"","USER_FIRST_NAME2":"","USER_FULL_NAME":"","USER_GENDER":null,"USER_HOMELIVE_STATUS":null,"USER_IDENT_CONTEXT":0,"USER_IDENT_LEVEL":"NONE","USER_IDENT_METHOD":0,"USER_IDENT_PROVIDER":"","USER_IDENT_TYPE":"","USER_IN8_ALT_SITE":false,"USER_IN8_SWITCHED":false,"USER_IS_FUT":1,"USER_IS_IUS":false,"USER_IS_MUS":false,"USER_IUR":null,"USER_LAST_NAME":"","USER_LAST_NAME2":"","USER_M6":false,"USER_MAIL_ADDRESS":"","USER_MAIL_NB":0,"USER_MAIL_STATUS":0,"USER_MMS_NB":0,"USER_MSISDN":"","USER_MSISDN_HASH":"","USER_MUR":null,"USER_OPEN":0,"USER_OPTION_TV_FIBRE":false,"USER_OPTION_TV_SAT":false,"USER_OPTION_TV_SAT_DOM":false,"USER_OPTION_TV_XDSL":false,"USER_OPTION_TV_ZNE":false,"USER_OPTION_TV_ZNE_DUO":false,"USER_OPUS_IRD":null,"USER_ORANGE_CARAIBE_CONVERGENT":false,"USER_ORANGE_CARAIBE_MOBILE":false,"USER_ORANGE_CARAIBE_SOSH":false,"USER_OSDAT_EXTRA":"","USER_OSDAT_VAR1":null,"USER_OSDAT_VAR2":null,"USER_OSDAT_VAR3":null,"USER_OSDAT_VAR4":null,"USER_OSDAT_VAR5":null,"USER_OSDAT_VAR6":"","USER_PPERSO_STATUS":null,"USER_PRINCIPAL":false,"USER_PRO":false,"USER_PROPME":null,"USER_QMSISDN":"","USER_QUAD":0,"USER_SEGMENT":null,"USER_SEGMENT_JSON":null,"USER_SMS_NB":0,"USER_SOSH":false,"USER_ST_B":null,"USER_TV_ADS_PROFILE":[],"USER_ZIP_CODE":null,"REAL_DEVICE_TYPE":"desktop","UA_FILTER_MATCH":"0"};
+    } catch (e) {
+      o_idzone = {};
+    }
+
+    var dataStoreHP = {
+        "bandes": {},
+                  "jwt":"eyJpdiI6InZIU3EySlhOMkZ4NXMtMV8iLCJ0YWciOiJfLWs1ZmZZaUEwWmloX29aLU1YRGNnIiwiYWxnIjoiQTI1NkdDTUtXIiwiZW5jIjoiQTI1NkdDTSIsInppcCI6IkRFRiJ9.ex0nm_c2Cg71b8ooz36fk7r6AgBo2-RtLE2OgxcjdMk.Y3OvqNn5lYBfuteo.MnXmwpthl4E_OmJxNJV9hZRvuOvcIjlCu7QhCBQm6GjGFEyLilVgrxxR0vefxAr5UcSCz_7A2yHszGlMHFZDFAZlDh7bxeNkN1J4iV2MFaxzC3csWH5qyeIVSFTXG4xdDwmodWRfT5WMjnMHvlGGTuak_KbvkF8U2Fk6_NrYBpid-zSJhuwh-5hnAtatqlaldmwLTTV3rzRLI46Yl4p0Vq8brR8tHW4U9NiwDFXxHw5YpPwp4kIyfFEB6YZIwYPdFT6GVbbrSof-qk5Jmy45bw6Mkbv6VrSkPj6r4EJb6XEVmDa2eN7Po1FdSIU9WgePBvC70ho0nc1dnGSvkzkX8o2AbAFT_u-42NZJwzgpmS21DGvg5A_li-T167YMRXakmLLPpOTLJaACliqLG2g8dSPW9Bl8kdhfTb5VAn7oCms1pwGhCD43puKu0btPeLaiNEtl6GUEpva1voJGt9fJua7LWDTLyj0s5c5sWL17toiK44gS3uuHeDbyldKkiRZyVO2tI1BOPw1XJmlbnjSnBBFBzKTPVTepIUPLiPyOaGO1eglZvy2yoX4UZPizEXKMA3vFBEPmbYtYDHT2WgzadoivCJXKbSjQ5Z4Loe-V3d6acYdRr58GHADwUiLeTlZ8SqPL2HCyy8cVdyeZscL35mBGY803bLQy6IlJCYg8y1gtDvJ89oUWRKJqBJlEyZmKNHdqTvaCoej7jaMvrP8DOSjDzQNlGHKFN9y4tJw591UfxURgYSxkJs2kVvFqmKIvRPMff0fVjtLEOTlTK7A3Hssg_y9ypvI34oYSFv1YjCDPvgUakYliktwLYy8aawoqbSH3pOWOgY_A9SuYUeLhxcjEQGf7C6NYc45ssnFA44g8SfUxbWNt4ZikcR7t-HeiyaConciMGUPl0wFT6qFGrHUUWRt7mMJ7SX9n7Uyivcqj5KgcHXRwWu-NM3Xdo-HHqEQ2DM2lH3PuJpiQbRWnrfKAbk4L1zbCWO8x.xgfQu1O6tCoYb_GOPAUwsQ",
+                          "requestId":"8cf1711c-8095-48a4-5df6-9472b58af3de",
+                "zgif": {
+          "app": "HPONE", 
+          "access": "prospect"
+        },
+        "oanPageId": "ora_hp.prospects",
+        "featureFlags": {
+          "sentry": false        }
+    }
+  </script>
+  <link href="https://cdn.woopic.com/18d8339538654b1dbf96a30e92745731/images/favicon.85cec1f5b18cd3ee180b.ico" rel="shortcut icon" type="image/png"/>
+  <link href="https://cdn.woopic.com/18d8339538654b1dbf96a30e92745731/images/apple-touch-icon.069668c7c973348beec8.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="https://cdn.woopic.com/18d8339538654b1dbf96a30e92745731/images/apple-touch-icon-precomposed.9206afcddce59e526e2f.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="https://cdn.woopic.com/18d8339538654b1dbf96a30e92745731/images/favicon-32x32.4789d5847965da0822fd.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="https://cdn.woopic.com/18d8339538654b1dbf96a30e92745731/images/favicon-16x16.8019ec8b4acddb776a25.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link color="#ff7900" href="https://cdn.woopic.com/18d8339538654b1dbf96a30e92745731/images/safari-pinned-tab.bd3be5fb2c2093a313af.svg" rel="mask-icon"/>
+  <meta content="#000000" name="msapplication-TileColor"/>
+  <meta content="#ffffff" name="theme-color"/>
+  <style>
+   .logo-tmp { height: 30px; width: 30px; }
+    @media (min-width: 735px) { .logo-tmp { height: 50px; width: 50px; } }
+  </style>
+  <link href="https://cdn.woopic.com/18d8339538654b1dbf96a30e92745731/css/hp.a7417cfb2455aff6ab1e.css" media="all" rel="stylesheet" type="text/css"/>
+ </head>
+ <body class="is-desktop" data-request-id="8cf1711c-8095-48a4-5df6-9472b58af3de" id="hp-prospect">
+  <header id="o-header">
+   <div class="ribbon-tmp">
+    <picture>
+     <source media="(max-width: 735px)" srcset="https://c.woopic.com/small-logo-orange.svg">
+      <img alt="logo orange" class="logo-tmp" src="https://c.woopic.com/logo-orange.png"/>
+     </source>
+    </picture>
+   </div>
+  </header>
+  <div class="bg-info" id="orange-inside" style="display:none">
+  </div>
+  <main class="site-width">
+   <section id="alertInfo">
+   </section>
+   <section id="zonePerso">
+   </section>
+   <section id="recoParcoursProspect">
+   </section>
+   <section id="bandeEquipements_pos2">
+   </section>
+   <section id="recoEquipements_pos2">
+   </section>
+   <section id="reassuranceEquipement_pos2">
+   </section>
+   <section id="ecommerce">
+   </section>
+   <section id="editoTv">
+   </section>
+   <section id="rassuranceService">
+   </section>
+   <section id="reassuranceReseau">
+   </section>
+   <section id="news">
+   </section>
+   <script>
+    let menu = {
+  text: [
+    {
+      title: 'Actu',
+      url: 'https://actu.orange.fr',
+      analytics: {
+        category: "news_titre1",
+        action: 'Actu',
+        label: 'https://actu.orange.fr',
+        other: '{"track_refZ":"acc-digital_prospect-nl_news_titre1"}',
+      }
+    },
+    {
+      title: 'Sports',
+      url: 'https://sports.orange.fr',
+      analytics: {
+        category: "news_titre2",
+        action: 'Sports',
+        label: 'https://sports.orange.fr',
+        other: '{"track_refZ":"acc-digital_prospect-nl_news_titre2"}',
+      }
+    },
+    {
+      title: 'Tendances',
+      url: 'https://tendances.orange.fr',
+      analytics: {
+        category: "news_titre3",
+        action: "Tendances",
+        label: 'https://tendances.orange.fr',
+        other: '{"track_refZ":"acc-digital_prospect-nl_news_titre3"}',
+      }
+    }
+  ],
+  events: []
+}
+                                                  
+    menu.events.push({
+      url: "https://meteo.orange.fr/",
+      target: "_blank",
+      title: "Météo",
+      image: "",
+      alt: "",
+      cacheKey: "5c4f07c84aa4e52ee73a53d074f0da3483b9a6bfec632840f141644b2e488b7d",
+      analytics: {
+        pdbSc: "mpt",
+        pdbZid: "acc-digital_prospect-nl_news_ope-event",
+        pdbVi: "",
+        pdbIdc: "000aqOvdK",
+          category: "news_ope-event",
+  action: "meteo",
+  label: "https://meteo.orange.fr/",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_ope-event"}' 
+      }
+    })
+
+                                                          
+    menu.events.push({
+      url: "https://sports.orange.fr/rugby/coupe-du-monde/",
+      target: "_blank",
+      title: "",
+      image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2Fe7d%2Fc72%2F48b94470e6e14c3ffa5090906e%2Fe7dc7248b94470e6e14c3ffa5090906e.png?saveas=webp&amp;quality=85",
+      alt: "Coupe du monde de Rugby",
+      cacheKey: "5c4f07c84aa4e52ee73a53d074f0da3483b9a6bfec632840f141644b2e488b7d",
+      analytics: {
+        pdbSc: "mpt",
+        pdbZid: "acc-digital_prospect-nl_news_ope-event",
+        pdbVi: "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2Fe7d%2Fc72%2F48b94470e6e14c3ffa5090906e%2Fe7dc7248b94470e6e14c3ffa5090906e.png?quality=85",
+        pdbIdc: "000eqOvdK",
+          category: "news_ope-event",
+  action: "coupe-du-monde-de-rugby",
+  label: "https://sports.orange.fr/rugby/coupe-du-monde/",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_ope-event"}' 
+      }
+    })
+
+                                                          
+    menu.events.push({
+      url: "https://perfectstay.orange.fr/fr-FR?utx_source=PerfectStay&amp;amp;utx_medium=onglet&amp;amp;utx_campaign=ancrage_HP",
+      target: "_blank",
+      title: "",
+      image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2F09c%2Fd3b%2F9d600141e86f65da819dcdb4d9%2F09cd3b9d600141e86f65da819dcdb4d9.png?saveas=webp&amp;quality=85",
+      alt: "Voyages",
+      cacheKey: "5c4f07c84aa4e52ee73a53d074f0da3483b9a6bfec632840f141644b2e488b7d",
+      analytics: {
+        pdbSc: "mpt",
+        pdbZid: "acc-digital_prospect-nl_news_ope-spe",
+        pdbVi: "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2F09c%2Fd3b%2F9d600141e86f65da819dcdb4d9%2F09cd3b9d600141e86f65da819dcdb4d9.png?quality=85",
+        pdbIdc: "000iqOvdK",
+          category: "news_ope-spe",
+  action: "voyages",
+  label: "https://perfectstay.orange.fr/fr-FR?utx_source=PerfectStay&amp;utx_medium=onglet&amp;utx_campaign=ancrage_HP",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_ope-spe"}' 
+      }
+    })
+
+    
+
+let meteo = {
+  url: "https://meteo.orange.fr",
+  text: 'Météo des villes',
+  alt:"",
+  image:"/images/meteo-ville.svg",
+  analytics: {
+    category: "news_meteo",
+    action: "meteo",
+    label: "https://meteo.orange.fr",
+    other: '{"track_refZ":"acc-digital_prospect-nl_news_meteo"}'
+  },
+}
+
+
+          
+let publicite = {
+  nativeAds: {
+    segmentation: "prospects"
+  }
+}
+
+
+  publicite.adgateway = {
+    segmentation: "prospects",
+    id: "2",
+    classes: "tag-rm",
+    deviceType: ""
+  }
+
+
+
+
+
+let sliders = []
+
+
+  
+  
+    sliders.push({
+      cacheKey: "a91224ecb5632457c1cb44c4462156fac1361302ffd452dbd7822470bd007f62",
+      name: "o-news-actu",
+      refId: "actu",
+      title: "L\u0027actualit\u00E9\u0020du\u0020jour",
+      vignettes: []
+    })
+
+                                                  
+                  
+                                
+      sliders[0].vignettes.push({
+        categoryTitle: "Actualit\u00E9s",
+        title: "Le\u0020cri\u0020d\u0027alarme\u0020de\u0020centaines\u0020d\u0027associations\u0020\u0022en\u0020danger\u0020de\u0020mort\u0022",
+        target: "",
+        url: "https://actu.orange.fr/france/inflation-les-associations-en-danger-de-mort-en-appellent-au-gouvernement-magic-CNT00000279QaA.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2F78b%2F679%2F6a3860aa8a39d27ac6ab4a4c88%2F78b6796a3860aa8a39d27ac6ab4a4c88.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "Actualités",
+        isNative: "",
+        newsline: "1",
+        analytics: {
+            category: "news_actu_1",
+  action: "actualites-le-cri-d-alarme-de-centaines-d-associations-en-danger-de-mort",
+  label: "https://actu.orange.fr/france/inflation-les-associations-en-danger-de-mort-en-appellent-au-gouvernement-magic-CNT00000279QaA.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu"}',   pdbZid: "acc-digital_prospect-nl_news_actu",
+  pdbSc: "mpt",
+  pdbIdc: "000am8NqK",
+  pdbVi: "media://one-i/ONE-I-ONews/78b/679/6a3860aa8a39d27ac6ab4a4c88/78b6796a3860aa8a39d27ac6ab4a4c88.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu_1",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu_1",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu"}' 
+            }
+          }
+        }
+      })
+
+                                              
+                  
+                                
+      sliders[0].vignettes.push({
+        categoryTitle: "Actualit\u00E9s",
+        title: "Le\u0020Maroc\u0020secou\u00E9\u0020par\u0020un\u0020puissant\u0020s\u00E9isme,\u0020plus\u0020de\u0020600\u0020morts",
+        target: "",
+        url: "https://actu.orange.fr/monde/maroc-plus-de-290-morts-dans-la-region-de-marrakech-apres-un-important-seisme-magic-CNT00000279PN4.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2Fe41%2F560%2F348b098908be388dc3abd2250f%2Fe41560348b098908be388dc3abd2250f.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "Actualités",
+        isNative: "",
+        newsline: "1",
+        analytics: {
+            category: "news_actu_2",
+  action: "actualites-le-maroc-secoue-par-un-puissant-seisme-plus-de-600-morts",
+  label: "https://actu.orange.fr/monde/maroc-plus-de-290-morts-dans-la-region-de-marrakech-apres-un-important-seisme-magic-CNT00000279PN4.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu"}',   pdbZid: "acc-digital_prospect-nl_news_actu",
+  pdbSc: "mpt",
+  pdbIdc: "000em8NqK",
+  pdbVi: "media://one-i/ONE-I-ONews/e41/560/348b098908be388dc3abd2250f/e41560348b098908be388dc3abd2250f.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu_2",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu_2",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu"}' 
+            }
+          }
+        }
+      })
+
+                                              
+                  
+                                
+      sliders[0].vignettes.push({
+        categoryTitle: "Actualit\u00E9s",
+        title: "Dramatique\u0020s\u00E9isme\u0020au\u0020Maroc\u0020\u003A\u0020\u0022Nous\u0020sommes\u0020tous\u0020boulevers\u00E9s\u0022",
+        target: "",
+        url: "https://actu.orange.fr/monde/seisme-au-maroc-nous-sommes-tous-bouleverses-emmanuel-macron-pret-a-venir-en-aide-aux-sinistres-magic-CNT0000027a2k7.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2F0b7%2Fd79%2F0e54066b65b1ecf944dd8bc135%2F0b7d790e54066b65b1ecf944dd8bc135.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "Actualités",
+        isNative: "",
+        newsline: "1",
+        analytics: {
+            category: "news_actu_3",
+  action: "actualites-dramatique-seisme-au-maroc-nous-sommes-tous-bouleverses",
+  label: "https://actu.orange.fr/monde/seisme-au-maroc-nous-sommes-tous-bouleverses-emmanuel-macron-pret-a-venir-en-aide-aux-sinistres-magic-CNT0000027a2k7.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu"}',   pdbZid: "acc-digital_prospect-nl_news_actu",
+  pdbSc: "mpt",
+  pdbIdc: "000im8NqK",
+  pdbVi: "media://one-i/ONE-I-ONews/0b7/d79/0e54066b65b1ecf944dd8bc135/0b7d790e54066b65b1ecf944dd8bc135.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu_3",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu_3",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu"}' 
+            }
+          }
+        }
+      })
+
+                                              
+                  
+                                
+      sliders[0].vignettes.push({
+        categoryTitle: "Actualit\u00E9s",
+        title: "Ces\u0020Fran\u00E7ais\u0020contraints\u0020de\u0020frauder\u0020aux\u0020caisses\u0020automatiques",
+        target: "",
+        url: "https://actu.orange.fr/france/ces-francais-qui-oublient-de-scanner-des-produits-aux-caisses-automatiques-magic-CNT00000279fne.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2Fec2%2Fc93%2F99b1ff6cc42df583c30567245b%2Fec2c9399b1ff6cc42df583c30567245b.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "Actualités",
+        isNative: "",
+        newsline: "1",
+        analytics: {
+            category: "news_actu_4",
+  action: "actualites-ces-francais-contraints-de-frauder-aux-caisses-automatiques",
+  label: "https://actu.orange.fr/france/ces-francais-qui-oublient-de-scanner-des-produits-aux-caisses-automatiques-magic-CNT00000279fne.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu"}',   pdbZid: "acc-digital_prospect-nl_news_actu",
+  pdbSc: "mpt",
+  pdbIdc: "000mm8NqK",
+  pdbVi: "media://one-i/ONE-I-ONews/ec2/c93/99b1ff6cc42df583c30567245b/ec2c9399b1ff6cc42df583c30567245b.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu_4",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu_4",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu"}' 
+            }
+          }
+        }
+      })
+
+    
+  
+
+  
+  
+    sliders.push({
+      cacheKey: "0c6e1a2ef0428e1bed7e148d28eb5b36360ab79e5a3ceefc5e8fe988bd63ddfc",
+      name: "o-news-focus",
+      refId: "actu-focus",
+      title: "Le\u0020reste\u0020de\u0020l\u0027actualit\u00E9",
+      vignettes: []
+    })
+
+                                                  
+                  
+                                
+      sliders[1].vignettes.push({
+        categoryTitle: "Partenaire",
+        title: "Vacances\u0020romantiques\u0020\u003A\u0020notre\u0020s\u00E9lection\u0020de\u0020voyages\u0020\u00E0\u0020prix\u0020canon",
+        target: "_self",
+        url: "https://perfectstay.orange.fr/fr-FR/listing?topic=Romantique&amp;?utx_source=ops_Perfectstay&amp;utx_medium=edito&amp;utx_campaign=remontée_HP",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2F2b0%2F06b%2Fcca7b0702ce4475ca17cf40f99%2F2b006bcca7b0702ce4475ca17cf40f99.png?saveas=webp&saveasquality=70&quality=85",
+        alt: "Partenaire",
+        isNative: "",
+        newsline: "1",
+        analytics: {
+            category: "news_actu-focus_1",
+  action: "partenaire-vacances-romantiques-notre-selection-de-voyages-a-prix-canon",
+  label: "https://perfectstay.orange.fr/fr-FR/listing?topic=Romantique&?utx_source=ops_Perfectstay&utx_medium=edito&utx_campaign=remontée_HP",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-focus"}',   pdbZid: "acc-digital_prospect-nl_news_actu-focus",
+  pdbSc: "mpt",
+  pdbIdc: "000ayLNqK",
+  pdbVi: "media://one-i/ONE-I-ONews/2b0/06b/cca7b0702ce4475ca17cf40f99/2b006bcca7b0702ce4475ca17cf40f99.png"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-focus_1",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-focus"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-focus_1",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-focus"}' 
+            }
+          }
+        }
+      })
+
+                                              
+                                
+                                
+      sliders[1].vignettes.push({
+        categoryTitle: "People",
+        title: "Jean\u002DJacques\u0020Goldman\u0020\u003A\u0020cette\u0020apparition\u0020inattendue\u0020du\u0020chanteur",
+        target: "_self",
+        url: "https://tendances.orange.fr/people/actu-people/article-jean-jacques-goldman-en-toute-decontraction-cette-rare-apparition-de-l-artiste-dans-un-lieu-inattendu-CNT00000277HOC.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2Fd7b%2F028%2F1ba075af4e3baaa55c685834bb%2Fd7b0281ba075af4e3baaa55c685834bb.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "People",
+        isNative: "1",
+        newsline: "1",
+        analytics: {
+            category: "news_actu-focus_2",
+  action: "people-jean-jacques-goldman-cette-apparition-inattendue-du-chanteur",
+  label: "https://tendances.orange.fr/people/actu-people/article-jean-jacques-goldman-en-toute-decontraction-cette-rare-apparition-de-l-artiste-dans-un-lieu-inattendu-CNT00000277HOC.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-focus"}',   pdbZid: "acc-digital_prospect-nl_news_actu-focus",
+  pdbSc: "mpt",
+  pdbIdc: "000eyLNqK",
+  pdbVi: "media://one-i/ONE-I-ONews/d7b/028/1ba075af4e3baaa55c685834bb/d7b0281ba075af4e3baaa55c685834bb.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-focus_2",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-focus"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-focus_2",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-focus"}' 
+            }
+          }
+        }
+      })
+
+                                              
+                  
+                                
+      sliders[1].vignettes.push({
+        categoryTitle: "M\u00E9t\u00E9o",
+        title: "Canicule\u0020\u003A\u002014\u0020d\u00E9partements\u0020en\u0020alerte.\u0020Consultez\u0020les\u0020pr\u00E9visions",
+        target: "_self",
+        url: "https://meteo.orange.fr/",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2Fb0c%2F687%2Fadb9c4c4a62d9574bf5b435304%2Fb0c687adb9c4c4a62d9574bf5b435304.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "Météo",
+        isNative: "",
+        newsline: "1",
+        analytics: {
+            category: "news_actu-focus_3",
+  action: "meteo-canicule-14-departements-en-alerte-consultez-les-previsions",
+  label: "https://meteo.orange.fr/",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-focus"}',   pdbZid: "acc-digital_prospect-nl_news_actu-focus",
+  pdbSc: "mpt",
+  pdbIdc: "000iyLNqK",
+  pdbVi: "media://one-i/ONE-I-ONews/b0c/687/adb9c4c4a62d9574bf5b435304/b0c687adb9c4c4a62d9574bf5b435304.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-focus_3",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-focus"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-focus_3",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-focus"}' 
+            }
+          }
+        }
+      })
+
+    
+  
+
+  
+  
+    sliders.push({
+      cacheKey: "f2547ccb398823374ec1c1dbaab334c2c5a9a86d8f3e6e488ed63dd1908fb3ab",
+      name: "o-news-sport",
+      refId: "actu-sport",
+      title: "L\u0027actualit\u00E9\u0020sportive\u0020du\u0020jour",
+      vignettes: []
+    })
+
+                                                  
+                  
+                                
+      sliders[2].vignettes.push({
+        categoryTitle: "Coupe\u0020du\u0020Monde\u0020de\u0020rugby",
+        title: "Fabien\u0020Galthi\u00E9\u0020donne\u0020des\u0020nouvelles\u0020de\u0020Julien\u0020Marchand,\u0020sorti\u0020sur\u0020blessure",
+        target: "",
+        url: "https://sports.orange.fr/rugby/coupe-du-monde/article/xv-de-france-galthie-donne-des-nouvelles-de-marchand-exclu-CNT00000279SB7.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2F9a6%2F5fd%2Fd67a3478a076422d6f89b866ea%2F9a65fdd67a3478a076422d6f89b866ea.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "",
+        isNative: "",
+        newsline: "2",
+        analytics: {
+            category: "news_actu-sport_1",
+  action: "coupe-du-monde-de-rugby-fabien-galthie-donne-des-nouvelles-de-julien-marchand-sorti-sur-blessure",
+  label: "https://sports.orange.fr/rugby/coupe-du-monde/article/xv-de-france-galthie-donne-des-nouvelles-de-marchand-exclu-CNT00000279SB7.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-sport"}',   pdbZid: "acc-digital_prospect-nl_news_actu-sport",
+  pdbSc: "mpt",
+  pdbIdc: "000aKqNqK",
+  pdbVi: "media://one-i/ONE-I-ONews/9a6/5fd/d67a3478a076422d6f89b866ea/9a65fdd67a3478a076422d6f89b866ea.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-sport_1",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-sport"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-sport_1",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-sport"}' 
+            }
+          }
+        }
+      })
+
+                                              
+                  
+                                
+      sliders[2].vignettes.push({
+        categoryTitle: "Coupe\u0020du\u0020Monde\u0020de\u0020rugby",
+        title: "XV\u0020de\u0020France\u0020\u003A\u0020d\u00E9couvrez\u0020l\u0027homme\u0020du\u0020match\u0020face\u0020aux\u0020All\u0020Blacks",
+        target: "",
+        url: "https://sports.orange.fr/rugby/coupe-du-monde/article/xv-de-france-alldritt-un-homme-dans-le-match-exclu-CNT00000279ECm.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2F2d3%2F332%2Fe074c8e10e35d8ac5d76f45e3f%2F2d3332e074c8e10e35d8ac5d76f45e3f.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "",
+        isNative: "",
+        newsline: "2",
+        analytics: {
+            category: "news_actu-sport_2",
+  action: "coupe-du-monde-de-rugby-xv-de-france-decouvrez-l-homme-du-match-face-aux-all-blacks",
+  label: "https://sports.orange.fr/rugby/coupe-du-monde/article/xv-de-france-alldritt-un-homme-dans-le-match-exclu-CNT00000279ECm.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-sport"}',   pdbZid: "acc-digital_prospect-nl_news_actu-sport",
+  pdbSc: "mpt",
+  pdbIdc: "000eKqNqK",
+  pdbVi: "media://one-i/ONE-I-ONews/2d3/332/e074c8e10e35d8ac5d76f45e3f/2d3332e074c8e10e35d8ac5d76f45e3f.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-sport_2",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-sport"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-sport_2",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-sport"}' 
+            }
+          }
+        }
+      })
+
+                                              
+                  
+                                
+      sliders[2].vignettes.push({
+        categoryTitle: "Coupe\u0020du\u0020monde\u0020de\u0020rugby",
+        title: "\u002230\u0020points\u0020aux\u0020Blacks,\u0020c\u0027est\u0020hyper\u0020positif\u0022\u0020\u003A\u0020la\u0020r\u00E9action\u0020d\u0027apr\u00E8s\u0020match\u0020d\u0027Antoine\u0020Dupont",
+        target: "",
+        url: "https://sports.orange.fr/rugby/coupe-du-monde/article/xv-de-france-dupont-30-points-aux-blacks-sur-un-match-moyen-c-est-hyper-positif-CNT00000279G11.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2F0f3%2F54c%2Fc6770104d8d4e5f6ee9857d035%2F0f354cc6770104d8d4e5f6ee9857d035.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "",
+        isNative: "",
+        newsline: "2",
+        analytics: {
+            category: "news_actu-sport_3",
+  action: "coupe-du-monde-de-rugby-30-points-aux-blacks-c-est-hyper-positif-la-reaction-d-apres-match-d-antoine-dupont",
+  label: "https://sports.orange.fr/rugby/coupe-du-monde/article/xv-de-france-dupont-30-points-aux-blacks-sur-un-match-moyen-c-est-hyper-positif-CNT00000279G11.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-sport"}',   pdbZid: "acc-digital_prospect-nl_news_actu-sport",
+  pdbSc: "mpt",
+  pdbIdc: "000iKqNqK",
+  pdbVi: "media://one-i/ONE-I-ONews/0f3/54c/c6770104d8d4e5f6ee9857d035/0f354cc6770104d8d4e5f6ee9857d035.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-sport_3",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-sport"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-sport_3",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-sport"}' 
+            }
+          }
+        }
+      })
+
+                                              
+                  
+                                
+      sliders[2].vignettes.push({
+        categoryTitle: "Tennis",
+        title: "US\u0020Open\u0020\u003A\u0020Daniil\u0020Medvedev\u0020\u00E9carte\u0020Carlos\u0020Alcaraz\u0020et\u0020rejoint\u0020Djokovic\u0020en\u0020finale\u0020\u0021",
+        target: "",
+        url: "https://sports.orange.fr/tennis/us-open/article/us-open-h-medvedev-elimine-alcaraz-en-quatre-sets-CNT00000279QHx.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2F146%2Faec%2Ff401f0663e563d8ab2d381eb3d%2F146aecf401f0663e563d8ab2d381eb3d.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "",
+        isNative: "",
+        newsline: "2",
+        analytics: {
+            category: "news_actu-sport_4",
+  action: "tennis-us-open-daniil-medvedev-ecarte-carlos-alcaraz-et-rejoint-djokovic-en-finale",
+  label: "https://sports.orange.fr/tennis/us-open/article/us-open-h-medvedev-elimine-alcaraz-en-quatre-sets-CNT00000279QHx.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-sport"}',   pdbZid: "acc-digital_prospect-nl_news_actu-sport",
+  pdbSc: "mpt",
+  pdbIdc: "000mKqNqK",
+  pdbVi: "media://one-i/ONE-I-ONews/146/aec/f401f0663e563d8ab2d381eb3d/146aecf401f0663e563d8ab2d381eb3d.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-sport_4",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-sport"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-sport_4",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-sport"}' 
+            }
+          }
+        }
+      })
+
+    
+  
+
+  
+  
+    sliders.push({
+      cacheKey: "e52da406d6346b6bcd3f2495468ad0509e25d26da6036385db6cd46d0a5ab925",
+      name: "o-news-media1",
+      refId: "actu-media1",
+      title: "Magazine",
+      vignettes: []
+    })
+
+                                                  
+                  
+                                
+      sliders[3].vignettes.push({
+        categoryTitle: "Auto",
+        title: "Amendes\u0020impay\u00E9es\u0020\u003A\u0020pourquoi\u0020ce\u0020ph\u00E9nom\u00E8ne\u0020a\u0020explos\u00E9\u0020en\u0020France",
+        target: "_self",
+        url: "https://auto.orange.fr/news/hausse-des-amendes-impayees-comment-l-expliquer-CNT0000026WlbT.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2F8bd%2Ff26%2F765da5f9140edb72c341a5033f%2F8bdf26765da5f9140edb72c341a5033f.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "Auto",
+        isNative: "",
+        newsline: "2",
+        analytics: {
+            category: "news_actu-media1_1",
+  action: "auto-amendes-impayees-pourquoi-ce-phenomene-a-explose-en-france",
+  label: "https://auto.orange.fr/news/hausse-des-amendes-impayees-comment-l-expliquer-CNT0000026WlbT.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media1"}',   pdbZid: "acc-digital_prospect-nl_news_actu-media1",
+  pdbSc: "mpt",
+  pdbIdc: "000aOhKqK",
+  pdbVi: "media://one-i/ONE-I-ONews/8bd/f26/765da5f9140edb72c341a5033f/8bdf26765da5f9140edb72c341a5033f.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-media1_1",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media1"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-media1_1",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media1"}' 
+            }
+          }
+        }
+      })
+
+                                              
+                  
+                                
+      sliders[3].vignettes.push({
+        categoryTitle: "S\u00E9ries",
+        title: "Ici\u0020tout\u0020commence\u0020\u003A\u0020la\u0020v\u00E9rit\u00E9\u0020\u00E9clate\u0020enfin\u0020entre\u0020Salom\u00E9\u0020et\u0020Ana\u00EFs",
+        target: "_self",
+        url: "https://cinema-series.orange.fr/series/toutes-les-actus/ici-tout-commence-anais-craque-et-revele-le-secret-de-teyssier-CNT00000277HAo.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2F1ec%2Fd46%2F4738bd580fb1372eee84262ae3%2F1ecd464738bd580fb1372eee84262ae3.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "Séries",
+        isNative: "",
+        newsline: "2",
+        analytics: {
+            category: "news_actu-media1_2",
+  action: "series-ici-tout-commence-la-verite-eclate-enfin-entre-salome-et-anais",
+  label: "https://cinema-series.orange.fr/series/toutes-les-actus/ici-tout-commence-anais-craque-et-revele-le-secret-de-teyssier-CNT00000277HAo.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media1"}',   pdbZid: "acc-digital_prospect-nl_news_actu-media1",
+  pdbSc: "mpt",
+  pdbIdc: "000eOhKqK",
+  pdbVi: "media://one-i/ONE-I-ONews/1ec/d46/4738bd580fb1372eee84262ae3/1ecd464738bd580fb1372eee84262ae3.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-media1_2",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media1"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-media1_2",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media1"}' 
+            }
+          }
+        }
+      })
+
+                                              
+                  
+                                
+      sliders[3].vignettes.push({
+        categoryTitle: "Environnement",
+        title: "Cr\u00E9er\u0020un\u0020jardin\u0020\u00E9cologique\u0020sur\u0020son\u0020balcon,\u0020c\u0027est\u0020facile\u0020\u0021\u0020Suivez\u0020le\u0020guide",
+        target: "_self",
+        url: "https://tendances.orange.fr/ecologie-et-environnement/agir/diaporama-10-astuces-pour-creer-un-jardin-ecologique-sur-son-balcon-excluw-CNT0000026BSG5.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2F784%2F8a0%2F5b50c6da0b84524d9e4a6a9f5f%2F7848a05b50c6da0b84524d9e4a6a9f5f.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "Environnement",
+        isNative: "",
+        newsline: "2",
+        analytics: {
+            category: "news_actu-media1_3",
+  action: "environnement-creer-un-jardin-ecologique-sur-son-balcon-c-est-facile-suivez-le-guide",
+  label: "https://tendances.orange.fr/ecologie-et-environnement/agir/diaporama-10-astuces-pour-creer-un-jardin-ecologique-sur-son-balcon-excluw-CNT0000026BSG5.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media1"}',   pdbZid: "acc-digital_prospect-nl_news_actu-media1",
+  pdbSc: "mpt",
+  pdbIdc: "000iOhKqK",
+  pdbVi: "media://one-i/ONE-I-ONews/784/8a0/5b50c6da0b84524d9e4a6a9f5f/7848a05b50c6da0b84524d9e4a6a9f5f.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-media1_3",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media1"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-media1_3",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media1"}' 
+            }
+          }
+        }
+      })
+
+    
+  
+
+  
+  
+    sliders.push({
+      cacheKey: "4f4c240fabface866cb00c7651e2d82f5cbe9f7e5fcf3568721af7a3df1f1f1f",
+      name: "o-news-media2",
+      refId: "actu-media2",
+      title: "",
+      vignettes: []
+    })
+
+                                                  
+                  
+                  
+      sliders[4].vignettes.push({
+        categoryTitle: "Cin\u00E9ma",
+        title: "Visions\u0020\u003A\u0020un\u0020film\u0020\u00E0\u0020suspense\u0020avec\u0020Diane\u0020Kruger,\u0020Amira\u0020Casar\u0020et\u0020Mathieu\u0020Kassovitz",
+        target: "_self",
+        url: "https://cinema-series.orange.fr/cinema/tous-les-films-au-cinema/movie-visions_2023.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2F2ec%2F8e5%2Fcb62369eeb71aff50cb8290bab%2F2ec8e5cb62369eeb71aff50cb8290bab.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "Cinéma",
+        isNative: "",
+        newsline: "0",
+        analytics: {
+            category: "news_actu-media2_1",
+  action: "cinema-visions-un-film-a-suspense-avec-diane-kruger-amira-casar-et-mathieu-kassovitz",
+  label: "https://cinema-series.orange.fr/cinema/tous-les-films-au-cinema/movie-visions_2023.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media2"}',   pdbZid: "acc-digital_prospect-nl_news_actu-media2",
+  pdbSc: "mpt",
+  pdbIdc: "000a8hKqK",
+  pdbVi: "media://one-i/ONE-I-ONews/2ec/8e5/cb62369eeb71aff50cb8290bab/2ec8e5cb62369eeb71aff50cb8290bab.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-media2_1",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media2"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-media2_1",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media2"}' 
+            }
+          }
+        }
+      })
+
+                                              
+                  
+                  
+      sliders[4].vignettes.push({
+        categoryTitle: "\u00C9vasion",
+        title: "5\u0020lacs\u0020sal\u00E9s\u0020extraordinaires\u0020qui\u0020devraient\u0020vous\u0020laisser\u0020sans\u0020voix",
+        target: "_self",
+        url: "https://tendances.orange.fr/art-de-vivre/evasion/article-5-lacs-sales-etonnants-a-decouvrir-dans-le-monde-excluw-CNT0000026FcXO.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2Ff19%2F444%2F82df5325c27afad0f3a5ef1d9a%2Ff1944482df5325c27afad0f3a5ef1d9a.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "Évasion",
+        isNative: "",
+        newsline: "0",
+        analytics: {
+            category: "news_actu-media2_2",
+  action: "evasion-5-lacs-sales-extraordinaires-qui-devraient-vous-laisser-sans-voix",
+  label: "https://tendances.orange.fr/art-de-vivre/evasion/article-5-lacs-sales-etonnants-a-decouvrir-dans-le-monde-excluw-CNT0000026FcXO.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media2"}',   pdbZid: "acc-digital_prospect-nl_news_actu-media2",
+  pdbSc: "mpt",
+  pdbIdc: "000e8hKqK",
+  pdbVi: "media://one-i/ONE-I-ONews/f19/444/82df5325c27afad0f3a5ef1d9a/f1944482df5325c27afad0f3a5ef1d9a.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-media2_2",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media2"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-media2_2",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media2"}' 
+            }
+          }
+        }
+      })
+
+                                              
+                  
+                  
+      sliders[4].vignettes.push({
+        categoryTitle: "Auto",
+        title: "Un\u0020nouveau\u0020SUV\u0020sportif\u0020aux\u0020performances\u0020\u00E9tonnantes\u0020malgr\u00E9\u0020son\u0020poids",
+        target: "_self",
+        url: "https://auto.orange.fr/essais/bmw-xm-CNT0000026wOnV.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2Fece%2Fca2%2Fd2dffd63e3fb2f9a81bb8a0cdf%2Fececa2d2dffd63e3fb2f9a81bb8a0cdf.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "Auto",
+        isNative: "",
+        newsline: "0",
+        analytics: {
+            category: "news_actu-media2_3",
+  action: "auto-un-nouveau-suv-sportif-aux-performances-etonnantes-malgre-son-poids",
+  label: "https://auto.orange.fr/essais/bmw-xm-CNT0000026wOnV.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media2"}',   pdbZid: "acc-digital_prospect-nl_news_actu-media2",
+  pdbSc: "mpt",
+  pdbIdc: "000i8hKqK",
+  pdbVi: "media://one-i/ONE-I-ONews/ece/ca2/d2dffd63e3fb2f9a81bb8a0cdf/ececa2d2dffd63e3fb2f9a81bb8a0cdf.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-media2_3",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media2"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-media2_3",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media2"}' 
+            }
+          }
+        }
+      })
+
+    
+  
+
+  
+  
+    sliders.push({
+      cacheKey: "e9e3c0e65b3f3de7acaf522c8bf57bc34641141a50f26d17b533ee59d9219584",
+      name: "o-news-media3",
+      refId: "actu-media3",
+      title: "",
+      vignettes: []
+    })
+
+                                                  
+                  
+                  
+      sliders[5].vignettes.push({
+        categoryTitle: "M\u00E9dias",
+        title: "Cette\u0020\u00E9norme\u0020bourde\u0020d\u0027un\u0020journaliste\u0020qui\u0020a\u0020bien\u0020du\u0020mal\u0020\u00E0\u0020passer",
+        target: "_self",
+        url: "https://tendances.orange.fr/people/actu-media/article-c-est-une-grave-erreur-journalistique-julien-pasquet-s-excuse-apres-une-fausse-information-sur-cnews-CNT00000275URI.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2Fc3e%2Feff%2F78ad5f68c6af55fe2697a4ffb9%2Fc3eeff78ad5f68c6af55fe2697a4ffb9.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "Médias",
+        isNative: "",
+        newsline: "0",
+        analytics: {
+            category: "news_actu-media3_1",
+  action: "medias-cette-enorme-bourde-d-un-journaliste-qui-a-bien-du-mal-a-passer",
+  label: "https://tendances.orange.fr/people/actu-media/article-c-est-une-grave-erreur-journalistique-julien-pasquet-s-excuse-apres-une-fausse-information-sur-cnews-CNT00000275URI.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media3"}',   pdbZid: "acc-digital_prospect-nl_news_actu-media3",
+  pdbSc: "mpt",
+  pdbIdc: "000aWjKqK",
+  pdbVi: "media://one-i/ONE-I-ONews/c3e/eff/78ad5f68c6af55fe2697a4ffb9/c3eeff78ad5f68c6af55fe2697a4ffb9.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-media3_1",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media3"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-media3_1",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media3"}' 
+            }
+          }
+        }
+      })
+
+                                              
+                  
+                  
+      sliders[5].vignettes.push({
+        categoryTitle: "S\u00E9ries",
+        title: "B\u00E9b\u00E9\u0020Groot\u0020\u003A\u0020le\u0020plus\u0020gentil\u0020des\u0020petits\u0020arbres\u0020revient\u0020pour\u0020une\u0020saison\u00202",
+        target: "_self",
+        url: "https://cinema-series.orange.fr/series/toutes-les-actus/disney-le-plus-craquant-des-super-heros-marvel-revient-dans-une-saison-2-CNT00000277KRt.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2Fa72%2Fe4a%2F89443402fd07c1cd93bdb4566d%2Fa72e4a89443402fd07c1cd93bdb4566d.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "Séries",
+        isNative: "",
+        newsline: "0",
+        analytics: {
+            category: "news_actu-media3_2",
+  action: "series-bebe-groot-le-plus-gentil-des-petits-ar-es-revient-pour-une-saison-2",
+  label: "https://cinema-series.orange.fr/series/toutes-les-actus/disney-le-plus-craquant-des-super-heros-marvel-revient-dans-une-saison-2-CNT00000277KRt.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media3"}',   pdbZid: "acc-digital_prospect-nl_news_actu-media3",
+  pdbSc: "mpt",
+  pdbIdc: "000eWjKqK",
+  pdbVi: "media://one-i/ONE-I-ONews/a72/e4a/89443402fd07c1cd93bdb4566d/a72e4a89443402fd07c1cd93bdb4566d.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-media3_2",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media3"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-media3_2",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media3"}' 
+            }
+          }
+        }
+      })
+
+                                              
+                  
+                  
+      sliders[5].vignettes.push({
+        categoryTitle: "People",
+        title: "Kevin\u0020Costner\u0020\u003A\u0020ces\u0020sommes\u0020hallucinantes\u0020qu\u0027il\u0020doit\u0020verser\u0020\u00E0\u0020ses\u0020ex\u002Dfemmes",
+        target: "_self",
+        url: "https://tendances.orange.fr/people/actu-people/article-kevin-costner-de-quoi-vivre-plusieurs-vies-en-etant-riches-ces-sommes-folles-que-ses-ex-femmes-ont-obtenu-de-lui-CNT00000277ZeL.html",
+        image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2F629%2F697%2F718932e14c4c785db046153166%2F629697718932e14c4c785db046153166.jpg?saveas=webp&saveasquality=70&quality=85",
+        alt: "People",
+        isNative: "",
+        newsline: "0",
+        analytics: {
+            category: "news_actu-media3_3",
+  action: "people-kevin-costner-ces-sommes-hallucinantes-qu-il-doit-verser-a-ses-ex-femmes",
+  label: "https://tendances.orange.fr/people/actu-people/article-kevin-costner-de-quoi-vivre-plusieurs-vies-en-etant-riches-ces-sommes-folles-que-ses-ex-femmes-ont-obtenu-de-lui-CNT00000277ZeL.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media3"}',   pdbZid: "acc-digital_prospect-nl_news_actu-media3",
+  pdbSc: "mpt",
+  pdbIdc: "000iWjKqK",
+  pdbVi: "media://one-i/ONE-I-ONews/629/697/718932e14c4c785db046153166/629697718932e14c4c785db046153166.jpg"
+
+        },
+        navigation: {
+          previous: {
+            title: "voir la news précédente",
+            analytics: {
+                category: "news_actu-media3_3",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media3"}' 
+            }
+          },
+          next: {
+            title: "voir la news suivante",
+            analytics: {
+                category: "news_actu-media3_3",
+  action: "clic-chevrons",
+  label: "defilement",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_actu-media3"}' 
+            }
+          }
+        }
+      })
+
+    
+  
+
+
+
+let filInfo = {
+  title: "Infos en direct",
+  news: []
+}
+
+  
+        
+              
+                                          
+      filInfo.news.push({
+        time: "10:45",
+        url: "https://actu.orange.fr/monde/amp-quot-nuit-cauchemardesque-amp-quot-a-marrakech-le-seisme-a-amp-quot-terrorise-amp-quot-la-population-CNT0000027ahT0.html",
+        title: "\u0022Nuit\u0020cauchemardesque\u0022\u003A\u0020\u00E0\u0020Marrakech,\u0020le\u0020s\u00E9isme\u0020a\u0020\u0022terroris\u00E9\u0022\u0020la\u0020population",
+        category: "monde",
+        analytics: {
+            category: "news_flux-actu1",
+  action: "nuit-cauchemardesque-a-marrakech-le-seisme-a-terrorise-la-population",
+  label: "https://actu.orange.fr/monde/amp-quot-nuit-cauchemardesque-amp-quot-a-marrakech-le-seisme-a-amp-quot-terrorise-amp-quot-la-population-CNT0000027ahT0.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "10:41",
+        url: "https://actu.orange.fr/economie/inflation-le-gouvernement-prevoit-d-indexer-le-bareme-de-l-impot-sur-le-revenu-CNT0000027afra.html",
+        title: "Inflation\u003A\u0020le\u0020gouvernement\u0020pr\u00E9voit\u0020d\u0027indexer\u0020le\u0020bar\u00E8me\u0020de\u0020l\u0027imp\u00F4t\u0020sur\u0020le\u0020revenu",
+        category: "economie",
+        analytics: {
+            category: "news_flux-actu2",
+  action: "inflation-le-gouvernement-prevoit-d-indexer-le-bareme-de-l-impot-sur-le-revenu",
+  label: "https://actu.orange.fr/economie/inflation-le-gouvernement-prevoit-d-indexer-le-bareme-de-l-impot-sur-le-revenu-CNT0000027afra.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "10:28",
+        url: "https://actu.orange.fr/monde/au-moins-632-morts-dans-un-puissant-seisme-au-maroc-CNT00000279PyH.html",
+        title: "Au\u0020moins\u0020632\u0020morts\u0020dans\u0020un\u0020puissant\u0020s\u00E9isme\u0020au\u0020Maroc",
+        category: "monde",
+        analytics: {
+            category: "news_flux-actu3",
+  action: "au-moins-632-morts-dans-un-puissant-seisme-au-maroc",
+  label: "https://actu.orange.fr/monde/au-moins-632-morts-dans-un-puissant-seisme-au-maroc-CNT00000279PyH.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "10:08",
+        url: "https://actu.orange.fr/economie/biden-au-vietnam-pour-franchir-un-palier-dans-la-relation-bilaterale-CNT0000027a2hN.html",
+        title: "Biden\u0020au\u0020Vietnam\u0020pour\u0020franchir\u0020un\u0020palier\u0020dans\u0020la\u0020relation\u0020bilat\u00E9rale\u0020",
+        category: "economie",
+        analytics: {
+            category: "news_flux-actu4",
+  action: "biden-au-vietnam-pour-franchir-un-palier-dans-la-relation-bilaterale",
+  label: "https://actu.orange.fr/economie/biden-au-vietnam-pour-franchir-un-palier-dans-la-relation-bilaterale-CNT0000027a2hN.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "10:05",
+        url: "https://actu.orange.fr/monde/seisme-au-maroc-nous-sommes-tous-bouleverses-emmanuel-macron-pret-a-venir-en-aide-aux-sinistres-magic-CNT0000027a2k7.html",
+        title: "S\u00E9isme\u0020au\u0020Maroc\u0020\u003A\u0020\u0022Nous\u0020sommes\u0020tous\u0020boulevers\u00E9s\u0022,\u0020Emmanuel\u0020Macron\u0020pr\u00EAt\u0020\u00E0\u0020venir\u0020en\u0020aide\u0020aux\u0020sinistr\u00E9s",
+        category: "monde",
+        analytics: {
+            category: "news_flux-actu5",
+  action: "seisme-au-maroc-nous-sommes-tous-bouleverses-emmanuel-macron-pret-a-venir-en-aide-aux-sinistres",
+  label: "https://actu.orange.fr/monde/seisme-au-maroc-nous-sommes-tous-bouleverses-emmanuel-macron-pret-a-venir-en-aide-aux-sinistres-magic-CNT0000027a2k7.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "10:04",
+        url: "https://actu.orange.fr/france/nouvelle-caledonie-l-avenir-du-nickel-suspendu-a-la-question-energetique-CNT0000027a2gM.html",
+        title: "Nouvelle\u002DCal\u00E9donie\u003A\u0020l\u0027avenir\u0020du\u0020nickel\u0020suspendu\u0020\u00E0\u0020la\u0020question\u0020\u00E9nerg\u00E9tique",
+        category: "france",
+        analytics: {
+            category: "news_flux-actu6",
+  action: "nouvelle-caledonie-l-avenir-du-nickel-suspendu-a-la-question-energetique",
+  label: "https://actu.orange.fr/france/nouvelle-caledonie-l-avenir-du-nickel-suspendu-a-la-question-energetique-CNT0000027a2gM.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "09:45",
+        url: "https://actu.orange.fr/economie/carburants-le-gouvernement-demande-aux-distributeurs-un-amp-quot-effort-de-solidarite-amp-quot-CNT0000027a284.html",
+        title: "Carburants\u003A\u0020le\u0020gouvernement\u0020demande\u0020aux\u0020distributeurs\u0020un\u0020\u0022effort\u0020de\u0020solidarit\u00E9\u0022",
+        category: "economie",
+        analytics: {
+            category: "news_flux-actu7",
+  action: "carburants-le-gouvernement-demande-aux-distributeurs-un-effort-de-solidarite",
+  label: "https://actu.orange.fr/economie/carburants-le-gouvernement-demande-aux-distributeurs-un-amp-quot-effort-de-solidarite-amp-quot-CNT0000027a284.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "09:30",
+        url: "https://actu.orange.fr/monde/diaporamas/en-images-canicules-incendies-intemperies-les-evenements-climatiques-extremes-de-l-ete-CNT00000279ZAR.html",
+        title: "En\u0020images.\u0020Canicules,\u0020incendies,\u0020intemp\u00E9ries...\u0020Les\u0020\u00E9v\u00E9nements\u0020climatiques\u0020extr\u00EAmes\u0020de\u0020l\u0027\u00E9t\u00E9",
+        category: "diaporama\u002Dmonde",
+        analytics: {
+            category: "news_flux-actu8",
+  action: "en-images-canicules-incendies-intemperies-les-evenements-climatiques-extremes-de-l-ete",
+  label: "https://actu.orange.fr/monde/diaporamas/en-images-canicules-incendies-intemperies-les-evenements-climatiques-extremes-de-l-ete-CNT00000279ZAR.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "09:30",
+        url: "https://actu.orange.fr/monde/seisme-au-maroc-un-sentiment-d-effroi-epouvantable-un-habitant-temoigne-apres-le-drame-magic-CNT0000027a25s.html",
+        title: "S\u00E9isme\u0020au\u0020Maroc\u0020\u003A\u0020\u0022Un\u0020sentiment\u0020d\u2019effroi\u0020\u00E9pouvantable\u0022,\u00A0un\u0020habitant\u0020t\u00E9moigne\u0020apr\u00E8s\u0020le\u0020drame",
+        category: "monde",
+        analytics: {
+            category: "news_flux-actu9",
+  action: "seisme-au-maroc-un-sentiment-d-effroi-epouvantable-un-habitant-temoigne-apres-le-drame",
+  label: "https://actu.orange.fr/monde/seisme-au-maroc-un-sentiment-d-effroi-epouvantable-un-habitant-temoigne-apres-le-drame-magic-CNT0000027a25s.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "09:19",
+        url: "https://actu.orange.fr/monde/des-delegations-russe-et-chinoise-a-un-defile-en-coree-du-nord-CNT00000279Qc2.html",
+        title: "Des\u0020d\u00E9l\u00E9gations\u0020russe\u0020et\u0020chinoise\u0020\u00E0\u0020un\u0020d\u00E9fil\u00E9\u0020en\u0020Cor\u00E9e\u0020du\u0020Nord",
+        category: "monde",
+        analytics: {
+            category: "news_flux-actu10",
+  action: "des-delegations-russe-et-chinoise-a-un-defile-en-coree-du-nord",
+  label: "https://actu.orange.fr/monde/des-delegations-russe-et-chinoise-a-un-defile-en-coree-du-nord-CNT00000279Qc2.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "08:33",
+        url: "https://actu.orange.fr/economie/l-ua-devient-membre-permanent-du-g20-CNT00000279FuW.html",
+        title: "L\u0027UA\u0020devient\u0020membre\u0020permanent\u0020du\u0020G20",
+        category: "economie",
+        analytics: {
+            category: "news_flux-actu11",
+  action: "l-ua-devient-mem-e-permanent-du-g20",
+  label: "https://actu.orange.fr/economie/l-ua-devient-membre-permanent-du-g20-CNT00000279FuW.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "08:20",
+        url: "https://actu.orange.fr/societe/fait-divers/var-huit-personnes-interpellees-apres-la-mort-d-un-militaire-en-boite-de-nuit-magic-CNT00000279QMU.html",
+        title: "Var\u0020\u003A\u0020huit\u0020personnes\u0020interpell\u00E9es\u0020apr\u00E8s\u0020la\u0020mort\u0020d\u2019un\u0020militaire\u0020en\u0020boite\u0020de\u0020nuit",
+        category: "fait\u002Ddivers",
+        analytics: {
+            category: "news_flux-actu12",
+  action: "var-huit-personnes-interpellees-apres-la-mort-d-un-militaire-en-boite-de-nuit",
+  label: "https://actu.orange.fr/societe/fait-divers/var-huit-personnes-interpellees-apres-la-mort-d-un-militaire-en-boite-de-nuit-magic-CNT00000279QMU.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "06:50",
+        url: "https://actu.orange.fr/monde/maroc-plus-de-630-morts-dans-la-region-de-marrakech-apres-un-important-seisme-magic-CNT00000279PN4.html",
+        title: "Maroc\u0020\u003A\u0020plus\u0020de\u0020630\u0020morts\u0020dans\u0020la\u0020r\u00E9gion\u0020de\u0020Marrakech\u0020apr\u00E8s\u0020un\u0020important\u0020s\u00E9isme",
+        category: "monde",
+        analytics: {
+            category: "news_flux-actu13",
+  action: "maroc-plus-de-630-morts-dans-la-region-de-marrakech-apres-un-important-seisme",
+  label: "https://actu.orange.fr/monde/maroc-plus-de-630-morts-dans-la-region-de-marrakech-apres-un-important-seisme-magic-CNT00000279PN4.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "05:33",
+        url: "https://actu.orange.fr/monde/en-campagne-joe-biden-vante-sa-amp-quot-force-tranquille-amp-quot-et-sa-visite-en-ukraine-CNT00000279P77.html",
+        title: "En\u0020campagne,\u0020Joe\u0020Biden\u0020vante\u0020sa\u0020\u0022force\u0020tranquille\u0022\u0020et\u0020sa\u0020visite\u0020en\u0020Ukraine",
+        category: "monde",
+        analytics: {
+            category: "news_flux-actu14",
+  action: "en-campagne-joe-biden-vante-sa-force-tranquille-et-sa-visite-en-ukraine",
+  label: "https://actu.orange.fr/monde/en-campagne-joe-biden-vante-sa-amp-quot-force-tranquille-amp-quot-et-sa-visite-en-ukraine-CNT00000279P77.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "05:33",
+        url: "https://actu.orange.fr/societe/environnement/destructions-volontaires-la-desinformation-s-embrase-dans-la-foulee-des-incendies-en-amerique-du-nord-CNT00000279P7g.html",
+        title: "Destructions\u0020volontaires\u003F\u0020La\u0020d\u00E9sinformation\u0020s\u0027embrase\u0020dans\u0020la\u0020foul\u00E9e\u0020des\u0020incendies\u0020en\u0020Am\u00E9rique\u0020du\u0020Nord",
+        category: "monde",
+        analytics: {
+            category: "news_flux-actu15",
+  action: "destructions-volontaires-la-desinformation-s-em-ase-dans-la-foulee-des-incendies-en-amerique-du-nord",
+  label: "https://actu.orange.fr/societe/environnement/destructions-volontaires-la-desinformation-s-embrase-dans-la-foulee-des-incendies-en-amerique-du-nord-CNT00000279P7g.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "05:11",
+        url: "https://actu.orange.fr/societe/culture/le-lion-d-or-decerne-a-venise-epilogue-d-une-mostra-sans-ses-stars-CNT00000279OXo.html",
+        title: "Le\u0020Lion\u0020d\u0027or\u0020d\u00E9cern\u00E9\u0020\u00E0\u0020Venise,\u0020\u00E9pilogue\u0020d\u0027une\u0020Mostra\u0020sans\u0020ses\u0020stars",
+        category: "culture",
+        analytics: {
+            category: "news_flux-actu16",
+  action: "le-lion-d-or-decerne-a-venise-epilogue-d-une-mostra-sans-ses-stars",
+  label: "https://actu.orange.fr/societe/culture/le-lion-d-or-decerne-a-venise-epilogue-d-une-mostra-sans-ses-stars-CNT00000279OXo.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "05:00",
+        url: "https://actu.orange.fr/france/la-relation-franco-allemande-toujours-a-la-peine-CNT00000279OQR.html",
+        title: "La\u0020relation\u0020franco\u002Dallemande\u0020toujours\u0020\u00E0\u0020la\u0020peine",
+        category: "france",
+        analytics: {
+            category: "news_flux-actu17",
+  action: "la-relation-franco-allemande-toujours-a-la-peine",
+  label: "https://actu.orange.fr/france/la-relation-franco-allemande-toujours-a-la-peine-CNT00000279OQR.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "04:58",
+        url: "https://actu.orange.fr/societe/culture/festival-du-film-de-toronto-pleins-feux-sur-la-frenesie-boursiere-et-un-meurtrier-en-serie-CNT00000279BE9.html",
+        title: "Festival\u0020du\u0020film\u0020de\u0020Toronto\u003A\u0020pleins\u0020feux\u0020sur\u0020la\u0020fr\u00E9n\u00E9sie\u0020boursi\u00E8re\u0020et\u0020un\u0020meurtrier\u0020en\u0020s\u00E9rie",
+        category: "culture",
+        analytics: {
+            category: "news_flux-actu18",
+  action: "festival-du-film-de-toronto-pleins-feux-sur-la-frenesie-boursiere-et-un-meurtrier-en-serie",
+  label: "https://actu.orange.fr/societe/culture/festival-du-film-de-toronto-pleins-feux-sur-la-frenesie-boursiere-et-un-meurtrier-en-serie-CNT00000279BE9.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "04:51",
+        url: "https://actu.orange.fr/societe/culture/helmut-lang-en-taxi-ambiance-ranch-chez-ralph-lauren-pour-lancer-la-fashion-week-de-new-york-CNT00000279fDD.html",
+        title: "Helmut\u0020Lang\u0020en\u0020taxi,\u0020ambiance\u0020ranch\u0020chez\u0020Ralph\u0020Lauren\u0020pour\u0020lancer\u0020la\u0020Fashion\u0020week\u0020de\u0020New\u0020York",
+        category: "culture",
+        analytics: {
+            category: "news_flux-actu19",
+  action: "helmut-lang-en-taxi-ambiance-ranch-chez-ralph-lauren-pour-lancer-la-fashion-week-de-new-york",
+  label: "https://actu.orange.fr/societe/culture/helmut-lang-en-taxi-ambiance-ranch-chez-ralph-lauren-pour-lancer-la-fashion-week-de-new-york-CNT00000279fDD.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+                                          
+      filInfo.news.push({
+        time: "03:18",
+        url: "https://actu.orange.fr/france/nouvelle-caledonie-macron-exhorte-toutes-les-parties-a-s-entendre-d-ici-la-fin-2023-CNT00000279NoR.html",
+        title: "Nouvelle\u002DCal\u00E9donie\u0020\u003A\u0020Macron\u0020exhorte\u0020toutes\u0020les\u0020parties\u0020\u00E0\u0020s\u0027entendre\u0020d\u0027ici\u0020la\u0020fin\u00202023",
+        category: "france",
+        analytics: {
+            category: "news_flux-actu20",
+  action: "nouvelle-caledonie-macron-exhorte-toutes-les-parties-a-s-entendre-d-ici-la-fin-2023",
+  label: "https://actu.orange.fr/france/nouvelle-caledonie-macron-exhorte-toutes-les-parties-a-s-entendre-d-ici-la-fin-2023-CNT00000279NoR.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_flux-actu"}' 
+        }
+      })
+      
+
+var newsFeedNumberOfNews = 20
+
+
+let pasDePorte = {
+  ads: []
+}
+
+
+    pasDePorte.cacheKey = "46e684c5eb8e6caffb7f0eaaea610de95814014963a0a14f758935565aa781eb"
+
+                                                
+        pasDePorte.ads.push({
+          title: "Comment\u0020\u00E9teindre\u0020ses\u0020lampes\u0020connect\u00E9es\u0020avec\u0020Alexa\u0020\u003F",
+          url: "https://lemagtv.orange.fr/astuces/comment-piloter-a-la-voix-la-tv-d-orange-avec-alexa-CNT000001T5x89/video/piloter-la-tv-d-orange-a-la-voix-avec-alexa-CNT000001SWq32.html",
+          target: "",
+          image: "//proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ONews%2F8c0%2F6bb%2Fcc9a339d6232940e95be0c2362%2F8c06bbcc9a339d6232940e95be0c2362.png?quality=85",
+          analytics: {
+              category: "news_thematique",
+  action: "comment-eteindre-ses-lampes-connectees-avec-alexa",
+  label: "https://lemagtv.orange.fr/astuces/comment-piloter-a-la-voix-la-tv-d-orange-avec-alexa-CNT000001T5x89/video/piloter-la-tv-d-orange-a-la-voix-avec-alexa-CNT000001SWq32.html",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_thematique"}' 
+          }
+        })
+   
+
+
+
+
+
+
+
+  window.dataStoreHP.bandes.news = {
+    classes: "mt-3",
+    title: {
+      label: "News",
+      href: "https://news.orange.fr",
+      large_title_spaces: false,
+      analytics: {
+          category: "news_titre0",
+  action: "news",
+  label: "https://news.orange.fr",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_titre0"}' 
+      }
+    },
+    allNewsButton: {
+      label: "Voir toutes les news",
+      url: "https://news.orange.fr",
+      analytics: {
+          category: "news_toutes-les-news",
+  action: "voir-toutes-les-news",
+  label: "https://news.orange.fr",
+  other: '{"track_refZ":"acc-digital_prospect-nl_news_toutes-les-news"}' 
+      }
+    },
+    menu: menu,
+    meteo: meteo,
+    publicite: publicite,
+    sliders: sliders,
+    filInfo: filInfo,
+    pasDePorte: pasDePorte,
+  }
+   </script>
+   <section id="mentionsLegales">
+   </section>
+   <section id="seoKeywords">
+   </section>
+   <section id="jo2024">
+   </section>
+  </main>
+  <footer id="footer-wrapper">
+  </footer>
+  <template id="prefooterSeoTmp">
+  </template>
+  <script>
+   zgifJalons.timehtml = {t: new Date(), cid: 'start'}
+  </script>
+  <script>
+   function fullCss(u, m) {
+      var l = document.createElement('link');
+      l.rel = 'stylesheet';
+      l.type = 'text/css';
+      l.href = 'https://cdn.woopic.com/18d8339538654b1dbf96a30e92745731/css/hp.a7417cfb2455aff6ab1e.css';
+      l.media = 'all';
+      document.getElementsByTagName('head')[0].appendChild(l);
+    }
+    if (window.addEventListener) {
+      window.addEventListener('DOMContentLoaded', fullCss, false);
+    } else {
+      window.onload = fullCss;
+    }
+  </script>
+  <script src="https://cdn.woopic.com/18d8339538654b1dbf96a30e92745731/js/hp.2671731c7418eb854e7d.js">
+  </script>
+ </body>
+</html>

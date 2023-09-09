@@ -1,0 +1,4824 @@
+[
+    {
+        "requestId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/",
+        "request": {
+            "url": "https://www.ovhcloud.com/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11746.890847,
+        "wallTime": 1694249607.462855,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.714594,
+        "wallTime": 1694249608.287274,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://www.ovhcloud.com/",
+            "status": 301,
+            "statusText": "",
+            "headers": {
+                "content-length": "0",
+                "content-type": "text/html; charset=utf-8",
+                "date": "Sat, 09 Sep 2023 08:53:28 GMT",
+                "location": "https://www.ovhcloud.com/en-sg/",
+                "x-cacheable": "Not cacheable: not http 200",
+                "x-cdn-pop": "rbx",
+                "x-cdn-pop-ip": "51.68.15.224/27",
+                "x-request-id": "140706407"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 276,
+            "remoteIPAddress": "198.27.92.14",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 221,
+            "timing": {
+                "requestTime": 11746.891868,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 251.8,
+                "dnsEnd": 251.833,
+                "connectStart": 251.833,
+                "connectEnd": 629.331,
+                "sslStart": 429.653,
+                "sslEnd": 629.323,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 629.629,
+                "sendEnd": 629.99,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 821.16,
+                "receiveHeadersEnd": 821.284
+            },
+            "responseTime": 1694249608284.887,
+            "protocol": "h2",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.3",
+                "keyExchange": "",
+                "keyExchangeGroup": "X25519",
+                "cipher": "AES_256_GCM",
+                "certificateId": 0,
+                "subjectName": "*.ovhcloud.com",
+                "sanList": [
+                    "*.ovhcloud.com",
+                    "auth.ca.ovhcloud.com",
+                    "auth.eu.ovhcloud.com",
+                    "ovhcloud.com"
+                ],
+                "issuer": "Sectigo RSA Domain Validation Secure Server CA",
+                "validFrom": 1689552000,
+                "validTo": 1721174399,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "serverSignatureAlgorithm": 2052,
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Document",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.2",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/fonts/icons/icons.woff2?9cee8d614eb5d2fd4c8229be32def1fe",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": true
+        },
+        "timestamp": 11747.953724,
+        "wallTime": 1694249608.52567,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 104,
+            "columnNumber": 184
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.3",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/fonts/source-sans-pro/source-sans-pro-latin-400-normal.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isLinkPreload": true,
+            "isSameSite": true
+        },
+        "timestamp": 11747.954219,
+        "wallTime": 1694249608.52611,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 104,
+            "columnNumber": 368
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.4",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/homepage_ovhcloud.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.954434,
+        "wallTime": 1694249608.526313,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 104,
+            "columnNumber": 482
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.5",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://analytics.ovh.com/ovh/ovh_abt.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 11747.954627,
+        "wallTime": 1694249608.526537,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 110,
+            "columnNumber": 83
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.6",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/modules/custom/ovh_sentry/dist/sentry.min.js?s0mfjp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.954768,
+        "wallTime": 1694249608.526644,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 111,
+            "columnNumber": 81
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.7",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/en-sg.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.954932,
+        "wallTime": 1694249608.526817,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 743,
+            "columnNumber": 142
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.8",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/de.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.955018,
+        "wallTime": 1694249608.526888,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 785,
+            "columnNumber": 170
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.9",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/es.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.955105,
+        "wallTime": 1694249608.526984,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 806,
+            "columnNumber": 170
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.10",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/fr.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.955205,
+        "wallTime": 1694249608.527072,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 827,
+            "columnNumber": 170
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.11",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/en-ie.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.955269,
+        "wallTime": 1694249608.527136,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 848,
+            "columnNumber": 173
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.12",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/it.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.955328,
+        "wallTime": 1694249608.527194,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 869,
+            "columnNumber": 170
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.13",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/nl.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.955395,
+        "wallTime": 1694249608.527264,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 890,
+            "columnNumber": 170
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.14",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/pl.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.95546,
+        "wallTime": 1694249608.527329,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 911,
+            "columnNumber": 170
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.15",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/pt-pt.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.95552,
+        "wallTime": 1694249608.527402,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 932,
+            "columnNumber": 173
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.16",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/en-gb.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.955598,
+        "wallTime": 1694249608.527516,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 953,
+            "columnNumber": 173
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.17",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/en-ca.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.955738,
+        "wallTime": 1694249608.527607,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 986,
+            "columnNumber": 173
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.18",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/fr-ca.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.955814,
+        "wallTime": 1694249608.527681,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 1007,
+            "columnNumber": 173
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.19",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/en-us.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.955879,
+        "wallTime": 1694249608.527747,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 1028,
+            "columnNumber": 173
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.20",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/es-419.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.957803,
+        "wallTime": 1694249608.52978,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 1049,
+            "columnNumber": 174
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.21",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/fr-ma.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.958081,
+        "wallTime": 1694249608.529951,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 1082,
+            "columnNumber": 173
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.22",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/fr-sn.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.958153,
+        "wallTime": 1694249608.53002,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 1103,
+            "columnNumber": 173
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.23",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/fr-tn.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.95821,
+        "wallTime": 1694249608.53008,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 1124,
+            "columnNumber": 173
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.24",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/en-au.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.958294,
+        "wallTime": 1694249608.530163,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 1157,
+            "columnNumber": 173
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.26",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/en-142.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.958375,
+        "wallTime": 1694249608.530245,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 1211,
+            "columnNumber": 174
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.27",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/language-switcher/flags/world.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.958438,
+        "wallTime": 1694249608.530305,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 1244,
+            "columnNumber": 173
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.32",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/css/css_saG2SfeHlJ5hQAGLv7lwLf-wG1cQB7JBoIdN3zohRXs.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryLow",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.964751,
+        "wallTime": 1694249608.536651,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 105,
+            "columnNumber": 209
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.33",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/css/css_RRq1-6pVdOhLc1-I3hOqyt9gssDXRoQLlJt3hIJUYlI.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryLow",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.964905,
+        "wallTime": 1694249608.536777,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 107,
+            "columnNumber": 220
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.36",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/images/logos/OVHcloud_logo.svg",
+            "urlFragment": "#ocmscloud_logo",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11747.967292,
+        "wallTime": 1694249608.539199,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 154,
+            "columnNumber": 129
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Other",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.60",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/styles/large_screens_1x/public/2022-05/server-advance.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.128609,
+        "wallTime": 1694249608.700519,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12718,
+            "columnNumber": 22239
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.61",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/styles/large_screens_1x/public/2023-07/sd-scale_white_background2x_1.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.129274,
+        "wallTime": 1694249608.701161,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12718,
+            "columnNumber": 22239
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.62",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/styles/large_screens_1x/public/2023-05/lp-revamping2023-persona-nontech.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.129472,
+        "wallTime": 1694249608.701368,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12718,
+            "columnNumber": 22239
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.76",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/2023-06/twitter.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.130184,
+        "wallTime": 1694249608.702083,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12718,
+            "columnNumber": 22239
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.77",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/2023-06/linkedin.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.130563,
+        "wallTime": 1694249608.702489,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12718,
+            "columnNumber": 22239
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.78",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/2023-06/facebook.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.130787,
+        "wallTime": 1694249608.702664,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12718,
+            "columnNumber": 22239
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.79",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/2023-06/icon_youtube_white_0.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.130929,
+        "wallTime": 1694249608.702809,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12718,
+            "columnNumber": 22239
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.80",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/2023-06/twitch.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.131067,
+        "wallTime": 1694249608.70295,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12718,
+            "columnNumber": 22239
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.81",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/2023-06/discord.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.131213,
+        "wallTime": 1694249608.703085,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12718,
+            "columnNumber": 22239
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.82",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/2023-06/github.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.131347,
+        "wallTime": 1694249608.703217,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12718,
+            "columnNumber": 22239
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.83",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/2023-06/blog_1.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.131483,
+        "wallTime": 1694249608.703356,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12718,
+            "columnNumber": 22239
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.84",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/js/js_yfTJOoxNYOh9VXOAfYdyq3E1zZL115eCBmu975c9llg.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.142473,
+        "wallTime": 1694249608.714386,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12719,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.97",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/js/ods-menu-highlight.min.js?v=1.0.3",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.157668,
+        "wallTime": 1694249608.729586,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12720,
+            "columnNumber": 121
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.98",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/ods-header/ods-header.min.js?v=1.0.5",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.180559,
+        "wallTime": 1694249608.75252,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12722,
+            "columnNumber": 109
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.99",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/js/js_YpGqPSGe50ZFzWCoxbzGMNpL2Y9zz62A_jT25wrMTUY.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.181472,
+        "wallTime": 1694249608.753415,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12724,
+            "columnNumber": 88
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.100",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/modules/custom/ocms_core/dist/passive-event-listeners.min.js?v=1.0.0",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.182182,
+        "wallTime": 1694249608.754124,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12725,
+            "columnNumber": 98
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.101",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/modules/custom/ovh_core/dist/i18n.min.js?v=1.0.0",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.182855,
+        "wallTime": 1694249608.754776,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12727,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.102",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/js/browser-back-flush-cache.min.js?v=1.0.0",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.184011,
+        "wallTime": 1694249608.75598,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12728,
+            "columnNumber": 115
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.103",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/js/local-anchors.min.js?v=1.0.1",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.187032,
+        "wallTime": 1694249608.758964,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12730,
+            "columnNumber": 104
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.104",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/oui-back-to-top/oui-back-to-top.min.js?v=1.0.0",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.18755,
+        "wallTime": 1694249608.760596,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12732,
+            "columnNumber": 119
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.105",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/js/ods-fitty.min.js?v=1.0.2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.190742,
+        "wallTime": 1694249608.762651,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12734,
+            "columnNumber": 100
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.106",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/js/js_d46RB3V-8jYFRn9PV4lbBmyCQA2Mm6m3BL-Qc3RiZrI.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.191205,
+        "wallTime": 1694249608.763094,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12736,
+            "columnNumber": 88
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.107",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/modules/custom/ovh_core/dist/analyticsSelfPromotion.min.js?v=1.0.0",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.191617,
+        "wallTime": 1694249608.763512,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12737,
+            "columnNumber": 82
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.108",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/js/js_q2ChBsm3FnbvVLtLOpzhuw6HmvYoUHC1zkxFxUu367I.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.191923,
+        "wallTime": 1694249608.763803,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12738,
+            "columnNumber": 88
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.109",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://analytics.ovh.com/ovh/ovh_delta.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 11748.192227,
+        "wallTime": 1694249608.764105,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12739,
+            "columnNumber": 81
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.110",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://analytics.ovh.com/ovh/ovh_tags.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 11748.19272,
+        "wallTime": 1694249608.764605,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12740,
+            "columnNumber": 80
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.111",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/js/ods-olu.min.js?v=1.0.2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.192993,
+        "wallTime": 1694249608.764878,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12741,
+            "columnNumber": 98
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.112",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/js/ods-footer.min.js?v=1.0.0",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.193206,
+        "wallTime": 1694249608.76509,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12743,
+            "columnNumber": 101
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.113",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/js/ods-background-video.min.js?v=1.0.0",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.193407,
+        "wallTime": 1694249608.765287,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12745,
+            "columnNumber": 111
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.114",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/odss-section/odss-section-background-media-lazyload.min.js?v=1.0.0",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.193565,
+        "wallTime": 1694249608.765449,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12747,
+            "columnNumber": 139
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.115",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/osds-icon.esm.js?v=7.0.2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.193719,
+        "wallTime": 1694249608.765601,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12749,
+            "columnNumber": 122
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.116",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/js/js_cx2pXj6T5Q5FlVPuRLO-m64p-7xoaotYGGIlg7VAQVY.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.193873,
+        "wallTime": 1694249608.765756,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12750,
+            "columnNumber": 88
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.117",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/odss-slider/odss-slider.min.js?v=1.0.8",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.194023,
+        "wallTime": 1694249608.765898,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12751,
+            "columnNumber": 111
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.118",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/js/js_J6XH5FuXlIfVm1sK95WgchMie5p2_X4he4FBh3u_b88.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.194212,
+        "wallTime": 1694249608.76609,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12753,
+            "columnNumber": 88
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.119",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/modules/custom/ovh_domain_names/dist/ovh_domain_form.min.js?v=1.0.5",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.194366,
+        "wallTime": 1694249608.766293,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12754,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.120",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/odss-notification-panel/odss-notification-panel.min.js?v=1.0.0",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.195469,
+        "wallTime": 1694249608.767386,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12756,
+            "columnNumber": 135
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.121",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/modules/custom/ovh_algolia/dist/local-search-category-mapping.min.js?v=1.0.1",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.195798,
+        "wallTime": 1694249608.767676,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12758,
+            "columnNumber": 106
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.122",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/js/js_4Z0jeQ4Ez80cuVZ2ICq5uuS-66EnmajtOrmAvlUCKBA.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.196066,
+        "wallTime": 1694249608.767946,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12760,
+            "columnNumber": 88
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.123",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/modules/custom/ovh_algolia/dist/algolia-search.min.js?v=1.0.3",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.196291,
+        "wallTime": 1694249608.76817,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12761,
+            "columnNumber": 91
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.124",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/ods-search-bar/ods-search-bar.min.js?v=1.0.0",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.196571,
+        "wallTime": 1694249608.768449,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12763,
+            "columnNumber": 117
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.125",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/modules/custom/ocms_core/dist/languages-switcher.min.js?v=1.0.0",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.19685,
+        "wallTime": 1694249608.768732,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12765,
+            "columnNumber": 93
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.126",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/js/ods-skip-link.min.js?v=1.0.0",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.197311,
+        "wallTime": 1694249608.769195,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12766,
+            "columnNumber": 104
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.145",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/fonts/source-sans-pro/source-sans-pro-latin-700-normal.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/homepage_ovhcloud.css",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.352509,
+        "wallTime": 1694249608.924443,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/homepage_ovhcloud.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.141",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/fonts/source-sans-pro/source-sans-pro-latin-600-normal.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/homepage_ovhcloud.css",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.386795,
+        "wallTime": 1694249608.958727,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/homepage_ovhcloud.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.63",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/styles/text_media/public/2020-12/SD.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.579671,
+        "wallTime": 1694249609.151575,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12719,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.64",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/styles/text_media/public/2020-12/enterprise_0.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.580431,
+        "wallTime": 1694249609.152336,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12719,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.65",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/styles/text_media/public/2020-12/public%20cloud.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.580691,
+        "wallTime": 1694249609.152571,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12719,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.66",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/styles/text_media/public/2020-12/Web.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.580875,
+        "wallTime": 1694249609.152756,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12719,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.67",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/styles/offer_range_card/public/2019-09/auchan.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.581026,
+        "wallTime": 1694249609.152919,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12719,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.68",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/styles/large_screens_1x/public/2023-03/shockbyte_logo-light_2.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.581228,
+        "wallTime": 1694249609.153105,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12719,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.69",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/styles/offer_range_card/public/2019-09/MACOPHARMA-LOGO.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.581398,
+        "wallTime": 1694249609.153274,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12719,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.70",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/styles/offer_range_card/public/2019-09/logo-societe-generale_1.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.581811,
+        "wallTime": 1694249609.153716,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12719,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.71",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/styles/offer_range_card/public/2019-09/Louis-Vuitton-Logo-3-600x600_1.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.582068,
+        "wallTime": 1694249609.153964,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12719,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.72",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/styles/offer_range_card/public/2019-09/Irontec_logo_1.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.58233,
+        "wallTime": 1694249609.154225,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12719,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.73",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/styles/offer_range_card/public/2022-04/sopra-steria.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.582896,
+        "wallTime": 1694249609.154787,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12719,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.74",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/styles/offer_range_card/public/2020-04/Capgemini_Logo_2COL_RGB_1_0.webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.583127,
+        "wallTime": 1694249609.155008,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12719,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.192",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/p-495c12a1.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/osds-icon.esm.js?v=7.0.2",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.749544,
+        "wallTime": 1694249609.321449,
+        "initiator": {
+            "type": "script",
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/osds-icon.esm.js?v=7.0.2",
+            "lineNumber": 0,
+            "columnNumber": 25
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.193",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/p-455d3484.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/osds-icon.esm.js?v=7.0.2",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.750019,
+        "wallTime": 1694249609.321903,
+        "initiator": {
+            "type": "script",
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/osds-icon.esm.js?v=7.0.2",
+            "lineNumber": 0,
+            "columnNumber": 49
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.194",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/odss-slider/odss-slider.class.min.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/odss-slider/odss-slider.min.js?v=1.0.8",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.752867,
+        "wallTime": 1694249609.324802,
+        "initiator": {
+            "type": "script",
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/odss-slider/odss-slider.min.js?v=1.0.8",
+            "lineNumber": 0,
+            "columnNumber": 18
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.195",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/modules/custom/ovh_algolia/dist/assets/configure.b9cc4a23.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/modules/custom/ovh_algolia/dist/algolia-search.min.js?v=1.0.3",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.753962,
+        "wallTime": 1694249609.325874,
+        "initiator": {
+            "type": "script",
+            "url": "https://www.ovhcloud.com/modules/custom/ovh_algolia/dist/algolia-search.min.js?v=1.0.3",
+            "lineNumber": 0,
+            "columnNumber": 468
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.196",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/modules/custom/ovh_algolia/dist/assets/search-box.a1a3c9fa.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/modules/custom/ovh_algolia/dist/algolia-search.min.js?v=1.0.3",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.754276,
+        "wallTime": 1694249609.326159,
+        "initiator": {
+            "type": "script",
+            "url": "https://www.ovhcloud.com/modules/custom/ovh_algolia/dist/algolia-search.min.js?v=1.0.3",
+            "lineNumber": 0,
+            "columnNumber": 519
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.197",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/modules/custom/ovh_algolia/dist/assets/hits.f6a3fcf5.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/modules/custom/ovh_algolia/dist/algolia-search.min.js?v=1.0.3",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.754497,
+        "wallTime": 1694249609.32638,
+        "initiator": {
+            "type": "script",
+            "url": "https://www.ovhcloud.com/modules/custom/ovh_algolia/dist/algolia-search.min.js?v=1.0.3",
+            "lineNumber": 0,
+            "columnNumber": 571
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.198",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/modules/custom/ovh_algolia/dist/assets/find.0a6e189a.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/modules/custom/ovh_algolia/dist/algolia-search.min.js?v=1.0.3",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11748.754681,
+        "wallTime": 1694249609.326555,
+        "initiator": {
+            "type": "script",
+            "url": "https://www.ovhcloud.com/modules/custom/ovh_algolia/dist/algolia-search.min.js?v=1.0.3",
+            "lineNumber": 0,
+            "columnNumber": 605
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.199",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/p-e548855b.entry.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11749.136825,
+        "wallTime": 1694249609.709488,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "R",
+                        "scriptId": "35",
+                        "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/p-495c12a1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 7611
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "35",
+                        "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/p-495c12a1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 6480
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "35",
+                        "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/p-495c12a1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 6909
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "35",
+                        "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/p-495c12a1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 6923
+                    },
+                    {
+                        "functionName": "jmp",
+                        "scriptId": "35",
+                        "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/p-495c12a1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 7749
+                    },
+                    {
+                        "functionName": "connectedCallback",
+                        "scriptId": "35",
+                        "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/p-495c12a1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 6175
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "35",
+                        "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/p-495c12a1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 7253
+                    },
+                    {
+                        "functionName": "H",
+                        "scriptId": "35",
+                        "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/p-495c12a1.js",
+                        "lineNumber": 1,
+                        "columnNumber": 7243
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "21",
+                        "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/osds-icon.esm.js?v=7.0.2",
+                        "lineNumber": 0,
+                        "columnNumber": 171
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.200",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/p-4125c141.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/p-e548855b.entry.js",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11749.662977,
+        "wallTime": 1694249610.234873,
+        "initiator": {
+            "type": "script",
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/%40ods/stencil/osds-icon/p-e548855b.entry.js",
+            "lineNumber": 0,
+            "columnNumber": 26
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.201",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23000000' fill-rule='evenodd' d='M14.914 17.5a1 1 0 01-1.414 1.414l-6.707-6.707L13.5 5.5a1 1 0 011.414 1.414l-5.293 5.293 5.293 5.293z'/%3E%3C/svg%3E",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "Origin": "https://www.ovhcloud.com",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 11749.89019,
+        "wallTime": 1694249610.462134,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.202",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23000000' fill-rule='evenodd' d='M9.086 6.914A1 1 0 0110.5 5.5l6.707 6.707-6.707 6.707A1 1 0 019.086 17.5l5.293-5.293-5.293-5.293z'/%3E%3C/svg%3E",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "Origin": "https://www.ovhcloud.com",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 11749.891855,
+        "wallTime": 1694249610.463752,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.203",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath stroke-linecap='round' stroke-width='2' d='M4 13l5 5M20 7L9 18'/%3E%3Cpath fill='%23000000' d='M19.293 6.293a1 1 0 011.414 1.414l-11 11a.995.995 0 01-.53.277l-.118.014h-.118a.996.996 0 01-.648-.29l-5-5a1 1 0 011.414-1.415L9 16.585z'/%3E%3C/g%3E%3C/svg%3E",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "Origin": "https://www.ovhcloud.com",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 11749.893671,
+        "wallTime": 1694249610.465574,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.204",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23000000' fill-rule='evenodd' d='M1.793 12.207a1 1 0 011-1l15.586.001-4.293-4.294A1 1 0 0115.5 5.5l6.707 6.707-.7.7-.015.015-5.992 5.992a1 1 0 01-1.414-1.414l4.29-4.292H2.794a1 1 0 01-1-1z'/%3E%3C/svg%3E",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "Origin": "https://www.ovhcloud.com",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 11749.895658,
+        "wallTime": 1694249610.467567,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "173857.206",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://analytics.ovh.com/ovh/privacy/css/privacy-4.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 11752.145118,
+        "wallTime": 1694249612.717909,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "6",
+                        "url": "https://www.ovhcloud.com/sites/default/files/js/js_yfTJOoxNYOh9VXOAfYdyq3E1zZL115eCBmu975c9llg.js",
+                        "lineNumber": 1,
+                        "columnNumber": 49822
+                    },
+                    {
+                        "functionName": "He",
+                        "scriptId": "6",
+                        "url": "https://www.ovhcloud.com/sites/default/files/js/js_yfTJOoxNYOh9VXOAfYdyq3E1zZL115eCBmu975c9llg.js",
+                        "lineNumber": 1,
+                        "columnNumber": 48090
+                    },
+                    {
+                        "functionName": "append",
+                        "scriptId": "6",
+                        "url": "https://www.ovhcloud.com/sites/default/files/js/js_yfTJOoxNYOh9VXOAfYdyq3E1zZL115eCBmu975c9llg.js",
+                        "lineNumber": 1,
+                        "columnNumber": 49723
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "55",
+                        "url": "https://analytics.ovh.com/ovh/ovh_delta.js",
+                        "lineNumber": 533,
+                        "columnNumber": 181
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "pa_privacy",
+                    "value": "%22beforeConsent%22",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "pa_privacy",
+                    "value": "%22optin%22",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 21,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "tCdebugLib",
+                    "value": "1",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1696841612,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "173857.207",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://ovh.commander1.com/getcookie.php?s=1&c=TC_CSUI&v=TC_CSUI",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 11752.189626,
+        "wallTime": 1694249612.761712,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "add",
+                        "scriptId": "55",
+                        "url": "https://analytics.ovh.com/ovh/ovh_delta.js",
+                        "lineNumber": 10,
+                        "columnNumber": 19274
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "55",
+                        "url": "https://analytics.ovh.com/ovh/ovh_delta.js",
+                        "lineNumber": 568,
+                        "columnNumber": 962
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "pa_privacy",
+                    "value": "%22beforeConsent%22",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "pa_privacy",
+                    "value": "%22optin%22",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 21,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "tCdebugLib",
+                    "value": "1",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1696841612,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "173857.208",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://analytics.ovh.com/ovh/privacy/sg-4/privacy_v2_178.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 11752.212622,
+        "wallTime": 1694249612.784976,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "add",
+                        "scriptId": "55",
+                        "url": "https://analytics.ovh.com/ovh/ovh_delta.js",
+                        "lineNumber": 10,
+                        "columnNumber": 19274
+                    },
+                    {
+                        "functionName": "tc_privacy_display_10",
+                        "scriptId": "55",
+                        "url": "https://analytics.ovh.com/ovh/ovh_delta.js",
+                        "lineNumber": 695,
+                        "columnNumber": 195
+                    },
+                    {
+                        "functionName": "tc_privacy_wait_body_10",
+                        "scriptId": "55",
+                        "url": "https://analytics.ovh.com/ovh/ovh_delta.js",
+                        "lineNumber": 700,
+                        "columnNumber": 80
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "55",
+                        "url": "https://analytics.ovh.com/ovh/ovh_delta.js",
+                        "lineNumber": 701,
+                        "columnNumber": 0
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "pa_privacy",
+                    "value": "%22beforeConsent%22",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "pa_privacy",
+                    "value": "%22optin%22",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 21,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "tCdebugLib",
+                    "value": "1",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1696841612,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "173857.233",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "data:image/svg+xml;utf8,      <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">        <path fill=\"none\" d=\"M0 0h24v24H0z\"/>        <path fill=\"%2385D9FD\" d=\"M1 3h6v16H1zM11 3h6v16h-6z\"/>      </svg>",
+            "method": "GET",
+            "headers": {
+                "Referer": "",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 11752.465631,
+        "wallTime": 1694249613.03757,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/sites/default/files/css/css_RRq1-6pVdOhLc1-I3hOqyt9gssDXRoQLlJt3hIJUYlI.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "pa_privacy",
+                    "value": "%22beforeConsent%22",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "pa_privacy",
+                    "value": "%22optin%22",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 21,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "tCdebugLib",
+                    "value": "1",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1696841612,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "173857.137",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/fonts/source-sans-pro/source-sans-pro-latin-400-italic.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/homepage_ovhcloud.css",
+                "Origin": "https://www.ovhcloud.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11752.477389,
+        "wallTime": 1694249613.04931,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/7af16cdb/contrib/ovh_theme_patternlab/dist/homepage_ovhcloud.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "pa_privacy",
+                    "value": "%22beforeConsent%22",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "pa_privacy",
+                    "value": "%22optin%22",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 21,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "tCdebugLib",
+                    "value": "1",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1696841612,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "173857.234",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://ovh.commander1.com/setcookie.php?s=1&c=TC_CSUI&v=lmbsh3uylyyvzkgt&e=396",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 11752.690216,
+        "wallTime": 1694249613.26214,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12771,
+            "columnNumber": 1
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "clientSideUserId",
+                    "value": "lmbsh3uylyyvzkgt",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 32,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_pctx",
+                    "value": "%7Bu%7DN4IgrgzgpgThIC4B2YA2qA05owMoBcBDfSREQpAeyRCwgEt8oBJAE0RXSwH18yBbAEwAGAOxR0AVhABfIA",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377613,
+                    "size": 94,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_pcid",
+                    "value": "%7B%22browserId%22%3A%22lmbsh3uylyyvzkgt%22%2C%22_t%22%3A%22m207ell3%22%7D",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377613,
+                    "size": 79,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "pa_privacy",
+                    "value": "%22beforeConsent%22",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "pa_privacy",
+                    "value": "%22optin%22",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 21,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "tCdebugLib",
+                    "value": "1",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1696841612,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "173857.235",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://logs1406.xiti.com/event?s=563736&idclient=lmbsh3uylyyvzkgt",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "sec-ch-ua-platform": "\"\"",
+                "Referer": "https://www.ovhcloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "Content-Type": "text/plain;charset=UTF-8"
+            },
+            "postData": "{\"events\":[{\"name\":\"page.display\",\"data\":{\"page\":\"HomePage_ovhcloud\",\"page_chapter1\":\"\",\"page_chapter2\":\"\",\"page_chapter3\":\"\",\"site_level2\":\"HomePage\",\"campaignname\":\"\",\"complete_page_name\":\"HomePage_ovhcloud\",\"container_version\":\"85.04\",\"country\":\"SG\",\"currency\":\"SGD\",\"n:device_display_pixel_ratio\":1,\"ecoex_user_id\":\"\",\"env_template\":\"Website\",\"full_url\":\"https://www.ovhcloud.com/en-sg/\",\"order_universe\":\"\",\"page_category\":\"layout_common_basic_page\",\"page_theme\":\"\",\"residential_country\":\"\",\"site_name_1\":\"OVHcloud\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\",\"website\":\"Singapore\",\"event\":\"privacy_banner\",\"visitor_privacy_consent\":false,\"visitor_privacy_mode\":\"beforeConsent\",\"event_collection_platform\":\"js\",\"event_collection_version\":\"6.7.0\",\"device_timestamp_utc\":1694249613257,\"device_local_hour\":1694249613257,\"device_hour\":16,\"content_title\":\"OVHcloud\",\"content_description\":\"OVHcloud offers more than 80 open and reversible services with the best price-performance ratio, including domain names, VPS, dedicated servers, IaaS and PaaS cloud.\",\"has_access\":\"anon\",\"pageview_id\":\"lmbsh3uwj7in6ldx\",\"device_screen_width\":1280,\"device_screen_height\":720,\"device_display_width\":1280,\"device_display_height\":720,\"browser_language\":\"en\",\"browser_language_local\":\"GB\",\"previous_url\":\"\",\"page_title_html\":\"OVHcloud: Cloud Computing & Web Hosting\",\"page_url\":\"https://www.ovhcloud.com/en-sg/\",\"ch_ua\":[],\"ch_ua_arch\":\"\",\"ch_ua_bitness\":\"\",\"ch_ua_full_version_list\":[],\"ch_ua_mobile\":false,\"ch_ua_model\":\"\",\"ch_ua_platform\":\"\",\"ch_ua_platform_version\":\"\",\"ch_ua_full_version\":\"\"}}]}",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "eyJldmVudHMiOlt7Im5hbWUiOiJwYWdlLmRpc3BsYXkiLCJkYXRhIjp7InBhZ2UiOiJIb21lUGFnZV9vdmhjbG91ZCIsInBhZ2VfY2hhcHRlcjEiOiIiLCJwYWdlX2NoYXB0ZXIyIjoiIiwicGFnZV9jaGFwdGVyMyI6IiIsInNpdGVfbGV2ZWwyIjoiSG9tZVBhZ2UiLCJjYW1wYWlnbm5hbWUiOiIiLCJjb21wbGV0ZV9wYWdlX25hbWUiOiJIb21lUGFnZV9vdmhjbG91ZCIsImNvbnRhaW5lcl92ZXJzaW9uIjoiODUuMDQiLCJjb3VudHJ5IjoiU0ciLCJjdXJyZW5jeSI6IlNHRCIsIm46ZGV2aWNlX2Rpc3BsYXlfcGl4ZWxfcmF0aW8iOjEsImVjb2V4X3VzZXJfaWQiOiIiLCJlbnZfdGVtcGxhdGUiOiJXZWJzaXRlIiwiZnVsbF91cmwiOiJodHRwczovL3d3dy5vdmhjbG91ZC5jb20vZW4tc2cvIiwib3JkZXJfdW5pdmVyc2UiOiIiLCJwYWdlX2NhdGVnb3J5IjoibGF5b3V0X2NvbW1vbl9iYXNpY19wYWdlIiwicGFnZV90aGVtZSI6IiIsInJlc2lkZW50aWFsX2NvdW50cnkiOiIiLCJzaXRlX25hbWVfMSI6Ik9WSGNsb3VkIiwidXNlcl9hZ2VudCI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xMTQuMC4wLjAgU2FmYXJpLzUzNy4zNiIsIndlYnNpdGUiOiJTaW5nYXBvcmUiLCJldmVudCI6InByaXZhY3lfYmFubmVyIiwidmlzaXRvcl9wcml2YWN5X2NvbnNlbnQiOmZhbHNlLCJ2aXNpdG9yX3ByaXZhY3lfbW9kZSI6ImJlZm9yZUNvbnNlbnQiLCJldmVudF9jb2xsZWN0aW9uX3BsYXRmb3JtIjoianMiLCJldmVudF9jb2xsZWN0aW9uX3ZlcnNpb24iOiI2LjcuMCIsImRldmljZV90aW1lc3RhbXBfdXRjIjoxNjk0MjQ5NjEzMjU3LCJkZXZpY2VfbG9jYWxfaG91ciI6MTY5NDI0OTYxMzI1NywiZGV2aWNlX2hvdXIiOjE2LCJjb250ZW50X3RpdGxlIjoiT1ZIY2xvdWQiLCJjb250ZW50X2Rlc2NyaXB0aW9uIjoiT1ZIY2xvdWQgb2ZmZXJzIG1vcmUgdGhhbiA4MCBvcGVuIGFuZCByZXZlcnNpYmxlIHNlcnZpY2VzIHdpdGggdGhlIGJlc3QgcHJpY2UtcGVyZm9ybWFuY2UgcmF0aW8sIGluY2x1ZGluZyBkb21haW4gbmFtZXMsIFZQUywgZGVkaWNhdGVkIHNlcnZlcnMsIElhYVMgYW5kIFBhYVMgY2xvdWQuIiwiaGFzX2FjY2VzcyI6ImFub24iLCJwYWdldmlld19pZCI6ImxtYnNoM3V3ajdpbjZsZHgiLCJkZXZpY2Vfc2NyZWVuX3dpZHRoIjoxMjgwLCJkZXZpY2Vfc2NyZWVuX2hlaWdodCI6NzIwLCJkZXZpY2VfZGlzcGxheV93aWR0aCI6MTI4MCwiZGV2aWNlX2Rpc3BsYXlfaGVpZ2h0Ijo3MjAsImJyb3dzZXJfbGFuZ3VhZ2UiOiJlbiIsImJyb3dzZXJfbGFuZ3VhZ2VfbG9jYWwiOiJHQiIsInByZXZpb3VzX3VybCI6IiIsInBhZ2VfdGl0bGVfaHRtbCI6Ik9WSGNsb3VkOiBDbG91ZCBDb21wdXRpbmcgJiBXZWIgSG9zdGluZyIsInBhZ2VfdXJsIjoiaHR0cHM6Ly93d3cub3ZoY2xvdWQuY29tL2VuLXNnLyIsImNoX3VhIjpbXSwiY2hfdWFfYXJjaCI6IiIsImNoX3VhX2JpdG5lc3MiOiIiLCJjaF91YV9mdWxsX3ZlcnNpb25fbGlzdCI6W10sImNoX3VhX21vYmlsZSI6ZmFsc2UsImNoX3VhX21vZGVsIjoiIiwiY2hfdWFfcGxhdGZvcm0iOiIiLCJjaF91YV9wbGF0Zm9ybV92ZXJzaW9uIjoiIiwiY2hfdWFfZnVsbF92ZXJzaW9uIjoiIn19XX0="
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "VeryLow",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 11752.697958,
+        "wallTime": 1694249613.270252,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "post",
+                        "scriptId": "58",
+                        "url": "",
+                        "lineNumber": 0,
+                        "columnNumber": 5360
+                    },
+                    {
+                        "functionName": "wn",
+                        "scriptId": "58",
+                        "url": "",
+                        "lineNumber": 0,
+                        "columnNumber": 44716
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "58",
+                        "url": "",
+                        "lineNumber": 0,
+                        "columnNumber": 7923
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "58",
+                        "url": "",
+                        "lineNumber": 0,
+                        "columnNumber": 43517
+                    },
+                    {
+                        "functionName": "yn",
+                        "scriptId": "58",
+                        "url": "",
+                        "lineNumber": 0,
+                        "columnNumber": 43592
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "58",
+                        "url": "",
+                        "lineNumber": 0,
+                        "columnNumber": 7923
+                    },
+                    {
+                        "functionName": "J",
+                        "scriptId": "58",
+                        "url": "",
+                        "lineNumber": 0,
+                        "columnNumber": 8204
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "58",
+                        "url": "",
+                        "lineNumber": 0,
+                        "columnNumber": 7923
+                    },
+                    {
+                        "functionName": "e",
+                        "scriptId": "58",
+                        "url": "",
+                        "lineNumber": 0,
+                        "columnNumber": 43403
+                    },
+                    {
+                        "functionName": "mn",
+                        "scriptId": "58",
+                        "url": "",
+                        "lineNumber": 0,
+                        "columnNumber": 43480
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "58",
+                        "url": "",
+                        "lineNumber": 0,
+                        "columnNumber": 7923
+                    },
+                    {
+                        "functionName": "_n",
+                        "scriptId": "58",
+                        "url": "",
+                        "lineNumber": 0,
+                        "columnNumber": 44547
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "58",
+                        "url": "",
+                        "lineNumber": 0,
+                        "columnNumber": 7923
+                    },
+                    {
+                        "functionName": "eval",
+                        "scriptId": "58",
+                        "url": "",
+                        "lineNumber": 0,
+                        "columnNumber": 43340
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Ping",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "clientSideUserId",
+                    "value": "lmbsh3uylyyvzkgt",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 32,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_pctx",
+                    "value": "%7Bu%7DN4IgrgzgpgThIC4B2YA2qA05owMoBcBDfSREQpAeyRCwgEt8oBJAE0RXSwH18yBbAEwAGAOxR0AVhABfIA",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377613,
+                    "size": 94,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_pcid",
+                    "value": "%7B%22browserId%22%3A%22lmbsh3uylyyvzkgt%22%2C%22_t%22%3A%22m207ell3%22%7D",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377613,
+                    "size": 79,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "pa_privacy",
+                    "value": "%22beforeConsent%22",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "pa_privacy",
+                    "value": "%22optin%22",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 21,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "tCdebugLib",
+                    "value": "1",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1696841612,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "173857.236",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://privacy.trustcommander.net/privacy-consent/",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "sec-ch-ua-platform": "\"\"",
+                "Referer": "https://www.ovhcloud.com/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "Content-Type": "text/plain;charset=UTF-8"
+            },
+            "postData": "{\"id_tc\":\"10\",\"site\":\"3810\",\"version\":\"007\",\"id_privacy\":178,\"type_action\":\"banner\",\"privacy_action\":\"V\",\"tcpid\":\"1239616533312228806183\",\"tc_optout\":1}",
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": "eyJpZF90YyI6IjEwIiwic2l0ZSI6IjM4MTAiLCJ2ZXJzaW9uIjoiMDA3IiwiaWRfcHJpdmFjeSI6MTc4LCJ0eXBlX2FjdGlvbiI6ImJhbm5lciIsInByaXZhY3lfYWN0aW9uIjoiViIsInRjcGlkIjoiMTIzOTYxNjUzMzMxMjIyODgwNjE4MyIsInRjX29wdG91dCI6MX0="
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "VeryLow",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 11753.433555,
+        "wallTime": 1694249614.007228,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "tC.privacy.sendBeacon",
+                        "scriptId": "68",
+                        "url": "https://analytics.ovh.com/ovh/privacy/sg-4/privacy_v2_178.js",
+                        "lineNumber": 10,
+                        "columnNumber": 26894
+                    },
+                    {
+                        "functionName": "tC.privacy.hitCounter",
+                        "scriptId": "68",
+                        "url": "https://analytics.ovh.com/ovh/privacy/sg-4/privacy_v2_178.js",
+                        "lineNumber": 10,
+                        "columnNumber": 30131
+                    },
+                    {
+                        "functionName": "tC.privacy.showBanner",
+                        "scriptId": "68",
+                        "url": "https://analytics.ovh.com/ovh/privacy/sg-4/privacy_v2_178.js",
+                        "lineNumber": 10,
+                        "columnNumber": 46340
+                    },
+                    {
+                        "functionName": "tC.privacy.showPrivacy",
+                        "scriptId": "68",
+                        "url": "https://analytics.ovh.com/ovh/privacy/sg-4/privacy_v2_178.js",
+                        "lineNumber": 10,
+                        "columnNumber": 46282
+                    },
+                    {
+                        "functionName": "tC.privacy.bootload",
+                        "scriptId": "68",
+                        "url": "https://analytics.ovh.com/ovh/privacy/sg-4/privacy_v2_178.js",
+                        "lineNumber": 10,
+                        "columnNumber": 45879
+                    },
+                    {
+                        "functionName": "tC.onDomReady",
+                        "scriptId": "54",
+                        "url": "https://analytics.ovh.com/ovh/ovh_abt.js",
+                        "lineNumber": 10,
+                        "columnNumber": 5806
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "68",
+                        "url": "https://analytics.ovh.com/ovh/privacy/sg-4/privacy_v2_178.js",
+                        "lineNumber": 10,
+                        "columnNumber": 68097
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Ping",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "clientSideUserId",
+                    "value": "lmbsh3uylyyvzkgt",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 32,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_pctx",
+                    "value": "%7Bu%7DN4IgrgzgpgThIC4B2YA2qA05owMoBcBDfSREQpAeyRCwgEt8oBJAE0RXSwH18yBbAEwAGAOxR0AVhABfIA",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377613,
+                    "size": 94,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_pcid",
+                    "value": "%7B%22browserId%22%3A%22lmbsh3uylyyvzkgt%22%2C%22_t%22%3A%22m207ell3%22%7D",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377613,
+                    "size": 79,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "pa_privacy",
+                    "value": "%22beforeConsent%22",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "TCPID",
+                    "value": "1239616533312228806183",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728204813,
+                    "size": 27,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "pa_privacy",
+                    "value": "%22optin%22",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 21,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "tCdebugLib",
+                    "value": "1",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1696841612,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "173857.237",
+        "loaderId": "20B364D58FAD299F6C0FC8C430952FFD",
+        "documentURL": "https://www.ovhcloud.com/en-sg/",
+        "request": {
+            "url": "https://www.ovhcloud.com/sites/default/files/2019-10/OVHcloud-color.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.ovhcloud.com/en-sg/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11753.441512,
+        "wallTime": 1694249614.013421,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.ovhcloud.com/en-sg/",
+            "lineNumber": 12771,
+            "columnNumber": 1
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0D9B7D3740F8807263FC5194B8130B6E",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "clientSideUserId",
+                    "value": "lmbsh3uylyyvzkgt",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 32,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_pctx",
+                    "value": "%7Bu%7DN4IgrgzgpgThIC4B2YA2qA05owMoBcBDfSREQpAeyRCwgEt8oBJAE0RXSwH18yBbAEwAGAOxR0AVhABfIA",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377613,
+                    "size": 94,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_pcid",
+                    "value": "%7B%22browserId%22%3A%22lmbsh3uylyyvzkgt%22%2C%22_t%22%3A%22m207ell3%22%7D",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377613,
+                    "size": 79,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "pa_privacy",
+                    "value": "%22beforeConsent%22",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 29,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "TCPID",
+                    "value": "1239616533312228806183",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728204813,
+                    "size": 27,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "pa_privacy",
+                    "value": "%22optin%22",
+                    "domain": "www.ovhcloud.com",
+                    "path": "/",
+                    "expires": 1728377612,
+                    "size": 21,
+                    "httpOnly": false,
+                    "secure": true,
+                    "session": false,
+                    "sameSite": "None",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "tCdebugLib",
+                    "value": "1",
+                    "domain": ".ovhcloud.com",
+                    "path": "/",
+                    "expires": 1696841612,
+                    "size": 11,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

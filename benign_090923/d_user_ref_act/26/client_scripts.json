@@ -1,0 +1,9 @@
+{
+    "script_1": "https://www.gov.uk/assets/static/govuk_publishing_components/vendor/lux/lux-measurer-505eef3e243b1d08ea7c4b945ebe1ae146d896db61366e415b30cc1bcd84cbdc.js",
+    "script_2": "https://www.gov.uk/assets/static/govuk_publishing_components/rum-loader-c53469dcb841d7b228c914a2e8bdcf3b831a578adf7d4f21cf9da5b85df7381e.js",
+    "script_3": "https://www.gov.uk/assets/static/govuk_publishing_components/load-analytics-b041b549efccbdd455ae8dee19ccf7d243c8a8372bd1aa5c73f24998628c1ef9.js",
+    "script_4": "\n//<![CDATA[\n      document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');\n\n//]]>\n",
+    "script_5": "\n//<![CDATA[\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    var input = document.querySelector(\"#giraffe\"),\n      form = document.querySelector(\"#something-is-wrong\")\n\n    form.addEventListener(\"submit\", spamCapture);\n\n    function spamCapture(e) {\n      if (input.value.length !== 0) return;\n      e.preventDefault();\n    }\n  });\n\n//]]>\n",
+    "script_6": "https://www.gov.uk/assets/static/application-6baac002cbe9dba75d166b11906536d1aeb4f61ec5c838f05250dcc751b2c578.js",
+    "script_7": "https://www.gov.uk/assets/frontend/application-9d4f6f609729de4b3877afa6a32a52ad1a5327b7715db9522203c49f724ed500.js"
+}

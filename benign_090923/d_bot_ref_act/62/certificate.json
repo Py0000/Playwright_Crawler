@@ -1,0 +1,37 @@
+{
+    "website url": "https://www.nbtbank.com/",
+    "hostname": "www.nbtbank.com",
+    "subject": {
+        "countryName": "US",
+        "stateOrProvinceName": "California",
+        "localityName": "San Francisco",
+        "organizationName": "Cloudflare, Inc.",
+        "commonName": "sni.cloudflaressl.com"
+    },
+    "issuer": {
+        "countryName": "US",
+        "organizationName": "Cloudflare, Inc.",
+        "commonName": "Cloudflare Inc ECC CA-3"
+    },
+    "version": 3,
+    "not_before": "Apr 10 00:00:00 2023 GMT",
+    "not_after": "Apr  9 23:59:59 2024 GMT",
+    "valid_period": 365,
+    "serial_number": "0184934750E6261F645FF72FA413B616",
+    "signature_algo": "ecdsa-with-SHA256",
+    "protocol_version": "TLSv1.3",
+    "alternate subject name": [
+        [
+            "DNS",
+            "nbtbank.com"
+        ],
+        [
+            "DNS",
+            "*.nbtbank.com"
+        ],
+        [
+            "DNS",
+            "sni.cloudflaressl.com"
+        ]
+    ]
+}

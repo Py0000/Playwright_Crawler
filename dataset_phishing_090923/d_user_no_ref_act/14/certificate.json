@@ -1,0 +1,29 @@
+{
+    "website url": "https://claim.dght.my.id/",
+    "hostname": "claim.dght.my.id",
+    "subject": {
+        "commonName": "dght.my.id"
+    },
+    "issuer": {
+        "countryName": "US",
+        "organizationName": "Let's Encrypt",
+        "commonName": "E1"
+    },
+    "version": 3,
+    "not_before": "Sep  1 05:39:36 2023 GMT",
+    "not_after": "Nov 30 05:39:35 2023 GMT",
+    "valid_period": 90,
+    "serial_number": "03BAF1E9B99EBEB6F9D132243A5A8C107724",
+    "signature_algo": "ecdsa-with-SHA384",
+    "protocol_version": "TLSv1.3",
+    "alternate subject name": [
+        [
+            "DNS",
+            "*.dght.my.id"
+        ],
+        [
+            "DNS",
+            "dght.my.id"
+        ]
+    ]
+}

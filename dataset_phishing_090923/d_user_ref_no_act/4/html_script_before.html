@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html brand="ag" class="no-js" lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+  <meta content="#B2212B" name="theme-color"/>
+  <meta content="#B2212B" name="msapplication-navbutton-color"/>
+  <meta content="#B2212B" name="apple-mobile-web-app-status-bar-style"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=no" name="viewport"/>
+  <link href="res/img/favicon-ag.ico?6.1.8" rel="icon" type="image/x-icon"/>
+  <link href="res/img/apple-touch-icon-ag.png?6.1.8" rel="apple-touch-icon"/>
+  <link as="font" crossorigin="crossorigin" href="res/fonts/opensans-regular.woff2?6.1.8" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="crossorigin" href="res/fonts/opensans-bold.woff2?6.1.8" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="crossorigin" href="res/fonts/opensans-light.woff2?6.1.8" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="crossorigin" href="res/fonts/opensans-italic.woff2?6.1.8" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="crossorigin" href="res/fonts/opensans-bolditalic.woff2?6.1.8" rel="preload" type="font/woff2"/>
+  <title>
+   Se connecter - Agriaffaires
+  </title>
+  <meta content="Sur Agriaffaires, spécialiste de la petite annonce agricole sur internet: achetez, vendez ou louez facilement et en toute sécurité votre matériel agricole." name="description"/>
+  <meta content="" name="keywords"/>
+  <meta content="nofollow" name="robots"/>
+  <link href="res/css/app.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="res/css/app-ag.css" media="all" rel="stylesheet" type="text/css"/>
+  <script>
+   // Chargement de la CMP Appnexus
+    (function(window) {
+        let language = document.querySelector("html").getAttribute("lang");
+        let brand = document.querySelector("html").getAttribute("brand");
+
+        window.__cmp = (function() {
+            var listen = window.attachEvent || window.addEventListener;
+            listen('message', function(event) {
+                window.__cmp.receiveMessage(event);
+            });
+
+            var commandQueue = [];
+            var cmp = function(command, parameter, callback) {
+                commandQueue.push({
+                    command: command,
+                    parameter: parameter,
+                    callback: callback
+                });
+            };
+            cmp.commandQueue = commandQueue;
+            cmp.receiveMessage = function(event) {
+                var data = event && event.data && event.data.__cmpCall;
+                if (data) {
+                    commandQueue.push({
+                        callId: data.callId,
+                        command: data.command,
+                        parameter: data.parameter,
+                        event: event
+                    });
+                }
+            };
+            cmp.config = {
+                customPurposeListLocation: '/bundles/mblinepaasset/js/libraries/cmp/docs/purposes.json',
+                globalConsentLocation: '/bundles/mblinepaasset/js/libraries/cmp/docs/portal.html',
+                gdprApplies: true,
+                forceLocale: language,
+                theme: {
+                    primaryColor: (brand == 'ag') ? "#B2212B" : "#EE7D11",
+                    primaryTextColor: '#fff',
+                    secondaryColor: '#45586A',
+                    secondaryTextColor: '#fff',
+                    textLinkColor: '#45586A',
+                }
+            };
+            return cmp;
+        }());
+
+        var t = document.createElement('script');
+        t.async = false;
+        t.src = 'res/js/cmp.bundle.js?6.1.8';
+        var tag = document.getElementsByTagName('head')[0];
+        tag.appendChild(t);
+
+    })(window);
+
+    // Récupère les cookies userId et activityDomainId pour les envoyer chez Xiti :
+    // déclaré ici car app.js est chargé après le layout et on en a besoin dans le layout
+        function getCookie(c_name)
+        {
+            var cookies = document.cookie.split(";");
+            for (i=0;i<cookies.length;i++)
+            {
+                var x=cookies[i].substr(0,cookies[i].indexOf("="));
+                var y=cookies[i].substr(cookies[i].indexOf("=")+1);
+                x=x.replace(/^\s+|\s+$/g,"");
+                if (x==c_name)
+                {
+                    return unescape(y);
+                }
+            }
+        }
+        var cookiesLoggedUser = getCookie("logged_user");
+        if (cookiesLoggedUser) {
+            cookiesLoggedUser = decodeURIComponent(cookiesLoggedUser);
+            cookiesLoggedUser = JSON.parse(cookiesLoggedUser);
+            var userId = cookiesLoggedUser['userId'];
+            var activityDomainId = cookiesLoggedUser['activityDomainId']
+        } else {
+            var userId = "";
+            var activityDomainId = "";
+        }
+        window.userId = userId;
+        window.activityDomainId = activityDomainId;
+    // Fin récup des cookies
+  </script>
+  <script src="res/js/cmp.bundle.js?6.1.8">
+  </script>
+  <script src="res/js/smart.js" type="application/javascript">
+  </script>
+  <script src="res/js/smarttag.js">
+  </script>
+  <script>
+   //Tableau de conversion des unités en fonction du système métrique
+            var convRate = {"1":{"1":{"rate":1,"unit":"m"},"2":{"rate":1,"unit":"cm"},"3":{"rate":1,"unit":"mm"},"4":{"rate":1,"unit":"km"},"5":{"rate":1,"unit":"m\u00b2"},"6":{"rate":1,"unit":"cm\u00b2"},"7":{"rate":1,"unit":"Ha"},"8":{"rate":1,"unit":"km\u00b2"},"9":{"rate":1,"unit":"m3"},"24":{"rate":1,"unit":"cm3"},"10":{"rate":1,"unit":"L"},"11":{"rate":1,"unit":"hL"},"12":{"rate":1,"unit":"Kg"},"13":{"rate":1,"unit":"T"},"30":{"rate":1,"unit":"W"},"35":{"rate":1,"unit":"kW"},"14":{"rate":1,"unit":"ch"},"19":{"rate":1,"unit":"T.m"},"15":{"rate":1,"unit":"kVA"},"18":{"rate":1,"unit":"T\/h"},"16":{"rate":1,"unit":"L\/min"},"17":{"rate":1,"unit":"m3\/h"},"41":{"rate":1,"unit":"Km\/h"}},"2":{"1":{"rate":0.3048,"unit":"ft"},"2":{"rate":2.54,"unit":"in"},"3":{"rate":25.4,"unit":"in"},"4":{"rate":1.609344,"unit":"mi"},"5":{"rate":0.0929108984,"unit":"sq ft"},"6":{"rate":6.4516,"unit":"sq in"},"7":{"rate":0.404685643,"unit":"ac"},"8":{"rate":2.5899881103,"unit":"mi\u00b2"},"9":{"rate":0.0283168466,"unit":"cu ft"},"24":{"rate":16.3870639999,"unit":"cu in"},"10":{"rate":3.785411784,"unit":"gal"},"11":{"rate":0.037854097,"unit":"gal"},"12":{"rate":0.45359237,"unit":"lb"},"13":{"rate":0.9071940488,"unit":"ton"},"30":{"rate":1,"unit":"W"},"35":{"rate":1,"unit":"kW"},"14":{"rate":1,"unit":"Hp"},"19":{"rate":0.2999866141,"unit":"ton.ft"},"15":{"rate":1,"unit":"kVA"},"18":{"rate":0.9842065,"unit":"ton\/h"},"16":{"rate":3.7854096684,"unit":"gal\/min"},"17":{"rate":0.0283168359,"unit":"ft3\/h"},"41":{"rate":1.6093442101,"unit":"mph"}}};
+  </script>
+ </head>
+ <body class="cover" id="login" itemscope="" itemtype="https://schema.org/WebPage">
+  <span data-format="%v %s" data-separator-dec="," data-separator-thou=" " id="js-data-currency">
+  </span>
+  <span data-systemid="1" id="js-data-metric-system">
+  </span>
+  <div class="dp--habillage none--large">
+   <div id="habillage">
+   </div>
+  </div>
+  <!-- Consent Manager Tag : Script -->
+  <div class="flex-container cookie none--all" id="div-use-cookie">
+   <div class="item-fluid flex-container">
+    <p class="item-center mam">
+     Votre expérience sur notre site est une priorité. C’est pourquoi nous utilisons des cookies au titre de cet intérêt légitime à améliorer l’expérience utilisateur, réaliser des statistiques et vous proposer des offres publicitaires adaptées à vos centres d’intérêts dont, avec votre accord, celles à proximité.
+     <br/>
+     En poursuivant votre navigation, vous acceptez également le dépôt de cookies par nos partenaires pour vous proposer des offres publicitaires adaptées à vos centres d'intérêt, sur notre site, et pour vous permettre de partager sur les réseaux sociaux.
+    </p>
+   </div>
+   <div class="item-center">
+    <button class="js-custom-cookie btn outline mam">
+     En savoir plus
+    </button>
+    <button class="js-consent-cookie btn btn--primary mam" type="submit">
+     OK
+    </button>
+   </div>
+  </div>
+  <!--D Header -->
+  <header id="header">
+   <div class="header-top">
+    <div class="flex-container inner">
+     <div class="header-top--mobile" id="header-mobile">
+      <button aria-label="open/close navigation" class="header-top--burger nav-button js-menu" id="js-call-menu-mobile" type="button">
+       <i>
+       </i>
+      </button>
+      <a class="header-top--logo" id="logo" onclick="javascript:sendClickXiti(this, 'header_logo');">
+       <img alt="Agriaffaires : matériel agricole d’occasion ou neuf" src="res/img/logo-w.png?6.1.8"/>
+      </a>
+      <a class="header-top--account" rel="nofollow">
+       <span class="maicons maicons-user">
+       </span>
+      </a>
+     </div>
+     <div class="header-top--post">
+      <a class="btn btn--inverse" data-gtm-ea="Passer une annonce" data-gtm-ec="Navigation 1" onclick="javascript:sendClickXiti(this, 'header_passer_annonce');">
+       <span class="maicons maicons-edit mrs">
+       </span>
+       Passer une annonce
+      </a>
+     </div>
+     <div class="header-top--search pas none--large">
+      <div class="form-content">
+       <form action="" method="POST">
+        <input autocomplete="off" class="input--search js-search" data-rubric="Catégorie" id="mb_search_all" name="search[all_text]" placeholder="Rechercher" style="order: 3;" type="text" value=""/>
+       </form>
+       <span class="maicons maicons-search form-content--feedback">
+       </span>
+       <span class="form-content--delete">
+        <span class="maicons maicons-remove small">
+        </span>
+       </span>
+       <div class="search-results" id="js-select_search_result">
+       </div>
+       <div class="search-results--mask">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="header-bottom" id="menu">
+    <div class="header-bottom--nav inner">
+     <div class="header-bottom--post none--all">
+      <a data-gtm-ea="Passer une annonce" data-gtm-ec="Navigation 1">
+       <span class="maicons maicons-edit">
+       </span>
+       Passer une annonce
+      </a>
+     </div>
+     <nav class="main-nav">
+      <a class="main-nav--btn js-menu-desktop" id="btn-menu-desktop" role="button">
+       <span class="mls">
+        Toutes les annonces
+       </span>
+       <span class="icon-closed maicons maicons-chevron-down right small">
+       </span>
+       <span class="icon-opened maicons maicons-remove right small">
+       </span>
+      </a>
+      <hr/>
+      <ul class="main-nav--services">
+       <li>
+        <a data-gtm-ea="Répertoire des pros" data-gtm-ec="Navigation 1">
+         Annuaire des fournisseurs
+        </a>
+       </li>
+       <li>
+        <a data-gtm-ea="Observatoire des prix" data-gtm-ec="Navigation 1">
+         Observatoire des prix
+        </a>
+       </li>
+      </ul>
+     </nav>
+     <div class="header-bottom--fav">
+      <a>
+       <span class="maicons maicons-heart-empty js-classifiedSelection" title="Mes annonces favorites">
+       </span>
+       Favoris
+       <span class="counter js-nbClassifiedSelection">
+        0
+       </span>
+      </a>
+     </div>
+     <div class="header-bottom--account">
+      <a rel="nofollow">
+       <span class="maicons maicons-user">
+       </span>
+       <span data-logged-username="">
+        Mon compte
+       </span>
+      </a>
+     </div>
+     <div class="header-bottom--mask">
+     </div>
+    </div>
+   </div>
+  </header>
+  <!--F Header -->
+  <span id="sticky-push">
+  </span>
+  <div class="dp--mb mts mbs" id="display-mb">
+   <div id="megabanner">
+    <div class="txtcenter" style="min-height: 50px">
+     <div data-adserver-cookie-target="" data-adserver-format-id="65837" data-adserver-page-id="491138" data-adserver-site-id="49916" data-adserver-target="" id="sas_65837">
+     </div>
+    </div>
+   </div>
+  </div>
+  <main class="inner sticky--push" id="global">
+   <div class="txtcenter">
+    <h1 class="u-bold u-biggest">
+     Se connecter
+    </h1>
+   </div>
+   <div class="block--all block-login">
+    <div class="clearfix">
+    </div>
+    <form autocomplete="off" class="block-login--form" data-parsley-validate="true" data-sso="https://sso5.mbdsrv.com" id="form_login" method="post" novalidate="">
+     <div class="alert alert--warning none--all error_error">
+      Une erreur est survenue
+     </div>
+     <div class="alert alert--warning none--all error_bad_email">
+      L'adresse e-mail que vous avez saisie ne correspond à aucun compte !
+     </div>
+     <div class="alert alert--warning none--all error_bad_password">
+      Mot de passe incorrect
+     </div>
+     <div class="alert alert--danger none--all error_invalid_token">
+      La session a expiré, vous devez recharger la page.
+     </div>
+     <div class="alert alert--warning none--all error_captcha">
+      Veuillez cocher la case "Je ne suis pas un robot"
+     </div>
+     <div class="alert alert--warning none--all error_too_much_retries">
+      Vous avez dépassé le nombre de tentatives autorisées.
+      <br/>
+      Pour des raisons de sécurité, ce lien est désactivé pendant 30 minutes.
+     </div>
+     <div class="alert alert--warning none--all error_bad_email">
+      L'adresse e-mail que vous avez saisie ne correspond à aucun compte !
+     </div>
+     <div class="alert alert--info none--all info_success">
+      Un email vous a été envoyé
+     </div>
+     <div class="alert alert--warning none--all error_too_much_retries error_captcha">
+      Vous avez dépassé le nombre de tentatives autorisées.
+     </div>
+     <div class="form-group">
+      <div class="form-control input-group">
+       <div class="input-group--prepend">
+        <span class="input-group--txt">
+         <span class="maicons maicons-at">
+         </span>
+        </span>
+       </div>
+       <div class="form-control">
+        <input class="" id="cas_login_email" name="cas_login[email]" placeholder="Votre email" required="required" type="email"/>
+       </div>
+      </div>
+      <div class="form-alert">
+      </div>
+     </div>
+     <div class="form-group">
+      <div class="form-control input-group">
+       <div class="input-group--prepend">
+        <span class="input-group--txt">
+         <span class="maicons maicons-lock">
+         </span>
+        </span>
+       </div>
+       <div class="form-control">
+        <input class="" id="cas_login_password" name="cas_login[password]" placeholder="Votre mot de passe" required="required" type="password"/>
+       </div>
+      </div>
+      <div class="form-alert">
+      </div>
+     </div>
+     <div class="form-group none--all" id="cas_login_captcha_div">
+      <div class="txtcenter">
+      </div>
+     </div>
+     <div>
+      <div class="txtright block-login--forget">
+       <a class="u-small" id="link_lost_password">
+        Mot de passe oublié ?
+       </a>
+      </div>
+      <div class="txtcenter">
+       <button class="btn--primary" id="loginbut" type="submit">
+        Se connecter
+       </button>
+      </div>
+     </div>
+     <input class="" id="cas_login_token" name="cas_login[token]" type="hidden" value="1543231854-7864f787101e7c307eb52b2707f2bfe69e8c18a7"/>
+    </form>
+    <div class="block-login--new">
+     <div class="mbm">
+      <span class="u-bold h2-like">
+       Pas encore inscrit ?
+      </span>
+     </div>
+     <p>
+      Créez un compte gratuitement !
+     </p>
+     <p>
+      Passez des annonces, créez des alertes de recherche, accédez à notre observatoire des prix...
+     </p>
+     <div class="txtcenter">
+      <a class="btn--primary outline">
+       Je m'inscris
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="modal" id="recoverModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content modal--contener">
+      <div class="modal--close js-modal-close">
+       <span class="maicons maicons-remove">
+       </span>
+      </div>
+      <div class="modal--title">
+       <div class="modal--icon mbs">
+        <span class="maicons maicons-envelope extra-large">
+        </span>
+       </div>
+       <span>
+        Mot de passe oublié ?
+       </span>
+      </div>
+      <div class="modal--content">
+       <form autocomplete="off" class="block-login--form" data-parsley-validate="true" id="form_lost_password" method="post" novalidate="">
+        <div class="alert alert--warning none--all error_error">
+         Une erreur est survenue
+        </div>
+        <div class="alert alert--warning none--all error_bad_email">
+         L'adresse e-mail que vous avez saisie ne correspond à aucun compte !
+        </div>
+        <div class="alert alert--warning none--all error_bad_password">
+         Mot de passe incorrect
+        </div>
+        <div class="alert alert--danger none--all error_invalid_token">
+         La session a expiré, vous devez recharger la page.
+        </div>
+        <div class="alert alert--warning none--all error_captcha">
+         Veuillez cocher la case "Je ne suis pas un robot"
+        </div>
+        <div class="alert alert--warning none--all error_too_much_retries">
+         Vous avez dépassé le nombre de tentatives autorisées.
+         <br/>
+         Pour des raisons de sécurité, ce lien est désactivé pendant 30 minutes.
+        </div>
+        <div class="alert alert--warning none--all error_bad_email">
+         L'adresse e-mail que vous avez saisie ne correspond à aucun compte !
+        </div>
+        <div class="alert alert--info none--all info_success">
+         Un email vous a été envoyé
+        </div>
+        <div class="alert alert--warning none--all error_too_much_retries error_captcha">
+         Vous avez dépassé le nombre de tentatives autorisées.
+        </div>
+        <strong>
+         Mot de passe oublié ?
+        </strong>
+        Entrez votre adresse e-mail ci-dessous afin de recevoir un lien de modification de mot de passe
+        <div class="form-group">
+         <div class="form-control">
+          <div class="form-control">
+           <input class="" id="lost_password_email" name="lost_password[email]" placeholder="Votre email" required="required" type="email"/>
+          </div>
+          <div class="form-alert">
+          </div>
+         </div>
+        </div>
+        <div class="txtcenter mtm">
+         <button class="btn" onsubmit="console.error('ERROR : REMAINING PARSLEY');" type="submit">
+          Envoyer
+         </button>
+        </div>
+        <input class="" id="lost_password_token" name="lost_password[token]" type="hidden" value="1543231854-7864f787101e7c307eb52b2707f2bfe69e8c18a7"/>
+       </form>
+      </div>
+     </div>
+    </div>
+   </div>
+  </main>
+  <footer>
+   <div class="footer inner" id="footer">
+    <div class="footer--content">
+     <div class="footer--localisation footer--item">
+      <div class="footer--country" id="change_site_no_select">
+       <button class="btn w100 ghost js-modal" data-target="countryChangeModal">
+        Changer de pays
+       </button>
+      </div>
+      <div class="footer--currency form-group" id="change_currency_no_select_no_link">
+       <select class="no-js" data-decimal="," data-format="%v %s" data-thousand=" " data-xiti-position="footer" id="js-currency" name="currency">
+        <option data-model="123 ARS" data-rate="42.587385" data-symbol="ARS" value="ARS">
+         ARS
+        </option>
+        <option data-model="123 AUD" data-rate="1.567959" data-symbol="AUD" value="AUD">
+         AUD
+        </option>
+        <option data-model="123 BGN" data-rate="1.957959" data-symbol="BGN" value="BGN">
+         BGN
+        </option>
+        <option data-model="123 R$" data-rate="4.34438" data-symbol="R$" value="BRL">
+         BRL (R$)
+        </option>
+        <option data-model="123 CAD" data-rate="1.501403" data-symbol="CAD" value="CAD">
+         CAD
+        </option>
+        <option data-model="123 CHF" data-rate="1.130733" data-symbol="CHF" value="CHF">
+         CHF
+        </option>
+        <option data-model="123 ¥" data-rate="7.879348" data-symbol="¥" value="CNY">
+         CNY (¥)
+        </option>
+        <option data-model="123 CYP" data-rate="0.5853" data-symbol="CYP" value="CYP">
+         CYP
+        </option>
+        <option data-model="123 Kč" data-rate="25.931113" data-symbol="Kč" value="CZK">
+         CZK (Kč)
+        </option>
+        <option data-model="123 DKK" data-rate="7.464153" data-symbol="DKK" value="DKK">
+         DKK
+        </option>
+        <option data-model="123 EEK" data-rate="15.5678" data-symbol="EEK" value="EEK">
+         EEK
+        </option>
+        <option data-model="123 €" data-rate="1" data-symbol="€" selected="selected" value="EUR">
+         EUR (€)
+        </option>
+        <option data-model="123 £" data-rate="0.884445" data-symbol="£" value="GBP">
+         GBP (£)
+        </option>
+        <option data-model="123 HKD" data-rate="8.873816" data-symbol="HKD" value="HKD">
+         HKD
+        </option>
+        <option data-model="123 HRK" data-rate="7.435861" data-symbol="HRK" value="HRK">
+         HRK
+        </option>
+        <option data-model="123 HUF" data-rate="322.540043" data-symbol="HUF" value="HUF">
+         HUF
+        </option>
+        <option data-model="123 IDR" data-rate="16487.597449" data-symbol="IDR" value="IDR">
+         IDR
+        </option>
+        <option data-model="123 INR" data-rate="80.029483" data-symbol="INR" value="INR">
+         INR
+        </option>
+        <option data-model="123 ISK" data-rate="140.292122" data-symbol="ISK" value="ISK">
+         ISK
+        </option>
+        <option data-model="123 ¥" data-rate="128.10795637" data-symbol="¥" value="JPY">
+         JPY (¥)
+        </option>
+        <option data-model="123 KRW" data-rate="1285.726435" data-symbol="KRW" value="KRW">
+         KRW
+        </option>
+        <option data-model="123 LTL" data-rate="3.4354" data-symbol="LTL" value="LTL">
+         LTL
+        </option>
+        <option data-model="123 LVL" data-rate="0.6993" data-symbol="LVL" value="LVL">
+         LVL
+        </option>
+        <option data-model="123 MTL" data-rate="0.7303" data-symbol="MTL" value="MTL">
+         MTL
+        </option>
+        <option data-model="123 MYR" data-rate="4.759687" data-symbol="MYR" value="MYR">
+         MYR
+        </option>
+        <option data-model="123 NOK" data-rate="9.746842" data-symbol="NOK" value="NOK">
+         NOK
+        </option>
+        <option data-model="123 NZD" data-rate="1.671627" data-symbol="NZD" value="NZD">
+         NZD
+        </option>
+        <option data-model="123 PHP" data-rate="59.432081" data-symbol="PHP" value="PHP">
+         PHP
+        </option>
+        <option data-model="123 zł" data-rate="4.293262" data-symbol="zł" value="PLN">
+         PLN (zł)
+        </option>
+        <option data-model="123 Lei" data-rate="4.660518" data-symbol="Lei" value="RON">
+         RON (Lei)
+        </option>
+        <option data-model="123 RSD" data-rate="118.361446" data-symbol="RSD" value="RSD">
+         RSD
+        </option>
+        <option data-model="123 p." data-rate="75.081502" data-symbol="p." value="RUB">
+         RUB (p.)
+        </option>
+        <option data-model="123 kr" data-rate="10.310967" data-symbol="kr" value="SEK">
+         SEK (kr)
+        </option>
+        <option data-model="123 SGD" data-rate="1.559173" data-symbol="SGD" value="SGD">
+         SGD
+        </option>
+        <option data-model="123 SKK" data-rate="30.1260" data-symbol="SKK" value="SKK">
+         SKK
+        </option>
+        <option data-model="123 THB" data-rate="37.504748" data-symbol="THB" value="THB">
+         THB
+        </option>
+        <option data-model="123 TRY" data-rate="5.995936" data-symbol="TRY" value="TRY">
+         TRY
+        </option>
+        <option data-model="123 UAH" data-rate="31.482479" data-symbol="UAH" value="UAH">
+         UAH
+        </option>
+        <option data-model="123 $" data-rate="1.133948" data-symbol="$" value="USD">
+         USD ($)
+        </option>
+        <option data-model="123 ZAR" data-rate="15.715442" data-symbol="ZAR" value="ZAR">
+         ZAR
+        </option>
+       </select>
+      </div>
+     </div>
+     <div class="footer--item">
+      <div class="footer--title" id="footer_legacy">
+       Informations legales
+      </div>
+      <ul aria-labelledby="footer_legacy" class="footer--list unstyled">
+       <li>
+        <a data-gtm-ea="CGU" data-gtm-ec="Footer" rel="nofollow">
+         CGU
+        </a>
+       </li>
+       <li>
+        <a data-gtm-ea="CGV" data-gtm-ec="Footer" rel="nofollow">
+         CGV
+        </a>
+       </li>
+       <li>
+        <a data-gtm-ea="CGU-PUB" data-gtm-ec="Footer" rel="nofollow">
+         CGV Pub
+        </a>
+       </li>
+       <li>
+        <a data-gtm-ea="Mentions légales" data-gtm-ec="Footer" rel="nofollow">
+         Mentions légales
+        </a>
+       </li>
+       <li>
+        <a data-gtm-ea="Données personnelles" data-gtm-ec="Footer" rel="nofollow">
+         Données personnelles
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="footer--item">
+      <div class="footer--title" id="footer_about">
+       A propos
+      </div>
+      <ul aria-labelledby="footer_about" class="footer--list unstyled">
+       <li>
+        <a data-gtm-ea="Demande de rappel" data-gtm-ec="Footer" rel="nofollow">
+         Aide &amp; contact
+        </a>
+       </li>
+       <li>
+        <a data-gtm-ea="Qui sommes nous" data-gtm-ec="Footer" rel="nofollow">
+         Qui sommes-nous ?
+        </a>
+       </li>
+       <li>
+        <a data-gtm-ea="Notre charte de validation" data-gtm-ec="Footer" rel="nofollow">
+         Charte de validation
+        </a>
+       </li>
+       <li>
+        <a data-gtm-ea="Aide et contact" data-gtm-ec="Footer" rel="nofollow">
+         Partenaires
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="footer--item">
+      <div class="footer--title" id="footer_oppositesite">
+       Travaux publics
+      </div>
+      <ul aria-labelledby="footer_oppositesite" class="footer--list unstyled">
+       <li>
+        <a data-gtm-ea="tp_fr" data-gtm-ec="Footer" rel="nofollow">
+         MachineryZone
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="footer--item">
+      <div class="footer--title" id="footer_social_network">
+       Suivez-nous
+      </div>
+      <ul aria-labelledby="footer_social_network" class="footer--social unstyled">
+       <li>
+        <a class="btn round--facebook" data-gtm-ea="FB" data-gtm-ec="Footer" el="nofollow" href="" title="FB">
+         <span class="maicons maicons-social-facebook large">
+         </span>
+        </a>
+       </li>
+       <li>
+        <a class="btn round--twitter" data-gtm-ea="Twitter" data-gtm-ec="Footer" href="" rel="nofollow" title="Twitter">
+         <span class="maicons maicons-social-twitter large">
+         </span>
+        </a>
+       </li>
+       <li>
+        <a class="btn round--youtube" data-gtm-ea="YouTube" data-gtm-ec="Footer" href="" rel="nofollow" title="YouTube">
+         <span class="maicons maicons-social-youtube large">
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="footer--copyright">
+     (c) MB Diffusion - Copyrights / Tous droits réservés 2020
+    </div>
+   </div>
+  </footer>
+  <!--F Footer -->
+  <!-- Adunblock -->
+  <div class="mask--white" id="mask">
+  </div>
+  <div class="mask--white" id="load-mask">
+   <div class="spinner flex-container mam item-center-vh">
+    <div class="la-ball-spin-clockwise-fade-rotating la-dark">
+     <div>
+     </div>
+     <div>
+     </div>
+     <div>
+     </div>
+     <div>
+     </div>
+     <div>
+     </div>
+     <div>
+     </div>
+     <div>
+     </div>
+     <div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="modal fade" id="countryChangeModal" role="dialog" tabindex="-1">
+   <div class="modal-dialog">
+    <div class="modal-content modal--contener">
+     <div class="modal--close js-modal-close">
+      <span class="maicons maicons-remove">
+      </span>
+     </div>
+     <div class="modal--title">
+      Changer de pays
+     </div>
+     <div class="modal--content">
+      <ul class="country-list unstyled">
+       <li>
+        <a>
+         France (Français)
+        </a>
+       </li>
+       <li>
+        <a>
+         Italia (Italiano)
+        </a>
+       </li>
+       <li>
+        <a>
+         España (Español)
+        </a>
+       </li>
+       <li>
+        <a>
+         Portugal (Português)
+        </a>
+       </li>
+       <li>
+        <a>
+         România (Română)
+        </a>
+       </li>
+       <li>
+        <a>
+         United Kingdom (English)
+        </a>
+       </li>
+       <li>
+        <a>
+         Deutschland (Deutsch)
+        </a>
+       </li>
+       <li>
+        <a>
+         Nederland (Nederlands)
+        </a>
+       </li>
+       <li>
+        <a>
+         Polska (Polski)
+        </a>
+       </li>
+       <li>
+        <a>
+         Česká republika (Čeština)
+        </a>
+       </li>
+       <li>
+        <a>
+         Norge (Norsk)
+        </a>
+       </li>
+       <li>
+        <a>
+         Magyarország (Magyar)
+        </a>
+       </li>
+       <li>
+        <a>
+         Srbija (Srpski)
+        </a>
+       </li>
+       <li>
+        <a>
+         Türkiye (Türkçe)
+        </a>
+       </li>
+       <li>
+        <a>
+         Lietuva (Lietuvių)
+        </a>
+       </li>
+      </ul>
+      <hr/>
+      <ul class="country-list unstyled">
+       <li>
+        <a>
+         中国 (普通话)
+        </a>
+       </li>
+      </ul>
+      <hr/>
+      <ul class="country-list unstyled">
+       <li>
+        <a>
+         Россия (Русский)
+        </a>
+       </li>
+       <li>
+        <a>
+         Україна (Українська)
+        </a>
+       </li>
+      </ul>
+      <hr/>
+      <ul class="country-list unstyled">
+       <li>
+        <a>
+         USA (English)
+        </a>
+       </li>
+       <li>
+        <a>
+         Canada (English)
+        </a>
+       </li>
+       <li>
+        <a>
+         Brasil (Português)
+        </a>
+       </li>
+       <li>
+        <a>
+         Argentina (Español)
+        </a>
+       </li>
+       <li>
+        <a>
+         México (Español)
+        </a>
+       </li>
+       <li>
+        <a>
+         Ecuador (Español)
+        </a>
+       </li>
+       <li>
+        <a>
+         Perú (Español)
+        </a>
+       </li>
+       <li>
+        <a>
+         Bolivia (Español)
+        </a>
+       </li>
+       <li>
+        <a>
+         Chile (Español)
+        </a>
+       </li>
+       <li>
+        <a>
+         Colombia (Español)
+        </a>
+       </li>
+       <li>
+        <a>
+         Paraguay (Español)
+        </a>
+       </li>
+       <li>
+        <a>
+         Venezuela (Español)
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="res/js/jquery.1.11.3.min.js?6.1.8">
+  </script>
+  <script defer="" src="res/js/router.js?6.1.8">
+  </script>
+  <script defer="" src="res/js/routing.js">
+  </script>
+  <script defer="" src="res/js/translator.min.js?6.1.8">
+  </script>
+  <script defer="" src="res/js/fr-first.js">
+  </script>
+  <script defer="" src="res/js/parsley.config.js?6.1.8">
+  </script>
+  <script defer="" src="res/js/parsley.js?6.1.8">
+  </script>
+  <script defer="" src="res/js/parsley.listener.js?6.1.8">
+  </script>
+  <script defer="" src="res/js/fr.js?6.1.8">
+  </script>
+  <!-- <script src="res/js/app.js?6.1.8" defer></script> -->
+  <script defer="" src="res/js/jquery.validate.pack.js">
+  </script>
+  <script defer="" src="res/js/appcust.js?6.1.8">
+  </script>
+  <script async="" src="res/js/font.js?6.1.8">
+  </script>
+  <script>
+   // On masque le moteur sur le formulaire de login sur mobile
+        if (document.getElementsByClassName('header-top--search')) {
+            document.getElementsByClassName('header-top--search')[0].classList.add('none--large');
+        }
+  </script>
+ </body>
+</html>

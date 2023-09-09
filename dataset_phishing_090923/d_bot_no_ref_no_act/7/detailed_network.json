@@ -1,0 +1,257 @@
+[
+    {
+        "requestId": "5C2FA3AA95CF6E7B39D27BD8C9216439",
+        "loaderId": "5C2FA3AA95CF6E7B39D27BD8C9216439",
+        "documentURL": "http://ylerp0.webwave.dev/",
+        "request": {
+            "url": "http://ylerp0.webwave.dev/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 22102.697208,
+        "wallTime": 1694259963.269171,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "926C1F21227B0ADC407644F5B07D6651",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "5C2FA3AA95CF6E7B39D27BD8C9216439",
+        "loaderId": "5C2FA3AA95CF6E7B39D27BD8C9216439",
+        "documentURL": "https://ylerp0.webwave.dev/",
+        "request": {
+            "url": "https://ylerp0.webwave.dev/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 22102.699088,
+        "wallTime": 1694259963.27111,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://ylerp0.webwave.dev/",
+            "status": 307,
+            "statusText": "Internal Redirect",
+            "headers": {
+                "Cross-Origin-Resource-Policy": "Cross-Origin",
+                "Location": "https://ylerp0.webwave.dev/",
+                "Non-Authoritative-Reason": "HSTS"
+            },
+            "mimeType": "",
+            "connectionReused": false,
+            "connectionId": 0,
+            "remoteIPAddress": "",
+            "remotePort": 0,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 0,
+            "timing": {
+                "requestTime": 22102.698193,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": -1,
+                "dnsEnd": -1,
+                "connectStart": -1,
+                "connectEnd": -1,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 0.049,
+                "sendEnd": 0.049,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 0.049,
+                "receiveHeadersEnd": 0.049
+            },
+            "responseTime": 1694259963270.089,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "926C1F21227B0ADC407644F5B07D6651",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "293568.2",
+        "loaderId": "5C2FA3AA95CF6E7B39D27BD8C9216439",
+        "documentURL": "https://ylerp0.webwave.dev/",
+        "request": {
+            "url": "https://ylerp0.webwave.dev/files/staticContent/5.8.1/websitesResources/unavailableWebsiteModule-2c90ec1d1522815b8cdc826cc432a7ab.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://ylerp0.webwave.dev/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 22103.163536,
+        "wallTime": 1694259963.735445,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ylerp0.webwave.dev/",
+            "lineNumber": 3,
+            "columnNumber": 155
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "926C1F21227B0ADC407644F5B07D6651",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "cache-with-varnish",
+                    "value": "true",
+                    "domain": "ylerp0.webwave.dev",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 22,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "293568.3",
+        "loaderId": "5C2FA3AA95CF6E7B39D27BD8C9216439",
+        "documentURL": "https://ylerp0.webwave.dev/",
+        "request": {
+            "url": "https://ylerp0.webwave.dev/files/staticContent/5.8.1/websitesResources/unavailableWebsiteModule-5e28befe5640809c73b31f54026720b2.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://ylerp0.webwave.dev/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 22103.163979,
+        "wallTime": 1694259963.735873,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ylerp0.webwave.dev/",
+            "lineNumber": 20,
+            "columnNumber": 148
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "926C1F21227B0ADC407644F5B07D6651",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "cache-with-varnish",
+                    "value": "true",
+                    "domain": "ylerp0.webwave.dev",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 22,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "293568.4",
+        "loaderId": "5C2FA3AA95CF6E7B39D27BD8C9216439",
+        "documentURL": "https://ylerp0.webwave.dev/",
+        "request": {
+            "url": "https://ylerp0.webwave.dev/files/assets/webpack/unavailableWebsite.bundle-c29b783e47f7e38a49a9aa9bde023566.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://ylerp0.webwave.dev/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 22103.164215,
+        "wallTime": 1694259963.736098,
+        "initiator": {
+            "type": "parser",
+            "url": "https://ylerp0.webwave.dev/",
+            "lineNumber": 21,
+            "columnNumber": 120
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "926C1F21227B0ADC407644F5B07D6651",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "cache-with-varnish",
+                    "value": "true",
+                    "domain": "ylerp0.webwave.dev",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 22,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

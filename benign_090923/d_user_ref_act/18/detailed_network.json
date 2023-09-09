@@ -1,0 +1,888 @@
+[
+    {
+        "requestId": "D60BFC7E642D3819E5A92D60855690AD",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/",
+        "request": {
+            "url": "https://www.impots.gouv.fr/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5164.706901,
+        "wallTime": 1694243025.278834,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "D60BFC7E642D3819E5A92D60855690AD",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/accueil",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5165.742335,
+        "wallTime": 1694243026.31439,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://www.impots.gouv.fr/",
+            "status": 301,
+            "statusText": "Moved Permanently",
+            "headers": {
+                "Age": "0",
+                "Cache-Control": "must-revalidate",
+                "Connection": "keep-alive",
+                "Content-Length": "382",
+                "Content-Type": "text/html; charset=UTF-8",
+                "Content-language": "fr",
+                "Date": "Sat, 09 Sep 2023 07:03:46 GMT",
+                "From-Origin": "same",
+                "Location": "https://www.impots.gouv.fr/accueil",
+                "Server": "Rapidsite/Apa-1.2.6 FrontPage",
+                "Strict-Transport-Security": "max-age=34560000; includeSubDomains",
+                "X-Content-Type-Options": "nosniff\nnosniff",
+                "X-Drupal-Route-Normalizer": "1",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-UA-Compatible": "IE=edge",
+                "X-XSS-Protection": "1"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 107,
+            "remoteIPAddress": "145.242.11.100",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 558,
+            "timing": {
+                "requestTime": 5164.70815,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.37,
+                "dnsEnd": 1.141,
+                "connectStart": 1.141,
+                "connectEnd": 673.619,
+                "sslStart": 332.863,
+                "sslEnd": 673.61,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 673.756,
+                "sendEnd": 673.997,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 1032.762,
+                "receiveHeadersEnd": 1032.882
+            },
+            "responseTime": 1694243026312.758,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.2",
+                "keyExchange": "ECDHE_RSA",
+                "keyExchangeGroup": "P-256",
+                "cipher": "AES_256_GCM",
+                "certificateId": 0,
+                "subjectName": "www.impots.gouv.fr",
+                "sanList": [
+                    "www.impots.gouv.fr",
+                    "impots.gouv.fr"
+                ],
+                "issuer": "Certigna Services CA",
+                "validFrom": 1676242800,
+                "validTo": 1710543599,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "serverSignatureAlgorithm": 2052,
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Document",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.2",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/css/css_tfKZx-zBPZd9QvdcZeQN-vNJJjI0jHVVsChhgaP9-Uw.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5166.174327,
+        "wallTime": 1694243026.746262,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/accueil",
+            "lineNumber": 22,
+            "columnNumber": 125
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.3",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/css/css_YAPbH2ld6vmphQr8kAVS8lhEE6NS5pWxqQfhjmMyCmE.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5166.174978,
+        "wallTime": 1694243026.746866,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/accueil",
+            "lineNumber": 23,
+            "columnNumber": 121
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.4",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/js/js_W2QsgA6zYkKAgnK3wfFwlGMwyOVCHRmgkboqbAPPWL4.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5166.175347,
+        "wallTime": 1694243026.747265,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/accueil",
+            "lineNumber": 26,
+            "columnNumber": 88
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.5",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/media-images/bouton_avis_site.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5166.175652,
+        "wallTime": 1694243026.74753,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/accueil",
+            "lineNumber": 321,
+            "columnNumber": 120
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.6",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/media/cabcom/images/bev/2023/attractivite/bev_quimieuxquevous.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5166.175739,
+        "wallTime": 1694243026.747607,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/accueil",
+            "lineNumber": 462,
+            "columnNumber": 198
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.7",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/media/cabcom/images/bev/2023/campagne_avis/bev_campagne_avis_ir.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5166.175846,
+        "wallTime": 1694243026.747723,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/accueil",
+            "lineNumber": 471,
+            "columnNumber": 193
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.8",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/media/cabcom/images/bev/2023/vignettes_bannieres/gestpas.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5166.176445,
+        "wallTime": 1694243026.748336,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/accueil",
+            "lineNumber": 500,
+            "columnNumber": 172
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.9",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/media/cabcom/images/bev/2023/vignettes_bannieres/gmbi.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5166.17658,
+        "wallTime": 1694243026.74847,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/accueil",
+            "lineNumber": 509,
+            "columnNumber": 143
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.10",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/media/cabcom/images/bev/2023/vignettes_bannieres/service_public_plus.gif?20230707",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5166.176707,
+        "wallTime": 1694243026.748585,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/accueil",
+            "lineNumber": 518,
+            "columnNumber": 222
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.14",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/menuimage/picto/facebook.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5166.492414,
+        "wallTime": 1694243027.064325,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/accueil",
+            "lineNumber": 1729,
+            "columnNumber": 133
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.15",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/menuimage/picto/twitter.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5166.492578,
+        "wallTime": 1694243027.06445,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/accueil",
+            "lineNumber": 1735,
+            "columnNumber": 131
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.16",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/js/js_SL6RRLMii58tlCSG66Qz8xhIthzWklaiwUxs9_9h_A0.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5166.492663,
+        "wallTime": 1694243027.064536,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/accueil",
+            "lineNumber": 1809,
+            "columnNumber": 92
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.17",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://bmly.impots.gouv.fr/irI424.js?2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5168.338288,
+        "wallTime": 1694243028.91318,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://www.impots.gouv.fr/sites/default/files/js/js_W2QsgA6zYkKAgnK3wfFwlGMwyOVCHRmgkboqbAPPWL4.js",
+                        "lineNumber": 345,
+                        "columnNumber": 17
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://www.impots.gouv.fr/sites/default/files/js/js_W2QsgA6zYkKAgnK3wfFwlGMwyOVCHRmgkboqbAPPWL4.js",
+                        "lineNumber": 347,
+                        "columnNumber": 0
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.48",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/media/cabcom/images/bandeaux/bandeau-toutes-pages.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5168.38835,
+        "wallTime": 1694243028.960257,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/accueil",
+            "lineNumber": 1384,
+            "columnNumber": 2607
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.29",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/themes/custom/pus_inea/dist/fonts/open-sans/regular/OpenSans-Regular.ttf",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.impots.gouv.fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5168.395151,
+        "wallTime": 1694243028.967075,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/sites/default/files/css/css_YAPbH2ld6vmphQr8kAVS8lhEE6NS5pWxqQfhjmMyCmE.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.30",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/themes/custom/pus_inea/dist/fonts/open-sans/semibold/OpenSans-Semibold.ttf",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.impots.gouv.fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5168.395766,
+        "wallTime": 1694243028.967993,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/sites/default/files/css/css_YAPbH2ld6vmphQr8kAVS8lhEE6NS5pWxqQfhjmMyCmE.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.18",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/media-images/bloc_impots_gouv_0.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5168.471708,
+        "wallTime": 1694243029.043611,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/accueil",
+            "lineNumber": 1384,
+            "columnNumber": 2607
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.53",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/picto/ideotag.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5168.488901,
+        "wallTime": 1694243029.06081,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.impots.gouv.fr/sites/default/files/css/css_YAPbH2ld6vmphQr8kAVS8lhEE6NS5pWxqQfhjmMyCmE.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.54",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://www.impots.gouv.fr/sites/default/files/media/cabcom/images/pictos/picto_nouvelle_fenetre.svg?v2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5171.757428,
+        "wallTime": 1694243032.329335,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "52176.55",
+        "loaderId": "D60BFC7E642D3819E5A92D60855690AD",
+        "documentURL": "https://www.impots.gouv.fr/accueil",
+        "request": {
+            "url": "https://bmly.impots.gouv.fr/col629a/-/1911091409?urlp=15_accueil&evariant=2-4&pggrp=accueil&ss=1280x720&sd=24&rf=https%3A%2F%2Fwww.google.com%2F&fra=0&url=https%3A%2F%2Fwww.impots.gouv.fr%2Faccueil&",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 5171.791496,
+        "wallTime": 1694243032.363614,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "18",
+                        "url": "https://bmly.impots.gouv.fr/irI424.js?2",
+                        "lineNumber": 36,
+                        "columnNumber": 154
+                    },
+                    {
+                        "functionName": "gloadjs",
+                        "scriptId": "18",
+                        "url": "https://bmly.impots.gouv.fr/irI424.js?2",
+                        "lineNumber": 36,
+                        "columnNumber": 169
+                    },
+                    {
+                        "functionName": "f$_",
+                        "scriptId": "18",
+                        "url": "https://bmly.impots.gouv.fr/irI424.js?2",
+                        "lineNumber": 56,
+                        "columnNumber": 2
+                    },
+                    {
+                        "functionName": "collector",
+                        "scriptId": "18",
+                        "url": "https://bmly.impots.gouv.fr/irI424.js?2",
+                        "lineNumber": 104,
+                        "columnNumber": 274
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "18",
+                        "url": "https://bmly.impots.gouv.fr/irI424.js?2",
+                        "lineNumber": 133,
+                        "columnNumber": 254
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "04971BE58DDDC090D866E091F1CD4B1D",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

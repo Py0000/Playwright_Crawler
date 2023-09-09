@@ -1,0 +1,4668 @@
+[
+    {
+        "requestId": "D8B03FB8016F8566B1A9CDC503933901",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/",
+        "request": {
+            "url": "https://www.mfa.gov.tr/",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5779.490669,
+        "wallTime": 1694243640.062666,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "D8B03FB8016F8566B1A9CDC503933901",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "method": "GET",
+            "headers": {
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5780.548951,
+        "wallTime": 1694243641.121101,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://www.mfa.gov.tr/",
+            "status": 302,
+            "statusText": "",
+            "headers": {
+                "content-length": "132",
+                "content-type": "text/html; charset=utf-8",
+                "date": "Sat, 09 Sep 2023 07:14:01 GMT",
+                "location": "/default.en.mfa"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 213,
+            "remoteIPAddress": "85.111.63.189",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 354,
+            "timing": {
+                "requestTime": 5779.491589,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.29,
+                "dnsEnd": 2.075,
+                "connectStart": 2.075,
+                "connectEnd": 734.585,
+                "sslStart": 307.147,
+                "sslEnd": 734.578,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 734.803,
+                "sendEnd": 734.96,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 1055.586,
+                "receiveHeadersEnd": 1055.713
+            },
+            "responseTime": 1694243641119.04,
+            "protocol": "h2",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.3",
+                "keyExchange": "",
+                "keyExchangeGroup": "X25519",
+                "cipher": "AES_128_GCM",
+                "certificateId": 0,
+                "subjectName": "www.mfa.gov.tr",
+                "sanList": [
+                    "www.mfa.gov.tr",
+                    "www.disisleri.gov.tr",
+                    "disisleri.gov.tr",
+                    "mfa.gov.tr"
+                ],
+                "issuer": "GlobalSign RSA OV SSL CA 2018",
+                "validFrom": 1679498852,
+                "validTo": 1713799651,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "serverSignatureAlgorithm": 2052,
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Document",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "67312.2",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.283343,
+        "wallTime": 1694243641.85525,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 21,
+            "columnNumber": 64
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.3",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/js/jquery.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.283763,
+        "wallTime": 1694243641.855644,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 24,
+            "columnNumber": 46
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.4",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/leaflet/leaflet.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.284226,
+        "wallTime": 1694243641.856123,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 231,
+            "columnNumber": 69
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.5",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/leaflet/leaflet.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.284467,
+        "wallTime": 1694243641.856342,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 232,
+            "columnNumber": 52
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.6",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/js/knockout-3.5.1.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.284784,
+        "wallTime": 1694243641.856662,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 233,
+            "columnNumber": 54
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.7",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/content/temsilcilikler/harita.geo.json.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.28496,
+        "wallTime": 1694243641.856834,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 234,
+            "columnNumber": 75
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.8",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/content/temsilcilikler/dzones.geo.json.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.285261,
+        "wallTime": 1694243641.857144,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 235,
+            "columnNumber": 75
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.9",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/content/temsilcilikler/temsilcilikler.en.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.285559,
+        "wallTime": 1694243641.857446,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 236,
+            "columnNumber": 77
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.10",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/content/temsilcilikler/turf.min.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.285834,
+        "wallTime": 1694243641.857712,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 238,
+            "columnNumber": 68
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.11",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/content/temsilcilikler/seyahatuyari.geo.json.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.286514,
+        "wallTime": 1694243641.858402,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 239,
+            "columnNumber": 81
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.12",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/content/temsilcilikler/harita.wrapper.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.287488,
+        "wallTime": 1694243641.859391,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 246,
+            "columnNumber": 75
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.13",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/content/temsilcilikler/temsilcilikAra.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.288188,
+        "wallTime": 1694243641.860101,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 247,
+            "columnNumber": 77
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.14",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/img/ataturk-en.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.288706,
+        "wallTime": 1694243641.860598,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 412,
+            "columnNumber": 128
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.15",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/img/cb-tr.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.288852,
+        "wallTime": 1694243641.860726,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 418,
+            "columnNumber": 75
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.16",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/img/motif-8.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.28893,
+        "wallTime": 1694243641.860956,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 432,
+            "columnNumber": 77
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.17",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/img/bakan-hf.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.289202,
+        "wallTime": 1694243641.861076,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 441,
+            "columnNumber": 105
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.27",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/print.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryLow",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.296086,
+        "wallTime": 1694243641.867987,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 23,
+            "columnNumber": 77
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.29",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/Afad-yardim-g%C3%B6rseli-web-en-v1.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.574004,
+        "wallTime": 1694243642.145893,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 667,
+            "columnNumber": 144
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.30",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/adf-22-en.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.57412,
+        "wallTime": 1694243642.145987,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 676,
+            "columnNumber": 98
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.31",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/features-vignette-adf-en.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.574184,
+        "wallTime": 1694243642.14605,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 747,
+            "columnNumber": 92
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.32",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/features-vignette-uyusmazlik.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.574245,
+        "wallTime": 1694243642.146112,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 753,
+            "columnNumber": 94
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.33",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/e-visa-logo-en.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.574305,
+        "wallTime": 1694243642.146171,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 760,
+            "columnNumber": 82
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.34",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/goturkey.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.574362,
+        "wallTime": 1694243642.146227,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 766,
+            "columnNumber": 76
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.35",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/dportal_345_162.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.57445,
+        "wallTime": 1694243642.146317,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 773,
+            "columnNumber": 83
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.36",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/features-vignette-gobeklitepe.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.574513,
+        "wallTime": 1694243642.146379,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 782,
+            "columnNumber": 97
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.37",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/features-vignette-1915-olaylari.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.57457,
+        "wallTime": 1694243642.14644,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 791,
+            "columnNumber": 99
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.38",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/features-vignette-ab-baskanligi.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.574643,
+        "wallTime": 1694243642.146511,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 798,
+            "columnNumber": 99
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.39",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/features-vignette-turkak.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.574703,
+        "wallTime": 1694243642.146568,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 805,
+            "columnNumber": 92
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dc499a70d4537dcafa172871ec0d36449021112cddfde3773f0ac98fad2c8602191b3c88a227e2f90a185db6259c87615",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.40",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/features-vignette-ulusal-ajans.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.574761,
+        "wallTime": 1694243642.146627,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 811,
+            "columnNumber": 98
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dc499a70d4537dcafa172871ec0d36449021112cddfde3773f0ac98fad2c8602191b3c88a227e2f90a185db6259c87615",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.41",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/features-vignette-g-20.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.574836,
+        "wallTime": 1694243642.146702,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 824,
+            "columnNumber": 90
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dc499a70d4537dcafa172871ec0d36449021112cddfde3773f0ac98fad2c8602191b3c88a227e2f90a185db6259c87615",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.43",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/features-vignette-turkey.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.574914,
+        "wallTime": 1694243642.146811,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 837,
+            "columnNumber": 91
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dc499a70d4537dcafa172871ec0d36449021112cddfde3773f0ac98fad2c8602191b3c88a227e2f90a185db6259c87615",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.44",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/features-vignette-ssb.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.575029,
+        "wallTime": 1694243642.1469,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 843,
+            "columnNumber": 87
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dc499a70d4537dcafa172871ec0d36449021112cddfde3773f0ac98fad2c8602191b3c88a227e2f90a185db6259c87615",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.46",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/features-vignette-arabuluculuk.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.575128,
+        "wallTime": 1694243642.146994,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 857,
+            "columnNumber": 95
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dc499a70d4537dcafa172871ec0d36449021112cddfde3773f0ac98fad2c8602191b3c88a227e2f90a185db6259c87615",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.48",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/gfx/features-vignette-medeniyet.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.575206,
+        "wallTime": 1694243642.147072,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 873,
+            "columnNumber": 92
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dc499a70d4537dcafa172871ec0d36449021112cddfde3773f0ac98fad2c8602191b3c88a227e2f90a185db6259c87615",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.49",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/js/chroma.min.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.575281,
+        "wallTime": 1694243642.147147,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 887,
+            "columnNumber": 54
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dc499a70d4537dcafa172871ec0d36449021112cddfde3773f0ac98fad2c8602191b3c88a227e2f90a185db6259c87615",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.50",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/js/bootstrap.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.575356,
+        "wallTime": 1694243642.147222,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 1121,
+            "columnNumber": 53
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dc499a70d4537dcafa172871ec0d36449021112cddfde3773f0ac98fad2c8602191b3c88a227e2f90a185db6259c87615",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.51",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/js/addons.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.575411,
+        "wallTime": 1694243642.14728,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 1122,
+            "columnNumber": 50
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dc499a70d4537dcafa172871ec0d36449021112cddfde3773f0ac98fad2c8602191b3c88a227e2f90a185db6259c87615",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.52",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/js/ux.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.57547,
+        "wallTime": 1694243642.147409,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 1123,
+            "columnNumber": 46
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dc499a70d4537dcafa172871ec0d36449021112cddfde3773f0ac98fad2c8602191b3c88a227e2f90a185db6259c87615",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.53",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/js/fancybox/jquery.fancybox.css?v=2.1.7",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.575602,
+        "wallTime": 1694243642.147472,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 1127,
+            "columnNumber": 114
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dc499a70d4537dcafa172871ec0d36449021112cddfde3773f0ac98fad2c8602191b3c88a227e2f90a185db6259c87615",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.54",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/js/fancybox/jquery.fancybox.pack.js?v=2.1.7",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5781.575664,
+        "wallTime": 1694243642.147531,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 1128,
+            "columnNumber": 92
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dc499a70d4537dcafa172871ec0d36449021112cddfde3773f0ac98fad2c8602191b3c88a227e2f90a185db6259c87615",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.55",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 5781.576375,
+        "wallTime": 1694243642.148262,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 1167,
+            "columnNumber": 79
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dc499a70d4537dcafa172871ec0d36449021112cddfde3773f0ac98fad2c8602191b3c88a227e2f90a185db6259c87615",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.56",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/site_media/assets/css/ui.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5782.547486,
+        "wallTime": 1694243643.119516,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui.css",
+            "lineNumber": 0,
+            "columnNumber": 0
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.119",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/img/logo.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/site_media/assets/css/ui.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5782.940941,
+        "wallTime": 1694243643.512844,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.101",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/fonts/MyriadPro-Regular.woff",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488",
+                "Origin": "https://www.mfa.gov.tr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5782.942157,
+        "wallTime": 1694243643.514056,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.103",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/fonts/MyriadPro-Bold.woff",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488",
+                "Origin": "https://www.mfa.gov.tr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5782.943805,
+        "wallTime": 1694243643.515733,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.59",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/fonts/RobotoSlab-Regular.woff",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488",
+                "Origin": "https://www.mfa.gov.tr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5782.944169,
+        "wallTime": 1694243643.516076,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.95",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/fonts/SourceSansPro-Regular.woff",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488",
+                "Origin": "https://www.mfa.gov.tr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5782.944749,
+        "wallTime": 1694243643.516646,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.85",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/fonts/SourceSansPro-Bold.woff",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488",
+                "Origin": "https://www.mfa.gov.tr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5782.945548,
+        "wallTime": 1694243643.517452,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.63",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/fonts/RobotoSlab-Light.woff",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488",
+                "Origin": "https://www.mfa.gov.tr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5783.051332,
+        "wallTime": 1694243643.623259,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.89",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/fonts/SourceSansPro-Light.woff",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488",
+                "Origin": "https://www.mfa.gov.tr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5783.052301,
+        "wallTime": 1694243643.624332,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.93",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/fonts/SourceSansPro-It.woff",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488",
+                "Origin": "https://www.mfa.gov.tr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5783.052647,
+        "wallTime": 1694243643.624524,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.114",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/fonts/fa-solid-900.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488",
+                "Origin": "https://www.mfa.gov.tr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5783.052977,
+        "wallTime": 1694243643.624863,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.108",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/fonts/fa-brands-400.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488",
+                "Origin": "https://www.mfa.gov.tr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5783.053758,
+        "wallTime": 1694243643.626049,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402dbc6092f7fd06a03c1529921e2358046deeecdcb9cf0db3519e7988f044c946530dfd27b4359f3831367f9d50b5fcb2624fd23b37da7a4374f8dc01aebbbc4794",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.111",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/fonts/fa-regular-400.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488",
+                "Origin": "https://www.mfa.gov.tr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5783.207239,
+        "wallTime": 1694243643.779196,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui-blessed1.css?z=1581417708488"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402d99f4bf6146f324952c81f7b2e65e8853a61418eb04be34177ae11dbb3880bf511958816ba1aee2197c0f9a6520975a484c3073bfed7aa150cfb73274712f55ac",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.117",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/fonts/slick.woff",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/site_media/assets/css/ui.css",
+                "Origin": "https://www.mfa.gov.tr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5783.41983,
+        "wallTime": 1694243643.99175,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402daa8c8d74f20b6c9a2a2999e374092e52133b24512241fa1deab30a1e74732b345f085836e0fdf8e3b8b0fc6076b58665fc18496b529cad0ff32d3a371469f595",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.167",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/site_media/assets/img/ajax-loader.gif",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/site_media/assets/css/ui.css",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5783.421875,
+        "wallTime": 1694243643.993769,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/site_media/assets/css/ui.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402daa8c8d74f20b6c9a2a2999e374092e52133b24512241fa1deab30a1e74732b345f085836e0fdf8e3b8b0fc6076b58665fc18496b529cad0ff32d3a371469f595",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.168",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/images/enformasyon/hotspot/sayin-bakanimizin-abd-musluman-kuruluslar-konseyi-heyetini-kabulu-7-9-2023.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5783.48659,
+        "wallTime": 1694243644.058516,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 1175,
+            "columnNumber": 1
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402daa8c8d74f20b6c9a2a2999e374092e52133b24512241fa1deab30a1e74732b345f085836e0fdf8e3b8b0fc6076b58665fc18496b529cad0ff32d3a371469f595",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.170",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/images/enformasyon/hotspot/sayin-bakanimizin-cezayir-disisleri-ve-yurtdisindaki-ulusal-topluluklar-bakani-ile-gorusmesi-7-9-2023.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5783.487098,
+        "wallTime": 1694243644.059,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 1175,
+            "columnNumber": 1
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402daa8c8d74f20b6c9a2a2999e374092e52133b24512241fa1deab30a1e74732b345f085836e0fdf8e3b8b0fc6076b58665fc18496b529cad0ff32d3a371469f595",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.171",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.mfa.gov.tr/images/enformasyon/hotspot/sayin-bakanimizin-kosova-bolgesel-kalkinma-bakani-ve-kdtp-genel-baskani-fikrim-damka-ile-gorusmesi-6-9-2023.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/default.en.mfa",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 5783.487347,
+        "wallTime": 1694243644.059226,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 1175,
+            "columnNumber": 1
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402daa8c8d74f20b6c9a2a2999e374092e52133b24512241fa1deab30a1e74732b345f085836e0fdf8e3b8b0fc6076b58665fc18496b529cad0ff32d3a371469f595",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 148,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.172",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-B8457D9385&gtm=45je3960&_p=349589978&_gaz=1&cid=1882392289.1694243645&ul=en-gb&sr=1280x720&uaa=&uab=&uafvl=&uamb=0&uam=&uap=&uapv=&uaw=0&_s=1&sid=1694243644&sct=1&seg=0&dl=https%3A%2F%2Fwww.mfa.gov.tr%2Fdefault.en.mfa&dt=Republic%20of%20T%C3%BCrkiye%20Ministry%20of%20Foreign%20Affairs&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": ""
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "VeryLow",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 5784.246729,
+        "wallTime": 1694243644.820123,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Vc",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 145,
+                        "columnNumber": 45
+                    },
+                    {
+                        "functionName": "LE",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 469,
+                        "columnNumber": 308
+                    },
+                    {
+                        "functionName": "ME",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 465,
+                        "columnNumber": 192
+                    },
+                    {
+                        "functionName": "OE.C",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 468,
+                        "columnNumber": 59
+                    },
+                    {
+                        "functionName": "OE.add",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 468,
+                        "columnNumber": 398
+                    },
+                    {
+                        "functionName": "aa.dj",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 489,
+                        "columnNumber": 26
+                    },
+                    {
+                        "functionName": "aa.jm",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 488,
+                        "columnNumber": 484
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 472,
+                        "columnNumber": 493
+                    },
+                    {
+                        "functionName": "Pj",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 262,
+                        "columnNumber": 233
+                    },
+                    {
+                        "functionName": "bk",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 264,
+                        "columnNumber": 346
+                    },
+                    {
+                        "functionName": "k",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 472,
+                        "columnNumber": 477
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 306,
+                        "columnNumber": 167
+                    },
+                    {
+                        "functionName": "wn",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 306,
+                        "columnNumber": 198
+                    },
+                    {
+                        "functionName": "aa.im",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 473,
+                        "columnNumber": 12
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 491,
+                        "columnNumber": 942
+                    },
+                    {
+                        "functionName": "ew",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 380,
+                        "columnNumber": 297
+                    },
+                    {
+                        "functionName": "dw.flush",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 383,
+                        "columnNumber": 94
+                    },
+                    {
+                        "functionName": "dw.push",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 381,
+                        "columnNumber": 206
+                    },
+                    {
+                        "functionName": "config",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 389,
+                        "columnNumber": 496
+                    },
+                    {
+                        "functionName": "ex",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 401,
+                        "columnNumber": 471
+                    },
+                    {
+                        "functionName": "gx",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 403,
+                        "columnNumber": 42
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Ping",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_ga_B8457D9385",
+                    "value": "GS1.1.1694243644.1.0.1694243644.60.0.0",
+                    "domain": ".mfa.gov.tr",
+                    "path": "/",
+                    "expires": 1728803644.815408,
+                    "size": 52,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga",
+                    "value": "GA1.1.1882392289.1694243645",
+                    "domain": ".mfa.gov.tr",
+                    "path": "/",
+                    "expires": 1728803644.816728,
+                    "size": 30,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402d939fee04314b355d9250698f8800bf94c10c3cf2338fb5483e17ed24de3440ee1c1357dc0ddf779c7ea3c9971cc6e338",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.173",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-B8457D9385&cid=1882392289.1694243645&gtm=45je3960&aip=1",
+            "method": "POST",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "hasPostData": true,
+            "postDataEntries": [
+                {
+                    "bytes": ""
+                }
+            ],
+            "mixedContentType": "none",
+            "initialPriority": "VeryLow",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 5784.249604,
+        "wallTime": 1694243644.821689,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Vc",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 145,
+                        "columnNumber": 45
+                    },
+                    {
+                        "functionName": "LE",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 469,
+                        "columnNumber": 308
+                    },
+                    {
+                        "functionName": "NE",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 466,
+                        "columnNumber": 90
+                    },
+                    {
+                        "functionName": "OE.C",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 468,
+                        "columnNumber": 305
+                    },
+                    {
+                        "functionName": "OE.add",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 468,
+                        "columnNumber": 398
+                    },
+                    {
+                        "functionName": "aa.dj",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 489,
+                        "columnNumber": 26
+                    },
+                    {
+                        "functionName": "aa.jm",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 488,
+                        "columnNumber": 484
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 472,
+                        "columnNumber": 493
+                    },
+                    {
+                        "functionName": "Pj",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 262,
+                        "columnNumber": 233
+                    },
+                    {
+                        "functionName": "bk",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 264,
+                        "columnNumber": 346
+                    },
+                    {
+                        "functionName": "k",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 472,
+                        "columnNumber": 477
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 306,
+                        "columnNumber": 167
+                    },
+                    {
+                        "functionName": "wn",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 306,
+                        "columnNumber": 198
+                    },
+                    {
+                        "functionName": "aa.im",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 473,
+                        "columnNumber": 12
+                    },
+                    {
+                        "functionName": "c",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 491,
+                        "columnNumber": 942
+                    },
+                    {
+                        "functionName": "ew",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 380,
+                        "columnNumber": 297
+                    },
+                    {
+                        "functionName": "dw.flush",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 383,
+                        "columnNumber": 94
+                    },
+                    {
+                        "functionName": "dw.push",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 381,
+                        "columnNumber": 206
+                    },
+                    {
+                        "functionName": "config",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 389,
+                        "columnNumber": 496
+                    },
+                    {
+                        "functionName": "ex",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 401,
+                        "columnNumber": 471
+                    },
+                    {
+                        "functionName": "gx",
+                        "scriptId": "44",
+                        "url": "https://www.googletagmanager.com/gtag/js?id=G-B8457D9385",
+                        "lineNumber": 403,
+                        "columnNumber": 42
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Ping",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_ga_B8457D9385",
+                    "value": "GS1.1.1694243644.1.0.1694243644.60.0.0",
+                    "domain": ".mfa.gov.tr",
+                    "path": "/",
+                    "expires": 1728803644.815408,
+                    "size": 52,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga",
+                    "value": "GA1.1.1882392289.1694243645",
+                    "domain": ".mfa.gov.tr",
+                    "path": "/",
+                    "expires": 1728803644.816728,
+                    "size": 30,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402d939fee04314b355d9250698f8800bf94c10c3cf2338fb5483e17ed24de3440ee1c1357dc0ddf779c7ea3c9971cc6e338",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    },
+    {
+        "requestId": "67312.174",
+        "loaderId": "D8B03FB8016F8566B1A9CDC503933901",
+        "documentURL": "https://www.mfa.gov.tr/default.en.mfa",
+        "request": {
+            "url": "https://www.google.com.sg/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-B8457D9385&cid=1882392289.1694243645&gtm=45je3960&aip=1&z=629588866",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.mfa.gov.tr/",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 5784.25091,
+        "wallTime": 1694243644.822817,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.mfa.gov.tr/default.en.mfa",
+            "lineNumber": 1175,
+            "columnNumber": 1
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "91B63A39C6055BE4047D289B7AF9484B",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": [
+                {
+                    "name": "_ga_B8457D9385",
+                    "value": "GS1.1.1694243644.1.0.1694243644.60.0.0",
+                    "domain": ".mfa.gov.tr",
+                    "path": "/",
+                    "expires": 1728803644.815408,
+                    "size": 52,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "_ga",
+                    "value": "GA1.1.1882392289.1694243645",
+                    "domain": ".mfa.gov.tr",
+                    "path": "/",
+                    "expires": 1728803644.816728,
+                    "size": 30,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": false,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "TS016fdcf6",
+                    "value": "0102bb402d939fee04314b355d9250698f8800bf94c10c3cf2338fb5483e17ed24de3440ee1c1357dc0ddf779c7ea3c9971cc6e338",
+                    "domain": ".www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 116,
+                    "httpOnly": false,
+                    "secure": false,
+                    "session": true,
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                },
+                {
+                    "name": "ASP.NET_SessionId",
+                    "value": "3hvmwuaycvvczgbme5maurty",
+                    "domain": "www.mfa.gov.tr",
+                    "path": "/",
+                    "expires": -1,
+                    "size": 41,
+                    "httpOnly": true,
+                    "secure": false,
+                    "session": true,
+                    "sameSite": "Lax",
+                    "priority": "Medium",
+                    "sameParty": false,
+                    "sourceScheme": "Secure",
+                    "sourcePort": 443
+                }
+            ]
+        }
+    }
+]

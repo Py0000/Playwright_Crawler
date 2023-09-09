@@ -1,0 +1,1909 @@
+[
+    {
+        "requestId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/",
+        "request": {
+            "url": "https://www.orange.fr/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11424.908725,
+        "wallTime": 1694249285.480697,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://www.orange.fr/portail",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11425.978829,
+        "wallTime": 1694249286.550914,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://www.orange.fr/",
+            "status": 301,
+            "statusText": "Moved Permanently",
+            "headers": {
+                "Cache-Control": "no-cache, max-age=0, no-store, private",
+                "Content-Length": "237",
+                "Content-Type": "text/html; charset=iso-8859-1",
+                "Date": "Sat, 09 Sep 2023 08:48:06 GMT",
+                "Location": "https://www.orange.fr/portail",
+                "Server": "Apache",
+                "X-Vcap-Request-Id": "d41a04ed-9c2b-4368-6571-46b5a15f940a"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 357,
+            "remoteIPAddress": "193.252.133.97",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 306,
+            "timing": {
+                "requestTime": 11424.909829,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.195,
+                "dnsEnd": 1.52,
+                "connectStart": 1.52,
+                "connectEnd": 703.004,
+                "sslStart": 345.848,
+                "sslEnd": 702.997,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 703.145,
+                "sendEnd": 703.384,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 1067.082,
+                "receiveHeadersEnd": 1067.158
+            },
+            "responseTime": 1694249286548.757,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.3",
+                "keyExchange": "",
+                "keyExchangeGroup": "X25519",
+                "cipher": "AES_128_GCM",
+                "certificateId": 0,
+                "subjectName": "www.orange.fr",
+                "sanList": [
+                    "www.orange.fr",
+                    "w.orange.fr",
+                    "ww.orange.fr",
+                    "wwww.orange.fr"
+                ],
+                "issuer": "DigiCert TLS RSA SHA256 2020 CA1",
+                "validFrom": 1664323200,
+                "validTo": 1697587199,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "serverSignatureAlgorithm": 2052,
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Document",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.2",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://cdn.woopic.com/18d8339538654b1dbf96a30e92745731/css/hp.a7417cfb2455aff6ab1e.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11426.702742,
+        "wallTime": 1694249287.274641,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 34,
+            "columnNumber": 177
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.3",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://gp.cdn.woopic.com/libs/tl2lF5xW/common/css/common.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11426.70317,
+        "wallTime": 1694249287.275063,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 34,
+            "columnNumber": 1608
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.5",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://gp.cdn.woopic.com/libs/tl2lF5xW/common/css/o_onei_responsive.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11426.703484,
+        "wallTime": 1694249287.275376,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 34,
+            "columnNumber": 1873
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.6",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://sdk.privacy-center.org/sdk/a55f6b821dd824b653f96b71c35c0f5c3394b0bf/modern/sdk.a55f6b821dd824b653f96b71c35c0f5c3394b0bf.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isLinkPreload": true,
+            "isSameSite": false
+        },
+        "timestamp": 11426.70368,
+        "wallTime": 1694249287.275558,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 34,
+            "columnNumber": 2043
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.7",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://cdn.woopic.com/v1/AUTH_840aa06aeef64c848738c7997ff75b62/messaging-web/style_orange.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11426.703946,
+        "wallTime": 1694249287.275826,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 34,
+            "columnNumber": 2184
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.14",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1211%2Favatars%2F0.png?format=80x80",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11426.761034,
+        "wallTime": 1694249287.33294,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 40,
+            "columnNumber": 29605
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.15",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://c.woopic.com/logo-orange.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11426.761806,
+        "wallTime": 1694249287.333707,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 40,
+            "columnNumber": 29605
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.16",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://gp.cdn.woopic.com/zema/1.0.0/assets/VisuelMegaMenuIetM.4b12cc3626.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11427.058596,
+        "wallTime": 1694249287.630538,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 40,
+            "columnNumber": 96810
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.17",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://gp.cdn.woopic.com/zema/1.0.0/assets/telesurveillance.2ff3839756.jpg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11427.059655,
+        "wallTime": 1694249287.631569,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 40,
+            "columnNumber": 96810
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.18",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://gp.cdn.woopic.com/zema/1.0.0/assets/Image-megamenu-banque-300123.c60297e301.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11427.059951,
+        "wallTime": 1694249287.631845,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 40,
+            "columnNumber": 96810
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.19",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://c.woopic.com/small-logo-orange.svg",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11427.060251,
+        "wallTime": 1694249287.632144,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 40,
+            "columnNumber": 96810
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.23",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1154%2Fp/gp/20230908-15-59-38/1200x475_BTS_Honor_90_SG-6021.jpg?crop=960,380,0,center&saveas=webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11427.064426,
+        "wallTime": 1694249287.636337,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 49,
+            "columnNumber": 31583
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.24",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1154%2Fp/gp/20230908-15-59-38/1200x475_Fairphone5_ACQ_SG-5931.jpg?crop=960,380,0,center&saveas=webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11427.064916,
+        "wallTime": 1694249287.636903,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 49,
+            "columnNumber": 31583
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.25",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1154%2Fp/gp/20230908-15-59-38/1200x475_Live_Shopping_Pliables_Replay_SG-6169.jpg?crop=960,380,0,center&saveas=webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11427.065718,
+        "wallTime": 1694249287.637609,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 49,
+            "columnNumber": 31583
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.33",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-Equipments%2F44c%2F864%2F7b45d5682165eaaa6f518b5a3d%2F44c8647b45d5682165eaaa6f518b5a3d.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11427.259886,
+        "wallTime": 1694249287.831807,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 65,
+            "columnNumber": 16158
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.34",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-Equipments%2Fffe%2F526%2Fe101a67928de43924926f7f7d7%2Fffe526e101a67928de43924926f7f7d7.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11427.260851,
+        "wallTime": 1694249287.833779,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 65,
+            "columnNumber": 16158
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.35",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-Equipments%2F13a%2F57e%2F1ad372380d5e787fb579874753%2F13a57e1ad372380d5e787fb579874753.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11427.26231,
+        "wallTime": 1694249287.834225,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 65,
+            "columnNumber": 16158
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.36",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-Equipments%2Fc68%2F733%2F3b8e083cbe04c78b4833121b7a%2Fc687333b8e083cbe04c78b4833121b7a.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11427.262713,
+        "wallTime": 1694249287.834629,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 65,
+            "columnNumber": 16158
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "10E0175177EABF04868A0C155230C0C2",
+        "loaderId": "10E0175177EABF04868A0C155230C0C2",
+        "documentURL": "https://consent.orange.fr/global-cookies/a55f6b821dd824b653f96b71c35c0f5c3394b0bf/global-cookies.a55f6b821dd824b653f96b71c35c0f5c3394b0bf.html",
+        "request": {
+            "url": "https://consent.orange.fr/global-cookies/a55f6b821dd824b653f96b71c35c0f5c3394b0bf/global-cookies.a55f6b821dd824b653f96b71c35c0f5c3394b0bf.html",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.orange.fr/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 11427.447682,
+        "wallTime": 1694249288.019825,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 307
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "8461827E19935D96BCB1E2BA9C8F7DA3",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "20B228CF10AA849FAFAFF98B8EA4D6D0",
+        "loaderId": "20B228CF10AA849FAFAFF98B8EA4D6D0",
+        "documentURL": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.20.0.0-release_5080/storage.secure.min.html?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+        "request": {
+            "url": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.20.0.0-release_5080/storage.secure.min.html?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.orange.fr/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 11427.455133,
+        "wallTime": 1694249288.027239,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 978
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "F5587BD568DB4A5C09FD4A190FA2FC6F",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.69",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://cdn.woopic.com/18d8339538654b1dbf96a30e92745731/images/logo-paris-2024-orange.1f33dcc3be8831f70242.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11427.4505,
+        "wallTime": 1694249288.022404,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.70",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://statsv6.woopic.com/z.gif?v4=307&v6=218&ds=315",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11427.450761,
+        "wallTime": 1694249288.022659,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.71",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://c.woopic.com/z.gif?APP=elco&access=hpdesktop&loaderLoaded=1210&rendered=1868&end=1868",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11427.45096,
+        "wallTime": 1694249288.022836,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.73",
+        "loaderId": "20B228CF10AA849FAFAFF98B8EA4D6D0",
+        "documentURL": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.20.0.0-release_5080/storage.secure.min.html?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+        "request": {
+            "url": "https://accdn.lpsnmedia.net/api/account/31127979/configuration/domainprotection/refererrestrictions?cb=lpCb19768x45901",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11427.532636,
+        "wallTime": 1694249288.106012,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "h",
+                        "scriptId": "15",
+                        "url": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.20.0.0-release_5080/storage.secure.min.html?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+                        "lineNumber": 0,
+                        "columnNumber": 12457
+                    },
+                    {
+                        "functionName": "d",
+                        "scriptId": "15",
+                        "url": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.20.0.0-release_5080/storage.secure.min.html?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+                        "lineNumber": 0,
+                        "columnNumber": 11415
+                    },
+                    {
+                        "functionName": "o",
+                        "scriptId": "15",
+                        "url": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.20.0.0-release_5080/storage.secure.min.html?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+                        "lineNumber": 0,
+                        "columnNumber": 9161
+                    },
+                    {
+                        "functionName": "h",
+                        "scriptId": "15",
+                        "url": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.20.0.0-release_5080/storage.secure.min.html?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+                        "lineNumber": 0,
+                        "columnNumber": 30682
+                    },
+                    {
+                        "functionName": "u",
+                        "scriptId": "15",
+                        "url": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.20.0.0-release_5080/storage.secure.min.html?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+                        "lineNumber": 0,
+                        "columnNumber": 30067
+                    },
+                    {
+                        "functionName": "window.lpTag.DomainResolver",
+                        "scriptId": "15",
+                        "url": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.20.0.0-release_5080/storage.secure.min.html?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+                        "lineNumber": 0,
+                        "columnNumber": 31592
+                    },
+                    {
+                        "functionName": "u",
+                        "scriptId": "15",
+                        "url": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.20.0.0-release_5080/storage.secure.min.html?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+                        "lineNumber": 0,
+                        "columnNumber": 26080
+                    },
+                    {
+                        "functionName": "window.lpTag.DataAnalyzer",
+                        "scriptId": "15",
+                        "url": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.20.0.0-release_5080/storage.secure.min.html?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+                        "lineNumber": 0,
+                        "columnNumber": 26866
+                    },
+                    {
+                        "functionName": "t",
+                        "scriptId": "15",
+                        "url": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.20.0.0-release_5080/storage.secure.min.html?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+                        "lineNumber": 1,
+                        "columnNumber": 5676
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "15",
+                        "url": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.20.0.0-release_5080/storage.secure.min.html?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+                        "lineNumber": 1,
+                        "columnNumber": 7247
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "15",
+                        "url": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.20.0.0-release_5080/storage.secure.min.html?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+                        "lineNumber": 1,
+                        "columnNumber": 7278
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "F5587BD568DB4A5C09FD4A190FA2FC6F",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.80",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://gp.cdn.woopic.com/fonts/HelvNeue75_W1G.woff2?20201014",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.orange.fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11429.739527,
+        "wallTime": 1694249290.311434,
+        "initiator": {
+            "type": "parser",
+            "url": "https://gp.cdn.woopic.com/libs/tl2lF5xW/common/css/common.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.86",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "data:image/svg+xml;charset=utf8,%3Csvg version=%271.1%27 xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27 fill=%27rgb%28255, 255, 255%29%27%3E%3Cpath d=%27M 12,26 16,26 16,10 12,10 z M 21,26 25,26 25,10 21,10 z%27%3E%3C/path%3E%3C/svg%3E",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11429.794959,
+        "wallTime": 1694249290.366871,
+        "initiator": {
+            "type": "parser",
+            "url": "https://cdn.woopic.com/18d8339538654b1dbf96a30e92745731/css/hp.a7417cfb2455aff6ab1e.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.77",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://gp.cdn.woopic.com/fonts/HelvNeue55_W1G.woff2?20201014",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.orange.fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11429.796303,
+        "wallTime": 1694249290.368256,
+        "initiator": {
+            "type": "parser",
+            "url": "https://gp.cdn.woopic.com/libs/tl2lF5xW/common/css/common.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.83",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://gp.cdn.woopic.com/fonts/o-icomoon.woff2?20201014",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.orange.fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11429.844247,
+        "wallTime": 1694249290.416167,
+        "initiator": {
+            "type": "parser",
+            "url": "https://gp.cdn.woopic.com/libs/tl2lF5xW/common/css/o_onei_responsive.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.75",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://cdn.woopic.com/18d8339538654b1dbf96a30e92745731/fonts/icon-orange.32b446d2a138b2945f57.woff2",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "Origin": "https://www.orange.fr",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11429.847662,
+        "wallTime": 1694249290.419578,
+        "initiator": {
+            "type": "parser",
+            "url": "https://cdn.woopic.com/18d8339538654b1dbf96a30e92745731/css/hp.a7417cfb2455aff6ab1e.css"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Font",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.30",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ParcoursMarchants%2Ff61%2F22a%2F259eb1b503c62ce24442b86c2a%2Ff6122a259eb1b503c62ce24442b86c2a.png?saveas=webp&format=405x270",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11430.006581,
+        "wallTime": 1694249290.578485,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.31",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ParcoursMarchants%2Ff62%2Faf6%2F881af3d274f8c476a554bc2263%2Ff62af6881af3d274f8c476a554bc2263.jpg?saveas=webp&format=405x270",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11430.006951,
+        "wallTime": 1694249290.578868,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.32",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-ParcoursMarchants%2F58b%2Fa11%2F67fd97e1c047765e8c441172bf%2F58ba1167fd97e1c047765e8c441172bf.png?saveas=webp&format=405x270",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11430.007194,
+        "wallTime": 1694249290.579068,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.37",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-RassuranceEcommerce%2Fb23%2F00d%2F2cf7139ac8fd7641281ebe4398%2Fb2300d2cf7139ac8fd7641281ebe4398.png?format=x90",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11430.007633,
+        "wallTime": 1694249290.579692,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.38",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-RassuranceEcommerce%2Fe33%2F1e6%2F14f162f9fe171da8a43c4424b3%2Fe331e614f162f9fe171da8a43c4424b3.png?format=x90",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11430.008074,
+        "wallTime": 1694249290.579955,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.39",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-RassuranceEcommerce%2F9bd%2F586%2F8079be98713353b4de24a7af23%2F9bd5868079be98713353b4de24a7af23.png?format=x90",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11430.008249,
+        "wallTime": 1694249290.580134,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.40",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-RassuranceEcommerce%2F6ad%2F3e3%2Ff462f6523f4fe573265c0ba097%2F6ad3e3f462f6523f4fe573265c0ba097.png?format=x90",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11430.008844,
+        "wallTime": 1694249290.580724,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.41",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-RassuranceEcommerce%2Fa72%2Fb85%2F7056c5d09d28252341aa8b36cd%2Fa72b857056c5d09d28252341aa8b36cd.png?format=x90",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11430.009121,
+        "wallTime": 1694249290.581003,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.42",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-EditoTv%2Fef6%2F3db%2F007b8ed67e69284e720c36b321%2Fef63db007b8ed67e69284e720c36b321.png?format=1440x450&crop=1440,450,0,0&saveas=webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11430.009334,
+        "wallTime": 1694249290.581221,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.43",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-RassuranceService%2F0fc%2F469%2F5b1725d3c53ed018d9d4e7561f%2F0fc4695b1725d3c53ed018d9d4e7561f.png?format=630x420&saveas=webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11430.009491,
+        "wallTime": 1694249290.581364,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.44",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1127%2Fone-i%2FONE-I-RassuranceService%2Ff00%2Fa5a%2F3907cd1854e8e017514f147fe1%2Ff00a5a3907cd1854e8e017514f147fe1.jpg?format=630x420&saveas=webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11430.009728,
+        "wallTime": 1694249290.581605,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.45",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://proxymedia.woopic.com/api/v1/images/1154%2Fp/gp/20230908-15-59-38/1440x450_Coup_De_Pouce_Livebox.jpg?format=1440x450&crop=1440,450,0,0&saveas=webp",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 11430.0099,
+        "wallTime": 1694249290.581773,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.70",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://r.orange.fr/r/Oerreur_403",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 11432.554284,
+        "wallTime": 1694249293.126248,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://statsv6.woopic.com/z.gif?v4=307&v6=218&ds=315",
+            "status": 302,
+            "statusText": "Moved Temporarily",
+            "headers": {
+                "Date": "Sat, 09 Sep 2023 08:48:13 GMT",
+                "X-Mid": "N-pr3b",
+                "Server": "nginx",
+                "Content-Type": "text/html",
+                "Location": "https://r.orange.fr/r/Oerreur_403",
+                "Access-Control-Allow-Origin": "*",
+                "Cache-Control": "no-cache",
+                "Connection": "keep-alive",
+                "Content-Length": "154"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 572,
+            "remoteIPAddress": "193.252.122.165",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 273,
+            "timing": {
+                "requestTime": 11431.500805,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.616,
+                "dnsEnd": 1.767,
+                "connectStart": 1.767,
+                "connectEnd": 695.773,
+                "sslStart": 339.814,
+                "sslEnd": 695.765,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 695.923,
+                "sendEnd": 696.497,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 1043.519,
+                "receiveHeadersEnd": 1043.627
+            },
+            "responseTime": 1694249293116.17,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "secure",
+            "securityDetails": {
+                "protocol": "TLS 1.3",
+                "keyExchange": "",
+                "keyExchangeGroup": "X25519",
+                "cipher": "AES_128_GCM",
+                "certificateId": 0,
+                "subjectName": "pro.orange.fr",
+                "sanList": [
+                    "pro.orange.fr",
+                    "*.event.orange.fr",
+                    "v2t.orange.fr",
+                    "umedia.orange.fr",
+                    "telecharger-mail.orange.fr",
+                    "malivebox.sosh.fr",
+                    "contact.sosh.fr",
+                    "assistance.sosh.fr",
+                    "telecharger-orangeetmoi.orange.fr",
+                    "homelive-newsletter.orange.fr",
+                    "orangeetmoi.orange.fr",
+                    "lesavantages.orange.fr",
+                    "*.lemagtv.orange.fr",
+                    "sports.orange.fr",
+                    "lemagtv.orange.fr",
+                    "logicielsgratuits.orange.fr",
+                    "*.finance.orange.fr",
+                    "video-streaming.orange.fr",
+                    "actu.orange.fr",
+                    "wireframes.toolbar.orange.fr",
+                    "pms.orange.fr",
+                    "mc.orange.fr",
+                    "evolution-communaute.sosh.fr",
+                    "orangebank.orange.fr",
+                    "websmsmms.orange.fr",
+                    "applications-et-logiciels.orange.fr",
+                    "tv.event.cfy.pcache.orange.fr",
+                    "application.speaker-djingo.orange.fr",
+                    "bons-plans-partenaires.sosh.fr",
+                    "mysosh.sosh.fr",
+                    "messagerie.orange.fr",
+                    "auto.orange.fr",
+                    "mktop-popupsms.orange.fr",
+                    "*.auto.orange.fr",
+                    "*.sports.orange.fr",
+                    "malivebox.orange.fr",
+                    "wmail.orange.fr",
+                    "prestations.assistance.orange.fr",
+                    "*.actu.orange.fr",
+                    "*.pro.orange.fr",
+                    "*.musique.orange.fr",
+                    "mmc.orange.fr",
+                    "*.jeu.orange.fr",
+                    "*.woopic.com",
+                    "cdn.tv.event.woopic.com",
+                    "*.media.woopic.com",
+                    "tendances.orange.fr",
+                    "*.tendances.orange.fr",
+                    "news.orange.fr",
+                    "operations-speciales.orange.fr",
+                    "payservices.orange.com",
+                    "hp-assistance.sosh.fr",
+                    "feedback.orange.fr",
+                    "bmw-rugby-experience.sport.orange.fr",
+                    "partners.finances.orange.fr",
+                    "consenttv.orange.fr",
+                    "api-aidecontactsosh.orange.fr",
+                    "legenerateurdenomsdewifi.sosh.fr",
+                    "magicrequest.orange.fr",
+                    "jeu-maison-connectee.hbx.geo.francetelecom.fr",
+                    "login.orange.fr",
+                    "orangechezvous.orange.fr",
+                    "panelorange-mediametrie.orange.fr",
+                    "tutos.sosh.fr",
+                    "proxymedia-caas.woopic.com",
+                    "disneylandparis.orange.fr",
+                    "orangedigitalcenter.orange.fr",
+                    "www.orangedigitalcenter.orange.fr",
+                    "cinema-series.orange.fr",
+                    "jeudirect.orange.fr",
+                    "jeudirect.sosh.fr",
+                    "je-demenage.orange.fr",
+                    "evenement.cinema-series.orange.fr",
+                    "ocs.cinema-series.orange.fr",
+                    "relation.orange.fr",
+                    "relation.sosh.fr",
+                    "service.orange.fr",
+                    "sefairerappeler.orange.fr",
+                    "le-plateau-tv-deliveroo.cinema-series.orange.fr",
+                    "energie-reseaux.orange.fr",
+                    "ledigitaletvous.orange.fr",
+                    "bienvivreledigital.orange.fr",
+                    "jeu-code-cine-par-mcdonalds.cinema-series.orange.fr",
+                    "reseaux.orange.fr"
+                ],
+                "issuer": "DigiCert Global G2 TLS RSA SHA256 2020 CA1",
+                "validFrom": 1687824000,
+                "validTo": 1721174399,
+                "signedCertificateTimestampList": [],
+                "certificateTransparencyCompliance": "unknown",
+                "serverSignatureAlgorithm": 2052,
+                "encryptedClientHello": false
+            }
+        },
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "170179.70",
+        "loaderId": "E91575CB0B6BACD6C84708F546BA29DD",
+        "documentURL": "https://www.orange.fr/portail",
+        "request": {
+            "url": "https://e.orange.fr/error403.html",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": true
+        },
+        "timestamp": 11435.203178,
+        "wallTime": 1694249295.775215,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.orange.fr/portail",
+            "lineNumber": 101,
+            "columnNumber": 1002
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "https://r.orange.fr/r/Oerreur_403",
+            "status": 301,
+            "statusText": "Moved Permanently",
+            "headers": {
+                "Date": "Sat, 09 Sep 2023 08:48:15 GMT",
+                "Server": "Apache",
+                "X-Redirector-Request-Id": "661e96c1-4fdc-4a10-66f5-8953e0b71c2b",
+                "Location": "https://e.orange.fr/error403.html",
+                "X-Vcap-Request-Id": "661e96c1-4fdc-4a10-66f5-8953e0b71c2b",
+                "Cache-Control": "no-cache, no-store, must-revalidate, private, max-age=0",
+                "Connection": "close",
+                "Content-Length": "0",
+                "Expires": "0"
+            },
+            "mimeType": "",
+            "connectionReused": false,
+            "connectionId": 620,
+            "remoteIPAddress": "193.252.148.13",
+            "remotePort": 443,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 374,
+            "timing": {
+                "requestTime": 11432.554891,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.27,
+                "dnsEnd": 1549.32,
+                "connectStart": 1549.32,
+                "connectEnd": 2277.94,
+                "sslStart": 1909.643,
+                "sslEnd": 2277.933,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 2278.062,
+                "sendEnd": 2278.282,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 2646.904,
+                "receiveHeadersEnd": 2647.023
+            },
+            "responseTime": 1694249295773.641,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "unknown"
+        },
+        "type": "Image",
+        "frameId": "34F82F08BD1019BF790E2D20CDD69EBE",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

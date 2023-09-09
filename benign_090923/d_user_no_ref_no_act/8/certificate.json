@@ -1,0 +1,37 @@
+{
+    "website url": "https://www.earthlink.net/",
+    "hostname": "www.earthlink.net",
+    "subject": {
+        "countryName": "US",
+        "stateOrProvinceName": "California",
+        "localityName": "San Francisco",
+        "organizationName": "Cloudflare, Inc.",
+        "commonName": "earthlink.net"
+    },
+    "issuer": {
+        "countryName": "US",
+        "organizationName": "Cloudflare, Inc.",
+        "commonName": "Cloudflare Inc ECC CA-3"
+    },
+    "version": 3,
+    "not_before": "Aug 14 00:00:00 2023 GMT",
+    "not_after": "Aug 12 23:59:59 2024 GMT",
+    "valid_period": 364,
+    "serial_number": "0A266CC1C662A27B7200CEE7D7414222",
+    "signature_algo": "ecdsa-with-SHA256",
+    "protocol_version": "TLSv1.3",
+    "alternate subject name": [
+        [
+            "DNS",
+            "www.webmail.earthlink.net"
+        ],
+        [
+            "DNS",
+            "*.earthlink.net"
+        ],
+        [
+            "DNS",
+            "earthlink.net"
+        ]
+    ]
+}

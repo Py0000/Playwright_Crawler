@@ -1,0 +1,54 @@
+{
+    "website url": "https://personal.nedbank.co.za/",
+    "hostname": "personal.nedbank.co.za",
+    "subject": {
+        "countryName": "ZA",
+        "stateOrProvinceName": "Gauteng",
+        "localityName": "Sandton",
+        "organizationName": "Nedbank Limited",
+        "commonName": "*.nedbank.co.za"
+    },
+    "issuer": {
+        "countryName": "US",
+        "organizationName": "Entrust, Inc.",
+        "organizationalUnitName": "(c) 2012 Entrust, Inc. - for authorized use only",
+        "commonName": "Entrust Certification Authority - L1K"
+    },
+    "version": 3,
+    "not_before": "Oct 10 09:02:21 2022 GMT",
+    "not_after": "Oct 10 09:02:21 2023 GMT",
+    "valid_period": 365,
+    "serial_number": "576EED8C22531DA0E59FB75C0ADB939D",
+    "signature_algo": "sha256WithRSAEncryption",
+    "protocol_version": "TLSv1.2",
+    "alternate subject name": [
+        [
+            "DNS",
+            "*.nedbank.co.za"
+        ],
+        [
+            "DNS",
+            "nedbank.co.za"
+        ],
+        [
+            "DNS",
+            "www.assets.nedbank.co.za"
+        ],
+        [
+            "DNS",
+            "www.nedbank.co.za"
+        ],
+        [
+            "DNS",
+            "www.personal-loans.nedbank.co.za"
+        ],
+        [
+            "DNS",
+            "www.stg-assets.nedbank.co.za"
+        ],
+        [
+            "DNS",
+            "www.stg-personal-loans.nedbank.co.za"
+        ]
+    ]
+}

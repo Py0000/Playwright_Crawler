@@ -1,0 +1,33 @@
+{
+    "website url": "https://www.uber.com/",
+    "hostname": "www.uber.com",
+    "subject": {
+        "countryName": "US",
+        "stateOrProvinceName": "California",
+        "localityName": "San Francisco",
+        "organizationName": "Uber Technologies, Inc.",
+        "commonName": "*.uber.com"
+    },
+    "issuer": {
+        "countryName": "US",
+        "organizationName": "DigiCert Inc",
+        "commonName": "DigiCert TLS RSA SHA256 2020 CA1"
+    },
+    "version": 3,
+    "not_before": "Aug  2 00:00:00 2023 GMT",
+    "not_after": "Jul 31 23:59:59 2024 GMT",
+    "valid_period": 364,
+    "serial_number": "08DFCB84789E007341E61FC77DA85DDB",
+    "signature_algo": "sha256WithRSAEncryption",
+    "protocol_version": "TLSv1.3",
+    "alternate subject name": [
+        [
+            "DNS",
+            "*.uber.com"
+        ],
+        [
+            "DNS",
+            "uber.com"
+        ]
+    ]
+}

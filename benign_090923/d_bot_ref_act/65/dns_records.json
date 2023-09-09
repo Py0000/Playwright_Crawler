@@ -1,0 +1,72 @@
+{
+    "Domain": "www.nets.com.sg",
+    "A": {
+        "IPv4 Address (Value)": [
+            "192.124.249.10"
+        ]
+    },
+    "AAAA": [
+        "No records found"
+    ],
+    "CAA": [
+        "No records found"
+    ],
+    "CNAME": {
+        "Host Name Alias": [
+            "nets.com.sg."
+        ]
+    },
+    "MX": {
+        "Preference": [
+            10,
+            15,
+            5,
+            5
+        ],
+        "Exchange": [
+            "netsgatebc.nets.com.sg.",
+            "netsbarrier.nets.com.sg.",
+            "netsborder.nets.com.sg.",
+            "netsedge.nets.com.sg."
+        ]
+    },
+    "NS": {
+        "Name Server": [
+            "secdns.cyberway.com.sg.",
+            "pdns83.ultradns.biz.",
+            "pdns83.ultradns.org.",
+            "secdns2.cyberway.com.sg."
+        ]
+    },
+    "SOA": {
+        "MNAME": [
+            "bagus.nets.com.sg."
+        ],
+        "RNAME": [
+            "please_set_email.absolutely.nowhere."
+        ],
+        "SERIAL": [
+            2016012623
+        ],
+        "REFRESH": [
+            43200
+        ],
+        "RETRY": [
+            7200
+        ],
+        "EXPIRE": [
+            2419200
+        ],
+        "MINIMUM": [
+            259200
+        ]
+    },
+    "TXT": {
+        "Text Data": [
+            "MS=ms16920400",
+            "apple-domain-verification=UnGSlSqgDTUY2Wx1",
+            "v=spf1 a ip4:118.201.69.65 ip4:118.201.104.244 ip4:111.223.106.14 ip4:203.116.40.148 ip4:203.116.65.16/28 ip4:203.116.80.176/28 ip4:118.201.98.205 include:amazonses.com include:service-now.com  include:relay.mailchannels.net include:spf.protection.outlook.com ~all",
+            "MS=C5C3F4C6E89D156B4D73F21A0E319BDDABB944F3"
+        ]
+    }
+}

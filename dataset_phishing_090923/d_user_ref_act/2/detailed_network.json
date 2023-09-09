@@ -1,0 +1,983 @@
+[
+    {
+        "requestId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "loaderId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "documentURL": "http://facebooksecuritys.blogspot.com.ar/",
+        "request": {
+            "url": "http://facebooksecuritys.blogspot.com.ar/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 21705.779194,
+        "wallTime": 1694259566.351242,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "DD2906DB2988C9B893E42D0B3DC30CB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "loaderId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "documentURL": "http://facebooksecuritys.blogspot.com/",
+        "request": {
+            "url": "http://facebooksecuritys.blogspot.com/",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": true
+        },
+        "timestamp": 21706.818997,
+        "wallTime": 1694259567.391095,
+        "initiator": {
+            "type": "other"
+        },
+        "redirectHasExtraInfo": true,
+        "redirectResponse": {
+            "url": "http://facebooksecuritys.blogspot.com.ar/",
+            "status": 302,
+            "statusText": "Moved Temporarily",
+            "headers": {
+                "Cache-Control": "private, max-age=0",
+                "Content-Encoding": "gzip",
+                "Content-Length": "184",
+                "Content-Security-Policy": "frame-ancestors 'self'",
+                "Content-Type": "text/html; charset=UTF-8",
+                "Date": "Sat, 09 Sep 2023 11:39:27 GMT",
+                "Expires": "Sat, 09 Sep 2023 11:39:27 GMT",
+                "Location": "http://facebooksecuritys.blogspot.com/",
+                "Server": "GSE",
+                "X-Content-Type-Options": "nosniff",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-XSS-Protection": "1; mode=block"
+            },
+            "mimeType": "text/html",
+            "connectionReused": false,
+            "connectionId": 91,
+            "remoteIPAddress": "74.125.24.132",
+            "remotePort": 80,
+            "fromDiskCache": false,
+            "fromServiceWorker": false,
+            "fromPrefetchCache": false,
+            "encodedDataLength": 438,
+            "timing": {
+                "requestTime": 21705.7801,
+                "proxyStart": -1,
+                "proxyEnd": -1,
+                "dnsStart": 0.23,
+                "dnsEnd": 1.292,
+                "connectStart": 1.292,
+                "connectEnd": 11.918,
+                "sslStart": -1,
+                "sslEnd": -1,
+                "workerStart": -1,
+                "workerReady": -1,
+                "workerFetchStart": -1,
+                "workerRespondWithSettled": -1,
+                "sendStart": 12.225,
+                "sendEnd": 12.423,
+                "pushStart": 0,
+                "pushEnd": 0,
+                "receiveHeadersStart": 1034.889,
+                "receiveHeadersEnd": 1035.019
+            },
+            "responseTime": 1694259567386.835,
+            "protocol": "http/1.1",
+            "alternateProtocolUsage": "unspecifiedReason",
+            "securityState": "insecure"
+        },
+        "type": "Document",
+        "frameId": "DD2906DB2988C9B893E42D0B3DC30CB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.2",
+        "loaderId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "documentURL": "http://facebooksecuritys.blogspot.com/",
+        "request": {
+            "url": "https://www.blogger.com/static/v1/widgets/2845461701-css_bundle_v2_rtl.css",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21707.906745,
+        "wallTime": 1694259568.478655,
+        "initiator": {
+            "type": "parser",
+            "url": "http://facebooksecuritys.blogspot.com/",
+            "lineNumber": 3,
+            "columnNumber": 122
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "DD2906DB2988C9B893E42D0B3DC30CB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.3",
+        "loaderId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "documentURL": "http://facebooksecuritys.blogspot.com/",
+        "request": {
+            "url": "https://apis.google.com/js/platform.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "High",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21707.907965,
+        "wallTime": 1694259568.479865,
+        "initiator": {
+            "type": "parser",
+            "url": "http://facebooksecuritys.blogspot.com/",
+            "lineNumber": 431,
+            "columnNumber": 76
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "DD2906DB2988C9B893E42D0B3DC30CB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.4",
+        "loaderId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "documentURL": "http://facebooksecuritys.blogspot.com/",
+        "request": {
+            "url": "http://img1.blogblog.com/img/icon18_wrench_allbkg.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21707.908639,
+        "wallTime": 1694259568.480535,
+        "initiator": {
+            "type": "parser",
+            "url": "http://facebooksecuritys.blogspot.com/",
+            "lineNumber": 710,
+            "columnNumber": 92
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DD2906DB2988C9B893E42D0B3DC30CB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.6",
+        "loaderId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "documentURL": "http://facebooksecuritys.blogspot.com/",
+        "request": {
+            "url": "https://www.blogger.com/static/v1/widgets/940443484-widgets.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Medium",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21707.908795,
+        "wallTime": 1694259568.480673,
+        "initiator": {
+            "type": "parser",
+            "url": "http://facebooksecuritys.blogspot.com/",
+            "lineNumber": 836,
+            "columnNumber": 100
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "DD2906DB2988C9B893E42D0B3DC30CB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.8",
+        "loaderId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "documentURL": "http://facebooksecuritys.blogspot.com/",
+        "request": {
+            "url": "https://www.blogger.com/dyn-css/authorization.css?targetBlogID=5170491448927960724&zx=c9f26441-bead-4f4e-a0eb-e60705321870",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryLow",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21707.914961,
+        "wallTime": 1694259568.486869,
+        "initiator": {
+            "type": "parser",
+            "url": "http://facebooksecuritys.blogspot.com/",
+            "lineNumber": 414,
+            "columnNumber": 224
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "DD2906DB2988C9B893E42D0B3DC30CB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.10",
+        "loaderId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "documentURL": "http://facebooksecuritys.blogspot.com/",
+        "request": {
+            "url": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IoxrLNdlTyI.O/m=gapi_iframes,gapi_iframes_style_bubble/rt=j/sv=1/d=1/ed=1/rs=AHpOoo9N48n3oloz8UTxoCozKcpUKaADkg/cb=gapi.loaded_0?le=scs",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21708.018481,
+        "wallTime": 1694259568.590772,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Kc",
+                        "scriptId": "11",
+                        "url": "https://apis.google.com/js/platform.js",
+                        "lineNumber": 43,
+                        "columnNumber": 285
+                    },
+                    {
+                        "functionName": "Pc",
+                        "scriptId": "11",
+                        "url": "https://apis.google.com/js/platform.js",
+                        "lineNumber": 46,
+                        "columnNumber": 271
+                    },
+                    {
+                        "functionName": "Qc",
+                        "scriptId": "11",
+                        "url": "https://apis.google.com/js/platform.js",
+                        "lineNumber": 44,
+                        "columnNumber": 230
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://apis.google.com/js/platform.js",
+                        "lineNumber": 46,
+                        "columnNumber": 620
+                    },
+                    {
+                        "functionName": "Nc",
+                        "scriptId": "11",
+                        "url": "https://apis.google.com/js/platform.js",
+                        "lineNumber": 46,
+                        "columnNumber": 379
+                    },
+                    {
+                        "functionName": "I.load",
+                        "scriptId": "11",
+                        "url": "https://apis.google.com/js/platform.js",
+                        "lineNumber": 46,
+                        "columnNumber": 599
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "14",
+                        "url": "http://facebooksecuritys.blogspot.com/",
+                        "lineNumber": 433,
+                        "columnNumber": 11
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "DD2906DB2988C9B893E42D0B3DC30CB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.11",
+        "loaderId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "documentURL": "http://facebooksecuritys.blogspot.com/",
+        "request": {
+            "url": "http://pagead2.googlesyndication.com/pagead/js/google_top_exp.js",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21708.019652,
+        "wallTime": 1694259568.59164,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "15",
+                        "url": "http://facebooksecuritys.blogspot.com/",
+                        "lineNumber": 449,
+                        "columnNumber": 5
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "15",
+                        "url": "http://facebooksecuritys.blogspot.com/",
+                        "lineNumber": 450,
+                        "columnNumber": 3
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "DD2906DB2988C9B893E42D0B3DC30CB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.12",
+        "loaderId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "documentURL": "http://facebooksecuritys.blogspot.com/",
+        "request": {
+            "url": "http://www.blogblog.com/1kt/watermark/body_background_flower.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21708.021856,
+        "wallTime": 1694259568.593751,
+        "initiator": {
+            "type": "parser",
+            "url": "http://facebooksecuritys.blogspot.com/",
+            "lineNumber": 452,
+            "columnNumber": 6
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DD2906DB2988C9B893E42D0B3DC30CB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.16",
+        "loaderId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "documentURL": "http://facebooksecuritys.blogspot.com/",
+        "request": {
+            "url": "http://www.blogblog.com/1kt/watermark/main_overlay_flower.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21708.045632,
+        "wallTime": 1694259568.617535,
+        "initiator": {
+            "type": "parser",
+            "url": "http://facebooksecuritys.blogspot.com/",
+            "lineNumber": 837,
+            "columnNumber": 0
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DD2906DB2988C9B893E42D0B3DC30CB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.17",
+        "loaderId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "documentURL": "http://facebooksecuritys.blogspot.com/",
+        "request": {
+            "url": "http://www.blogblog.com/1kt/watermark/main_cap_flower.png",
+            "method": "GET",
+            "headers": {
+                "Referer": "https://www.google.com",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21708.046023,
+        "wallTime": 1694259568.617904,
+        "initiator": {
+            "type": "parser",
+            "url": "http://facebooksecuritys.blogspot.com/",
+            "lineNumber": 837,
+            "columnNumber": 0
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DD2906DB2988C9B893E42D0B3DC30CB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.18",
+        "loaderId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "documentURL": "http://facebooksecuritys.blogspot.com/",
+        "request": {
+            "url": "https://resources.blogblog.com/blogblog/data/1kt/watermark/body_background_navigator.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21708.051915,
+        "wallTime": 1694259568.623815,
+        "initiator": {
+            "type": "parser",
+            "url": "http://facebooksecuritys.blogspot.com/",
+            "lineNumber": 837,
+            "columnNumber": 0
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "DD2906DB2988C9B893E42D0B3DC30CB2",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "F6A08D7EF8C83474E01718E617C82676",
+        "loaderId": "F6A08D7EF8C83474E01718E617C82676",
+        "documentURL": "https://www.blogger.com/navbar.g?targetBlogID=5170491448927960724&blogName=facebook+security&publishMode=PUBLISH_MODE_BLOGSPOT&navbarType=LIGHT&layoutType=LAYOUTS&searchRoot=https://facebooksecuritys.blogspot.com/search&blogLocale=ar&v=2&homepageUrl=http://facebooksecuritys.blogspot.com/&vt=-4432274901753176346&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.IoxrLNdlTyI.O%2Fd%3D1%2Frs%3DAHpOoo9N48n3oloz8UTxoCozKcpUKaADkg%2Fm%3D__features__",
+        "request": {
+            "url": "https://www.blogger.com/navbar.g?targetBlogID=5170491448927960724&blogName=facebook+security&publishMode=PUBLISH_MODE_BLOGSPOT&navbarType=LIGHT&layoutType=LAYOUTS&searchRoot=https://facebooksecuritys.blogspot.com/search&blogLocale=ar&v=2&homepageUrl=http://facebooksecuritys.blogspot.com/&vt=-4432274901753176346&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.IoxrLNdlTyI.O%2Fd%3D1%2Frs%3DAHpOoo9N48n3oloz8UTxoCozKcpUKaADkg%2Fm%3D__features__",
+            "urlFragment": "#id=navbar-iframe&_gfid=navbar-iframe&parent=http%3A%2F%2Ffacebooksecuritys.blogspot.com&pfname=&rpctoken=23332522",
+            "method": "GET",
+            "headers": {
+                "Referer": "http://facebooksecuritys.blogspot.com/",
+                "Upgrade-Insecure-Requests": "1",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua": "",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "isSameSite": false
+        },
+        "timestamp": 21708.229057,
+        "wallTime": 1694259568.80113,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "_.Pm",
+                        "scriptId": "18",
+                        "url": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IoxrLNdlTyI.O/m=gapi_iframes,gapi_iframes_style_bubble/rt=j/sv=1/d=1/ed=1/rs=AHpOoo9N48n3oloz8UTxoCozKcpUKaADkg/cb=gapi.loaded_0?le=scs",
+                        "lineNumber": 145,
+                        "columnNumber": 31
+                    },
+                    {
+                        "functionName": "_.Wm",
+                        "scriptId": "18",
+                        "url": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IoxrLNdlTyI.O/m=gapi_iframes,gapi_iframes_style_bubble/rt=j/sv=1/d=1/ed=1/rs=AHpOoo9N48n3oloz8UTxoCozKcpUKaADkg/cb=gapi.loaded_0?le=scs",
+                        "lineNumber": 149,
+                        "columnNumber": 139
+                    },
+                    {
+                        "functionName": "_.po.openChild",
+                        "scriptId": "18",
+                        "url": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IoxrLNdlTyI.O/m=gapi_iframes,gapi_iframes_style_bubble/rt=j/sv=1/d=1/ed=1/rs=AHpOoo9N48n3oloz8UTxoCozKcpUKaADkg/cb=gapi.loaded_0?le=scs",
+                        "lineNumber": 229,
+                        "columnNumber": 377
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "14",
+                        "url": "http://facebooksecuritys.blogspot.com/",
+                        "lineNumber": 435,
+                        "columnNumber": 36
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "11",
+                        "url": "https://apis.google.com/js/platform.js",
+                        "lineNumber": 46,
+                        "columnNumber": 17
+                    },
+                    {
+                        "functionName": "kc",
+                        "scriptId": "11",
+                        "url": "https://apis.google.com/js/platform.js",
+                        "lineNumber": 37,
+                        "columnNumber": 469
+                    },
+                    {
+                        "functionName": "ia",
+                        "scriptId": "11",
+                        "url": "https://apis.google.com/js/platform.js",
+                        "lineNumber": 46,
+                        "columnNumber": 0
+                    },
+                    {
+                        "functionName": "Pc.L.<computed>",
+                        "scriptId": "11",
+                        "url": "https://apis.google.com/js/platform.js",
+                        "lineNumber": 46,
+                        "columnNumber": 104
+                    },
+                    {
+                        "functionName": "Pc.I.<computed>",
+                        "scriptId": "11",
+                        "url": "https://apis.google.com/js/platform.js",
+                        "lineNumber": 46,
+                        "columnNumber": 170
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "18",
+                        "url": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IoxrLNdlTyI.O/m=gapi_iframes,gapi_iframes_style_bubble/rt=j/sv=1/d=1/ed=1/rs=AHpOoo9N48n3oloz8UTxoCozKcpUKaADkg/cb=gapi.loaded_0?le=scs",
+                        "lineNumber": 0,
+                        "columnNumber": 5
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Document",
+        "frameId": "0357F084F7C6CA25928CAA7B50ED857C",
+        "hasUserGesture": false,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.19",
+        "loaderId": "5F65BFC8D9242B5653AA5176BCB1C9B0",
+        "documentURL": "http://facebooksecuritys.blogspot.com/",
+        "request": {
+            "url": "https://www.blogger.com/dyn-css/authorization.css?targetBlogID=5170491448927960724&zx=c9f26441-bead-4f4e-a0eb-e60705321870",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "VeryHigh",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21708.952975,
+        "wallTime": 1694259569.524904,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "onload",
+                        "scriptId": "29",
+                        "url": "http://facebooksecuritys.blogspot.com/",
+                        "lineNumber": 414,
+                        "columnNumber": 245
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Stylesheet",
+        "frameId": "DD2906DB2988C9B893E42D0B3DC30CB2",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.21",
+        "loaderId": "F6A08D7EF8C83474E01718E617C82676",
+        "documentURL": "https://www.blogger.com/navbar.g?targetBlogID=5170491448927960724&blogName=facebook+security&publishMode=PUBLISH_MODE_BLOGSPOT&navbarType=LIGHT&layoutType=LAYOUTS&searchRoot=https://facebooksecuritys.blogspot.com/search&blogLocale=ar&v=2&homepageUrl=http://facebooksecuritys.blogspot.com/&vt=-4432274901753176346&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.IoxrLNdlTyI.O%2Fd%3D1%2Frs%3DAHpOoo9N48n3oloz8UTxoCozKcpUKaADkg%2Fm%3D__features__",
+        "request": {
+            "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21709.022867,
+        "wallTime": 1694259569.594883,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "",
+                        "scriptId": "31",
+                        "url": "https://www.blogger.com/navbar.g?targetBlogID=5170491448927960724&blogName=facebook+security&publishMode=PUBLISH_MODE_BLOGSPOT&navbarType=LIGHT&layoutType=LAYOUTS&searchRoot=https://facebooksecuritys.blogspot.com/search&blogLocale=ar&v=2&homepageUrl=http://facebooksecuritys.blogspot.com/&vt=-4432274901753176346&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.IoxrLNdlTyI.O%2Fd%3D1%2Frs%3DAHpOoo9N48n3oloz8UTxoCozKcpUKaADkg%2Fm%3D__features__",
+                        "lineNumber": 52,
+                        "columnNumber": 25
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "31",
+                        "url": "https://www.blogger.com/navbar.g?targetBlogID=5170491448927960724&blogName=facebook+security&publishMode=PUBLISH_MODE_BLOGSPOT&navbarType=LIGHT&layoutType=LAYOUTS&searchRoot=https://facebooksecuritys.blogspot.com/search&blogLocale=ar&v=2&homepageUrl=http://facebooksecuritys.blogspot.com/&vt=-4432274901753176346&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.IoxrLNdlTyI.O%2Fd%3D1%2Frs%3DAHpOoo9N48n3oloz8UTxoCozKcpUKaADkg%2Fm%3D__features__",
+                        "lineNumber": 53,
+                        "columnNumber": 12
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0357F084F7C6CA25928CAA7B50ED857C",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.22",
+        "loaderId": "F6A08D7EF8C83474E01718E617C82676",
+        "documentURL": "https://www.blogger.com/navbar.g?targetBlogID=5170491448927960724&blogName=facebook+security&publishMode=PUBLISH_MODE_BLOGSPOT&navbarType=LIGHT&layoutType=LAYOUTS&searchRoot=https://facebooksecuritys.blogspot.com/search&blogLocale=ar&v=2&homepageUrl=http://facebooksecuritys.blogspot.com/&vt=-4432274901753176346&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.IoxrLNdlTyI.O%2Fd%3D1%2Frs%3DAHpOoo9N48n3oloz8UTxoCozKcpUKaADkg%2Fm%3D__features__",
+        "request": {
+            "url": "https://resources.blogblog.com/img/navbar/icons_peach.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21709.0266,
+        "wallTime": 1694259569.598506,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.blogger.com/navbar.g?targetBlogID=5170491448927960724&blogName=facebook+security&publishMode=PUBLISH_MODE_BLOGSPOT&navbarType=LIGHT&layoutType=LAYOUTS&searchRoot=https://facebooksecuritys.blogspot.com/search&blogLocale=ar&v=2&homepageUrl=http://facebooksecuritys.blogspot.com/&vt=-4432274901753176346&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.IoxrLNdlTyI.O%2Fd%3D1%2Frs%3DAHpOoo9N48n3oloz8UTxoCozKcpUKaADkg%2Fm%3D__features__",
+            "lineNumber": 54,
+            "columnNumber": 32
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0357F084F7C6CA25928CAA7B50ED857C",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.23",
+        "loaderId": "F6A08D7EF8C83474E01718E617C82676",
+        "documentURL": "https://www.blogger.com/navbar.g?targetBlogID=5170491448927960724&blogName=facebook+security&publishMode=PUBLISH_MODE_BLOGSPOT&navbarType=LIGHT&layoutType=LAYOUTS&searchRoot=https://facebooksecuritys.blogspot.com/search&blogLocale=ar&v=2&homepageUrl=http://facebooksecuritys.blogspot.com/&vt=-4432274901753176346&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.IoxrLNdlTyI.O%2Fd%3D1%2Frs%3DAHpOoo9N48n3oloz8UTxoCozKcpUKaADkg%2Fm%3D__features__",
+        "request": {
+            "url": "https://resources.blogblog.com/img/navbar/arrows-light.png",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21709.027916,
+        "wallTime": 1694259569.599832,
+        "initiator": {
+            "type": "parser",
+            "url": "https://www.blogger.com/navbar.g?targetBlogID=5170491448927960724&blogName=facebook+security&publishMode=PUBLISH_MODE_BLOGSPOT&navbarType=LIGHT&layoutType=LAYOUTS&searchRoot=https://facebooksecuritys.blogspot.com/search&blogLocale=ar&v=2&homepageUrl=http://facebooksecuritys.blogspot.com/&vt=-4432274901753176346&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.IoxrLNdlTyI.O%2Fd%3D1%2Frs%3DAHpOoo9N48n3oloz8UTxoCozKcpUKaADkg%2Fm%3D__features__",
+            "lineNumber": 54,
+            "columnNumber": 32
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Image",
+        "frameId": "0357F084F7C6CA25928CAA7B50ED857C",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    },
+    {
+        "requestId": "284794.24",
+        "loaderId": "F6A08D7EF8C83474E01718E617C82676",
+        "documentURL": "https://www.blogger.com/navbar.g?targetBlogID=5170491448927960724&blogName=facebook+security&publishMode=PUBLISH_MODE_BLOGSPOT&navbarType=LIGHT&layoutType=LAYOUTS&searchRoot=https://facebooksecuritys.blogspot.com/search&blogLocale=ar&v=2&homepageUrl=http://facebooksecuritys.blogspot.com/&vt=-4432274901753176346&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.IoxrLNdlTyI.O%2Fd%3D1%2Frs%3DAHpOoo9N48n3oloz8UTxoCozKcpUKaADkg%2Fm%3D__features__",
+        "request": {
+            "url": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IoxrLNdlTyI.O/m=gapi_iframes_style_common/rt=j/sv=1/d=1/ed=1/rs=AHpOoo9N48n3oloz8UTxoCozKcpUKaADkg/cb=gapi.loaded_0?le=scs",
+            "method": "GET",
+            "headers": {
+                "sec-ch-ua": "",
+                "Referer": "https://www.google.com",
+                "sec-ch-ua-mobile": "?0",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "sec-ch-ua-platform": "\"\""
+            },
+            "mixedContentType": "none",
+            "initialPriority": "Low",
+            "referrerPolicy": "unsafe-url",
+            "isSameSite": false
+        },
+        "timestamp": 21709.066688,
+        "wallTime": 1694259569.643815,
+        "initiator": {
+            "type": "script",
+            "stack": {
+                "callFrames": [
+                    {
+                        "functionName": "Kc",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 43,
+                        "columnNumber": 285
+                    },
+                    {
+                        "functionName": "Pc",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 46,
+                        "columnNumber": 271
+                    },
+                    {
+                        "functionName": "Qc",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 44,
+                        "columnNumber": 230
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 46,
+                        "columnNumber": 620
+                    },
+                    {
+                        "functionName": "Nc",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 46,
+                        "columnNumber": 379
+                    },
+                    {
+                        "functionName": "I.load",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 46,
+                        "columnNumber": 599
+                    },
+                    {
+                        "functionName": "Qe",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 73,
+                        "columnNumber": 427
+                    },
+                    {
+                        "functionName": "cc",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 82,
+                        "columnNumber": 222
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 83,
+                        "columnNumber": 301
+                    },
+                    {
+                        "functionName": "dc",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 36,
+                        "columnNumber": 694
+                    },
+                    {
+                        "functionName": "ec",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 36,
+                        "columnNumber": 664
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 83,
+                        "columnNumber": 287
+                    },
+                    {
+                        "functionName": "Qc",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 44,
+                        "columnNumber": 106
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 46,
+                        "columnNumber": 620
+                    },
+                    {
+                        "functionName": "Nc",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 46,
+                        "columnNumber": 499
+                    },
+                    {
+                        "functionName": "I.load",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 46,
+                        "columnNumber": 599
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 90,
+                        "columnNumber": 330
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "32",
+                        "url": "https://apis.google.com/js/platform:gapi.iframes.style.common.js",
+                        "lineNumber": 99,
+                        "columnNumber": 72
+                    }
+                ]
+            }
+        },
+        "redirectHasExtraInfo": false,
+        "type": "Script",
+        "frameId": "0357F084F7C6CA25928CAA7B50ED857C",
+        "hasUserGesture": true,
+        "cookies": {
+            "cookies": []
+        }
+    }
+]

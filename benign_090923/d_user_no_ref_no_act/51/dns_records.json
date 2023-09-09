@@ -1,0 +1,71 @@
+{
+    "Domain": "mercadolabs.com",
+    "A": {
+        "IPv4 Address (Value)": [
+            "104.21.6.172",
+            "172.67.135.16"
+        ]
+    },
+    "AAAA": {
+        "IPv6 Address (Value)": [
+            "2606:4700:3037::6815:6ac",
+            "2606:4700:3037::ac43:8710"
+        ]
+    },
+    "CAA": [
+        "No records found"
+    ],
+    "CNAME": [
+        "No records found"
+    ],
+    "MX": {
+        "Preference": [
+            5,
+            10,
+            1,
+            5,
+            10
+        ],
+        "Exchange": [
+            "alt1.aspmx.l.google.com.",
+            "alt3.aspmx.l.google.com.",
+            "aspmx.l.google.com.",
+            "alt2.aspmx.l.google.com.",
+            "alt4.aspmx.l.google.com."
+        ]
+    },
+    "NS": {
+        "Name Server": [
+            "elle.ns.cloudflare.com.",
+            "dale.ns.cloudflare.com."
+        ]
+    },
+    "SOA": {
+        "MNAME": [
+            "dale.ns.cloudflare.com."
+        ],
+        "RNAME": [
+            "dns.cloudflare.com."
+        ],
+        "SERIAL": [
+            2317764861
+        ],
+        "REFRESH": [
+            10000
+        ],
+        "RETRY": [
+            2400
+        ],
+        "EXPIRE": [
+            604800
+        ],
+        "MINIMUM": [
+            1800
+        ]
+    },
+    "TXT": {
+        "Text Data": [
+            "v=spf1 include:_spf.google.com ~all"
+        ]
+    }
+}

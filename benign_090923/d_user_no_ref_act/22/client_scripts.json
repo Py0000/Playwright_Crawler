@@ -1,0 +1,8 @@
+{
+    "script_1": "\n    if (typeof window.Promise !== 'function') {\n      document.write('<script src=\"./js/polyfills/promise.min.js\"><\\/script>');\n    }\n    try {\n      new URL(location.href);\n    } catch (e) {\n      document.write('<script src=\"./js/polyfills/url-polyfill.js\"><\\/script>');\n    }\n    if (document.documentMode){\n      document.write('<script src=\"https://img.ui-portal.de/pos-cdn/tracklib/4.3.0/polyfills.min.js\"><\\/script>');\n    }\n  ",
+    "script_2": "https://s.uicdn.com/shared/sentry/5.5.0/bundle.min.js",
+    "script_3": "\n    if (!window.Sentry) {\n      window.Sentry = {};\n    }\n  ",
+    "script_4": "https://s.uicdn.com/tcf/live/v1/js/tcf-stub.js",
+    "script_5": "https://img.ui-portal.de/pos-cdn/tracklib/4.3.0/tracklib.min.js",
+    "script_6": "https://dl.gmx.com/permission/live/portal/v1/ppp/js/permission-core.min.js"
+}

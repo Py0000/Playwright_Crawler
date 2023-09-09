@@ -1,0 +1,3 @@
+{
+    "script_1": "\nfunction main() {\n    parent.postMessage(window.location.href, '*');\n}\nmain();\n"
+}

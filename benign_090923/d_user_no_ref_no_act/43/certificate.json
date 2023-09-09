@@ -1,0 +1,34 @@
+{
+    "website url": "https://www.leagueoflegends.com/",
+    "hostname": "www.leagueoflegends.com",
+    "subject": {
+        "commonName": "leagueoflegends.com",
+        "organizationName": "Riot Games Inc",
+        "localityName": "Los Angeles",
+        "stateOrProvinceName": "California",
+        "countryName": "US"
+    },
+    "issuer": {
+        "countryName": "US",
+        "organizationName": "IdenTrust",
+        "organizationalUnitName": "HydrantID Trusted Certificate Service",
+        "commonName": "HydrantID Server CA O1"
+    },
+    "version": 3,
+    "not_before": "Jan 18 21:11:23 2023 GMT",
+    "not_after": "Feb 17 21:10:23 2024 GMT",
+    "valid_period": 395,
+    "serial_number": "400185C6B8E1F8FBF7EF62230923E3CD",
+    "signature_algo": "sha256WithRSAEncryption",
+    "protocol_version": "TLSv1.3",
+    "alternate subject name": [
+        [
+            "DNS",
+            "leagueoflegends.com"
+        ],
+        [
+            "DNS",
+            "*.leagueoflegends.com"
+        ]
+    ]
+}
