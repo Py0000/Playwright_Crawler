@@ -1,4 +1,0 @@
-{
-    "script_1": "\n    const {\n    // exports\n} = Object.assign({}, (({\n    // imports\n}, {\n    // template parameters\n    privacyConsentServiceScriptUri,\n}) => {\n\n    document.head.appendChild(Object.assign(document.createElement('script'), {\n        src: privacyConsentServiceScriptUri,\n        charset: 'utf-8',\n        referrerPolicy: 'strict-origin',\n        ['async']: true,\n        defer: true,\n    }));\n\n    // no exports\n\n})({\n    // imports\n}, {\n    // template parameters\n    privacyConsentServiceScriptUri: \"https://www.dropbox.com/pithos/privacy_consent_service\",\n}));\n\n    ",
-    "script_2": "https://www.dropbox.com/pithos/privacy_consent_service"
-}

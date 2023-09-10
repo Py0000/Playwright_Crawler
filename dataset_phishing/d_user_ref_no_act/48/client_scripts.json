@@ -1,3 +1,0 @@
-{
-    "script_1": "\n<!--\nfunction popupwnd(url, toolbar, menubar, locationbar, resize, scrollbars, statusbar, left, top, width, height)\n{\n   if (left == -1)\n   {\n      left = (screen.width/2)-(width/2);\n   }\n   if (top == -1)\n   {\n      top = (screen.height/2)-(height/2);\n   }\n   var popupwindow = this.open(url, '', 'toolbar=' + toolbar + ',menubar=' + menubar + ',location=' + locationbar + ',scrollbars=' + scrollbars + ',resizable=' + resize + ',status=' + statusbar + ',left=' + left + ',top=' + top + ',width=' + width + ',height=' + height);\n}\n//-->\n"
-}

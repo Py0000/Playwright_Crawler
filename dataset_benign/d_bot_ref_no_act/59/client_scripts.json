@@ -1,4 +1,0 @@
-{
-    "script_1": "document.write(new Date().getFullYear())",
-    "script_2": "!function(){var e=document.querySelector(\"#error-message\");if(e){function t(){e.classList.remove(\"is-expanded\"),a.setAttribute(\"aria-expanded\",!1),i.setAttribute(\"aria-hidden\",!0)}var r=!1,a=e.querySelector(\"#error-message-button\"),i=e.querySelector(\"#error-message-content\");t(),a.addEventListener(\"click\",function(){r?t():(e.classList.add(\"is-expanded\"),a.setAttribute(\"aria-expanded\",!0),i.setAttribute(\"aria-hidden\",!1)),r=!r})}}();"
-}

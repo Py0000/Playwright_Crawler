@@ -1,9 +1,0 @@
-{
-    "script_1": "\n        var url = window.location.href;\n        var pathname = window.location.pathname;\n        var lastIndex = pathname.substring(pathname.lastIndexOf('/') + 1);\n        var pagename = lastIndex.slice(0, lastIndex.indexOf(\".\"));\n\n        function getMeta(metaName) {\n          var metas = document.getElementsByTagName('meta');\n          for (let i = 0; i < metas.length; i++) {\n            if (metas[i].getAttribute('property') === metaName || metas[i].getAttribute('name') === metaName) {\n              return metas[i].getAttribute('content');\n            }\n          }\n          return '';\n        }\n        var pageMetaName = getMeta(\"og:title\");\n        var env = getMeta(\"env\");\n\n        var tc_vars = {\n            cms_template_name: '/apps/labanquepostale/sitepublic/templates/homepage',\n            cms_page_name: window.location.pathname,\n            cms_page_title: pagename  !== \"\" ? pagename : pageMetaName,\n            override_page_name: \"\",\n            xiti_xtpage: 'particulier',\n            xiti_xtsite: '388889',\n            environnement: env\n        };\n    ",
-    "script_2": "https://cdn.tagcommander.com/2623/tc_LaBanquePostale_4.js",
-    "script_3": "https://cdn.trustcommander.net/privacy/2623/privacy_v2_66.js",
-    "script_4": "https://www.labanquepostale.fr/etc.clientlibs/labanquepostale/commons/clientlibs/designsystem/vendors/iframeresizer-3-5-5.min.js",
-    "script_5": "https://www.labanquepostale.fr/etc.clientlibs/labanquepostale/sitepublic/clientlibs/base.min.js",
-    "script_6": "https://cdn.tagcommander.com/2623/tc_LaBanquePostale_6.js",
-    "script_7": "https://cdn.tagcommander.com/2623/tc_LaBanquePostale_5.js"
-}

@@ -1,3 +1,0 @@
-{
-    "script_1": "\n\tif ('fonts' in document) {\n\t\tlet font = new FontFace('Frutiger VR', 'url(./style/vr021___-webfont.woff2) format(\\'woff2\\')');\n\t\tlet fontBold = new FontFace('Frutiger VR', 'url(./style/vr051___-webfont.woff2) format(\\'woff2\\')', {\n\t\t\tweight: '700'\n\t\t});\n\t\tlet loadedFonts = Promise.all([\n\t\t\tfont.load(),\n\t\t\tfontBold.load()\n\t\t]).then((result) => {\n\t\t\tresult.forEach(font => document.fonts.add(font));\n\t\t\tdocument.documentElement.classList.add('wf-loaded');\n\t\t}\n\t\t).catch((error) => {\n\t\t\tthrow new Error(`Error caught: ${error}`);\n\t\t});\n\t}\n"
-}
