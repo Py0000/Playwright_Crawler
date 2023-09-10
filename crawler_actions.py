@@ -62,9 +62,7 @@ def page_scroll_helper(page, current_height):
 
 def page_scroll(page):
     last_height = page.evaluate('() => document.documentElement.scrollHeight')
-    print(last_height)
     last_height = last_height/random.randint(4, 7)
-    print(last_height)
 
     try:
         current_height = 0
