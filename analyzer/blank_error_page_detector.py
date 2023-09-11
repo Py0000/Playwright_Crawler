@@ -17,6 +17,7 @@ ERROR_TYPE_SLEEPING = "website is sleeping"
 ERROR_TYPE_NO_LONGER_EXISTS = "no longer exist"
 ERROR_TYPE_404_NOT_FOUND = "404 not found"
 ERROR_TYPE_403_FORBIDDEN = "403 forbidden"
+ERROR_TYPE_403 = "Error 403"
 ERROR_TYPE_509_BANDWIDTH_LIMIT_EXCEED = "509 bandwidth limit exceeded"
 ERROR_TYPE_ERROR = "error"
 ERROR_TYPE_SUSPECTED_PHISHING = "suspected phishing site"
@@ -35,23 +36,24 @@ BLANK_ERROR_HTML_FILE = "blank_error_html.json"
 
 def determine_error_type(html_script):
     BLOCK_ERRORS = [
-        ("access denied", "Access Denied"),
-        ("not allowed", "Not Allowed"),
-        ("403 forbidden", "403 Forbidden"),
-        ("you have been blocked", "You Have Been Blocked"),
+        ERROR_TYPE_ACCESS_DENIED,
+        ERROR_TYPE_NOT_ALLOWED,
+        ERROR_TYPE_403_FORBIDDEN,
+        ERROR_TYPE_403,
+        ERROR_TYPE_509_BANDWIDTH_LIMIT_EXCEED,
+        ERROR_TYPE_SORRY_YOU_HAVE_BEEN_BLOCKED,
+        ERROR_TYPE_SUSPECTED_PHISHING
     ]
     UNAVAILABLE_ERRORS = [
-        ("under construction", "Under Construction"),
-        ("site not found", "Site Not Found"),
-        (r"service (.+?) is not available", "Service Not Available"),
-        ("website is sleeping", "Website Sleeping"),
-        ("no longer exist", "No Longer Exists"),
-        ("404 not found", "404 Not Found"),
-        ("509 bandwidth limit exceeded", "509 Bandwidth Limit Exceeded"),
-        ("error", "Error"),
-        ("suspected phishing site", "Suspected Phishing Site"),
-        ("default web site page", "Shifted Domain"),
-        ("temporarily unavailable", "Temporarily Unavailable"),
+        ERROR_TYPE_UNDER_CONSTRUCTION,
+        ERROR_TYPE_SITE_NOT_FOUND,
+        ERROR_TYPE_SERVICE_NOT_AVAILABLE,
+        ERROR_TYPE_SLEEPING,
+        ERROR_TYPE_NO_LONGER_EXISTS,
+        ERROR_TYPE_404_NOT_FOUND,
+        ERROR_TYPE_ERROR,
+        ERROR_TYPE_SHIFTED_DOMAIN,
+        ERROR_TYPE_UNAVAILABLE
     ]
 
 
@@ -61,7 +63,7 @@ def determine_error_type(html_script):
             return ERROR_TYPE_BLOCKED
     for pattern in UNAVAILABLE_ERRORS:
         if re.search(pattern, all_text_in_html):
-            return ERROR_TYPE_
+            return ERROR_TYPE_INVALID
 
 
 def is_page_blank_or_error(file_path):
@@ -109,10 +111,22 @@ def detect_blank_page(main_folder_path):
             url_index_folder_path = os.path.join(config_folder_path, url_index_folder)
             html_file_path = os.path.join(url_index_folder_path, HTML_SCRIPT_FILE)
 
+            counts = {
+                ERROR_TYPE_BLANK: 0,
+                ERROR_TYPE_BLOCKED: 0,
+                ERROR_TYPE_INVALID: 0
+            }
+
             if (os.path.exists(html_file_path)):
                 result, type = is_page_blank_or_error(html_file_path)
                 if (result):
                     problem_html[config_folder].update({url_index_folder: type})
+                    counts[type] += 1
+        
+        problem_html[config_folder].update({"Blank Count": counts[ERROR_TYPE_BLANK]})
+        problem_html[config_folder].update({"Blocked Count": counts[ERROR_TYPE_BLOCKED]})
+        problem_html[config_folder].update({"Invalid Count": counts[ERROR_TYPE_INVALID]})
+        problem_html[config_folder].update({"Total Count": len(problem_html[config_folder])})
     
     with open(os.path.join(ANALYZER_FOLDER, BLANK_ERROR_HTML_FILE), "w", encoding="utf-8") as f:
         json.dump(problem_html, f, ensure_ascii=False, indent=4)
