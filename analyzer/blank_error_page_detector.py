@@ -22,40 +22,46 @@ ERROR_TYPE_ERROR = "error"
 ERROR_TYPE_SUSPECTED_PHISHING = "suspected phishing site"
 ERROR_TYPE_SHIFTED_DOMAIN = "default web site page"
 ERROR_TYPE_SORRY_YOU_HAVE_BEEN_BLOCKED = "you have been blocked"
+ERROR_TYPE_UNAVAILABLE = "temporarily unavailable"
+
+ERROR_TYPE_BLOCKED = "Access Blocked"
+ERROR_TYPE_INVALID = "Page is Invalid"
 ERROR_TYPE_BLANK = "Blank Page"
 ERROR_TYPE_CONNECTION = "connection error"
-ERROR_TYPE_UNAVAILABLE = "temporarily unavailable"
 
 
 BLANK_ERROR_HTML_FILE = "blank_error_html.json"
 
 
 def determine_error_type(html_script):
-    ERRORS = [
+    BLOCK_ERRORS = [
         ("access denied", "Access Denied"),
-        ("under construction", "Under Construction"),
         ("not allowed", "Not Allowed"),
+        ("403 forbidden", "403 Forbidden"),
+        ("you have been blocked", "You Have Been Blocked"),
+    ]
+    UNAVAILABLE_ERRORS = [
+        ("under construction", "Under Construction"),
         ("site not found", "Site Not Found"),
         (r"service (.+?) is not available", "Service Not Available"),
         ("website is sleeping", "Website Sleeping"),
         ("no longer exist", "No Longer Exists"),
         ("404 not found", "404 Not Found"),
-        ("403 forbidden", "403 Forbidden"),
         ("509 bandwidth limit exceeded", "509 Bandwidth Limit Exceeded"),
         ("error", "Error"),
         ("suspected phishing site", "Suspected Phishing Site"),
         ("default web site page", "Shifted Domain"),
-        ("you have been blocked", "You Have Been Blocked"),
-        ("Blank Page", "Blank Page"),
-        ("connection error", "Connection Error"),
         ("temporarily unavailable", "Temporarily Unavailable"),
     ]
 
 
     all_text_in_html = html_script.get_text().lower()
-    for pattern, error_type in ERRORS:
+    for pattern in BLOCK_ERRORS:
         if re.search(pattern, all_text_in_html):
-            return error_type
+            return ERROR_TYPE_BLOCKED
+    for pattern in UNAVAILABLE_ERRORS:
+        if re.search(pattern, all_text_in_html):
+            return ERROR_TYPE_
 
 
 def is_page_blank_or_error(file_path):
