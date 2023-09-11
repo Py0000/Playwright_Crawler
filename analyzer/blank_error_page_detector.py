@@ -1,29 +1,61 @@
 import json
 import os
+import re
 from bs4 import BeautifulSoup
-import util_def
+
+ANALYZER_FOLDER = "analyzer"
+HTML_SCRIPT_FILE = "html_script_aft.html"
+ERROR_HTML = "error"
+BLANK_HTML = "blank"
+
+ERROR_TYPE_ACCESS_DENIED = "access denied"
+ERROR_TYPE_UNDER_CONSTRUCTION = "under construction"
+ERROR_TYPE_NOT_ALLOWED = "not allowed"
+ERROR_TYPE_SITE_NOT_FOUND = "site not found"
+ERROR_TYPE_SERVICE_NOT_AVAILABLE = r"service (.+?) is not available"
+ERROR_TYPE_SLEEPING = "website is sleeping"
+ERROR_TYPE_NO_LONGER_EXISTS = "no longer exist"
+ERROR_TYPE_404_NOT_FOUND = "404 not found"
+ERROR_TYPE_403_FORBIDDEN = "403 forbidden"
+ERROR_TYPE_509_BANDWIDTH_LIMIT_EXCEED = "509 bandwidth limit exceeded"
+ERROR_TYPE_ERROR = "error"
+ERROR_TYPE_SUSPECTED_PHISHING = "suspected phishing site"
+ERROR_TYPE_SHIFTED_DOMAIN = "default web site page"
+ERROR_TYPE_SORRY_YOU_HAVE_BEEN_BLOCKED = "you have been blocked"
+ERROR_TYPE_BLANK = "Blank Page"
+ERROR_TYPE_CONNECTION = "connection error"
+ERROR_TYPE_UNAVAILABLE = "temporarily unavailable"
+
+
+BLANK_ERROR_HTML_FILE = "blank_error_html.json"
+
 
 def determine_error_type(html_script):
-    title_tag = html_script.title
-    if title_tag:
-        title = title_tag.text.lower() 
-    
-        if "404" in title or "not found" in title:
-            return util_def.ERROR_TYPE_404
-        
-        elif "403" in title or "forbidden" in title:
-            return util_def.ERROR_TYPE_403
-        
-        elif "unavailable" in title:
-            return util_def.ERROR_TYPE_UNAVAILABLE
+    ERRORS = [
+        ("access denied", "Access Denied"),
+        ("under construction", "Under Construction"),
+        ("not allowed", "Not Allowed"),
+        ("site not found", "Site Not Found"),
+        (r"service (.+?) is not available", "Service Not Available"),
+        ("website is sleeping", "Website Sleeping"),
+        ("no longer exist", "No Longer Exists"),
+        ("404 not found", "404 Not Found"),
+        ("403 forbidden", "403 Forbidden"),
+        ("509 bandwidth limit exceeded", "509 Bandwidth Limit Exceeded"),
+        ("error", "Error"),
+        ("suspected phishing site", "Suspected Phishing Site"),
+        ("default web site page", "Shifted Domain"),
+        ("you have been blocked", "You Have Been Blocked"),
+        ("Blank Page", "Blank Page"),
+        ("connection error", "Connection Error"),
+        ("temporarily unavailable", "Temporarily Unavailable"),
+    ]
 
-        elif "error" in title:
-            return util_def.ERROR_TYPE_ERROR
-        
-        else:
-            return None
-    else:
-        return None
+
+    all_text_in_html = html_script.get_text().lower()
+    for pattern, error_type in ERRORS:
+        if re.search(pattern, all_text_in_html):
+            return error_type
 
 
 def is_page_blank_or_error(file_path):
@@ -31,7 +63,7 @@ def is_page_blank_or_error(file_path):
         content = file.read()
     
     if content.startswith("Error occurred for url: "):
-        return True, util_def.ERROR_TYPE_CONNECTION
+        return True, ERROR_TYPE_CONNECTION
     
     html_script = BeautifulSoup(content, 'lxml')
     has_error_type = determine_error_type(html_script)
@@ -52,7 +84,7 @@ def is_page_blank_or_error(file_path):
     if significant_tags:
         return False, None
 
-    return True, util_def.ERROR_TYPE_BLANK
+    return True, ERROR_TYPE_BLANK
 
 
 def detect_blank_page(main_folder_path):
@@ -69,14 +101,14 @@ def detect_blank_page(main_folder_path):
 
         for url_index_folder in url_index_folders:
             url_index_folder_path = os.path.join(config_folder_path, url_index_folder)
-            html_file_path = os.path.join(url_index_folder_path, util_def.HTML_SCRIPT_FILE)
+            html_file_path = os.path.join(url_index_folder_path, HTML_SCRIPT_FILE)
 
             if (os.path.exists(html_file_path)):
                 result, type = is_page_blank_or_error(html_file_path)
                 if (result):
                     problem_html[config_folder].update({url_index_folder: type})
     
-    with open(os.path.join(util_def.COMPARISON_FOLDER, util_def.BLANK_ERROR_HTML_FILE), "w", encoding="utf-8") as f:
+    with open(os.path.join(ANALYZER_FOLDER, BLANK_ERROR_HTML_FILE), "w", encoding="utf-8") as f:
         json.dump(problem_html, f, ensure_ascii=False, indent=4)
         
 
