@@ -18,6 +18,11 @@ def read_feeds_from_file(feed_path):
 
 
 
+def crawl_google_ref_no_act(seed_url, url_index):
+    print("------------------------------\nConfigurations:\nUser-Agent: Chrome Windows User\nReferrer: Google\nUser interaction: None\n------------------------------")
+    crawler.crawl()
+
+
 def crawl_ref_act(seed_url, url_index):
     print("------------------------------\nConfigurations:\nUser-Agent: Desktop User\nReferrer: Google\nUser interaction: Enabled\n------------------------------")
     crawler.crawl(util_def.DESKTOP_USER, ref_flag=True, act_flag=True, url=seed_url, index=url_index)

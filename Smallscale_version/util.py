@@ -13,9 +13,7 @@ def extract_hostname(website_url):
 
 
 def generate_crawling_base_folders(device_conf, ref_flag, act_flag):
-    ref = util_def.REF_SET if ref_flag else util_def.NO_REF_SET
-    act = util_def.USER_ACT_SET if act_flag else util_def.NO_USER_ACT_SET
-    folder = f"{device_conf}_{ref}_{act}"
+    folder = f"{device_conf}_{ref_flag}_{act_flag}"
         
     if not os.path.exists(util_def.DATA_FOLDER):
         os.mkdir(util_def.DATA_FOLDER)

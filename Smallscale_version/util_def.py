@@ -1,23 +1,41 @@
 ##### Related to configurations #####
-DESKTOP_USER = "d_user"
-DESKTOP_BOT = "d_bot"
+MAC = "mac"
+WINDOWS = "win"
+BOT = "bot"
 
-REF_SET = "ref"
-NO_REF_SET = "no_ref"
-USER_ACT_SET = "act"
+GOOGLE_REF = "g_ref"
+FACEBOOK_REF = "fb_ref"
+TWITTER_REF = "t_ref"
+SELF_REF = "self_ref"
+NO_REF = "no_ref"
+
+MOUSE_CLICK_LEFT = "left_click"
+MOUSE_CLICK_RIGHT = "right_click"
+MOUSE_MOVEMENT = "move"
+PAGE_SCROLL = "scroll"
 NO_USER_ACT_SET = "no_act"
 
 
 ###### Related to user-agents & Referrer ######
-DESKTOP_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
-DESKTOP_BOT_AGENT = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/115.0.0.0 Safari/537.36"
+USER_USER_AGENT_WINDOWS_CHROME = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+USER_USER_AGENT_MAC_CHROME = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+DESKTOP_BOT_AGENT = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/116.0.0.0 Safari/537.36"
 
 DESKTOP_USER_AGENT_MAP = {
-    DESKTOP_USER: [f"--user-agent={DESKTOP_USER_AGENT}"],
-    DESKTOP_BOT: [f"--user-agent={DESKTOP_BOT_AGENT}"],
+    MAC: USER_USER_AGENT_MAC_CHROME,
+    WINDOWS: USER_USER_AGENT_WINDOWS_CHROME,
+    BOT: DESKTOP_BOT_AGENT
 }
 
 GOOGLE_REFERRER = "https://www.google.com"
+FACEBOOK_REFERRER = "https://www.facebook.com"
+TWITTER_REFERRER = "https://www.twitter.com"
+
+REFERRER_MAP = {
+    GOOGLE_REF: GOOGLE_REFERRER,
+    FACEBOOK_REF: FACEBOOK_REFERRER,
+    TWITTER_REF: TWITTER_REFERRER,
+}
 
 ###### Related to file names ######
 NETWORK_FILE_BEFORE = "network.har"

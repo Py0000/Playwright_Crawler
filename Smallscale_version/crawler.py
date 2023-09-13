@@ -13,16 +13,22 @@ import util
 import util_def
 
 
-def setup_crawler_context(ref_flag, browser, folder_path):
+def setup_crawler_context(ref_flag, browser, folder_path, url):
     har_network_log_file = os.path.join(folder_path, util_def.NETWORK_FILE_BEFORE)
-    referrer = util_def.GOOGLE_REFERRER if ref_flag else None
+    if ref_flag == util_def.NO_REF:
+        referrer = None
+    elif ref_flag == util_def.SELF_REF:
+        referrer = url
+    else: 
+        referrer = util_def.REFERRER_MAP.get(ref_flag)
+    
     context = browser.new_context(record_har_path=har_network_log_file)
     page = context.new_page()
     return page, context, referrer
 
 
 
-def get_server_side_data(device_conf, ref_flag, act_flag, browser, folder_path, actual_url):
+def get_server_side_data(ref_flag, act_flag, browser, folder_path, actual_url):
     print("Getting content from server-side...")
     context = browser.new_context()
     page = context.new_page()
@@ -37,9 +43,10 @@ def get_server_side_data(device_conf, ref_flag, act_flag, browser, folder_path, 
         page.goto(actual_url)
 
         if act_flag:
-            crawler_utilities.check_and_execute_user_actions(device_conf, act_flag, page)
+            crawler_utilities.check_and_execute_user_actions(act_flag, page)
         
         # Gets the html content 
+        crawler_utilities.wait_for_page_to_load(page, act_flag)
         crawler_utilities.get_screenshot(page, folder_path, util_def.SCREENSHOT_BEF_FILE)
         server_html_script = page.content()
         soup = BeautifulSoup(server_html_script, "lxml")
@@ -93,14 +100,14 @@ def capture_more_detailed_network_logs(page, act_flag):
 
 
 
-def get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_embedded):
+def get_html_content(act_flag, page, folder_path, actual_url, is_embedded):
     # Perform any user-actions if needed
-    crawler_utilities.check_and_execute_user_actions(device_conf, act_flag, page)
+    crawler_utilities.check_and_execute_user_actions(act_flag, page)
 
     # Saves the full page screenshot 
     crawler_utilities.get_screenshot(page, folder_path, util_def.SCREENSHOT_FILE)
 
-    crawler_utilities.check_and_execute_scroll(page, act_flag)
+    # crawler_utilities.check_and_execute_scroll(page, act_flag)
 
     # Gets the html content 
     html_content = page.content()
@@ -134,7 +141,7 @@ def get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_em
 
 
 
-def scrape_content(device_conf, act_flag, page, folder_path, ref_url, actual_url, is_embedded):
+def scrape_content(act_flag, page, folder_path, ref_url, actual_url, is_embedded):
     if ref_url is not None:
         page.set_extra_http_headers({"Referer": ref_url})
 
@@ -146,7 +153,7 @@ def scrape_content(device_conf, act_flag, page, folder_path, ref_url, actual_url
     crawler_support.save_more_detailed_network_logs(folder_path, captured_events)
 
     # get the html script and embedded links in the script
-    return get_html_content(device_conf, act_flag, page, folder_path, actual_url, is_embedded)
+    return get_html_content(act_flag, page, folder_path, actual_url, is_embedded)
 
 
 
@@ -158,14 +165,14 @@ def scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, embedded_p
         embedded_url_index = url_list.index(url)
         file_index = f"{base_index}-{embedded_url_index}"
         folder_path = util.generate_crawling_folder_for_url(device_conf, ref_flag, act_flag, file_index)
-        page, context, referrer = setup_crawler_context(ref_flag, browser, folder_path)
+        page, context, _ = setup_crawler_context(ref_flag, browser, folder_path, url)
 
         certificate_extractor.extract_certificate_info(url, folder_path)
         dns_extractor.extract_dns_records(url, folder_path)
-        get_server_side_data(device_conf, ref_flag, act_flag, browser, folder_path, url)
+        get_server_side_data(ref_flag, act_flag, browser, folder_path, url)
 
         try:
-            content, _ = scrape_content(device_conf, act_flag, page, folder_path, referrer, url, is_embedded=True)
+            content, _ = scrape_content(act_flag, page, folder_path, referrer, url, is_embedded=True)
             if content is not None:
                 crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, content)
                 page.close()
@@ -186,14 +193,14 @@ def scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, embedded_p
 
 def get_dataset(device_conf, ref_flag, act_flag, browser, url, index):
     folder_path = util.generate_crawling_folder_for_url(device_conf, ref_flag, act_flag, index)
-    page, context, referrer = setup_crawler_context(ref_flag, browser, folder_path)
+    page, context, referrer = setup_crawler_context(ref_flag, browser, folder_path, url)
 
     certificate_extractor.extract_certificate_info(url, folder_path)
     dns_extractor.extract_dns_records(url, folder_path)
-    get_server_side_data(device_conf, ref_flag, act_flag, browser, folder_path, url)
+    get_server_side_data(referrer, act_flag, browser, folder_path, url)
 
     try:
-        content, embedded_path = scrape_content(device_conf, act_flag, page, folder_path, referrer, url, is_embedded=False)
+        content, embedded_path = scrape_content(act_flag, page, folder_path, referrer, url, is_embedded=False)
         # Save obtained html if present
         if content is not None:
             crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, content)
@@ -201,7 +208,7 @@ def get_dataset(device_conf, ref_flag, act_flag, browser, url, index):
             context.close()
         """
         # Scrape embedded link
-        referrer = url if ref_flag else referrer
+        referrer = url if referrer is not None else None
         scrape_one_level_deeper(device_conf, ref_flag, act_flag, browser, embedded_path, referrer, index)
         """     
     except Exception as e:

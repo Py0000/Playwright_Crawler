@@ -3,9 +3,10 @@ import os
 import crawler_actions
 import crawler_support
 import util
+import util_def
 
 def wait_for_page_to_load(page, act_flag):
-    if act_flag:
+    if act_flag == util_def.MOUSE_MOVEMENT:
         crawler_actions.move_mouse_smoothly_top_left_bottom_right(page)
     try:
         # Wait for the page to load completely (wait for the load event)
@@ -16,24 +17,36 @@ def wait_for_page_to_load(page, act_flag):
     try:
         page.wait_for_load_state('networkidle')
     except:
-        pass
+        page.wait_for_timeout(3000)
 
 
-def check_and_execute_user_actions(device_conf, act_flag, page):
-    if not act_flag:
+def check_and_execute_user_actions(act_flag, page):
+    if act_flag == util_def.NO_USER_ACT_SET:
         pass
+    elif act_flag == util_def.MOUSE_CLICK_LEFT:
+        crawler_actions.mouse_click(page, "left")
+    elif act_flag == util_def.MOUSE_CLICK_RIGHT:
+        crawler_actions.mouse_click(page, "right")
+    elif act_flag == util_def.MOUSE_MOVEMENT:
+        crawler_actions.move_mouse_smoothly_top_left_bottom_right(page)
+    elif act_flag == util_def.PAGE_SCROLL:
+        crawler_actions.page_scroll(page)
     else:
-        crawler_actions.desktop_user_mouse_movement(page)
+        pass
 
-
+"""
 def check_and_execute_scroll(page, act_flag):
     if act_flag:
         crawler_actions.page_scroll(page)
     else:
         pass
-
+"""
 
 def get_screenshot(page, folder_path, file_name):
+    try:
+        page.wait_for_load_state('networkidle')
+    except:
+        page.wait_for_timeout(3000)
     path = os.path.join(folder_path, file_name)
     crawler_support.save_screenshot(page, path)
     print("Screenshot Captured...")
