@@ -41,10 +41,7 @@ def extract_data_from_json(json_data, dirpath):
 
 
 def analyse_individual_dns_data(device_conf, ref_flag, act_flag):
-    ref = util_def.REF_SET if ref_flag else util_def.NO_REF_SET
-    act = util_def.USER_ACT_SET if act_flag else util_def.NO_USER_ACT_SET
-
-    base_folder = os.path.join(util_def.DATA_FOLDER, f"{device_conf}_{ref}_{act}")
+    base_folder = os.path.join(util_def.DATA_FOLDER, f"{device_conf}_{ref_flag}_{act_flag}")
     for dirpath, _, filenames in os.walk(base_folder):
         if util_def.DNS_FILE in filenames:
             file_path = os.path.join(dirpath, util_def.DNS_FILE)
@@ -54,12 +51,9 @@ def analyse_individual_dns_data(device_conf, ref_flag, act_flag):
 
 
 def consolidate_dns_data(device_conf, ref_flag, act_flag):
-    ref = util_def.REF_SET if ref_flag else util_def.NO_REF_SET
-    act = util_def.USER_ACT_SET if act_flag else util_def.NO_USER_ACT_SET
-
     group_data = {}
 
-    base_folder = os.path.join(util_def.ANALYSIS_FOLDER, f"{device_conf}_{ref}_{act}")
+    base_folder = os.path.join(util_def.ANALYSIS_FOLDER, f"{device_conf}_{ref_flag}_{act_flag}")
     for dirpath, _, filenames in os.walk(base_folder):
         if util_def.DNS_EXCEL in filenames:
             group_prefix = dirpath.split(os.sep)[-1].split('-')[0] # Extract prefix like 0, 1, etc.
@@ -70,7 +64,7 @@ def consolidate_dns_data(device_conf, ref_flag, act_flag):
                 group_data[group_prefix] = current_df
             group_data[group_prefix] = pd.concat([group_data[group_prefix], current_df], ignore_index=True)
         
-    output_folder = os.path.join(util_def.ANALYSIS_FOLDER, f"{device_conf}_{ref}_{act}")
+    output_folder = os.path.join(util_def.ANALYSIS_FOLDER, f"{device_conf}_{ref_flag}_{act_flag}")
     for group, df in group_data.items():
         output_filename = f"{group}_{util_def.DNS_CONSOLIDATED_EXCEL}"
         df.drop_duplicates(subset=["Domain"], keep="first", inplace=True)
@@ -99,9 +93,7 @@ def get_true_false_count_DNS(df):
 def analyze_DNS_df(device_conf, ref_flag, act_flag):
     print("Analysing DNS Data...")
 
-    ref = util_def.REF_SET if ref_flag else util_def.NO_REF_SET
-    act = util_def.USER_ACT_SET if act_flag else util_def.NO_USER_ACT_SET
-    base_folder = os.path.join(util_def.ANALYSIS_FOLDER, f"{device_conf}_{ref}_{act}")
+    base_folder = os.path.join(util_def.ANALYSIS_FOLDER, f"{device_conf}_{ref_flag}_{act_flag}")
 
     consolidate_dns_data(device_conf, ref_flag, act_flag)
 

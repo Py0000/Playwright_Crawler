@@ -25,10 +25,7 @@ def generate_crawling_base_folders(device_conf, ref_flag, act_flag):
 
 
 def generate_crawling_folder_for_url(device_config, ref_flag, act_flag, url_index):
-    ref = util_def.REF_SET if ref_flag else util_def.NO_REF_SET
-    act = util_def.USER_ACT_SET if act_flag else util_def.NO_USER_ACT_SET
-
-    base_path = os.path.join(util_def.DATA_FOLDER, f"{device_config}_{ref}_{act}")
+    base_path = os.path.join(util_def.DATA_FOLDER, f"{device_config}_{ref_flag}_{act_flag}")
     folder_path = os.path.join(base_path, url_index)
     if not os.path.exists(folder_path):
         os.mkdir(folder_path)

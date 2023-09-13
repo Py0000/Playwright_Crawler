@@ -221,11 +221,9 @@ def create_vector(soup, url):
 
 # Step 5: Create a dataframe by using the 2D array generated in step 4.
 def create_dataframe(device_conf, ref_flag, act_flag, is_aft_flag):
-    ref = util_def.REF_SET if ref_flag else util_def.NO_REF_SET
-    act = util_def.USER_ACT_SET if act_flag else util_def.NO_USER_ACT_SET
     html_file_name = util_def.HTML_SCRIPT_FILE if is_aft_flag else util_def.HTML_SCRIPT_BEF_FILE
 
-    base_folder = os.path.join(util_def.DATA_FOLDER, f"{device_conf}_{ref}_{act}")
+    base_folder = os.path.join(util_def.DATA_FOLDER, f"{device_conf}_{ref_flag}_{act_flag}")
     for dirpath, _, filenames in os.walk(base_folder):
         url = ""
         
@@ -280,9 +278,9 @@ def create_json(soup, url, dataset_folder_name, output_folder_name, is_aft_flag)
 
 def extract_features(device_conf, ref_flag, act_flag):
     print("\nExtracting HTML features...\n")
-    print(f"Extract HTML features for {device_conf} {'ref' if ref_flag else 'no ref'} {'act' if act_flag else 'no act'} before client-side rendering")
+    print(f"Extract HTML features for {device_conf} {ref_flag} {act_flag} before client-side rendering")
     create_dataframe(device_conf, ref_flag, act_flag, is_aft_flag=True)
-    print(f"\nExtract HTML features for {device_conf} {'ref' if ref_flag else 'no ref'} {'act' if act_flag else 'no act'} after client-side rendering")
+    print(f"\nExtract HTML features for {device_conf} {ref_flag} {act_flag} after client-side rendering")
     create_dataframe(device_conf, ref_flag, act_flag, is_aft_flag=False)
     print("\nHTML features extracted...\n")
 
