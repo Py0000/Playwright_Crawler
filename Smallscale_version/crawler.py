@@ -9,7 +9,6 @@ from bs4 import BeautifulSoup
 
 import crawler_certificate_extractor as certificate_extractor
 import crawler_dns_extractor as dns_extractor
-import crawler_detail_network_extractor as network_extractor
 import crawler_utilities
 import crawler_support
 import util
