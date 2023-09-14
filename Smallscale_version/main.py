@@ -18,72 +18,72 @@ def read_feeds_from_file(feed_path):
     return urls
 
 
-#############################
+############################
 # No User-action Section
 #############################
 async def crawl_google_ref_no_act(seed_url, url_index):
     referrer = util_def.GOOGLE_REF
     action = util_def.NO_USER_ACT_SET
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Google\nUser interaction: None\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Google\nUser interaction: None\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Google\nUser interaction: None\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Google\nUser interaction: None\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Google\nUser interaction: None\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Google\nUser interaction: None\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_facebook_ref_no_act(seed_url, url_index):
     referrer = util_def.FACEBOOK_REF
     action = util_def.NO_USER_ACT_SET
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Facebook\nUser interaction: None\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Facebook\nUser interaction: None\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Facebook\nUser interaction: None\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Facebook\nUser interaction: None\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Facebook\nUser interaction: None\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Facebook\nUser interaction: None\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_twitter_ref_no_act(seed_url, url_index):
     referrer = util_def.TWITTER_REF
     action = util_def.NO_USER_ACT_SET
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Twitter\nUser interaction: None\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Twitter\nUser interaction: None\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Twitter\nUser interaction: None\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Twitter\nUser interaction: None\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Twitter\nUser interaction: None\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Twitter\nUser interaction: None\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_self_ref_no_act(seed_url, url_index):
     referrer = util_def.SELF_REF
     action = util_def.NO_USER_ACT_SET
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Self\nUser interaction: None\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Self\nUser interaction: None\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Self\nUser interaction: None\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Self\nUser interaction: None\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Self\nUser interaction: None\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Self\nUser interaction: None\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_no_ref_no_act(seed_url, url_index):
     referrer = util_def.NO_REF
     action = util_def.NO_USER_ACT_SET
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: None\nUser interaction: None\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: None\nUser interaction: None\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: None\nUser interaction: None\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: None\nUser interaction: None\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: None\nUser interaction: None\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: None\nUser interaction: None\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 
@@ -94,66 +94,66 @@ async def crawl_no_ref_no_act(seed_url, url_index):
 async def crawl_google_ref_move(seed_url, url_index):
     referrer = util_def.GOOGLE_REF
     action = util_def.MOUSE_MOVEMENT
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Google\nUser interaction: Mouse Move\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Google\nUser interaction: Mouse Move\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Google\nUser interaction: Mouse Move\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Google\nUser interaction: Mouse Move\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Google\nUser interaction: Mouse Move\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Google\nUser interaction: Mouse Move\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_facebook_ref_move(seed_url, url_index):
     referrer = util_def.FACEBOOK_REF
     action = util_def.MOUSE_MOVEMENT
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Facebook\nUser interaction: Mouse Move\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Facebook\nUser interaction: Mouse Move\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Facebook\nUser interaction: Mouse Move\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Facebook\nUser interaction: Mouse Move\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Facebook\nUser interaction: Mouse Move\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Facebook\nUser interaction: Mouse Move\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_twitter_ref_move(seed_url, url_index):
     referrer = util_def.TWITTER_REF
     action = util_def.MOUSE_MOVEMENT
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Twitter\nUser interaction: Mouse Move\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Twitter\nUser interaction: Mouse Move\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Twitter\nUser interaction: Mouse Move\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Twitter\nUser interaction: Mouse Move\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Twitter\nUser interaction: Mouse Move\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Twitter\nUser interaction: Mouse Move\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_self_ref_move(seed_url, url_index):
     referrer = util_def.SELF_REF
     action = util_def.MOUSE_MOVEMENT
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Self\nUser interaction: Mouse Move\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Self\nUser interaction: Mouse Move\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Self\nUser interaction: Mouse Move\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Self\nUser interaction: Mouse Move\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Self\nUser interaction: Mouse Move\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Self\nUser interaction: Mouse Move\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_no_ref_move(seed_url, url_index):
     referrer = util_def.NO_REF
     action = util_def.MOUSE_MOVEMENT
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: None\nUser interaction: Mouse Move\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: None\nUser interaction: Mouse Move\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: None\nUser interaction: Mouse Move\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: None\nUser interaction: Mouse Move\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: None\nUser interaction: Mouse Move\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: None\nUser interaction: Mouse Move\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 
@@ -164,66 +164,66 @@ async def crawl_no_ref_move(seed_url, url_index):
 async def crawl_google_ref_scroll(seed_url, url_index):
     referrer = util_def.GOOGLE_REF
     action = util_def.PAGE_SCROLL
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Google\nUser interaction: Page Scroll\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Google\nUser interaction: Page Scroll\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Google\nUser interaction: Page Scroll\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Google\nUser interaction: Page Scroll\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Google\nUser interaction: Page Scroll\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Google\nUser interaction: Page Scroll\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_facebook_ref_scroll(seed_url, url_index):
     referrer = util_def.FACEBOOK_REF
     action = util_def.PAGE_SCROLL
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Facebook\nUser interaction: Page Scroll\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Facebook\nUser interaction: Page Scroll\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Facebook\nUser interaction: Page Scroll\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Facebook\nUser interaction: Page Scroll\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Facebook\nUser interaction: Page Scroll\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Facebook\nUser interaction: Page Scroll\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_twitter_ref_scroll(seed_url, url_index):
     referrer = util_def.TWITTER_REF
     action = util_def.PAGE_SCROLL
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Twitter\nUser interaction: Page Scroll\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Twitter\nUser interaction: Page Scroll\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Twitter\nUser interaction: Page Scroll\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Twitter\nUser interaction: Page Scroll\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Twitter\nUser interaction: Page Scroll\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Twitter\nUser interaction: Page Scroll\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_self_ref_scroll(seed_url, url_index):
     referrer = util_def.SELF_REF
     action = util_def.PAGE_SCROLL
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Self\nUser interaction: Page Scroll\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Self\nUser interaction: Page Scroll\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Self\nUser interaction: Page Scroll\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Self\nUser interaction: Page Scroll\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Self\nUser interaction: Page Scroll\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Self\nUser interaction: Page Scroll\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_no_ref_scroll(seed_url, url_index):
     referrer = util_def.NO_REF
     action = util_def.PAGE_SCROLL
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: None\nUser interaction: Page Scroll\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: None\nUser interaction: Page Scroll\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: None\nUser interaction: Page Scroll\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: None\nUser interaction: Page Scroll\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: None\nUser interaction: Page Scroll\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: None\nUser interaction: Page Scroll\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 
@@ -233,66 +233,66 @@ async def crawl_no_ref_scroll(seed_url, url_index):
 async def crawl_google_ref_left_click(seed_url, url_index):
     referrer = util_def.GOOGLE_REF
     action = util_def.MOUSE_CLICK_LEFT
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Google\nUser interaction: Left Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Google\nUser interaction: Left Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Google\nUser interaction: Left Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Google\nUser interaction: Left Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Google\nUser interaction: Left Click\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Google\nUser interaction: Left Click\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_facebook_ref_left_click(seed_url, url_index):
     referrer = util_def.FACEBOOK_REF
     action = util_def.MOUSE_CLICK_LEFT
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Facebook\nUser interaction: Left Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Facebook\nUser interaction: Left Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Facebook\nUser interaction: Left Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Facebook\nUser interaction: Left Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Facebook\nUser interaction: Left Click\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Facebook\nUser interaction: Left Click\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_twitter_ref_left_click(seed_url, url_index):
     referrer = util_def.TWITTER_REF
     action = util_def.MOUSE_CLICK_LEFT
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Twitter\nUser interaction: Left Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Twitter\nUser interaction: Left Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Twitter\nUser interaction: Left Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Twitter\nUser interaction: Left Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Twitter\nUser interaction: Left Click\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Twitter\nUser interaction: Left Click\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_self_ref_left_click(seed_url, url_index):
     referrer = util_def.SELF_REF
     action = util_def.MOUSE_CLICK_LEFT
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Self\nUser interaction: Left Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Self\nUser interaction: Left Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Self\nUser interaction: Left Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Self\nUser interaction: Left Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Self\nUser interaction: Left Click\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Self\nUser interaction: Left Click\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_no_ref_left_click(seed_url, url_index):
     referrer = util_def.NO_REF
     action = util_def.MOUSE_CLICK_LEFT
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: None\nUser interaction: Left Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: None\nUser interaction: Left Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: None\nUser interaction: Left Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: None\nUser interaction: Left Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: None\nUser interaction: Left Click\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: None\nUser interaction: Left Click\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 
@@ -302,66 +302,66 @@ async def crawl_no_ref_left_click(seed_url, url_index):
 async def crawl_google_ref_right_click(seed_url, url_index):
     referrer = util_def.GOOGLE_REF
     action = util_def.MOUSE_CLICK_RIGHT
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Google\nUser interaction: Right Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Google\nUser interaction: Right Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Google\nUser interaction: Right Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Google\nUser interaction: Right Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Google\nUser interaction: Right Click\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Google\nUser interaction: Right Click\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_facebook_ref_right_click(seed_url, url_index):
     referrer = util_def.FACEBOOK_REF
     action = util_def.MOUSE_CLICK_RIGHT
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Facebook\nUser interaction: Right Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Facebook\nUser interaction: Right Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Facebook\nUser interaction: Right Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Facebook\nUser interaction: Right Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Facebook\nUser interaction: Right Click\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Facebook\nUser interaction: Right Click\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_twitter_ref_right_click(seed_url, url_index):
     referrer = util_def.TWITTER_REF
     action = util_def.MOUSE_CLICK_RIGHT
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Twitter\nUser interaction: Right Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Twitter\nUser interaction: Right Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Twitter\nUser interaction: Right Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Twitter\nUser interaction: Right Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Twitter\nUser interaction: Right Click\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Twitter\nUser interaction: Right Click\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_self_ref_right_click(seed_url, url_index):
     referrer = util_def.SELF_REF
     action = util_def.MOUSE_CLICK_RIGHT
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Self\nUser interaction: Right Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: Self\nUser interaction: Right Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
     print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: Self\nUser interaction: Right Click\nCurrent Url #: {url_index}------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Self\nUser interaction: Right Click\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: Self\nUser interaction: Right Click\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 async def crawl_no_ref_right_click(seed_url, url_index):
     referrer = util_def.NO_REF
     action = util_def.MOUSE_CLICK_RIGHT
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: None\nUser interaction: Right Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: Windows User\nReferrer: None\nUser interaction: Right Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: None\nUser interaction: Right Click\nCurrent Url #: {url_index}------------------------------")
+    print(f"------------------------------\nConfigurations:\nUser-Agent: MacOS User\nReferrer: None\nUser interaction: Right Click\nCurrent Url #: {url_index}\n------------------------------")
     await crawler.crawl(device_conf=util_def.MAC, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
-    print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: None\nUser interaction: Right Click\nCurrent Url #: {url_index}------------------------------")
-    await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
+    #print(f"------------------------------\nConfigurations:\nUser-Agent: Bot\nReferrer: None\nUser interaction: Right Click\nCurrent Url #: {url_index}\n------------------------------")
+    #await crawler.crawl(device_conf=util_def.BOT, ref_flag=referrer, act_flag=action, url=seed_url, index=url_index)
 
 
 
