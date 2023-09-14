@@ -5,32 +5,32 @@ import crawler_support
 import util
 import util_def
 
-def wait_for_page_to_load(page, act_flag):
+async def wait_for_page_to_load(page, act_flag):
     if act_flag == util_def.MOUSE_MOVEMENT:
-        crawler_actions.move_mouse_smoothly_top_left_bottom_right(page)
+        await crawler_actions.move_mouse_smoothly_top_left_bottom_right(page)
     try:
         # Wait for the page to load completely (wait for the load event)
-        page.wait_for_load_state('domcontentloaded')
+        await page.wait_for_load_state('domcontentloaded')
     except:
         pass
 
     try:
-        page.wait_for_load_state('networkidle')
+        await page.wait_for_load_state('networkidle')
     except:
-        page.wait_for_timeout(3000)
+        await page.wait_for_timeout(3000)
 
 
-def check_and_execute_user_actions(act_flag, page):
+async def check_and_execute_user_actions(act_flag, page):
     if act_flag == util_def.NO_USER_ACT_SET:
         pass
     elif act_flag == util_def.MOUSE_CLICK_LEFT:
-        crawler_actions.mouse_click(page, "left")
+        await crawler_actions.mouse_click(page, "left")
     elif act_flag == util_def.MOUSE_CLICK_RIGHT:
-        crawler_actions.mouse_click(page, "right")
+        await crawler_actions.mouse_click(page, "right")
     elif act_flag == util_def.MOUSE_MOVEMENT:
-        crawler_actions.move_mouse_smoothly_top_left_bottom_right(page)
+        await crawler_actions.move_mouse_smoothly_top_left_bottom_right(page)
     elif act_flag == util_def.PAGE_SCROLL:
-        crawler_actions.page_scroll(page)
+        await crawler_actions.page_scroll(page)
     else:
         pass
 
@@ -42,13 +42,13 @@ def check_and_execute_scroll(page, act_flag):
         pass
 """
 
-def get_screenshot(page, folder_path, file_name):
+async def get_screenshot(page, folder_path, file_name):
     try:
-        page.wait_for_load_state('networkidle')
+        await page.wait_for_load_state('networkidle')
     except:
-        page.wait_for_timeout(3000)
+        await page.wait_for_timeout(3000)
     path = os.path.join(folder_path, file_name)
-    crawler_support.save_screenshot(page, path)
+    await crawler_support.save_screenshot(page, path)
     print("Screenshot Captured...")
 
 
