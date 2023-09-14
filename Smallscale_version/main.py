@@ -517,7 +517,7 @@ def start_program(seed_url_list):
     analyze_bot_config_data()
     """
 
-#feeds = read_feeds_from_file("feeds_phishing_100923.txt")
+feeds = read_feeds_from_file("feeds/phishing_feeds_140923.txt")
 start_program(["https://www.facebook.com/"])
 
 
