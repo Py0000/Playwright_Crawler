@@ -137,9 +137,8 @@ async def crawl(device_conf, ref_flag, act_flag, url, index):
                         f.write(decoded_data)
             
             except Exception as e:
-                if str(e) == "Protocol error (Network.getResponseBody): No data found for resource with given identifier":
-                    pass
-                print(e)
+                if str(e) != "Protocol error (Network.getResponseBody): No data found for resource with given identifier":
+                    print(e)
         
         async def capture_request(payload):
             captured_event = payload
