@@ -247,7 +247,7 @@ def crawl(device_conf, ref_flag, act_flag, url, index):
                         f.write(decoded_data)
             
             except Exception as e:
-                print("No response that correspond to the requestId")
+                pass
             
         def capture_request(payload):
             captured_event = payload
