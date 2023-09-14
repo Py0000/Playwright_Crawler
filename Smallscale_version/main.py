@@ -477,9 +477,8 @@ def start_program(seed_url_list):
         url_index = str(seed_url_list.index(url))
 
         if url_index != "0":
-            time.sleep(random.randint(8, 15))
+            time.sleep(random.randint(6, 12))
 
-        """
         crawl_self_ref_no_act(url, url_index)
         crawl_google_ref_no_act(url, url_index)
         crawl_no_ref_no_act(url, url_index)
@@ -509,11 +508,7 @@ def start_program(seed_url_list):
         crawl_no_ref_right_click(url, url_index)
         crawl_facebook_ref_right_click(url, url_index)
         crawl_twitter_ref_right_click(url, url_index)
-        """
-        start = time.time()
-        crawler.crawl(device_conf=util_def.WINDOWS, ref_flag=util_def.NO_REF, act_flag=util_def.NO_USER_ACT_SET, url=url, index=url_index)
-        end = time.time()
-        print("time taken: ", end-start)
+        
     
     print("\nCrawling done...")
     """
