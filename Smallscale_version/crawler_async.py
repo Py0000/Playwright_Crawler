@@ -90,97 +90,96 @@ async def crawl(device_conf, ref_flag, act_flag, url, index):
         dns_extractor.extract_dns_records(url, folder_path)
         await get_server_side_data(p, device_conf, ref_flag, act_flag, folder_path, url)
 
-        #try:
-        captured_events = []
-        client = await page.context.new_cdp_session(page)
-        await client.send("Network.enable")
+        try:
+            captured_events = []
+            client = await page.context.new_cdp_session(page)
+            await client.send("Network.enable")
 
-        async def capture_response(payload):
-            url = payload['response']['url']
-            # Check if the response has any content
-            if payload['response']['status'] in [204, 304]:
-                return
-            
-            try:
-                response_body = await client.send("Network.getResponseBody", {"requestId": payload['requestId']})
-                mime_type = payload['response']['mimeType']
-                data_folder_path = crawler_support.get_detailed_network_response_data_path(folder_path)
-                file_name = os.path.join(data_folder_path, f"{hashlib.sha256(url.encode()).hexdigest()}")
-
-                # Decode base64 if needed
-                if response_body['base64Encoded']:
-                    decoded_data = base64.b64decode(response_body['body'])
-                else:
-                    decoded_data = response_body['body']
+            async def capture_response(payload):
+                url = payload['response']['url']
+                # Check if the response has any content
+                if payload['response']['status'] in [204, 304]:
+                    return
                 
-                if "html" in mime_type:
-                    crawler_support.save_decoded_file_data(file_name + ".html", decoded_data)
-                elif "xml" in mime_type:
-                    crawler_support.save_decoded_file_data(file_name + ".xml", decoded_data)
-                elif "json" in mime_type:
-                    crawler_support.save_decoded_file_data(file_name + ".json", decoded_data)
-                elif "javascript" in mime_type:
-                    crawler_support.save_decoded_file_data(file_name + ".js", decoded_data)
-                elif "css" in mime_type:
-                    crawler_support.save_decoded_file_data(file_name + ".css", decoded_data)
-                elif "image" in mime_type:
-                    with open(file_name + ".png", "wb") as f:
-                        f.write(decoded_data)
-                elif "font/woff2" in mime_type:
-                    with open(file_name + ".woff2", "wb") as f:
-                        f.write(decoded_data)
-                elif "text" in mime_type:
-                    crawler_support.save_decoded_file_data(file_name + ".txt", decoded_data)
-                else:
-                    # Default: save as binary
-                    with open(file_name + ".bin", "wb") as f:
-                        f.write(decoded_data)
+                try:
+                    response_body = await client.send("Network.getResponseBody", {"requestId": payload['requestId']})
+                    mime_type = payload['response']['mimeType']
+                    data_folder_path = crawler_support.get_detailed_network_response_data_path(folder_path)
+                    file_name = os.path.join(data_folder_path, f"{hashlib.sha256(url.encode()).hexdigest()}")
+
+                    # Decode base64 if needed
+                    if response_body['base64Encoded']:
+                        decoded_data = base64.b64decode(response_body['body'])
+                    else:
+                        decoded_data = response_body['body']
+                    
+                    if "html" in mime_type:
+                        crawler_support.save_decoded_file_data(file_name + ".html", decoded_data)
+                    elif "xml" in mime_type:
+                        crawler_support.save_decoded_file_data(file_name + ".xml", decoded_data)
+                    elif "json" in mime_type:
+                        crawler_support.save_decoded_file_data(file_name + ".json", decoded_data)
+                    elif "javascript" in mime_type:
+                        crawler_support.save_decoded_file_data(file_name + ".js", decoded_data)
+                    elif "css" in mime_type:
+                        crawler_support.save_decoded_file_data(file_name + ".css", decoded_data)
+                    elif "image" in mime_type:
+                        with open(file_name + ".png", "wb") as f:
+                            f.write(decoded_data)
+                    elif "font/woff2" in mime_type:
+                        with open(file_name + ".woff2", "wb") as f:
+                            f.write(decoded_data)
+                    elif "text" in mime_type:
+                        crawler_support.save_decoded_file_data(file_name + ".txt", decoded_data)
+                    else:
+                        # Default: save as binary
+                        with open(file_name + ".bin", "wb") as f:
+                            f.write(decoded_data)
+                
+                except Exception as e:
+                    if str(e) != "Protocol error (Network.getResponseBody): No data found for resource with given identifier":
+                        print(e)
             
-            except Exception as e:
-                if str(e) != "Protocol error (Network.getResponseBody): No data found for resource with given identifier":
-                    print(e)
+            async def capture_request(payload):
+                captured_event = payload
+                #requestId = payload["requestId"]
+                #cookies = client.send("Network.getCookies", {"requestId": requestId})
+                #captured_event["cookies"] = cookies
+                captured_events.append(captured_event)
+            
+            client.on("Network.requestWillBeSent", capture_request)
+            client.on("Network.responseReceived", capture_response)
+
+            await page.goto(url, wait_until="networkidle")
+            await crawler_utilities.wait_for_page_to_load(page, act_flag)
+
+            await crawler_utilities.check_and_execute_user_actions(act_flag, page)
+            await crawler_utilities.get_screenshot(page, folder_path, util_def.SCREENSHOT_FILE)
+            html_content = await page.content()
+            soup = BeautifulSoup(html_content, "lxml")
+            crawler_support.get_all_html_tags(folder_path, soup, util_def.HTML_TAG_FILE)
+            visited_url = page.url
+            crawler_support.detect_redirection(folder_path, visited_url, url)
+            crawler_support.save_crawled_url(folder_path, visited_url)
+            embedded_file_path = await crawler_support.extract_links(folder_path, soup, page, visited_url)
+            await get_client_side_script(page, folder_path)
+
+            print("Actual url: ", url)
+            print("Url visited: ", visited_url)
+            print("User-Agent:", await page.evaluate('''() => window.navigator.userAgent'''))
+            print(f"Referrer: {await page.evaluate('''() => document.referrer''')}")
+
+            content = soup.prettify()
+            if content is not None:
+                crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, content)
         
-        async def capture_request(payload):
-            captured_event = payload
-            #requestId = payload["requestId"]
-            #cookies = client.send("Network.getCookies", {"requestId": requestId})
-            #captured_event["cookies"] = cookies
-            captured_events.append(captured_event)
-        
-        client.on("Network.requestWillBeSent", capture_request)
-        client.on("Network.responseReceived", capture_response)
-
-        await page.goto(url, wait_until="networkidle")
-        await crawler_utilities.wait_for_page_to_load(page, act_flag)
-
-        await crawler_utilities.check_and_execute_user_actions(act_flag, page)
-        await crawler_utilities.get_screenshot(page, folder_path, util_def.SCREENSHOT_FILE)
-        html_content = await page.content()
-        soup = BeautifulSoup(html_content, "lxml")
-        crawler_support.get_all_html_tags(folder_path, soup, util_def.HTML_TAG_FILE)
-        visited_url = page.url
-        crawler_support.detect_redirection(folder_path, visited_url, url)
-        crawler_support.save_crawled_url(folder_path, visited_url)
-        embedded_file_path = await crawler_support.extract_links(folder_path, soup, page, visited_url)
-        await get_client_side_script(page, folder_path)
-
-        print("Actual url: ", url)
-        print("Url visited: ", visited_url)
-        print("User-Agent:", await page.evaluate('''() => window.navigator.userAgent'''))
-        print(f"Referrer: {await page.evaluate('''() => document.referrer''')}")
-
-        content = soup.prettify()
-        if content is not None:
-            crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, content)
-        """
         except Exception as e:
             crawler_support.save_html_script(folder_path, util_def.HTML_SCRIPT_FILE, f"Error occurred for url: {url}\n{e}")
             crawler_support.save_crawled_url(folder_path, util_def.ERROR_URL_FLAG)
         
         finally:
-        """
-        crawler_support.save_more_detailed_network_logs(folder_path, captured_events)
-        await page.close()
-        await context.close()
-        await browser.close()
-        await p.stop()
+            crawler_support.save_more_detailed_network_logs(folder_path, captured_events)
+            await page.close()
+            await context.close()
+            await browser.close()
+            await p.stop()
