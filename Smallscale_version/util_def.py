@@ -22,9 +22,9 @@ USER_USER_AGENT_MAC_CHROME = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap
 DESKTOP_BOT_AGENT = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/116.0.0.0 Safari/537.36"
 
 DESKTOP_USER_AGENT_MAP = {
-    MAC: USER_USER_AGENT_MAC_CHROME,
-    WINDOWS: USER_USER_AGENT_WINDOWS_CHROME,
-    BOT: DESKTOP_BOT_AGENT
+    MAC: [f"--user-agent={USER_USER_AGENT_MAC_CHROME}"],
+    WINDOWS: [f"--user-agent={USER_USER_AGENT_WINDOWS_CHROME}"],
+    BOT: [f"--user-agent={DESKTOP_BOT_AGENT}"]
 }
 
 GOOGLE_REFERRER = "https://www.google.com"
@@ -52,7 +52,8 @@ HTML_SCRIPT_BEF_FILE = "html_script_before.html"
 CLIENT_SIDE_SCRIPT_FILE = "client_scripts.json"
 TLS_CERT_FILE = "certificate.json"
 DNS_FILE = "dns_records.json"
-CSS_FOLDER = "css"
+NETWORK_RESPONSE_FOLDER = "resp_data"
+
 
 FEATURES_EXCEL = "features_excel_aft.xlsx"
 FEATURES_BEF_EXCEL = "features_excel_bef.xlsx"

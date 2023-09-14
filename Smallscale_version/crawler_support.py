@@ -155,7 +155,21 @@ def get_level_one_embedded_link(file_path):
 
 
 def save_more_detailed_network_logs(folder_path, data):
-    print("Saving more detailed network logs...")
+    print("Saving more detailed network logs...\n")
     file_dir = os.path.join(folder_path, util_def.DETAILED_NETWORK_FILE)
     with open(file_dir, 'w') as file:
         json.dump(data, file, indent=4)
+
+
+def get_detailed_network_response_data_path(folder_path):
+    data_folder_path = os.path.join(folder_path, util_def.NETWORK_RESPONSE_FOLDER)
+    if not os.path.exists(data_folder_path):
+        os.makedirs(data_folder_path)
+    
+    return data_folder_path
+
+
+def save_decoded_file_data(file, decoded_data):
+    with open(file, "w", encoding="utf-8") as f:
+        f.write(decoded_data if isinstance(decoded_data, str) else decoded_data.decode('utf-8'))
+    
