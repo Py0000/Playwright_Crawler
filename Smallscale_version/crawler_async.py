@@ -152,7 +152,7 @@ async def crawl(device_conf, ref_flag, act_flag, url, index):
             client.on("Network.requestWillBeSent", capture_request)
             client.on("Network.responseReceived", capture_response)
 
-            await page.goto(url, wait_until="networkidle")
+            await page.goto(url)
             await crawler_utilities.wait_for_page_to_load(page, act_flag)
 
             await crawler_utilities.check_and_execute_user_actions(act_flag, page)
