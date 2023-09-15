@@ -50,7 +50,7 @@ async def get_screenshot(page, folder_path, file_name):
     await crawler_support.save_screenshot(page, path)
     print("Screenshot Captured...")
 
-
+"""
 # Get client-side scripts
 client_side_scripts_injection_code = '''() => {
     const scripts = [];
@@ -64,7 +64,7 @@ client_side_scripts_injection_code = '''() => {
     });
     return scripts;
 }'''
-
+"""
 """
 def get_click_through_injection_code(url):
     click_through_injection_code = f'''() => {{

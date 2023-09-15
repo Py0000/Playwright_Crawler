@@ -57,7 +57,7 @@ def get_server_side_data(p, device_conf, ref_flag, act_flag, folder_path, url):
 
 
 
-
+"""
 def get_client_side_script(page, folder_path):
     client_side_scripts = page.evaluate(crawler_utilities.client_side_scripts_injection_code)
 
@@ -69,7 +69,7 @@ def get_client_side_script(page, folder_path):
     
     # Save data to a JSON file
     crawler_support.save_client_side_script(folder_path, script_data)
-
+"""
 
 
 """
@@ -272,7 +272,7 @@ def crawl(device_conf, ref_flag, act_flag, url, index):
         crawler_support.detect_redirection(folder_path, visited_url, url)
         crawler_support.save_crawled_url(folder_path, visited_url)
         embedded_file_path = crawler_support.extract_links(folder_path, soup, page, visited_url)
-        get_client_side_script(page, folder_path)
+        #get_client_side_script(page, folder_path)
 
         print("Actual url: ", url)
         print("Url visited: ", visited_url)

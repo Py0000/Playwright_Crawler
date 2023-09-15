@@ -30,7 +30,7 @@ def rename_files_in_folder(folder_path, start_number):
 
 
 # Set the directory path
-dir_path = 'dataset_01'
+dir_path = 'Smallscale_version/dataset'
 
 for sub_folder in os.listdir(dir_path):
     print(sub_folder)
@@ -40,7 +40,7 @@ for sub_folder in os.listdir(dir_path):
         folder_names = [name for name in os.listdir(os.path.join(dir_path, sub_folder)) if os.path.isdir(os.path.join(dir_path, sub_folder, name))]
         folder_names.sort(key=int)  # this ensures that '10' comes after '9'
 
-        start_number = 30
+        start_number = 27
 
         # Rename the folders
         for name in folder_names:
