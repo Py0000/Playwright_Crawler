@@ -87,7 +87,7 @@ async def get_link_in_iframe(file_path, soup, page, added_url_set, base_url):
         if not all([parsed_url.scheme, parsed_url.netloc]):
             continue
 
-        added_url_set = await save_embedded_url(file_path, iframe_src, base_url, added_url_set)
+        added_url_set = save_embedded_url(file_path, iframe_src, base_url, added_url_set)
         await page.goto(iframe_src)
         iframe_soup = BeautifulSoup(await page.content(), 'lxml')
         added_url_set = await handle_nested_iframes(iframe_soup, file_path, page, added_url_set, base_url)
