@@ -5,12 +5,10 @@ BOT = "bot"
 
 GOOGLE_REF = "g_ref"
 FACEBOOK_REF = "fb_ref"
-TWITTER_REF = "t_ref"
 SELF_REF = "self_ref"
 NO_REF = "no_ref"
 
-MOUSE_CLICK_LEFT = "left_click"
-MOUSE_CLICK_RIGHT = "right_click"
+MOUSE_CLICK = "click"
 MOUSE_MOVEMENT = "move"
 PAGE_SCROLL = "scroll"
 NO_USER_ACT_SET = "no_act"
@@ -29,12 +27,10 @@ DESKTOP_USER_AGENT_MAP = {
 
 GOOGLE_REFERRER = "https://www.google.com"
 FACEBOOK_REFERRER = "https://www.facebook.com"
-TWITTER_REFERRER = "https://www.twitter.com"
 
 REFERRER_MAP = {
     GOOGLE_REF: GOOGLE_REFERRER,
-    FACEBOOK_REF: FACEBOOK_REFERRER,
-    TWITTER_REF: TWITTER_REFERRER,
+    FACEBOOK_REF: FACEBOOK_REFERRER
 }
 
 ###### Related to file names ######

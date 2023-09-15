@@ -23,9 +23,8 @@ async def wait_for_page_to_load(page, act_flag):
 async def check_and_execute_user_actions(act_flag, page):
     if act_flag == util_def.NO_USER_ACT_SET:
         pass
-    elif act_flag == util_def.MOUSE_CLICK_LEFT:
+    elif act_flag == util_def.MOUSE_CLICK:
         await crawler_actions.mouse_click(page, "left")
-    elif act_flag == util_def.MOUSE_CLICK_RIGHT:
         await crawler_actions.mouse_click(page, "right")
     elif act_flag == util_def.MOUSE_MOVEMENT:
         await crawler_actions.move_mouse_smoothly_top_left_bottom_right(page)
