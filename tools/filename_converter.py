@@ -30,7 +30,7 @@ def rename_files_in_folder(folder_path, start_number):
 
 
 # Set the directory path
-dir_path = 'dataset'
+dir_path = 'dataset_01'
 
 for sub_folder in os.listdir(dir_path):
     print(sub_folder)
