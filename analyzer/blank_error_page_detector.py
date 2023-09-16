@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import time
 from bs4 import BeautifulSoup
 from googletrans import Translator
 
@@ -69,22 +70,29 @@ BLANK_ERROR_HTML_FILE = "blank_error_html.json"
 def determine_error_type(html_script):
     BLOCK_ERRORS = get_blocked_errors_type()
     UNAVAILABLE_ERRORS = get_invalid_types()
-    translator = Translator()
+    #translator = Translator()
 
     all_text_in_html = html_script.get_text().lower()
-    html_script_language = translator.detect(all_text_in_html).lang
+    #html_script_language = translator.detect(all_text_in_html).lang
 
     for pattern in BLOCK_ERRORS:
+        """
         if html_script_language != "en":
+            time.sleep(2)
             pattern = translator.translate(pattern, dest=html_script_language).text
+        """
         if re.search(pattern, all_text_in_html):
             return pattern
     
     for pattern in UNAVAILABLE_ERRORS:
+        """
         if html_script_language != "en":
+            time.sleep(2)
             pattern = translator.translate(pattern, dest=html_script_language).text
+        """
         if re.search(pattern, all_text_in_html):
             return pattern
+    
 
 
 def is_page_blank_or_error(file_path):
@@ -116,7 +124,7 @@ def is_page_blank_or_error(file_path):
     return True, ERROR_TYPE_BLANK
 
 
-def detect_blank_page(main_folder_path):
+def detect_blank_page(main_folder_path, output_filename):
     # Get a list of all items in the main_folder
     config_folders = os.listdir(main_folder_path)
     problem_html = {config: {} for config in config_folders}
@@ -146,11 +154,11 @@ def detect_blank_page(main_folder_path):
                     
         problem_html[config_folder].update({"Total Count": len(problem_html[config_folder])})
     
-    with open(os.path.join(ANALYZER_FOLDER, BLANK_ERROR_HTML_FILE), "w", encoding="utf-8") as f:
+    with open(output_filename, "w", encoding="utf-8") as f:
         json.dump(problem_html, f, ensure_ascii=False, indent=4)
         
 
 
 
 
-detect_blank_page("analyzer/phishing_dataset")
+detect_blank_page("dataset/dataset_160923_4", "160923_4_" + BLANK_ERROR_HTML_FILE)
