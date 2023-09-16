@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/user/Desktop/Playwright_Crawler/analyzer/blank_error_page_detector.py", line 160, in <module>
+    detect_blank_page("dataset/dataset_150923_1")
+  File "/home/user/Desktop/Playwright_Crawler/analyzer/blank_error_page_detector.py", line 147, in detect_blank_page
+    result, type = is_page_blank_or_error(html_file_path)
+  File "/home/user/Desktop/Playwright_Crawler/analyzer/blank_error_page_detector.py", line 102, in is_page_blank_or_error
+    has_error_type = determine_error_type(html_script)
+  File "/home/user/Desktop/Playwright_Crawler/analyzer/blank_error_page_detector.py", line 82, in determine_error_type
+    pattern = translator.translate(pattern, dest=html_script_language).text
+  File "/home/user/.local/lib/python3.10/site-packages/googletrans/client.py", line 222, in translate
+    translated_parts = list(map(lambda part: TranslatedPart(part[0], part[1] if len(part) >= 2 else []), parsed[1][0][0][5]))
+TypeError: 'NoneType' object is not iterable
