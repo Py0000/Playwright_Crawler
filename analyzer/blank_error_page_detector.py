@@ -45,7 +45,7 @@ def get_blocked_errors_type():
     ERROR_TYPE_509_BANDWIDTH_LIMIT_EXCEED = "509 bandwidth limit exceeded"
     ERROR_TYPE_BLOCKED = "blocked"
     ERROR_TYPE_NOT_AUTHORIZED = ["not authorized", "not authorised", "unauthorized", "unauthorised"]
-    ERROR_TYPE_ERROR_429 = ["HTTP/2 429"]
+    ERROR_TYPE_ERROR_429 = "HTTP/2 429"
     ERROR_TYPE_SUSPECTED_PHISHING = "suspected phishing site"
 
     BLOCKED_ERRORS = []
@@ -57,7 +57,7 @@ def get_blocked_errors_type():
     BLOCKED_ERRORS.append(ERROR_TYPE_BLOCKED)
     BLOCKED_ERRORS.append(ERROR_TYPE_SUSPECTED_PHISHING)
     BLOCKED_ERRORS.append(ERROR_TYPE_ERROR_429)
-    BLOCKED_ERRORS.append(ERROR_TYPE_NOT_AUTHORIZED)
+    BLOCKED_ERRORS.extend(ERROR_TYPE_NOT_AUTHORIZED)
 
     return BLOCKED_ERRORS
 
