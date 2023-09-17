@@ -64,8 +64,10 @@ def compare_mac_against_window_same_config(index, main_folder_path, output_folde
             traverse(mac_html, win_html, diff)
             is_same = len(diff) == 0
             result.update({f"mac-vs-win: {ref} + {act}": is_same})
-
-            sorted_diff = dict(sorted(diff.items(), key=lambda item: int(item[0].split()[1])))
+            if (len(diff) == 0):
+                sorted_diff = {"Message", "No difference between html DOM of the 2 files"}
+            else:
+                sorted_diff = dict(sorted(diff.items(), key=lambda item: int(item[0].split()[1])))
             save_to_json(os.path.join(output_folder, f"mac_vs_win_{ref}_{act}.json"), sorted_diff)
 
     return result
@@ -90,7 +92,10 @@ def compare_within_same_ua_same_ref_diff_act(index, main_folder_path, output_fol
                     is_same = len(diff) == 0
                     result.update({f"{user_agent}_{referrer}: {current_action} vs {sub_action}": is_same})
 
-                    sorted_diff = dict(sorted(diff.items(), key=lambda item: int(item[0].split()[1])))
+                    if (len(diff) == 0):
+                        sorted_diff = {"Message", "No difference between html DOM of the 2 files"}
+                    else:
+                        sorted_diff = dict(sorted(diff.items(), key=lambda item: int(item[0].split()[1])))
                     save_to_json(os.path.join(output_folder, f"{user_agent}_{referrer}_{current_action}_vs_{sub_action}.json"), sorted_diff)
     
     return result
@@ -114,8 +119,13 @@ def compare_within_same_ua_same_act_diff_ref(index, main_folder_path, output_fol
                     is_same = len(diff) == 0
                     result.update({f"{user_agent}_{action}: {current_referrer} vs {sub_referrer}": is_same})
 
-                    sorted_diff = dict(sorted(diff.items(), key=lambda item: int(item[0].split()[1])))
+                    if (len(diff) == 0):
+                        sorted_diff = {"Message", "No difference between html DOM of the 2 files"}
+                    else:
+                        sorted_diff = dict(sorted(diff.items(), key=lambda item: int(item[0].split()[1])))
                     save_to_json(os.path.join(output_folder, f"{user_agent}_{action}_{current_referrer}_vs_{sub_referrer}.json"), sorted_diff)
+    
+    return result
 
 
 def compare_dom(index, main_folder_path, output_folder):
@@ -129,7 +139,7 @@ def compare_dom(index, main_folder_path, output_folder):
         "Same User-Agent Same User Actions Different Referrer": same_us_same_act_diff_ref_result,
     }
 
-    save_to_json(os.path.join(output_folder, "{index}_summarized.json"), result)
+    save_to_json(os.path.join(output_folder, f"{index}_summarized.json"), result)
 
 
 
@@ -147,8 +157,8 @@ def main_comparator(main_folder_path):
     for index in indices:
         print(f"Comparing: {main_folder_path} {index}")
         output_folder = f"{index}_dom_data"
-        if not os.path.exist(output_folder):
-            os.makedir(output_folder)
+        if not os.path.exists(output_folder):
+            os.makedirs(output_folder)
         compare_dom(index, main_folder_path, output_folder)
     
 
