@@ -146,8 +146,9 @@ def main_comparator(main_folder_path):
     
     for index in indices:
         print(f"Comparing: {main_folder_path} {index}")
-        if not os.path.exist(f"{{index}_dom_data}")
-            os.makedir(f"{{index}_dom_data}")
+        output_folder = f"{index}_dom_data"
+        if not os.path.exist(output_folder):
+            os.makedir(output_folder)
         compare_dom(index, main_folder_path, output_folder)
     
 
