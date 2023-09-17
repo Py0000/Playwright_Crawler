@@ -1,0 +1,93 @@
+{
+    "Level 3 - Attribute Mismatch": {
+        "server": {
+            "height": "1",
+            "src": "https://analytics.twitter.com/i/adsct?bci=3&eci=2&event_id=1612c875-f627-4b02-bac3-8bc9096d9680&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=c0697c34-805d-4356-b20c-3fdf4677ad9d&tw_document_href=https%3A%2F%2Fwwscv53dthird.run.place%2Fn%2Fo%2Flogin&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=ny99k&type=javascript&version=2.3.29",
+            "style": "display: none;",
+            "width": "1"
+        },
+        "client": {
+            "height": "1",
+            "src": "https://analytics.twitter.com/i/adsct?bci=3&eci=2&event_id=077aade7-fd52-4a0c-a193-dc60cadd31ec&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=2b48ef87-ac46-4a29-b122-001f886f52ba&tw_document_href=https%3A%2F%2Fwwscv53dthird.run.place%2Fn%2Fo%2Flogin&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=ny99k&type=javascript&version=2.3.29",
+            "style": "display: none;",
+            "width": "1"
+        }
+    },
+    "Level 3 - Tag Name Mismatch": {
+        "server": "script",
+        "client": "iframe"
+    },
+    "Level 3 - Textual Content Mismatch": {
+        "server": "\n",
+        "client": "\n   //document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function (e) {\n  "
+    },
+    "Level 3 - Node Type Mismatch": {
+        "server": " inject:js ",
+        "client": "<script src=\"./login_files/patternlab.js.download\">\n</script>"
+    },
+    "Level 4 - Tag Name Mismatch": {
+        "server": "ul",
+        "client": "div"
+    },
+    "Level 4 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "hero-large",
+                "section"
+            ]
+        },
+        "client": {
+            "class": [
+                "c-modal__container",
+                "c-modal__speedbump",
+                "js-speedbump",
+                "is-hidden"
+            ],
+            "id": "speedbump"
+        }
+    },
+    "Level 4 - Node Type Mismatch": {
+        "server": "\n",
+        "client": "\n"
+    },
+    "Level 5 - Tag Name Mismatch": {
+        "server": "li",
+        "client": "div"
+    },
+    "Level 5 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "c-hero",
+                "c-hero--large"
+            ],
+            "data-hero-type": "login"
+        },
+        "client": {
+            "class": [
+                "c-modal__content"
+            ],
+            "data-nosnippet": ""
+        }
+    },
+    "Level 6 - Tag Name Mismatch": {
+        "server": "picture",
+        "client": "div"
+    },
+    "Level 6 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "c-hero__content",
+                "c-hero__content--login"
+            ]
+        },
+        "client": {
+            "class": [
+                "c-modal__footer"
+            ]
+        }
+    },
+    "Level 7 - Tag Name Mismatch": {
+        "server": "section",
+        "client": "a"
+    }
+}

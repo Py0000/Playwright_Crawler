@@ -1,0 +1,10 @@
+{
+    "Level 0 - Textual Content Mismatch": {
+        "server": "Error occurred for url: http://wes.csdnet2.com.ar/\nnet::ERR_CONNECTION_REFUSED at http://wes.csdnet2.com.ar/\n=========================== logs ===========================\nnavigating to \"http://wes.csdnet2.com.ar/\", waiting until \"load\"\n============================================================",
+        "client": null
+    },
+    "Level 1 - Node Type Mismatch": {
+        "server": "<html><body><p>Error occurred for url: http://wes.csdnet2.com.ar/\nnet::ERR_CONNECTION_REFUSED at http://wes.csdnet2.com.ar/\n=========================== logs ===========================\nnavigating to \"http://wes.csdnet2.com.ar/\", waiting until \"load\"\n============================================================</p></body></html>",
+        "client": "html"
+    }
+}

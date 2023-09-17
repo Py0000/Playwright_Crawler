@@ -1,0 +1,63 @@
+{
+    "Level 3 - Attribute Mismatch": {
+        "server": {
+            "height": "1",
+            "src": "https://analytics.twitter.com/i/adsct?bci=3&eci=2&event_id=765aa7c7-bbd6-42b5-b043-61d6309f9fdf&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=5587e64e-a946-455f-a772-392b0d8816cb&tw_document_href=https%3A%2F%2Fwwscv53dthird.run.place%2Fn%2Fo%2Flogin&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=ny99k&type=javascript&version=2.3.29",
+            "style": "display: none;",
+            "width": "1"
+        },
+        "client": {
+            "height": "1",
+            "src": "https://analytics.twitter.com/i/adsct?bci=3&eci=2&event_id=e0674581-2220-4d19-a885-97a1487aec10&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=2772d48c-28f4-411e-9d25-42411f7870af&tw_document_href=https%3A%2F%2Fwwscv53dthird.run.place%2Fn%2Fo%2Flogin&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=ny99k&type=javascript&version=2.3.29",
+            "style": "display: none;",
+            "width": "1"
+        }
+    },
+    "Level 3 - Tag Name Mismatch": {
+        "server": "main",
+        "client": "iframe"
+    },
+    "Level 3 - Textual Content Mismatch": {
+        "server": "\n   //document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function (e) {\n  ",
+        "client": "\n"
+    },
+    "Level 3 - Node Type Mismatch": {
+        "server": "<![endif]",
+        "client": "<header class=\"c-header js-main-header\" role=\"banner\">\n<div class=\"c-header__container\">\n<div class=\"c-header__logo\">\n<a class=\"c-logo-link\" href=\"https://www.53.com/content/fifth-third/en.html\">\n<picture>\n<source media=\"(max-width: 1024px)\" srcset=\"login_files/fifth-third-logo-shield.svg\">\n<source src=\"https://www.53.com/content/dam/fifth-third/brand/logo.svg\">\n<img alt=\"\" class=\"c-logo\" src=\"https://www.53.com/content/dam/fifth-third/brand/logo.svg\"/>\n</source>\n</source>\n</picture>\n</a>\n<!-- end c-logo -->\n</div>\n<!-- desktop nav -->\n<script>\n</script>\n<nav aria-label=\"Primary\" class=\"c-nav-primary\">\n<ul class=\"c-nav-primary__list\">\n<li class=\"c-nav-primary__item\" data-primarynav=\"js-primary-0\">\n<a class=\"c-nav-primary__link\" href=\"#\">\n        Customer Service\n       </a>\n</li>\n<li class=\"c-nav-primary__item\">\n<a class=\"c-nav-primary__link\" href=\"#\">\n        Branch &amp; ATM Locator\n       </a>\n</li>\n</ul>\n</nav>\n<script>\n</script>\n<ul class=\"c-header__buttons js-header-buttons\">\n<li>\n<button aria-expanded=\"false\" class=\"c-nav-trigger js-nav-trigger\" id=\"btn_ft_mobile_nav\">\n<span class=\"c-nav-trigger__text\">\n        Menu\n       </span>\n<span class=\"c-nav-trigger__hamburger\">\n</span>\n</button>\n</li>\n</ul>\n</div>\n</header>"
+    },
+    "Level 4 - Tag Name Mismatch": {
+        "server": "ul",
+        "client": "div"
+    },
+    "Level 5 - Tag Name Mismatch": {
+        "server": "li",
+        "client": "div"
+    },
+    "Level 5 - Node Type Mismatch": {
+        "server": " desktop nav ",
+        "client": "<li>\n<a class=\"c-nav-mobile__link c-nav-mobile__link--secondary\" href=\"#\">\n      Personal\n     </a>\n</li>"
+    },
+    "Level 6 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "c-logo-link"
+            ],
+            "href": "https://www.53.com/content/fifth-third/en.html"
+        },
+        "client": {
+            "class": [
+                "c-nav-mobile__link",
+                "c-nav-mobile__link--secondary"
+            ],
+            "href": "#"
+        }
+    },
+    "Level 6 - Node Type Mismatch": {
+        "server": "\n",
+        "client": "\n"
+    },
+    "Level 6 - Tag Name Mismatch": {
+        "server": "a",
+        "client": "picture"
+    }
+}

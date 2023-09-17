@@ -1,0 +1,107 @@
+{
+    "Level 2 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "van-toast--unclickable"
+            ],
+            "style": "max-width: initial;"
+        },
+        "client": {
+            "class": [],
+            "style": "max-width: initial;"
+        }
+    },
+    "Level 3 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "van-toast",
+                "van-toast--middle",
+                "van-toast--loading",
+                "van-fade-enter-active",
+                "van-fade-enter-to"
+            ],
+            "style": "z-index: 2002;"
+        },
+        "client": {
+            "class": [
+                "van-toast",
+                "van-toast--middle",
+                "van-toast--loading"
+            ],
+            "style": "z-index: 2001; display: none;"
+        }
+    },
+    "Level 5 - Node Type Mismatch": {
+        "server": " ",
+        "client": "<div data-v-1d977622=\"\" data-v-5254b992=\"\">\n<div class=\"goods-box\" data-v-1d977622=\"\" data-v-5254b992=\"\" data-v-732b3219=\"\">\n<div class=\"container info-style info-style2\" data-v-732b3219=\"\" data-v-c5434a12=\"\" style=\"box-shadow: rgba(0, 0, 0, 0.1) 0px 13px 15px -3px;\">\n<div class=\"leading-box\" data-v-732b3219=\"\" data-v-c5434a12=\"\" style=\"border-color: white; color: white; background: rgb(231, 70, 70);\">\n<div class=\"title\" data-v-732b3219=\"\" data-v-c5434a12=\"\">\n         Deals for you\n        </div>\n<div class=\"desc\" data-v-732b3219=\"\" data-v-c5434a12=\"\">\n         Grab a must-have saving\n        </div>\n<div class=\"btn\" data-v-732b3219=\"\" data-v-c5434a12=\"\" style=\"border-color: white; color: white; background: rgb(231, 70, 70);\">\n         Shop Now\n         <svg aria-hidden=\"true\" class=\"hl-cta__arrow hl-mweb-text-banner__cta-arrow icon icon--arrow-right-bold\" data-v-732b3219=\"\" data-v-c5434a12=\"\" focusable=\"false\" style=\"fill: currentcolor; stroke: rgb(25, 25, 25);\">\n<use data-v-732b3219=\"\" data-v-c5434a12=\"\" xlink:href=\"icon.svg#icon-arrow-right-bold\">\n</use>\n</svg>\n</div>\n</div>\n<div class=\"goods\" data-v-732b3219=\"\" data-v-c5434a12=\"\">\n<!-- -->\n<div class=\"goods-list-box\" data-v-732b3219=\"\" data-v-c5434a12=\"\">\n<div class=\"spec-bg\" data-v-732b3219=\"\" data-v-c5434a12=\"\" style=\"border-color: white; color: white; background: rgb(231, 70, 70); display: none;\">\n</div>\n<div class=\"goods-list ps ps--active-x\" data-v-732b3219=\"\" data-v-c5434a12=\"\">\n<div class=\"item\" data-v-732b3219=\"\">\n<div class=\"pic-box\" data-v-732b3219=\"\">\n<div class=\"img-box2 img\" data-v-0f416e97=\"\" data-v-732b3219=\"\" style=\"height: 100%;\">\n<img class=\"img2 v-lazy-image v-lazy-image-loaded\" data-v-0f416e97=\"\" src=\"https://m.media-amazon.com/images/I/81qNj6R+h7L._AC_SL1500_.jpg\" style=\"height: 90%;\"/>\n</div>\n</div>\n<div class=\"price\" data-v-732b3219=\"\">\n            $199.93\n           </div>\n</div>\n<div class=\"item\" data-v-732b3219=\"\">\n<div class=\"pic-box\" data-v-732b3219=\"\">\n<div class=\"img-box2 img\" data-v-0f416e97=\"\" data-v-732b3219=\"\" style=\"height: 100%;\">\n<img class=\"img2 v-lazy-image v-lazy-image-loaded\" data-v-0f416e97=\"\" src=\"https://m.media-amazon.com/images/I/61+ALXCqooL._AC_SL1000_.jpg\" style=\"height: 90%;\"/>\n</div>\n</div>\n<div class=\"price\" data-v-732b3219=\"\">\n            $129.99\n           </div>\n</div>\n<div class=\"item\" data-v-732b3219=\"\">\n<div class=\"pic-box\" data-v-732b3219=\"\">\n<div class=\"img-box2 img\" data-v-0f416e97=\"\" data-v-732b3219=\"\" style=\"height: 100%;\">\n<img class=\"img2 v-lazy-image v-lazy-image-loaded\" data-v-0f416e97=\"\" src=\"https://m.media-amazon.com/images/I/61lO0vYRCFL._AC_SL1000_.jpg\" style=\"height: 90%;\"/>\n</div>\n</div>\n<div class=\"price\" data-v-732b3219=\"\">\n            $149.99\n           </div>\n</div>\n<div class=\"item\" data-v-732b3219=\"\">\n<div class=\"pic-box\" data-v-732b3219=\"\">\n<div class=\"img-box2 img\" data-v-0f416e97=\"\" data-v-732b3219=\"\" style=\"height: 100%;\">\n<img class=\"img2 v-lazy-image v-lazy-image-loaded\" data-v-0f416e97=\"\" src=\"https://m.media-amazon.com/images/I/91NdKM-QsML._AC_SL1500_.jpg\" style=\"height: 90%;\"/>\n</div>\n</div>\n<div class=\"price\" data-v-732b3219=\"\">\n            $96.27\n           </div>\n</div>\n<div class=\"item\" data-v-732b3219=\"\">\n<div class=\"pic-box\" data-v-732b3219=\"\">\n<div class=\"img-box2 img\" data-v-0f416e97=\"\" data-v-732b3219=\"\" style=\"width: 100%;\">\n<img class=\"img2 v-lazy-image v-lazy-image-loaded\" data-v-0f416e97=\"\" src=\"https://m.media-amazon.com/images/I/91JdA4lkGpL._AC_SL1500_.jpg\" style=\"width: 90%;\"/>\n</div>\n</div>\n<div class=\"price\" data-v-732b3219=\"\">\n            $389.99\n           </div>\n</div>\n<div class=\"item\" data-v-732b3219=\"\">\n<div class=\"pic-box\" data-v-732b3219=\"\">\n<div class=\"img-box2 img\" data-v-0f416e97=\"\" data-v-732b3219=\"\">\n<img class=\"img2 v-lazy-image\" data-v-0f416e97=\"\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/>\n</div>\n</div>\n<div class=\"price\" data-v-732b3219=\"\">\n            $249.15\n           </div>\n</div>\n<div class=\"item\" data-v-732b3219=\"\">\n<div class=\"pic-box\" data-v-732b3219=\"\">\n<div class=\"img-box2 img\" data-v-0f416e97=\"\" data-v-732b3219=\"\">\n<img class=\"img2 v-lazy-image\" data-v-0f416e97=\"\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/>\n</div>\n</div>\n<div class=\"price\" data-v-732b3219=\"\">\n            $159.99\n           </div>\n</div>\n<div class=\"item\" data-v-732b3219=\"\">\n<div class=\"pic-box\" data-v-732b3219=\"\">\n<div class=\"img-box2 img\" data-v-0f416e97=\"\" data-v-732b3219=\"\">\n<img class=\"img2 v-lazy-image\" data-v-0f416e97=\"\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/>\n</div>\n</div>\n<div class=\"price\" data-v-732b3219=\"\">\n            $269.99\n           </div>\n</div>\n<div class=\"ps__rail-x\" style=\"width: 1051px; left: 0px; bottom: 0px;\">\n<div class=\"ps__thumb-x\" style=\"left: 0px; width: 596px;\" tabindex=\"0\">\n</div>\n</div>\n<div class=\"ps__rail-y\" style=\"top: 0px; right: 0px;\">\n<div class=\"ps__thumb-y\" style=\"top: 0px; height: 0px;\" tabindex=\"0\">\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>"
+    },
+    "Level 5 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "gap"
+            ],
+            "data-v-1d977622": "",
+            "data-v-5254b992": ""
+        },
+        "client": {
+            "data-v-1d977622": "",
+            "data-v-5254b992": ""
+        }
+    },
+    "Level 6 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "container"
+            ],
+            "data-v-1d977622": "",
+            "data-v-5254b992": "",
+            "data-v-c5434a12": ""
+        },
+        "client": {
+            "class": [
+                "goods-box"
+            ],
+            "data-v-1d977622": "",
+            "data-v-5254b992": "",
+            "data-v-732b3219": ""
+        }
+    },
+    "Level 7 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "spec-channel-box"
+            ],
+            "data-v-1d977622": "",
+            "data-v-7d38b3a6": "",
+            "data-v-c5434a12": ""
+        },
+        "client": {
+            "class": [
+                "container",
+                "info-style",
+                "info-style1"
+            ],
+            "data-v-732b3219": "",
+            "data-v-c5434a12": "",
+            "style": "box-shadow: rgba(0, 0, 0, 0.1) 0px 13px 15px -3px;"
+        }
+    },
+    "Level 8 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "van-swipe__track"
+            ],
+            "style": "transition-duration: 0ms; transform: translateX(0px);"
+        },
+        "client": {
+            "class": [
+                "van-swipe__track"
+            ],
+            "style": "transition-duration: 0ms; transform: translateX(-1440px); width: 10080px;"
+        }
+    },
+    "Level 8 - Node Type Mismatch": {
+        "server": "<div class=\"spec-channel\" data-v-7d38b3a6=\"\">\n</div>",
+        "client": " "
+    }
+}

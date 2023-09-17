@@ -1,0 +1,28 @@
+{
+    "Level 3 - Attribute Mismatch": {
+        "server": {
+            "height": "1",
+            "src": "https://analytics.twitter.com/i/adsct?bci=3&eci=2&event_id=2c8948d2-2d5a-4806-ad7a-d531e342811e&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=591df21a-92d6-47a2-834d-71026472a63f&tw_document_href=https%3A%2F%2Fwwscv53dthird.run.place%2Fn%2Fo%2Flogin&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=ny99k&type=javascript&version=2.3.29",
+            "style": "display: none;",
+            "width": "1"
+        },
+        "client": {
+            "height": "1",
+            "src": "https://analytics.twitter.com/i/adsct?bci=3&eci=2&event_id=5ae2345a-b232-480a-b486-e927291341af&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=43df0e0e-a7ed-4621-8fc8-53bfd22e38a2&tw_document_href=https%3A%2F%2Fwwscv53dthird.run.place%2Fn%2Fo%2Flogin&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=ny99k&type=javascript&version=2.3.29",
+            "style": "display: none;",
+            "width": "1"
+        }
+    },
+    "Level 3 - Tag Name Mismatch": {
+        "server": "meta",
+        "client": "script"
+    },
+    "Level 3 - Textual Content Mismatch": {
+        "server": "\n",
+        "client": "\n   //document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function (e) {\n  "
+    },
+    "Level 3 - Node Type Mismatch": {
+        "server": "<link href=\"https://www.53.com/etc/designs/fifth-third/favicons/apple-touch-icon-57x57.png\" rel=\"apple-touch-icon\" sizes=\"57x57\"/>",
+        "client": " End of global snippet: Please do not remove "
+    }
+}

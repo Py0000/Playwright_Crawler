@@ -1,0 +1,76 @@
+{
+    "Level 3 - Attribute Mismatch": {
+        "server": {
+            "height": "0",
+            "sandbox": [
+                "allow-same-origin",
+                "allow-scripts",
+                "allow-forms",
+                "allow-popups",
+                "allow-popups-to-escape-sandbox"
+            ],
+            "src": "https://accounts.youtube.com/accounts/CheckConnection?pmpo=https%3A%2F%2Faccounts.google.com&v=2053927914&timestamp=1694925712838",
+            "style": "position: absolute; left: 0px; top: 0px; z-index: -1;",
+            "tabindex": "-1",
+            "width": "0"
+        },
+        "client": {
+            "height": "0",
+            "sandbox": [
+                "allow-same-origin",
+                "allow-scripts",
+                "allow-forms",
+                "allow-popups",
+                "allow-popups-to-escape-sandbox"
+            ],
+            "src": "https://accounts.youtube.com/accounts/CheckConnection?pmpo=https%3A%2F%2Faccounts.google.com&v=-179228620&timestamp=1694925693861",
+            "style": "position: absolute; left: 0px; top: 0px; z-index: -1;",
+            "tabindex": "-1",
+            "width": "0"
+        }
+    },
+    "Level 4 - Attribute Mismatch": {
+        "server": {
+            "nonce": "qshdAysgR08O18PDgnUyIQ"
+        },
+        "client": {
+            "nonce": "PluZZgFHn_-zFembmxo-Ag"
+        }
+    },
+    "Level 5 - Attribute Mismatch": {
+        "server": {
+            "aria-hidden": "true",
+            "nonce": "wWROuwtZH4KB_r2QP9l7IQ"
+        },
+        "client": {
+            "aria-hidden": "true",
+            "nonce": "tYSjqq1zJ1a3FIek91Dc0w"
+        }
+    },
+    "Level 7 - Attribute Mismatch": {
+        "server": {
+            "aria-hidden": "true",
+            "id": "WIZ-footer",
+            "nonce": "wWROuwtZH4KB_r2QP9l7IQ"
+        },
+        "client": {
+            "aria-hidden": "true",
+            "id": "WIZ-footer",
+            "nonce": "tYSjqq1zJ1a3FIek91Dc0w"
+        }
+    },
+    "Level 18 - Attribute Mismatch": {
+        "server": {
+            "jscontroller": "kSPLL",
+            "name": "usi",
+            "type": "hidden",
+            "value": "S1896179842:1694925711700630"
+        },
+        "client": {
+            "jscontroller": "kSPLL",
+            "name": "usi",
+            "type": "hidden",
+            "value": "S1577173383:1694925692846106"
+        }
+    }
+}

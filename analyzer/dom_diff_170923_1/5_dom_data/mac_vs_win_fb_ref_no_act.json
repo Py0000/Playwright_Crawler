@@ -1,0 +1,28 @@
+{
+    "Level 3 - Attribute Mismatch": {
+        "server": {
+            "content": "dGl8tRuO1oFdTrdtK2xVRdU4SFCZNtKnpi5Evxms",
+            "name": "csrf-token"
+        },
+        "client": {
+            "content": "3KA8QrBI9tdtAlg8JrKkZORs5tIJlhKvHODxId8s",
+            "name": "csrf-token"
+        }
+    },
+    "Level 3 - Textual Content Mismatch": {
+        "server": "\n   window.NREUM||(NREUM={});NREUM.info={\"beacon\":\"bam.nr-data.net\",\"licenseKey\":\"a53393d12f\",\"applicationID\":\"1430671138\",\"transactionName\":\"ZlNSMUNXWBcFW0FRCV8ZcQZFX1kKS1BaVQNBQ1IJWFU=\",\"queueTime\":0,\"applicationTime\":68,\"atts\":\"ShRRRwtNSxk=\",\"errorBeacon\":\"bam.nr-data.net\",\"agent\":\"\"}\n  ",
+        "client": "\n   window.NREUM||(NREUM={});NREUM.info={\"beacon\":\"bam.nr-data.net\",\"licenseKey\":\"a53393d12f\",\"applicationID\":\"1430671138\",\"transactionName\":\"ZlNSMUNXWBcFW0FRCV8ZcQZFX1kKS1BaVQNBQ1IJWFU=\",\"queueTime\":0,\"applicationTime\":77,\"atts\":\"ShRRRwtNSxk=\",\"errorBeacon\":\"bam.nr-data.net\",\"agent\":\"\"}\n  "
+    },
+    "Level 5 - Tag Name Mismatch": {
+        "server": "div",
+        "client": "a"
+    },
+    "Level 6 - Tag Name Mismatch": {
+        "server": "a",
+        "client": "svg"
+    },
+    "Level 7 - Tag Name Mismatch": {
+        "server": "div",
+        "client": "path"
+    }
+}

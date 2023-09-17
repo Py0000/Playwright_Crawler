@@ -3,7 +3,7 @@ import os
 import re
 import time
 from bs4 import BeautifulSoup
-from googletrans import Translator
+# from googletrans import Translator
 
 ANALYZER_FOLDER = "analyzer"
 HTML_SCRIPT_FILE = "html_script_aft.html"
@@ -165,4 +165,4 @@ def detect_blank_page(main_folder_path, output_filename):
 
 
 
-detect_blank_page("dataset_160923_3", "160923_3_" + BLANK_ERROR_HTML_FILE)
+detect_blank_page("dataset_170923_6", "170923_6_" + BLANK_ERROR_HTML_FILE)

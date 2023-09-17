@@ -1,0 +1,32 @@
+{
+    "Level 3 - Attribute Mismatch": {
+        "server": {
+            "height": "1",
+            "src": "https://analytics.twitter.com/i/adsct?bci=3&eci=2&event_id=6fb9a55f-f6a9-4723-8537-3bc728fc6b77&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=5ef4da1b-0dac-4a0f-b23c-5c23db8adf9c&tw_document_href=https%3A%2F%2Fwwscv53dthird.run.place%2Fn%2Fo%2Flogin&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=ny99k&type=javascript&version=2.3.29",
+            "style": "display: none;",
+            "width": "1"
+        },
+        "client": {
+            "height": "1",
+            "src": "https://analytics.twitter.com/i/adsct?bci=3&eci=2&event_id=2c8948d2-2d5a-4806-ad7a-d531e342811e&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=591df21a-92d6-47a2-834d-71026472a63f&tw_document_href=https%3A%2F%2Fwwscv53dthird.run.place%2Fn%2Fo%2Flogin&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=ny99k&type=javascript&version=2.3.29",
+            "style": "display: none;",
+            "width": "1"
+        }
+    },
+    "Level 3 - Tag Name Mismatch": {
+        "server": "iframe",
+        "client": "script"
+    },
+    "Level 3 - Textual Content Mismatch": {
+        "server": "\n",
+        "client": "\n   // Insert Twitter Pixel ID and Standard Event data below\n  "
+    },
+    "Level 3 - Node Type Mismatch": {
+        "server": "<script src=\"./login_files/patternlab.js.download\">\n</script>",
+        "client": " inject:js "
+    },
+    "Level 4 - Node Type Mismatch": {
+        "server": "\n",
+        "client": "\n"
+    }
+}

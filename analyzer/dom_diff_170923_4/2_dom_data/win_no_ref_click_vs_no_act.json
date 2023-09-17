@@ -1,0 +1,109 @@
+{
+    "Level 3 - Attribute Mismatch": {
+        "server": {
+            "height": "0",
+            "sandbox": [
+                "allow-same-origin",
+                "allow-scripts",
+                "allow-forms",
+                "allow-popups",
+                "allow-popups-to-escape-sandbox"
+            ],
+            "src": "https://accounts.youtube.com/accounts/CheckConnection?pmpo=https%3A%2F%2Faccounts.google.com&v=1707370193&timestamp=1694925849733",
+            "style": "position: absolute; left: 0px; top: 0px; z-index: -1;",
+            "tabindex": "-1",
+            "width": "0"
+        },
+        "client": {
+            "height": "0",
+            "sandbox": [
+                "allow-same-origin",
+                "allow-scripts",
+                "allow-forms",
+                "allow-popups",
+                "allow-popups-to-escape-sandbox"
+            ],
+            "src": "https://accounts.youtube.com/accounts/CheckConnection?pmpo=https%3A%2F%2Faccounts.google.com&v=561660454&timestamp=1694925687219",
+            "style": "position: absolute; left: 0px; top: 0px; z-index: -1;",
+            "tabindex": "-1",
+            "width": "0"
+        }
+    },
+    "Level 4 - Attribute Mismatch": {
+        "server": {
+            "nonce": "-E8gxyCuVNt41uE90PHGJA"
+        },
+        "client": {
+            "nonce": "5-HrbJ2WlYY871zHiZcaQw"
+        }
+    },
+    "Level 5 - Attribute Mismatch": {
+        "server": {
+            "aria-hidden": "true",
+            "nonce": "Jtk3vo3wZo2_QvLI70q4qQ"
+        },
+        "client": {
+            "aria-hidden": "true",
+            "nonce": "RZHXcNwxREAjNtL9V5wh9Q"
+        }
+    },
+    "Level 7 - Attribute Mismatch": {
+        "server": {
+            "aria-hidden": "true",
+            "id": "WIZ-footer",
+            "nonce": "Jtk3vo3wZo2_QvLI70q4qQ"
+        },
+        "client": {
+            "aria-hidden": "true",
+            "id": "WIZ-footer",
+            "nonce": "RZHXcNwxREAjNtL9V5wh9Q"
+        }
+    },
+    "Level 18 - Attribute Mismatch": {
+        "server": {
+            "jscontroller": "kSPLL",
+            "name": "usi",
+            "type": "hidden",
+            "value": "S-2029494669:1694925848735689"
+        },
+        "client": {
+            "jscontroller": "kSPLL",
+            "name": "usi",
+            "type": "hidden",
+            "value": "S-636568434:1694925686081165"
+        }
+    },
+    "Level 19 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "rFrNMe",
+                "N3Hzgf",
+                "jjwyfe",
+                "QBQrY",
+                "zKHdkd",
+                "sdJrJc",
+                "Tyc9J"
+            ],
+            "jsaction": "clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV",
+            "jscontroller": "pxq3x",
+            "jsname": "Ufn6O",
+            "jsshadow": ""
+        },
+        "client": {
+            "class": [
+                "rFrNMe",
+                "N3Hzgf",
+                "jjwyfe",
+                "QBQrY",
+                "zKHdkd",
+                "sdJrJc",
+                "Tyc9J",
+                "u3bW4e"
+            ],
+            "jsaction": "clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV",
+            "jscontroller": "pxq3x",
+            "jsname": "Ufn6O",
+            "jsshadow": ""
+        }
+    }
+}

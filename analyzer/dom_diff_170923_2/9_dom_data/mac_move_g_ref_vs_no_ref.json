@@ -1,0 +1,28 @@
+{
+    "Level 3 - Attribute Mismatch": {
+        "server": {
+            "height": "1",
+            "src": "https://analytics.twitter.com/i/adsct?bci=3&eci=2&event_id=c5ec75dd-cf76-4b40-accb-c50745cd0ffb&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=87b8367f-7939-4794-9700-86c7456d731b&tw_document_href=https%3A%2F%2Fwwscv53dthird.run.place%2Fn%2Fo%2Flogin&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=ny99k&type=javascript&version=2.3.29",
+            "style": "display: none;",
+            "width": "1"
+        },
+        "client": {
+            "height": "1",
+            "src": "https://analytics.twitter.com/i/adsct?bci=3&eci=2&event_id=8ae9e379-3b58-40df-b074-458b4a911ac9&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=3ed70b3f-0a5d-4401-bc03-b390001ef79c&tw_document_href=https%3A%2F%2Fwwscv53dthird.run.place%2Fn%2Fo%2Flogin&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=ny99k&type=javascript&version=2.3.29",
+            "style": "display: none;",
+            "width": "1"
+        }
+    },
+    "Level 3 - Tag Name Mismatch": {
+        "server": "iframe",
+        "client": "script"
+    },
+    "Level 3 - Node Type Mismatch": {
+        "server": "<script src=\"./login_files/patternlab.js.download\">\n</script>",
+        "client": " inject:js "
+    },
+    "Level 4 - Node Type Mismatch": {
+        "server": "\n",
+        "client": "\n"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "Level 3 - Attribute Mismatch": {
+        "server": {
+            "height": "1",
+            "src": "https://analytics.twitter.com/i/adsct?bci=3&eci=2&event_id=30e6d116-5190-47d1-913f-3a05ede81983&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=8b60b51c-c268-4eea-9e58-3808e8a68e57&tw_document_href=https%3A%2F%2Fwwscv53dthird.run.place%2Fn%2Fo%2Flogin&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=ny99k&type=javascript&version=2.3.29",
+            "style": "display: none;",
+            "width": "1"
+        },
+        "client": {
+            "height": "1",
+            "src": "https://analytics.twitter.com/i/adsct?bci=3&eci=2&event_id=59ca6552-2888-47ee-bccf-b63374e46fb6&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=d9780eed-7d18-4dbd-a8e9-649aded53c19&tw_document_href=https%3A%2F%2Fwwscv53dthird.run.place%2Fn%2Fo%2Flogin&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=ny99k&type=javascript&version=2.3.29",
+            "style": "display: none;",
+            "width": "1"
+        }
+    },
+    "Level 3 - Tag Name Mismatch": {
+        "server": "iframe",
+        "client": "script"
+    },
+    "Level 3 - Textual Content Mismatch": {
+        "server": "\n   // Insert Twitter Pixel ID and Standard Event data below\n  ",
+        "client": "\n"
+    },
+    "Level 3 - Node Type Mismatch": {
+        "server": "<script>\n</script>",
+        "client": " End TVSquared Tracking Code "
+    },
+    "Level 4 - Node Type Mismatch": {
+        "server": "\n",
+        "client": "\n"
+    }
+}

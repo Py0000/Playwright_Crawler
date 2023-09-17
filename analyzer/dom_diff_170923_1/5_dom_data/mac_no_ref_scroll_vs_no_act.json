@@ -1,0 +1,24 @@
+{
+    "Level 3 - Attribute Mismatch": {
+        "server": {
+            "content": "oebTK0vWZ9LJLJZxk4ondjnFmT3UcTjg3flqSLgx",
+            "name": "csrf-token"
+        },
+        "client": {
+            "content": "vNZpn1YUn1VDMbeWQyQhCzVAkR96yygYkPJwd4TF",
+            "name": "csrf-token"
+        }
+    },
+    "Level 5 - Tag Name Mismatch": {
+        "server": "a",
+        "client": "div"
+    },
+    "Level 6 - Tag Name Mismatch": {
+        "server": "svg",
+        "client": "a"
+    },
+    "Level 7 - Tag Name Mismatch": {
+        "server": "path",
+        "client": "div"
+    }
+}

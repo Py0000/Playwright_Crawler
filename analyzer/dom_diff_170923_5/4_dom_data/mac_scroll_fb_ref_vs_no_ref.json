@@ -1,0 +1,41 @@
+{
+    "Level 13 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "img-box2",
+                "img"
+            ],
+            "data-v-0f416e97": "",
+            "data-v-732b3219": "",
+            "style": "height: 100%;"
+        },
+        "client": {
+            "class": [
+                "img-box2",
+                "img"
+            ],
+            "data-v-0f416e97": "",
+            "data-v-732b3219": ""
+        }
+    },
+    "Level 14 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "img2",
+                "v-lazy-image",
+                "v-lazy-image-loaded"
+            ],
+            "data-v-0f416e97": "",
+            "src": "https://m.media-amazon.com/images/I/81pnOP7UycL._AC_SL1500_.jpg",
+            "style": "height: 90%;"
+        },
+        "client": {
+            "class": [
+                "img2",
+                "v-lazy-image"
+            ],
+            "data-v-0f416e97": "",
+            "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        }
+    }
+}
