@@ -3,12 +3,12 @@ import json
 from bs4 import BeautifulSoup, Tag
 
 html_file_name = "html_script_aft.html"
-user_agents = ["mac", "wind"]
-referrers = ["g_ref", "self_ref", "fb_ref", "no ref"]
+user_agents = ["mac", "win"]
+referrers = ["g_ref", "self_ref", "fb_ref", "no_ref"]
 actions = ["click", "move", "scroll", "no_act"]
 
-def get_folder_name(user_agent, referrer, action):
-    return f"{user_agent}_{referrer}_{action}"
+def get_folder_name(user_agent, referrer, action, index, main_folder_path):
+    return os.path.join(main_folder_path, f"{user_agent}_{referrer}_{action}", index)
 
 
 def save_to_json(file_name, data):
@@ -50,12 +50,12 @@ def traverse(html_1_node, html_2_node, differences, level=0):
 
 
 
-def compare_mac_against_window_same_config():
+def compare_mac_against_window_same_config(index, main_folder_path, output_folder):
     result = {}
     for ref in referrers:
         for act in actions:
-            mac_folder = get_folder_name("mac", ref, act)
-            win_folder = get_folder_name("win", ref, act)
+            mac_folder = get_folder_name("mac", ref, act, index, main_folder_path)
+            win_folder = get_folder_name("win", ref, act, index, main_folder_path)
 
             mac_html = load_html_script(mac_folder)
             win_html = load_html_script(win_folder)
@@ -66,21 +66,21 @@ def compare_mac_against_window_same_config():
             result.update({f"mac-vs-win: {ref} + {act}": is_same})
 
             sorted_diff = dict(sorted(diff.items(), key=lambda item: int(item[0].split()[1])))
-            save_to_json(f"mac_vs_win_{ref}_{act}.json", sorted_diff)
+            save_to_json(os.path.join(output_folder, f"mac_vs_win_{ref}_{act}.json"), sorted_diff)
 
     return result
 
 
-def compare_within_same_ua_same_ref_diff_act():
+def compare_within_same_ua_same_ref_diff_act(index, main_folder_path, output_folder):
     result = {}
     for user_agent in user_agents:
         for referrer in referrers:
             for i, current_action in enumerate(actions[:-1]):
-                current_folder = get_folder_name(user_agent, referrer, current_action)
+                current_folder = get_folder_name(user_agent, referrer, current_action, index, main_folder_path)
 
                 # loop through subsequent user-actions
                 for sub_action in actions[i+1:]:
-                    sub_folder = get_folder_name(user_agent, referrer, sub_action)
+                    sub_folder = get_folder_name(user_agent, referrer, sub_action, index, main_folder_path)
 
                     current_html = load_html_script(current_folder)
                     sub_html = load_html_script(sub_folder)
@@ -91,20 +91,20 @@ def compare_within_same_ua_same_ref_diff_act():
                     result.update({f"{user_agent}_{referrer}: {current_action} vs {sub_action}": is_same})
 
                     sorted_diff = dict(sorted(diff.items(), key=lambda item: int(item[0].split()[1])))
-                    save_to_json(f"{user_agent}_{referrer}_{current_action}_vs_{sub_action}.json", sorted_diff)
+                    save_to_json(os.path.join(output_folder, f"{user_agent}_{referrer}_{current_action}_vs_{sub_action}.json"), sorted_diff)
     
     return result
 
 
-def compare_within_same_ua_same_act_diff_ref():
+def compare_within_same_ua_same_act_diff_ref(index, main_folder_path, output_folder):
     result = {}
     for user_agent in user_agents:
         for action in actions:
             for i, current_referrer in enumerate(referrers[:-1]):
-                current_folder = get_folder_name(user_agent, current_referrer, action)
+                current_folder = get_folder_name(user_agent, current_referrer, action, index, main_folder_path)
 
                 for sub_referrer in referrers[i+1:]:
-                    sub_folder = get_folder_name(user_agent, sub_referrer, action)
+                    sub_folder = get_folder_name(user_agent, sub_referrer, action, index, main_folder_path)
 
                     current_html = load_html_script(current_folder)
                     sub_html = load_html_script(sub_folder)
@@ -115,13 +115,13 @@ def compare_within_same_ua_same_act_diff_ref():
                     result.update({f"{user_agent}_{action}: {current_referrer} vs {sub_referrer}": is_same})
 
                     sorted_diff = dict(sorted(diff.items(), key=lambda item: int(item[0].split()[1])))
-                    save_to_json(f"{user_agent}_{action}_{current_referrer}_vs_{sub_referrer}.json", sorted_diff)
+                    save_to_json(os.path.join(output_folder, f"{user_agent}_{action}_{current_referrer}_vs_{sub_referrer}.json"), sorted_diff)
 
 
-def compare_dom(index):
-    mac_against_win_result = compare_mac_against_window_same_config()
-    same_ua_same_ref_diff_act_result = compare_within_same_ua_same_ref_diff_act()
-    same_us_same_act_diff_ref_result = compare_within_same_ua_same_act_diff_ref()
+def compare_dom(index, main_folder_path, output_folder):
+    mac_against_win_result = compare_mac_against_window_same_config(index, main_folder_path)
+    same_ua_same_ref_diff_act_result = compare_within_same_ua_same_ref_diff_act(index, main_folder_path)
+    same_us_same_act_diff_ref_result = compare_within_same_ua_same_act_diff_ref(index, main_folder_path)
 
     result = {
         "Mac vs Window (Same configurations)": mac_against_win_result,
@@ -129,7 +129,7 @@ def compare_dom(index):
         "Same User-Agent Same User Actions Different Referrer": same_us_same_act_diff_ref_result,
     }
 
-    save_to_json(f"{index}_summarized.json", result)
+    save_to_json(os.path.join(output_folder, "{index}_summarized.json"), result)
 
 
 
@@ -142,12 +142,17 @@ def main_comparator(main_folder_path):
         url_index_folders.sort(key=int)
         for index in url_index_folders:
             indices.append(index)
+        break      
     
     for index in indices:
         print(f"Comparing: {main_folder_path} {index}")
-        compare_dom(index)
+        if not os.path.exist(f"{{index}_dom_data}")
+            os.makedir(f"{{index}_dom_data}")
+        compare_dom(index, main_folder_path, output_folder)
+    
 
 
 
 
+main_comparator("dataset_150923_1")
 
