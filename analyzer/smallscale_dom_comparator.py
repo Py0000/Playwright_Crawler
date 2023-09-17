@@ -129,9 +129,9 @@ def compare_within_same_ua_same_act_diff_ref(index, main_folder_path, output_fol
 
 
 def compare_dom(index, main_folder_path, output_folder):
-    mac_against_win_result = compare_mac_against_window_same_config(index, main_folder_path)
-    same_ua_same_ref_diff_act_result = compare_within_same_ua_same_ref_diff_act(index, main_folder_path)
-    same_us_same_act_diff_ref_result = compare_within_same_ua_same_act_diff_ref(index, main_folder_path)
+    mac_against_win_result = compare_mac_against_window_same_config(index, main_folder_path, output_folder)
+    same_ua_same_ref_diff_act_result = compare_within_same_ua_same_ref_diff_act(index, main_folder_path, output_folder)
+    same_us_same_act_diff_ref_result = compare_within_same_ua_same_act_diff_ref(index, main_folder_path, output_folder)
 
     result = {
         "Mac vs Window (Same configurations)": mac_against_win_result,
