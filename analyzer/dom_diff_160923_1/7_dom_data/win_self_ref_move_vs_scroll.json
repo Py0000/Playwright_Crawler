@@ -1,0 +1,101 @@
+{
+    "Level 3 - Attribute Mismatch": {
+        "server": {
+            "href": "https://steam.guesskings.com/community-akamai-steamstatic-com/js/public/css/applications/community/login.css?contenthash=120ef11d3786830c5571",
+            "rel": [
+                "stylesheet"
+            ],
+            "type": "text/css"
+        },
+        "client": {
+            "href": "https://steam.guesskings.com/community-cloudflare-steamstatic-com/js/public/css/applications/community/login.css?contenthash=120ef11d3786830c5571",
+            "rel": [
+                "stylesheet"
+            ],
+            "type": "text/css"
+        }
+    },
+    "Level 3 - Textual Content Mismatch": {
+        "server": "\n   $J = jQuery.noConflict();\nif ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.write( \"<scr\" + \"ipt type=\\\"text\\/javascript\\\" src=\\\"https:\\/\\/steam.guesskings.com/community-akamai-steamstatic-com/js\\/public\\/javascript\\/json2.js?v=pmScf4470EZP&amp;l=english\\\" ><\\/script>\\n\" ); };\n  ",
+        "client": "\n   $J = jQuery.noConflict();\nif ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.write( \"<scr\" + \"ipt type=\\\"text\\/javascript\\\" src=\\\"https:\\/\\/steam.guesskings.com/community-cloudflare-steamstatic-com/js\\/public\\/javascript\\/json2.js?v=pmScf4470EZP&amp;l=english&amp;_cdn=cloudflare\\\" ><\\/script>\\n\" ); };\n  "
+    },
+    "Level 5 - Textual Content Mismatch": {
+        "server": "\n     g_sessionID = \"00afb805f65ceac5f6806774\";\n\tg_steamID = false;\n\tg_strLanguage = \"english\";\n\tg_SNR = '2_60_703_';\n\tg_bAllowAppImpressions = true;\n\t\tg_ContentDescriptorPreferences = [1,3,4];\n\n\t\n\n\t// We always want to have the timezone cookie set for PHP to use\n\tsetTimezoneCookies();\n\n\t$J( function() {\n\n\t\tInitMiniprofileHovers(( 'https%3A%2F%2Fsteam.guesskings.com' ));\n\t\tInitEmoticonHovers();\n\t\tApplyAdultContentPreferences();\n\t});\n\n\t$J( function() { InitEconomyHovers( \"https:\\/\\/steam.guesskings.com/community-akamai-steamstatic-com/js\\/public\\/css\\/skin_1\\/economy.css?v=W1lpCYkssBMO&l=english\", \"https:\\/\\/steam.guesskings.com/community-akamai-steamstatic-com/js\\/public\\/javascript\\/economy_common.js?v=tsXdRVB0yEaR&l=english\", \"https:\\/\\/steam.guesskings.com/community-akamai-steamstatic-com/js\\/public\\/javascript\\/economy.js?v=zBu5E2N7nc-G&l=english\" );});\n    ",
+        "client": "\n     g_sessionID = \"513da5283d83aea1acac3fee\";\n\tg_steamID = false;\n\tg_strLanguage = \"english\";\n\tg_SNR = '2_60_703_';\n\tg_bAllowAppImpressions = true;\n\t\tg_ContentDescriptorPreferences = [1,3,4];\n\n\t\n\n\t// We always want to have the timezone cookie set for PHP to use\n\tsetTimezoneCookies();\n\n\t$J( function() {\n\n\t\tInitMiniprofileHovers(( 'https%3A%2F%2Fsteam.guesskings.com' ));\n\t\tInitEmoticonHovers();\n\t\tApplyAdultContentPreferences();\n\t});\n\n\t$J( function() { InitEconomyHovers( \"https:\\/\\/steam.guesskings.com/community-cloudflare-steamstatic-com/js\\/public\\/css\\/skin_1\\/economy.css?v=Hib2Mv7hYJ4z&l=english&_cdn=cloudflare\", \"https:\\/\\/steam.guesskings.com/community-cloudflare-steamstatic-com/js\\/public\\/javascript\\/economy_common.js?v=tsXdRVB0yEaR&l=english&_cdn=cloudflare\", \"https:\\/\\/steam.guesskings.com/community-cloudflare-steamstatic-com/js\\/public\\/javascript\\/economy.js?v=7F-CkHa-o5A1&l=english&_cdn=cloudflare\" );});\n    "
+    },
+    "Level 5 - Attribute Mismatch": {
+        "server": {
+            "src": "https://steam.guesskings.com/community-akamai-steamstatic-com/js/public/javascript/applications/community/main.js?v=hptZVY94bqLZ&l=english",
+            "type": "text/javascript"
+        },
+        "client": {
+            "src": "https://steam.guesskings.com/community-cloudflare-steamstatic-com/js/public/javascript/applications/community/main.js?v=hptZVY94bqLZ&l=english&_cdn=cloudflare",
+            "type": "text/javascript"
+        }
+    },
+    "Level 6 - Textual Content Mismatch": {
+        "server": "\n      function StartLogin()\n\t{\n\t\tLoginManager = new CLoginPromptManager( 'https://steam.guesskings.com', {\n\t\t\tstrRedirectURL: \"https:\\/\\/steam.guesskings.com\\/moderation\\/\",\n\t\t\tgidCaptcha: \"6660316694589000423\",\n\t\t\tstrMobileClientType: null,\n\t\t\tstrMobileClientVersion: null,\n\t\t\tbIsMobile: false,\n\t\t\tbMobileClientSupportsPostMessage: false\t\t} );\n\n\t\t\t\t\t\t\t\tlet form = document.forms['logon'];\n\t\t\tif ( form ) {\n\t\t\t\tform.elements['username'].focus();\n\t\t\t}\n\t\t\n\t\t\t}\n\n\t$J( function() {\n\t\tStartLogin();\n\t});\n     ",
+        "client": "\n      function StartLogin()\n\t{\n\t\tLoginManager = new CLoginPromptManager( 'https://steam.guesskings.com', {\n\t\t\tstrRedirectURL: \"https:\\/\\/steam.guesskings.com\\/moderation\\/\",\n\t\t\tgidCaptcha: \"3860203530079649568\",\n\t\t\tstrMobileClientType: null,\n\t\t\tstrMobileClientVersion: null,\n\t\t\tbIsMobile: false,\n\t\t\tbMobileClientSupportsPostMessage: false\t\t} );\n\n\t\t\t\t\t\t\t\tlet form = document.forms['logon'];\n\t\t\tif ( form ) {\n\t\t\t\tform.elements['username'].focus();\n\t\t\t}\n\t\t\n\t\t\t}\n\n\t$J( function() {\n\t\tStartLogin();\n\t});\n     "
+    },
+    "Level 7 - Attribute Mismatch": {
+        "server": {
+            "height": "100%",
+            "src": "https://steam.guesskings.com/community-akamai-steamstatic-com/js/public/shared/images/responsive/header_menu_hamburger.png"
+        },
+        "client": {
+            "height": "100%",
+            "src": "https://steam.guesskings.com/community-cloudflare-steamstatic-com/js/public/shared/images/responsive/header_menu_hamburger.png"
+        }
+    },
+    "Level 8 - Attribute Mismatch": {
+        "server": {
+            "alt": "Valve Logo",
+            "border": "0",
+            "height": "26",
+            "src": "https://steam.guesskings.com/community-akamai-steamstatic-com/js/public/images/skin_1/footerLogo_valve.png?v=1",
+            "width": "96"
+        },
+        "client": {
+            "alt": "Valve Logo",
+            "border": "0",
+            "height": "26",
+            "src": "https://steam.guesskings.com/community-cloudflare-steamstatic-com/js/public/images/skin_1/footerLogo_valve.png?v=1",
+            "width": "96"
+        }
+    },
+    "Level 9 - Attribute Mismatch": {
+        "server": {
+            "src": "https://steam.guesskings.com/community-akamai-steamstatic-com/js/public/shared/images/responsive/logo_valve_footer.png"
+        },
+        "client": {
+            "src": "https://steam.guesskings.com/community-cloudflare-steamstatic-com/js/public/shared/images/responsive/logo_valve_footer.png"
+        }
+    },
+    "Level 10 - Attribute Mismatch": {
+        "server": {
+            "height": "44",
+            "src": "https://steam.guesskings.com/community-akamai-steamstatic-com/js/public/shared/images/header/logo_steam.svg?t=962016",
+            "width": "176"
+        },
+        "client": {
+            "height": "44",
+            "src": "https://steam.guesskings.com/community-cloudflare-steamstatic-com/js/public/shared/images/header/logo_steam.svg?t=962016",
+            "width": "176"
+        }
+    },
+    "Level 19 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "qrcode_Bit_2Yuvr",
+                "qrcode_Active_274P1"
+            ],
+            "style": "background-color: rgb(33, 35, 40);"
+        },
+        "client": {
+            "class": [
+                "qrcode_Bit_2Yuvr"
+            ],
+            "style": "background-color: white;"
+        }
+    }
+}

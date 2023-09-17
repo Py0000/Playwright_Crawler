@@ -370,7 +370,7 @@ async def start_program(seed_url_list):
     """
 
 async def main():
-    feeds = read_feeds_from_file("feeds/phishing_feeds_170923_2.txt")
+    feeds = read_feeds_from_file("feeds/phishing_feeds_170923_4.txt")
     await start_program(feeds)
 
 

@@ -1,0 +1,123 @@
+{
+    "Level 2 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "fbx",
+                "UIPage_LoggedOut",
+                "_-kb",
+                "sf",
+                "_605a",
+                "b_c3pyn-ahh",
+                "chrome",
+                "webkit",
+                "mac",
+                "x1",
+                "Locale_en_GB",
+                "cores-gte4",
+                "_19_u"
+            ],
+            "dir": "ltr"
+        },
+        "client": {
+            "class": [
+                "fbx",
+                "UIPage_LoggedOut",
+                "_-kb",
+                "_605a",
+                "b_c3pyn-ahh",
+                "chrome",
+                "webkit",
+                "win",
+                "x1",
+                "Locale_en_GB",
+                "cores-gte4",
+                "_19_u"
+            ],
+            "dir": "ltr"
+        }
+    },
+    "Level 3 - Attribute Mismatch": {
+        "server": {
+            "nonce": "7kLcOLPA"
+        },
+        "client": {
+            "nonce": "Wkz5YXIp"
+        }
+    },
+    "Level 3 - Textual Content Mismatch": {
+        "server": "\n   requireLazy([\"__bigPipe\"],function(bigPipe){bigPipe.setPageID(\"7279087502258390070\")});\n  ",
+        "client": "\n   requireLazy([\"__bigPipe\"],function(bigPipe){bigPipe.setPageID(\"7279087466912734460\")});\n  "
+    },
+    "Level 10 - Attribute Mismatch": {
+        "server": {
+            "data-lynx-mode": "asynclazy",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.threads.net%2F&h=AT1mxhyTAmoXohL0u2co8ofbbJ91KsU0naPn-XJXywj32lCu_cUuahOTU4e8VSDHClGWMOO6hrpL3P2ayylihk_ZAZOsrIvsXcvLrhYl9cIx7EmnqSM4b5cGyClaX_m3lQkrACjfI3LoXwQ6KOKiPnk4oWM",
+            "rel": [
+                "noreferrer",
+                "nofollow"
+            ],
+            "target": "_blank",
+            "title": "Check out Threads"
+        },
+        "client": {
+            "data-lynx-mode": "asynclazy",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.threads.net%2F&h=AT3-HC3cxWkdl9GFRLIAdZypLatlPOywCGXsQcSj8yoplzr6ffxJMZpsot8eR8LqtXKty01yj64jy9CTTYOk3XUgpp2eZNelySpxn6xMfJA5HCEfHpFVLaSRUUtumTE21wkXUrstRhH4Y6K91lIaLg",
+            "rel": [
+                "noreferrer",
+                "nofollow"
+            ],
+            "target": "_blank",
+            "title": "Check out Threads"
+        }
+    },
+    "Level 11 - Attribute Mismatch": {
+        "server": {
+            "id": "lgnjs",
+            "name": "lgnjs",
+            "type": "hidden",
+            "value": "1694794629"
+        },
+        "client": {
+            "id": "lgnjs",
+            "name": "lgnjs",
+            "type": "hidden",
+            "value": "1694794622"
+        }
+    },
+    "Level 15 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "login_form_login_button",
+                "uiButton",
+                "uiButtonConfirm"
+            ],
+            "for": "u_0_0_nn",
+            "id": "loginbutton"
+        },
+        "client": {
+            "class": [
+                "login_form_login_button",
+                "uiButton",
+                "uiButtonConfirm"
+            ],
+            "for": "u_0_0_IS",
+            "id": "loginbutton"
+        }
+    },
+    "Level 16 - Attribute Mismatch": {
+        "server": {
+            "aria-label": "Log In",
+            "data-testid": "royal_login_button",
+            "id": "u_0_0_nn",
+            "type": "submit",
+            "value": "Log in"
+        },
+        "client": {
+            "aria-label": "Log In",
+            "data-testid": "royal_login_button",
+            "id": "u_0_0_IS",
+            "type": "submit",
+            "value": "Log in"
+        }
+    }
+}

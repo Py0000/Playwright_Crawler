@@ -1,0 +1,88 @@
+{
+    "Level 3 - Attribute Mismatch": {
+        "server": {},
+        "client": {
+            "async": "async",
+            "src": "https://static-assets.strikinglycdn.com/detectIE-c385c24313ef0e9e4e7a1e131bf5e59f0fbd468f9f9ef44fd6739ae84ef0c0a4.js"
+        }
+    },
+    "Level 3 - Textual Content Mismatch": {
+        "server": "\n   if (!window.utils) window.utils = {}\n  window.utils.getCookieByName = (name) => {\n    const cookies = document.cookie.split(';')\n    for (const cookie of cookies) {\n      const [key, value] = cookie.trim().split('=')\n      if (key === name) {\n        return decodeURIComponent(value)\n      }\n    }\n    return ''\n  }\n  ",
+        "client": "\n   var _strk = _strk || []\n_strk.push = function(arg1, arg2){\n  var _arrayPush = Array.prototype.push.bind(this)\n  if (typeof arg1 === 'string' && typeof arg2 === 'function') {\n    // Support _strk.push(event, fn) for better UX\n    _arrayPush([arg1, arg2])\n  } else {\n    _arrayPush.apply(this, arguments)\n  }\n}\nwindow.runAfterDomBinding = {\n  add: function(name, fn) {\n    _strk.push(['Page.didMount', fn])\n  }\n}\n  "
+    },
+    "Level 3 - Tag Name Mismatch": {
+        "server": "meta",
+        "client": "script"
+    },
+    "Level 3 - Node Type Mismatch": {
+        "server": " CUSTOM_CODE_END ",
+        "client": "<meta content=\"https://static-assets.strikinglycdn.com\" name=\"asset-url\"/>"
+    },
+    "Level 7 - Attribute Mismatch": {
+        "server": {},
+        "client": {
+            "class": [
+                "s-variation-default",
+                "s-custom-colors",
+                "s-font-heading-playfair-display",
+                "s-font-title-playfair-display",
+                "s-font-body-dm-sans",
+                "s-font-button-dm-sans",
+                "s-font-weight-heading-default",
+                "s-font-weight-title-default",
+                "s-font-weight-body-default",
+                "s-font-weight-button-default",
+                "s-entrance-mask",
+                "s-theme-alignment-center"
+            ],
+            "id": "s-content",
+            "lang": "en"
+        }
+    },
+    "Level 8 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "s-variation-default",
+                "s-custom-colors",
+                "s-font-heading-playfair-display",
+                "s-font-title-playfair-display",
+                "s-font-body-dm-sans",
+                "s-font-button-dm-sans",
+                "s-font-weight-heading-default",
+                "s-font-weight-title-default",
+                "s-font-weight-body-default",
+                "s-font-weight-button-default",
+                "s-theme-alignment-center"
+            ],
+            "id": "s-content",
+            "lang": "en"
+        },
+        "client": {
+            "style": "margin:auto"
+        }
+    },
+    "Level 9 - Attribute Mismatch": {
+        "server": {
+            "style": "margin: auto;"
+        },
+        "client": {
+            "class": [
+                "social-thumbnail"
+            ]
+        }
+    },
+    "Level 10 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "social-thumbnail"
+            ]
+        },
+        "client": {
+            "style": "display:none"
+        }
+    },
+    "Level 11 - Tag Name Mismatch": {
+        "server": "div",
+        "client": "img"
+    }
+}

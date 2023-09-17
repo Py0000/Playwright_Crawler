@@ -1,0 +1,86 @@
+{
+    "Level 3 - Attribute Mismatch": {
+        "server": {
+            "nonce": "hertr8I9"
+        },
+        "client": {
+            "nonce": "YdjXZuCS"
+        }
+    },
+    "Level 3 - Textual Content Mismatch": {
+        "server": "\n   requireLazy([\"__bigPipe\"],function(bigPipe){bigPipe.setPageID(\"7279087102271750797\")});\n  ",
+        "client": "\n   requireLazy([\"__bigPipe\"],function(bigPipe){bigPipe.setPageID(\"7279086827656100500\")});\n  "
+    },
+    "Level 10 - Attribute Mismatch": {
+        "server": {
+            "data-lynx-mode": "asynclazy",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.threads.net%2F&h=AT3ZlAHOPTaZBWhNqGM9c9O7FTt-SAABugYQdoSySja6RrCFEM4Tc5oz-gz3mvPtGDaJ7UEjEcsAFgdfiSO4qlx3wO60txcS_VEIBMq3JaE8_693aLVKFP7Zb9RgHqY_qRA2JT6DoqMipSHQLaYuLHg806g",
+            "rel": [
+                "noreferrer",
+                "nofollow"
+            ],
+            "target": "_blank",
+            "title": "Check out Threads"
+        },
+        "client": {
+            "data-lynx-mode": "asynclazy",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.threads.net%2F&h=AT1YcJVXXgNLgQ9qnPOxWtozv8ZqzOuxuJPZL7cp6Nfd6P7CtkSlHPK5C5H9ArYOK2nsAnqaxYjFlo4CquljD8lmbWIiM-oAObnxb6bkW8U-1mw7j-LT5eEC8BtBaTaTopWcj9s5VrIZR0G7OHEZyo1c9hU",
+            "rel": [
+                "noreferrer",
+                "nofollow"
+            ],
+            "target": "_blank",
+            "title": "Check out Threads"
+        }
+    },
+    "Level 11 - Attribute Mismatch": {
+        "server": {
+            "id": "lgnjs",
+            "name": "lgnjs",
+            "type": "hidden",
+            "value": "1694794536"
+        },
+        "client": {
+            "id": "lgnjs",
+            "name": "lgnjs",
+            "type": "hidden",
+            "value": "1694794473"
+        }
+    },
+    "Level 15 - Attribute Mismatch": {
+        "server": {
+            "class": [
+                "login_form_login_button",
+                "uiButton",
+                "uiButtonConfirm"
+            ],
+            "for": "u_0_0_LW",
+            "id": "loginbutton"
+        },
+        "client": {
+            "class": [
+                "login_form_login_button",
+                "uiButton",
+                "uiButtonConfirm"
+            ],
+            "for": "u_0_0_+q",
+            "id": "loginbutton"
+        }
+    },
+    "Level 16 - Attribute Mismatch": {
+        "server": {
+            "aria-label": "Log In",
+            "data-testid": "royal_login_button",
+            "id": "u_0_0_LW",
+            "type": "submit",
+            "value": "Log in"
+        },
+        "client": {
+            "aria-label": "Log In",
+            "data-testid": "royal_login_button",
+            "id": "u_0_0_+q",
+            "type": "submit",
+            "value": "Log in"
+        }
+    }
+}
