@@ -165,4 +165,4 @@ def detect_blank_page(main_folder_path, output_filename):
 
 
 
-detect_blank_page("dataset_170923_6", "170923_6_" + BLANK_ERROR_HTML_FILE)
+detect_blank_page("dataset_180923", "180923" + BLANK_ERROR_HTML_FILE)

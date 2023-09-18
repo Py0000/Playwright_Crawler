@@ -1,0 +1,24 @@
+{
+    "Level 3 - Attribute Mismatch": {
+        "server": {
+            "async": "",
+            "src": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202309120101/pubads_impl.js?cb=31077885"
+        },
+        "client": {
+            "async": "",
+            "src": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202309120101/pubads_impl.js"
+        }
+    },
+    "Level 7 - Attribute Mismatch": {
+        "server": {
+            "name": "ua",
+            "type": "hidden",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+        },
+        "client": {
+            "name": "ua",
+            "type": "hidden",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+        }
+    }
+}

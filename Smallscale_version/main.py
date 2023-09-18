@@ -363,15 +363,17 @@ async def start_program(seed_url_list):
         
     
     print("\nCrawling done...")
-    """
+
+def start_analysing():
     analyze_windows_config_data()
     analyze_mac_config_data()
-    analyze_bot_config_data()
-    """
+    #analyze_bot_config_data()
+    
 
 async def main():
-    feeds = read_feeds_from_file("feeds/phishing_feeds_170923_6.txt")
-    await start_program(feeds)
+    #feeds = read_feeds_from_file("feeds/phishing_feeds_180923.txt")
+    #await start_program(feeds)
+    start_analysing()
 
 
 if __name__ == '__main__':

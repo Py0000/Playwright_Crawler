@@ -1,0 +1,32 @@
+{
+    "Level 3 - Attribute Mismatch": {
+        "server": {},
+        "client": {
+            "src": "https://unpkg.com/footericon@3.7.0/icon.map.js"
+        }
+    },
+    "Level 3 - Tag Name Mismatch": {
+        "server": "script",
+        "client": "iframe"
+    },
+    "Level 4 - Node Type Mismatch": {
+        "server": "\n",
+        "client": "\n"
+    },
+    "Level 4 - Tag Name Mismatch": {
+        "server": "div",
+        "client": "fb"
+    },
+    "Level 5 - Tag Name Mismatch": {
+        "server": "div",
+        "client": "atas"
+    },
+    "Level 6 - Tag Name Mismatch": {
+        "server": "div",
+        "client": "text"
+    },
+    "Level 7 - Tag Name Mismatch": {
+        "server": "h2",
+        "client": "img"
+    }
+}

@@ -167,5 +167,5 @@ def main_comparator(main_folder_path):
 
 
 
-main_comparator("dataset_170923_6")
+main_comparator("dataset_180923")
 
