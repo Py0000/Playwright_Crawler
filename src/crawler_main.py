@@ -1,8 +1,7 @@
+import hashlib
 from playwright.async_api import async_playwright
 from bs4 import BeautifulSoup
 
-import base64 
-import hashlib
 import os 
 
 import crawler_actions
@@ -98,7 +97,10 @@ async def get_client_side_script(page, folder_path):
 
 
 
-async def crawl(ref_flag, url, url_hash):
+async def crawl(url, ref_flag):
+    # Generate sha256 hash for url
+    url_hash = hashlib.sha256(visited_url.encode()).hexdigest()
+
     # Setup folders and paths required for data storage 
     util.generate_base_folder_for_crawled_dataset(ref_flag)
     folder_path = util.generate_folder_for_individual_url_dataset(ref_flag, url_hash)
@@ -114,7 +116,7 @@ async def crawl(ref_flag, url, url_hash):
         try:
             cert_extraction_status = certificate_extractor.extract_certificate_info(url, folder_path)
             dns_extraction_status = dns_extractor.extract_dns_records(url, folder_path)
-            server_html_status, server_move_status, server_ss_status = await get_server_side_data(p, ref_flag, folder_path, url)
+            server_html_status, server_move_status, server_screenshot_status = await get_server_side_data(p, ref_flag, folder_path, url)
 
             captured_events = []
             client = await page.context.new_cdp_session(page)
@@ -150,7 +152,7 @@ async def crawl(ref_flag, url, url_hash):
             visited_url = page.url
 
             client_move_status = await crawler_actions.execute_user_action(page)
-            server_screenshot_status = await crawler_utilities.save_screenshot(page, folder_path, util_def.FILE_SCREENSHOT_AFT)
+            client_screenshot_status = await crawler_utilities.save_screenshot(page, folder_path, util_def.FILE_SCREENSHOT_AFT)
             html_content = await page.content()
             soup = BeautifulSoup(html_content, "lxml")
             crawler_utilities.save_unique_html_tags(folder_path, soup, indicator=util_def.AFTER_CLIENT_SIDE_RENDERING_INDICATOR)
@@ -181,5 +183,22 @@ async def crawl(ref_flag, url, url_hash):
             await p.stop()
 
             log_data = {
-                
+                "Url visited": visited_url,
+                "Provided Url": url,
+                "Has Url changed?": visited_url != url,
+                "Provided Url hash (sha256)": url_hash,
+                "Certificate Extraction": cert_extraction_status,
+                "DNS Records Extraction": dns_extraction_status,
+                "Mouse moved when obtaining server-side data?": server_move_status,
+                "Server-Side HTML script obtained?": server_html_status,
+                "Server-side screenshot obtained?": server_screenshot_status,
+                "Mouse moved when obtaining client-side data?": client_move_status,
+                "Client-Side HTML script obtained?": client_html_script_status,
+                "Client-side screenshot obtained?": client_screenshot_status,
+                "Client-Side scripts obtained?":  client_client_side_script_status,
+                "Network data saved?": detailed_network_status
             }
+
+            log_output_path = os.path.join(os.getcwd(), folder_path, util_def.FILE_CRAWL_LOG_INFO)
+            util.save_data_to_json_format(log_output_path, log_data)
+
