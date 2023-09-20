@@ -10,10 +10,10 @@ USER_USER_AGENT_WINDOWS_CHROME = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Appl
 ##### File Names #####
 FILE_HTML_SCRIPT_AFT = "html_script_aft.html"
 FILE_HTML_SCRIPT_BEF = "html_script_bef.html"
-FILE_HTML_TAG = "html_tag.txt"
+FILE_HTML_TAG = "html_tag.json"
 FILE_SCREENSHOT_AFT = "screenshot_aft.png"
 FILE_SCREENSHOT_BEF = "screenshot_bef.png"
-FILE_URL_INFO = "url_details.json"
+FILE_CRAWL_LOG_INFO = "log.json"
 FILE_EMBEDDED_URL = "embedded_url.txt"
 FILE_CLIENT_SIDE_SCRIPT = "client_scripts.json"
 FILE_CERT = "cert.json"
@@ -54,3 +54,5 @@ CURRENT_KNOWN_EXCLUEDED_TAG_SET = {
 
 ##### Miscellaneous #####
 ERROR_URL_FLAG = "ERROR_URL"
+BEFORE_CLIENT_SIDE_RENDERING_INDICATOR = "Before client-side rendering"
+AFTER_CLIENT_SIDE_RENDERING_INDICATOR = "After client-side rendering"
