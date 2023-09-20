@@ -34,9 +34,7 @@ def save_html_script(folder_path, file_name, content):
         f.write(content)
 
 
-def save_unique_html_tags(folder_path, soup, indicator):
-    file_path = os.path.join(os.getcwd(), folder_path, util_def.FILE_HTML_TAG)
-
+def get_unique_html_tags(soup):
     set = {tag.name for tag in soup.find_all()}
     initial_diff = set.difference(util_def.CURRENT_COVERED_TAG_SET)
     diff = initial_diff.difference(util_def.CURRENT_KNOWN_EXCLUEDED_TAG_SET)
@@ -44,17 +42,23 @@ def save_unique_html_tags(folder_path, soup, indicator):
     if len(diff) == 0:
         diff = ""
 
-    data = {
-        indicator: diff
-    }
+    return diff
 
+
+def save_unique_html_tags(folder_path, server_data, client_data):
+    data = {
+        util_def.BEFORE_CLIENT_SIDE_RENDERING_INDICATOR: server_data,
+        util_def.AFTER_CLIENT_SIDE_RENDERING_INDICATOR: client_data
+    }
+    
+    file_path = os.path.join(os.getcwd(), folder_path, util_def.FILE_HTML_TAG)
     with open(file_path, 'a', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 
 
 async def extract_links(folder_path, soup, page, base_url):
-    file_path = os.path.join(os.getcwd(), folder_path, util_def.EMBEDDED_URL_FILE)
+    file_path = os.path.join(os.getcwd(), folder_path, util_def.FILE_EMBEDDED_URL)
 
     # Extract links from anchor tags
     added_url_set = get_link_in_anchor(file_path, soup, set(), base_url)

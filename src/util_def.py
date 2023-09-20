@@ -25,6 +25,14 @@ FOLDER_NETWORK_RESPONSES = "network_resp_data"
 FOLDER_DATASET_BASE = "dataset"
 FOLDER_ANALYSIS_BASE = "analysis"
 
+EXCEL_CERT_CONSOLIDATED = "certs_consolidated_excel.xlsx"
+EXCEL_DNS = "dns_excel.xlsx"
+EXCEL_FEATURES_AFT = "features_excel_aft.xlsx"
+EXCEL_FEATURES_BEF = "features_excel_bef.xlsx"
+EXCEL_DNS_CONSOLIDATED = "dns_consolidated_excel.xlsx"
+JSON_CERT_CONSOLIDATED = "certs_consolidated_json.json"
+JSON_FEATURES_AFT = "features_json_aft.json"
+JSON_FEATURES_BEF = "features_json_bef.json"
 
 ##### Related to HTML Tags #####
 CURRENT_COVERED_TAG_SET = {'title', 

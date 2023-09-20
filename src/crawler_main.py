@@ -59,12 +59,12 @@ async def get_server_side_data(p, ref_flag, folder_path, to_visit_url):
         server_html_script = await page.content()
         soup = BeautifulSoup(server_html_script, "lxml")
         crawler_utilities.save_html_script(folder_path, util_def.FILE_HTML_SCRIPT_BEF, soup.prettify())
-        crawler_utilities.save_unique_html_tags(folder_path, soup, indicator=util_def.BEFORE_CLIENT_SIDE_RENDERING_INDICATOR)
+        server_html_tag = crawler_utilities.get_unique_html_tags(soup)
         status = "Success"
 
     except Exception as e:
         crawler_utilities.save_html_script(
-            folder_path, util_def.HTML_SCRIPT_BEF_FILE, f"Error occurred for url: {to_visit_url}\n{e}"
+            folder_path, util_def.FILE_HTML_SCRIPT_BEF, f"Error occurred for url: {to_visit_url}\n{e}"
         )
         status = "Error"
 
@@ -72,7 +72,7 @@ async def get_server_side_data(p, ref_flag, folder_path, to_visit_url):
         await page.close()
         await context.close()
         await browser.close()
-        return status, server_move_status, server_screenshot_status
+        return server_html_tag, status, server_move_status, server_screenshot_status
 
 
 
@@ -116,7 +116,7 @@ async def crawl(url, ref_flag):
         try:
             cert_extraction_status = certificate_extractor.extract_certificate_info(url, folder_path)
             dns_extraction_status = dns_extractor.extract_dns_records(url, folder_path)
-            server_html_status, server_move_status, server_screenshot_status = await get_server_side_data(p, ref_flag, folder_path, url)
+            server_html_tag, server_html_status, server_move_status, server_screenshot_status = await get_server_side_data(p, ref_flag, folder_path, url)
 
             captured_events = []
             client = await page.context.new_cdp_session(page)
@@ -155,7 +155,8 @@ async def crawl(url, ref_flag):
             client_screenshot_status = await crawler_utilities.save_screenshot(page, folder_path, util_def.FILE_SCREENSHOT_AFT)
             html_content = await page.content()
             soup = BeautifulSoup(html_content, "lxml")
-            crawler_utilities.save_unique_html_tags(folder_path, soup, indicator=util_def.AFTER_CLIENT_SIDE_RENDERING_INDICATOR)
+            client_html_tag = crawler_utilities.save_unique_html_tags(soup)
+            crawler_utilities.save_unique_html_tags(folder_path, server_html_tag, client_html_tag)
             await crawler_utilities.extract_links(folder_path, soup, page, visited_url)
             client_client_side_script_status = await get_client_side_script(page, folder_path)
             
@@ -169,6 +170,7 @@ async def crawl(url, ref_flag):
             content = soup.prettify()
             if content is not None:
                 crawler_utilities.save_html_script(folder_path, util_def.FILE_HTML_SCRIPT_AFT, content)
+            
             client_html_script_status = "Success"
 
         except Exception as e:

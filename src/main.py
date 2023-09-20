@@ -2,8 +2,8 @@ import time
 import random
 import asyncio
 
+import analyzer
 import crawler_main as crawler
-import util_def
 
 def read_feeds_from_file(feed_path):
     urls = []
@@ -25,6 +25,8 @@ async def start_crawling(seed_url_list):
 
 
 def start_analysing():
+    analyzer.extract_and_analyse(ref_flag=True)
+    analyzer.extract_and_analyse(ref_flag=False)
     return
 
 
@@ -32,7 +34,7 @@ def start_analysing():
 async def main():
     feeds = read_feeds_from_file("feeds/phishing_feeds_180923.txt")
     await start_crawling(feeds)
-    #start_analysing()
+    start_analysing()
 
 
 if __name__ == '__main__':
