@@ -23,6 +23,7 @@ def load_html_script(folder_name):
         return soup
 
 
+# Depth-first, pre-order traversal used
 def traverse(html_1_node, html_2_node, differences, level=0):
     # If node type is different
     if type(html_1_node) != type(html_2_node):
