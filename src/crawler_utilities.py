@@ -42,7 +42,7 @@ def get_unique_html_tags(soup):
     if len(diff) == 0:
         diff = ""
 
-    return diff
+    return str(diff)
 
 
 def save_unique_html_tags(folder_path, server_data, client_data):
@@ -202,7 +202,7 @@ client_side_scripts_injection_code = '''() => {
 
 
 def save_client_side_script(folder_path, data):
-    file = os.path.join(os.getcwd(), folder_path, util_def.CLIENT_SIDE_SCRIPT_FILE)
+    file = os.path.join(os.getcwd(), folder_path, util_def.FILE_CLIENT_SIDE_SCRIPT)
 
     # Save data to a JSON file
     with open(file, 'w') as json_file:

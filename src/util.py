@@ -45,7 +45,6 @@ def extract_hostname(website_url):
 
 
 
-
 def get_analysis_folder_path(dataset_folder_path):
     # Splitting path into components
     parts = os.path.normpath(dataset_folder_path).split(os.sep)

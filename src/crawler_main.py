@@ -1,8 +1,7 @@
 import hashlib
+import os 
 from playwright.async_api import async_playwright
 from bs4 import BeautifulSoup
-
-import os 
 
 import crawler_actions
 import crawler_certificate_extractor as certificate_extractor
@@ -11,17 +10,17 @@ import crawler_utilities
 import util
 import util_def 
 
-
 # Waits for page to complete loading 
 async def wait_for_page_to_load(page):
     await crawler_actions.move_mouse_smoothly(page)
     try:
-        # Wait for the page to load completely (wait for the load event)
+        # Wait for the page to load completely (wait for the dom contentload event)
         await page.wait_for_load_state('domcontentloaded')
     except:
         await page.wait_for_timeout(2000)
 
     try:
+        # Wait for the page to no more network interaction
         await page.wait_for_load_state('networkidle')
     except:
         await page.wait_for_timeout(5000)
@@ -34,13 +33,15 @@ async def set_page_referrer(page, ref_flag, to_visit_url):
     await page.set_extra_http_headers({"Referer": referrer})
 
 
+# Obtains the server-side data for the webpage
+# Data retrieves includes: Page Screenshot, Page HTML Script
 async def get_server_side_data(p, ref_flag, folder_path, to_visit_url):
     # Intercept network requests
-    def block_external_resources_request(route, request):
+    async def block_external_resources_request(route, request):
         if request.resource_type != "document":
-            route.abort()
+            await route.abort()
         else:
-            route.continue_()
+            await route.continue_()
     
     try:
         win_chrome_v116_user_agent = [f"--user-agent={util_def.USER_USER_AGENT_WINDOWS_CHROME}"]
@@ -53,7 +54,7 @@ async def get_server_side_data(p, ref_flag, folder_path, to_visit_url):
         await page.route('**/*', block_external_resources_request)
         await page.goto(to_visit_url)
         server_move_status = await crawler_actions.execute_user_action(page)
-        wait_for_page_to_load(page)
+        await wait_for_page_to_load(page)
 
         server_screenshot_status = await crawler_utilities.save_screenshot(page, folder_path, util_def.FILE_SCREENSHOT_BEF)
         server_html_script = await page.content()
@@ -66,7 +67,10 @@ async def get_server_side_data(p, ref_flag, folder_path, to_visit_url):
         crawler_utilities.save_html_script(
             folder_path, util_def.FILE_HTML_SCRIPT_BEF, f"Error occurred for url: {to_visit_url}\n{e}"
         )
-        status = "Error"
+        status = "Error visiting page"
+        server_move_status = "Error visiting page"
+        server_screenshot_status = "Error visiting page"
+        server_html_tag = "Error visiting page"
 
     finally:
         await page.close()
@@ -75,7 +79,7 @@ async def get_server_side_data(p, ref_flag, folder_path, to_visit_url):
         return server_html_tag, status, server_move_status, server_screenshot_status
 
 
-
+# Obtains all the client-side calls that is present in the page HTML Script
 async def get_client_side_script(page, folder_path):
     try:
         client_side_scripts = await page.evaluate(crawler_utilities.client_side_scripts_injection_code)
@@ -95,11 +99,9 @@ async def get_client_side_script(page, folder_path):
         return status
 
 
-
-
 async def crawl(url, ref_flag):
     # Generate sha256 hash for url
-    url_hash = hashlib.sha256(visited_url.encode()).hexdigest()
+    url_hash = hashlib.sha256(url.encode()).hexdigest()
 
     # Setup folders and paths required for data storage 
     util.generate_base_folder_for_crawled_dataset(ref_flag)
@@ -114,18 +116,26 @@ async def crawl(url, ref_flag):
         await set_page_referrer(page, ref_flag, url)
 
         try:
+            # Obtains the TLS/SSL certificate info for the page
             cert_extraction_status = certificate_extractor.extract_certificate_info(url, folder_path)
+
+            # Obtains the DNS records info for the page
             dns_extraction_status = dns_extractor.extract_dns_records(url, folder_path)
+
+            # Obtains the server-side view of the HTML Script and page screenshot 
             server_html_tag, server_html_status, server_move_status, server_screenshot_status = await get_server_side_data(p, ref_flag, folder_path, url)
 
+            # List. To hold network resquest made when visiting the page.
             captured_events = []
-            client = await page.context.new_cdp_session(page)
+            client = await page.context.new_cdp_session(page) # Utilize CDP to capture network requests.
             await client.send("Network.enable")
-
+            
+            # Function to capture and store all network requests made.
             async def capture_request(payload):
                 captured_event = payload
                 captured_events.append(captured_event)
 
+            # Function to capture all network responses and download all the data in the responses.
             async def capture_response(payload):
                 url = payload['response']['url']
                 # Check if the response has any content
@@ -135,7 +145,7 @@ async def crawl(url, ref_flag):
                 try:
                     response_body = await client.send("Network.getResponseBody", {"requestId": payload['requestId']})
                     mime_type = payload['response']['mimeType']
-                    file_name = crawler_utilities.get_detailed_network_response_data_path(folder_path)
+                    file_name = crawler_utilities.get_detailed_network_response_data_path(folder_path, url)
                     decoded_data = crawler_utilities.decode_network_response(response_body) # Decode base64 if needed
                     crawler_utilities.save_decoded_file_data(file_name, mime_type, decoded_data)
                 except Exception as e:
@@ -149,17 +159,17 @@ async def crawl(url, ref_flag):
 
             await page.goto(url)
             await wait_for_page_to_load(page)
-            visited_url = page.url
+            visited_url = page.url # See if url changes after visiting the page.
 
-            client_move_status = await crawler_actions.execute_user_action(page)
+            client_move_status = await crawler_actions.execute_user_action(page) # Mimics user movements when visiting the page.
             client_screenshot_status = await crawler_utilities.save_screenshot(page, folder_path, util_def.FILE_SCREENSHOT_AFT)
             html_content = await page.content()
             soup = BeautifulSoup(html_content, "lxml")
-            client_html_tag = crawler_utilities.save_unique_html_tags(soup)
+            client_html_tag = crawler_utilities.get_unique_html_tags(soup)
             crawler_utilities.save_unique_html_tags(folder_path, server_html_tag, client_html_tag)
             await crawler_utilities.extract_links(folder_path, soup, page, visited_url)
             client_client_side_script_status = await get_client_side_script(page, folder_path)
-            
+
             user_agent = await page.evaluate('''() => window.navigator.userAgent''')
             referrer = await page.evaluate('''() => document.referrer''')
             print("Actual url: ", url)
@@ -173,12 +183,25 @@ async def crawl(url, ref_flag):
             
             client_html_script_status = "Success"
 
+            detailed_network_status = crawler_utilities.save_more_detailed_network_logs(folder_path, captured_events)
+
         except Exception as e:
             crawler_utilities.save_html_script(folder_path, util_def.FILE_HTML_SCRIPT_AFT, f"Error occurred for url: {url}\n{e}")
             client_html_script_status = "Failed"
+
+            visited_url = url
+            cert_extraction_status = "Error visiting page"
+            dns_extraction_status = "Error visiting page"
+            server_move_status = "Error visiting page"
+            server_html_status = "Error visiting page"
+            server_screenshot_status = "Error visiting page"
+            client_move_status = "Error visiting page"
+            client_html_script_status = "Error visiting page"
+            client_screenshot_status = "Error visiting page"
+            client_client_side_script_status = "Error visiting page"
+            detailed_network_status = "Error visiting page"
         
         finally:
-            detailed_network_status = crawler_utilities.save_more_detailed_network_logs(folder_path, captured_events)
             await page.close()
             await context.close()
             await browser.close()
@@ -201,6 +224,5 @@ async def crawl(url, ref_flag):
                 "Network data saved?": detailed_network_status
             }
 
-            log_output_path = os.path.join(os.getcwd(), folder_path, util_def.FILE_CRAWL_LOG_INFO)
-            util.save_data_to_json_format(log_output_path, log_data)
-
+            output_path = os.path.join(folder_path, util_def.FILE_CRAWL_LOG_INFO)
+            util.save_data_to_json_format(output_path, log_data)

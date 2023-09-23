@@ -18,7 +18,11 @@ async def start_crawling(seed_url_list):
     print("Crawling in progress...\n")
     for url in seed_url_list:
         time.sleep(random.randint(6, 12))
+
+        print(f"------------------------------\nConfiguration: Referrer set\nUrl: {url}\n-----------------------------")
         await crawler.crawl(url, ref_flag=True)
+
+        print(f"------------------------------\nConfiguration: No Referrer set\nUrl: {url}\n-----------------------------")
         await crawler.crawl(url, ref_flag=False)
     print("\nCrawling done...")
 
@@ -32,8 +36,8 @@ def start_analysing():
 
 
 async def main():
-    feeds = read_feeds_from_file("feeds/phishing_feeds_180923.txt")
-    await start_crawling(feeds)
+    #feeds = read_feeds_from_file("feeds/phishing_feeds_180923.txt")
+    await start_crawling(["https://www.google.com/", "https://www.facebook.com/"])
     start_analysing()
 
 
