@@ -11,7 +11,6 @@ def analyze_cert_duration_column(df, column, counts_dict):
     filtered_df = df.loc[df[column] != "Connection Error"]
     largest_value = filtered_df[column].max()
     smallest_value = filtered_df[column].min()
-    print(largest_value)
     range = str(smallest_value) + " to " + str(largest_value)
     counts_dict["Range"] = range
 

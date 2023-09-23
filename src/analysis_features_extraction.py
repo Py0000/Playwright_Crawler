@@ -107,6 +107,43 @@ DATAFRAME_COLUMNS = [
     ]
 
 
+def create_df_for_each_url(output_folder, df, is_aft_flag):
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+    output_filename = util_def.EXCEL_FEATURES_AFT if is_aft_flag else util_def.EXCEL_FEATURES_BEF
+    output_path = os.path.join(output_folder, output_filename)
+    df.to_excel(output_path, index=False)
+
+
+def create_json_for_each_url(soup, url, dataset_folder_name, output_folder_name, is_aft_flag):
+    if not os.path.exists(output_folder_name):
+        os.makedirs(output_folder_name)
+
+    tag_file_name = util_def.FILE_HTML_TAG
+    result = {}
+
+    result["Referenced HTML file"] = dataset_folder_name
+    result["URL"] = url 
+    result["Page Title"] = fe.get_title(soup).strip() if (len(fe.get_title(soup)) > 0) else ""
+    
+    result["Form Attributes"] = fe.form_attribute_analysis(soup)
+    result["Input Attributes"] = fe.input_attributes_analysis(soup)
+    result["Button Attributes"] = fe.button_attributes_analysis(soup)
+    result["Iframe Src Attributes"] = fe.iframe_src_analysis(soup)
+    result["Link Attributes"] = fe.link_analysis(soup)
+    result["External Script Attributes"] = fe.external_script_analysis(soup)
+    result["Embed Type"] = fe.embed_type_analysis(soup)
+    result["Embed Src"] = fe.embed_src_analysis(soup)
+    result["Object Type"] = fe.object_type_analysis(soup)
+    result["Object Data"] = fe.object_data_analysis(soup)
+    result["Meta Refresh Attributes"] = fe.meta_refresh_analysis(soup)
+    result["Unique Tags"] = fe.get_unique_tags(dataset_folder_name, tag_file_name, is_aft_flag)
+
+    output_filename = util_def.JSON_FEATURES_AFT if is_aft_flag else util_def.JSON_FEATURES_BEF
+    with open(os.path.join(output_folder_name, output_filename), 'w') as file:
+        json.dump(result, file, indent=4)
+    
+
 # Step 1: Define a function that opens a html file and returns the content
 def open_file(file_name):
     with open(file_name, "r", encoding="utf-8") as f:
@@ -219,61 +256,45 @@ def create_vector(soup, url):
     ]
 
 
-# Step 5: Create a dataframe by using the 2D array generated in step 4.
+# Creates a consolidated df in excel format for the html tags for each url.
+# In the process, it also generates individual excel and json data for each url.
 def create_dataframe(ref, is_aft_flag):
+    dataset_path = os.path.join(util_def.FOLDER_DATASET_BASE, ref)
+    sub_folders = [d for d in os.listdir(dataset_path) if os.path.isdir(os.path.join(dataset_path, d))]
+
     html_file_name = util_def.FILE_HTML_SCRIPT_AFT if is_aft_flag else util_def.FILE_HTML_SCRIPT_BEF
 
-    base_folder = os.path.join(util_def.FOLDER_DATASET_BASE, ref)
-    for dirpath, _, filenames in os.walk(base_folder):
+    df = pd.DataFrame()
+
+    for sub_folder in sub_folders:
+        # Retrieves the webpage url information form log files
+        url_info_filepath = os.path.join(dataset_path, sub_folder, util_def.FILE_CRAWL_LOG_INFO)
         url = ""
-        
-        if util_def.FILE_CRAWL_LOG_INFO in filenames and html_file_name in filenames:
-            url_file_path = os.path.join(dirpath, util_def.FILE_CRAWL_LOG_INFO)
-            with open(url_file_path, "r") as f:
-                data = f.read()
-            parsed_json_data = json.loads(data)
+        if os.path.exists(url_info_filepath):
+            with open(url_info_filepath, "r") as f:
+                url_data = f.read()
+            parsed_json_data = json.loads(url_data)
             url = parsed_json_data["Provided Url"]
 
-            html_file_path = os.path.join(dirpath, html_file_name)
-            soup = create_soup(open_file(html_file_path))
+        # retrieve the html script 
+        html_filepath = os.path.join(dataset_path, sub_folder, html_file_name)
+        if os.path.exists(html_filepath):
+            soup = create_soup(open_file(html_filepath))
             data = [create_vector(soup, url)]
+        
+        # Generates excel for the current url as well as json
+        current_df = pd.DataFrame(data=data, columns=DATAFRAME_COLUMNS)
+        output_path = os.path.join(util_def.FOLDER_ANALYSIS_BASE, ref, sub_folder)
+        create_df_for_each_url(output_path, df, is_aft_flag)
+        create_json_for_each_url(soup, url, os.path.join(dataset_path, sub_folder), output_path, is_aft_flag)
 
-            df = pd.DataFrame(data=data, columns=DATAFRAME_COLUMNS)
-
-            output_filename = util_def.EXCEL_FEATURES_AFT if is_aft_flag else util_def.EXCEL_FEATURES_BEF
-            output_folder = util.get_analysis_folder_path(dirpath)
-            df.to_excel(os.path.join(output_folder, output_filename), index=False)
-            print("Features Excel generated for:", dirpath)
-
-            create_json(soup, url, dirpath, output_folder, is_aft_flag)
-
-
-
-def create_json(soup, url, dataset_folder_name, output_folder_name, is_aft_flag):
-    tag_file_name = util_def.FILE_HTML_TAG
-    result = {}
-
-    result["Referenced HTML file"] = dataset_folder_name
-    result["URL"] = url 
-    result["Page Title"] = fe.get_title(soup).strip() if (len(fe.get_title(soup)) > 0) else ""
+        # combine each url data together
+        df = pd.concat([df, current_df], ignore_index=True)
     
-    result["Form Attributes"] = fe.form_attribute_analysis(soup)
-    result["Input Attributes"] = fe.input_attributes_analysis(soup)
-    result["Button Attributes"] = fe.button_attributes_analysis(soup)
-    result["Iframe Src Attributes"] = fe.iframe_src_analysis(soup)
-    result["Link Attributes"] = fe.link_analysis(soup)
-    result["External Script Attributes"] = fe.external_script_analysis(soup)
-    result["Embed Type"] = fe.embed_type_analysis(soup)
-    result["Embed Src"] = fe.embed_src_analysis(soup)
-    result["Object Type"] = fe.object_type_analysis(soup)
-    result["Object Data"] = fe.object_data_analysis(soup)
-    result["Meta Refresh Attributes"] = fe.meta_refresh_analysis(soup)
-    result["Unique Tags"] = fe.get_unique_tags(dataset_folder_name, tag_file_name, is_aft_flag)
-
-    output_filename = util_def.JSON_FEATURES_AFT if is_aft_flag else util_def.JSON_FEATURES_BEF
-    with open(os.path.join(output_folder_name, output_filename), 'w') as file:
-        json.dump(result, file, indent=4)
-    print("Features Json generated for:", dataset_folder_name)
+    # Generates the consoldiated excel 
+    output_filename = util_def.EXCEL_FEATURES_CONSOLIDATED_AFT if is_aft_flag else util_def.EXCEL_FEATURES_CONSOLIDATED_BEF
+    output_path = os.path.join(util_def.FOLDER_ANALYSIS_BASE, ref, output_filename)
+    df.to_excel(output_path, index=False)
 
 
 
