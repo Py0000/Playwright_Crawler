@@ -1,14 +1,17 @@
 import os 
 import json
+import hashlib
 from bs4 import BeautifulSoup, Tag
 
+base_folder_name = "d_analysis"
+dom_folder_name = "dom_comparison"
 client_html_file_name = "html_script_aft.html"
 server_html_file_name = "html_script_bef.html"
 referrers = ["self_ref", "no_ref"]
 
 
-def get_folder_name(referrer, url_hash, main_folder_path):
-    return os.path.join(main_folder_path, f"{referrer}", url_hash)
+def get_folder_name(referrer, url_index, main_folder_path):
+    return os.path.join(main_folder_path, f"{referrer}", url_index)
 
 
 def save_to_json(file_name, data):
@@ -17,7 +20,7 @@ def save_to_json(file_name, data):
 
 
 def load_html_script(folder_name, html_file_name):
-    with open(os.path.join(folder_name, html_file_name), 'r') as f:
+    with open(os.path.join(folder_name, html_file_name), 'r', encoding='utf-8') as f:
         content = f.read()
         soup = BeautifulSoup(content, 'lxml')
         return soup
@@ -66,3 +69,108 @@ def traverse(server_node, client_node, differences, level=0):
                 differences.update({diff_key: {"server": str(server_node_children[i])}})
 
 
+
+def compute_hash(file_path, algorithm='sha256'):
+    """Compute hash of a file using the given algorithm."""
+    h = hashlib.new(algorithm)
+    with open(file_path, 'rb') as f:
+        # Reading in chunks in case of large files
+        for chunk in iter(lambda: f.read(4096), b''):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+
+def compare_dom_bef_aft(main_folder_path, url_index, output_folder, ref):
+    folder_name = get_folder_name(ref, url_index, main_folder_path)
+
+    bef_hash = compute_hash(os.path.join(folder_name, server_html_file_name))
+    aft_hash = compute_hash(os.path.join(folder_name, client_html_file_name))
+    is_hash_same = bef_hash == aft_hash
+
+    bef_html = load_html_script(folder_name, server_html_file_name)
+    aft_html = load_html_script(folder_name, client_html_file_name)
+
+    diff = {}
+    traverse(bef_html, aft_html, diff)
+    is_dom_same = len(diff) == 0
+
+    if (len(diff) == 0):
+        sorted_diff = {"Message": "No difference between html DOM of the 2 files"}
+    else:
+        sorted_diff = dict(sorted(diff.items(), key=lambda item: int(item[0].split()[1])))
+    
+    output_path = os.path.join(output_folder, f"{ref}_bef_aft_html_dom_comparision.json")
+    save_to_json(output_path, sorted_diff)
+
+    return is_dom_same, is_hash_same
+
+
+def compare_dom_different_ref(index, main_folder_path, output_folder, bef_aft_script):
+    
+    ref_folder = get_folder_name(referrers[0], index, main_folder_path)  
+    no_ref_folder = get_folder_name(referrers[1], index, main_folder_path)
+
+    ref_hash = compute_hash(os.path.join(ref_folder, bef_aft_script))
+    no_ref_hash = compute_hash(os.path.join(no_ref_folder, bef_aft_script))
+    is_hash_same = ref_hash == no_ref_hash
+
+    ref_html = load_html_script(ref_folder, bef_aft_script)
+    no_ref_html = load_html_script(no_ref_folder, bef_aft_script)
+
+    diff = {}
+    traverse(ref_html, no_ref_html, diff)
+    is_dom_same = len(diff) == 0
+
+    if (len(diff) == 0):
+        sorted_diff = {"Message": "No difference between html DOM of the 2 files"}
+    else:
+        sorted_diff = dict(sorted(diff.items(), key=lambda item: int(item[0].split()[1])))
+
+    bef_aft_tag = "aft" if "aft" in bef_aft_script else "bef"
+    output_path = os.path.join(output_folder, f"self_ref_no_ref_{bef_aft_tag}_dom_comparision.json")
+    save_to_json(output_path, sorted_diff)
+    
+    return is_dom_same, is_hash_same
+
+
+def compare_dom(index, main_folder_path, output_folder):
+    bef_aft_ref_dom, bef_aft_ref_hash = compare_dom_bef_aft(main_folder_path, index, output_folder, referrers[0])
+    bef_aft_no_ref_dom, bef_aft_no_ref_hash = compare_dom_bef_aft(main_folder_path, index, output_folder, referrers[1])
+    diff_ref_bef_dom, diff_ref_bef_hash = compare_dom_different_ref(index, main_folder_path, output_folder, server_html_file_name)
+    diff_ref_aft_dom, diff_ref_aft_hash = compare_dom_different_ref(index, main_folder_path, output_folder, client_html_file_name)
+
+    result = {
+        "Is DOM for Before and After (Self-ref) same?": bef_aft_ref_dom,
+        "Is DOM for Before and After (No-ref) same?": bef_aft_no_ref_dom,
+        "Is HTML file HASH for Before and After (Self-ref) same?": bef_aft_ref_hash,
+        "Is HTML file HASH for Before and After (No-ref) same?": bef_aft_no_ref_hash,
+        "Is DOM for Self-ref vs No-ref (Before) same?": diff_ref_bef_dom,
+        "Is DOM for Self-ref vs No-ref (After) same?": diff_ref_aft_dom,
+        "Is HTML file HASH for Self-ref vs No-ref (Before) same?": diff_ref_bef_hash,
+        "Is HTML file HASH for Self-ref vs No-ref (After) same?": diff_ref_aft_hash,
+    }
+
+    output_path = os.path.join(output_folder, f"summarized.json")
+    save_to_json(output_path, result)
+
+
+def main(main_folder_path):
+    config_folders = os.listdir(main_folder_path)
+    indices = []
+    for config_folder in config_folders:
+        config_folder_path = os.path.join(main_folder_path, config_folder)
+        url_index_folders = os.listdir(config_folder_path)
+        url_index_folders.sort(key=int)
+        for index in url_index_folders:
+            indices.append(index)
+        break      
+
+    for index in indices:
+        output_folder = os.path.join(base_folder_name, dom_folder_name, index)
+        if not os.path.exists(output_folder):
+            os.makedirs(output_folder)
+        compare_dom(index, main_folder_path, output_folder)
+
+
+main("dataset")
