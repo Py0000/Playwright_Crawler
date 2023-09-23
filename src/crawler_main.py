@@ -99,13 +99,10 @@ async def get_client_side_script(page, folder_path):
         return status
 
 
-async def crawl(url, ref_flag):
-    # Generate sha256 hash for url
-    url_hash = hashlib.sha256(url.encode()).hexdigest()
-
+async def crawl(url, url_index, ref_flag):
     # Setup folders and paths required for data storage 
     util.generate_base_folder_for_crawled_dataset(ref_flag)
-    folder_path = util.generate_folder_for_individual_url_dataset(ref_flag, url_hash)
+    folder_path = util.generate_folder_for_individual_url_dataset(ref_flag, url_index)
     har_network_path = os.path.join(folder_path, util_def.FILE_NETWORK_HAR)
 
     async with async_playwright() as p:
@@ -211,7 +208,7 @@ async def crawl(url, ref_flag):
                 "Url visited": visited_url,
                 "Provided Url": url,
                 "Has Url changed?": visited_url != url,
-                "Provided Url hash (sha256)": url_hash,
+                "Provided Url index": url_index,
                 "Certificate Extraction": cert_extraction_status,
                 "DNS Records Extraction": dns_extraction_status,
                 "Mouse moved when obtaining server-side data?": server_move_status,

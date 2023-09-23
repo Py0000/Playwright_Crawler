@@ -1,75 +1,24 @@
-import json
 import os
-
+import json
 import pandas as pd
 
 import util
 import util_def
 
-def extract_data_from_json(json_data):
-    data = {
-        "Website": json_data.get("website url"),
-        "Hostname": json_data.get("hostname"),
-        "Certificate Subject (Common Name)": json_data.get("subject", {}).get("commonName", ""),
-        "Certificate Subject (Organization)": json_data.get("subject", {}).get("organizationName", ""),
-        "Certificate Subject (Locality or City)": json_data.get("subject", {}).get("localityName", ""),
-        "Certificate Subject (State or Province)": json_data.get("subject", {}).get('stateOrProvinceName', ''),
-        "Certificate Subject (Country)": json_data.get("subject", {}).get("countryName", ""),
-        "Certificate Subject (Business Category)": json_data.get("subject", {}).get("businessCategory", ""),
-        "Certificate Subject (Serial No.)": json_data.get("subject", {}).get("serialNumber", ""),
-        "Certificate Subject (Jurisdiction State)": json_data.get("subject", {}).get("jurisdictionState", ""),
-        "Certificate Subject (Jurisdiction Locality)": json_data.get("subject", {}).get("jurisdictionLocality", ""),
-        "Certificate Issuer (Country Name)": json_data.get("issuer", {}).get("countryName", ""),
-        "Certificate Issuer (Organization Name)": json_data.get("issuer", {}).get("organizationName", ""),
-        "Certificate Issuer (Organizational Unit Name)": json_data.get("issuer", {}).get("organizationalUnitName", ""),
-        "Certificate Issuer (Common Name)": json_data.get("issuer", {}).get("commonName", ""),
-        "Certificate Version": json_data.get("version", ""),
-        "Certificate Valid From": json_data.get("not_before", ""),
-        "Certificate Valid Until": json_data.get("not_after", ""),
-        "Certificate Valid Duration": json_data.get("period", ""),
-        "Certificate Serial Number": json_data.get("serial_number", ""),
-        "Certificate Signature Algorithm": json_data.get("signature_algo", ""),
-        "SSL/TLS Protocol Version": json_data.get("protocol_version", ""),
-    }
-
-    return pd.DataFrame([data])    
-
-def consolidate_cert_from_json_to_excel(ref):
-    group_data = {}
-
-    base_folder = os.path.join(util_def.FOLDER_DATASET_BASE, ref)
-    for dirpath, _, filenames in os.walk(base_folder):
-        if util_def.FILE_CERT in filenames:
-            group_prefix = dirpath.split(os.sep)[-1].split('-')[0] # Extract prefix like 0, 1, etc.
-            file_path = os.path.join(dirpath, util_def.FILE_CERT)
-            with open(file_path, 'r') as json_file:
-                data = json.load(json_file)
-            current_df = extract_data_from_json(data)
-            
-            if group_prefix not in group_data:
-                group_data[group_prefix] = pd.DataFrame()
-            group_data[group_prefix] = pd.concat([group_data[group_prefix], current_df], ignore_index=True)
-
-    
-    output_folder = os.path.join(util_def.FOLDER_ANALYSIS_BASE, ref)
-    for group, df in group_data.items():
-        output_filename = f"{group}_{util_def.EXCEL_CERT_CONSOLIDATED}"
-        df.drop_duplicates(subset=["Website"], keep="first", inplace=True)
-        df.to_excel(os.path.join(output_folder, output_filename), index=False)
-    
-
-
-
+# Helper function for summary-report generation.
+# Helps to determine the range for the duration of cert validity for the webpages
 def analyze_cert_duration_column(df, column, counts_dict):
     filtered_df = df.loc[df[column] != "Connection Error"]
     largest_value = filtered_df[column].max()
     smallest_value = filtered_df[column].min()
+    print(largest_value)
     range = str(smallest_value) + " to " + str(largest_value)
     counts_dict["Range"] = range
 
     return counts_dict
 
-
+# Helper function for summary-report generation.
+# Helps to determine the frequency of each field of interest
 def analyze_other_columns(column, counts, counts_dict, consolidated_counts):
     # Find the highest count value
     max_count_value = counts.max()
@@ -91,43 +40,101 @@ def analyze_other_columns(column, counts, counts_dict, consolidated_counts):
     return consolidated_counts
 
 
+# converts the json formateed cert data into a pandas dataframe
+def extract_data_from_json(json_data):
+    data = {
+        "Website": json_data.get("website url"),
+        "Hostname": json_data.get("hostname"),
+        "Certificate Subject (Common Name)": json_data.get("subject", {}).get("commonName", ""),
+        "Certificate Subject (Organization)": json_data.get("subject", {}).get("organizationName", ""),
+        "Certificate Subject (Locality or City)": json_data.get("subject", {}).get("localityName", ""),
+        "Certificate Subject (State or Province)": json_data.get("subject", {}).get('stateOrProvinceName', ''),
+        "Certificate Subject (Country)": json_data.get("subject", {}).get("countryName", ""),
+        "Certificate Subject (Business Category)": json_data.get("subject", {}).get("businessCategory", ""),
+        "Certificate Subject (Serial No.)": json_data.get("subject", {}).get("serialNumber", ""),
+        "Certificate Subject (Jurisdiction State)": json_data.get("subject", {}).get("jurisdictionState", ""),
+        "Certificate Subject (Jurisdiction Locality)": json_data.get("subject", {}).get("jurisdictionLocality", ""),
+        "Certificate Issuer (Country Name)": json_data.get("issuer", {}).get("countryName", ""),
+        "Certificate Issuer (Organization Name)": json_data.get("issuer", {}).get("organizationName", ""),
+        "Certificate Issuer (Organizational Unit Name)": json_data.get("issuer", {}).get("organizationalUnitName", ""),
+        "Certificate Issuer (Common Name)": json_data.get("issuer", {}).get("commonName", ""),
+        "Certificate Version": json_data.get("version", ""),
+        "Certificate Valid From": json_data.get("not_before", ""),
+        "Certificate Valid Until": json_data.get("not_after", ""),
+        "Certificate Valid Duration": json_data.get("valid_period", ""),
+        "Certificate Serial Number": json_data.get("serial_number", ""),
+        "Certificate Signature Algorithm": json_data.get("signature_algo", ""),
+        "SSL/TLS Protocol Version": json_data.get("protocol_version", ""),
+    }
+
+    return pd.DataFrame([data])
+
+
+# Consolidates all the certificate information of all the webpages crawled into a single excel.
+def consolidate_cert_info_into_single_excel(ref):
+    # Get all the sub-folders in the dataset/self_ref or dataset/no_ref folders
+    # Each sub_folder contains information for each url link
+    dataset_path = os.path.join(util_def.FOLDER_DATASET_BASE, ref)
+    sub_folders = [d for d in os.listdir(dataset_path) if os.path.isdir(os.path.join(dataset_path, d))]
+    df = pd.DataFrame()
+
+    # Gets the cert info from the json file created during crawling, (from each folder - i.e. 0, 1, 2, .., etc)
+    for sub_folder in sub_folders:
+        cert_filepath = os.path.join(dataset_path, sub_folder, util_def.FILE_CERT)
+        if os.path.exists(cert_filepath):
+            with open(cert_filepath, 'r') as f:
+                cert_json_data = json.load(f)
+                current_df = extract_data_from_json(cert_json_data) # converts each cert json info into a pandas dataframe 
+                df = pd.concat([df, current_df], ignore_index=True) # adds each dataframe into the consolidated dataframe
+    
+    output_path = os.path.join(util_def.FOLDER_ANALYSIS_BASE, ref, util_def.EXCEL_CERT_CONSOLIDATED)
+    df.to_excel(output_path, index=False)
+
+
+# Generates a summary of the certificate information for all webpages visited (in json format).
+# Currently only summarizes: Cert-Issuer, Cert-valid-duration, SSL/TLS-protocol-ver, cert-sign-algo, cert-ver, cert-subj
+def generate_consolidated_cert_summary_report(ref):
+    consolidated_counts = {}
+    data_path = os.path.join(util_def.FOLDER_ANALYSIS_BASE, ref, util_def.EXCEL_CERT_CONSOLIDATED)
+
+    if os.path.exists(data_path):
+        df = pd.read_excel(data_path)
+
+        for column in df.columns:
+            isCertIssuerOrg = column == "Certificate Issuer (Organization Name)"
+            isCertDuration = column == "Certificate Valid Duration"
+            isCertProtocol = column == "SSL/TLS Protocol Version"
+            isCertSigAlgo = column == "Certificate Signature Algorithm"
+            isCertVer = column == "Certificate Version"
+            isCertCommonName = column == "Certificate Subject (Common Name)"
+            
+            if isCertIssuerOrg or isCertDuration or isCertProtocol or isCertSigAlgo or isCertVer or isCertCommonName:
+                counts = df[column].value_counts()
+                # Convert the Pandas Series to a dictionary before saving
+                counts_dict = counts.to_dict()
+                consolidated_counts[column] = counts_dict
+
+                if isCertDuration: 
+                    analyze_cert_duration_column(df, column, counts_dict)
+
+                else:
+                    analyze_other_columns(column, counts, counts_dict, consolidated_counts)
+    
+    output_path = os.path.join(util_def.FOLDER_ANALYSIS_BASE, ref, util_def.JSON_CERT_CONSOLIDATED)
+    util.save_data_to_json_format(output_path, consolidated_counts)
+
+
+
 def analyze_certificate_df(ref_flag):
     print("Analysing Certificate Data...")
+   
+    # determine the config 
     ref = util.get_crawled_dataset_base_folder_name(ref_flag)
     
-    consolidated_counts = {}
+    # Consoldiate all information into an excel sheet
+    consolidate_cert_info_into_single_excel(ref)
 
-    consolidate_cert_from_json_to_excel(ref)
-    directory = os.path.join(util_def.FOLDER_ANALYSIS_BASE, ref)
-    
-    for file in os.listdir(directory):
-        if file.endswith(util_def.EXCEL_CERT_CONSOLIDATED):
-            consolidated_counts = {}
-            df = pd.read_excel(os.path.join(directory, file))
+    # Generates a summary report for all the webpages cert info
+    generate_consolidated_cert_summary_report(ref)
 
-            for column in df.columns:
-                isCertIssuerOrg = column == "Certificate Issuer (Organization Name)"
-                isCertDuration = column == "Certificate Valid Duration"
-                isCertProtocol = column == "SSL/TLS Protocol Version"
-                isCertSigAlgo = column == "Certificate Signature Algorithm"
-                isCertVer = column == "Certificate Version"
-                isCertCommonName = column == "Certificate Subject (Common Name)"
-                
-                if isCertIssuerOrg or isCertDuration or isCertProtocol or isCertSigAlgo or isCertVer or isCertCommonName:
-                    counts = df[column].value_counts()
-                    # Convert the Pandas Series to a dictionary before saving
-                    counts_dict = counts.to_dict()
-                    consolidated_counts[column] = counts_dict
-
-                    if isCertDuration: 
-                        analyze_cert_duration_column(df, column, counts_dict)
-
-                    else:
-                        analyze_other_columns(column, counts, counts_dict, consolidated_counts)
-
-            group_prefix = file.split("_")[0]
-            output_file_path = os.path.join(directory, f"{group_prefix}_{util_def.JSON_CERT_CONSOLIDATED}")
-            with open(output_file_path, 'w') as json_file:
-                json.dump(consolidated_counts, json_file, indent=4)
-    
-    print("Done analysing Certificate Data...")
+    print("Done Analysing Certificate Data...")    
