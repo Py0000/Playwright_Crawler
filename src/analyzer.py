@@ -11,7 +11,6 @@ def extract_and_analyse_certificates(ref_flag):
 
 
 def extract_and_analyze_dns(ref_flag):
-    da.analyse_individual_dns_data(ref_flag)
     da.analyze_DNS_df(ref_flag)
 
 def extract_and_analyse(ref_flag):

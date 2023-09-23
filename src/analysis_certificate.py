@@ -127,14 +127,7 @@ def generate_consolidated_cert_summary_report(ref):
 
 def analyze_certificate_df(ref_flag):
     print("Analysing Certificate Data...")
-   
-    # determine the config 
     ref = util.get_crawled_dataset_base_folder_name(ref_flag)
-    
-    # Consoldiate all information into an excel sheet
     consolidate_cert_info_into_single_excel(ref)
-
-    # Generates a summary report for all the webpages cert info
     generate_consolidated_cert_summary_report(ref)
-
     print("Done Analysing Certificate Data...")    
