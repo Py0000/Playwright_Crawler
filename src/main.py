@@ -39,8 +39,8 @@ def start_analysing():
 
 
 async def main():
-    #feeds = read_feeds_from_file("feeds/phishing_feeds_180923.txt")
-    #await start_crawling(["https://www.google.com/", "https://www.facebook.com/"])
+    feeds = read_feeds_from_file("feeds/phishing_feeds_180923.txt")
+    await start_crawling(["https://www.google.com/", "https://www.facebook.com/"])
     start_analysing()
 
 
