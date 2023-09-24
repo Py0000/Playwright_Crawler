@@ -4,7 +4,7 @@ import hashlib
 from bs4 import BeautifulSoup, Tag
 
 base_folder_name = "d_analysis"
-dom_folder_name = "dom_comparison"
+dom_folder_name = "_dom_comparison"
 client_html_file_name = "html_script_aft.html"
 server_html_file_name = "html_script_bef.html"
 referrers = ["self_ref", "no_ref"]
