@@ -4,6 +4,9 @@ import asyncio
 
 import analyzer
 import crawler_main as crawler
+import analysis_dom_comparison as dom_comparison
+import analysis_page_detector as page_detector
+import util_def
 
 def read_feeds_from_file(feed_path):
     urls = []
@@ -32,6 +35,8 @@ async def start_crawling(seed_url_list):
 def start_analysing():
     analyzer.extract_and_analyse(ref_flag=True)
     analyzer.extract_and_analyse(ref_flag=False)
+    dom_comparison.generate_dom_comparison_data(util_def.FOLDER_DATASET_BASE)
+    page_detector.generate_page_analysis_report(util_def.FOLDER_DATASET_BASE)
     return
 
 
