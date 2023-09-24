@@ -146,7 +146,9 @@ def generate_page_error_analysis_report(dataset_folder_path, html_filename):
 
 
 def generate_page_analysis_report(dataset_folder_path):
+    print("\nDetecting error, invalid & blank pages...")
     generate_page_error_analysis_report(dataset_folder_path, HTML_FILE_AFTER)
     generate_page_error_analysis_report(dataset_folder_path, HTML_FILE_BEFORE)
+    print("Done detecting error, invalid & blank pages...")
 
 

@@ -156,6 +156,7 @@ def compare_dom(index, main_folder_path, output_folder):
 
 
 def generate_dom_comparison_data(dataset_folder_path):
+    print("\nComparing dom structure...")
     config_folders = os.listdir(dataset_folder_path)
     indices = []
     for config_folder in config_folders:
@@ -171,5 +172,5 @@ def generate_dom_comparison_data(dataset_folder_path):
         if not os.path.exists(output_folder):
             os.makedirs(output_folder)
         compare_dom(index, dataset_folder_path, output_folder)
-
+    print("Done comparing dom structure...")
 

@@ -300,9 +300,7 @@ def create_dataframe(ref, is_aft_flag):
 
 def extract_features(ref_flag):
     ref = util.get_crawled_dataset_base_folder_name(ref_flag)
-    print("\nExtracting HTML features...\n")
-    print(f"Extract HTML features for {ref} before client-side rendering")
+    print(f"\nExtracting HTML features for {ref}...")
     create_dataframe(ref, is_aft_flag=True)
-    print(f"\nExtract HTML features for {ref} after client-side rendering")
     create_dataframe(ref, is_aft_flag=False)
-    print("\nHTML features extracted...\n")
+    print(f"Done extractiing HTML features for {ref}...")

@@ -125,8 +125,8 @@ def generate_consolidated_cert_summary_report(ref):
 
 
 def analyze_certificate_df(ref_flag):
-    print("Analysing Certificate Data...")
     ref = util.get_crawled_dataset_base_folder_name(ref_flag)
+    print(f"Analysing Certificate Data for {ref}...")
     consolidate_cert_info_into_single_excel(ref)
     generate_consolidated_cert_summary_report(ref)
-    print("Done Analysing Certificate Data...")    
+    print(f"Done analysing Certificate Data for {ref}...")    

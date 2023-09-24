@@ -95,8 +95,8 @@ def generate_consolidated_dns_summary_report(ref):
 
 
 def analyze_DNS_df(ref_flag):
-    print("Analysing DNS Data...")
     ref = util.get_crawled_dataset_base_folder_name(ref_flag)
+    print(f"Analysing DNS Data for {ref}...")
     consolidate_dns_into_single_excel(ref)
     generate_consolidated_dns_summary_report(ref)
-    print("Done analysing Certificate Data...")
+    print(f"Done analysing DNS Data for {ref}...")
