@@ -1,6 +1,7 @@
 import time
 import random
 import asyncio
+import argparse
 
 import analyzer
 import crawler_main as crawler
@@ -38,11 +39,15 @@ def start_analysing():
 
 
 
-async def main():
-    feeds = read_feeds_from_file("feeds/phishing_feeds_180923.txt")
-    await start_crawling(["https://www.google.com/", "https://www.facebook.com/"])
+async def main(feeds_path):
+    feeds = read_feeds_from_file(feeds_path)
+    await start_crawling(feeds)
     start_analysing()
 
 
 if __name__ == '__main__':
-    asyncio.run(main())
+    parser = argparse.ArgumentParser(description="Supply path to feeds file.")
+    parser.add_argument("file_path", help="Path to the feeds file")
+
+    args = parser.parse_args()
+    asyncio.run(main(args.file_path))
