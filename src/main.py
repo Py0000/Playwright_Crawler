@@ -20,7 +20,8 @@ async def start_crawling(seed_url_list):
     print("Crawling in progress...\n")
     for url in seed_url_list:
         url_index = str(seed_url_list.index(url))
-        time.sleep(random.randint(6, 12))
+        if url_index != "0":
+            time.sleep(random.randint(6, 12))
 
         print(f"------------------------------\nConfiguration: Referrer set\nUrl: {url}\n-----------------------------")
         await crawler.crawl(url, url_index, ref_flag=True)
