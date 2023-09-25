@@ -855,16 +855,16 @@ def has_html_tag(soup):
 ########## DEALS WITH TAGS ##########
 def get_unique_tags(folder_path, file_name, is_aft_flag):
     file_path = os.path.join(os.getcwd(), folder_path, file_name)
+    indicator = util_def.AFTER_CLIENT_SIDE_RENDERING_INDICATOR if is_aft_flag else util_def.BEFORE_CLIENT_SIDE_RENDERING_INDICATOR
     try:
         with open(file_path, 'r') as file:
             content = file.read()
         parsed_data = json.loads(content)
-        indicator = util_def.AFTER_CLIENT_SIDE_RENDERING_INDICATOR if is_aft_flag else util_def.BEFORE_CLIENT_SIDE_RENDERING_INDICATOR
         html_tag = parsed_data[indicator]
         
         elements = html_tag.replace('{', '').replace('}', '').replace('\'', '').split(', ')
     except Exception as e:
-        print(f"Error reading file: {file_name} in {folder_path}\nError is: {e}")
+        print(f"Error reading file: {file_name} in {folder_path} for {indicator}\nError is: {e}")
         elements = ""
         pass
 
