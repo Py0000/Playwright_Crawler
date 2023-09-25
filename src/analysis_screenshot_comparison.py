@@ -15,9 +15,12 @@ def save_to_json(file_name, data):
 
 
 def compute_phash(image_path):
-    with Image.open(image_path) as img:
-        hash_val = imagehash.phash(img)
-    return hash_val
+    try:
+        with Image.open(image_path) as img:
+            hash_val = imagehash.phash(img)
+        return hash_val
+    except Exception as e:
+        print(e)
 
 
 def compare_screenshot_bef_aft(main_folder_path, url_index, ref):
@@ -26,9 +29,14 @@ def compare_screenshot_bef_aft(main_folder_path, url_index, ref):
     server_screenshot = os.path.join(folder_path, server_screenshot_file)
     client_screenshot = os.path.join(folder_path, client_screenshot_file)
 
-    server_pHash = compute_phash(server_screenshot)
-    client_pHash = compute_phash(client_screenshot)
-    diff = server_pHash - client_pHash
+    server_pHash = compute_phash(server_screenshot) 
+    client_pHash = compute_phash(client_screenshot) 
+
+    if client_pHash is None or server_pHash is None:
+        diff = "Unable to determine as no hash was computed"
+    else:
+        diff = server_pHash - client_pHash
+
     result = {
         "server screenshot pHash": str(server_pHash),
         "client screenshot pHash": str(client_pHash),
@@ -45,7 +53,12 @@ def compare_screenshot_different_ref(main_folder_path, url_index, bef_aft_flag):
 
     ref_pHash = compute_phash(os.path.join(ref_folder_path, screenshot_file))
     no_ref_pHash = compute_phash(os.path.join(no_ref_folder_path, screenshot_file))
-    diff = ref_pHash - no_ref_pHash
+
+    if ref_pHash is None or no_ref_pHash is None:
+        diff = "Unable to determine as no hash was computed"
+    else:
+        diff = ref_pHash - no_ref_pHash
+
     result = {
         "self ref screenshot pHash": str(ref_pHash),
         "no ref screenshot pHash": str(no_ref_pHash),
