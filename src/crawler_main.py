@@ -99,6 +99,7 @@ async def get_client_side_script(page, folder_path):
         return status
 
 
+# dataset_folder_name: refers to the name of the (base)folder to store the crawled data
 async def crawl(url, url_index, dataset_folder_name, ref_flag):
     # Setup folders and paths required for data storage 
     base_folder_path = util.generate_base_folder_for_crawled_dataset(ref_flag, dataset_folder_name)

@@ -122,7 +122,6 @@ def generate_consolidated_cert_summary_report(ref_specific_analyzed_data_path):
     util.save_data_to_json_format(output_path, consolidated_counts)
 
 
-
 def analyze_certificate_df(ref_specific_dataset_path, ref_specific_analyzed_data_path):
     consolidate_cert_info_into_single_excel(ref_specific_dataset_path, ref_specific_analyzed_data_path)
     generate_consolidated_cert_summary_report(ref_specific_analyzed_data_path)
