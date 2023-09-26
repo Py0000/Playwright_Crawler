@@ -10,7 +10,7 @@ The crawler runs on 2 main configuration:
 <br>
 
 In additon to the 2 main configurations, these are the other configurations:
-* User-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+* User-agent: `"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"`
 * User mouse movement mimicked. 
 <br>
 
