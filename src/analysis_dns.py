@@ -59,10 +59,10 @@ def extract_data_from_json(json_data):
 
 
 # Consolidates all the dns information of all the webpages crawled into a single excel.
-def consolidate_dns_into_single_excel(ref):
+def consolidate_dns_into_single_excel(ref, dataset_folder_name):
     # Get all the sub-folders in the dataset/self_ref or dataset/no_ref folders
     # Each sub_folder contains information for each url link
-    dataset_path = os.path.join(util_def.FOLDER_DATASET_BASE, ref)
+    dataset_path = os.path.join(f"{util_def.FOLDER_DATASET_BASE}_{dataset_folder_name}", ref)
     sub_folders = [d for d in os.listdir(dataset_path) if os.path.isdir(os.path.join(dataset_path, d))]
     df = pd.DataFrame()
 
@@ -94,9 +94,9 @@ def generate_consolidated_dns_summary_report(ref):
 
 
 
-def analyze_DNS_df(ref_flag):
+def analyze_DNS_df(dataset_folder_name, ref_flag):
     ref = util.get_crawled_dataset_base_folder_name(ref_flag)
     print(f"Analysing DNS Data for {ref}...")
-    consolidate_dns_into_single_excel(ref)
+    consolidate_dns_into_single_excel(ref, dataset_folder_name)
     generate_consolidated_dns_summary_report(ref)
     print(f"Done analysing DNS Data for {ref}...")

@@ -99,10 +99,10 @@ async def get_client_side_script(page, folder_path):
         return status
 
 
-async def crawl(url, url_index, ref_flag):
+async def crawl(url, url_index, folder_name, ref_flag):
     # Setup folders and paths required for data storage 
-    util.generate_base_folder_for_crawled_dataset(ref_flag)
-    folder_path = util.generate_folder_for_individual_url_dataset(ref_flag, url_index)
+    base_folder_path = util.generate_base_folder_for_crawled_dataset(ref_flag, folder_name)
+    folder_path = util.generate_folder_for_individual_url_dataset(url_index, base_folder_path)
     har_network_path = os.path.join(folder_path, util_def.FILE_NETWORK_HAR)
 
     async with async_playwright() as p:

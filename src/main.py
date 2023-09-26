@@ -16,7 +16,7 @@ def read_feeds_from_file(feed_path):
 
 
 
-async def start_crawling(seed_url_list):
+async def start_crawling(seed_url_list, folder_name):
     print("Crawling in progress...\n")
     for url in seed_url_list:
         url_index = str(seed_url_list.index(url))
@@ -24,31 +24,32 @@ async def start_crawling(seed_url_list):
             time.sleep(random.randint(6, 12))
 
         print(f"------------------------------\nConfiguration: Referrer set\nUrl: {url}\n-----------------------------")
-        await crawler.crawl(url, url_index, ref_flag=True)
+        await crawler.crawl(url, url_index, folder_name, ref_flag=True)
 
         print(f"------------------------------\nConfiguration: No Referrer set\nUrl: {url}\n-----------------------------")
-        await crawler.crawl(url, url_index, ref_flag=False)
+        await crawler.crawl(url, url_index, folder_name, ref_flag=False)
     print("\nCrawling done...")
 
 
 
-def start_analysing():
-    analyzer.extract_and_analyse(ref_flag=True)
-    analyzer.extract_and_analyse(ref_flag=False)
-    analyzer.analysis_page_for_differences(util_def.FOLDER_DATASET_BASE)
+def start_analysing(folder_name):
+    analyzer.extract_and_analyse(folder_name, ref_flag=True)
+    analyzer.extract_and_analyse(folder_name, ref_flag=False)
+    analyzer.analysis_page_for_differences(f"{util_def.FOLDER_DATASET_BASE}_{folder_name}")
     return
 
 
 
-async def main(feeds_path):
+async def main(feeds_path, folder_name):
     feeds = read_feeds_from_file(feeds_path)
-    await start_crawling(feeds)
-    start_analysing()
+    await start_crawling(feeds, folder_name)
+    start_analysing(folder_name)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Supply path to feeds file.")
-    parser.add_argument("file_path", help="Path to the feeds file")
+    parser.add_argument("feeds_path", help="Path to the feeds file")
+    parser.add_argument("folder_name", help="Name of the folder")
 
     args = parser.parse_args()
-    asyncio.run(main(args.file_path))
+    asyncio.run(main(args.feeds_path, args.folder_name))

@@ -8,22 +8,22 @@ import analysis_screenshot_comparison as screenshot_comparison
 
 
 
-def extract_and_analyse_features(ref_flag):
-    fa.extract_features(ref_flag)
+def extract_and_analyse_features(dataset_folder_name, ref_flag):
+    fa.extract_features(dataset_folder_name, ref_flag)
 
 
-def extract_and_analyse_certificates(ref_flag):
-    ca.analyze_certificate_df(ref_flag)
+def extract_and_analyse_certificates(dataset_folder_name, ref_flag):
+    ca.analyze_certificate_df(dataset_folder_name, ref_flag)
 
 
-def extract_and_analyze_dns(ref_flag):
-    da.analyze_DNS_df(ref_flag)
+def extract_and_analyze_dns(dataset_folder_name, ref_flag):
+    da.analyze_DNS_df(dataset_folder_name, ref_flag)
 
 
-def extract_and_analyse(ref_flag):
-    extract_and_analyse_features(ref_flag)
-    extract_and_analyse_certificates(ref_flag)
-    extract_and_analyze_dns(ref_flag)
+def extract_and_analyse(dataset_folder_name, ref_flag):
+    extract_and_analyse_features(dataset_folder_name, ref_flag)
+    extract_and_analyse_certificates(dataset_folder_name, ref_flag)
+    extract_and_analyze_dns(dataset_folder_name, ref_flag)
 
 
 def analysis_page_for_differences(dataset_folder):
