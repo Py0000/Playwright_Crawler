@@ -259,7 +259,7 @@ def create_vector(soup, url):
 # Creates a consolidated df in excel format for the html tags for each url.
 # In the process, it also generates individual excel and json data for each url.
 def create_dataframe(ref, dataset_folder_name, is_aft_flag):
-    dataset_path = os.path.join(f"{util_def.FOLDER_DATASET_BASE}_{dataset_folder_name}", ref)
+    dataset_path = os.path.join(dataset_folder_name, ref)
     sub_folders = [d for d in os.listdir(dataset_path) if os.path.isdir(os.path.join(dataset_path, d))]
 
     html_file_name = util_def.FILE_HTML_SCRIPT_AFT if is_aft_flag else util_def.FILE_HTML_SCRIPT_BEF

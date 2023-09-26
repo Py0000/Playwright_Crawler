@@ -73,7 +73,7 @@ def extract_data_from_json(json_data):
 def consolidate_cert_info_into_single_excel(ref, dataset_folder_name):
     # Get all the sub-folders in the dataset/self_ref or dataset/no_ref folders
     # Each sub_folder contains information for each url link
-    dataset_path = os.path.join(f"{util_def.FOLDER_DATASET_BASE}_{dataset_folder_name}", ref)
+    dataset_path = os.path.join(dataset_folder_name, ref)
     sub_folders = [d for d in os.listdir(dataset_path) if os.path.isdir(os.path.join(dataset_path, d))]
     df = pd.DataFrame()
 

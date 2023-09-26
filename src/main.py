@@ -16,7 +16,7 @@ def read_feeds_from_file(feed_path):
 
 
 
-async def start_crawling(seed_url_list, folder_name):
+async def start_crawling(seed_url_list, dataset_folder_name):
     print("Crawling in progress...\n")
     for url in seed_url_list:
         url_index = str(seed_url_list.index(url))
@@ -24,26 +24,27 @@ async def start_crawling(seed_url_list, folder_name):
             time.sleep(random.randint(6, 12))
 
         print(f"------------------------------\nConfiguration: Referrer set\nUrl: {url}\n-----------------------------")
-        await crawler.crawl(url, url_index, folder_name, ref_flag=True)
+        await crawler.crawl(url, url_index, dataset_folder_name, ref_flag=True)
 
         print(f"------------------------------\nConfiguration: No Referrer set\nUrl: {url}\n-----------------------------")
-        await crawler.crawl(url, url_index, folder_name, ref_flag=False)
+        await crawler.crawl(url, url_index, dataset_folder_name, ref_flag=False)
     print("\nCrawling done...")
 
 
 
-def start_analysing(folder_name):
-    analyzer.extract_and_analyse(folder_name, ref_flag=True)
-    analyzer.extract_and_analyse(folder_name, ref_flag=False)
-    analyzer.analysis_page_for_differences(f"{util_def.FOLDER_DATASET_BASE}_{folder_name}")
+def start_analysing(dataset_folder_name):
+    analyzer.extract_and_analyse(dataset_folder_name, ref_flag=True)
+    analyzer.extract_and_analyse(dataset_folder_name, ref_flag=False)
+    analyzer.analysis_page_for_differences(dataset_folder_name)
     return
 
 
 
 async def main(feeds_path, folder_name):
+    dataset_folder_name = f"{util_def.FOLDER_DATASET_BASE}_{folder_name}"
     feeds = read_feeds_from_file(feeds_path)
-    await start_crawling(feeds, folder_name)
-    start_analysing(folder_name)
+    await start_crawling(feeds, dataset_folder_name)
+    start_analysing(dataset_folder_name)
 
 
 if __name__ == '__main__':

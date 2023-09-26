@@ -18,9 +18,9 @@ def get_crawled_dataset_base_folder_name(ref_flag):
 
 
 # Generates the base folder (i.e dataset/self_ref or dataset/no_ref) which is used to store the crawled data
-def generate_base_folder_for_crawled_dataset(ref_flag, folder_name,):
+def generate_base_folder_for_crawled_dataset(ref_flag, dataset_folder_name):
     base_folder_name = get_crawled_dataset_base_folder_name(ref_flag)
-    base_folder_path = os.path.join(f"{util_def.FOLDER_DATASET_BASE}_{folder_name}", base_folder_name)
+    base_folder_path = os.path.join(dataset_folder_name, base_folder_name)
 
     if not os.path.exists(base_folder_path):
         os.makedirs(base_folder_path)
