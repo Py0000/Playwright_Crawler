@@ -2,18 +2,18 @@
 
 ## Brief Description
 A web crawler designed using Playwright in Python. It is to be used for a FYP project for a comprehensive study of the chracteristics of current phishing ecosystem. 
-
 <br>
+
 The crawler runs on 2 main configuration: 
-1. Having no referrer 
-2. Having referrer set to its own web-domain url.
-
+* Having no referrer 
+* Having referrer set to its own web-domain url.
 <br>
+
 In additon to the 2 main configurations, these are the other configurations:
 * User-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
 * User mouse movement mimicked. 
-
 <br>
+
 What data this crawler obtain?
 * HTML script (Server-Side & Client-Side)
 * Webpage Screenshot (Server-Side & Client-Side)
@@ -24,8 +24,8 @@ What data this crawler obtain?
 * Network responses data (Downloaded them from the server) 
 * Client-Side scripts/requests found in the HTML script
 
-
 <br>
+
 ## How to run it on remote VM?
 
 
