@@ -1,5 +1,17 @@
 # Playwright_Crawler
 
+## Brief Description
+A web crawler designed using Playwright in Python. It is to be used for a FYP project for a comprehensive study of the chracteristics of current phishing ecosystem. 
+<br>
+What data this crawler obtain?
+* HTML script (Server-Side & Client-Side)
+* Webpage Screenshot (Server-Side & Client-Side)
+* TLS/SSL Certificate information of the web domain
+* DNS Records information of the web domain 
+* All embedded url links in the HTML script
+* Network details (including detailed network information)
+* Network responses data (Downloaded them from the server) 
+
 
 ## How to run it on remote VM?
 
