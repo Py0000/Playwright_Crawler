@@ -3,7 +3,6 @@ import json
 import hashlib
 from bs4 import BeautifulSoup, Tag
 
-base_folder_name = "d_analysis"
 dom_folder_name = "_dom_comparison"
 client_html_file_name = "html_script_aft.html"
 server_html_file_name = "html_script_bef.html"
@@ -155,7 +154,7 @@ def compare_dom(index, main_folder_path, output_folder):
     save_to_json(output_path, result)
 
 
-def generate_dom_comparison_data(dataset_folder_path):
+def generate_dom_comparison_data(dataset_folder_path, analyzed_data_path):
     print("\nComparing dom structure...")
     config_folders = os.listdir(dataset_folder_path)
     indices = []
@@ -168,7 +167,7 @@ def generate_dom_comparison_data(dataset_folder_path):
         break      
 
     for index in indices:
-        output_folder = os.path.join(base_folder_name, dom_folder_name, index)
+        output_folder = os.path.join(analyzed_data_path, dom_folder_name, index)
         if not os.path.exists(output_folder):
             os.makedirs(output_folder)
         compare_dom(index, dataset_folder_path, output_folder)

@@ -3,7 +3,6 @@ import imagehash
 import json
 import os
 
-base_folder_name = "d_analysis"
 screenshot_compare_folder = "_screenshot_comparison"
 server_screenshot_file = "screenshot_bef.png"
 client_screenshot_file = "screenshot_aft.png"
@@ -83,7 +82,7 @@ def compare_screenshot(dataset_folder_path, output_path, index):
     save_to_json(output_path, result)
 
 
-def generate_screenshot_comparison_report(dataset_folder_path):
+def generate_screenshot_comparison_report(dataset_folder_path, analyzed_data_path):
     print("\nComparing page screenshot...")
     config_folders = os.listdir(dataset_folder_path)
     indices = []
@@ -97,7 +96,7 @@ def generate_screenshot_comparison_report(dataset_folder_path):
 
     for index in indices:
         output_file = f"{index}_screenshot_comparison.json"
-        output_folder = os.path.join(base_folder_name, screenshot_compare_folder)
+        output_folder = os.path.join(analyzed_data_path, screenshot_compare_folder)
         if not os.path.exists(output_folder):
             os.makedirs(output_folder)
         output_path = os.path.join(output_folder, output_file)

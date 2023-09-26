@@ -4,10 +4,8 @@ import re
 from bs4 import BeautifulSoup
 
 
-DATABASE_BASE_FOLDER = "dataset"
 HTML_FILE_AFTER = "html_script_aft.html"
 HTML_FILE_BEFORE = "html_script_bef.html"
-ANALYSIS_BASE_FOLDER = "d_analysis"
 BASE_FOLDER_NAME = "_page_error_info"
 BASE_FILE_NAME = "page_info.json"
 
@@ -114,7 +112,7 @@ def is_page_blank_or_error(file_path):
     return True, ERROR_TYPE_BLANK
 
 
-def generate_page_error_analysis_report(dataset_folder_path, html_filename):
+def generate_page_error_analysis_report(dataset_folder_path, html_filename, analyzed_data_path):
     # Get a list of all items in the main_folder
     config_folders = os.listdir(dataset_folder_path)
     problem_html = {config: {} for config in config_folders}
@@ -137,7 +135,7 @@ def generate_page_error_analysis_report(dataset_folder_path, html_filename):
         problem_html[config_folder].update({"Total Count": len(problem_html[config_folder])})
         
     tag = "aft" if "aft" in html_filename else "bef"
-    output_folder_path = os.path.join(ANALYSIS_BASE_FOLDER, BASE_FOLDER_NAME)
+    output_folder_path = os.path.join(analyzed_data_path, BASE_FOLDER_NAME)
     if not os.path.exists(output_folder_path):
         os.makedirs(output_folder_path)
         
@@ -145,10 +143,10 @@ def generate_page_error_analysis_report(dataset_folder_path, html_filename):
         json.dump(problem_html, f, ensure_ascii=False, indent=4)
 
 
-def generate_page_analysis_report(dataset_folder_path):
+def generate_page_analysis_report(dataset_folder_path, analyzed_data_path):
     print("\nDetecting error, invalid & blank pages...")
-    generate_page_error_analysis_report(dataset_folder_path, HTML_FILE_AFTER)
-    generate_page_error_analysis_report(dataset_folder_path, HTML_FILE_BEFORE)
+    generate_page_error_analysis_report(dataset_folder_path, HTML_FILE_AFTER, analyzed_data_path)
+    generate_page_error_analysis_report(dataset_folder_path, HTML_FILE_BEFORE, analyzed_data_path)
     print("Done detecting error, invalid & blank pages...")
 
 

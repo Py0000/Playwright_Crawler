@@ -258,9 +258,8 @@ def create_vector(soup, url):
 
 # Creates a consolidated df in excel format for the html tags for each url.
 # In the process, it also generates individual excel and json data for each url.
-def create_dataframe(ref, dataset_folder_name, is_aft_flag):
-    dataset_path = os.path.join(dataset_folder_name, ref)
-    sub_folders = [d for d in os.listdir(dataset_path) if os.path.isdir(os.path.join(dataset_path, d))]
+def create_dataframe(ref_specific_dataset_path, ref_specific_analyzed_data_path, is_aft_flag):
+    sub_folders = [d for d in os.listdir(ref_specific_dataset_path) if os.path.isdir(os.path.join(ref_specific_dataset_path, d))]
 
     html_file_name = util_def.FILE_HTML_SCRIPT_AFT if is_aft_flag else util_def.FILE_HTML_SCRIPT_BEF
 
@@ -268,7 +267,7 @@ def create_dataframe(ref, dataset_folder_name, is_aft_flag):
 
     for sub_folder in sub_folders:
         # Retrieves the webpage url information form log files
-        url_info_filepath = os.path.join(dataset_path, sub_folder, util_def.FILE_CRAWL_LOG_INFO)
+        url_info_filepath = os.path.join(ref_specific_dataset_path, sub_folder, util_def.FILE_CRAWL_LOG_INFO)
         url = ""
         if os.path.exists(url_info_filepath):
             with open(url_info_filepath, "r") as f:
@@ -277,30 +276,28 @@ def create_dataframe(ref, dataset_folder_name, is_aft_flag):
             url = parsed_json_data["Provided Url"]
 
         # retrieve the html script 
-        html_filepath = os.path.join(dataset_path, sub_folder, html_file_name)
+        html_filepath = os.path.join(ref_specific_dataset_path, sub_folder, html_file_name)
         if os.path.exists(html_filepath):
             soup = create_soup(open_file(html_filepath))
             data = [create_vector(soup, url)]
         
         # Generates excel for the current url as well as json
         current_df = pd.DataFrame(data=data, columns=DATAFRAME_COLUMNS)
-        output_path = os.path.join(util_def.FOLDER_ANALYSIS_BASE, ref, sub_folder)
+        output_path = os.path.join(ref_specific_analyzed_data_path, sub_folder)
         create_df_for_each_url(output_path, df, is_aft_flag)
-        create_json_for_each_url(soup, url, os.path.join(dataset_path, sub_folder), output_path, is_aft_flag)
+        create_json_for_each_url(soup, url, os.path.join(ref_specific_dataset_path, sub_folder), output_path, is_aft_flag)
 
         # combine each url data together
         df = pd.concat([df, current_df], ignore_index=True)
     
     # Generates the consoldiated excel 
     output_filename = util_def.EXCEL_FEATURES_CONSOLIDATED_AFT if is_aft_flag else util_def.EXCEL_FEATURES_CONSOLIDATED_BEF
-    output_path = os.path.join(util_def.FOLDER_ANALYSIS_BASE, ref, output_filename)
+    output_path = os.path.join(ref_specific_analyzed_data_path, output_filename)
     df.to_excel(output_path, index=False)
 
 
 
-def extract_features(dataset_folder_name, ref_flag):
-    ref = util.get_crawled_dataset_base_folder_name(ref_flag)
-    print(f"\nExtracting HTML features for {ref}...")
-    create_dataframe(ref, dataset_folder_name, is_aft_flag=True)
-    create_dataframe(ref, dataset_folder_name, is_aft_flag=False)
-    print(f"Done extractiing HTML features for {ref}...")
+def extract_features(ref_specific_dataset_path, ref_specific_analyzed_data_path):
+    create_dataframe(ref_specific_dataset_path, ref_specific_analyzed_data_path, is_aft_flag=True)
+    create_dataframe(ref_specific_dataset_path, ref_specific_analyzed_data_path, is_aft_flag=False)
+    

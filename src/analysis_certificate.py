@@ -70,31 +70,30 @@ def extract_data_from_json(json_data):
 
 
 # Consolidates all the certificate information of all the webpages crawled into a single excel.
-def consolidate_cert_info_into_single_excel(ref, dataset_folder_name):
+def consolidate_cert_info_into_single_excel(ref_specific_dataset_path, ref_specific_analyzed_data_path):
     # Get all the sub-folders in the dataset/self_ref or dataset/no_ref folders
     # Each sub_folder contains information for each url link
-    dataset_path = os.path.join(dataset_folder_name, ref)
-    sub_folders = [d for d in os.listdir(dataset_path) if os.path.isdir(os.path.join(dataset_path, d))]
+    sub_folders = [d for d in os.listdir(ref_specific_dataset_path) if os.path.isdir(os.path.join(ref_specific_dataset_path, d))]
     df = pd.DataFrame()
 
     # Gets the cert info from the json file created during crawling, (from each folder - i.e. 0, 1, 2, .., etc)
     for sub_folder in sub_folders:
-        cert_filepath = os.path.join(dataset_path, sub_folder, util_def.FILE_CERT)
+        cert_filepath = os.path.join(ref_specific_dataset_path, sub_folder, util_def.FILE_CERT)
         if os.path.exists(cert_filepath):
             with open(cert_filepath, 'r') as f:
                 cert_json_data = json.load(f)
                 current_df = extract_data_from_json(cert_json_data) # converts each cert json info into a pandas dataframe 
                 df = pd.concat([df, current_df], ignore_index=True) # adds each dataframe into the consolidated dataframe
     
-    output_path = os.path.join(util_def.FOLDER_ANALYSIS_BASE, ref, util_def.EXCEL_CERT_CONSOLIDATED)
+    output_path = os.path.join(ref_specific_analyzed_data_path, util_def.EXCEL_CERT_CONSOLIDATED)
     df.to_excel(output_path, index=False)
 
 
 # Generates a summary of the certificate information for all webpages visited (in json format).
 # Currently only summarizes: Cert-Issuer, Cert-valid-duration, SSL/TLS-protocol-ver, cert-sign-algo, cert-ver, cert-subj
-def generate_consolidated_cert_summary_report(ref):
+def generate_consolidated_cert_summary_report(ref_specific_analyzed_data_path):
     consolidated_counts = {}
-    data_path = os.path.join(util_def.FOLDER_ANALYSIS_BASE, ref, util_def.EXCEL_CERT_CONSOLIDATED)
+    data_path = os.path.join(ref_specific_analyzed_data_path, util_def.EXCEL_CERT_CONSOLIDATED)
 
     if os.path.exists(data_path):
         df = pd.read_excel(data_path)
@@ -119,14 +118,12 @@ def generate_consolidated_cert_summary_report(ref):
                 else:
                     analyze_other_columns(column, counts, counts_dict, consolidated_counts)
     
-    output_path = os.path.join(util_def.FOLDER_ANALYSIS_BASE, ref, util_def.JSON_CERT_CONSOLIDATED)
+    output_path = os.path.join(ref_specific_analyzed_data_path, util_def.JSON_CERT_CONSOLIDATED)
     util.save_data_to_json_format(output_path, consolidated_counts)
 
 
 
-def analyze_certificate_df(dataset_folder_name, ref_flag):
-    ref = util.get_crawled_dataset_base_folder_name(ref_flag)
-    print(f"Analysing Certificate Data for {ref}...")
-    consolidate_cert_info_into_single_excel(ref, dataset_folder_name)
-    generate_consolidated_cert_summary_report(ref)
-    print(f"Done analysing Certificate Data for {ref}...")    
+def analyze_certificate_df(ref_specific_dataset_path, ref_specific_analyzed_data_path):
+    consolidate_cert_info_into_single_excel(ref_specific_dataset_path, ref_specific_analyzed_data_path)
+    generate_consolidated_cert_summary_report(ref_specific_analyzed_data_path)
+    

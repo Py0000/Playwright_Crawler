@@ -32,19 +32,21 @@ async def start_crawling(seed_url_list, dataset_folder_name):
 
 
 
-def start_analysing(dataset_folder_name):
-    analyzer.extract_and_analyse(dataset_folder_name, ref_flag=True)
-    analyzer.extract_and_analyse(dataset_folder_name, ref_flag=False)
-    analyzer.analysis_page_for_differences(dataset_folder_name)
+def start_analysing(dataset_folder_name, analyzed_data_folder_name):
+    analyzer.extract_and_analyse(dataset_folder_name, analyzed_data_folder_name, ref_flag=True)
+    analyzer.extract_and_analyse(dataset_folder_name, analyzed_data_folder_name, ref_flag=False)
+    analyzer.analysis_page_for_differences(dataset_folder_name, analyzed_data_folder_name)
     return
 
 
 
 async def main(feeds_path, folder_name):
     dataset_folder_name = f"{util_def.FOLDER_DATASET_BASE}_{folder_name}"
+    analyzed_data_folder_name = f"{util_def.FOLDER_ANALYSIS_BASE}_{folder_name}"
+
     feeds = read_feeds_from_file(feeds_path)
     await start_crawling(feeds, dataset_folder_name)
-    start_analysing(dataset_folder_name)
+    start_analysing(dataset_folder_name, analyzed_data_folder_name)
 
 
 if __name__ == '__main__':
