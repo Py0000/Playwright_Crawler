@@ -111,7 +111,8 @@ async def crawl(url, url_index, dataset_folder_name, ref_flag):
         context = await browser.new_context(record_har_path=har_network_path)
         page = await context.new_page()
         await set_page_referrer(page, ref_flag, url)
-
+        
+        main_http_status = "Not Visited"
         try:
             # Obtains the TLS/SSL certificate info for the page
             cert_extraction_status = certificate_extractor.extract_certificate_info(url, folder_path)
@@ -135,6 +136,7 @@ async def crawl(url, url_index, dataset_folder_name, ref_flag):
             # Function to capture all network responses and download all the data in the responses.
             async def capture_response(payload):
                 url = payload['response']['url']
+
                 # Check if the response has any content
                 if payload['response']['status'] in [204, 304]:
                     return
@@ -154,9 +156,11 @@ async def crawl(url, url_index, dataset_folder_name, ref_flag):
             client.on("Network.requestWillBeSent", capture_request)
             client.on("Network.responseReceived", capture_response)
 
-            await page.goto(url)
+            response = await page.goto(url)
             await wait_for_page_to_load(page)
             visited_url = page.url # See if url changes after visiting the page.
+            if response:
+                main_http_status = response.status
 
             client_move_status = await crawler_actions.execute_user_action(page) # Mimics user movements when visiting the page.
             client_screenshot_status = await crawler_utilities.save_screenshot(page, folder_path, util_def.FILE_SCREENSHOT_AFT)
@@ -208,6 +212,7 @@ async def crawl(url, url_index, dataset_folder_name, ref_flag):
                 "Url visited": visited_url,
                 "Provided Url": url,
                 "Has Url changed?": visited_url != url,
+                "Status": main_http_status,
                 "Provided Url index": url_index,
                 "Certificate Extraction": cert_extraction_status,
                 "DNS Records Extraction": dns_extraction_status,
