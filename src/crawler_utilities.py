@@ -122,56 +122,6 @@ def save_embedded_url(file_path, url, base_url, added_url_set):
 
 
 
-
-def get_detailed_network_response_data_path(folder_path, visited_url):
-    data_folder_path = os.path.join(os.getcwd(), folder_path, util_def.FOLDER_NETWORK_RESPONSES)
-    if not os.path.exists(data_folder_path):
-        os.makedirs(data_folder_path)
-    
-    file_path = os.path.join(os.getcwd(), data_folder_path, f"{hashlib.sha256(visited_url.encode()).hexdigest()}")
-    return file_path
-
-
-def decode_network_response(response_body):
-    if response_body['base64Encoded']:
-        decoded_data = base64.b64decode(response_body['body'])
-    else:
-        decoded_data = response_body['body']
-    
-    return decoded_data
-
-
-def save_decoded_file_data(file_name, mime_type, decoded_data):
-
-    def save_utf8_files(file, data):
-        with open(file, "w", encoding="utf-8") as f:
-            f.write(data if isinstance(data, str) else data.decode('utf-8'))
-    
-    def save_binary_files(file, data):
-        with open(file, "wb") as f:
-            f.write(data)
-
-    if "html" in mime_type:
-        save_utf8_files(file_name + ".html", decoded_data)
-    elif "xml" in mime_type:
-        save_utf8_files(file_name + ".xml", decoded_data)
-    elif "json" in mime_type:
-        save_utf8_files(file_name + ".json", decoded_data)
-    elif "javascript" in mime_type:
-        save_utf8_files(file_name + ".js", decoded_data)
-    elif "css" in mime_type:
-        save_utf8_files(file_name + ".css", decoded_data)
-    elif "image" in mime_type:
-        save_binary_files(file_name + ".png", decoded_data) 
-    elif "font/woff2" in mime_type:
-        save_binary_files(file_name + ".woff2", decoded_data)
-    elif "text" in mime_type:
-        save_utf8_files(file_name + ".txt", decoded_data)
-    else:
-        # Default: save as binary
-        save_binary_files(file_name + ".bin", decoded_data)
-
-
 def save_more_detailed_network_logs(folder_path, data):
     print("Saving more detailed network logs...\n")
     try:

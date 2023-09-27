@@ -104,12 +104,12 @@ async def crawl(url, url_index, dataset_folder_name, ref_flag):
     # Setup folders and paths required for data storage 
     base_folder_path = util.generate_base_folder_for_crawled_dataset(ref_flag, dataset_folder_name)
     folder_path = util.generate_folder_for_individual_url_dataset(url_index, base_folder_path)
-    har_network_path = os.path.join(folder_path, util_def.FILE_NETWORK_HAR)
+    har_network_path = os.path.join(folder_path, util_def.FOLDER_NETWORK_FRAGMENTS ,util_def.FILE_NETWORK_HAR)
 
     async with async_playwright() as p:
         win_chrome_v116_user_agent = [f"--user-agent={util_def.USER_USER_AGENT_WINDOWS_CHROME}"]
         browser = await p.chromium.launch(headless=True, args=win_chrome_v116_user_agent)
-        context = await browser.new_context(record_har_path=har_network_path)
+        context = await browser.new_context(record_har_path=har_network_path, record_har_content="attach")
         page = await context.new_page()
         await set_page_referrer(page, ref_flag, url)
         
@@ -134,28 +134,7 @@ async def crawl(url, url_index, dataset_folder_name, ref_flag):
                 captured_event = payload
                 captured_events.append(captured_event)
 
-            # Function to capture all network responses and download all the data in the responses.
-            async def capture_response(payload):
-                url = payload['response']['url']
-
-                # Check if the response has any content
-                if payload['response']['status'] in [204, 304]:
-                    return
-                
-                try:
-                    response_body = await client.send("Network.getResponseBody", {"requestId": payload['requestId']})
-                    mime_type = payload['response']['mimeType']
-                    file_name = crawler_utilities.get_detailed_network_response_data_path(folder_path, url)
-                    decoded_data = crawler_utilities.decode_network_response(response_body) # Decode base64 if needed
-                    crawler_utilities.save_decoded_file_data(file_name, mime_type, decoded_data)
-                except Exception as e:
-                    if "Protocol error (Network.getResponseBody)" in str(e):
-                        pass
-                    else:
-                        print(e)
-
             client.on("Network.requestWillBeSent", capture_request)
-            client.on("Network.responseReceived", capture_response)
 
             response = await page.goto(url)
             await wait_for_page_to_load(page)

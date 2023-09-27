@@ -35,6 +35,12 @@ def generate_folder_for_individual_url_dataset(url_index, base_folder_path):
     if not os.path.exists(individual_folder_path):
         os.makedirs(individual_folder_path)
     
+    network_folders = [util_def.FOLDER_NETWORK_REQUEST_FRAGMENTS, util_def.FOLDER_NETWORK_RESPONSE_FRAGMENTS]
+    for folder in network_folders:
+        path = os.path.join(individual_folder_path, folder)
+        if not os.path.exists(path):
+            os.makedirs(path)
+
     return individual_folder_path
 
 
