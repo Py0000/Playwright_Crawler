@@ -41,10 +41,18 @@ def get_certificate_signature_algorithm(cert):
     return signature_algorithm
 
 
+def determine_port_from_website_protocol(url):
+    if url.startswith("http://"):
+        return 80
+    
+    if url.startswith("https://"):
+        return 443
+
+
 # Extracts and saves the TLS/SSL certificate info of the url if available
 def extract_certificate_info(website_url, folder_path):
     error_tag = "Connection Error"
-    port = 443  # Default port for HTTPS is 443
+    port = determine_port_from_website_protocol(website_url)
 
     # Create a socket
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -80,7 +88,8 @@ def extract_certificate_info(website_url, folder_path):
             signature_algorithm = get_certificate_signature_algorithm(cert_binary)
             protocol_version = ssock.version()
 
-        except:
+        except Exception as e:
+            print(e)
             subject = {
                 "commonName": error_tag,
                 "organizationName": error_tag,
