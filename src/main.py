@@ -47,8 +47,8 @@ async def main(feeds_path, folder_name):
 
     feeds = read_feeds_from_file(feeds_path)
     await start_crawling(feeds, dataset_folder_name)
-    #network_data_processor.start_network_processing(dataset_folder_name)
-    #start_analysing(dataset_folder_name, analyzed_data_folder_name)
+    network_data_processor.start_network_processing(dataset_folder_name)
+    start_analysing(dataset_folder_name, analyzed_data_folder_name)
 
 
 if __name__ == '__main__':
