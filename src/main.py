@@ -59,7 +59,7 @@ async def fetch_openphish_feeds():
                     feeds = await response.text()
                     urls = feeds.splitlines()
                     for url in urls:  
-                        feeds_queue.put(feeds)
+                        feeds_queue.put(url)
                     feeds_path = "feeds/urls/openphish_feeds.txt"
                     with open(feeds_path, 'a') as file:
                         file.write(feeds)
