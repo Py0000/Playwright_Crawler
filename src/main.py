@@ -75,10 +75,12 @@ async def process_current_feed(feed, folder_name):
 
 
 async def main(folder_name):
-     # Task to continuously fetch feeds
+    # Task to continuously fetch feeds
+    print("Fetching feeds")
     fetch_task = asyncio.create_task(fetch_openphish_feeds())
 
     # Task to process feeds from the queue
+    print("Crawling data")
     process_task = asyncio.create_task(process_feeds_from_queue(folder_name))
 
     # Run both tasks
