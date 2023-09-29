@@ -2,19 +2,13 @@ import time
 import random
 import asyncio
 import argparse
+import aiohttp
+import queue
 
 import analyzer
 import crawler_main as crawler
 import network_data_processor
 import util_def
-
-def read_feeds_from_file(feed_path):
-    urls = []
-    with open(feed_path, "r") as f:
-        for line in f:
-            urls.append(line.strip())
-    return urls
-
 
 
 async def start_crawling(seed_url_list, dataset_folder_name):
@@ -41,20 +35,51 @@ def start_analysing(dataset_folder_name, analyzed_data_folder_name):
 
 
 
-async def main(feeds_path, folder_name):
+OPENPHISH_FEEDS_URL = "https://opfeeds.s3-us-west-2.amazonaws.com/OPBL/phishing_blocklist.txt"
+feeds_queue = queue.Queue()
+
+async def fetch_openphish_feeds():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(OPENPHISH_FEEDS_URL) as response:
+            if response.status == 200:
+                feeds = await response.text()
+                feeds_queue.put(feeds)
+
+
+
+async def process_feeds_from_queue(folder_name):
+    while True:
+        if not feeds_queue.empty():
+            feed_to_process = feeds_queue.get()
+            # assuming your main function takes feed content directly
+            await process_current_feed(feed_to_process, folder_name)
+            feeds_queue.task_done()
+        else:
+            await asyncio.sleep(300)  # Wait for 5 minute before checking the queue again
+
+
+
+
+async def process_current_feed(feed, folder_name):
     dataset_folder_name = f"{util_def.FOLDER_DATASET_BASE}_{folder_name}"
     analyzed_data_folder_name = f"{util_def.FOLDER_ANALYSIS_BASE}_{folder_name}"
 
-    feeds = read_feeds_from_file(feeds_path)
-    await start_crawling(feeds, dataset_folder_name)
+    await start_crawling(feed, dataset_folder_name)
     network_data_processor.start_network_processing(dataset_folder_name)
-    start_analysing(dataset_folder_name, analyzed_data_folder_name)
+    # start_analysing(dataset_folder_name, analyzed_data_folder_name)
+
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Supply path to feeds file.")
-    parser.add_argument("feeds_path", help="Path to the feeds file")
+    parser = argparse.ArgumentParser(description="Supply the folder name.")
     parser.add_argument("folder_name", help="Name of the folder")
 
+    # Task to continuously fetch feeds
+    fetch_task = asyncio.create_task(fetch_openphish_feeds())
+
+    # Task to process feeds from the queue
     args = parser.parse_args()
-    asyncio.run(main(args.feeds_path, args.folder_name))
+    process_task = asyncio.create_task(process_feeds_from_queue(args.folder_name))
+
+    # Run both tasks
+    asyncio.run(asyncio.gather(fetch_task, process_task))
