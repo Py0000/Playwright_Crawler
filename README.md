@@ -26,7 +26,7 @@ What data this crawler obtain?
 
 <br>
 
-## How to run it on remote VM?
+## How to run the Crawler Script on remote VM?
 
 
 ### Method 1: `tmux`
@@ -60,3 +60,17 @@ Returning to the ssh session:
 * The crawled data will be stored in the folder `dataset_[folder_name_to_save]`. 
 * The analyzed data using the crawled data will be stored in the folder `d_analysis_[folder_name_to_save]`
 * The logs generated while crawling will be stored in the file `[log_filename].txt`.
+
+
+## How to run the dataset transfer script (i.e. transfer to a private github repo)
+### Method 1: `tmux`
+1. `ssh` into the remote VM designated for this research purpose.
+2. `cd Desktop/Crawler_Dataset` to get to the path where the script is hosted.
+3. Ensure all the required libraries are installed. (See `dependency.txt`)
+4. Start a session using `tmux`.
+5. Start the script running in the tmux session using: `python3 src/automated_git_push.py [folder_name_to_save (input when running crawler)] [Phishing/Benign]> [log-filename].txt`
+6. `Ctrl B` + `D` to detach from the tmux session.
+7. Exit the ssh session if you wish to. The script will still run after exiting.
+
+Returning to the ssh session:
+1. `tmux attach` to get back the existing tmux session where the script is running.
