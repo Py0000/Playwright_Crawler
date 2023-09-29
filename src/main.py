@@ -86,6 +86,7 @@ async def main(folder_name):
 
 
 if __name__ == '__main__':
+    print("Entering main block")
     parser = argparse.ArgumentParser(description="Supply the folder name.")
     parser.add_argument("folder_name", help="Name of the folder")
     args = parser.parse_args()
