@@ -1,4 +1,3 @@
-import hashlib
 import os 
 from playwright.async_api import async_playwright
 from bs4 import BeautifulSoup
@@ -167,20 +166,21 @@ async def crawl(url, url_index, dataset_folder_name, ref_flag):
             dns_extraction_status = dns_extractor.extract_dns_records(visited_url, folder_path)
 
         except Exception as e:
+            ERROR_MSG = "Error visiting page"
             crawler_utilities.save_html_script(folder_path, util_def.FILE_HTML_SCRIPT_AFT, f"Error occurred for url: {url}\n{e}")
             client_html_script_status = "Failed"
 
             visited_url = url
-            cert_extraction_status = "Error visiting page"
-            dns_extraction_status = "Error visiting page"
-            server_move_status = "Error visiting page"
-            server_html_status = "Error visiting page"
-            server_screenshot_status = "Error visiting page"
-            client_move_status = "Error visiting page"
-            client_html_script_status = "Error visiting page"
-            client_screenshot_status = "Error visiting page"
-            client_client_side_script_status = "Error visiting page"
-            detailed_network_status = "Error visiting page"
+            cert_extraction_status = ERROR_MSG
+            dns_extraction_status = ERROR_MSG
+            server_move_status = ERROR_MSG
+            server_html_status = ERROR_MSG
+            server_screenshot_status = ERROR_MSG
+            client_move_status = ERROR_MSG
+            client_html_script_status = ERROR_MSG
+            client_screenshot_status = ERROR_MSG
+            client_client_side_script_status = ERROR_MSG
+            detailed_network_status = ERROR_MSG
         
         finally:
             await page.close()
