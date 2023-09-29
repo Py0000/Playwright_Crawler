@@ -131,7 +131,7 @@ async def crawl(url, dataset_folder_name, ref_flag):
 
             client.on("Network.requestWillBeSent", capture_request)
 
-            response = await page.goto(url, timeout=5)
+            response = await page.goto(url, timeout=10000)
             await wait_for_page_to_load(page)
             visited_url = page.url # See if url changes after visiting the page.
             if response:
