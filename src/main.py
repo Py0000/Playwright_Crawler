@@ -40,6 +40,7 @@ async def fetch_openphish_feeds():
         async with session.get(OPENPHISH_FEEDS_URL) as response:
             if response.status == 200:
                 feeds = await response.text()
+                print(feeds)
                 feeds_queue.put(feeds)
 
 
