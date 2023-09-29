@@ -11,19 +11,16 @@ import network_data_processor
 import util_def
 
 
-async def start_crawling(seed_url_list, dataset_folder_name):
+async def start_crawling(seed_url, dataset_folder_name):
     print("Crawling in progress...")
-    for url in seed_url_list:
-        url_index = str(seed_url_list.index(url))
-        if url_index != "0":
-            time.sleep(random.randint(6, 12))
+    print(f"\n------------------------------\nConfiguration: Referrer set\nUrl: {seed_url}\n-----------------------------")
+    await crawler.crawl(seed_url, dataset_folder_name, ref_flag=True)
 
-        print(f"\n------------------------------\nConfiguration: Referrer set\nUrl: {url}\n-----------------------------")
-        await crawler.crawl(url, url_index, dataset_folder_name, ref_flag=True)
-
-        print(f"\n------------------------------\nConfiguration: No Referrer set\nUrl: {url}\n-----------------------------")
-        await crawler.crawl(url, url_index, dataset_folder_name, ref_flag=False)
+    print(f"\n------------------------------\nConfiguration: No Referrer set\nUrl: {seed_url}\n-----------------------------")
+    await crawler.crawl(seed_url, dataset_folder_name, ref_flag=False)
     print("\nCrawling done...")
+
+    time.sleep(random.randint(5, 10))
 
 
 
