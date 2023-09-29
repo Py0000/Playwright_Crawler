@@ -115,12 +115,6 @@ async def crawl(url, url_index, dataset_folder_name, ref_flag):
         
         main_http_status = "Not Visited"
         try:
-            # Obtains the TLS/SSL certificate info for the page
-            cert_extraction_status = certificate_extractor.extract_certificate_info(url, folder_path)
-
-            # Obtains the DNS records info for the page
-            dns_extraction_status = dns_extractor.extract_dns_records(url, folder_path)
-
             # Obtains the server-side view of the HTML Script and page screenshot 
             server_html_tag, server_html_status, server_move_status, server_screenshot_status = await get_server_side_data(p, ref_flag, folder_path, url)
 
@@ -165,6 +159,12 @@ async def crawl(url, url_index, dataset_folder_name, ref_flag):
             client_html_script_status = "Success"
 
             detailed_network_status = crawler_utilities.save_more_detailed_network_logs(folder_path, captured_events)
+
+            # Obtains the TLS/SSL certificate info for the page
+            cert_extraction_status = certificate_extractor.extract_certificate_info(visited_url, folder_path)
+
+            # Obtains the DNS records info for the page
+            dns_extraction_status = dns_extractor.extract_dns_records(visited_url, folder_path)
 
         except Exception as e:
             crawler_utilities.save_html_script(folder_path, util_def.FILE_HTML_SCRIPT_AFT, f"Error occurred for url: {url}\n{e}")

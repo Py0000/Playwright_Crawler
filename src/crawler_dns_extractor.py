@@ -245,8 +245,8 @@ def extract_dns_records(website_url, folder_path):
         print("DNS info saved... ")
         status = "Success"
 
-    except:
-        print("Error extracting dns records...")
+    except Exception as e:
+        print("DNS Records Extraction Error: ", e)
         status = "Failed"
     
     finally:

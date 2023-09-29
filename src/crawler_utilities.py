@@ -123,7 +123,7 @@ def save_embedded_url(file_path, url, base_url, added_url_set):
 
 
 def save_more_detailed_network_logs(folder_path, data):
-    print("Saving more detailed network logs...\n")
+    print("Saving more detailed network logs...")
     try:
         file_dir = os.path.join(folder_path, util_def.FILE_DETAILED_NETWORK)
         with open(file_dir, 'w') as file:

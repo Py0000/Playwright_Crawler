@@ -89,7 +89,7 @@ def extract_certificate_info(website_url, folder_path):
             protocol_version = ssock.version()
 
         except Exception as e:
-            print(e)
+            print("Cert Extraction Error: ", e)
             subject = {
                 "commonName": error_tag,
                 "organizationName": error_tag,
