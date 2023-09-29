@@ -118,7 +118,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     fetch_thread = threading.Thread(target=run_fetch_openphish_feeds)
-    process_thread = threading.Thread(target=run_process_feeds_from_queue, args=(args.folder_name))
+    process_thread = threading.Thread(target=run_process_feeds_from_queue, args=(args.folder_name,))
 
     fetch_thread.start()
     process_thread.start()
