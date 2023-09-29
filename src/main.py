@@ -38,14 +38,16 @@ OPENPHISH_FEEDS_URL = "https://opfeeds.s3-us-west-2.amazonaws.com/OPBL/phishing_
 feeds_queue = queue.Queue()
 
 async def fetch_openphish_feeds():
-    async with aiohttp.ClientSession() as session:
-        async with session.get(OPENPHISH_FEEDS_URL) as response:
-            if response.status == 200:
-                feeds = await response.text()
-                feeds_queue.put(feeds)
-                feeds_path = "feeds/urls/openphish_feeds.txt"
-                with open(feeds_path, 'a') as file:
-                    file.write(feeds)
+    while True:
+        async with aiohttp.ClientSession() as session:
+            async with session.get(OPENPHISH_FEEDS_URL) as response:
+                if response.status == 200:
+                    feeds = await response.text()
+                    feeds_queue.put(feeds)
+                    feeds_path = "feeds/urls/openphish_feeds.txt"
+                    with open(feeds_path, 'a') as file:
+                        file.write(feeds)
+                await asyncio.sleep(300)  # waits for 5 minutes before the next fetch
 
 
 
