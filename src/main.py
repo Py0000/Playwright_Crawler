@@ -12,6 +12,8 @@ import util_def
 
 
 async def start_crawling(seed_url, dataset_folder_name):
+    print(type(seed_url))
+
     print("Crawling in progress...")
     print(f"\n------------------------------\nConfiguration: Referrer set\nUrl: {seed_url}\n-----------------------------")
     await crawler.crawl(seed_url, dataset_folder_name, ref_flag=True)
@@ -40,7 +42,6 @@ async def fetch_openphish_feeds():
         async with session.get(OPENPHISH_FEEDS_URL) as response:
             if response.status == 200:
                 feeds = await response.text()
-                print(feeds)
                 feeds_queue.put(feeds)
                 feeds_path = "feeds/urls/openphish_feeds.txt"
                 with open(feeds_path, 'a') as file:
