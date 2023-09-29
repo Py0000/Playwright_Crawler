@@ -4,15 +4,29 @@ import asyncio
 import argparse
 import aiohttp
 import queue
+import threading
+from urllib.parse import urlparse, urlunparse
 
 import analyzer
 import crawler_main as crawler
 import network_data_processor
 import util_def
 
+def parse_feeds(feed):
+    parsed_url = urlparse(feed)
+    if not parsed_url.netloc.startswith("www."):
+        new_netloc = "www." + parsed_url.netloc
+    else:
+        new_netloc = parsed_url.netloc
 
-async def start_crawling(seed_url, dataset_folder_name):
-    print(type(seed_url))
+    # Construct the new URL
+    new_url = urlunparse((parsed_url.scheme, new_netloc, parsed_url.path, parsed_url.params, parsed_url.query, parsed_url.fragment))
+
+    return new_url
+
+
+async def start_crawling(feed, dataset_folder_name):
+    seed_url = parse_feeds(feed)
 
     print("Crawling in progress...")
     print(f"\n------------------------------\nConfiguration: Referrer set\nUrl: {seed_url}\n-----------------------------")
@@ -38,7 +52,6 @@ OPENPHISH_FEEDS_URL = "https://opfeeds.s3-us-west-2.amazonaws.com/OPBL/phishing_
 feeds_queue = queue.Queue()
 
 async def fetch_openphish_feeds():
-    print("In fetch_openphish_feeds()")
     while True:
         async with aiohttp.ClientSession() as session:
             async with session.get(OPENPHISH_FEEDS_URL) as response:
@@ -53,7 +66,6 @@ async def fetch_openphish_feeds():
 
 
 async def process_feeds_from_queue(folder_name):
-    print("In process_feeds_from_queue()")
     while True:
         if not feeds_queue.empty():
             feed_to_process = feeds_queue.get()
@@ -75,23 +87,41 @@ async def process_current_feed(feed, folder_name):
     # start_analysing(dataset_folder_name, analyzed_data_folder_name)
 
 
+def run_fetch_openphish_feeds():
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    loop.run_until_complete(fetch_openphish_feeds())
 
+
+def run_process_feeds_from_queue(folder_name):
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    loop.run_until_complete(process_feeds_from_queue(folder_name))
+
+
+"""
 async def main(folder_name):
     # Task to continuously fetch feeds
-    print("Fetching feeds")
     fetch_task = asyncio.create_task(fetch_openphish_feeds())
 
     # Task to process feeds from the queue
-    print("Crawling data")
     process_task = asyncio.create_task(process_feeds_from_queue(folder_name))
 
     # Run both tasks
     await asyncio.gather(fetch_task, process_task)
+"""
 
 
 if __name__ == '__main__':
-    print("Entering main block")
     parser = argparse.ArgumentParser(description="Supply the folder name.")
     parser.add_argument("folder_name", help="Name of the folder")
     args = parser.parse_args()
-    asyncio.run(main(args.folder_name))
+
+    fetch_thread = threading.Thread(target=run_fetch_openphish_feeds)
+    process_thread = threading.Thread(target=run_process_feeds_from_queue, args=(args.folder_name))
+
+    fetch_thread.start()
+    process_thread.start()
+
+    fetch_thread.join()  
+    process_thread.join()
