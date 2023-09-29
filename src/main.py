@@ -68,16 +68,19 @@ async def process_current_feed(feed, folder_name):
 
 
 
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Supply the folder name.")
-    parser.add_argument("folder_name", help="Name of the folder")
-
-    # Task to continuously fetch feeds
+async def main(folder_name):
+     # Task to continuously fetch feeds
     fetch_task = asyncio.create_task(fetch_openphish_feeds())
 
     # Task to process feeds from the queue
-    args = parser.parse_args()
-    process_task = asyncio.create_task(process_feeds_from_queue(args.folder_name))
+    process_task = asyncio.create_task(process_feeds_from_queue(folder_name))
 
     # Run both tasks
-    asyncio.run(asyncio.gather(fetch_task, process_task))
+    await asyncio.gather(fetch_task, process_task)
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description="Supply the folder name.")
+    parser.add_argument("folder_name", help="Name of the folder")
+    args = parser.parse_args()
+    asyncio.run(main(args.folder_name))
