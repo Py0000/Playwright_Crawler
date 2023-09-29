@@ -57,7 +57,9 @@ async def fetch_openphish_feeds():
             async with session.get(OPENPHISH_FEEDS_URL) as response:
                 if response.status == 200:
                     feeds = await response.text()
-                    feeds_queue.put(feeds)
+                    urls = feeds.splitlines()
+                    for url in urls:  
+                        feeds_queue.put(feeds)
                     feeds_path = "feeds/urls/openphish_feeds.txt"
                     with open(feeds_path, 'a') as file:
                         file.write(feeds)
