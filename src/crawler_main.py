@@ -29,8 +29,8 @@ async def wait_for_page_to_load(page):
 # Sets the playwright page referrer to the url provided if ref_flag is set.
 # Otherwise, set it to None (i.e. Empty)
 async def set_page_referrer(page, ref_flag, to_visit_url):
-    referrer = to_visit_url if ref_flag else None 
-    await page.set_extra_http_headers({"Referer": referrer})
+    if ref_flag:
+        await page.set_extra_http_headers({"Referer": to_visit_url})
 
 
 # Obtains the server-side data for the webpage
