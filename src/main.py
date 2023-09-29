@@ -1,5 +1,3 @@
-import time
-import random
 import asyncio
 import argparse
 import aiohttp
@@ -35,8 +33,6 @@ async def start_crawling(feed, dataset_folder_name):
     print(f"\n------------------------------\nConfiguration: No Referrer set\nUrl: {seed_url}\n-----------------------------")
     await crawler.crawl(seed_url, dataset_folder_name, ref_flag=False)
     print("\nCrawling done...")
-
-    time.sleep(random.randint(5, 10))
 
 
 
@@ -85,7 +81,7 @@ async def process_current_feed(feed, folder_name):
     analyzed_data_folder_name = f"{util_def.FOLDER_ANALYSIS_BASE}_{folder_name}"
 
     await start_crawling(feed, dataset_folder_name)
-    network_data_processor.start_network_processing(dataset_folder_name)
+    # network_data_processor.start_network_processing(dataset_folder_name)
     # start_analysing(dataset_folder_name, analyzed_data_folder_name)
 
 
