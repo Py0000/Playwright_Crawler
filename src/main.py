@@ -1,6 +1,7 @@
 import asyncio
 import argparse
 import aiohttp
+from aiohttp import ClientTimeout
 import queue
 import threading
 from urllib.parse import urlparse, urlunparse
@@ -48,8 +49,9 @@ OPENPHISH_FEEDS_URL = "https://opfeeds.s3-us-west-2.amazonaws.com/OPBL/phishing_
 feeds_queue = queue.Queue()
 
 async def fetch_openphish_feeds():
+    timeout = ClientTimeout(total=300)
     while True:
-        async with aiohttp.ClientSession(timeout=300) as session:
+        async with aiohttp.ClientSession(timeout=timeout) as session:
             try:
                 async with session.get(OPENPHISH_FEEDS_URL) as response:
                     if response.status == 200:
