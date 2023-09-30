@@ -23,6 +23,7 @@ FILE_DETAILED_NETWORK = "detail_network.json"
 FOLDER_NETWORK_FRAGMENTS = "network_data"
 FOLDER_NETWORK_RESPONSE_FRAGMENTS = "network_response_files"
 FOLDER_NETWORK_REQUEST_FRAGMENTS = "network_request_files"
+SEMAPHORE_FILE = ".completed"
 
 FOLDER_DATASET_BASE = "dataset"
 FOLDER_ANALYSIS_BASE = "d_analysis"

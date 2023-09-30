@@ -4,6 +4,14 @@ from urllib.parse import urlparse
 
 import util_def
 
+
+# Generates a semaphore lock file to signal that data for the folder is complete and ready to be sent to database.
+def generate_semaphore_lock_file(folder_path):
+    semaphore_file_path = os.path.join(folder_path, util_def.SEMAPHORE_FILE)
+    with open(semaphore_file_path, 'w') as flag_file:
+        flag_file.write('')
+
+
 # Saves the data obtained into a json file at the outpath path
 def save_data_to_json_format(outpath_path, data):
     with open(outpath_path, 'w', encoding='utf-8') as f:

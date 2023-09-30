@@ -24,7 +24,7 @@ def parse_feeds(feed):
 
 
 async def start_crawling(feed, dataset_folder_name):
-    seed_url = parse_feeds(feed)
+    seed_url = feed
 
     print("Crawling in progress...")
     print(f"\n------------------------------\nConfiguration: Referrer set\nUrl: {seed_url}\n-----------------------------")
@@ -49,17 +49,24 @@ feeds_queue = queue.Queue()
 
 async def fetch_openphish_feeds():
     while True:
-        async with aiohttp.ClientSession() as session:
-            async with session.get(OPENPHISH_FEEDS_URL) as response:
-                if response.status == 200:
-                    feeds = await response.text()
-                    urls = feeds.splitlines()
-                    for url in urls:  
-                        feeds_queue.put(url)
-                    feeds_path = "feeds/urls/openphish_feeds.txt"
-                    with open(feeds_path, 'a') as file:
-                        file.write(feeds)
-                await asyncio.sleep(300)  # waits for 5 minutes before the next fetch
+        async with aiohttp.ClientSession(timeout=300) as session:
+            try:
+                async with session.get(OPENPHISH_FEEDS_URL) as response:
+                    if response.status == 200:
+                        feeds = await response.text()
+                        urls = feeds.splitlines()
+                        for url in urls:  
+                            feeds_queue.put(url)
+                        feeds_path = "feeds/urls/openphish_feeds.txt"
+                        with open(feeds_path, 'a') as file:
+                            file.write(feeds)
+                    await asyncio.sleep(300)  # waits for 5 minutes before the next fetch
+                    
+            except Exception as e:
+                print("Error fetching feeds from url: ", e)
+                await asyncio.sleep(300) # waits for 5 minutes before the next fetch
+
+
 
 
 

@@ -210,3 +210,6 @@ async def crawl(url, dataset_folder_name, ref_flag):
 
             output_path = os.path.join(folder_path, util_def.FILE_CRAWL_LOG_INFO)
             util.save_data_to_json_format(output_path, log_data)
+
+            # Generate a semaphore file to signal that it is ready to be sent to databse
+            util.generate_semaphore_lock_file(folder_path)
