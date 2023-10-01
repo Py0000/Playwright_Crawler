@@ -36,28 +36,28 @@ feeds_queue = queue.Queue()
 
 async def fetch_openphish_feeds():
     timeout = ClientTimeout(total=300)
-    while True:
-        async with aiohttp.ClientSession(timeout=timeout) as session:
-            try:
-                async with session.get(OPENPHISH_FEEDS_URL) as response:
-                    if response.status == 200:
-                        feeds = await response.text()
-                        urls = feeds.splitlines()
-                        for url in urls:  
-                            feeds_queue.put(url)
-                        feeds_path = "feeds/urls/openphish_feeds.txt"
-                        with open(feeds_path, 'a') as file:
-                            file.write(feeds)
-                    await asyncio.sleep(300)  # waits for 5 minutes before the next fetch
-                    
-            except Exception as e:
-                print("Error fetching feeds from url: ", e)
-                await asyncio.sleep(300) # waits for 5 minutes before the next fetch
+    #while True:
+    async with aiohttp.ClientSession(timeout=timeout) as session:
+        try:
+            async with session.get(OPENPHISH_FEEDS_URL) as response:
+                if response.status == 200:
+                    feeds = await response.text()
+                    urls = feeds.splitlines()
+                    for url in urls:  
+                        feeds_queue.put(url)
+                    feeds_path = "feeds/urls/openphish_feeds.txt"
+                    with open(feeds_path, 'a') as file:
+                        file.write(feeds)
+                await asyncio.sleep(300)  # waits for 5 minutes before the next fetch
+                
+        except Exception as e:
+            print("Error fetching feeds from url: ", e)
+            await asyncio.sleep(300) # waits for 5 minutes before the next fetch
 
 
 
 async def process_feeds_from_queue(folder_name):
-    while True:
+    #while True:
         if not feeds_queue.empty():
             feed_to_process = feeds_queue.get()
             await process_current_feed(feed_to_process, folder_name)
