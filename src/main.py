@@ -4,23 +4,10 @@ import aiohttp
 from aiohttp import ClientTimeout
 import queue
 import threading
-from urllib.parse import urlparse, urlunparse
 
 import analyzer
 import crawler_main as crawler
 import util_def
-
-def parse_feeds(feed):
-    parsed_url = urlparse(feed)
-    if not parsed_url.netloc.startswith("www."):
-        new_netloc = "www." + parsed_url.netloc
-    else:
-        new_netloc = parsed_url.netloc
-
-    # Construct the new URL
-    new_url = urlunparse((parsed_url.scheme, new_netloc, parsed_url.path, parsed_url.params, parsed_url.query, parsed_url.fragment))
-
-    return new_url
 
 
 async def start_crawling(feed, dataset_folder_name):
