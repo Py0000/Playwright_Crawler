@@ -1,5 +1,3 @@
-import base64 
-import hashlib
 import json
 import os
 
@@ -8,16 +6,16 @@ from urllib.parse import urljoin, urlparse
 
 import util_def
 
-async def save_screenshot(page, folder_path, file_name):
+def save_screenshot(page, folder_path, file_name):
     # Insurance code to guarantee that page is really loaded before taking screenshot
     try:
-        await page.wait_for_load_state('networkidle')
+        page.wait_for_load_state('networkidle')
     except:
-        await page.wait_for_timeout(5000)
+        page.wait_for_timeout(5000)
 
     path = os.path.join(os.getcwd(),folder_path, file_name)
     try: 
-        await page.screenshot(path=path, full_page=True)
+        page.screenshot(path=path, full_page=True)
         print("Screenshot Captured...")
         status = "Success"
     except: 
@@ -57,14 +55,14 @@ def save_unique_html_tags(folder_path, server_data, client_data):
 
 
 
-async def extract_links(folder_path, soup, page, base_url):
+def extract_links(folder_path, soup, page, base_url):
     file_path = os.path.join(os.getcwd(), folder_path, util_def.FILE_EMBEDDED_URL)
 
     # Extract links from anchor tags
     added_url_set = get_link_in_anchor(file_path, soup, set(), base_url)
 
     # Extract links from iframes and nested iframes
-    await get_link_in_iframe(file_path, soup, page, added_url_set, base_url)
+    get_link_in_iframe(file_path, soup, page, added_url_set, base_url)
 
     return file_path
 
@@ -76,7 +74,7 @@ def get_link_in_anchor(file_path, soup, added_url_set, base_url):
     return added_url_set
 
 
-async def get_link_in_iframe(file_path, soup, page, added_url_set, base_url):
+def get_link_in_iframe(file_path, soup, page, added_url_set, base_url):
     for iframe in soup.find_all('iframe'):
         iframe_src = iframe.attrs.get('src')  # Load the iframe 
         
@@ -89,17 +87,17 @@ async def get_link_in_iframe(file_path, soup, page, added_url_set, base_url):
             continue
 
         added_url_set = save_embedded_url(file_path, iframe_src, base_url, added_url_set)
-        await page.goto(iframe_src)
-        iframe_soup = BeautifulSoup(await page.content(), 'lxml')
-        added_url_set = await handle_nested_iframes(iframe_soup, file_path, page, added_url_set, base_url)
+        page.goto(iframe_src)
+        iframe_soup = BeautifulSoup(page.content(), 'lxml')
+        added_url_set = handle_nested_iframes(iframe_soup, file_path, page, added_url_set, base_url)
 
 
-async def handle_nested_iframes(iframe_soup, file_path, page, added_url_set, base_url):
+def handle_nested_iframes(iframe_soup, file_path, page, added_url_set, base_url):
     for a in iframe_soup.find_all('a'):
         url = a.get("href")
         added_url_set = save_embedded_url(file_path, url, base_url, added_url_set)
     
-    added_url_set = await get_link_in_iframe(file_path, iframe_soup, page, added_url_set, base_url)
+    added_url_set = get_link_in_iframe(file_path, iframe_soup, page, added_url_set, base_url)
     return added_url_set
 
 
