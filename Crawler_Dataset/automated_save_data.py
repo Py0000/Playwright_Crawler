@@ -3,7 +3,6 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 import os
 
-import subprocess
 import time
 import argparse
 import threading
@@ -53,7 +52,7 @@ def upload_to_google_drive(ref):
 
 def save_to_gdrive_periodically():
     while True:
-        time.sleep(7200)
+        #time.sleep(7200)
         try:
             upload_to_google_drive(ref=True)
             upload_to_google_drive(ref=False)
@@ -63,7 +62,7 @@ def save_to_gdrive_periodically():
 
 def shift_data_folder_periodically(folder_name, phishing_or_benign_tag):
     while True:
-        time.sleep(360)
+        #time.sleep(360)
         data_reallocator.shift_data_from_Playwright_Crawler_folder(folder_name, phishing_or_benign_tag)
         
 
