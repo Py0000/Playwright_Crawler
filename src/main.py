@@ -69,21 +69,11 @@ async def fetch_openphish_feeds():
 
 
 
-async def process_feed_with_semaphore(feed, folder_name):
-    sem = asyncio.Semaphore(3)
-    async with sem:
-        await process_current_feed(feed, folder_name)
-
-
-
 async def process_feeds_from_queue(folder_name):
-    tasks = []
     while True:
         if not feeds_queue.empty():
             feed_to_process = feeds_queue.get()
-            # Process 3 feeds concurrently
-            task = asyncio.ensure_future(process_feed_with_semaphore(feed_to_process, folder_name))
-            tasks.append(task)
+            await process_current_feed(feed_to_process, folder_name)
             feeds_queue.task_done()
         else:
             await asyncio.sleep(300)  # Wait for 5 minute before checking the queue again
