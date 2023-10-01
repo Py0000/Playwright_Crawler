@@ -8,6 +8,7 @@ from urllib.parse import urlparse, urlunparse
 
 import analyzer
 import crawler_main as crawler
+import network_data_processor
 import util_def
 
 def parse_feeds(feed):
@@ -23,15 +24,15 @@ def parse_feeds(feed):
     return new_url
 
 
-def start_crawling(feed, dataset_folder_name):
+async def start_crawling(feed, dataset_folder_name):
     seed_url = feed
 
     print("Crawling in progress...")
     print(f"\n------------------------------\nConfiguration: Referrer set\nUrl: {seed_url}\n-----------------------------")
-    crawler.crawl(seed_url, dataset_folder_name, ref_flag=True)
+    await crawler.crawl(seed_url, dataset_folder_name, ref_flag=True)
 
     print(f"\n------------------------------\nConfiguration: No Referrer set\nUrl: {seed_url}\n-----------------------------")
-    crawler.crawl(seed_url, dataset_folder_name, ref_flag=False)
+    await crawler.crawl(seed_url, dataset_folder_name, ref_flag=False)
     print("\nCrawling done...")
 
 
@@ -76,7 +77,7 @@ async def process_feeds_from_queue(folder_name):
         if not feeds_queue.empty():
             feed_to_process = feeds_queue.get()
             # assuming your main function takes feed content directly
-            process_current_feed(feed_to_process, folder_name)
+            await process_current_feed(feed_to_process, folder_name)
             feeds_queue.task_done()
         else:
             await asyncio.sleep(300)  # Wait for 5 minute before checking the queue again
@@ -84,11 +85,11 @@ async def process_feeds_from_queue(folder_name):
 
 
 
-def process_current_feed(feed, folder_name):
+async def process_current_feed(feed, folder_name):
     dataset_folder_name = f"{util_def.FOLDER_DATASET_BASE}_{folder_name}"
     analyzed_data_folder_name = f"{util_def.FOLDER_ANALYSIS_BASE}_{folder_name}"
 
-    start_crawling(feed, dataset_folder_name)
+    await start_crawling(feed, dataset_folder_name)
     # network_data_processor.start_network_processing(dataset_folder_name)
     # start_analysing(dataset_folder_name, analyzed_data_folder_name)
 
@@ -105,6 +106,17 @@ def run_process_feeds_from_queue(folder_name):
     loop.run_until_complete(process_feeds_from_queue(folder_name))
 
 
+"""
+async def main(folder_name):
+    # Task to continuously fetch feeds
+    fetch_task = asyncio.create_task(fetch_openphish_feeds())
+
+    # Task to process feeds from the queue
+    process_task = asyncio.create_task(process_feeds_from_queue(folder_name))
+
+    # Run both tasks
+    await asyncio.gather(fetch_task, process_task)
+"""
 
 
 if __name__ == '__main__':
@@ -113,14 +125,10 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     fetch_thread = threading.Thread(target=run_fetch_openphish_feeds)
-    fetch_thread.start()
+    process_thread = threading.Thread(target=run_process_feeds_from_queue, args=(args.folder_name,))
 
-    crawl_threads = []
-    for _ in range(3):
-        process_thread = threading.Thread(target=run_process_feeds_from_queue, args=(args.folder_name,))
-        process_thread.start()
-        crawl_threads.append(process_thread)
+    fetch_thread.start()
+    process_thread.start()
 
     fetch_thread.join()  
     process_thread.join()
-
