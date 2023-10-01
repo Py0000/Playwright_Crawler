@@ -9,7 +9,7 @@ import threading
 
 import data_reallocator
 
-def upload_single_file_to_gdrive_with_exponential_backoff(file_path, drive_service, drive_folder_id, max_retries=3):
+def upload_single_file_to_gdrive_with_exponential_backoff(file, file_path, drive_service, drive_folder_id, max_retries=3):
     retry = 0
     while retry < max_retries:
         try:
@@ -26,6 +26,9 @@ def upload_single_file_to_gdrive_with_exponential_backoff(file_path, drive_servi
             # Execute the request
             file = request.execute()
             print(f"Uploaded {file} ({file['id']})")
+
+            # Remove the file after successful upload
+            os.remove(file_path)
         except:
             wait_time = (2 ** retry)
             print(f"Waiting for {wait_time} seconds before retrying...")
@@ -46,7 +49,7 @@ def upload_to_google_drive(ref):
     for file in os.listdir(folder_path):
         if file.endswith('.zip'):
             file_path = os.path.join(folder_path, file)
-            upload_single_file_to_gdrive_with_exponential_backoff(file_path, drive_service, drive_folder_id)
+            upload_single_file_to_gdrive_with_exponential_backoff(file, file_path, drive_service, drive_folder_id)
             
 
 
