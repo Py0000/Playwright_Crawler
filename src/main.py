@@ -35,6 +35,7 @@ OPENPHISH_FEEDS_URL = "https://opfeeds.s3-us-west-2.amazonaws.com/OPBL/phishing_
 feeds_queue = queue.Queue()
 
 async def fetch_openphish_feeds():
+    print("Fetching feeds")
     timeout = ClientTimeout(total=300)
     #while True:
     async with aiohttp.ClientSession(timeout=timeout) as session:
@@ -57,12 +58,15 @@ async def fetch_openphish_feeds():
 
 
 async def process_feeds_from_queue(folder_name):
+    
     #while True:
         if not feeds_queue.empty():
+            print("Processing feeds")
             feed_to_process = feeds_queue.get()
             await process_current_feed(feed_to_process, folder_name)
             feeds_queue.task_done()
         else:
+            print("No feeds")
             await asyncio.sleep(300)  # Wait for 5 minute before checking the queue again
 
 
