@@ -37,7 +37,7 @@ def upload_single_file_to_gdrive_with_exponential_backoff(file, file_path, drive
 
 
 def upload_to_google_drive(ref):
-    credentials = Credentials.from_service_account_file('fyp-phishing-analysis-6d64a520d117.json')
+    credentials = Credentials.from_service_account_file(os.path.join(os.getcwd(), "src", 'fyp-phishing-analysis-6d64a520d117.json'))
     drive_service = build('drive', 'v3', credentials=credentials)
     drive_phishing_self_ref_folder_id = "167ySPLxM49KpIlSoHXCmw8tz75yqVt0z"
     drive_phishing_no_ref_folder_id  = "1SIzLOgcPaIiyU9bEaMRmceyvESJu14un"
