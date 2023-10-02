@@ -100,116 +100,113 @@ async def get_client_side_script(page, folder_path):
 
 
 # dataset_folder_name: refers to the name of the (base)folder to store the crawled data
-async def crawl(url, dataset_folder_name, ref_flag):
+async def crawl(browser, url, dataset_folder_name, ref_flag):
     url_hash = hashlib.sha256(url.encode()).hexdigest()
     # Setup folders and paths required for data storage 
     base_folder_path = util.generate_base_folder_for_crawled_dataset(ref_flag, dataset_folder_name)
     folder_path = util.generate_folder_for_individual_url_dataset(url_hash, base_folder_path)
     har_network_path = os.path.join(folder_path, util_def.FOLDER_NETWORK_FRAGMENTS ,util_def.FILE_NETWORK_HAR)
 
-    async with async_playwright() as p:
-        win_chrome_v116_user_agent = [f"--user-agent={util_def.USER_USER_AGENT_WINDOWS_CHROME}"]
-        browser = await p.chromium.launch(headless=True, args=win_chrome_v116_user_agent)
-        context = await browser.new_context(record_har_path=har_network_path, record_har_content="attach")
-        page = await context.new_page()
-        await set_page_referrer(page, ref_flag, url)
+    context = await browser.new_context(record_har_path=har_network_path, record_har_content="attach")
+    page = await context.new_page()
+    await set_page_referrer(page, ref_flag, url)
+    
+    main_http_status = "Not Visited"
+    try:
+        # Obtains the server-side view of the HTML Script and page screenshot 
+        server_html_tag, server_html_status, server_move_status, server_screenshot_status = await get_server_side_data(p, ref_flag, folder_path, url)
+
+        # List. To hold network resquest made when visiting the page.
+        captured_events = []
+        client = await page.context.new_cdp_session(page) # Utilize CDP to capture network requests.
+        await client.send("Network.enable")
         
-        main_http_status = "Not Visited"
-        try:
-            # Obtains the server-side view of the HTML Script and page screenshot 
-            server_html_tag, server_html_status, server_move_status, server_screenshot_status = await get_server_side_data(p, ref_flag, folder_path, url)
+        # Function to capture and store all network requests made.
+        async def capture_request(payload):
+            captured_event = payload
+            captured_events.append(captured_event)
 
-            # List. To hold network resquest made when visiting the page.
-            captured_events = []
-            client = await page.context.new_cdp_session(page) # Utilize CDP to capture network requests.
-            await client.send("Network.enable")
-            
-            # Function to capture and store all network requests made.
-            async def capture_request(payload):
-                captured_event = payload
-                captured_events.append(captured_event)
+        client.on("Network.requestWillBeSent", capture_request)
 
-            client.on("Network.requestWillBeSent", capture_request)
+        response = await page.goto(url, timeout=10000)
+        await wait_for_page_to_load(page)
+        visited_url = page.url # See if url changes after visiting the page.
+        if response:
+            main_http_status = response.status
 
-            response = await page.goto(url, timeout=10000)
-            await wait_for_page_to_load(page)
-            visited_url = page.url # See if url changes after visiting the page.
-            if response:
-                main_http_status = response.status
+        client_move_status = await crawler_actions.execute_user_action(page) # Mimics user movements when visiting the page.
+        client_screenshot_status = await crawler_utilities.save_screenshot(page, folder_path, util_def.FILE_SCREENSHOT_AFT)
+        html_content = await page.content()
+        soup = BeautifulSoup(html_content, "lxml")
+        client_html_tag = crawler_utilities.get_unique_html_tags(soup)
+        crawler_utilities.save_unique_html_tags(folder_path, server_html_tag, client_html_tag)
+        await crawler_utilities.extract_links(folder_path, soup, page, visited_url)
+        client_client_side_script_status = await get_client_side_script(page, folder_path)
 
-            client_move_status = await crawler_actions.execute_user_action(page) # Mimics user movements when visiting the page.
-            client_screenshot_status = await crawler_utilities.save_screenshot(page, folder_path, util_def.FILE_SCREENSHOT_AFT)
-            html_content = await page.content()
-            soup = BeautifulSoup(html_content, "lxml")
-            client_html_tag = crawler_utilities.get_unique_html_tags(soup)
-            crawler_utilities.save_unique_html_tags(folder_path, server_html_tag, client_html_tag)
-            await crawler_utilities.extract_links(folder_path, soup, page, visited_url)
-            client_client_side_script_status = await get_client_side_script(page, folder_path)
+        user_agent = await page.evaluate('''() => window.navigator.userAgent''')
+        referrer = await page.evaluate('''() => document.referrer''')
+        print("Actual url: ", url)
+        print("Url visited: ", visited_url)
+        print("User-Agent:", user_agent)
+        print(f"Referrer: {referrer}")
 
-            user_agent = await page.evaluate('''() => window.navigator.userAgent''')
-            referrer = await page.evaluate('''() => document.referrer''')
-            print("Actual url: ", url)
-            print("Url visited: ", visited_url)
-            print("User-Agent:", user_agent)
-            print(f"Referrer: {referrer}")
-
-            content = soup.prettify()
-            if content is not None:
-                crawler_utilities.save_html_script(folder_path, util_def.FILE_HTML_SCRIPT_AFT, content)
-            
-            client_html_script_status = "Success"
-
-            detailed_network_status = crawler_utilities.save_more_detailed_network_logs(folder_path, captured_events)
-
-            # Obtains the TLS/SSL certificate info for the page
-            cert_extraction_status = certificate_extractor.extract_certificate_info(visited_url, folder_path)
-
-            # Obtains the DNS records info for the page
-            dns_extraction_status = dns_extractor.extract_dns_records(visited_url, folder_path)
-
-        except Exception as e:
-            ERROR_MSG = "Error visiting page"
-            crawler_utilities.save_html_script(folder_path, util_def.FILE_HTML_SCRIPT_AFT, f"Error occurred for url: {url}\n{e}")
-            client_html_script_status = "Failed"
-
-            visited_url = url
-            cert_extraction_status = ERROR_MSG
-            dns_extraction_status = ERROR_MSG
-            server_move_status = ERROR_MSG
-            server_html_status = ERROR_MSG
-            server_screenshot_status = ERROR_MSG
-            client_move_status = ERROR_MSG
-            client_html_script_status = ERROR_MSG
-            client_screenshot_status = ERROR_MSG
-            client_client_side_script_status = ERROR_MSG
-            detailed_network_status = ERROR_MSG
+        content = soup.prettify()
+        if content is not None:
+            crawler_utilities.save_html_script(folder_path, util_def.FILE_HTML_SCRIPT_AFT, content)
         
-        finally:
+        client_html_script_status = "Success"
+
+        detailed_network_status = crawler_utilities.save_more_detailed_network_logs(folder_path, captured_events)
+
+        # Obtains the TLS/SSL certificate info for the page
+        cert_extraction_status = certificate_extractor.extract_certificate_info(visited_url, folder_path)
+
+        # Obtains the DNS records info for the page
+        dns_extraction_status = dns_extractor.extract_dns_records(visited_url, folder_path)
+
+    except Exception as e:
+        ERROR_MSG = "Error visiting page"
+        crawler_utilities.save_html_script(folder_path, util_def.FILE_HTML_SCRIPT_AFT, f"Error occurred for url: {url}\n{e}")
+        client_html_script_status = "Failed"
+
+        visited_url = url
+        cert_extraction_status = ERROR_MSG
+        dns_extraction_status = ERROR_MSG
+        server_move_status = ERROR_MSG
+        server_html_status = ERROR_MSG
+        server_screenshot_status = ERROR_MSG
+        client_move_status = ERROR_MSG
+        client_html_script_status = ERROR_MSG
+        client_screenshot_status = ERROR_MSG
+        client_client_side_script_status = ERROR_MSG
+        detailed_network_status = ERROR_MSG
+    
+    finally:
+        if page:
             await page.close()
+        if context:
             await context.close()
-            await browser.close()
-            await p.stop()
 
-            log_data = {
-                "Url visited": visited_url,
-                "Provided Url": url,
-                "Has Url changed?": visited_url != url,
-                "Status": main_http_status,
-                "Provided Url Hash (in SHA-256)": url_hash,
-                "Certificate Extraction": cert_extraction_status,
-                "DNS Records Extraction": dns_extraction_status,
-                "Mouse moved when obtaining server-side data?": server_move_status,
-                "Server-Side HTML script obtained?": server_html_status,
-                "Server-side screenshot obtained?": server_screenshot_status,
-                "Mouse moved when obtaining client-side data?": client_move_status,
-                "Client-Side HTML script obtained?": client_html_script_status,
-                "Client-side screenshot obtained?": client_screenshot_status,
-                "Client-Side scripts obtained?":  client_client_side_script_status,
-                "Network data saved?": detailed_network_status
-            }
+        log_data = {
+            "Url visited": visited_url,
+            "Provided Url": url,
+            "Has Url changed?": visited_url != url,
+            "Status": main_http_status,
+            "Provided Url Hash (in SHA-256)": url_hash,
+            "Certificate Extraction": cert_extraction_status,
+            "DNS Records Extraction": dns_extraction_status,
+            "Mouse moved when obtaining server-side data?": server_move_status,
+            "Server-Side HTML script obtained?": server_html_status,
+            "Server-side screenshot obtained?": server_screenshot_status,
+            "Mouse moved when obtaining client-side data?": client_move_status,
+            "Client-Side HTML script obtained?": client_html_script_status,
+            "Client-side screenshot obtained?": client_screenshot_status,
+            "Client-Side scripts obtained?":  client_client_side_script_status,
+            "Network data saved?": detailed_network_status
+        }
 
-            output_path = os.path.join(folder_path, util_def.FILE_CRAWL_LOG_INFO)
-            util.save_data_to_json_format(output_path, log_data)
+        output_path = os.path.join(folder_path, util_def.FILE_CRAWL_LOG_INFO)
+        util.save_data_to_json_format(output_path, log_data)
 
-            # Generate a semaphore file to signal that it is ready to be sent to databse
-            util.generate_semaphore_lock_file(folder_path)
+        # Generate a semaphore file to signal that it is ready to be sent to databse
+        util.generate_semaphore_lock_file(folder_path)

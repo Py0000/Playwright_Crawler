@@ -1,6 +1,7 @@
 import asyncio
 import argparse
 import aiohttp
+from playwright.async_api import async_playwright
 from aiohttp import ClientTimeout
 import queue
 import threading
@@ -9,16 +10,29 @@ import analyzer
 import crawler_main as crawler
 import util_def
 
+async def initialize_playwright_object_browser():
+    playwright_obj = await async_playwright()
+    win_chrome_v116_user_agent = [f"--user-agent={util_def.USER_USER_AGENT_WINDOWS_CHROME}"]
+    browser = await playwright_obj.chromium.launch(headless=True, args=win_chrome_v116_user_agent)
+    return playwright_obj, browser
 
-async def start_crawling(feed, dataset_folder_name):
+
+async def cleanup_playwright_object_browser(playwright_obj, browser):
+    if browser:
+        await browser.close()
+    if playwright_obj:
+        await playwright_obj.stop()
+
+
+async def start_crawling(browser, feed, dataset_folder_name):
     seed_url = feed
 
     print("Crawling in progress...")
     print(f"\n------------------------------\nConfiguration: Referrer set\nUrl: {seed_url}\n-----------------------------")
-    await crawler.crawl(seed_url, dataset_folder_name, ref_flag=True)
+    await crawler.crawl(browser, seed_url, dataset_folder_name, ref_flag=True)
 
     print(f"\n------------------------------\nConfiguration: No Referrer set\nUrl: {seed_url}\n-----------------------------")
-    await crawler.crawl(seed_url, dataset_folder_name, ref_flag=False)
+    await crawler.crawl(browser, seed_url, dataset_folder_name, ref_flag=False)
     print("\nCrawling done...")
 
 
@@ -57,7 +71,7 @@ async def fetch_openphish_feeds():
 
 
 
-async def process_feeds_from_queue(folder_name):
+async def process_feeds_from_queue(folder_name, browser):
     while True:
         if not feeds_queue.empty():
             print("Processing feeds")
@@ -71,11 +85,11 @@ async def process_feeds_from_queue(folder_name):
 
 
 
-async def process_current_feed(feed, folder_name):
+async def process_current_feed(feed, folder_name, browser):
     dataset_folder_name = f"{util_def.FOLDER_DATASET_BASE}_{folder_name}"
     analyzed_data_folder_name = f"{util_def.FOLDER_ANALYSIS_BASE}_{folder_name}"
 
-    await start_crawling(feed, dataset_folder_name)
+    await start_crawling(browser, feed, dataset_folder_name)
     # start_analysing(dataset_folder_name, analyzed_data_folder_name)
 
 
@@ -91,10 +105,15 @@ if __name__ == '__main__':
     parser.add_argument("folder_name", help="Name of the folder")
     args = parser.parse_args()
 
+    loop = asyncio.get_event_loop()
+
+    p, browser = loop.run_until_complete(initialize_playwright_object_browser())
+
     fetch_thread = threading.Thread(target=run_fetch_openphish_feeds)
     fetch_thread.start()
     
-    asyncio.run(process_feeds_from_queue(args.folder_name))
+    loop.run_until_complete(process_feeds_from_queue(args.folder_name, browser))
 
     fetch_thread.join()  
+    loop.run_until_complete(cleanup_playwright_object_browser(p, browser))
     
