@@ -10,26 +10,24 @@ import analyzer
 import crawler_main as crawler
 import util_def
 
-async def initialize_playwright_object_browser():
-    async with async_playwright() as playwright_obj:
-        return playwright_obj
-
-
-async def cleanup_playwright_object_browser(playwright_obj):
-    if playwright_obj:
-        await playwright_obj.stop()
-
 
 async def start_crawling(browser, feed, dataset_folder_name):
     seed_url = feed
 
-    print("Crawling in progress...")
-    print(f"\n------------------------------\nConfiguration: Referrer set\nUrl: {seed_url}\n-----------------------------")
-    await crawler.crawl(browser, seed_url, dataset_folder_name, ref_flag=True)
+    async with async_playwright() as p:
+        win_chrome_v116_user_agent = [f"--user-agent={util_def.USER_USER_AGENT_WINDOWS_CHROME}"]
+        browser = await p.chromium.launch(headless=True, args=win_chrome_v116_user_agent)
 
-    print(f"\n------------------------------\nConfiguration: No Referrer set\nUrl: {seed_url}\n-----------------------------")
-    await crawler.crawl(browser, seed_url, dataset_folder_name, ref_flag=False)
-    print("\nCrawling done...")
+        print("Crawling in progress...")
+        print(f"\n------------------------------\nConfiguration: Referrer set\nUrl: {seed_url}\n-----------------------------")
+        await crawler.crawl(browser, seed_url, dataset_folder_name, ref_flag=True)
+
+        print(f"\n------------------------------\nConfiguration: No Referrer set\nUrl: {seed_url}\n-----------------------------")
+        await crawler.crawl(browser, seed_url, dataset_folder_name, ref_flag=False)
+        print("\nCrawling done...")
+
+        await browser.close()
+        p.stop()
 
 
 
@@ -103,16 +101,10 @@ if __name__ == '__main__':
 
     loop = asyncio.get_event_loop()
 
-    p = loop.run_until_complete(initialize_playwright_object_browser())
-    win_chrome_v116_user_agent = [f"--user-agent={util_def.USER_USER_AGENT_WINDOWS_CHROME}"]
-    browser = loop.run_until_complete(p.chromium.launch(headless=True, args=win_chrome_v116_user_agent))
-
     fetch_thread = threading.Thread(target=run_fetch_openphish_feeds)
     fetch_thread.start()
     
-    loop.run_until_complete(process_feeds_from_queue(args.folder_name, browser))
+    loop.run_until_complete(process_feeds_from_queue(args.folder_name,))
 
     fetch_thread.join()  
-    loop.run_until_complete(browser.close())
-    loop.run_until_complete(cleanup_playwright_object_browser(p))
     
