@@ -11,10 +11,10 @@ import crawler_main as crawler
 import util_def
 
 async def initialize_playwright_object_browser():
-    playwright_obj = await async_playwright()
-    win_chrome_v116_user_agent = [f"--user-agent={util_def.USER_USER_AGENT_WINDOWS_CHROME}"]
-    browser = await playwright_obj.chromium.launch(headless=True, args=win_chrome_v116_user_agent)
-    return playwright_obj, browser
+    async with async_playwright() as playwright_obj:
+        win_chrome_v116_user_agent = [f"--user-agent={util_def.USER_USER_AGENT_WINDOWS_CHROME}"]
+        browser = await playwright_obj.chromium.launch(headless=True, args=win_chrome_v116_user_agent)
+        return playwright_obj, browser
 
 
 async def cleanup_playwright_object_browser(playwright_obj, browser):
