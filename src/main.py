@@ -11,7 +11,7 @@ import crawler_main as crawler
 import util_def
 
 
-async def start_crawling(browser, feed, dataset_folder_name):
+async def start_crawling(feed, dataset_folder_name):
     seed_url = feed
 
     async with async_playwright() as p:
@@ -65,12 +65,12 @@ async def fetch_openphish_feeds():
 
 
 
-async def process_feeds_from_queue(folder_name, browser):
+async def process_feeds_from_queue(folder_name):
     while True:
         if not feeds_queue.empty():
             print("Processing feeds")
             feed_to_process = feeds_queue.get()
-            await process_current_feed(feed_to_process, folder_name, browser)
+            await process_current_feed(feed_to_process, folder_name)
             feeds_queue.task_done()
         else:
             print("No feeds")
@@ -79,11 +79,11 @@ async def process_feeds_from_queue(folder_name, browser):
 
 
 
-async def process_current_feed(feed, folder_name, browser):
+async def process_current_feed(feed, folder_name):
     dataset_folder_name = f"{util_def.FOLDER_DATASET_BASE}_{folder_name}"
     analyzed_data_folder_name = f"{util_def.FOLDER_ANALYSIS_BASE}_{folder_name}"
 
-    await start_crawling(browser, feed, dataset_folder_name)
+    await start_crawling(feed, dataset_folder_name)
     # start_analysing(dataset_folder_name, analyzed_data_folder_name)
 
 
