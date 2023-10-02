@@ -20,15 +20,15 @@ async def cleanup_playwright_object_browser(playwright_obj):
         await playwright_obj.stop()
 
 
-async def start_crawling(p, feed, dataset_folder_name):
+async def start_crawling(browser, feed, dataset_folder_name):
     seed_url = feed
 
     print("Crawling in progress...")
     print(f"\n------------------------------\nConfiguration: Referrer set\nUrl: {seed_url}\n-----------------------------")
-    await crawler.crawl(p, seed_url, dataset_folder_name, ref_flag=True)
+    await crawler.crawl(browser, seed_url, dataset_folder_name, ref_flag=True)
 
     print(f"\n------------------------------\nConfiguration: No Referrer set\nUrl: {seed_url}\n-----------------------------")
-    await crawler.crawl(p, seed_url, dataset_folder_name, ref_flag=False)
+    await crawler.crawl(browser, seed_url, dataset_folder_name, ref_flag=False)
     print("\nCrawling done...")
 
 
@@ -67,12 +67,12 @@ async def fetch_openphish_feeds():
 
 
 
-async def process_feeds_from_queue(folder_name, p):
+async def process_feeds_from_queue(folder_name, browser):
     while True:
         if not feeds_queue.empty():
             print("Processing feeds")
             feed_to_process = feeds_queue.get()
-            await process_current_feed(feed_to_process, folder_name, p)
+            await process_current_feed(feed_to_process, folder_name, browser)
             feeds_queue.task_done()
         else:
             print("No feeds")
@@ -81,11 +81,11 @@ async def process_feeds_from_queue(folder_name, p):
 
 
 
-async def process_current_feed(feed, folder_name, p):
+async def process_current_feed(feed, folder_name, browser):
     dataset_folder_name = f"{util_def.FOLDER_DATASET_BASE}_{folder_name}"
     analyzed_data_folder_name = f"{util_def.FOLDER_ANALYSIS_BASE}_{folder_name}"
 
-    await start_crawling(p, feed, dataset_folder_name)
+    await start_crawling(browser, feed, dataset_folder_name)
     # start_analysing(dataset_folder_name, analyzed_data_folder_name)
 
 
@@ -104,12 +104,15 @@ if __name__ == '__main__':
     loop = asyncio.get_event_loop()
 
     p = loop.run_until_complete(initialize_playwright_object_browser())
+    win_chrome_v116_user_agent = [f"--user-agent={util_def.USER_USER_AGENT_WINDOWS_CHROME}"]
+    browser = loop.run_until_complete(p.chromium.launch(headless=True, args=win_chrome_v116_user_agent))
 
     fetch_thread = threading.Thread(target=run_fetch_openphish_feeds)
     fetch_thread.start()
     
-    loop.run_until_complete(process_feeds_from_queue(args.folder_name, p))
+    loop.run_until_complete(process_feeds_from_queue(args.folder_name, browser))
 
     fetch_thread.join()  
+    loop.run_until_complete(browser.close())
     loop.run_until_complete(cleanup_playwright_object_browser(p))
     

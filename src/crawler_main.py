@@ -100,15 +100,13 @@ async def get_client_side_script(page, folder_path):
 
 
 # dataset_folder_name: refers to the name of the (base)folder to store the crawled data
-async def crawl(p, url, dataset_folder_name, ref_flag):
+async def crawl(browser, url, dataset_folder_name, ref_flag):
     url_hash = hashlib.sha256(url.encode()).hexdigest()
     # Setup folders and paths required for data storage 
     base_folder_path = util.generate_base_folder_for_crawled_dataset(ref_flag, dataset_folder_name)
     folder_path = util.generate_folder_for_individual_url_dataset(url_hash, base_folder_path)
     har_network_path = os.path.join(folder_path, util_def.FOLDER_NETWORK_FRAGMENTS ,util_def.FILE_NETWORK_HAR)
 
-    win_chrome_v116_user_agent = [f"--user-agent={util_def.USER_USER_AGENT_WINDOWS_CHROME}"]
-    browser = await p.chromium.launch(headless=True, args=win_chrome_v116_user_agent)
     context = await browser.new_context(record_har_path=har_network_path, record_har_content="attach")
     page = await context.new_page()
     await set_page_referrer(page, ref_flag, url)
