@@ -76,7 +76,7 @@ async def process_feeds_from_queue(folder_name, browser):
         if not feeds_queue.empty():
             print("Processing feeds")
             feed_to_process = feeds_queue.get()
-            await process_current_feed(feed_to_process, folder_name)
+            await process_current_feed(feed_to_process, folder_name, browser)
             feeds_queue.task_done()
         else:
             print("No feeds")
