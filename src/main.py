@@ -26,8 +26,10 @@ async def start_crawling(feed, dataset_folder_name):
         await crawler.crawl(browser, seed_url, dataset_folder_name, ref_flag=False)
         print("\nCrawling done...")
 
-        await browser.close()
-        p.stop()
+        if browser:
+            await browser.close()
+        if p:
+            await p.stop()
 
 
 
