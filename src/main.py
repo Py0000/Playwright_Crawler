@@ -44,7 +44,7 @@ def start_analysing(dataset_folder_name, analyzed_data_folder_name):
 OPENPHISH_FEEDS_URL = "https://opfeeds.s3-us-west-2.amazonaws.com/OPBL/phishing_blocklist.txt"
 feeds_queue = queue.Queue()
 
-async def fetch_openphish_feeds():
+async def fetch_openphish_feeds(feeds_filename):
     print("Fetching feeds")
     timeout = ClientTimeout(total=300)
     while True:
@@ -56,7 +56,7 @@ async def fetch_openphish_feeds():
                         urls = feeds.splitlines()
                         for url in urls:  
                             feeds_queue.put(url)
-                        feeds_path = "feeds/urls/openphish_feeds.txt"
+                        feeds_path = f"feeds/urls/openphish_feeds_{feeds_filename}.txt"
                         with open(feeds_path, 'a') as file:
                             file.write(feeds)
                     await asyncio.sleep(300)  # waits for 5 minutes before the next fetch
@@ -89,10 +89,10 @@ async def process_current_feed(feed, folder_name):
     # start_analysing(dataset_folder_name, analyzed_data_folder_name)
 
 
-def run_fetch_openphish_feeds():
+def run_fetch_openphish_feeds(feeds_filename):
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
-    loop.run_until_complete(fetch_openphish_feeds())
+    loop.run_until_complete(fetch_openphish_feeds(feeds_filename))
 
 
 
@@ -103,7 +103,7 @@ if __name__ == '__main__':
 
     loop = asyncio.get_event_loop()
 
-    fetch_thread = threading.Thread(target=run_fetch_openphish_feeds)
+    fetch_thread = threading.Thread(target=run_fetch_openphish_feeds, args=(args.folder_name,))
     fetch_thread.start()
     
     loop.run_until_complete(process_feeds_from_queue(args.folder_name,))
