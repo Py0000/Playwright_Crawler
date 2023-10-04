@@ -9,7 +9,7 @@ import threading
 
 import data_reallocator
 
-def upload_single_file_to_gdrive_with_exponential_backoff(file, file_path, drive_service, drive_folder_id, max_retries=3):
+def upload_single_file_to_gdrive_with_exponential_backoff(file, file_path, drive_service, drive_folder_id, max_retries=5):
     retry = 0
     while retry < max_retries:
         try:
@@ -25,7 +25,7 @@ def upload_single_file_to_gdrive_with_exponential_backoff(file, file_path, drive
 
             # Execute the request
             file = request.execute()
-            print(f"Uploaded {file} ({file['id']})")
+            print(f"Uploaded {file}\n")
 
             # Remove the file after successful upload
             os.remove(file_path)
@@ -57,8 +57,15 @@ def save_to_gdrive_periodically():
     while True:
         time.sleep(7200)
         try:
-            upload_to_google_drive(ref=True)
-            upload_to_google_drive(ref=False)
+            ref_thread = threading.Thread(target=upload_to_google_drive, args=(True,))
+            no_ref_thread = threading.Thread(target=upload_to_google_drive, args=(False,))
+
+            ref_thread.start()
+            no_ref_thread.start()
+
+            # Waiting for both threads to finish
+            ref_thread.join()
+            no_ref_thread.join()
         except Exception as e:
             print("Error uploading to google drive: ", e)
 

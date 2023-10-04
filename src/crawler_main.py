@@ -35,7 +35,7 @@ async def set_page_referrer(page, ref_flag, to_visit_url):
 
 # Obtains the server-side data for the webpage
 # Data retrieves includes: Page Screenshot, Page HTML Script
-async def get_server_side_data(p, ref_flag, folder_path, to_visit_url):
+async def get_server_side_data(browser, ref_flag, folder_path, to_visit_url):
     # Intercept network requests
     async def block_external_resources_request(route, request):
         if request.resource_type != "document":
@@ -44,8 +44,6 @@ async def get_server_side_data(p, ref_flag, folder_path, to_visit_url):
             await route.continue_()
     
     try:
-        win_chrome_v116_user_agent = [f"--user-agent={util_def.USER_USER_AGENT_WINDOWS_CHROME}"]
-        browser = await p.chromium.launch(headless=True, args=win_chrome_v116_user_agent)
         context = await browser.new_context(java_script_enabled=False)
         page = await context.new_page()
         await set_page_referrer(page, ref_flag, to_visit_url)
@@ -75,7 +73,6 @@ async def get_server_side_data(p, ref_flag, folder_path, to_visit_url):
     finally:
         await page.close()
         await context.close()
-        await browser.close()
         return server_html_tag, status, server_move_status, server_screenshot_status
 
 
@@ -114,7 +111,7 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
     main_http_status = "Not Visited"
     try:
         # Obtains the server-side view of the HTML Script and page screenshot 
-        server_html_tag, server_html_status, server_move_status, server_screenshot_status = await get_server_side_data(p, ref_flag, folder_path, url)
+        server_html_tag, server_html_status, server_move_status, server_screenshot_status = await get_server_side_data(browser, ref_flag, folder_path, url)
 
         # List. To hold network resquest made when visiting the page.
         captured_events = []
