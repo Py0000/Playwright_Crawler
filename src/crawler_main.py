@@ -1,3 +1,4 @@
+from datetime import datetime
 import hashlib
 import os 
 from playwright.async_api import async_playwright
@@ -119,6 +120,8 @@ def obtain_dns_records_info(visited_url, folder_path):
 # dataset_folder_name: refers to the name of the (base)folder to store the crawled data
 async def crawl(browser, url, dataset_folder_name, ref_flag):
     url_hash = hashlib.sha256(url.encode()).hexdigest()
+    time_crawled = datetime.now()
+
     # Setup folders and paths required for data storage 
     base_folder_path = util.generate_base_folder_for_crawled_dataset(ref_flag, dataset_folder_name)
     folder_path = util.generate_folder_for_individual_url_dataset(url_hash, base_folder_path)
@@ -209,6 +212,7 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
             "Has Url changed?": visited_url != url,
             "Status": main_http_status,
             "Provided Url Hash (in SHA-256)": url_hash,
+            "Time crawled": time_crawled.strftime("%d/%m/%Y %H:%M:%S"),
             "Certificate Extraction": cert_extraction_status,
             "DNS Records Extraction": dns_extraction_status,
             "Mouse moved when obtaining server-side data?": server_move_status,
