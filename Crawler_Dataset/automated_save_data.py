@@ -54,8 +54,8 @@ def upload_to_google_drive(ref):
 
 
 def save_to_gdrive_periodically():
+    time.sleep(600)
     while True:
-        time.sleep(7200)
         try:
             ref_thread = threading.Thread(target=upload_to_google_drive, args=(True,))
             no_ref_thread = threading.Thread(target=upload_to_google_drive, args=(False,))
@@ -68,6 +68,8 @@ def save_to_gdrive_periodically():
             no_ref_thread.join()
         except Exception as e:
             print("Error uploading to google drive: ", e)
+        finally:
+            time.sleep(7200)
 
 
 def shift_data_folder_periodically(folder_name, phishing_or_benign_tag):

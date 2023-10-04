@@ -96,6 +96,26 @@ async def get_client_side_script(page, folder_path):
         return status
 
 
+def obtain_certificate_info(visited_url, folder_path):
+    try:
+        # Obtains the TLS/SSL certificate info for the page
+        cert_extraction_status = certificate_extractor.extract_certificate_info(visited_url, folder_path)
+    except:
+        cert_extraction_status = "Error retrieving certificate info"
+    finally:
+        return cert_extraction_status
+        
+
+def obtain_dns_records_info(visited_url, folder_path):
+    try:
+        # Obtains the DNS records info for the page
+        dns_extraction_status = dns_extractor.extract_dns_records(visited_url, folder_path)
+    except:
+        dns_extraction_status = "Error retrieving dns info"
+    finally:
+        return dns_extraction_status        
+
+
 # dataset_folder_name: refers to the name of the (base)folder to store the crawled data
 async def crawl(browser, url, dataset_folder_name, ref_flag):
     url_hash = hashlib.sha256(url.encode()).hexdigest()
@@ -154,12 +174,11 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
         client_html_script_status = "Success"
 
         detailed_network_status = crawler_utilities.save_more_detailed_network_logs(folder_path, captured_events)
+        
+        cert_extraction_status = obtain_certificate_info(visited_url, folder_path)
+        dns_extraction_status = obtain_dns_records_info(visited_url, folder_path)
 
-        # Obtains the TLS/SSL certificate info for the page
-        cert_extraction_status = certificate_extractor.extract_certificate_info(visited_url, folder_path)
-
-        # Obtains the DNS records info for the page
-        dns_extraction_status = dns_extractor.extract_dns_records(visited_url, folder_path)
+        
 
     except Exception as e:
         ERROR_MSG = "Error visiting page"
@@ -167,11 +186,11 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
         client_html_script_status = "Failed"
 
         visited_url = url
-        cert_extraction_status = ERROR_MSG
-        dns_extraction_status = ERROR_MSG
         server_move_status = ERROR_MSG
         server_html_status = ERROR_MSG
         server_screenshot_status = ERROR_MSG
+        dns_extraction_status = ERROR_MSG
+        cert_extraction_status = ERROR_MSG
         client_move_status = ERROR_MSG
         client_html_script_status = ERROR_MSG
         client_screenshot_status = ERROR_MSG
