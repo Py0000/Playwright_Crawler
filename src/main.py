@@ -13,21 +13,23 @@ import util_def
 
 async def start_crawling(feed, dataset_folder_name):
     seed_url = feed
+    try:
+        async with async_playwright() as p:
+            win_chrome_v116_user_agent = [f"--user-agent={util_def.USER_USER_AGENT_WINDOWS_CHROME}"]
+            browser = await p.chromium.launch(headless=True, args=win_chrome_v116_user_agent)
 
-    async with async_playwright() as p:
-        win_chrome_v116_user_agent = [f"--user-agent={util_def.USER_USER_AGENT_WINDOWS_CHROME}"]
-        browser = await p.chromium.launch(headless=True, args=win_chrome_v116_user_agent)
+            print("Crawling in progress...")
+            print(f"\n------------------------------\nConfiguration: Referrer set\nUrl: {seed_url}\n-----------------------------")
+            await crawler.crawl(browser, seed_url, dataset_folder_name, ref_flag=True)
 
-        print("Crawling in progress...")
-        print(f"\n------------------------------\nConfiguration: Referrer set\nUrl: {seed_url}\n-----------------------------")
-        await crawler.crawl(browser, seed_url, dataset_folder_name, ref_flag=True)
+            print(f"\n------------------------------\nConfiguration: No Referrer set\nUrl: {seed_url}\n-----------------------------")
+            await crawler.crawl(browser, seed_url, dataset_folder_name, ref_flag=False)
+            print("\nCrawling done...")
 
-        print(f"\n------------------------------\nConfiguration: No Referrer set\nUrl: {seed_url}\n-----------------------------")
-        await crawler.crawl(browser, seed_url, dataset_folder_name, ref_flag=False)
-        print("\nCrawling done...")
-
-        if browser:
-            await browser.close()
+            if browser:
+                await browser.close()
+    except Exception as e:
+        print("Error with Playwright: ", e)
         
 
 
