@@ -11,6 +11,8 @@ import crawler_utilities
 import util
 import util_def 
 
+ERROR_MSG = "Error visiting page"
+
 # Waits for page to complete loading 
 async def wait_for_page_to_load(page):
     await crawler_actions.move_mouse_smoothly(page)
@@ -184,7 +186,6 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
         
 
     except Exception as e:
-        ERROR_MSG = "Error visiting page"
         crawler_utilities.save_html_script(folder_path, util_def.FILE_HTML_SCRIPT_AFT, f"Error occurred for url: {url}\n{e}")
         client_html_script_status = "Failed"
 
