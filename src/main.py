@@ -28,8 +28,7 @@ async def start_crawling(feed, dataset_folder_name):
 
         if browser:
             await browser.close()
-        if p:
-            await p.stop()
+        
 
 
 
