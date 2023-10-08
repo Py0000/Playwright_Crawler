@@ -141,33 +141,31 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
 
         # Global variable to track the last request time
         last_request_data = {"timestamp": None}
-        process_network_events = True
+        network_event = asyncio.Event()
 
         # List. To hold network resquest made when visiting the page.
         captured_events = []
         
         # Function to capture and store all network requests made.
         async def capture_request(payload):
-            if not process_network_events:
-                return
             captured_event = payload
             captured_events.append(captured_event)
             last_request_data["timestamp"] = datetime.now()
+            network_event.set()
         
-        async def check_for_timeout(client):
-            await asyncio.sleep(5)
-            
-            # If there hasn't been a request for TIMEOUT_DURATION seconds
-            last_request_time = last_request_data["timestamp"]
-            if last_request_time is None or (datetime.now() - last_request_time).seconds >= 5:
-                process_network_events = False
+        async def check_for_timeout():
+            try:
+                await asyncio.wait_for(network_event.wait(), timeout=5)
+            except asyncio.TimeoutError:
                 print("No network requests for 5s, proceeding...")
+            finally:
+                network_event.clear()  # Reset the event for potential future use
         
 
         client = await page.context.new_cdp_session(page) # Utilize CDP to capture network requests.
         await client.send("Network.enable")
-        asyncio.create_task(check_for_timeout(client))
         client.on("Network.requestWillBeSent", capture_request)
+        timeout_task = asyncio.create_task(check_for_timeout())
 
         response = await page.goto(url, timeout=10000)
         await wait_for_page_to_load(page)
@@ -225,6 +223,11 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
             await page.close()
         if context:
             await context.close()
+        if not timeout_task.done():
+            try:    
+                await timeout_task
+            except:
+                pass
 
         log_data = {
             "Url visited": visited_url,
