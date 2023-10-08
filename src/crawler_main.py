@@ -3,6 +3,7 @@ import hashlib
 import os 
 from playwright.async_api import async_playwright
 from bs4 import BeautifulSoup
+import asyncio
 
 import crawler_actions
 import crawler_certificate_extractor as certificate_extractor
@@ -138,16 +139,31 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
         # Obtains the server-side view of the HTML Script and page screenshot 
         server_html_tag, server_html_status, server_move_status, server_screenshot_status = await get_server_side_data(browser, ref_flag, folder_path, url)
 
+        # Global variable to track the last request time
+        last_request_data = {"timestamp": None}
+
         # List. To hold network resquest made when visiting the page.
         captured_events = []
-        client = await page.context.new_cdp_session(page) # Utilize CDP to capture network requests.
-        await client.send("Network.enable")
         
         # Function to capture and store all network requests made.
         async def capture_request(payload):
             captured_event = payload
             captured_events.append(captured_event)
-
+            last_request_data["timestamp"] = datetime.now()
+        
+        async def check_for_timeout(client):
+            await asyncio.sleep(5)
+            
+            # If there hasn't been a request for TIMEOUT_DURATION seconds
+            last_request_time = last_request_data["timestamp"]
+            if last_request_time is None or (datetime.now() - last_request_time).seconds >= 5:
+                client.off("Network.requestWillBeSent", capture_request)
+                print("No network requests for 5s, proceeding...")
+        
+        
+        client = await page.context.new_cdp_session(page) # Utilize CDP to capture network requests.
+        await client.send("Network.enable")
+        asyncio.create_task(check_for_timeout(client))
         client.on("Network.requestWillBeSent", capture_request)
 
         response = await page.goto(url, timeout=10000)
