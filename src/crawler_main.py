@@ -141,12 +141,15 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
 
         # Global variable to track the last request time
         last_request_data = {"timestamp": None}
+        process_network_events = True
 
         # List. To hold network resquest made when visiting the page.
         captured_events = []
         
         # Function to capture and store all network requests made.
         async def capture_request(payload):
+            if not process_network_events:
+                return
             captured_event = payload
             captured_events.append(captured_event)
             last_request_data["timestamp"] = datetime.now()
@@ -157,10 +160,10 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
             # If there hasn't been a request for TIMEOUT_DURATION seconds
             last_request_time = last_request_data["timestamp"]
             if last_request_time is None or (datetime.now() - last_request_time).seconds >= 5:
-                client.off("Network.requestWillBeSent", capture_request)
+                process_network_events = False
                 print("No network requests for 5s, proceeding...")
         
-        
+
         client = await page.context.new_cdp_session(page) # Utilize CDP to capture network requests.
         await client.send("Network.enable")
         asyncio.create_task(check_for_timeout(client))
