@@ -152,7 +152,7 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
 
         def on_response(response):
             nonlocal redirect_count
-            if 300 <= response.status() < 400:
+            if 300 <= response.status < 400:
                 redirect_count += 1
         
         # Function to capture and store all network requests made.
