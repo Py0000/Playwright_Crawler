@@ -135,6 +135,7 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
     await set_page_referrer(page, ref_flag, url)
     
     main_http_status = "Not Visited"
+    
     try:
         # Obtains the server-side view of the HTML Script and page screenshot 
         server_html_tag, server_html_status, server_move_status, server_screenshot_status = await get_server_side_data(browser, ref_flag, folder_path, url)
@@ -143,8 +144,16 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
         last_request_data = {"timestamp": None}
         network_event = asyncio.Event()
 
-        # List. To hold network resquest made when visiting the page.
+        # Listt o hold network resquest made when visiting the page.
         captured_events = []
+
+        # To capture number of redirection of url that occurred
+        redirect_count = 0 
+
+        def on_response(response):
+            nonlocal redirect_count
+            if 300 <= response.status() < 400:
+                redirect_count += 1
         
         # Function to capture and store all network requests made.
         async def capture_request(payload):
@@ -167,9 +176,11 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
         client.on("Network.requestWillBeSent", capture_request)
         timeout_task = asyncio.create_task(check_for_timeout())
 
+        page.on("response", on_response)
         response = await page.goto(url, timeout=10000)
         await wait_for_page_to_load(page)
         visited_url = page.url # See if url changes after visiting the page.
+        page.off("response", on_response)
         if response:
             main_http_status = response.status
 
@@ -217,6 +228,7 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
         client_screenshot_status = ERROR_MSG
         client_client_side_script_status = ERROR_MSG
         detailed_network_status = ERROR_MSG
+        redirect_count = ERROR_MSG
     
     finally:
         if page:
@@ -233,6 +245,7 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
             "Url visited": visited_url,
             "Provided Url": url,
             "Has Url changed?": visited_url != url,
+            "Number of Redirects": redirect_count,
             "Status": main_http_status,
             "Provided Url Hash (in SHA-256)": url_hash,
             "Time crawled": time_crawled.strftime("%d/%m/%Y %H:%M:%S"),
