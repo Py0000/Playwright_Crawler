@@ -176,11 +176,10 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
         client.on("Network.requestWillBeSent", capture_request)
         timeout_task = asyncio.create_task(check_for_timeout())
 
-        redirect_listener = page.add_listener("response", on_response)
+        page.on("response", on_response)
         response = await page.goto(url, timeout=10000)
         await wait_for_page_to_load(page)
         visited_url = page.url # See if url changes after visiting the page.
-        redirect_listener.remove_listener()
         if response:
             main_http_status = response.status
 
