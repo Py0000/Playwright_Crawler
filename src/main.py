@@ -104,9 +104,9 @@ if __name__ == '__main__':
 
     loop = asyncio.get_event_loop()
     
-    loop.run_until_complete(
-        fetch_openphish_feeds(args.folder_name), 
+    loop.run_until_complete(asyncio.gather(
+        fetch_openphish_feeds(args.folder_name),
         process_feeds_from_queue(args.folder_name)
-    )
+    ))
 
     
