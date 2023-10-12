@@ -103,11 +103,10 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     loop = asyncio.get_event_loop()
-
-    fetch_thread = threading.Thread(target=run_fetch_openphish_feeds, args=(args.folder_name,))
-    fetch_thread.start()
     
-    loop.run_until_complete(process_feeds_from_queue(args.folder_name,))
+    loop.run_until_complete(
+        fetch_openphish_feeds(args.folder_name), 
+        process_feeds_from_queue(args.folder_name)
+    )
 
-    fetch_thread.join()  
     
