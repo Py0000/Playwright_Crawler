@@ -33,7 +33,7 @@ def move_folder(src_folder, dest_folder):
                 try:
                     os.remove(semaphore_lock_file)
                     shutil.move(src, dest_folder)
-                    network_data_processor.process_network_data(dest_folder)
+                    network_data_processor.process_network_data(os.path.join(dest_folder, folder))
                     print(f"Done moving folder: {folder}")
 
                 except Exception as e:
