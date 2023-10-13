@@ -64,7 +64,7 @@ async def fetch_openphish_feeds(feeds_filename):
                     
             except Exception as e:
                 print("Error fetching feeds from url: ", e)
-                await asyncio.sleep(300) # waits for 5 minutes before the next fetch
+                await asyncio.sleep(290) # waits for 5 minutes before the next fetch
 
 
 
@@ -104,9 +104,11 @@ if __name__ == '__main__':
 
     loop = asyncio.get_event_loop()
     
-    loop.run_until_complete(asyncio.gather(
-        fetch_openphish_feeds(args.folder_name),
-        process_feeds_from_queue(args.folder_name)
-    ))
+    fetch_thread = threading.Thread(target=run_fetch_openphish_feeds, args=(args.folder_name,))
+    fetch_thread.start()
+    
+    loop.run_until_complete(process_feeds_from_queue(args.folder_name,))
+
+    fetch_thread.join()  
 
     
