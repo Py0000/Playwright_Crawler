@@ -16,10 +16,13 @@ OPENPHISH_FEEDS_URL = "https://opfeeds.s3-us-west-2.amazonaws.com/OPBL/phishing_
 async def fetch_openphish_feeds(feeds_filename):
     print("Fetching feeds")
     while True:
+        print("Establish connection with OpenPhish")
         async with aiohttp.ClientSession() as session:
             try:
                 async with session.get(OPENPHISH_FEEDS_URL) as response:
+                    print("Connection established with OpenPhish")
                     if response.status == 200:
+                        print("Feeds obtain. Parsing...")
                         feeds = await response.text()
                         urls = feeds.splitlines()
                         for url in urls:  
@@ -34,6 +37,7 @@ async def fetch_openphish_feeds(feeds_filename):
                 print("Error fetching feeds from url: ", e)
 
             finally:
+                print("Awaitng for 5 mins for next set of feeds...")
                 await asyncio.sleep(300) # waits for 1 minute before the next fetch
 
 
@@ -85,3 +89,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     asyncio.run(main(args.folder_name))
+    print("Program ended!!!")
