@@ -192,12 +192,22 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
         await crawler_utilities.extract_links(folder_path, soup, page, visited_url)
         client_client_side_script_status = await get_client_side_script(page, folder_path)
 
-        user_agent = await page.evaluate('''() => window.navigator.userAgent''')
-        referrer = await page.evaluate('''() => document.referrer''')
+        
+        
         print("Actual url: ", url)
         print("Url visited: ", visited_url)
-        print("User-Agent:", user_agent)
-        print(f"Referrer: {referrer}")
+        try:
+            user_agent = await page.evaluate('''() => window.navigator.userAgent''', timeout=1000)
+            print("User-Agent:", user_agent)
+        except Exception as e:
+            print("User-Agent: [Error] ", e)
+        
+        try:
+            referrer = await page.evaluate('''() => document.referrer''', timeout=1000)
+            print(f"Referrer: {referrer}")
+        except Exception as e:
+            print("Referrer: [Error] ", e)
+        
 
         content = soup.prettify()
         if content is not None:
