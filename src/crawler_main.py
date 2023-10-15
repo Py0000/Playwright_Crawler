@@ -164,12 +164,15 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
         captured_events = []
 
         # To capture number of redirection of url that occurred
-        redirect_count = 0 
+        redirect_info = {
+            'count': 0,
+            'error': None
+        }
 
         def on_response(response):
             nonlocal redirect_count
             if 300 <= response.status < 400:
-                redirect_count += 1
+                redirect_info['count'] += 1
         
         # Function to capture and store all network requests made.
         async def capture_request(payload):
@@ -267,7 +270,7 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
         client_screenshot_status = ERROR_MSG
         client_client_side_script_status = ERROR_MSG
         detailed_network_status = ERROR_MSG
-        redirect_count = ERROR_MSG
+        redirect_info['error'] = ERROR_MSG
     
     finally:
         if page:
@@ -279,7 +282,8 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
                 await timeout_task
             except:
                 pass
-
+        
+        redirect_count = redirect_info['count'] if redirect_info['error'] == None else redirect_info['error']
         log_data = {
             "Url visited": visited_url,
             "Provided Url": url,
