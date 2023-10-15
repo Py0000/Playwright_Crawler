@@ -229,18 +229,20 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
         
         print("Actual url: ", url)
         print("Url visited: ", visited_url)
-        try:
-            user_agent = await page.evaluate('''() => window.navigator.userAgent''', timeout=1000)
-            print("User-Agent:", user_agent)
-        except Exception as e:
-            print("User-Agent: [Error] ", e)
-        
-        try:
-            referrer = await page.evaluate('''() => document.referrer''', timeout=1000)
-            print(f"Referrer: {referrer}")
-        except Exception as e:
-            print("Referrer: [Error] ", e)
-        
+        user_agent = await timeout_wrapper(
+            page.evaluate, 
+            '''() => window.navigator.userAgent''', 
+            timeout=10, 
+            default_values="Timeout"
+        )
+        referrer = await timeout_wrapper(
+            page.evaluate, 
+            '''() => document.referrer''', 
+            timeout=10, 
+            default_values="Timeout"
+        )
+        print("User-Agent:", user_agent)
+        print("Referrer: ", referrer)
 
         content = soup.prettify()
         if content is not None:
