@@ -14,6 +14,17 @@ import util_def
 
 ERROR_MSG = "Error visiting page"
 
+# coroutine: special type of function that can pause its execution and yield control back to the event loop, allowing other tasks to run concurrently
+# args & kwargs: variable number of arguments of a function
+async def timeout_wrapper(coroutine, *args, default_values, timeout=10, **kwargs):
+    try:
+        return await asyncio.wait_for(coroutine(*args, **kwargs), timeout)
+    except asyncio.TimeoutError:
+        print(f"Timeout occurred while executing {coroutine.__name__}.")
+        return default_values
+    
+
+
 # Waits for page to complete loading 
 async def wait_for_page_to_load(page):
     await crawler_actions.move_mouse_smoothly(page)
@@ -138,7 +149,12 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
     
     try:
         # Obtains the server-side view of the HTML Script and page screenshot 
-        server_html_tag, server_html_status, server_move_status, server_screenshot_status = await get_server_side_data(browser, ref_flag, folder_path, url)
+        server_html_tag, server_html_status, server_move_status, server_screenshot_status = await timeout_wrapper(
+            get_server_side_data,
+            browser, ref_flag, folder_path, url,
+            timeout=10,
+            default_values=("Timeout", "Timeout", "Timeout", "Timeout")
+        )
 
         # Global variable to track the last request time
         last_request_data = {"timestamp": None}
@@ -183,16 +199,30 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
         if response:
             main_http_status = response.status
 
-        client_move_status = await crawler_actions.execute_user_action(page) # Mimics user movements when visiting the page.
-        client_screenshot_status = await crawler_utilities.save_screenshot(page, folder_path, util_def.FILE_SCREENSHOT_AFT)
+        client_move_status = await timeout_wrapper(
+            crawler_actions.execute_user_action, 
+            page, 
+            timeout=1,  
+            default_values="Timeout"
+        )
+        client_screenshot_status = await timeout_wrapper(
+            crawler_utilities.save_screenshot, 
+            page, folder_path, util_def.FILE_SCREENSHOT_AFT, 
+            timeout=5,  
+            default_values="Timeout"
+        )
         html_content = await page.content()
         soup = BeautifulSoup(html_content, "lxml")
         client_html_tag = crawler_utilities.get_unique_html_tags(soup)
         crawler_utilities.save_unique_html_tags(folder_path, server_html_tag, client_html_tag)
         await crawler_utilities.extract_links(folder_path, soup, page, visited_url)
-        client_client_side_script_status = await get_client_side_script(page, folder_path)
+        client_client_side_script_status = await timeout_wrapper(
+            get_client_side_script, 
+            page, folder_path, 
+            timeout=10, 
+            default_values="Timeout"
+        )
 
-        
         
         print("Actual url: ", url)
         print("Url visited: ", visited_url)
