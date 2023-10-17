@@ -2,6 +2,7 @@ import asyncio
 import argparse
 import aiohttp
 import hashlib
+import os
 
 from playwright.async_api import async_playwright
 
@@ -65,7 +66,7 @@ async def start_crawling(feed, dataset_folder_name):
                 await browser.close()
             
             # Generate a semaphore file to signal that it is ready to be sent to databse
-            util.generate_semaphore_lock_file(url_hash)
+            util.generate_semaphore_lock_file(os.path.join(dataset_folder_name, url_hash))
     except Exception as e:
         print("Error with Playwright: ", e)
 
