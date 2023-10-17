@@ -132,13 +132,11 @@ def obtain_dns_records_info(visited_url, folder_path):
 
 
 # dataset_folder_name: refers to the name of the (base)folder to store the crawled data
-async def crawl(browser, url, dataset_folder_name, ref_flag):
-    url_hash = hashlib.sha256(url.encode()).hexdigest()
+async def crawl(browser, url, url_hash, folder_path, ref_flag):
     time_crawled = datetime.now()
 
     # Setup folders and paths required for data storage 
-    base_folder_path = util.generate_base_folder_for_crawled_dataset(ref_flag, dataset_folder_name)
-    folder_path = util.generate_folder_for_individual_url_dataset(url_hash, base_folder_path)
+    util.generate_network_folders(folder_path)
     har_network_path = os.path.join(folder_path, util_def.FOLDER_NETWORK_FRAGMENTS ,util_def.FILE_NETWORK_HAR)
 
     context = await browser.new_context(record_har_path=har_network_path, record_har_content="attach")
@@ -308,6 +306,3 @@ async def crawl(browser, url, dataset_folder_name, ref_flag):
 
         output_path = os.path.join(folder_path, util_def.FILE_CRAWL_LOG_INFO)
         util.save_data_to_json_format(output_path, log_data)
-
-        # Generate a semaphore file to signal that it is ready to be sent to databse
-        util.generate_semaphore_lock_file(folder_path)

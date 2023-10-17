@@ -45,14 +45,16 @@ def move_file(response_data_path, request_data_path, response_file_to_entry_map,
         shutil.move(ind_data_file_path, os.path.join(request_data_path, ind_data_filename))
 
 
-def process_network_data(url_dataset_folder_path):
+def process_network_data_by_ref(url_dataset_folder_path, ref_flag):
     print("\nProcessing network data")
+    ref_folder = "self_ref" if ref_flag else "no_ref"
+    ref_folder_path = os.path.join(url_dataset_folder_path, ref_folder)
     # Get the path of the folder that contains all the network data initially. This folder is to be removed after processing the network data.
-    network_data_path = os.path.join(url_dataset_folder_path, FOLDER_NETWORK_FRAGMENTS)
+    network_data_path = os.path.join(ref_folder_path, FOLDER_NETWORK_FRAGMENTS)
     
     # Generate the paths to restore the request data and response data respectively after processing
-    response_data_path = os.path.join(url_dataset_folder_path, FOLDER_NETWORK_RESPONSE_FRAGMENTS)
-    request_data_path = os.path.join(url_dataset_folder_path, FOLDER_NETWORK_REQUEST_FRAGMENTS)
+    response_data_path = os.path.join(ref_folder_path, FOLDER_NETWORK_RESPONSE_FRAGMENTS)
+    request_data_path = os.path.join(ref_folder_path, FOLDER_NETWORK_REQUEST_FRAGMENTS)
 
     # Checks that the initial folder (i.e. initial_network_data) exists
     if os.path.exists(network_data_path):
@@ -72,9 +74,12 @@ def process_network_data(url_dataset_folder_path):
             move_file(response_data_path, request_data_path, response_file_to_entry_map, ind_data_file_path, ind_data_filename)
             
 
-        cleanup_initial_data_folder(network_data_path, har_file_path, url_dataset_folder_path)
+        cleanup_initial_data_folder(network_data_path, har_file_path, ref_folder_path)
 
     print("Done processing network data")
 
 
 
+def process_network_data(url_dataset_folder_path):
+    process_network_data_by_ref(url_dataset_folder_path, ref_flag=True)
+    process_network_data_by_ref(url_dataset_folder_path, ref_flag=False)

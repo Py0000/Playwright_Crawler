@@ -1,14 +1,9 @@
-from google.oauth2.service_account import Credentials
-from googleapiclient.discovery import build
-from googleapiclient.http import MediaFileUpload
-import os
-
 import time
 import argparse
-import threading
 
 import data_reallocator
 
+"""
 def upload_single_file_to_gdrive_with_exponential_backoff(file, file_path, drive_service, drive_folder_id, max_retries=5):
     retry = 0
     while retry < max_retries:
@@ -50,7 +45,7 @@ def upload_to_google_drive(ref):
         if file.endswith('.zip'):
             file_path = os.path.join(folder_path, file)
             upload_single_file_to_gdrive_with_exponential_backoff(file, file_path, drive_service, drive_folder_id)
-            
+           
 
 
 def save_to_gdrive_periodically():
@@ -70,7 +65,7 @@ def save_to_gdrive_periodically():
             print("Error uploading to google drive: ", e)
         finally:
             time.sleep(7200)
-
+"""
 
 def shift_data_folder_periodically(folder_name, phishing_or_benign_tag):
     while True:
@@ -86,12 +81,10 @@ if __name__ == '__main__':
     parser.add_argument("phishing_or_benign_tag", help="Name of the folder to store the dataset")
     args = parser.parse_args()
 
+    """
     # Periodically commit and push
     data_folder_shifter_thread = threading.Thread(target=shift_data_folder_periodically, args=(args.folder_name, args.phishing_or_benign_tag))
     push_thread = threading.Thread(target=save_to_gdrive_periodically)
+    """
 
-    data_folder_shifter_thread.start()
-    push_thread.start()
-
-    data_folder_shifter_thread.join()
-    push_thread.join()
+    shift_data_folder_periodically(args.folder_name, args.phishing_or_benign_tag)

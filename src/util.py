@@ -26,9 +26,9 @@ def get_crawled_dataset_base_folder_name(ref_flag):
 
 
 # Generates the base folder (i.e dataset/self_ref or dataset/no_ref) which is used to store the crawled data
-def generate_base_folder_for_crawled_dataset(ref_flag, dataset_folder_name):
-    base_folder_name = get_crawled_dataset_base_folder_name(ref_flag)
-    base_folder_path = os.path.join(dataset_folder_name, base_folder_name)
+def generate_base_folder_for_crawled_dataset(url_hash_folder_name, dataset_folder_name, ref_flag):
+    ref_folder_name = get_crawled_dataset_base_folder_name(ref_flag)
+    base_folder_path = os.path.join(dataset_folder_name, url_hash_folder_name, ref_folder_name)
 
     if not os.path.exists(base_folder_path):
         os.makedirs(base_folder_path)
@@ -37,19 +37,13 @@ def generate_base_folder_for_crawled_dataset(ref_flag, dataset_folder_name):
 
 
 # Generates the individual folder for each url (i.e. dataset/self_ref/hash, etc)
-def generate_folder_for_individual_url_dataset(url_index, base_folder_path):
-    individual_folder_path = os.path.join(base_folder_path, url_index)
-    
-    if not os.path.exists(individual_folder_path):
-        os.makedirs(individual_folder_path)
-    
+def generate_network_folders(base_folder_path):
     network_folders = [util_def.FOLDER_NETWORK_REQUEST_FRAGMENTS, util_def.FOLDER_NETWORK_RESPONSE_FRAGMENTS]
     for folder in network_folders:
-        path = os.path.join(individual_folder_path, folder)
+        path = os.path.join(base_folder_path, folder)
         if not os.path.exists(path):
             os.makedirs(path)
 
-    return individual_folder_path
 
 
 # Extracts the hostname of an url

@@ -1,11 +1,12 @@
 import asyncio
 import argparse
 import aiohttp
+import hashlib
 
 from playwright.async_api import async_playwright
 
-import analyzer
 import crawler_main as crawler
+import util
 import util_def
 
 feeds_queue = asyncio.Queue()
@@ -44,6 +45,9 @@ async def fetch_openphish_feeds(feeds_filename):
 
 async def start_crawling(feed, dataset_folder_name):
     seed_url = feed
+    url_hash = hashlib.sha256(seed_url.encode()).hexdigest()
+    ref_base_folder_path = util.generate_base_folder_for_crawled_dataset(url_hash, dataset_folder_name, ref_flag=True)
+    no_ref_base_folder_path = util.generate_base_folder_for_crawled_dataset(url_hash, dataset_folder_name, ref_flag=False)
     try:
         async with async_playwright() as p:
             win_chrome_v116_user_agent = [f"--user-agent={util_def.USER_USER_AGENT_WINDOWS_CHROME}"]
@@ -51,14 +55,17 @@ async def start_crawling(feed, dataset_folder_name):
 
             print("Crawling in progress...")
             print(f"\n------------------------------\nConfiguration: Referrer set\nUrl: {seed_url}\n-----------------------------")
-            await crawler.crawl(browser, seed_url, dataset_folder_name, ref_flag=True)
+            await crawler.crawl(browser, seed_url, url_hash, ref_base_folder_path, ref_flag=True)
 
             print(f"\n------------------------------\nConfiguration: No Referrer set\nUrl: {seed_url}\n-----------------------------")
-            await crawler.crawl(browser, seed_url, dataset_folder_name, ref_flag=False)
+            await crawler.crawl(browser, seed_url, url_hash, no_ref_base_folder_path, ref_flag=False)
             print("\nCrawling done...")
 
             if browser:
                 await browser.close()
+            
+            # Generate a semaphore file to signal that it is ready to be sent to databse
+            util.generate_semaphore_lock_file(url_hash)
     except Exception as e:
         print("Error with Playwright: ", e)
 
