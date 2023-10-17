@@ -1,9 +1,10 @@
-from datetime import datetime
-import hashlib
-import os 
-from playwright.async_api import async_playwright
-from bs4 import BeautifulSoup
 import asyncio
+import os 
+import time
+
+from bs4 import BeautifulSoup
+from datetime import datetime
+from playwright.async_api import async_playwright
 
 import crawler_actions
 import crawler_certificate_extractor as certificate_extractor
@@ -58,18 +59,28 @@ async def get_server_side_data(browser, ref_flag, folder_path, to_visit_url):
         else:
             await route.continue_()
     
+    print("Getting server-side data...")
     try:
         context = await browser.new_context(java_script_enabled=False)
         page = await context.new_page()
         await set_page_referrer(page, ref_flag, to_visit_url)
+        print("[Server-Side] Context & Page setup done...")
 
         # Ensure that the routing function is applied to all requests
+        print("[Server-Side] Visiting url...")
         await page.route('**/*', block_external_resources_request)
         await page.goto(to_visit_url)
+
+        print("[Server-Side] Executing user action...")
         server_move_status = await crawler_actions.execute_user_action(page)
+
+        print("[Server-Side] Waiting for page to load...")
         await wait_for_page_to_load(page)
 
+        print("[Server-Side] Saving screenshot...")
         server_screenshot_status = await crawler_utilities.save_screenshot(page, folder_path, util_def.FILE_SCREENSHOT_BEF)
+        
+        print("[Server-Side] Saving HTML script...")
         server_html_script = await page.content()
         soup = BeautifulSoup(server_html_script, "lxml")
         crawler_utilities.save_html_script(folder_path, util_def.FILE_HTML_SCRIPT_BEF, soup.prettify())
@@ -78,7 +89,7 @@ async def get_server_side_data(browser, ref_flag, folder_path, to_visit_url):
 
     except Exception as e:
         crawler_utilities.save_html_script(
-            folder_path, util_def.FILE_HTML_SCRIPT_BEF, f"Error occurred for url: {to_visit_url}\n{e}"
+            folder_path, util_def.FILE_HTML_SCRIPT_BEF, f"[Server-Side] Error occurred for url: {to_visit_url}\n{e}"
         )
         status = "Error visiting page"
         server_move_status = "Error visiting page"
@@ -86,8 +97,14 @@ async def get_server_side_data(browser, ref_flag, folder_path, to_visit_url):
         server_html_tag = "Error visiting page"
 
     finally:
-        await page.close()
-        await context.close()
+        if page:
+            print("[Server-Side: finally block] Closing page...")
+            await page.close()
+        if context:
+            print("[Server-Side: finally block] Closing context...")
+            await context.close()
+        
+        print("Server-side Data Done...")
         return server_html_tag, status, server_move_status, server_screenshot_status
 
 
@@ -133,18 +150,13 @@ def obtain_dns_records_info(visited_url, folder_path):
 
 # dataset_folder_name: refers to the name of the (base)folder to store the crawled data
 async def crawl(browser, url, url_hash, folder_path, ref_flag):
+    start_time = time.time()
     time_crawled = datetime.now()
 
     # Setup folders and paths required for data storage 
     util.generate_network_folders(folder_path)
     har_network_path = os.path.join(folder_path, util_def.FOLDER_NETWORK_FRAGMENTS ,util_def.FILE_NETWORK_HAR)
 
-    context = await browser.new_context(record_har_path=har_network_path, record_har_content="attach")
-    page = await context.new_page()
-    await set_page_referrer(page, ref_flag, url)
-    
-    main_http_status = "Not Visited"
-    
     try:
         # Obtains the server-side view of the HTML Script and page screenshot 
         server_html_tag, server_html_status, server_move_status, server_screenshot_status = await timeout_wrapper(
@@ -153,6 +165,17 @@ async def crawl(browser, url, url_hash, folder_path, ref_flag):
             timeout=10,
             default_values=("Timeout", "Timeout", "Timeout", "Timeout")
         )
+    except Exception as e:
+        print("Error obtaining server-side data: ", e)
+
+    try:
+        context = await browser.new_context(record_har_path=har_network_path, record_har_content="attach")
+        page = await context.new_page()
+        await set_page_referrer(page, ref_flag, url)
+        
+        main_http_status = "Not Visited"
+        timeout_task = None
+        print("[Client-Side] Context & Page setup done...")
 
         # Global variable to track the last request time
         last_request_data = {"timestamp": None}
@@ -187,36 +210,43 @@ async def crawl(browser, url, url_hash, folder_path, ref_flag):
             finally:
                 network_event.clear()  # Reset the event for potential future use
         
-
         client = await page.context.new_cdp_session(page) # Utilize CDP to capture network requests.
         await client.send("Network.enable")
         client.on("Network.requestWillBeSent", capture_request)
         timeout_task = asyncio.create_task(check_for_timeout())
+        print("[Client-Side] Network Interception Setup Done...")
 
+        print("[Client-Side] Visiting Url...")
         page.on("response", on_response)
         response = await page.goto(url, timeout=10000)
+        
+        print("[Client-Side] Waiting for page to load...")
         await wait_for_page_to_load(page)
+
         visited_url = page.url # See if url changes after visiting the page.
         if response:
             main_http_status = response.status
 
+        print("[Client-Side] Executing user action...")
         client_move_status = await timeout_wrapper(
             crawler_actions.execute_user_action, 
             page, 
             timeout=1,  
             default_values="Timeout"
         )
+
+        print("[Client-Side] Saving Screenshot...")
         client_screenshot_status = await timeout_wrapper(
             crawler_utilities.save_screenshot, 
             page, folder_path, util_def.FILE_SCREENSHOT_AFT, 
             timeout=5,  
             default_values="Timeout"
         )
+
         html_content = await page.content()
         soup = BeautifulSoup(html_content, "lxml")
-        client_html_tag = crawler_utilities.get_unique_html_tags(soup)
-        crawler_utilities.save_unique_html_tags(folder_path, server_html_tag, client_html_tag)
-        await crawler_utilities.extract_links(folder_path, soup, page, visited_url)
+
+        print("[Client-Side] Extracting inline client-side script...")
         client_client_side_script_status = await timeout_wrapper(
             get_client_side_script, 
             page, folder_path, 
@@ -242,15 +272,23 @@ async def crawl(browser, url, url_hash, folder_path, ref_flag):
         print("User-Agent:", user_agent)
         print("Referrer: ", referrer)
 
+        print("[Client-Side] Saving HTML script...")
         content = soup.prettify()
         if content is not None:
             crawler_utilities.save_html_script(folder_path, util_def.FILE_HTML_SCRIPT_AFT, content)
+            client_html_tag = crawler_utilities.get_unique_html_tags(soup)
+            crawler_utilities.save_unique_html_tags(folder_path, server_html_tag, client_html_tag)
+            await crawler_utilities.extract_links(folder_path, soup, page, visited_url)
         
         client_html_script_status = "Success"
 
+        print("[Client-Side] Saving Network data...")
         detailed_network_status = crawler_utilities.save_more_detailed_network_logs(folder_path, captured_events)
         
+        print("[Client-Side] Extracting Certificate data...")
         cert_extraction_status = obtain_certificate_info(visited_url, folder_path)
+
+        print("[Client-Side] Extracting DNS data...")
         dns_extraction_status = obtain_dns_records_info(visited_url, folder_path)
 
         
@@ -273,11 +311,14 @@ async def crawl(browser, url, url_hash, folder_path, ref_flag):
         redirect_info['error'] = ERROR_MSG
     
     finally:
+        end_time = time.time()
         if page:
+            print("[Main Crawler: finally] Closing page...")
             await page.close()
         if context:
+            print("[Main Crawler: finally] Closing context...")
             await context.close()
-        if not timeout_task.done():
+        if timeout_task and not timeout_task.done():
             try:    
                 await timeout_task
             except:
@@ -292,6 +333,7 @@ async def crawl(browser, url, url_hash, folder_path, ref_flag):
             "Status": main_http_status,
             "Provided Url Hash (in SHA-256)": url_hash,
             "Time crawled": time_crawled.strftime("%d/%m/%Y %H:%M:%S"),
+            "Time taken": end_time - start_time,
             "Certificate Extraction": cert_extraction_status,
             "DNS Records Extraction": dns_extraction_status,
             "Mouse moved when obtaining server-side data?": server_move_status,

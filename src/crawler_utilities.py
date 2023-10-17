@@ -30,6 +30,7 @@ def save_html_script(folder_path, file_name, content):
     file_path = os.path.join(os.getcwd(), folder_path, file_name)
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(content)
+    print("HTML script Save Successfully...")
 
 
 def get_unique_html_tags(soup):
