@@ -2,6 +2,7 @@ import shutil
 import os
 
 import network_data_processor
+import post_html_script_processor
 
 def zip_folder(dest_folder, folder):
     try:
@@ -31,7 +32,9 @@ def move_folder(src_folder, dest_folder):
                 try:
                     os.remove(semaphore_lock_file)
                     shutil.move(src, dest_folder)
-                    network_data_processor.process_network_data(os.path.join(dest_folder, folder))
+                    current_data_folder = os.path.join(dest_folder, folder)
+                    network_data_processor.process_network_data(current_data_folder)
+                    post_html_script_processor.post_process_html_script(current_data_folder)
                     print(f"Done moving folder: {folder}")
 
                 except Exception as e:

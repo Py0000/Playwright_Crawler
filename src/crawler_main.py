@@ -84,7 +84,6 @@ async def get_server_side_data(browser, ref_flag, folder_path, to_visit_url):
         server_html_script = await page.content()
         soup = BeautifulSoup(server_html_script, "lxml")
         crawler_utilities.save_html_script(folder_path, util_def.FILE_HTML_SCRIPT_BEF, soup.prettify())
-        server_html_tag = crawler_utilities.get_unique_html_tags(soup)
         status = "Success"
 
     except Exception as e:
@@ -94,7 +93,7 @@ async def get_server_side_data(browser, ref_flag, folder_path, to_visit_url):
         status = "Error visiting page"
         server_move_status = "Error visiting page"
         server_screenshot_status = "Error visiting page"
-        server_html_tag = "Error visiting page"
+        #server_html_tag = "Error visiting page"
 
     finally:
         if page:
@@ -105,7 +104,7 @@ async def get_server_side_data(browser, ref_flag, folder_path, to_visit_url):
             await context.close()
         
         print("Server-side Data Done...")
-        return server_html_tag, status, server_move_status, server_screenshot_status
+        return status, server_move_status, server_screenshot_status
 
 
 # Obtains all the client-side calls that is present in the page HTML Script
@@ -159,7 +158,7 @@ async def crawl(browser, url, url_hash, folder_path, ref_flag):
 
     try:
         # Obtains the server-side view of the HTML Script and page screenshot 
-        server_html_tag, server_html_status, server_move_status, server_screenshot_status = await timeout_wrapper(
+        server_html_status, server_move_status, server_screenshot_status = await timeout_wrapper(
             get_server_side_data,
             browser, ref_flag, folder_path, url,
             timeout=10,
@@ -254,7 +253,24 @@ async def crawl(browser, url, url_hash, folder_path, ref_flag):
             default_values="Timeout"
         )
 
+
+        print("[Client-Side] Saving HTML script...")
+        content = soup.prettify()
+        if content is not None:
+            crawler_utilities.save_html_script(folder_path, util_def.FILE_HTML_SCRIPT_AFT, content)
+            await crawler_utilities.extract_links(folder_path, soup, page, visited_url)
         
+        client_html_script_status = "Success"
+
+        print("[Client-Side] Saving Network data...")
+        detailed_network_status = crawler_utilities.save_more_detailed_network_logs(folder_path, captured_events)
+        
+        print("[Client-Side] Extracting Certificate data...")
+        cert_extraction_status = obtain_certificate_info(visited_url, folder_path)
+
+        print("[Client-Side] Extracting DNS data...")
+        dns_extraction_status = obtain_dns_records_info(visited_url, folder_path)
+
         print("Actual url: ", url)
         print("Url visited: ", visited_url)
         user_agent = await timeout_wrapper(
@@ -271,26 +287,6 @@ async def crawl(browser, url, url_hash, folder_path, ref_flag):
         )
         print("User-Agent:", user_agent)
         print("Referrer: ", referrer)
-
-        print("[Client-Side] Saving HTML script...")
-        content = soup.prettify()
-        if content is not None:
-            crawler_utilities.save_html_script(folder_path, util_def.FILE_HTML_SCRIPT_AFT, content)
-            client_html_tag = crawler_utilities.get_unique_html_tags(soup)
-            crawler_utilities.save_unique_html_tags(folder_path, server_html_tag, client_html_tag)
-            await crawler_utilities.extract_links(folder_path, soup, page, visited_url)
-        
-        client_html_script_status = "Success"
-
-        print("[Client-Side] Saving Network data...")
-        detailed_network_status = crawler_utilities.save_more_detailed_network_logs(folder_path, captured_events)
-        
-        print("[Client-Side] Extracting Certificate data...")
-        cert_extraction_status = obtain_certificate_info(visited_url, folder_path)
-
-        print("[Client-Side] Extracting DNS data...")
-        dns_extraction_status = obtain_dns_records_info(visited_url, folder_path)
-
         
 
     except Exception as e:

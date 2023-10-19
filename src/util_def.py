@@ -38,31 +38,6 @@ JSON_CERT_CONSOLIDATED = "certs_consolidated_json.json"
 JSON_FEATURES_AFT = "features_json_aft.json"
 JSON_FEATURES_BEF = "features_json_bef.json"
 
-##### Related to HTML Tags #####
-CURRENT_COVERED_TAG_SET = {'title', 
-                           'form', 'input', 'textarea', 'button', 'select', 'output',
-                           'iframe',
-                           'style', 'span', 'hr',
-                           'img', 'audio', 'video', 'svg', 'picture', 'source', 'track', 'map', 'canvas',
-                           'a', 'link', 'nav',
-                           'script', 'noscript', 'embed', 'object', 'code',
-                           'ul', 'ol', 'dl', 'dt', 'dd',
-                           'table',
-                           'head', 'meta', 'base', 'bpdy', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'body',
-                           'div', 'header', 'footer', 'main', 'section', 'article', 'aside', 'details', 'dialog', 'data',
-                           'br', 'html',
-                           'abbr', 'b', 'bdi', 'bdo', 'blockquote', 'cite', 'del', 'dfn', 'em', 'i', 'ins', 'kbd',
-                           'mark', 'pre', 'q', 's', 'small', 'samp', 'strong', 'sup', 'sub', 'u', 'var',
-                           'meter', 'progress',
-                           'template',
-                        }
-
-
-CURRENT_KNOWN_EXCLUEDED_TAG_SET = {
-    'optgroup', 'option', 'label', 'fieldset', 'legend', 'datalist', 'area', 'figcaption', 'figure', 
-    'li', 'caption', 'th', 'tr', 'td', 'thead', 'tbody', 'tfoot', 'col', 'colgroup', 'summary', 'param',
-}
-
 
 ##### Miscellaneous #####
 ERROR_URL_FLAG = "ERROR_URL"
