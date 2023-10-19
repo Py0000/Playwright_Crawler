@@ -217,7 +217,7 @@ async def crawl(browser, url, url_hash, folder_path, ref_flag):
 
         print("[Client-Side] Visiting Url...")
         page.on("response", on_response)
-        response = await page.goto(url, timeout=10000)
+        response = await page.goto(url, timeout=17000)
         
         print("[Client-Side] Waiting for page to load...")
         await wait_for_page_to_load(page)
