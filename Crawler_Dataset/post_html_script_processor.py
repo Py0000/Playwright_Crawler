@@ -81,8 +81,10 @@ def save_unique_html_tags(folder_path, server_data, client_data):
 
 
 # current_data_folder = dest_folder + folder = Phishing/dataset + hash(url)
-def extract_unique_html_tags(current_data_folder):
-    server_html_soup, client_html_soup = read_html_content_to_soup(current_data_folder)
+def extract_unique_html_tags(current_data_folder, ref_flag):
+    ref_folder = "self_ref" if ref_flag else "no_ref"
+    ref_folder_path = os.path.join(current_data_folder, ref_folder)
+    server_html_soup, client_html_soup = read_html_content_to_soup(ref_folder_path)
     if server_html_soup == "ERROR":
         server_html_tag = "Error during crawling"
     else:
@@ -93,16 +95,17 @@ def extract_unique_html_tags(current_data_folder):
     else:
         client_html_tag = get_unique_html_tags(client_html_soup)
 
-    save_unique_html_tags(current_data_folder, server_html_tag, client_html_tag)
+    save_unique_html_tags(ref_folder_path, server_html_tag, client_html_tag)
 
 
 
 def get_currently_saved_embedded_url(embedded_url_file_path):
     url_set = set()
-    with open(embedded_url_file_path, 'r') as f:
-        for line in f:
-            url = line.strip()
-            url_set.add(url)
+    if os.path.exists(embedded_url_file_path):
+        with open(embedded_url_file_path, 'r') as f:
+            for line in f:
+                url = line.strip()
+                url_set.add(url)
     
     return url_set
 
@@ -139,23 +142,27 @@ def get_link_in_anchor(file_path, soup, added_url_set, base_url):
         added_url_set = save_embedded_url(file_path, url, base_url, added_url_set)
 
 
-def extract_anchored_links(current_data_folder):
-    file_path = os.path.join(os.getcwd(), current_data_folder, FILE_EMBEDDED_URL)
-    _, client_html_soup = read_html_content_to_soup(current_data_folder)
+def extract_anchored_links(current_data_folder, ref_flag):
+    ref_folder = "self_ref" if ref_flag else "no_ref"
+    ref_folder_path = os.path.join(current_data_folder, ref_folder)
+    file_path = os.path.join(os.getcwd(), current_data_folder, ref_folder, FILE_EMBEDDED_URL)
+    _, client_html_soup = read_html_content_to_soup(ref_folder_path)
 
     if client_html_soup != "ERROR":
         # Extract links from anchor tags
-        base_url = get_base_url(current_data_folder)
+        base_url = get_base_url(ref_folder_path)
         added_url_set = get_currently_saved_embedded_url(file_path)
         get_link_in_anchor(file_path, client_html_soup, added_url_set, base_url)
 
 
 def post_process_html_script(current_data_folder):
     print("Extracting unique html tags...")
-    extract_unique_html_tags(current_data_folder)
+    extract_unique_html_tags(current_data_folder, ref_flag=True)
+    extract_unique_html_tags(current_data_folder, ref_flag=False)
 
     print("Extracting anchored links...")
-    extract_anchored_links(current_data_folder)
+    extract_anchored_links(current_data_folder, ref_flag=True)
+    extract_anchored_links(current_data_folder, ref_flag=False)
 
 
     
