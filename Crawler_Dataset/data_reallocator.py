@@ -39,11 +39,9 @@ def move_folder(src_folder, dest_folder):
 
                 except Exception as e:
                     print(f"Error occured for {src}: ", e)
-                    current_data_folder = "error"
                 
                 finally:
                     zip_folder(dest_folder, folder)
-                    return current_data_folder
                         
                         
                     
@@ -52,5 +50,4 @@ def shift_data_from_Playwright_Crawler_folder(src_dataset_folder_name, phishing_
     src_folder = os.path.join("..", "Playwright_Crawler", f"dataset_{src_dataset_folder_name}")
     dest_folder = os.path.join(phishing_or_benign_tag, "dataset")
 
-    data_folder = move_folder(src_folder, dest_folder)
-    return data_folder
+    move_folder(src_folder, dest_folder)
