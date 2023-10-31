@@ -9,6 +9,7 @@ import argparse
 import data_reallocator
 
 def upload_single_file_to_gdrive_with_exponential_backoff(file, file_path, drive_service, drive_folder_id, max_retries=5):
+    print("Adding one file to google drive...")
     retry = 0
     while retry < max_retries:
         try:
@@ -35,22 +36,21 @@ def upload_single_file_to_gdrive_with_exponential_backoff(file, file_path, drive
             retry += 1
 
 
-def upload_to_google_drive():
+def upload_to_google_drive(data_folder):
+    print("[Periodic] Saving to google drive...")
     credentials = Credentials.from_service_account_file(os.path.join(os.getcwd(), "src", 'drive-config.json'))
     drive_service = build('drive', 'v3', credentials=credentials)
-    dataset_folder_id = "167ySPLxM49KpIlSoHXCmw8tz75yqVt0z"
+    drive_folder_id = "1xzYT2hNdEiBqLHdp9Y-D9REDph0LE40V"
 
-    folder_path = os.path.join("Phishing", "dataset")
-
-    for file in os.listdir(folder_path):
-        if file.endswith('.zip'):
-            file_path = os.path.join(folder_path, file)
-            upload_single_file_to_gdrive_with_exponential_backoff(file, file_path, drive_service, drive_folder_id)
+    
+    if data_folder.endswith('.zip'):
+        file_name = os.path.basename(data_folder)
+        upload_single_file_to_gdrive_with_exponential_backoff(file_name, data_folder, drive_service, drive_folder_id)
            
 
-
+"""
 def save_to_gdrive_periodically():
-    time.sleep(600)
+    time.sleep(90)
     while True:
         try:
            upload_to_google_drive()
@@ -58,14 +58,16 @@ def save_to_gdrive_periodically():
             print("Error uploading to google drive: ", e)
         finally:
             time.sleep(3600)
-
+"""
 
 def shift_data_folder_periodically(folder_name, phishing_or_benign_tag):
+    print("Shifting data...")
     while True:
-        time.sleep(360)
-        data_reallocator.shift_data_from_Playwright_Crawler_folder(folder_name, phishing_or_benign_tag)
+        time.sleep(60)
+        data_folder = data_reallocator.shift_data_from_Playwright_Crawler_folder(folder_name, phishing_or_benign_tag)
+        upload_to_google_drive(data_folder)
         
-
+    
 
 
 if __name__ == '__main__':
@@ -74,14 +76,14 @@ if __name__ == '__main__':
     parser.add_argument("phishing_or_benign_tag", help="Name of the folder to store the dataset")
     args = parser.parse_args()
 
-    
+    """
     # Periodically commit and push
     data_folder_shifter_thread = threading.Thread(target=shift_data_folder_periodically, args=(args.folder_name, args.phishing_or_benign_tag))
     push_thread = threading.Thread(target=save_to_gdrive_periodically)
 
     data_folder_shifter_thread.start()
     push_thread.start()
-
+    """
     
 
-    #shift_data_folder_periodically(args.folder_name, args.phishing_or_benign_tag)
+    shift_data_folder_periodically(args.folder_name, args.phishing_or_benign_tag)
