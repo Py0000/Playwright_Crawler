@@ -3,6 +3,7 @@ import os
 
 import network_data_processor
 import post_html_script_processor
+import upload_to_drive as drive
 
 def zip_folder(dest_folder, folder):
     try:
@@ -10,8 +11,10 @@ def zip_folder(dest_folder, folder):
         shutil.make_archive(output_filename, "zip", dest_folder, folder) # Zip the folder
         shutil.rmtree(os.path.join(dest_folder, folder)) # Remove the orginal folder
         print(f"Successfully zipped {folder}")
+        return output_filename + ".zip"
     except Exception as e:
         print(f"Error occurred when zipping {folder}: {e}")
+        return None
 
 
 
@@ -37,14 +40,19 @@ def move_folder(src_folder, dest_folder):
                     post_html_script_processor.post_process_html_script(current_data_folder)
                     print(f"Done moving folder: {folder}")
 
+                    zip_folder_path = zip_folder(dest_folder, folder)
+                    if zip_folder_path:
+                        try:
+                            drive.upload_to_google_drive(zip_folder_path)
+                        except Exception as e:
+                            print("[Error] Upload to drive failed. Due to ", e)
+
                 except Exception as e:
                     print(f"Error occured for {src}: ", e)
                 
-                finally:
-                    zip_folder(dest_folder, folder)
+                
                         
-                        
-                    
+                                
                     
 def shift_data_from_Playwright_Crawler_folder(src_dataset_folder_name, phishing_or_benign_tag):
     src_folder = os.path.join("..", "Playwright_Crawler", f"dataset_{src_dataset_folder_name}")
