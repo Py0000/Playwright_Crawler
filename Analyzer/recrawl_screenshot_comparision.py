@@ -5,6 +5,8 @@ import os
 import zipfile
 import argparse
 
+import generate_screenshot_comparison_csv as gscc
+
 def compute_phash(image_path):
     try:
         with Image.open(image_path) as img:
@@ -142,6 +144,8 @@ def generate_hash_difference_report(original_dataset_path, recrawled_dataset_pat
     output_file_name = f"{date}_screenshot_hashes.json"
     with open(output_file_name, 'w', encoding='utf-8') as file:
         json.dump(hash_differences, file, ensure_ascii=False, indent=4)
+    
+    return output_file_name
 
 
 
@@ -150,10 +154,11 @@ if __name__ == '__main__':
     parser.add_argument("original_dataset_folder_path", help="Name of the original dataset folder path")
     parser.add_argument("recrawled_dataset_folder_path", help="Name of the recrawled dataset folder path")
     parser.add_argument("date", help="Date of dataset")
+    parser.add_argument("file_hash_order", help="Name of the txt file that contains the file hash order")
     args = parser.parse_args()
 
-    generate_hash_difference_report(args.original_dataset_folder_path, args.recrawled_dataset_folder_path, args.date)
-    
+    json_report = generate_hash_difference_report(args.original_dataset_folder_path, args.recrawled_dataset_folder_path, args.date)
+    gscc.geenrate_csv_for_screenshot(json_report, args.file_hash_order, args.date)
 
 
 

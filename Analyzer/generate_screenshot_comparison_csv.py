@@ -1,8 +1,7 @@
 import json
-import pandas as pd
 import csv
 
-def func(json_data_file, file_hash_order_txt, date):
+def geenrate_csv_for_screenshot(json_data_file, file_hash_order_txt, date):
     # read the json data (that contains the hash differences)
     with open(json_data_file, 'r') as file:
         json_data = json.load(file)
