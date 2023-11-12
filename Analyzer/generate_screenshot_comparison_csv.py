@@ -3,12 +3,15 @@ import pandas as pd
 import csv
 
 def func(json_data_file, file_hash_order_txt, date):
+    # read the json data (that contains the hash differences)
     with open(json_data_file, 'r') as file:
         json_data = json.load(file)
     
+    # Read the order of file hashes saved on the google sheet
     with open(file_hash_order_txt, 'r') as file:
         file_hash_order = [line.strip() for line in file]
 
+    # Generate the csv report based on the order of file hashes
     csv_data = []
     for hash_key in file_hash_order:
         if hash_key in json_data:
@@ -24,4 +27,3 @@ def func(json_data_file, file_hash_order_txt, date):
         writer.writerows(csv_data)
 
 
-func('011123_screenshot_hashes.json', '011123_hash_order.txt', '011123')
