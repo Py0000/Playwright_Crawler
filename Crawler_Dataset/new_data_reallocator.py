@@ -40,15 +40,17 @@ def move_folder(src_folder, dest_folder):
                     post_html_script_processor.post_process_html_script(current_data_folder)
                     print(f"Done moving folder: {folder}")
 
+                    """
                     zip_folder_path = zip_folder(dest_folder, folder)
                     if zip_folder_path:
                         try:
                             drive.upload_to_google_drive(zip_folder_path)
                         except Exception as e:
                             print("[Error] Upload to drive failed. Due to ", e)
-
+                    """
                 except Exception as e:
                     print(f"Error occured for {src}: ", e)
+                
                 
                 
                         
