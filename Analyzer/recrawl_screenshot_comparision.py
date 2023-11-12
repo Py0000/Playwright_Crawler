@@ -158,7 +158,12 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     json_report = generate_hash_difference_report(args.original_dataset_folder_path, args.recrawled_dataset_folder_path, args.date)
-    gscc.geenrate_csv_for_screenshot(json_report, args.file_hash_order, args.date)
+    
+    if os.path.exists(json_report):
+        gscc.geenrate_csv_for_screenshot(json_report, args.file_hash_order, args.date)
+        os.remove(json_report)
+    else:
+        print("JSON report not generated...")
 
 
 
