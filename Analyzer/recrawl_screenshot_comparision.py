@@ -32,6 +32,12 @@ def compute_hashes(image_path):
     return pHash, dHash
 
 def compute_hash_difference(hash1, hash2):
+    if isinstance(hash1, str):
+        return hash1
+
+    if isinstance(hash2, str):
+        return hash2
+    
     return abs(hash1 - hash2)
 
 
@@ -64,7 +70,12 @@ def get_hashes_of_original_dataset(original_dataset_path):
         no_ref_screenshot_path = os.path.join(unzipped_folder_name, os.path.basename(unzipped_folder_name), 'no_ref', 'screenshot_aft.png')
 
         # Compute the hash value
-        self_ref_phash, self_ref_dhash = compute_hashes(self_ref_screenshot_path)
+        if not os.path.exists(self_ref_screenshot_path):
+            self_ref_screenshot_path = os.path.join(unzipped_folder_name, 'self_ref', 'screenshot_aft.png')
+        if not os.path.exists(no_ref_screenshot_path):
+            no_ref_screenshot_path = os.path.join(unzipped_folder_name, 'no_ref', 'screenshot_aft.png')
+
+        self_ref_phash, self_ref_dhash = compute_hashes(self_ref_screenshot_path)    
         no_ref_phash, no_ref_dhash = compute_hashes(no_ref_screenshot_path)
 
         # Save the results of the hash value (for later use)
@@ -121,6 +132,8 @@ def get_hashes_of_recrawled_dataset(recrawled_dataset_path):
 def generate_hash_difference_report(original_dataset_path, recrawled_dataset_path, date):
     original_dataset_hashes_dict = get_hashes_of_original_dataset(original_dataset_path)
     recrawled_dataset_hashes_dict = get_hashes_of_recrawled_dataset(recrawled_dataset_path)
+    print(f"Length of original dataset hashes: {len(original_dataset_hashes_dict)}")
+    print(f"Length of recrawled dataset hashes: {len(recrawled_dataset_hashes_dict)}")
 
     hash_differences = {}
     for folder_name in original_dataset_hashes_dict:
@@ -141,6 +154,7 @@ def generate_hash_difference_report(original_dataset_path, recrawled_dataset_pat
                 "no_ref_dhash_diff": no_ref_dhash_diff
             }
     
+    print(f"Length of consolidated hash_differences: {len(hash_differences)}")
     output_file_name = f"{date}_screenshot_hashes.json"
     with open(output_file_name, 'w', encoding='utf-8') as file:
         json.dump(hash_differences, file, ensure_ascii=False, indent=4)
@@ -160,8 +174,8 @@ if __name__ == '__main__':
     json_report = generate_hash_difference_report(args.original_dataset_folder_path, args.recrawled_dataset_folder_path, args.date)
     
     if os.path.exists(json_report):
-        gscc.geenrate_csv_for_screenshot(json_report, args.file_hash_order, args.date)
-        os.remove(json_report)
+        gscc.generate_csv_for_screenshot(json_report, args.file_hash_order, args.date)
+        #os.remove(json_report)
     else:
         print("JSON report not generated...")
 
