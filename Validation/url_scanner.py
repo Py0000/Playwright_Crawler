@@ -132,7 +132,7 @@ def extract_relevant_data_from_analysis_report(report):
     return vendors_flagged_red, vendor_of_interest_status
 
 
-"""
+
 def generate_csv_report(validation_data_dict, date):
     print("Generating CSV Report....")
     data_list = [v for _, v in validation_data_dict.items()]
@@ -142,12 +142,12 @@ def generate_csv_report(validation_data_dict, date):
         writer = csv.DictWriter(file, fieldnames=headers)
         writer.writeheader()
         writer.writerows(data_list)
-"""
+
 
 
 def url_scanner(original_dataset_folder_path, date, api_key):
     url_to_file_hash_dict = get_url_to_validate(original_dataset_folder_path)
     validation_data = scan_url(url_to_file_hash_dict, api_key)
-    #generate_csv_report(validation_data, date)
-    return validation_data
+    generate_csv_report(validation_data, date)
+    
 

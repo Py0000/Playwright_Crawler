@@ -14,7 +14,10 @@ def get_html_files_for_scanning(original_dataset_path):
         if not os.path.exists(html_file_path):
             html_file_path = os.path.join(original_dataset_path, folder, os.path.basename(folder) , 'self_ref', 'html_script_aft.html')
 
-
+        if not os.path.exists(html_file_path):
+            print(f"HTML file not found for {folder}")
+            pass 
+        
         with open(html_file_path, 'rb') as file:
             html_content = file.read()
         
@@ -91,7 +94,7 @@ def extract_total_value(report):
     print(vendors_flagged_red)
     return vendors_flagged_red
 
-"""
+
 def generate_csv_report(validation_data_dict, date):
     print("Generating CSV Report....")
     data_list = [v for _, v in validation_data_dict.items()]
@@ -101,10 +104,10 @@ def generate_csv_report(validation_data_dict, date):
         writer = csv.DictWriter(file, fieldnames=headers)
         writer.writeheader()
         writer.writerows(data_list)
-"""
+
 
 def html_file_scanner(original_dataset_folder_path, date, api_key):
     html_data_list = get_html_files_for_scanning(original_dataset_folder_path)
     validation_data = scan_html_file(html_data_list, api_key)
-    # generate_csv_report(validation_data, date)
-    return validation_data
+    generate_csv_report(validation_data, date)
+    
