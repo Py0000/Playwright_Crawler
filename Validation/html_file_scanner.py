@@ -50,6 +50,7 @@ def scan_html_file(html_data_list, api_key):
             vendors_flagged_red = get_html_analysis_report(analysis_id, api_key)
 
             current_data = {
+                "File Hash": hash,
                 "Direct HTML Script Analysis by VirusTotal": vendors_flagged_red
             }
 

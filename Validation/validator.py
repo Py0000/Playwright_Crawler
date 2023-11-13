@@ -24,7 +24,7 @@ def unzip_folder(zip_folder_path):
     with zipfile.ZipFile(zip_folder_path, 'r') as zip_ref:
         zip_ref.extractall(extracted_folder_path)
 
-    # os.remove(zip_folder_path)
+    os.remove(zip_folder_path)
     return extracted_folder_path
 
 
@@ -65,7 +65,7 @@ if __name__ == '__main__':
     api_key = read_virus_total_api_key(api_key_file)
 
     unzip_original_dataset_folder(args.original_dataset_folder_path)
-    url_scanner.url_scanner(args.original_dataset_folder_path, args.date, api_key)
+    #url_scanner.url_scanner(args.original_dataset_folder_path, args.date, api_key)
     html_file_scanner.html_file_scanner(args.original_dataset_folder_path, args.date, api_key)
     #consolidate_validation_data(url_validation_data, html_validation_data)
     #generate_csv_report(url_validation_data, args.date)
