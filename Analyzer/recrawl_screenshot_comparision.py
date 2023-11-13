@@ -137,7 +137,7 @@ def generate_hash_difference_report(original_dataset_path, recrawled_dataset_pat
 
     hash_differences = {}
     for folder_name in original_dataset_hashes_dict:
-        print(folder_name)
+        print(f"Folder_name: {folder_name} matched? {folder_name in recrawled_dataset_hashes_dict}")
         if folder_name in recrawled_dataset_hashes_dict:
             original = original_dataset_hashes_dict[folder_name]
             recrawled = recrawled_dataset_hashes_dict[folder_name]
