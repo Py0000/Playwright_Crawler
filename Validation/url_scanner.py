@@ -1,7 +1,6 @@
 import requests
 import os
 import json
-import csv
 import time
 
 import utils
