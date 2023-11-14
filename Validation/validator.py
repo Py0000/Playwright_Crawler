@@ -4,13 +4,7 @@ import zipfile
 
 import url_scanner
 import html_file_scanner
-
-# Read the VirusTotal API key from a txt file
-def read_virus_total_api_key(key_file):
-    with open(key_file, 'r') as file:
-        api_key = file.readline().strip()
-    
-    return api_key
+import utils
 
 
 # Unzip the 10-30 dataset crawled (to be used for validation using VirusTotal)
@@ -43,7 +37,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     api_key_file = 'virus_total_api_key.txt'
-    api_key = read_virus_total_api_key(api_key_file)
+    api_key = utils.read_virus_total_api_key(api_key_file)
 
     unzip_original_dataset_folder(args.original_dataset_folder_path)
     url_scanner.url_scanner(args.original_dataset_folder_path, args.date, api_key)

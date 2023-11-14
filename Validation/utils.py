@@ -1,6 +1,15 @@
 import os
 import csv
 
+
+# Read the VirusTotal API key from a txt file
+def read_virus_total_api_key(key_file):
+    with open(key_file, 'r') as file:
+        api_key = file.readline().strip()
+    
+    return api_key
+
+
 def generate_csv_report(validation_data_dict, file_name):
     print("Generating CSV Report....")
     data_list = [v for _, v in validation_data_dict.items()]
