@@ -1,5 +1,4 @@
 import argparse
-import csv
 import os
 import zipfile
 
@@ -36,24 +35,6 @@ def unzip_original_dataset_folder(original_dataset_path):
         unzip_folder(zipped_original_folder_path)
 
 
-def consolidate_validation_data(url_validation_data, html_validation_data):
-    for hash_key, analysis_data in html_validation_data.items():
-        print(f"Hash: {hash_key}. Matched? {hash_key in url_validation_data}")
-        if hash_key in url_validation_data:
-            url_validation_data[hash_key].update(analysis_data)
-    return url_validation_data
-
-"""
-def generate_csv_report(validation_data_dict, date):
-    print("Generating CSV Report....")
-    data_list = [v for _, v in validation_data_dict.items()]
-    headers = data_list[0].keys()
-
-    with open(f"{date}_validation.csv", mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.DictWriter(file, fieldnames=headers)
-        writer.writeheader()
-        writer.writerows(data_list)
-"""
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Supply the folder names")
@@ -65,9 +46,7 @@ if __name__ == '__main__':
     api_key = read_virus_total_api_key(api_key_file)
 
     unzip_original_dataset_folder(args.original_dataset_folder_path)
-    #url_scanner.url_scanner(args.original_dataset_folder_path, args.date, api_key)
+    url_scanner.url_scanner(args.original_dataset_folder_path, args.date, api_key)
     html_file_scanner.html_file_scanner(args.original_dataset_folder_path, args.date, api_key)
-    #consolidate_validation_data(url_validation_data, html_validation_data)
-    #generate_csv_report(url_validation_data, args.date)
 
 
