@@ -74,16 +74,16 @@ def get_html_analysis_report(analysis_id, api_key):
         else:
             time.sleep((attempt + 2) * 3)
 
+def get_flagged_count(results):
+    return sum(1 for vendor in results.values() if vendor['result'] is not None)
 
 def extract_total_value(report):
     # Contains the status of each security vendor for the submitted url
     results = report["data"]["attributes"]["results"]
     num_of_vendors = len(results)
 
-    flagged_count = 0
-    for vendor in results.values():
-        if vendor['result'] != None:
-            flagged_count += 1
+    # Get number of vendors flagging the html file as red
+    flagged_count = get_flagged_count(results)
     
     vendors_flagged_red = f'="{flagged_count}/{num_of_vendors}"'
     print(vendors_flagged_red)
