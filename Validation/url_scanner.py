@@ -111,6 +111,20 @@ def get_url_analysis_report(url_id, api_key):
         time.sleep((attempt + 1) * 3)
 
 
+def get_flagged_count(results):
+    PHISHING_INDICATOR = ['phishing', 'malware', 'malicious']
+    phishing_count = sum(vendor['result'] in PHISHING_INDICATOR for vendor in results.values())
+    return phishing_count
+
+def get_vendor_status(results):
+    vendor_of_interest_status = {}
+    for vendor in VENDORS_OF_INTEREST:
+        if vendor in results:
+            vendor_result = results[vendor]
+            status = vendor_result['result']
+            vendor_of_interest_status[vendor] = status.capitalize()
+    
+    return vendor_of_interest_status
 
 
 def extract_relevant_data_from_analysis_report(report):
@@ -118,18 +132,11 @@ def extract_relevant_data_from_analysis_report(report):
     results = report["data"]["attributes"]["results"]
     num_of_vendors = len(results)
 
-    phishing_count = 0
-    for vendor in results.values():
-        if vendor['result'] == 'phishing':
-            phishing_count += 1
+    # Get the number of vendors that flagged the url as red
+    phishing_count = get_flagged_count(results)
 
     # Check the status of the 4 vendors we are interested in
-    vendor_of_interest_status = {}
-    for vendor in VENDORS_OF_INTEREST:
-        if vendor in results:
-            vendor_result = results[vendor]
-            status = vendor_result['result']
-            vendor_of_interest_status[vendor] = status.capitalize()
+    vendor_of_interest_status = get_vendor_status(results)
 
     vendors_flagged_red = f'="{phishing_count}/{num_of_vendors}"'
 
