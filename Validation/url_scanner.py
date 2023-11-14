@@ -4,6 +4,22 @@ import json
 import csv
 import time
 
+import utils
+
+VENDOR_OPENPHISH = "OpenPhish"
+VENDOR_GOOGLE_SAFEBROWSING = "Google Safebrowsing"
+VENDOR_KASPERSKY = "Kaspersky"
+VENDOR_TRUSTWAVE = "Trustwave"
+VENDORS_OF_INTEREST = [VENDOR_OPENPHISH, VENDOR_GOOGLE_SAFEBROWSING, VENDOR_KASPERSKY, VENDOR_TRUSTWAVE]
+
+
+def is_data_ready(report):
+    for vendor in VENDORS_OF_INTEREST:
+        result = report.get("data", {}).get("attributes", {}).get("results", {}).get(vendor)
+        if not result:
+            return False
+    
+    return True
 
 
 # Folder will be the orginal_dataset_{date} folder used for screenshot comparision as well
@@ -16,9 +32,7 @@ def get_url_to_validate(original_dataset_path):
     folders = os.listdir(original_dataset_path)
     for folder in folders:
         # Account for different zipping and unzipping structure
-        log_file_path = os.path.join(original_dataset_path, folder, 'self_ref', 'log.json')
-        if not os.path.exists(log_file_path):
-            log_file_path = os.path.join(original_dataset_path, folder, os.path.basename(folder) , 'self_ref', 'log.json')
+        log_file_path = utils.generate_file_path(original_dataset_path, folder, 'log.json')
         
         # Get the url of the feed as well as the file hash
         with open(log_file_path, 'r') as file:
@@ -61,10 +75,10 @@ def scan_url(url_to_file_hash_dict, api_key):
                 "File Hash": hash,
                 "Website URL": url,
                 "# Vendors Flagged Red": vendors_flagged_red,
-                "OpenPhish": vendor_of_interest_status["OpenPhish"],
-                "Google Safebrowsing": vendor_of_interest_status["Google Safebrowsing"],
-                "Kaspersky": vendor_of_interest_status["Kaspersky"],
-                "Trustwave": vendor_of_interest_status["Trustwave"]
+                "OpenPhish": vendor_of_interest_status[VENDOR_OPENPHISH],
+                "Google Safebrowsing": vendor_of_interest_status[VENDOR_GOOGLE_SAFEBROWSING],
+                "Kaspersky": vendor_of_interest_status[VENDOR_KASPERSKY],
+                "Trustwave": vendor_of_interest_status[VENDOR_KASPERSKY]
             }
             
             consolidate_data[hash] = current_data
@@ -87,14 +101,8 @@ def get_url_analysis_report(url_id, api_key):
             headers={'x-apikey': api_key}
         )
 
-        time.sleep(2)
         report = response.json()
-
-        openphish_results = report.get("data", {}).get("attributes", {}).get("results", {}).get("OpenPhish")
-        gsb_results = report.get("data", {}).get("attributes", {}).get("results", {}).get("Google Safebrowsing")
-        kaspersky_results = report.get("data", {}).get("attributes", {}).get("results", {}).get("Kaspersky")
-        trustwave_results = report.get("data", {}).get("attributes", {}).get("results", {}).get("Trustwave")
-        is_interested_available = openphish_results is not None and gsb_results is not None and kaspersky_results is not None and trustwave_results is not None
+        is_interested_available = is_data_ready(report)
 
         if is_interested_available:
             # Extracts the relevant data that we are interested in
@@ -106,8 +114,6 @@ def get_url_analysis_report(url_id, api_key):
 
 
 def extract_relevant_data_from_analysis_report(report):
-    vendor_of_interest = ["OpenPhish", "Google Safebrowsing", "Kaspersky", "Trustwave"]
-    
     # Contains the status of each security vendor for the submitted url
     results = report["data"]["attributes"]["results"]
     num_of_vendors = len(results)
@@ -119,7 +125,7 @@ def extract_relevant_data_from_analysis_report(report):
 
     # Check the status of the 4 vendors we are interested in
     vendor_of_interest_status = {}
-    for vendor in vendor_of_interest:
+    for vendor in VENDORS_OF_INTEREST:
         if vendor in results:
             vendor_result = results[vendor]
             status = vendor_result['result']
@@ -133,21 +139,9 @@ def extract_relevant_data_from_analysis_report(report):
 
 
 
-def generate_csv_report(validation_data_dict, date):
-    print("Generating CSV Report....")
-    data_list = [v for _, v in validation_data_dict.items()]
-    headers = data_list[0].keys()
-
-    with open(f"{date}_url_validation.csv", mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.DictWriter(file, fieldnames=headers)
-        writer.writeheader()
-        writer.writerows(data_list)
-
-
-
 def url_scanner(original_dataset_folder_path, date, api_key):
     url_to_file_hash_dict = get_url_to_validate(original_dataset_folder_path)
     validation_data = scan_url(url_to_file_hash_dict, api_key)
-    generate_csv_report(validation_data, date)
+    utils.generate_csv_report(validation_data, f"{date}_url_validation.csv")
     
 
