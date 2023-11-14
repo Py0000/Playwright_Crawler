@@ -148,7 +148,8 @@ def obtain_dns_records_info(visited_url, folder_path):
 
 
 # dataset_folder_name: refers to the name of the (base)folder to store the crawled data
-async def crawl(browser, url, url_hash, folder_path, ref_flag):
+async def crawl(browser, url, url_hash, folder_path, timeout_multiplier, ref_flag):
+    timeout_limit = 10 * timeout_multiplier
     start_time = time.time()
     time_crawled = datetime.now()
 
@@ -161,7 +162,7 @@ async def crawl(browser, url, url_hash, folder_path, ref_flag):
         server_html_status, server_move_status, server_screenshot_status = await timeout_wrapper(
             get_server_side_data,
             browser, ref_flag, folder_path, url,
-            timeout=10,
+            timeout=timeout_limit,
             default_values=("Timeout", "Timeout", "Timeout", "Timeout")
         )
     except Exception as e:
@@ -217,7 +218,7 @@ async def crawl(browser, url, url_hash, folder_path, ref_flag):
 
         print("[Client-Side] Visiting Url...")
         page.on("response", on_response)
-        response = await page.goto(url, timeout=17000)
+        response = await page.goto(url, timeout=(17000 * timeout_multiplier))
         
         print("[Client-Side] Waiting for page to load...")
         await wait_for_page_to_load(page)
@@ -238,7 +239,7 @@ async def crawl(browser, url, url_hash, folder_path, ref_flag):
         client_screenshot_status = await timeout_wrapper(
             crawler_utilities.save_screenshot, 
             page, folder_path, util_def.FILE_SCREENSHOT_AFT, 
-            timeout=5,  
+            timeout=timeout_limit,  
             default_values="Timeout"
         )
 
@@ -249,7 +250,7 @@ async def crawl(browser, url, url_hash, folder_path, ref_flag):
         client_client_side_script_status = await timeout_wrapper(
             get_client_side_script, 
             page, folder_path, 
-            timeout=10, 
+            timeout=timeout_limit, 
             default_values="Timeout"
         )
 
@@ -276,13 +277,13 @@ async def crawl(browser, url, url_hash, folder_path, ref_flag):
         user_agent = await timeout_wrapper(
             page.evaluate, 
             '''() => window.navigator.userAgent''', 
-            timeout=10, 
+            timeout=timeout_limit, 
             default_values="Timeout"
         )
         referrer = await timeout_wrapper(
             page.evaluate, 
             '''() => document.referrer''', 
-            timeout=10, 
+            timeout=timeout_limit, 
             default_values="Timeout"
         )
         print("User-Agent:", user_agent)
