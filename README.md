@@ -32,45 +32,54 @@ What data this crawler obtain?
 ### Method 1: `tmux`
 1. `ssh` into the remote VM designated for this research purpose.
 2. `sudo -s` to elevate to root privileges if required to change the remote VM configurations. 
-3. `cd Desktop/Playwright_Crawler` to get to the path where the script is hosted.
+3. `cd Desktop/{directory_of_interest}` to get to the path where the script is hosted.
 4. Ensure all the required libraries are installed. (See `dependency.txt`)
 5. Start a session using `tmux`.
-6. Start the script running in the tmux session using: `python3 src/main.py [saved-data-folder-tag] > [log-filename].txt`
+6. Start the script running in the tmux session using the corresponding command
 7. `Ctrl B` + `D` to detach from the tmux session.
 8. Exit the ssh session if you wish to. The script will still run after exiting.
 
 Returning to the ssh session:
-1. `tmux attach` to get back the existing tmux session where the script is running.
+1. `tmux attach -t {session_id}` to get back the existing tmux session where the script is running.
 
 
-### Method 2: `nohup`
-1. `ssh` into the remote VM designated for this research purpose.
-2. `sudo -s` to elevate to root privileges if required to change the remote VM configurations. 
-3. `cd Desktop/Playwright_Crawler` to get to the path where the script is hosted.
-4. Ensure all the required libraries are installed. (See `dependency.txt`)
-5. `nohup python3 src/main.py [folder_name_to_save] > [log_filename].txt 2>&1 &`
-  * Will return the background process id running the script 
-6. Exit the ssh session if you wish to. The script will still run after exiting.
-
-Returning to the ssh session:
-1. ps -p `[process_id]` to check on its progress
 
 
-### Final Phase 
-* The crawled data will be stored in the folder `dataset_[folder_name_to_save]`. 
-* The analyzed data using the crawled data will be stored in the folder `d_analysis_[folder_name_to_save]`
-* The logs generated while crawling will be stored in the file `[log_filename].txt`.
+## Useful Commands
+
+<br>
+
+### Transfer files from Playwright_Crawler Directory (Run from local machine):
+1. `scp -r sadm@fyp-0543756-i.comp.nus.edu.sg:~/Desktop/Playwright_Crawler/{date}_log_crawler.txt /mnt/f/0_App_Development_Folder/Playwright_Crawler_Dataset`
+2. `scp -r sadm@fyp-0543756-i.comp.nus.edu.sg:~/Desktop/Playwright_Crawler/feeds/urls/openphish_feeds_{date}.txt /mnt/f/0_App_Development_Folder/Playwright_Crawler_Dataset`
+3. `scp -r sadm@fyp-0543756-i.comp.nus.edu.sg:~/Desktop/Playwright_Crawler/dataset_{date} /mnt/f/0_App_Development_Folder/Playwright_Crawler_Dataset`
 
 
-## How to run the dataset transfer script (i.e. transfer to a private github repo)
-### Method 1: `tmux`
-1. `ssh` into the remote VM designated for this research purpose.
-2. `cd Desktop/Crawler_Dataset` to get to the path where the script is hosted.
-3. Ensure all the required libraries are installed. (See `dependency.txt`)
-4. Start a session using `tmux`.
-5. Start the script running in the tmux session using: `python3 src/automated_git_push.py [folder_name_to_save (input when running crawler)] [Phishing/Benign]> [log-filename].txt`
-6. `Ctrl B` + `D` to detach from the tmux session.
-7. Exit the ssh session if you wish to. The script will still run after exiting.
+### Transfer files from Crawler_Dataset Directory (Run from local machine):
+1. `scp -r sadm@fyp-0543756-i.comp.nus.edu.sg:~/Desktop/Crawler_Dataset/{date}_log_backup.txt /mnt/f/0_App_Development_Folder/Playwright_Crawler_Dataset`
+2. `scp -r sadm@fyp-0543756-i.comp.nus.edu.sg:~/Desktop/Crawler_Dataset/{folder}/dataset /mnt/f/0_App_Development_Folder/Playwright_Crawler_Dataset`
 
-Returning to the ssh session:
-1. `tmux attach` to get back the existing tmux session where the script is running.
+
+### Transfer files for recrawler (Run from local machine):
+1. `scp -r sadm@fyp-0543756-i.comp.nus.edu.sg:~/Desktop/Playwright_Crawler/{date}_log_recrawl.txt /mnt/f/0_App_Development_Folder/Playwright_Crawler_Dataset`
+2. `scp -r sadm@fyp-0543756-i.comp.nus.edu.sg:~/Desktop/Playwright_Crawler/{date}.txt /mnt/f/0_App_Development_Folder/Playwright_Crawler_Dataset`
+3. `scp -r sadm@fyp-0543756-i.comp.nus.edu.sg:~/Desktop/Playwright_Crawler/recrawl_dataset_{date} /mnt/f/0_App_Development_Folder/Playwright_Crawler_Dataset`
+
+
+### Command to run crawler (From remote VM Playwright_Crawler Directory): 
+1. python3 src/main_new.py {date} 2>&1 | tee {date}_log_crawler.txt
+
+
+### Command to transfer data from Playwright_Crawler to Crawler_Dataset Directory (From remote VM Crawler_Dataset Directory): 
+1. python3 src/automated_save_data.py {date} Phishing 2>&1 | tee {date}_log_backup.txt
+
+
+### Command to run Recrawler (From remote VM Playwright_Crawler Directory):
+1. python3 src/recrawler.py {date} {date}.txt 2>&1 | tee {date}_log_recrawl.txt
+
+
+### Command to run VirusTotal Validator (Run from local machine):
+1. python3 validator.py original_dataset_{date} {date}
+
+### Command to run VirusTotal Revalidator (Run from local machine):
+1. python3 revalidator.py url_{date}.txt {date}
