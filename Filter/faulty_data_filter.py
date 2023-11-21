@@ -77,6 +77,9 @@ for folder in datasets:
             
             elif folder_status["no_ref"] == "Faulty":
                 no_ref_faulty_only_data.append(folder)
+            
+            # Can get the status from log.json also 
+            # TODO: Fill in logic 
 
     print(f"Done Processing {folder}...")
 
