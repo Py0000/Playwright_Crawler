@@ -9,17 +9,20 @@ def get_html_files_for_scanning(original_dataset_path):
 
     folders = os.listdir(original_dataset_path)
     for folder in folders:
-        # Account for different zipping and unzipping structure
-        html_file_path = utils.generate_file_path(original_dataset_path, folder, 'html_script_aft.html')
-        
-        with open(html_file_path, 'rb') as file:
-            html_content = file.read()
-        
-        files = {
-            'file': ('filename.html', html_content)
-        }
+        try:
+            # Account for different zipping and unzipping structure
+            html_file_path = utils.generate_file_path(original_dataset_path, folder, 'html_script_aft.html')
+            print(f"File exist for {folder}: {os.path.exists(html_file_path)}")
+            with open(html_file_path, 'r', encoding='utf-8') as file:
+                html_content = file.read()
+            
+            files = {
+                'file': ('filename.html', html_content)
+            }
 
-        html_data[os.path.basename(folder)] = files
+            html_data[os.path.basename(folder)] = files
+        except Exception as e:
+            print(f"Error for {folder}: {e}")
 
     return html_data
 

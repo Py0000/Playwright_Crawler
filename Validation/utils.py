@@ -26,5 +26,5 @@ def generate_file_path(parent_directory, data_folder, file_type):
     file_path = os.path.join(parent_directory, data_folder, REF_FOLDER, file_type)
     if not os.path.exists(file_path):
         file_path = os.path.join(parent_directory, data_folder, os.path.basename(data_folder) , REF_FOLDER, file_type)
-    
+
     return file_path
