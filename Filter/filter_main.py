@@ -29,4 +29,6 @@ if __name__ == '__main__':
     categorize_data.categorize(dateset_date, dataset_path, f"{dateset_date}{LABEL_SELF_REF_FAULTY_TXT_FILE}", FAULTY_DIR_SELF)
     print("\nCategorizing no ref only faulty dataset...")
     categorize_data.categorize(dateset_date, dataset_path, f"{dateset_date}{LABEL_NO_REF_FAULTY_TXT_FILE}", FAULTY_DIR_NO)
+    print("\nCleaning up complete data...")
+    categorize_data.clean_up_complete_data(dataset_path)
     

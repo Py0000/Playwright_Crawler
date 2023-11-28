@@ -17,9 +17,9 @@ def read_faulty_files_as_list(txt_file):
 def categorize(date, dataset_path, faulty_txt, new_dir):
     status = {}
 
-    faulty_both_path = os.path.join(dataset_path, new_dir)
-    if not os.path.exists(faulty_both_path):
-        os.makedirs(faulty_both_path)
+    faulty_path = os.path.join(dataset_path, new_dir)
+    if not os.path.exists(faulty_path):
+        os.makedirs(faulty_path)
 
     both_faulty_folder_names = read_faulty_files_as_list(faulty_txt)
 
@@ -27,7 +27,7 @@ def categorize(date, dataset_path, faulty_txt, new_dir):
         zip_folder_path = os.path.join(dataset_path, folder)
 
         if (os.path.exists(zip_folder_path)):
-            shutil.move(zip_folder_path, faulty_both_path)
+            shutil.move(zip_folder_path, faulty_path)
             status[folder] = "Categorized"
         else:
             status[folder] = "Failed"
@@ -35,4 +35,19 @@ def categorize(date, dataset_path, faulty_txt, new_dir):
     output_path = f"{date}_{new_dir}_categorization_status.json"
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(status, f, ensure_ascii=False, indent=4)
+
+def clean_up_complete_data(dataset_path):
+    complete_path = os.path.join(dataset_path, "complete_dataset")
+    if not os.path.exists(complete_path):
+        os.makedirs(complete_path)
+    
+    datasets = os.listdir(dataset_path)
+    for folder in datasets:
+        zip_folder_path = os.path.join(dataset_path, folder)
+        if zip_folder_path.endswith(".zip"):
+            shutil.move(zip_folder_path, complete_path)
+
+
+
+
 

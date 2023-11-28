@@ -17,8 +17,8 @@ def export_data_as_txt_file(filename, data):
 
 def export_data(date, dual_faulty_data, self_ref_faulty_only_data, no_ref_faulty_only_data):
     export_data_as_txt_file(f"{date}_dual_faulty_dataset.txt", dual_faulty_data)
-    export_data_as_txt_file(f"{date}_self_ref_obly_faulty_dataset.txt", self_ref_faulty_only_data)
-    export_data_as_txt_file(f"{date}_no_ref_obly_faulty_dataset.txt", no_ref_faulty_only_data)
+    export_data_as_txt_file(f"{date}_self_ref_only_faulty_dataset.txt", self_ref_faulty_only_data)
+    export_data_as_txt_file(f"{date}_no_ref_only_faulty_dataset.txt", no_ref_faulty_only_data)
 
 
 def obtain_real_file_path(zip_file, zip_file_path, current_folder):
