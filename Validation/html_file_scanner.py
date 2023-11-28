@@ -63,7 +63,7 @@ def scan_html_file(html_data_list, api_key):
 
 
 def get_html_analysis_report(analysis_id, api_key):
-    max_attempt = 5
+    max_attempt = 10
     for attempt in range(max_attempt):
         response = requests.get(
             f'https://www.virustotal.com/api/v3/analyses/{analysis_id}',

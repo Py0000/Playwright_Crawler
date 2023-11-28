@@ -93,7 +93,7 @@ def scan_url(url_to_file_hash_dict, api_key):
 
 # Get the scan analysis report
 def get_url_analysis_report(url_id, api_key):
-    max_attempt = 5
+    max_attempt = 10
     for attempt in range(max_attempt):
         response = requests.get(
             f'https://www.virustotal.com/api/v3/analyses/{url_id}',
