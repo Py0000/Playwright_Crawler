@@ -3,9 +3,10 @@ import os
 import zipfile
 
 
+
 CONFIG_FOLDERS = ["self_ref", "no_ref"]
 LOG_FILE_NAME = "log.json"
-LOG_FIELDS_TO_SKIP = ["Url visited", "Provided Url", "Has Url changed", "Provided Url Hash (in SHA-256)", "Time crawled", "Time taken"]
+LOG_FIELDS_TO_SKIP = ["Url visited", "Provided Url", "Has Url changed", "Provided Url Hash (in SHA-256)", "Time crawled", "Time taken", "Mouse moved when obtaining server-side data?"]
 
 
 
@@ -14,23 +15,25 @@ def export_data_as_txt_file(filename, data):
         for item in data:
             f.write(str(item) + '\n')
 
-def export_data(dual_faulty_data, self_ref_faulty_only_data, no_ref_faulty_only_data):
-    export_data_as_txt_file("dual_faulty_dataset.txt", dual_faulty_data)
-    export_data_as_txt_file("self_ref_obly_faulty_dataset.txt", self_ref_faulty_only_data)
-    export_data_as_txt_file("no_ref_obly_faulty_dataset.txt", no_ref_faulty_only_data)
+def export_data(date, dual_faulty_data, self_ref_faulty_only_data, no_ref_faulty_only_data):
+    export_data_as_txt_file(f"{date}_dual_faulty_dataset.txt", dual_faulty_data)
+    export_data_as_txt_file(f"{date}_self_ref_obly_faulty_dataset.txt", self_ref_faulty_only_data)
+    export_data_as_txt_file(f"{date}_no_ref_obly_faulty_dataset.txt", no_ref_faulty_only_data)
 
 
 def obtain_real_file_path(zip_file, zip_file_path, current_folder):
     # Obtain the folder hash for this particular dataset 
     folder_hash = os.path.splitext(os.path.basename(current_folder))[0]
+
+    """
     # Check if the zip folder contains this additional folder
     potential_file_path = os.path.join(zip_file_path, folder_hash)
     if potential_file_path in zip_file.namelist():
         file_path = potential_file_path
     else:
         file_path = zip_file_path
-    
-    return file_path
+    """
+    return folder_hash
 
 
 def check_status_for_ref_config(zip_file, file_path):
@@ -51,37 +54,41 @@ def check_status_for_ref_config(zip_file, file_path):
     return folder_status
     
 
-dataset_directory = ""
+def filter_faulty_dataset(dataset_directory, date):
+    dual_faulty_data = []
+    self_ref_faulty_only_data = []
+    no_ref_faulty_only_data = []
 
-dual_faulty_data = []
-self_ref_faulty_only_data = []
-no_ref_faulty_only_data = []
-
-datasets = os.listdir(dataset_directory)
-for folder in datasets:
-    print(f"\nProcessing {folder}...")
-    if folder.endswith(".zip"):
-        zip_file_path = os.path.join(dataset_directory, folder)
-        with zipfile.ZipFile(zip_file_path, 'r') as zip_file:
-            # Checks if there are any additional folders contained between zip folder and ref_config folders due to zipping difference
-            file_path = obtain_real_file_path(zip_file, zip_file_path, folder)
-            
-            # Get the log file, check if there is any error in any of the data collection stage for each ref_config
-            folder_status = check_status_for_ref_config(zip_file, file_path)
+    datasets = os.listdir(dataset_directory)
+    for folder in datasets:
+        print(f"\nProcessing {folder}...")
+        if folder.endswith(".zip"):
+            zip_file_path = os.path.join(dataset_directory, folder)
+            with zipfile.ZipFile(zip_file_path, 'r') as zip_file:
+                # Checks if there are any additional folders contained between zip folder and ref_config folders due to zipping difference
+                file_path = obtain_real_file_path(zip_file, zip_file_path, folder)
                 
-            if all(value == "Faulty" for value in folder_status.values()):
-                dual_faulty_data.append(folder)
-            
-            elif folder_status["self_ref"] == "Faulty":
-                self_ref_faulty_only_data.append(folder)
-            
-            elif folder_status["no_ref"] == "Faulty":
-                no_ref_faulty_only_data.append(folder)
-            
-            # Can get the status from log.json also 
-            # TODO: Fill in logic 
+                # Get the log file, check if there is any error in any of the data collection stage for each ref_config
+                folder_status = check_status_for_ref_config(zip_file, file_path)
+                print("Folder status: ", folder_status)
 
-    print(f"Done Processing {folder}...")
+                if all(value == "Faulty" for value in folder_status.values()):
+                    dual_faulty_data.append(folder)
+                
+                elif folder_status["self_ref"] == "Faulty":
+                    self_ref_faulty_only_data.append(folder)
+                
+                elif folder_status["no_ref"] == "Faulty":
+                    no_ref_faulty_only_data.append(folder)
+                
+                # Can get the status from log.json also 
+                # TODO: Fill in logic 
+
+        print(f"Done Processing {folder}...")
 
 
-export_data(dual_faulty_data, self_ref_faulty_only_data, no_ref_faulty_only_data)
+    export_data(date, dual_faulty_data, self_ref_faulty_only_data, no_ref_faulty_only_data)
+
+
+
+
