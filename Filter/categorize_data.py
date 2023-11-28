@@ -14,14 +14,14 @@ def read_faulty_files_as_list(txt_file):
     return faulty_folder_list
 
 
-def categorize(date, dataset_path, both_faulty_txt, new_dir):
+def categorize(date, dataset_path, faulty_txt, new_dir):
     status = {}
 
     faulty_both_path = os.path.join(dataset_path, new_dir)
     if not os.path.exists(faulty_both_path):
         os.makedirs(faulty_both_path)
 
-    both_faulty_folder_names = read_faulty_files_as_list(both_faulty_txt)
+    both_faulty_folder_names = read_faulty_files_as_list(faulty_txt)
 
     for folder in both_faulty_folder_names:
         zip_folder_path = os.path.join(dataset_path, folder)
