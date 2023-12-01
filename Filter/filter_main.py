@@ -2,6 +2,7 @@ import argparse
 
 import faulty_data_filter 
 import categorize_data
+import response_status_filter
 
 LABEL_BOTH_FAULTY_TXT_FILE = "_dual_faulty_dataset.txt"
 LABEL_SELF_REF_FAULTY_TXT_FILE = "_self_ref_only_faulty_dataset.txt"
@@ -33,4 +34,7 @@ if __name__ == '__main__':
     
     print("\nCleaning up complete data...")
     categorize_data.clean_up_complete_data(dataset_path)
+
+    print("\nGetting response status")
+    response_status_filter.consolidate_reponse_status(dataset_path, dateset_date)
     

@@ -35,6 +35,8 @@ def categorize(date, dataset_path, faulty_txt, new_dir):
     output_path = f"{date}_{new_dir}_categorization_status.json"
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(status, f, ensure_ascii=False, indent=4)
+    
+    os.remove(faulty_txt)
 
 def clean_up_complete_data(dataset_path):
     complete_path = os.path.join(dataset_path, "complete_dataset")
