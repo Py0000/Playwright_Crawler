@@ -71,9 +71,11 @@ def filter_faulty_dataset(dataset_directory, date):
     no_ref_faulty_only_data = []
 
     datasets = os.listdir(dataset_directory)
+    total_count = 0
     for folder in datasets:
         print(f"\nProcessing {folder}...")
         if folder.endswith(".zip"):
+            total_count += 1
             zip_file_path = os.path.join(dataset_directory, folder)
             with zipfile.ZipFile(zip_file_path, 'r') as zip_file:
                 # Checks if there are any additional folders contained between zip folder and ref_config folders due to zipping difference
@@ -97,7 +99,7 @@ def filter_faulty_dataset(dataset_directory, date):
 
 
     export_data(date, dual_faulty_data, self_ref_faulty_only_data, no_ref_faulty_only_data)
-
+    return total_count
 
 
 
