@@ -36,5 +36,7 @@ def consolidate_reponse_status(dataset_directory, date):
     output_path_non_200 = f"{date}_response_non_200_status.json"
     with open(output_path_non_200, 'w', encoding='utf-8') as f:
         json.dump(non_code_200_data, f, ensure_ascii=False, indent=4)
+    
+    return len(code_200_data), len(non_code_200_data)
 
 

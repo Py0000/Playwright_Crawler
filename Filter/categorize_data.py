@@ -22,6 +22,7 @@ def categorize(date, dataset_path, faulty_txt, new_dir):
         os.makedirs(faulty_path)
 
     both_faulty_folder_names = read_faulty_files_as_list(faulty_txt)
+    num_of_faulty = len(both_faulty_folder_names)
 
     for folder in both_faulty_folder_names:
         zip_folder_path = os.path.join(dataset_path, folder)
@@ -37,17 +38,22 @@ def categorize(date, dataset_path, faulty_txt, new_dir):
         json.dump(status, f, ensure_ascii=False, indent=4)
     
     os.remove(faulty_txt)
+    return num_of_faulty
 
 def clean_up_complete_data(dataset_path):
     complete_path = os.path.join(dataset_path, "complete_dataset")
     if not os.path.exists(complete_path):
         os.makedirs(complete_path)
-    
+
+    count = 0
     datasets = os.listdir(dataset_path)
     for folder in datasets:
         zip_folder_path = os.path.join(dataset_path, folder)
         if zip_folder_path.endswith(".zip"):
             shutil.move(zip_folder_path, complete_path)
+            count += 1
+    
+    return count
 
 
 

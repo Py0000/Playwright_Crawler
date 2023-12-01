@@ -26,15 +26,23 @@ if __name__ == '__main__':
     faulty_data_filter.filter_faulty_dataset(dataset_path, dateset_date)
     
     print("\nCategorizing both faulty dataset...")
-    categorize_data.categorize(dateset_date, dataset_path, f"{dateset_date}{LABEL_BOTH_FAULTY_TXT_FILE}", FAULTY_DIR_BOTH)
+    num_of_both_faulty = categorize_data.categorize(dateset_date, dataset_path, f"{dateset_date}{LABEL_BOTH_FAULTY_TXT_FILE}", FAULTY_DIR_BOTH)
     print("\nCategorizing self ref only faulty dataset...")
-    categorize_data.categorize(dateset_date, dataset_path, f"{dateset_date}{LABEL_SELF_REF_FAULTY_TXT_FILE}", FAULTY_DIR_SELF)
+    num_of_self_ref_faulty = categorize_data.categorize(dateset_date, dataset_path, f"{dateset_date}{LABEL_SELF_REF_FAULTY_TXT_FILE}", FAULTY_DIR_SELF)
     print("\nCategorizing no ref only faulty dataset...")
-    categorize_data.categorize(dateset_date, dataset_path, f"{dateset_date}{LABEL_NO_REF_FAULTY_TXT_FILE}", FAULTY_DIR_NO)
+    num_of_no_ref_faulty = categorize_data.categorize(dateset_date, dataset_path, f"{dateset_date}{LABEL_NO_REF_FAULTY_TXT_FILE}", FAULTY_DIR_NO)
     
     print("\nCleaning up complete data...")
-    categorize_data.clean_up_complete_data(dataset_path)
+    num_of_complete = categorize_data.clean_up_complete_data(dataset_path)
 
     print("\nGetting response status")
-    response_status_filter.consolidate_reponse_status(dataset_path, dateset_date)
+    num_of_complete_200, num_of_complete_non_200 = response_status_filter.consolidate_reponse_status(dataset_path, dateset_date)
     
+    count_num = {
+        "Number of complete dataset": num_of_complete,
+        "Number of complete dataset with status code 200": num_of_complete_200,
+        "Number of complete dataset with other status codes": num_of_complete_non_200,
+        "Number of both (self ref & no ref) faulty dataset": num_of_both_faulty,
+        "Number of self ref only faulty dataset": num_of_self_ref_faulty,
+        "Number of no ref only faulty dataset": num_of_no_ref_faulty,
+    }
