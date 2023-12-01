@@ -29,11 +29,10 @@ def categorize(date, dataset_path, faulty_txt, new_dir):
 
         if (os.path.exists(zip_folder_path)):
             shutil.move(zip_folder_path, faulty_path)
-            status[folder] = "Categorized"
         else:
             status[folder] = "Failed"
 
-    output_path = f"{date}_{new_dir}_categorization_status.json"
+    output_path = f"{date}_{new_dir}_categorization_failed.json"
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(status, f, ensure_ascii=False, indent=4)
     

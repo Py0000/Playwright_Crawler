@@ -1,4 +1,5 @@
 import argparse
+import json
 
 import faulty_data_filter 
 import categorize_data
@@ -23,7 +24,7 @@ if __name__ == '__main__':
     dataset_path = args.dataset
 
     print("\nFinding faulty dataset...")
-    faulty_data_filter.filter_faulty_dataset(dataset_path, dateset_date)
+    total_dataset_count = faulty_data_filter.filter_faulty_dataset(dataset_path, dateset_date)
     
     print("\nCategorizing both faulty dataset...")
     num_of_both_faulty = categorize_data.categorize(dateset_date, dataset_path, f"{dateset_date}{LABEL_BOTH_FAULTY_TXT_FILE}", FAULTY_DIR_BOTH)
@@ -39,6 +40,7 @@ if __name__ == '__main__':
     num_of_complete_200, num_of_complete_non_200 = response_status_filter.consolidate_reponse_status(dataset_path, dateset_date)
     
     count_num = {
+        "Total number of dataset": total_dataset_count,
         "Number of complete dataset": num_of_complete,
         "Number of complete dataset with status code 200": num_of_complete_200,
         "Number of complete dataset with other status codes": num_of_complete_non_200,
@@ -46,3 +48,7 @@ if __name__ == '__main__':
         "Number of self ref only faulty dataset": num_of_self_ref_faulty,
         "Number of no ref only faulty dataset": num_of_no_ref_faulty,
     }
+
+    output_path = f"{dateset_date}_statistics.json"
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(count_num, f, ensure_ascii=False, indent=4)
