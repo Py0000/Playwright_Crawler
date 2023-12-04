@@ -24,6 +24,9 @@ def get_targeted_brand_from_sheet(file_name, start_date, end_date):
     start_date = datetime.strptime(start_date, '%d%m%y').strftime('%Y-%m-%d')
     end_date = datetime.strptime(end_date, '%d%m%y').strftime('%Y-%m-%d')
     mask = (df['Date (of Dataset)'] >= start_date) & (df['Date (of Dataset)'] <= end_date)
+    
+    # Only include those targets that are deemed as phishing after VirusTotal validation (>4) and manually verified
+    mask &= (df['Final Verdict '] == 'Yes')
     filtered_df = df.loc[mask]
 
     # Extract targeted Brandfrom the filtered DataFrame
