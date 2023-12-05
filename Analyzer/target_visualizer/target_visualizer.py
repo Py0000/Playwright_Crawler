@@ -38,9 +38,9 @@ def get_targeted_brand_from_sheet(file_name, start_date, end_date):
     return brand_counts
 
 
-def generate_diagram(data_counts, start_date, end_date):
+def generate_frequency_diagram(data_counts, start_date, end_date):
     # Set the figure size
-    plt.figure(figsize=(10, 6))  
+    plt.figure(figsize=(15, 9))  
 
     # Create a bar chart
     plt.bar(data_counts.index, data_counts.values)
@@ -63,10 +63,44 @@ def generate_diagram(data_counts, start_date, end_date):
     plt.savefig(output_file)
     plt.close()
 
+def generate_percentage_diagram(data_counts, start_date, end_date):
+    # Calculate the percentages
+    total_count = data_counts.sum()
+    percentages = (data_counts / total_count) * 100
+
+    # Set the figure size
+    plt.figure(figsize=(15, 9))  
+
+    # Create a bar chart
+    plt.bar(percentages.index, percentages.values)
+
+    # Rotate the x-axis labels to show them vertically
+    plt.xticks(rotation=90)
+    #plt.yticks(range(0, 101, 20))
+
+    # Set the x-axis & y-axis label 
+    plt.xlabel('Targeted Brand')  
+    plt.ylabel('%')
+
+    # Set the title of the chart
+    plt.title(f'Targeted Brands for week {start_date} to {end_date}')
+
+    # Include the total count 
+    plt.text(x=0.5, y=0.95, s=f"Total Count: {total_count}", 
+             ha='center', va='top', transform=plt.gca().transAxes)
+    
+    # Adjust the layout to fit everything nicely
+    plt.tight_layout()
+
+    # Save the diagram
+    output_file = f"target_percentage_{start_date}_to_{end_date}.png"
+    plt.savefig(output_file)
+    plt.close()
 
 def target_visualizer(file_name, start_date, end_date):
     data_counts = get_targeted_brand_from_sheet(file_name, start_date, end_date)
-    generate_diagram(data_counts, start_date, end_date)
+    generate_frequency_diagram(data_counts, start_date, end_date)
+    generate_percentage_diagram(data_counts, start_date, end_date)
 
 
 if __name__ == '__main__':
