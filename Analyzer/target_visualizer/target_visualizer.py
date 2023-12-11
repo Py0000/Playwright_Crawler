@@ -40,7 +40,7 @@ def get_targeted_brand_from_sheet(file_name, start_date, end_date):
 
 def generate_frequency_diagram(data_counts, start_date, end_date):
     # Set the figure size
-    plt.figure(figsize=(15, 9))  
+    plt.figure(figsize=(20, 12))  
 
     # Create a bar chart
     plt.bar(data_counts.index, data_counts.values)
@@ -69,7 +69,7 @@ def generate_percentage_diagram(data_counts, start_date, end_date):
     percentages = (data_counts / total_count) * 100
 
     # Set the figure size
-    plt.figure(figsize=(15, 9))  
+    plt.figure(figsize=(20, 12))  
 
     # Create a bar chart
     plt.bar(percentages.index, percentages.values)
@@ -97,10 +97,47 @@ def generate_percentage_diagram(data_counts, start_date, end_date):
     plt.savefig(output_file)
     plt.close()
 
+
+def generate_empirical_cdf_diagram(data_counts, start_date, end_date):
+    # Convert the series to a DataFrame
+    df = data_counts.reset_index()
+    df.columns = ['Brand', 'Count']
+
+    # Sort the DataFrame by count
+    df = df.sort_values(by='Count')
+
+    # Calculate the cumulative sum of the counts
+    df['Cumulative'] = df['Count'].cumsum()
+    df['CDF'] = df['Cumulative'] / df['Cumulative'].max()
+
+    # Plotting
+    plt.figure(figsize=(20, 12))
+    plt.step(df['Brand'], df['CDF'], where='post')
+
+    # Rotate the x-axis labels to show them vertically
+    plt.xticks(rotation=90)
+
+    # Set the x-axis & y-axis label
+    plt.xlabel('Targeted Brand')
+    plt.ylabel('CDF')
+
+    # Set the title of the chart
+    plt.title(f'Targeted Brands for week {start_date} to {end_date}')
+
+    # Adjust the layout to fit everything nicely
+    plt.tight_layout()
+
+    # Save the diagram
+    output_file = f"target_cdf_{start_date}_to_{end_date}.png"
+    plt.savefig(output_file)
+    plt.close()
+
+
 def target_visualizer(file_name, start_date, end_date):
     data_counts = get_targeted_brand_from_sheet(file_name, start_date, end_date)
     generate_frequency_diagram(data_counts, start_date, end_date)
     generate_percentage_diagram(data_counts, start_date, end_date)
+    generate_empirical_cdf_diagram(data_counts, start_date, end_date)
 
 
 if __name__ == '__main__':
