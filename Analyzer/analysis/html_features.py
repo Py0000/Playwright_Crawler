@@ -175,6 +175,32 @@ def num_of_empty_links(soup):
     
     return empty_count
     
+def num_of_link_tags(soup):
+    return len(soup.find_all("link"))
+
+
+def get_source_link(soup):
+    src = []
+    links = soup.find_all('link')
+    for link in links:
+        try:
+            src.append(link.attrs['href'])
+        except:
+            continue
+    
+    tag_list = ['img', 'script', 'noscript']
+    for tag in tag_list:
+        tags = soup.find_all(tag)
+        for t in tags:
+            try:
+                src.append(t.attrs['src'])
+            except:
+                continue
+    return src
+
+def num_of_icon_rs(soup):
+    return len(soup.find_all("link", rel='icon'))
+
 
 
 #--------------------------------- Deals with iframes ---------------------------------
@@ -286,3 +312,131 @@ def num_of_pop_up(soup):
             continue
     
     return pop_up
+    
+
+
+#--------------------------------- Deals with styles ---------------------------------
+# Searches for <link> tags with the rel attribute set to "stylesheet"
+def num_of_stylesheets_total(soup):
+    link_tags = soup.find_all('link', rel='stylesheet')
+    return len(link_tags) 
+
+# Returns the number of css  present in the HTML Script
+# Searches for <link> tags with the rel attribute set to "stylesheet", type attribute set to "text/css" 
+def num_of_css_stylesheets(soup):
+    link_tags = soup.find_all('link', rel='stylesheet', type='text/css')
+    return len(link_tags) 
+
+# Searches <style> tags
+def num_of_internal_css(soup):
+    style_tags = soup.find_all('style')
+    return len(style_tags)
+ 
+
+
+#--------------------------------- Deals with scripts ---------------------------------
+def num_of_noscripts(soup):
+    num = len(soup.find_all("noscript"))
+    return num
+
+def num_of_scripts(soup):
+    num = len(soup.find_all("script"))
+    return num
+
+def num_of_inline_scripts(soup):
+    script_elements = soup.find_all('script')
+    count = 0
+
+    for script in script_elements:
+        if not script.has_attr('src'):
+            count += 1
+
+    return count
+
+def num_of_inline_js_scripts(soup):
+    def is_js(script):
+        return not script.has_attr('type') or script['type'] in ["text/javascript", "application/javascript"]
+    
+    script_elements = soup.find_all('script')
+    count = 0
+
+    for script in script_elements:
+        if not script.has_attr('src') and is_js(script):
+            count += 1
+
+    return count
+
+def num_of_external_scripts(soup):
+    script_elements = soup.find_all('script')
+    count = 0
+
+    for script in script_elements:
+        if script.has_attr('src'):
+            count += 1
+
+    return count
+
+
+
+#--------------------------------- Deals with other external contents ---------------------------------
+def num_of_embeds(soup):
+    num = len(soup.find_all("embed"))
+    return num
+
+
+def embed_src_analysis(soup):
+    embed_elements = soup.find_all('embed')
+    src_values = []
+
+    for embed in embed_elements:
+        src = embed.get('src')
+        if src:
+            src_values.append(src)
+    
+    return src_values
+
+def num_of_objects(soup):
+    num = len(soup.find_all("object"))
+    return num
+
+def object_data_analysis(soup):
+    obj_elements = soup.find_all('object')
+    data_values = []
+
+    for obj in obj_elements:
+        data = obj.get('data')
+        if data:
+            data_values.append(data)
+    
+    return data_values
+
+
+
+#--------------------------------- Deals with media and graphics ---------------------------------
+def num_of_imgs(soup):
+    num = len(soup.find_all("img"))
+    return num
+
+def num_of_pictures(soup):
+    num = len(soup.find_all("picture"))
+    return num
+
+def num_of_videos(soup):
+    num = len(soup.find_all("video"))
+    return num
+
+def num_of_audios(soup):
+    num = len(soup.find_all("audio"))
+    return num
+
+def num_of_svgs(soup):
+    num = len(soup.find_all("svg"))
+    return num
+
+def num_of_clickable_image_maps(soup):
+    num = len(soup.find_all("map"))
+    return num
+
+def num_of_canvas(soup):
+    num = len(soup.find_all("canvas"))
+    return num
