@@ -39,9 +39,6 @@ def num_of_forms(soup):
     forms = soup.find_all('form')
     return len(forms) 
 
-def has_form(soup):
-    return num_of_forms(soup) > 0
-
 def num_of_forms_with_inputs(soup):
     forms = soup.find_all('form')
     count = 0
@@ -106,7 +103,7 @@ def get_names_of_forms_with_textareas(soup):
     return names
 
 
-def num_of_buttons(soup):
+def get_list_of_buttons(soup):
     # Find all <button> elements
     button_tags = soup.find_all('button')  
 
@@ -115,11 +112,24 @@ def num_of_buttons(soup):
     input_submits = soup.find_all('input', {'type': 'submit'})
     input_resets = soup.find_all('input', {'type': 'reset'})
 
-    count = len(button_tags) + len(input_buttons) + len(input_submits) + len(input_resets)
-    return count 
+    all_buttons = button_tags + input_buttons + input_submits + input_resets
+    return all_buttons
 
-def has_button(soup):
-    return num_of_buttons(soup) > 0
+def num_of_buttons(soup):
+    buttons = get_list_of_buttons(soup)
+    return len(buttons)
+
+
+def num_of_disabled_buttons(soup):
+    buttons = get_list_of_buttons(soup)
+    count = 0
+    for button in buttons:
+        try:
+            if str(button.attrs['disabled'])=='disabled':
+                count += 1
+        except:
+            continue
+    return count
 
 
 
@@ -237,4 +247,42 @@ def iframe_src_analysis(soup):
             src_attributes.append(src)
     
     return src_attributes
+    
 
+
+#--------------------------------- Deals with auto redirects/refreshes ---------------------------------
+def num_of_auto_redirect(soup):
+    meta_refresh = soup.find_all('meta', {'http-equiv': 'refresh'})
+    return len(meta_refresh)
+
+# Content is typically = "time;url=target_url".
+def auto_redirect_url(soup):
+    meta_refresh = soup.find_all('meta', {'http-equiv': 'refresh'})
+    urls = []
+
+    for meta in meta_refresh:
+        content = meta.get('content')
+        if content:
+            parts = content.split(';')
+            for part in parts:
+                if part.strip().lower().startswith('url='):
+                    # Extract the URL part
+                    url = part.strip()[4:]
+                    urls.append(url)
+
+    return urls
+    
+
+
+#--------------------------------- Deals with pop-up window ---------------------------------
+def num_of_pop_up(soup):
+    scripts = soup.find_all('script')
+    pop_up = 0
+    for script in scripts:
+        try:
+            if('alert' in str(script.contents)) or ('window.open' in str(script.contents)):
+                pop_up += 1
+        except:
+            continue
+    
+    return pop_up
