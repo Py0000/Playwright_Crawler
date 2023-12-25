@@ -52,8 +52,9 @@ def get_all_url(domains, filename):
 
 
 
-def benign_crawling_preprocessing(csv_path, start_index, end_index, filename):
+def benign_crawling_preprocessing(start_index, end_index, filename):
     print("\nPre-Processing Tranco List...")
+    csv_path = f"feeds/benign/top-1m.csv"
     domains = read_domain_from_tranco_csv(csv_path, start_index, end_index)
     get_all_url(domains, filename)
     print("Finished pre-processing Tranco List...")
@@ -108,11 +109,10 @@ async def start_crawling(feed, dataset_folder_name):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Supply the folder name.")
     parser.add_argument("folder_name", help="Name of the folder")
-    parser.add_argument("csv_path", help="Name of the tranco csv file")
     parser.add_argument("start_index", help="Start range")
     parser.add_argument("end_index", help="End range")
     args = parser.parse_args()
 
-    benign_crawling_preprocessing(args.csv_path, args.start_index, args.end_index, args.folder_name)
+    benign_crawling_preprocessing(args.start_index, args.end_index, args.folder_name)
     process_current_feed(args.folder_name)
     print("Program ended!!!")
