@@ -1,3 +1,4 @@
+import asyncio
 import argparse
 import hashlib
 import os
@@ -60,12 +61,12 @@ def benign_crawling_preprocessing(start_index, end_index, filename):
     print("Finished pre-processing Tranco List...")
 
 
-def process_current_feed(feed, folder_name):
+async def process_current_feed(feed, folder_name):
     dataset_folder_name = f"benign_dataset_{folder_name}"
-    start_crawling(feed, dataset_folder_name)
+    await start_crawling(feed, dataset_folder_name)
 
 
-def process_benign_feeds(filename):
+async def process_benign_feeds(filename):
     benign_file = f"feeds/benign/benign_feeds_{filename}.txt"
     feed_queue = Queue()
     print("\nProcessing feeds from txt file...")
@@ -77,7 +78,7 @@ def process_benign_feeds(filename):
     
     while not feed_queue.empty():
         feed = feed_queue.get()
-        process_current_feed(feed, filename)
+        await process_current_feed(feed, filename)
 
 
 async def start_crawling(feed, dataset_folder_name):
@@ -114,5 +115,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     benign_crawling_preprocessing(args.start_index, args.end_index, args.folder_name)
-    process_benign_feeds(args.folder_name)
+    asyncio.run(process_benign_feeds(args.folder_name))
     print("Program ended!!!")
