@@ -114,5 +114,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     benign_crawling_preprocessing(args.start_index, args.end_index, args.folder_name)
-    process_current_feed(args.folder_name)
+    process_benign_feeds(args.folder_name)
     print("Program ended!!!")
