@@ -55,7 +55,7 @@ def get_all_url(domains, filename):
 def benign_crawling_preprocessing(start_index, end_index, filename):
     print("\nPre-Processing Tranco List...")
     csv_path = f"feeds/benign/top-1m.csv"
-    domains = read_domain_from_tranco_csv(csv_path, start_index, end_index)
+    domains = read_domain_from_tranco_csv(csv_path, int(start_index), int(end_index))
     get_all_url(domains, filename)
     print("Finished pre-processing Tranco List...")
 
