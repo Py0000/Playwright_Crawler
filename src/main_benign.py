@@ -92,10 +92,10 @@ async def start_crawling(feed, dataset_folder_name):
 
             print("Crawling in progress...")
             print(f"\n------------------------------\nConfiguration: Referrer set\nUrl: {feed}\n-----------------------------")
-            await crawler.crawl(browser, feed, url_hash, ref_base_folder_path, timeout_multiplier=2, ref_flag=True)
+            await crawler.crawl(browser, feed, url_hash, ref_base_folder_path, timeout_multiplier=4, ref_flag=True)
 
             print(f"\n------------------------------\nConfiguration: No Referrer set\nUrl: {feed}\n-----------------------------")
-            await crawler.crawl(browser, feed, url_hash, no_ref_base_folder_path, timeout_multiplier=2, ref_flag=False)
+            await crawler.crawl(browser, feed, url_hash, no_ref_base_folder_path, timeout_multiplier=4, ref_flag=False)
             print("\nCrawling done...")
         
         if browser:
