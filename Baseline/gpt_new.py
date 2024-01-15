@@ -17,7 +17,12 @@ def get_api_key(key_file):
 def encode_image_to_base64(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode("utf-8")
-    
+
+
+def format_response(response):
+    formatted_text = response.replace("\n\n1.", "\n1.").replace("\n\n2.", "\n2.").replace("\n\n3.", "\n3.").replace("\n\n4.", "\n4.")
+    formatted_text = formatted_text.replace(": \n", ": ")
+    return formatted_text
 
 def gpt_analysis(image_path, provided_url, visited_url):
     folder_hash = image_path.split("/")[1]
@@ -68,7 +73,7 @@ def gpt_analysis(image_path, provided_url, visited_url):
     )
 
     # Returns the content of the response received from the GPT model
-    return folder_hash + "\n" + response.choices[0].message.content
+    return format_response(folder_hash + "\n" + response.choices[0].message.content)
 
     # Prints information about the usage of the model
     # print(response.usage.model_dump())
