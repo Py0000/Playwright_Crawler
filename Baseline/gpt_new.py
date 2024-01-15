@@ -1,5 +1,10 @@
+import argparse
 import base64
+import json
+import os
+import shutil
 from openai import OpenAI
+
 
 def get_api_key(key_file):
     with open(key_file, 'r') as file:
@@ -60,11 +65,55 @@ def gpt_analysis(image_path, provided_url, visited_url):
         max_tokens=1000,
     )
 
-    # Prints the content of the response received from the GPT model
-    print(response.choices[0].message.content)
+    # Returns the content of the response received from the GPT model
+    return response.choices[0].message.content
 
     # Prints information about the usage of the model
-    print(response.usage.model_dump())
+    # print(response.usage.model_dump())
 
 
-gpt_analysis("screenshot_aft.png", "https://itachi2704.github.io/netflix-clone/", "https://itachi2704.github.io/netflix-clone/")
+def process_directory(zip_folder_path):
+    responses = []
+
+    for zip_file in os.listdir(zip_folder_path):
+        if zip_file.endswith(".zip"):
+            zip_path = os.path.join(zip_folder_path, zip_file)
+
+            # Extract the zip file
+            with zip_file.ZipFile(zip_path, 'r') as zip_ref:
+                extract_path = os.path.join(zip_folder_path, zip_file.replace('.zip', ''))
+                zip_ref.extractall(extract_path)
+
+                # Find the screenshot and log file in the extracted folder
+                for root, dirs, files in os.walk(extract_path):
+                    if 'screenshot_aft.png' in files and 'log.json' in files:
+                        screenshot_path = os.path.join(root, 'screenshot_aft.png')
+                        log_path = os.path.join(root, 'log.json')
+
+                        # Read URLs from log.json
+                        with open(log_path, 'r') as log_file:
+                            log_data = json.load(log_file)
+                            provided_url = log_data.get("Provided Url", "")
+                            visited_url = log_data.get("Url visited", "")
+                    
+                    gpt_resp = gpt_analysis(screenshot_path, provided_url, visited_url)
+                    responses.append(gpt_resp)
+
+                    # Delete the extracted folder after processing
+                    shutil.rmtree(extract_path)
+    
+    date = zip_folder_path.split("_")[-1]
+    output_file = f"gpt_analysis_{date}.txt"
+    with open(output_file, 'w') as file:
+        for response in responses:
+            file.write(response + "\n\n")
+        
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description="Supply the folder names")
+    parser.add_argument("folder_path", help="Folder name")
+    args = parser.parse_args()
+
+    folder_name = args.folder_path 
+    process_directory(folder_name)
