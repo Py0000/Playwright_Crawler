@@ -3,6 +3,7 @@ import base64
 import json
 import os
 import shutil
+import zipfile
 from openai import OpenAI
 
 
@@ -19,6 +20,7 @@ def encode_image_to_base64(image_path):
     
 
 def gpt_analysis(image_path, provided_url, visited_url):
+    folder_hash = image_path.split("/")[1]
     api_key = get_api_key("api_key.txt")
     client = OpenAI(api_key=api_key)
     encoded_image = encode_image_to_base64(image_path)
@@ -62,11 +64,11 @@ def gpt_analysis(image_path, provided_url, visited_url):
                 ],
             },
         ],
-        max_tokens=1000,
+        max_tokens=4096,
     )
 
     # Returns the content of the response received from the GPT model
-    return response.choices[0].message.content
+    return folder_hash + "\n" + response.choices[0].message.content
 
     # Prints information about the usage of the model
     # print(response.usage.model_dump())
@@ -76,37 +78,38 @@ def process_directory(zip_folder_path):
     responses = []
 
     for zip_file in os.listdir(zip_folder_path):
+        print(f"Processing {zip_file}")
         if zip_file.endswith(".zip"):
             zip_path = os.path.join(zip_folder_path, zip_file)
 
             # Extract the zip file
-            with zip_file.ZipFile(zip_path, 'r') as zip_ref:
+            with zipfile.ZipFile(zip_path, 'r') as zip_ref:
                 extract_path = os.path.join(zip_folder_path, zip_file.replace('.zip', ''))
                 zip_ref.extractall(extract_path)
-
+                self_ref_path = os.path.join(extract_path, extract_path.split("/")[1], 'self_ref')
+                
                 # Find the screenshot and log file in the extracted folder
-                for root, dirs, files in os.walk(extract_path):
-                    if 'screenshot_aft.png' in files and 'log.json' in files:
-                        screenshot_path = os.path.join(root, 'screenshot_aft.png')
-                        log_path = os.path.join(root, 'log.json')
+                if os.path.exists(self_ref_path):
+                    screenshot_path = os.path.join(self_ref_path, 'screenshot_aft.png')
+                    log_path = os.path.join(self_ref_path, 'log.json')
 
-                        # Read URLs from log.json
-                        with open(log_path, 'r') as log_file:
-                            log_data = json.load(log_file)
-                            provided_url = log_data.get("Provided Url", "")
-                            visited_url = log_data.get("Url visited", "")
-                    
+                    # Read URLs from log.json
+                    with open(log_path, 'r') as log_file:
+                        log_data = json.load(log_file)
+                        provided_url = log_data.get("Provided Url", "")
+                        visited_url = log_data.get("Url visited", "")
+
                     gpt_resp = gpt_analysis(screenshot_path, provided_url, visited_url)
                     responses.append(gpt_resp)
 
-                    # Delete the extracted folder after processing
-                    shutil.rmtree(extract_path)
+                # Delete the extracted folder after processing
+                shutil.rmtree(extract_path)
     
     date = zip_folder_path.split("_")[-1]
     output_file = f"gpt_analysis_{date}.txt"
     with open(output_file, 'w') as file:
         for response in responses:
-            file.write(response + "\n\n")
+            file.write(response + "\n\n\n")
         
 
 
