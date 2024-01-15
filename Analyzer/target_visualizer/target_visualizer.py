@@ -104,7 +104,7 @@ def generate_empirical_cdf_diagram(data_counts, start_date, end_date):
     df.columns = ['Brand', 'Count']
 
     # Sort the DataFrame by count
-    df = df.sort_values(by='Count')
+    df = df.sort_values(by='Count', ascending=False)
 
     # Calculate the cumulative sum of the counts
     df['Cumulative'] = df['Count'].cumsum()
