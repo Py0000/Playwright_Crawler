@@ -2,6 +2,7 @@ import argparse
 import base64
 import json
 import os
+import time
 import shutil
 import zipfile
 from openai import OpenAI
@@ -79,11 +80,12 @@ def gpt_analysis(image_path, provided_url, visited_url):
     # print(response.usage.model_dump())
 
 
-def process_directory(zip_folder_path):
+def process_directory(zip_folder_path, benign_phishing):
     responses = []
 
     for zip_file in os.listdir(zip_folder_path):
         print(f"Processing {zip_file}")
+        time.sleep(3)
         if zip_file.endswith(".zip"):
             zip_path = os.path.join(zip_folder_path, zip_file)
 
@@ -91,12 +93,18 @@ def process_directory(zip_folder_path):
             with zipfile.ZipFile(zip_path, 'r') as zip_ref:
                 extract_path = os.path.join(zip_folder_path, zip_file.replace('.zip', ''))
                 zip_ref.extractall(extract_path)
-                self_ref_path = os.path.join(extract_path, extract_path.split("/")[1], 'self_ref')
+                if benign_phishing == "phishing":
+                    self_ref_path = os.path.join(extract_path, extract_path.split("/")[1], 'self_ref')
+                else:
+                    self_ref_path = os.path.join(extract_path, 'self_ref')
                 
                 # Find the screenshot and log file in the extracted folder
                 if os.path.exists(self_ref_path):
                     screenshot_path = os.path.join(self_ref_path, 'screenshot_aft.png')
                     log_path = os.path.join(self_ref_path, 'log.json')
+
+                    if not os.path.exists(screenshot_path) or not os.path.exists(log_path):
+                        continue
 
                     # Read URLs from log.json
                     with open(log_path, 'r') as log_file:
@@ -121,7 +129,8 @@ def process_directory(zip_folder_path):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Supply the folder names")
     parser.add_argument("folder_path", help="Folder name")
+    parser.add_argument("benign_phishing", help="benign or phishing")
     args = parser.parse_args()
 
     folder_name = args.folder_path 
-    process_directory(folder_name)
+    process_directory(folder_name, args.benign_phishing)
