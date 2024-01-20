@@ -124,8 +124,7 @@ def process_directory(zip_folder_path, benign_phishing):
         for response in responses:
             file.write(response + "\n\n\n")
         
-
-
+        
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Supply the folder names")
     parser.add_argument("folder_path", help="Folder name")
