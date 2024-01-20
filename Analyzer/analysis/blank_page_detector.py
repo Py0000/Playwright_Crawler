@@ -22,3 +22,8 @@ def detect_blank_page_html_script(html_file_path):
     
 
 
+# Possible to handle inline CSS Style + external CSS Style sheet? 
+# External CSS style sheet may need to make use of network resources downloaded when crawling and match those in the html script under <link> tags with rel="stylesheet"
+    
+
+# Possible to handle Javascript that causes a page to be blank?
