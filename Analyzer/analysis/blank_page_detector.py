@@ -1,8 +1,12 @@
 import argparse
 import cssutils
+import warnings
+import logging
 from bs4 import BeautifulSoup
 import os
 import zipfile
+
+cssutils.log.setLevel(logging.CRITICAL)
 
 def read_html_script(html_file_path):
     with open(html_file_path, 'r', encoding='utf-8') as file:
@@ -24,12 +28,14 @@ def detect_blank_page_html_script(soup):
 
 # Check for css styles that renders the webpage blank
 def css_hide_content(css_content):
-    sheet = cssutils.parseString(css_content)
-    for rule in sheet:
-        if rule.type == rule.STYLE_RULE:
-            for property in rule.style:
-                if property.name == 'display' and property.value == 'none':
-                    return True
+    with warnings.catch_warnings():
+        warnings.simplefilter('ignore')
+        sheet = cssutils.parseString(css_content)
+        for rule in sheet:
+            if rule.type == rule.STYLE_RULE:
+                for property in rule.style:
+                    if property.name == 'display' and property.value == 'none':
+                        return True
     return False
 
 # Recursively check external css scripts that renders the webpage blank
@@ -54,32 +60,48 @@ def check_if_css_renders_blank(soup, network_resp_path):
 
 # only checks html_script after js execution
 def check_dataset_for_blank(main_directory):
-    extraction_path = os.path.join(main_directory, main_directory.replace('.zip', ''))
+    consolidated_results = {}
+    blank_page_dataset = []
+    extraction_path = main_directory.replace('.zip', '')
     date = extraction_path.split('_')[-1]
     
     with zipfile.ZipFile(main_directory, 'r') as zip_ref:
+        print("Extracting zip folder ...")
         zip_ref.extractall(extraction_path)
     
-    parent_folder_path = os.path.join(extraction_path, f'dateset_{date}', f'dateset_{date}', 'complete_dataset')
+    parent_folder_path = os.path.join(extraction_path, f'dataset_{date}', f'dataset_{date}', 'complete_dataset')
     for dir in os.listdir(parent_folder_path):
-        current_dataset_dir = os.path.join(parent_folder_path, dir, dir)
+        current_dataset = dir.replace('.zip', '')
+        current_dataset_dir = os.path.join(parent_folder_path, dir)
+        
+        with zipfile.ZipFile(current_dataset_dir, 'r') as zip_ref:
+            zip_extraction_path = current_dataset_dir.replace('.zip', '')
+            print(f"Extracting inner zip folder {dir}...")
+            zip_ref.extractall(zip_extraction_path)
+            current_dataset_dir = os.path.join(zip_extraction_path, current_dataset)
+
         for sub_dir in os.listdir(current_dataset_dir):
             current_dataset_ref_dir = os.path.join(current_dataset_dir, sub_dir)
             current_dataset_html_file = os.path.join(current_dataset_ref_dir, 'html_script_aft.html')
-            current_dataset_nw_resp_dir = os.path.join(current_dataset_dir, sub_dir, 'network_response_file')
-            print(current_dataset_nw_resp_dir)
+            current_dataset_nw_resp_dir = os.path.join(current_dataset_dir, sub_dir, 'network_response_files')
+            
             html_content = read_html_script(current_dataset_html_file)
             soup = BeautifulSoup(html_content, 'html.parser')
             is_blank_by_html = detect_blank_page_html_script(soup)
+
             if is_blank_by_html:
-                return True
+                consolidated_results[f"{current_dataset} {sub_dir}"] = "Html script (after) renders blank"
+                blank_page_dataset.append(current_dataset)
             
             is_blank_by_css = check_if_css_renders_blank(soup , current_dataset_nw_resp_dir)
             if is_blank_by_css:
-                return True
-            
+                consolidated_results[f"{current_dataset} {sub_dir}"] = "Css scripts renders blank"
+                blank_page_dataset.append(current_dataset)
 
-                
+            consolidated_results[f"{current_dataset} {sub_dir}"] = "Not blank"
+            print(consolidated_results) 
+
+            break
 
 
 
@@ -93,5 +115,5 @@ if __name__ == '__main__':
 
     check_dataset_for_blank(args.folder_path)
 
-    
+
 
