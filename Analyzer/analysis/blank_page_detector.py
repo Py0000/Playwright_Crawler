@@ -209,12 +209,6 @@ def check_dataset_for_blank(main_directory):
     export_data_as_txt_file(ss_bef_blank_output, ss_bef_blank_page_dataset)
 
 
-
-
-
-# Possible to handle Javascript that causes a page to be blank?
-
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Supply the folder names")
     parser.add_argument("folder_path", help="Folder name")
