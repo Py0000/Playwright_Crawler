@@ -22,16 +22,17 @@ def is_screenshot_blank(image_path, std_dev_threshold=6, edge_threshold=2000, te
     text = pytesseract.image_to_string(image)
     text_count = len(text.strip())
 
-    print("std_dev: ", std_dev)
-    print("edge_count: ", edge_count)
-    # print("Text: ", text)
-    print("text_count", text_count)
+    stats = {
+        "std_dev": std_dev,
+        "edge_count": int(edge_count),
+        "text_count": int(text_count)
+    }
 
     # Check against thresholds
     if std_dev < std_dev_threshold and edge_count < edge_threshold and text_count < text_threshold:
-        return True
+        return True, stats
     
-    return False
+    return False, stats
 
 
 # Only to be used to determine threshold values
