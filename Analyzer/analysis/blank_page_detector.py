@@ -181,9 +181,8 @@ def check_dataset_for_blank(main_directory):
             ss_sub_stats[sub_dir] = screenshot_stats
         
         consolidated_results[current_dataset] = dataset_status
-        print(consolidated_results) 
         ss_stats[current_dataset] = ss_sub_stats
-        break
+        
     
     base_output_dir = f"blank_page_logs/{date}"
     os.makedirs(base_output_dir)
