@@ -111,6 +111,7 @@ def check_dataset_for_blank(main_directory):
     ss_aft_blank_page_dataset = []
     ss_bef_blank_page_dataset = []
     ss_stats = {}
+    error_dataset = []
 
     extraction_path = main_directory.replace('.zip', '')
     date = extraction_path.split('_')[-1]
@@ -133,52 +134,57 @@ def check_dataset_for_blank(main_directory):
         dataset_status = {}
         ss_sub_stats = {}
         for sub_dir in os.listdir(current_dataset_dir):
-            current_dataset_ref_dir = os.path.join(current_dataset_dir, sub_dir)
-            current_dataset_html_file_aft = os.path.join(current_dataset_ref_dir, 'html_script_aft.html')
-            current_dataset_html_file_bef = os.path.join(current_dataset_ref_dir, 'html_script_aft.html')
-            current_dataset_nw_resp_dir = os.path.join(current_dataset_dir, sub_dir, 'network_response_files')
-            current_dataset_ss_aft = os.path.join(current_dataset_ref_dir, 'screenshot_aft.png')
-            current_dataset_ss_bef = os.path.join(current_dataset_ref_dir, 'screenshot_bef.png')
+            try:
+                current_dataset_ref_dir = os.path.join(current_dataset_dir, sub_dir)
+                current_dataset_html_file_aft = os.path.join(current_dataset_ref_dir, 'html_script_aft.html')
+                current_dataset_html_file_bef = os.path.join(current_dataset_ref_dir, 'html_script_aft.html')
+                current_dataset_nw_resp_dir = os.path.join(current_dataset_dir, sub_dir, 'network_response_files')
+                current_dataset_ss_aft = os.path.join(current_dataset_ref_dir, 'screenshot_aft.png')
+                current_dataset_ss_bef = os.path.join(current_dataset_ref_dir, 'screenshot_bef.png')
 
-            html_content_bef = read_html_script(current_dataset_html_file_bef)
-            soup_bef = BeautifulSoup(html_content_bef, 'html.parser')
-            is_blank_by_html_bef = detect_blank_page_html_script(soup_bef)
-            
-            html_content_aft = read_html_script(current_dataset_html_file_aft)
-            soup_aft = BeautifulSoup(html_content_aft, 'html.parser')
-            is_blank_by_html_aft = detect_blank_page_html_script(soup_aft)
-            is_blank_by_css = check_if_css_renders_blank(soup_aft , current_dataset_nw_resp_dir)
-            is_blank_by_js, potential_blank_js = external_js_hide_content(current_dataset_nw_resp_dir)
-            is_ss_aft_blank, ss_aft_stats = is_screenshot_blank(current_dataset_ss_aft)
-            is_ss_bef_blank, ss_bef_stats = is_screenshot_blank(current_dataset_ss_bef)
+                html_content_bef = read_html_script(current_dataset_html_file_bef)
+                soup_bef = BeautifulSoup(html_content_bef, 'html.parser')
+                is_blank_by_html_bef = detect_blank_page_html_script(soup_bef)
+                
+                html_content_aft = read_html_script(current_dataset_html_file_aft)
+                soup_aft = BeautifulSoup(html_content_aft, 'html.parser')
+                is_blank_by_html_aft = detect_blank_page_html_script(soup_aft)
+                is_blank_by_css = check_if_css_renders_blank(soup_aft , current_dataset_nw_resp_dir)
+                is_blank_by_js, potential_blank_js = external_js_hide_content(current_dataset_nw_resp_dir)
+                is_ss_aft_blank, ss_aft_stats = is_screenshot_blank(current_dataset_ss_aft)
+                is_ss_bef_blank, ss_bef_stats = is_screenshot_blank(current_dataset_ss_bef)
 
-            if is_blank_by_html_aft: 
-                html_blank_page_dataset.append(current_dataset)
-            if is_blank_by_css:
-                css_blank_page_dataset.append(current_dataset)
-            if is_blank_by_js:
-                blank_js_status = {current_dataset: potential_blank_js}
-                js_blank_page_dataset.append(blank_js_status)
-            if is_ss_aft_blank:
-                ss_aft_blank_page_dataset.append(current_dataset)
-            if is_ss_bef_blank:
-                ss_bef_blank_page_dataset.append(current_dataset)
+                if is_blank_by_html_aft: 
+                    html_blank_page_dataset.append(current_dataset)
+                if is_blank_by_css:
+                    css_blank_page_dataset.append(current_dataset)
+                if is_blank_by_js:
+                    blank_js_status = {current_dataset: potential_blank_js}
+                    js_blank_page_dataset.append(blank_js_status)
+                if is_ss_aft_blank:
+                    ss_aft_blank_page_dataset.append(current_dataset)
+                if is_ss_bef_blank:
+                    ss_bef_blank_page_dataset.append(current_dataset)
 
-            status = {
-                "Html Script (Before)": "Blank" if is_blank_by_html_bef else "Not Blank",
-                "Html Script (After)": "Blank" if is_blank_by_html_aft else "Not Blank",
-                "CSS Style/Sheet": "Blank" if is_blank_by_css else "Not Blank",
-                "Js": "Blank" if is_blank_by_js else "Not Blank",
-                "Screenshot (After) result":  "Blank" if is_ss_aft_blank else "Not Blank",
-                "Screenshot (Before) result":  "Blank" if is_ss_bef_blank else "Not Blank",
-            }
-            dataset_status[sub_dir] = status
+                status = {
+                    "Html Script (Before)": "Blank" if is_blank_by_html_bef else "Not Blank",
+                    "Html Script (After)": "Blank" if is_blank_by_html_aft else "Not Blank",
+                    "CSS Style/Sheet": "Blank" if is_blank_by_css else "Not Blank",
+                    "Js": "Blank" if is_blank_by_js else "Not Blank",
+                    "Screenshot (After) result":  "Blank" if is_ss_aft_blank else "Not Blank",
+                    "Screenshot (Before) result":  "Blank" if is_ss_bef_blank else "Not Blank",
+                }
+                dataset_status[sub_dir] = status
 
-            screenshot_stats = {
-                "After": ss_aft_stats,
-                "Before": ss_bef_stats
-            }
-            ss_sub_stats[sub_dir] = screenshot_stats
+                screenshot_stats = {
+                    "After": ss_aft_stats,
+                    "Before": ss_bef_stats
+                }
+                ss_sub_stats[sub_dir] = screenshot_stats
+            except:
+                dataset_status[sub_dir] = "Error encountered while processing dataset folder"
+                ss_sub_stats[sub_dir] = "Error encountered while processing dataset folder"
+                error_dataset.append(current_dataset)
         
         consolidated_results[current_dataset] = dataset_status
         ss_stats[current_dataset] = ss_sub_stats
@@ -194,6 +200,7 @@ def check_dataset_for_blank(main_directory):
     ss_bef_blank_output = os.path.join(base_output_dir, f"{date}_ss_bef_blank.txt")
     consolidated_output = os.path.join(base_output_dir, f"{date}_blank_consolidation.json")
     ss_stats_output = os.path.join(base_output_dir, f"{date}_ss_stats.json")
+    error_output = os.path.join(base_output_dir, f"{date}_error.txt")
 
     with open(consolidated_output, 'w', encoding='utf-8') as f:
         json.dump(consolidated_results, f, ensure_ascii=False, indent=4)
@@ -206,6 +213,7 @@ def check_dataset_for_blank(main_directory):
     export_data_as_txt_file(js_blank_output, js_blank_page_dataset)
     export_data_as_txt_file(ss_aft_blank_output, ss_aft_blank_page_dataset)
     export_data_as_txt_file(ss_bef_blank_output, ss_bef_blank_page_dataset)
+    export_data_as_txt_file(error_output, error_dataset)
 
 
 if __name__ == '__main__':
