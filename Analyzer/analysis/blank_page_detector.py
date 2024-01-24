@@ -1,10 +1,12 @@
 import argparse
+import time
 import cssutils
 import warnings
 import logging
 from bs4 import BeautifulSoup
 import os
 import zipfile
+import shutil
 import json
 import re
 
@@ -105,13 +107,7 @@ def external_js_hide_content(network_resp_path):
 # CSS and JS are being detected as backup measures (As the detection is not accurate)
 def check_dataset_for_blank(main_directory):
     consolidated_results = {}
-    html_blank_page_dataset = []
-    css_blank_page_dataset = []
-    js_blank_page_dataset = []
-    ss_aft_blank_page_dataset = []
-    ss_bef_blank_page_dataset = []
     ss_stats = {}
-    error_dataset = []
 
     extraction_path = main_directory.replace('.zip', '')
     date = extraction_path.split('_')[-1]
@@ -154,23 +150,12 @@ def check_dataset_for_blank(main_directory):
                 is_ss_aft_blank, ss_aft_stats = is_screenshot_blank(current_dataset_ss_aft)
                 is_ss_bef_blank, ss_bef_stats = is_screenshot_blank(current_dataset_ss_bef)
 
-                if is_blank_by_html_aft: 
-                    html_blank_page_dataset.append(current_dataset)
-                if is_blank_by_css:
-                    css_blank_page_dataset.append(current_dataset)
-                if is_blank_by_js:
-                    blank_js_status = {current_dataset: potential_blank_js}
-                    js_blank_page_dataset.append(blank_js_status)
-                if is_ss_aft_blank:
-                    ss_aft_blank_page_dataset.append(current_dataset)
-                if is_ss_bef_blank:
-                    ss_bef_blank_page_dataset.append(current_dataset)
-
                 status = {
                     "Html Script (Before)": "Blank" if is_blank_by_html_bef else "Not Blank",
                     "Html Script (After)": "Blank" if is_blank_by_html_aft else "Not Blank",
                     "CSS Style/Sheet": "Blank" if is_blank_by_css else "Not Blank",
                     "Js": "Blank" if is_blank_by_js else "Not Blank",
+                    "Potentially Blank Js File": potential_blank_js if is_blank_by_js else [],
                     "Screenshot (After) result":  "Blank" if is_ss_aft_blank else "Not Blank",
                     "Screenshot (Before) result":  "Blank" if is_ss_bef_blank else "Not Blank",
                 }
@@ -184,36 +169,115 @@ def check_dataset_for_blank(main_directory):
             except:
                 dataset_status[sub_dir] = "Error encountered while processing dataset folder"
                 ss_sub_stats[sub_dir] = "Error encountered while processing dataset folder"
-                error_dataset.append(current_dataset)
         
         consolidated_results[current_dataset] = dataset_status
-        ss_stats[current_dataset] = ss_sub_stats
-        
+        ss_stats[current_dataset] = ss_sub_stats   
     
     base_output_dir = f"blank_page_logs/{date}"
-    os.makedirs(base_output_dir)
+    if not os.path.exists(base_output_dir):
+        os.makedirs(base_output_dir)
 
-    html_blank_output = os.path.join(base_output_dir, f"{date}_html_blank.txt")
-    css_blank_output = os.path.join(base_output_dir, f"{date}_css_blank.txt")
-    js_blank_output = os.path.join(base_output_dir, f"{date}_js_blank.txt")
-    ss_aft_blank_output = os.path.join(base_output_dir, f"{date}_ss_aft_blank.txt")
-    ss_bef_blank_output = os.path.join(base_output_dir, f"{date}_ss_bef_blank.txt")
     consolidated_output = os.path.join(base_output_dir, f"{date}_blank_consolidation.json")
     ss_stats_output = os.path.join(base_output_dir, f"{date}_ss_stats.json")
-    error_output = os.path.join(base_output_dir, f"{date}_error.txt")
-
+    
     with open(consolidated_output, 'w', encoding='utf-8') as f:
         json.dump(consolidated_results, f, ensure_ascii=False, indent=4)
     
     with open(ss_stats_output, 'w', encoding='utf-8') as f:
         json.dump(ss_stats, f, ensure_ascii=False, indent=4)
     
-    export_data_as_txt_file(html_blank_output, html_blank_page_dataset)
-    export_data_as_txt_file(css_blank_output, css_blank_page_dataset)
-    export_data_as_txt_file(js_blank_output, js_blank_page_dataset)
-    export_data_as_txt_file(ss_aft_blank_output, ss_aft_blank_page_dataset)
-    export_data_as_txt_file(ss_bef_blank_output, ss_bef_blank_page_dataset)
-    export_data_as_txt_file(error_output, error_dataset)
+    shutil.rmtree(extraction_path)
+    return consolidated_output
+
+
+def log_files_get_dict_key_and_output_file(date, type):
+    TYPE_MAP = {
+        "html": "Html Script (After)",
+        "css": "CSS Style/Sheet",
+        "js": "Js",
+        "ss_aft": "Screenshot (After) result",
+        "ss_bef": "Screenshot (After) result",
+    }
+
+    base_output_dir = f"blank_page_logs/{date}"
+    output_file_map = {
+        "html": os.path.join(base_output_dir, f"{date}_html_blank"),
+        "css": os.path.join(base_output_dir, f"{date}_css_blank"),
+        "js": os.path.join(base_output_dir, f"{date}_js_blank"),
+        "ss_aft": os.path.join(base_output_dir, f"{date}_ss_aft_blank"),
+        "ss_bef": os.path.join(base_output_dir, f"{date}_ss_bef_blank"),
+    }
+
+    return TYPE_MAP[type], output_file_map[type]
+
+
+def spilt_log_files_by_type(consolidated_log_file_path, type, date):
+    both = []
+    self_ref = []
+    no_ref = []
+
+    base_output_dir = f"blank_page_logs/{date}"
+    if not os.path.exists(base_output_dir):
+        os.makedirs(base_output_dir)
+
+    dict_key, output_file_name = log_files_get_dict_key_and_output_file(date, type)
+
+    with open(consolidated_log_file_path, 'r') as file:
+        data = json.load(file)
+    
+    for folder_name, content in data.items():
+        if (isinstance(content['self_ref'], dict) and isinstance(content['no_ref'], dict)):
+            is_self_ref_blank = False
+            is_no_ref_blank = False
+
+            if content['self_ref'].get(dict_key) == "Blank":
+                is_self_ref_blank = True
+            if content['no_ref'].get(dict_key) == "Blank":
+                is_no_ref_blank = True
+
+            if is_self_ref_blank and is_no_ref_blank:
+                both.append(folder_name)
+            elif is_self_ref_blank:
+                self_ref.append(folder_name)
+            elif is_no_ref_blank:
+                no_ref.append(folder_name)
+        
+    
+    both_output_file = f"{output_file_name}_both.txt"
+    self_ref_output_file = f"{output_file_name}_self_ref.txt"
+    no_ref_output_file = f"{output_file_name}_no_ref.txt"       
+
+    export_data_as_txt_file(both_output_file, both)
+    export_data_as_txt_file(self_ref_output_file, self_ref)    
+    export_data_as_txt_file(no_ref_output_file, no_ref)         
+
+
+def get_error_logs(consolidated_log_file_path, date):
+    print("\nGenerating error logs...")
+    errors = []
+
+    base_output_dir = f"blank_page_logs/{date}"
+    error_output = os.path.join(base_output_dir, f"{date}_error.txt")
+
+    with open(consolidated_log_file_path, 'r') as file:
+        data = json.load(file)
+    
+    for folder_name, content in data.items():
+        if (isinstance(content['self_ref'], str) or isinstance(content['no_ref'], str)):
+            errors.append(folder_name)
+    
+    export_data_as_txt_file(error_output, errors)
+
+
+def split_log_files(consolidated_log_file_path, date):
+    print("\nGenerating more concise log files...")
+    TYPE = ["html", "css", "js", "ss_aft", "ss_bef"]
+
+    for type in TYPE:
+        print(f"Generating concise log file based on {type}...")
+        spilt_log_files_by_type(consolidated_log_file_path, type, date)
+    
+
 
 
 if __name__ == '__main__':
@@ -221,7 +285,10 @@ if __name__ == '__main__':
     parser.add_argument("folder_path", help="Folder name")
     args = parser.parse_args()
 
-    check_dataset_for_blank(args.folder_path)
+    consolidated_output = check_dataset_for_blank(args.folder_path)
+    date = (args.folder_path.split('_')[-1]).split('.')[0]
+    split_log_files(consolidated_output, date)
+    get_error_logs(consolidated_output, date)
 
 
 
