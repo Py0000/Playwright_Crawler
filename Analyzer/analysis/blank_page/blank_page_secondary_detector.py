@@ -111,8 +111,8 @@ def check_external_resources_for_blank(main_directory):
             try:
                 current_dataset_ref_dir = os.path.join(current_dataset_dir, sub_dir)
                 current_dataset_nw_resp_dir = os.path.join(current_dataset_ref_dir, 'network_response_files')
-
-                is_blank_by_css, blank_css_list, is_blank_by_js, blank_js_list = check_external_css(current_dataset_nw_resp_dir)
+                
+                is_blank_by_css, blank_css_list, is_blank_by_js, blank_js_list = check_external_files(current_dataset_nw_resp_dir)
                 
                 status = {
                     "CSS Style/Sheet": "Blank" if is_blank_by_css else "Not Blank",
@@ -122,12 +122,15 @@ def check_external_resources_for_blank(main_directory):
                 }
 
                 dataset_status[sub_dir] = status
-            except:
+            
+            except Exception as e:
+                print(e)
                 dataset_status[sub_dir] = "Error encountered while processing dataset folder"
+            
         
         consolidated_results[current_dataset] = dataset_status
     
-    base_output_dir = f"blank_page/secondary_logs/{date}"
+    base_output_dir = f"secondary_logs/{date}"
     if not os.path.exists(base_output_dir):
         os.makedirs(base_output_dir)
     
@@ -148,6 +151,6 @@ if __name__ == '__main__':
     consolidated_output = check_external_resources_for_blank(args.folder_path)
     date = (args.folder_path.split('_')[-1]).split('.')[0]
 
-    base_output_dir = os.path.join("blank_page", "secondary_logs", date)
+    base_output_dir = os.path.join("secondary_logs", date)
     blank_page_util.split_log_files(consolidated_output, date, ["css", "js"], base_output_dir)
     

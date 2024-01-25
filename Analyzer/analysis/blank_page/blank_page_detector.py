@@ -96,9 +96,9 @@ def check_dataset_for_blank(main_directory):
         
         consolidated_results[current_dataset] = dataset_status
         ss_stats[current_dataset] = ss_sub_stats   
-        
+
     
-    base_output_dir = f"blank_page/primary_logs/{date}"
+    base_output_dir = f"primary_logs/{date}"
     if not os.path.exists(base_output_dir):
         os.makedirs(base_output_dir)
 
@@ -141,7 +141,7 @@ if __name__ == '__main__':
     consolidated_output = check_dataset_for_blank(args.folder_path)
     date = (args.folder_path.split('_')[-1]).split('.')[0]
 
-    base_output_dir = os.path.join("blank_page", "primary_logs", date)
+    base_output_dir = os.path.join("primary_logs", date)
     blank_page_util.split_log_files(consolidated_output, date, ["html", "ss_aft", "ss_bef"], base_output_dir)
     get_error_logs(consolidated_output, date, base_output_dir)
 
