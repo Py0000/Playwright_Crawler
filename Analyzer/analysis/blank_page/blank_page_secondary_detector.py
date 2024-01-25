@@ -2,6 +2,7 @@ import argparse
 import json
 import os 
 import zipfile
+import shutil
 
 import cssutils
 import warnings
@@ -134,6 +135,9 @@ def check_external_resources_for_blank(main_directory):
     with open(consolidated_output, 'w', encoding='utf-8') as f:
         json.dump(consolidated_results, f, ensure_ascii=False, indent=4)
     
+    shutil.rmtree(extraction_path)
+    return consolidated_output
+    
 
 
 if __name__ == '__main__':
@@ -143,5 +147,7 @@ if __name__ == '__main__':
 
     consolidated_output = check_external_resources_for_blank(args.folder_path)
     date = (args.folder_path.split('_')[-1]).split('.')[0]
-    blank_page_util.split_log_files(consolidated_output, date, ["css", "js"])
+
+    base_output_dir = os.path.join("blank_page", "secondary_logs", date)
+    blank_page_util.split_log_files(consolidated_output, date, ["css", "js"], base_output_dir)
     

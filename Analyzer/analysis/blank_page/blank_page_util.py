@@ -73,4 +73,4 @@ def split_log_files(consolidated_log_file_path, date, types):
     
     for type in types:
         print(f"Generating concise log file based on {type}...")
-        spilt_log_files_by_type(consolidated_log_file_path, type, date)
+        spilt_log_files_by_type(consolidated_log_file_path, type, date, base_output_dir)

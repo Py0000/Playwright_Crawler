@@ -10,8 +10,6 @@ from blank_page_secondary_detector import css_hide_content
 from image_analysis import is_screenshot_blank
 
 
-
-
 def read_html_script(html_file_path):
     with open(html_file_path, 'r', encoding='utf-8') as file:
         html_content = file.read()
@@ -112,16 +110,15 @@ def check_dataset_for_blank(main_directory):
     with open(ss_stats_output, 'w', encoding='utf-8') as f:
         json.dump(ss_stats, f, ensure_ascii=False, indent=4)
     
-    #shutil.rmtree(extraction_path)
+    shutil.rmtree(extraction_path)
     return consolidated_output
 
 
 
-def get_error_logs(consolidated_log_file_path, date):
+def get_error_logs(consolidated_log_file_path, date, base_output_dir):
     print("\nGenerating error logs...")
     errors = []
 
-    base_output_dir = f"blank_page_logs/{date}"
     error_output = os.path.join(base_output_dir, f"{date}_error.txt")
 
     with open(consolidated_log_file_path, 'r') as file:
@@ -133,17 +130,7 @@ def get_error_logs(consolidated_log_file_path, date):
     
     blank_page_util.export_data_as_txt_file(error_output, errors)
 
-
-def split_log_files(consolidated_log_file_path, date):
-    print("\nGenerating more concise log files...")
-    TYPE = ["html", "css", "js", "ss_aft", "ss_bef"]
-
-    for type in TYPE:
-        print(f"Generating concise log file based on {type}...")
-        spilt_log_files_by_type(consolidated_log_file_path, type, date)
     
-
-
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Supply the folder names")
@@ -152,8 +139,10 @@ if __name__ == '__main__':
 
     consolidated_output = check_dataset_for_blank(args.folder_path)
     date = (args.folder_path.split('_')[-1]).split('.')[0]
-    split_log_files(consolidated_output, date)
-    get_error_logs(consolidated_output, date)
+
+    base_output_dir = os.path.join("blank_page", "primary_logs", date)
+    blank_page_util.split_log_files(consolidated_output, date, ["html", "ss_aft", "ss_bef"], base_output_dir)
+    get_error_logs(consolidated_output, date, base_output_dir)
 
 
 
