@@ -186,7 +186,7 @@ def check_dataset_for_blank(main_directory):
     with open(ss_stats_output, 'w', encoding='utf-8') as f:
         json.dump(ss_stats, f, ensure_ascii=False, indent=4)
     
-    shutil.rmtree(extraction_path)
+    #shutil.rmtree(extraction_path)
     return consolidated_output
 
 
