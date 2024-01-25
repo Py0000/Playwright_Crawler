@@ -36,7 +36,7 @@ def spilt_log_files_by_type(consolidated_log_file_path, type, date, base_output_
     if not os.path.exists(base_output_dir):
         os.makedirs(base_output_dir)
 
-    dict_key, output_file_name = log_files_get_dict_key_and_output_file(date, type)
+    dict_key, output_file_name = log_files_get_dict_key_and_output_file(date, type, base_output_dir)
 
     with open(consolidated_log_file_path, 'r') as file:
         data = json.load(file)
@@ -68,7 +68,7 @@ def spilt_log_files_by_type(consolidated_log_file_path, type, date, base_output_
     export_data_as_txt_file(no_ref_output_file, no_ref)        
 
 
-def split_log_files(consolidated_log_file_path, date, types):
+def split_log_files(consolidated_log_file_path, date, types, base_output_dir):
     print("\nGenerating more concise log files...")
     
     for type in types:
