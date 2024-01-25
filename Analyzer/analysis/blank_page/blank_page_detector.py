@@ -96,7 +96,7 @@ def check_dataset_for_blank(main_directory):
         
         consolidated_results[current_dataset] = dataset_status
         ss_stats[current_dataset] = ss_sub_stats   
-        break
+        
     
     base_output_dir = f"blank_page/primary_logs/{date}"
     if not os.path.exists(base_output_dir):
