@@ -43,11 +43,11 @@ def filter_out_blank_page_by_html(date, dataset_path, blank_page_list, new_dir):
             print(folder, os.path.exists(zip_dataset_path), "failed")
             status.append(folder) 
     
-    log_dir = f"blank_page_cat_logs/{date}"
+    log_dir = f"cat_logs/{date}"
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
 
-    output_path = os.path.join(log_dir, f"{date}_blank_page_{new_dir}_categorization_failed.json")
+    output_path = os.path.join(log_dir, f"{date}_{new_dir}_categorization_failed.json")
     with open(output_path, 'w') as f:
         for item in status:
             f.write(str(item) + '\n')
@@ -84,8 +84,8 @@ def is_also_potentially_blank_by_other_files(log_dir_path, filtered_out_dataset,
 
         status[filtered] = data
     
-    log_dir = f"blank_page_cat_logs/{date}"
-    output_path = os.path.join(log_dir, f"{date}_blank_page_others_{type}_categorization.json")
+    log_dir = f"cat_logs/{date}"
+    output_path = os.path.join(log_dir, f"{date}_others_{type}_categorization.json")
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(status, f, ensure_ascii=False, indent=4)
 
@@ -104,7 +104,7 @@ if __name__ == '__main__':
     parser.add_argument("new_dir", help="Name of dir to keep blank dataset")
     args = parser.parse_args()
     
-    log_dir_path = os.path.join("blank_page_logs", args.date)
+    log_dir_path = os.path.join("primary_logs", args.date)
     blank_txt_path = os.path.join(log_dir_path, f"{args.date}_{args.blank_txt}.txt")
     blank_page_list = read_blank_files_as_list(blank_txt_path)
     unsuccessful_filtered_path = filter_out_blank_page_by_html(args.date, args.folder_path, blank_page_list, args.new_dir)

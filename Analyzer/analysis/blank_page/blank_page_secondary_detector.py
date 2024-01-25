@@ -134,7 +134,7 @@ def check_external_resources_for_blank(main_directory):
     if not os.path.exists(base_output_dir):
         os.makedirs(base_output_dir)
     
-    consolidated_output = os.path.join(base_output_dir, f"{date}_blank_secondary.json")
+    consolidated_output = os.path.join(base_output_dir, f"{date}_sec_consolidation.json")
     with open(consolidated_output, 'w', encoding='utf-8') as f:
         json.dump(consolidated_results, f, ensure_ascii=False, indent=4)
     

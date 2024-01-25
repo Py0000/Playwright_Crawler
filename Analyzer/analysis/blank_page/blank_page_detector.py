@@ -102,7 +102,7 @@ def check_dataset_for_blank(main_directory):
     if not os.path.exists(base_output_dir):
         os.makedirs(base_output_dir)
 
-    consolidated_output = os.path.join(base_output_dir, f"{date}_blank_consolidation.json")
+    consolidated_output = os.path.join(base_output_dir, f"{date}_consolidation.json")
     ss_stats_output = os.path.join(base_output_dir, f"{date}_ss_stats.json")
     
     with open(consolidated_output, 'w', encoding='utf-8') as f:
