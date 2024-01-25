@@ -55,6 +55,7 @@ def filter_out_blank_page_by_html(date, dataset_path, blank_page_list, new_dir):
     return output_path
 
 def is_also_potentially_blank_by_other_files(log_dir_path, filtered_out_dataset, date, type):
+    print("Checking if filtered files are also potentially blank by other file types...")
     status = {}
 
     # Cross check against logs for css, js and ss_aft
