@@ -103,9 +103,12 @@ def shift_logs_files(date, src_dir):
         os.makedirs(logs_dir)
     
     for file in os.listdir(os.path.join(src_dir, date)):
-        src_file_path = os.path.join(src_dir, file)
-        dest_file_path = os.path.join(logs_dir, file)
-        shutil.move(src_file_path, dest_file_path)
+        src_file_path = os.path.join(os.path.join(src_dir, date), file)
+        if os.path.exists(src_file_path):
+            dest_file_path = os.path.join(logs_dir, file)
+            shutil.move(src_file_path, dest_file_path)
+        else:
+            print(f"File {file} does not exist!")
     
 
 def clean_up_logs(date):
