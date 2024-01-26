@@ -4,6 +4,7 @@ import os
 import shutil 
 import zipfile
 
+import blank_page_util
 
 def read_blank_files_as_list(txt_file):
     with open(txt_file, "r") as f: 
@@ -58,43 +59,40 @@ def is_also_potentially_blank_by_other_files(log_dir_path, filtered_out_dataset,
     print("Checking if filtered files are also potentially blank by other file types...")
     status = {}
 
-    # Cross check against logs for css, js and ss_aft
-    css_blank_list = read_blank_files_as_list(os.path.join(log_dir_path, f"{date}_css_blank_{type}.txt"))
-    js_blank_list = read_blank_files_as_list(os.path.join(log_dir_path, f"{date}_js_blank_{type}.txt"))
+    # Cross check against logs for screenshot
     ss_aft_blank_list = read_blank_files_as_list(os.path.join(log_dir_path, f"{date}_ss_aft_blank_{type}.txt"))
 
     # Return a dict {dataset_name: {css: true/false, js: true/false, ss_aft: true/false}}
     for filtered in filtered_out_dataset:
-        is_css_blank = False
-        is_js_blank = False
         is_ss_aft_blank = False
 
-        if filtered in css_blank_list:
-            is_css_blank = True
-        if filtered in js_blank_list:
-            is_js_blank = True
         if filtered in ss_aft_blank_list:
             is_ss_aft_blank = True
         
         data = {
-            "Is blank by css": is_css_blank,
-            "Is blank by js": is_js_blank,
             "Is blank by ss (after)": is_ss_aft_blank
         }
 
         status[filtered] = data
     
     log_dir = f"cat_logs/{date}"
-    output_path = os.path.join(log_dir, f"{date}_others_{type}_categorization.json")
+    output_path = os.path.join(log_dir, f"{date}_cat_cross_check_ss_{type}.json")
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(status, f, ensure_ascii=False, indent=4)
 
 
-def potentially_blank_not_filtered_yet():
-    # Reads the list of filtered dataset folder names
-    # Remove from css, js, ss_aft blank list/log files those that are already filtered
+def potentially_blank_not_filtered_yet(log_dir_path, filtered_dataset, date, type):
+    ss_aft_blank_list = read_blank_files_as_list(os.path.join(log_dir_path, f"{date}_ss_aft_blank_{type}.txt"))
+
+    # Remove from ss_aft blank list/log files those that are already filtered
+    for filtered in filtered_dataset:
+        if filtered in ss_aft_blank_list:
+            ss_aft_blank_list.remove(filtered)
+
     # Return a new log with the remaining unfiltered ones
-    return 
+    output_file = os.path.join(log_dir_path, f"{date}_unfiltered_extra_ss_blank_{type}.txt")
+    blank_page_util.export_data_as_txt_file(output_file, ss_aft_blank_list)
+    
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Supply the folder names")
