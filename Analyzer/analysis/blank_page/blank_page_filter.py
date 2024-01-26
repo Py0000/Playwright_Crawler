@@ -56,7 +56,7 @@ def filter_out_blank_page_by_html(date, dataset_path, blank_page_list, new_dir):
     return output_path
 
 def is_also_potentially_blank_by_other_files(log_dir_path, filtered_out_dataset, date, type):
-    print("Checking if filtered files are also potentially blank by other file types...")
+    print("Cross checking that filtered files have blank screenshots...")
     status = {}
 
     # Cross check against logs for screenshot
@@ -82,6 +82,7 @@ def is_also_potentially_blank_by_other_files(log_dir_path, filtered_out_dataset,
 
 
 def potentially_blank_not_filtered_yet(log_dir_path, filtered_dataset, date, type):
+    print("Checking if filtered files are also potentially blank by other file types...")
     ss_aft_blank_list = read_blank_files_as_list(os.path.join(log_dir_path, f"{date}_ss_aft_blank_{type}.txt"))
 
     # Remove from ss_aft blank list/log files those that are already filtered
@@ -90,7 +91,8 @@ def potentially_blank_not_filtered_yet(log_dir_path, filtered_dataset, date, typ
             ss_aft_blank_list.remove(filtered)
 
     # Return a new log with the remaining unfiltered ones
-    output_file = os.path.join(log_dir_path, f"{date}_unfiltered_extra_ss_blank_{type}.txt")
+    log_dir = f"cat_logs/{date}"
+    output_file = os.path.join(log_dir, f"{date}_unfiltered_extra_ss_blank_{type}.txt")
     blank_page_util.export_data_as_txt_file(output_file, ss_aft_blank_list)
     
 
@@ -103,11 +105,12 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     log_dir_path = os.path.join("primary_logs", args.date)
-    blank_txt_path = os.path.join(log_dir_path, f"{args.date}_{args.blank_txt}.txt")
+    blank_txt_path = os.path.join(log_dir_path, f"{args.date}_{args.blank_txt}_{args.new_dir}.txt")
     blank_page_list = read_blank_files_as_list(blank_txt_path)
     unsuccessful_filtered_path = filter_out_blank_page_by_html(args.date, args.folder_path, blank_page_list, args.new_dir)
 
     unsuccessful_filtered = read_blank_files_as_list(unsuccessful_filtered_path)
     filtered = [item for item in blank_page_list if item not in unsuccessful_filtered]
     is_also_potentially_blank_by_other_files(log_dir_path, filtered, args.date, args.new_dir)
+    potentially_blank_not_filtered_yet(log_dir_path, filtered, args.date, args.new_dir)
 

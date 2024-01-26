@@ -30,7 +30,6 @@ def detect_blank_page_html_script(soup):
     else:
         return False
 
-
 # Categorises html as blank if html_script_aft.html is blank
 # CSS and JS are being detected as backup measures (As the detection is not accurate)
 def check_dataset_for_blank(main_directory):
