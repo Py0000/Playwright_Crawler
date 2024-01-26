@@ -94,7 +94,28 @@ def potentially_blank_not_filtered_yet(log_dir_path, filtered_dataset, date, typ
     log_dir = f"cat_logs/{date}"
     output_file = os.path.join(log_dir, f"{date}_unfiltered_extra_ss_blank_{type}.txt")
     blank_page_util.export_data_as_txt_file(output_file, ss_aft_blank_list)
+
+
+def shift_logs_files(date, src_dir):
+    print(f"Shifting {src_dir} log files...")
+    logs_dir = os.path.join(f"dataset_{date}", f"dataset_{date}", f"dataset_{date}", "complete_dataset", "blank_pages", "logs", src_dir)
+    if not os.path.exists(logs_dir):
+        os.makedirs(logs_dir)
     
+    for file in os.listdir(os.path.join(src_dir, date)):
+        src_file_path = os.path.join(src_dir, file)
+        dest_file_path = os.path.join(logs_dir, file)
+        shutil.move(src_file_path, dest_file_path)
+    
+
+def clean_up_logs(date):
+    log_files_folder = [f'primary_logs', f'cat_logs']
+    for folder in log_files_folder:
+        shift_logs_files(date, folder)
+
+
+
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Supply the folder names")
@@ -113,4 +134,6 @@ if __name__ == '__main__':
     filtered = [item for item in blank_page_list if item not in unsuccessful_filtered]
     is_also_potentially_blank_by_other_files(log_dir_path, filtered, args.date, args.new_dir)
     potentially_blank_not_filtered_yet(log_dir_path, filtered, args.date, args.new_dir)
+
+    clean_up_logs(args.date)
 

@@ -60,7 +60,7 @@ def check_dataset_for_blank(main_directory):
             try:
                 current_dataset_ref_dir = os.path.join(current_dataset_dir, sub_dir)
                 current_dataset_html_file_aft = os.path.join(current_dataset_ref_dir, 'html_script_aft.html')
-                current_dataset_html_file_bef = os.path.join(current_dataset_ref_dir, 'html_script_aft.html')
+                current_dataset_html_file_bef = os.path.join(current_dataset_ref_dir, 'html_script_bef.html')
                 
                 current_dataset_ss_aft = os.path.join(current_dataset_ref_dir, 'screenshot_aft.png')
                 current_dataset_ss_bef = os.path.join(current_dataset_ref_dir, 'screenshot_bef.png')
