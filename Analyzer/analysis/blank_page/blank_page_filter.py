@@ -125,18 +125,26 @@ if __name__ == '__main__':
     parser.add_argument("date", help="Date")
     parser.add_argument("folder_path", help="Folder name")
     parser.add_argument("blank_txt", help="Blank Page File")
-    parser.add_argument("new_dir", help="Name of dir to keep blank dataset")
+    #parser.add_argument("new_dir", help="Name of dir to keep blank dataset")
     args = parser.parse_args()
+
+    # Single
+    types = ["both", "self_ref", "no_ref"]
+    for t in types:
+        log_dir_path = os.path.join("primary_logs", args.date)
+        blank_txt_path = os.path.join(log_dir_path, f"{args.date}_{args.blank_txt}_{t}.txt")
+        blank_page_list = read_blank_files_as_list(blank_txt_path)
+
+        if t != "both":
+            folder_path = args.folder_path.replace(".zip", "")
+        else:
+            folder_path = args.folder_path
+        unsuccessful_filtered_path = filter_out_blank_page_by_html(args.date, folder_path, blank_page_list, "both")
+
+        unsuccessful_filtered = read_blank_files_as_list(unsuccessful_filtered_path)
+        filtered = [item for item in blank_page_list if item not in unsuccessful_filtered]
+        is_also_potentially_blank_by_other_files(log_dir_path, filtered, args.date, "both")
+        potentially_blank_not_filtered_yet(log_dir_path, filtered, args.date, "both")
     
-    log_dir_path = os.path.join("primary_logs", args.date)
-    blank_txt_path = os.path.join(log_dir_path, f"{args.date}_{args.blank_txt}_{args.new_dir}.txt")
-    blank_page_list = read_blank_files_as_list(blank_txt_path)
-    unsuccessful_filtered_path = filter_out_blank_page_by_html(args.date, args.folder_path, blank_page_list, args.new_dir)
-
-    unsuccessful_filtered = read_blank_files_as_list(unsuccessful_filtered_path)
-    filtered = [item for item in blank_page_list if item not in unsuccessful_filtered]
-    is_also_potentially_blank_by_other_files(log_dir_path, filtered, args.date, args.new_dir)
-    potentially_blank_not_filtered_yet(log_dir_path, filtered, args.date, args.new_dir)
-
     clean_up_logs(args.date)
 
