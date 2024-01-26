@@ -7,8 +7,15 @@ import shutil
 def get_common_pattern():
     # Detects the use of eval()
     eval_pattern = re.compile(r'\beval\s*\(')  
+    window_document_pattern = re.compile(r'(window|document)\[\s*[\'"][^\'"]+[\'"]\s*\]')
 
-    return [eval_pattern]
+    # Other potentials 
+    """
+    long_string = re.compile(r'(["\']).{40,}\1')  # Detects strings longer than 40 characters
+    hex_encoding = re.compile(r'\\x[0-9a-fA-F]{2}')  # Detects hexadecimal character encoding
+    """
+
+    return [eval_pattern, window_document_pattern]
 
 
 def is_obfuscated(html_script):
