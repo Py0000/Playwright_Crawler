@@ -25,7 +25,7 @@ def detect_blank_page_html_script(soup):
 
     # Check if content of <body> is empty
     # And check if there are any child (direct) tags inside <body>
-    if not body_content and len(soup.body.find_all(recursive=False)) == 0 and is_inline_html_css_blank:
+    if not body_content and len(soup.body.find_all(recursive=False)) == 0 or is_inline_html_css_blank:
         return True
     else:
         return False

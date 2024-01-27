@@ -22,7 +22,7 @@ def css_hide_content(css_content):
             if rule.type == rule.STYLE_RULE:
                 if 'body' in rule.selectorText or 'html' in rule.selectorText:
                     for property in rule.style:
-                        if property.name == 'display' and property.value == 'none':
+                        if property.name == 'display' and property.value == 'none' or property.name == 'visibility' and property.value == 'hidden':
                             return True
     return False
 
