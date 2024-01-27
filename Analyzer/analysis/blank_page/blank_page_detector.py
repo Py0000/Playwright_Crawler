@@ -36,37 +36,41 @@ def process_individual_dataset(current_dataset_dir, dir_without_zip_extension):
     ss_sub_stats = {}
 
     for sub_dir in ["self_ref", "no_ref"]:
-        current_dataset_ref_dir = os.path.join(dir_without_zip_extension, sub_dir)
-    
-        current_dataset_html_file_aft = os.path.join(current_dataset_ref_dir, 'html_script_aft.html')
-        current_dataset_html_file_bef = os.path.join(current_dataset_ref_dir, 'html_script_bef.html')
-        current_dataset_ss_aft = os.path.join(current_dataset_ref_dir, 'screenshot_aft.png')
-        current_dataset_ss_bef = os.path.join(current_dataset_ref_dir, 'screenshot_bef.png')
+        try:
+            current_dataset_ref_dir = os.path.join(dir_without_zip_extension, sub_dir)
+        
+            current_dataset_html_file_aft = os.path.join(current_dataset_ref_dir, 'html_script_aft.html')
+            current_dataset_html_file_bef = os.path.join(current_dataset_ref_dir, 'html_script_bef.html')
+            current_dataset_ss_aft = os.path.join(current_dataset_ref_dir, 'screenshot_aft.png')
+            current_dataset_ss_bef = os.path.join(current_dataset_ref_dir, 'screenshot_bef.png')
 
-        html_content_bef = read_html_from_zip(current_dataset_dir, current_dataset_html_file_bef)
-        soup_bef = BeautifulSoup(html_content_bef, 'html.parser')
-        is_blank_by_html_bef = detect_blank_page_html_script(soup_bef)
+            html_content_bef = read_html_from_zip(current_dataset_dir, current_dataset_html_file_bef)
+            soup_bef = BeautifulSoup(html_content_bef, 'html.parser')
+            is_blank_by_html_bef = detect_blank_page_html_script(soup_bef)
 
-        html_content_aft = read_html_from_zip(current_dataset_dir, current_dataset_html_file_aft)
-        soup_aft = BeautifulSoup(html_content_aft, 'html.parser')
-        is_blank_by_html_aft = detect_blank_page_html_script(soup_aft)
+            html_content_aft = read_html_from_zip(current_dataset_dir, current_dataset_html_file_aft)
+            soup_aft = BeautifulSoup(html_content_aft, 'html.parser')
+            is_blank_by_html_aft = detect_blank_page_html_script(soup_aft)
 
-        is_ss_aft_blank, ss_aft_stats = is_screenshot_blank(current_dataset_dir, current_dataset_ss_aft)
-        is_ss_bef_blank, ss_bef_stats = is_screenshot_blank(current_dataset_dir, current_dataset_ss_bef)
+            is_ss_aft_blank, ss_aft_stats = is_screenshot_blank(current_dataset_dir, current_dataset_ss_aft)
+            is_ss_bef_blank, ss_bef_stats = is_screenshot_blank(current_dataset_dir, current_dataset_ss_bef)
 
-        status = {
-            "Html Script (Before)": "Blank" if is_blank_by_html_bef else "Not Blank",
-            "Html Script (After)": "Blank" if is_blank_by_html_aft else "Not Blank",
-            "Screenshot (After) result":  "Blank" if is_ss_aft_blank else "Not Blank",
-            "Screenshot (Before) result":  "Blank" if is_ss_bef_blank else "Not Blank",
-        }
-        dataset_status[sub_dir] = status
+            status = {
+                "Html Script (Before)": "Blank" if is_blank_by_html_bef else "Not Blank",
+                "Html Script (After)": "Blank" if is_blank_by_html_aft else "Not Blank",
+                "Screenshot (After) result":  "Blank" if is_ss_aft_blank else "Not Blank",
+                "Screenshot (Before) result":  "Blank" if is_ss_bef_blank else "Not Blank",
+            }
+            dataset_status[sub_dir] = status
 
-        screenshot_stats = {
-            "After": ss_aft_stats,
-            "Before": ss_bef_stats
-        }
-        ss_sub_stats[sub_dir] = screenshot_stats
+            screenshot_stats = {
+                "After": ss_aft_stats,
+                "Before": ss_bef_stats
+            }
+            ss_sub_stats[sub_dir] = screenshot_stats
+        except:
+            dataset_status[sub_dir] = "Error encountered while processing dataset folder"
+            ss_sub_stats[sub_dir] = "Error encountered while processing dataset folder"
     
     return dataset_status, ss_sub_stats
 
