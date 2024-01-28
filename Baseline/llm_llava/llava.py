@@ -1,6 +1,6 @@
-from LlaVa.llava.model.builder import load_pretrained_model
-from LlaVa.llava.mm_utils import get_model_name_from_path
-from LlaVa.llava.eval.run_llava import eval_model
+from llava.model.builder import load_pretrained_model
+from llava.mm_utils import get_model_name_from_path
+from llava.eval.run_llava import eval_model
 
 import argparse
 import json
@@ -8,13 +8,21 @@ import os
 import shutil
 import zipfile
 
-def llava_analysis(image_path, provided_url, visited_url):
-    model_path = "liuhaotian/llava-v1-5-7b"
+def get_api_key(key_file):
+    with open(key_file, 'r') as file:
+        api_key = file.readline().strip()
+    
+    return api_key
+
+
+def llava_analysis(image_path, provided_url, visited_url, api_key):
+    model_path = "liuhaotian/llava-v1.5-7b"
 
     tokenizer, model, image_processor, context_len = load_pretrained_model(
         model_path=model_path,
         model_base=None,
-        model_name=get_model_name_from_path(model_path)
+        model_name=get_model_name_from_path(model_path),
+        use_auth_token=api_key
     )
 
     # You can use the eval_model function to get the output easily
@@ -41,7 +49,7 @@ def llava_analysis(image_path, provided_url, visited_url):
 
 
 
-def process_directory(zip_folder_path, benign_phishing):
+def process_directory(zip_folder_path, benign_phishing, api_key):
     responses = []
 
     for zip_file in os.listdir(zip_folder_path):
@@ -71,7 +79,7 @@ def process_directory(zip_folder_path, benign_phishing):
                         provided_url = log_data.get("Provided Url", "")
                         visited_url = log_data.get("Url visited", "")
 
-                    llava_resp = llava_analysis(screenshot_path, provided_url, visited_url)
+                    llava_resp = llava_analysis(screenshot_path, provided_url, visited_url, api_key)
                     responses.append(llava_resp)
                 
                 # Delete the extracted folder after processing
@@ -91,5 +99,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     folder_name = args.folder_path 
-    process_directory(folder_name, args.benign_phishing)
+    api_key = get_api_key("api_token.txt")
+    process_directory(folder_name, args.benign_phishing, api_key)
 
