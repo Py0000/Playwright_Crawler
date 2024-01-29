@@ -53,9 +53,9 @@ def spilt_log_files_by_type(consolidated_log_file_path, type, date, base_output_
                 no_ref.append(folder_name)
         
     
-    both_output_file = f"{output_file_name}_both.txt"
-    self_ref_output_file = f"{output_file_name}_self_ref.txt"
-    no_ref_output_file = f"{output_file_name}_no_ref.txt"       
+    both_output_file = f"Analyzer/analysis/blank_page/primary_logs/{output_file_name}_both.txt"
+    self_ref_output_file = f"Analyzer/analysis/blank_page/primary_logs/{output_file_name}_self_ref.txt"
+    no_ref_output_file = f"Analyzer/analysis/blank_page/primary_logs/{output_file_name}_no_ref.txt"       
 
     file_utils.export_output_as_txt_file(both_output_file, both)
     file_utils.export_output_as_txt_file(self_ref_output_file, self_ref)    

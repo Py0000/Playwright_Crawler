@@ -3,9 +3,9 @@ from bs4 import BeautifulSoup
 import os
 import zipfile
 
-import blank_page_util 
-from blank_page_secondary_detector import css_hide_content
-from image_analysis import is_screenshot_blank
+from Analyzer.analysis.blank_page import blank_page_util 
+from Analyzer.analysis.blank_page.blank_page_secondary_detector import css_hide_content
+from Analyzer.analysis.blank_page.image_analysis import is_screenshot_blank
 from Utils import file_utils
 
 def read_html_from_zip(zip_path, html_file_path):
@@ -90,8 +90,9 @@ def check_dataset_for_blank(main_directory):
         dataset_stats, ss_sub_stats = process_individual_dataset(current_dataset_dir, dir_without_zip_extension)
         consolidated_results[dir_without_zip_extension] = dataset_stats
         ss_stats[dir_without_zip_extension] = ss_sub_stats
+        break
 
-    base_output_dir = f"primary_logs/{date}"
+    base_output_dir = f"Analyzer/analysis/blank_page/primary_logs/{date}"
     file_utils.check_and_generate_new_dir(base_output_dir)
 
     consolidated_output = os.path.join(base_output_dir, f"{date}_consolidation.json")
@@ -126,6 +127,6 @@ if __name__ == '__main__':
     consolidated_output = check_dataset_for_blank(args.folder_path)
     date = (args.folder_path.split('_')[-1]).split('.')[0]
 
-    base_output_dir = os.path.join("primary_logs", date)
+    base_output_dir = os.path.join("Analyzer/analysis/blank_page", "primary_logs", date)
     blank_page_util.split_log_files(consolidated_output, date, ["html", "ss_aft", "ss_bef"], base_output_dir)
     get_error_logs(consolidated_output, date, base_output_dir)

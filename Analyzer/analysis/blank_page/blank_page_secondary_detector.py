@@ -1,15 +1,14 @@
 import argparse
-import json
 import os 
 import zipfile
-import shutil
 
 import cssutils
 import warnings
 import logging
 import re
 
-import blank_page_util
+from Analyzer.analysis.blank_page import blank_page_util
+from Utils import file_utils
 
 cssutils.log.setLevel(logging.CRITICAL)
 
@@ -87,15 +86,13 @@ def check_external_files(network_resp_path):
 
 def check_external_resources_for_blank(main_directory):
     consolidated_results = {}
+    is_zip_file = "zip" in main_directory
+    if is_zip_file:
+        main_directory = file_utils.extract_zipfile(main_directory)
 
-    extraction_path = main_directory.replace('.zip', '')
-    date = extraction_path.split('_')[-1]
-
-    with zipfile.ZipFile(main_directory, 'r') as zip_ref:
-        print("\nExtracting zip folder ...")
-        zip_ref.extractall(extraction_path)
+    date = file_utils.extract_date_from_extracted_zipfile_name(main_directory)
     
-    parent_folder_path = os.path.join(extraction_path, f'dataset_{date}', f'dataset_{date}', 'complete_dataset')
+    parent_folder_path = os.path.join(main_directory, f'dataset_{date}', f'dataset_{date}', 'complete_dataset')
     for dir in os.listdir(parent_folder_path):
         current_dataset = dir.replace('.zip', '')
         current_dataset_dir = os.path.join(parent_folder_path, dir)
@@ -130,15 +127,15 @@ def check_external_resources_for_blank(main_directory):
         
         consolidated_results[current_dataset] = dataset_status
     
-    base_output_dir = f"secondary_logs/{date}"
-    if not os.path.exists(base_output_dir):
-        os.makedirs(base_output_dir)
+    base_output_dir = f"Analyzer/analysis/blank_page/primary_logs/secondary_logs/{date}"
+    file_utils.check_and_generate_new_dir(base_output_dir)
     
     consolidated_output = os.path.join(base_output_dir, f"{date}_sec_consolidation.json")
-    with open(consolidated_output, 'w', encoding='utf-8') as f:
-        json.dump(consolidated_results, f, ensure_ascii=False, indent=4)
+    file_utils.export_output_as_json_file(consolidated_output)
     
-    shutil.rmtree(extraction_path)
+    if is_zip_file:
+        file_utils.remove_extracted_folder(main_directory)
+
     return consolidated_output
     
 
@@ -151,6 +148,6 @@ if __name__ == '__main__':
     consolidated_output = check_external_resources_for_blank(args.folder_path)
     date = (args.folder_path.split('_')[-1]).split('.')[0]
 
-    base_output_dir = os.path.join("secondary_logs", date)
+    base_output_dir = os.path.join("Analyzer/analysis/blank_page/secondary_logs", date)
     blank_page_util.split_log_files(consolidated_output, date, ["css", "js"], base_output_dir)
     

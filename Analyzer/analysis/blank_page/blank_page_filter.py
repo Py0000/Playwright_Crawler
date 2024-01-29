@@ -17,10 +17,9 @@ def filter_out_blank_page_by_html(date, dataset_path, blank_page_list, new_dir):
     status = []
 
     if "zip" in dataset_path:
-        extraction_path = file_utils.extract_zipfile(dataset_path)
-        parent_folder_path = os.path.join(extraction_path, f'dataset_{date}', f'dataset_{date}', 'complete_dataset')
-    else:
-        parent_folder_path = os.path.join(dataset_path, f'dataset_{date}', f'dataset_{date}', 'complete_dataset')
+        dataset_path = file_utils.extract_zipfile(dataset_path)
+
+    parent_folder_path = os.path.join(dataset_path, f'dataset_{date}', f'dataset_{date}', 'complete_dataset')
     
     # Create the new directory to hold the dataset that contains the blank webpages
     blank_page_dir = os.path.join(parent_folder_path, 'blank_pages', new_dir)
