@@ -83,3 +83,10 @@ Returning to the ssh session:
 
 ### Command to run VirusTotal Revalidator (Run from local machine):
 1. python3 revalidator.py url_{date}.txt {date}
+
+
+### Commands for Analysis / Filtering / Baselines 
+#### Finding blank pages from datasets 
+* Pre-cond: Running the script `blank_page_detector.py` from `Playwright_Crawler` directory
+* Cmd: `python3 -m Analyzer.analysis.blank_page.blank_page_detector {path_to_dataset}/dataset_{date}.zip`
+
