@@ -1,6 +1,6 @@
 import os
 import json
-from Utils import file_utils
+from Analyzer.utils import file_utils
 
 def log_files_get_dict_key_and_output_file(date, type, base_output_dir):
     TYPE_MAP = {

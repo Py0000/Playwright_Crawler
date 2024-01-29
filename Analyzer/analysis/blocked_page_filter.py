@@ -1,7 +1,7 @@
 import argparse
 import os
 
-from Utils import file_utils
+from Analyzer.utils import file_utils
 
 def get_seperate_list_of_blocked_data(txt_file):
     data = file_utils.read_data_from_json_file(txt_file)

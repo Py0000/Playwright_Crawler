@@ -1,7 +1,7 @@
 import argparse
 import os
 
-from Utils import file_utils
+from Analyzer.utils import file_utils
 
 def read_blank_files_as_list(txt_file):
     with open(txt_file, "r") as f: 

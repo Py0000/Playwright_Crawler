@@ -6,7 +6,7 @@ import zipfile
 from Analyzer.analysis.blank_page import blank_page_util 
 from Analyzer.analysis.blank_page.blank_page_secondary_detector import css_hide_content
 from Analyzer.analysis.blank_page.image_analysis import is_screenshot_blank
-from Utils import file_utils
+from Analyzer.utils import file_utils
 
 def read_html_from_zip(zip_path, html_file_path):
     with zipfile.ZipFile(zip_path, 'r') as zip_ref:
