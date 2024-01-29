@@ -1,12 +1,6 @@
 import os
 import json
-
-
-def export_data_as_txt_file(filename, data):
-    with open(filename, 'w') as f:
-        for item in data:
-            f.write(str(item) + '\n')
-
+from Utils import file_utils
 
 def log_files_get_dict_key_and_output_file(date, type, base_output_dir):
     TYPE_MAP = {
@@ -63,9 +57,9 @@ def spilt_log_files_by_type(consolidated_log_file_path, type, date, base_output_
     self_ref_output_file = f"{output_file_name}_self_ref.txt"
     no_ref_output_file = f"{output_file_name}_no_ref.txt"       
 
-    export_data_as_txt_file(both_output_file, both)
-    export_data_as_txt_file(self_ref_output_file, self_ref)    
-    export_data_as_txt_file(no_ref_output_file, no_ref)        
+    file_utils.export_output_as_txt_file(both_output_file, both)
+    file_utils.export_output_as_txt_file(self_ref_output_file, self_ref)    
+    file_utils.export_output_as_txt_file(no_ref_output_file, no_ref)        
 
 
 def split_log_files(consolidated_log_file_path, date, types, base_output_dir):

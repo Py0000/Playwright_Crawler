@@ -1,10 +1,7 @@
 import argparse
-import json
 import os
-import shutil 
-import zipfile
 
-import blank_page_util
+from Utils import file_utils
 
 def read_blank_files_as_list(txt_file):
     with open(txt_file, "r") as f: 
@@ -20,40 +17,32 @@ def filter_out_blank_page_by_html(date, dataset_path, blank_page_list, new_dir):
     status = []
 
     if "zip" in dataset_path:
-        extraction_path = dataset_path.replace('.zip', '')
-        with zipfile.ZipFile(dataset_path, 'r') as zip_ref:
-            print("\nExtracting zip folder ...")
-            zip_ref.extractall(extraction_path)
-        
+        extraction_path = file_utils.extract_zipfile(dataset_path)
         parent_folder_path = os.path.join(extraction_path, f'dataset_{date}', f'dataset_{date}', 'complete_dataset')
     else:
         parent_folder_path = os.path.join(dataset_path, f'dataset_{date}', f'dataset_{date}', 'complete_dataset')
     
     # Create the new directory to hold the dataset that contains the blank webpages
     blank_page_dir = os.path.join(parent_folder_path, 'blank_pages', new_dir)
-    if not os.path.exists(blank_page_dir):
-        os.makedirs(blank_page_dir)
+    file_utils.check_and_generate_new_dir(blank_page_dir)
 
 
     for folder in blank_page_list:
         zip_dataset_path = os.path.join(parent_folder_path, f"{folder}.zip")
         if (os.path.exists(zip_dataset_path)):
             print(folder, os.path.exists(zip_dataset_path), "moved")
-            shutil.move(zip_dataset_path, blank_page_dir)
+            file_utils.shift_file_objects(zip_dataset_path, blank_page_dir)
         else:
             print(folder, os.path.exists(zip_dataset_path), "failed")
             status.append(folder) 
     
     log_dir = f"cat_logs/{date}"
-    if not os.path.exists(log_dir):
-        os.makedirs(log_dir)
+    file_utils.check_and_generate_new_dir(log_dir)
 
-    output_path = os.path.join(log_dir, f"{date}_{new_dir}_categorization_failed.json")
-    with open(output_path, 'w') as f:
-        for item in status:
-            f.write(str(item) + '\n')
-    
+    output_path = os.path.join(log_dir, f"{date}_{new_dir}_categorization_failed.txt")
+    file_utils.export_output_as_txt_file(output_path, status)
     return output_path
+
 
 def is_also_potentially_blank_by_other_files(log_dir_path, filtered_out_dataset, date, type):
     print("Cross checking that filtered files have blank screenshots...")
@@ -77,8 +66,7 @@ def is_also_potentially_blank_by_other_files(log_dir_path, filtered_out_dataset,
     
     log_dir = f"cat_logs/{date}"
     output_path = os.path.join(log_dir, f"{date}_cat_cross_check_ss_{type}.json")
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(status, f, ensure_ascii=False, indent=4)
+    file_utils.export_output_as_json_file(output_path, status)
 
 
 def potentially_blank_not_filtered_yet(log_dir_path, filtered_dataset, date, type):
@@ -93,20 +81,19 @@ def potentially_blank_not_filtered_yet(log_dir_path, filtered_dataset, date, typ
     # Return a new log with the remaining unfiltered ones
     log_dir = f"cat_logs/{date}"
     output_file = os.path.join(log_dir, f"{date}_unfiltered_extra_ss_blank_{type}.txt")
-    blank_page_util.export_data_as_txt_file(output_file, ss_aft_blank_list)
+    file_utils.export_output_as_txt_file(output_file, ss_aft_blank_list)
 
 
 def shift_logs_files(date, src_dir):
     print(f"Shifting {src_dir} log files...")
     logs_dir = os.path.join(f"dataset_{date}", f"dataset_{date}", f"dataset_{date}", "complete_dataset", "blank_pages", "logs", src_dir)
-    if not os.path.exists(logs_dir):
-        os.makedirs(logs_dir)
+    file_utils.check_and_generate_new_dir(logs_dir)
     
     for file in os.listdir(os.path.join(src_dir, date)):
         src_file_path = os.path.join(os.path.join(src_dir, date), file)
         if os.path.exists(src_file_path):
             dest_file_path = os.path.join(logs_dir, file)
-            shutil.move(src_file_path, dest_file_path)
+            file_utils.shift_file_objects(src_file_path, dest_file_path)
         else:
             print(f"File {file} does not exist!")
     

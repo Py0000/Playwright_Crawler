@@ -2,12 +2,11 @@ import argparse
 from bs4 import BeautifulSoup
 import os
 import zipfile
-import shutil
-import json
 
 import blank_page_util 
 from blank_page_secondary_detector import css_hide_content
 from image_analysis import is_screenshot_blank
+from Utils import file_utils
 
 def read_html_from_zip(zip_path, html_file_path):
     with zipfile.ZipFile(zip_path, 'r') as zip_ref:
@@ -80,12 +79,8 @@ def check_dataset_for_blank(main_directory):
     consolidated_results = {}
     ss_stats = {}
 
-    extraction_path = main_directory.replace('.zip', '')
-    date = extraction_path.split('_')[-1]
-
-    with zipfile.ZipFile(main_directory, 'r') as zip_ref:
-        print("\nExtracting zip folder ...")
-        zip_ref.extractall(extraction_path)
+    extraction_path = file_utils.extract_zipfile(main_directory)
+    date = file_utils.extract_date_from_extracted_zipfile_name(extraction_path)
     
     parent_folder_path = os.path.join(extraction_path, f'dataset_{date}', f'dataset_{date}', 'complete_dataset')
     for dir in os.listdir(parent_folder_path):
@@ -97,19 +92,14 @@ def check_dataset_for_blank(main_directory):
         ss_stats[dir_without_zip_extension] = ss_sub_stats
 
     base_output_dir = f"primary_logs/{date}"
-    if not os.path.exists(base_output_dir):
-        os.makedirs(base_output_dir)
+    file_utils.check_and_generate_new_dir(base_output_dir)
 
     consolidated_output = os.path.join(base_output_dir, f"{date}_consolidation.json")
     ss_stats_output = os.path.join(base_output_dir, f"{date}_ss_stats.json")
+    file_utils.export_output_as_json_file(consolidated_output, consolidated_results)
+    file_utils.export_output_as_json_file(ss_stats_output, ss_stats)
     
-    with open(consolidated_output, 'w', encoding='utf-8') as f:
-        json.dump(consolidated_results, f, ensure_ascii=False, indent=4)
-    
-    with open(ss_stats_output, 'w', encoding='utf-8') as f:
-        json.dump(ss_stats, f, ensure_ascii=False, indent=4)
-    
-    shutil.rmtree(extraction_path)
+    file_utils.remove_extracted_folder(extraction_path)
     return consolidated_output
 
 
@@ -118,15 +108,13 @@ def get_error_logs(consolidated_log_file_path, date, base_output_dir):
     errors = []
 
     error_output = os.path.join(base_output_dir, f"{date}_error.txt")
-
-    with open(consolidated_log_file_path, 'r') as file:
-        data = json.load(file)
+    data = file_utils.read_data_from_json_file(consolidated_log_file_path)
     
     for folder_name, content in data.items():
         if (isinstance(content['self_ref'], str) or isinstance(content['no_ref'], str)):
             errors.append(folder_name)
     
-    blank_page_util.export_data_as_txt_file(error_output, errors)
+    file_utils.export_output_as_txt_file(error_output, errors)
 
     
 
