@@ -23,8 +23,8 @@ def generate_response_helper(model, processor, image_path, provided_url, visited
 
 def generate_response(image_path, provided_url, visited_url):
     # Load the model and tokenizer 
-    model = LlavaForConditionalGeneration.from_pretrained("llava-hf/llava-1.5-7b-hf")
-    processor = AutoProcessor.from_pretrained("llava-hf/llava-1.5-7b-hf")
+    model = LlavaForConditionalGeneration.from_pretrained("llava-hf/bakLlava-v1-hf")
+    processor = AutoProcessor.from_pretrained("llava-hf/bakLlava-v1-hf")
 
     return generate_response_helper(model, processor, image_path, provided_url, visited_url)
 

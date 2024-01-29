@@ -53,18 +53,24 @@ def filter_blocked_page_by_category(date, parent_path, blocked_dir, cat, blocked
 
 
 def filter_blocked_page_main(main_directory):
-    extraction_path = main_directory.replace('.zip', '')
-    date = extraction_path.split('_')[-1]
+    
+    if "zip" in main_directory:
+        extraction_path = main_directory.replace('.zip', '')
+        date = (extraction_path.split('_')[-1])
+        with zipfile.ZipFile(main_directory, 'r') as zip_ref:
+            print("\nExtracting zip folder ...")
+            zip_ref.extractall(extraction_path)
+        txt_parent_folder_path = os.path.join(extraction_path, f'dataset_{date}', 'filter_logs')
+        parent_path = os.path.join(extraction_path, f'dataset_{date}', f'dataset_{date}', 'complete_dataset')
+        
+    else:
+        date = (main_directory.split('_')[-1])
+        txt_parent_folder_path = os.path.join(main_directory, f'dataset_{date}', 'filter_logs')
+        parent_path = os.path.join(main_directory, f'dataset_{date}', f'dataset_{date}', 'complete_dataset')
 
-    with zipfile.ZipFile(main_directory, 'r') as zip_ref:
-        print("\nExtracting zip folder ...")
-        zip_ref.extractall(extraction_path)
-
-    txt_parent_folder_path = os.path.join(extraction_path, f'dataset_{date}', 'filter_logs')
     blocked_dataset_txt_file_path = os.path.join(txt_parent_folder_path, f"{date}_response_non_200_status.json")
     blocked_lists_dict = get_seperate_list_of_blocked_data(blocked_dataset_txt_file_path)
-
-    parent_path = os.path.join(extraction_path, f'dataset_{date}', f'dataset_{date}', 'complete_dataset')
+    
     blocked_page_dir = os.path.join(parent_path, "blocked")
     if not os.path.exists(blocked_page_dir):
         os.makedirs(blocked_page_dir)
