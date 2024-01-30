@@ -58,5 +58,9 @@ def export_output_as_txt_file(output_file_name, output_data):
         for item in output_data:
             f.write(str(item) + '\n')
 
-def test():
-    print("test")
+# Read html file directly from the zip folder
+def read_html_from_zip(zip_path, html_file_path):
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+        with zip_ref.open(html_file_path) as file:
+            html_content = file.read()
+            return html_content
