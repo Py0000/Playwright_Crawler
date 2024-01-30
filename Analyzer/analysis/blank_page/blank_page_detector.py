@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import os
 
 from Analyzer.analysis.blank_page.blank_page_secondary_detector import css_hide_content
-from Analyzer.analysis.blank_page.image_analysis import is_screenshot_blank
+from Analyzer.analysis.blank_page.image_analysis import BlankScreenshotDetector
 from Analyzer.utils import file_utils
 
 class BlankPageDetector:
@@ -46,8 +46,9 @@ class BlankPageDetector:
                 soup_aft = BeautifulSoup(html_content_aft, 'html.parser')
                 is_blank_by_html_aft = self.detect_blank_page_html_script(soup_aft)
 
-                is_ss_aft_blank, ss_aft_stats = is_screenshot_blank(current_dataset_dir, current_dataset_ss_aft)
-                is_ss_bef_blank, ss_bef_stats = is_screenshot_blank(current_dataset_dir, current_dataset_ss_bef)
+                blank_ss_dectector = BlankScreenshotDetector()
+                is_ss_aft_blank, ss_aft_stats = blank_ss_dectector.is_screenshot_blank(current_dataset_dir, current_dataset_ss_aft)
+                is_ss_bef_blank, ss_bef_stats = blank_ss_dectector.is_screenshot_blank(current_dataset_dir, current_dataset_ss_bef)
 
                 status = {
                     "Html Script (Before)": "Blank" if is_blank_by_html_bef else "Not Blank",
