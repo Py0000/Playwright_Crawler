@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import os
 
-from Analyzer.analysis.blank_page.blank_page_secondary_detector import css_hide_content
+from Analyzer.analysis.blank_page.blank_page_secondary_detector import CssBlankDetector
 from Analyzer.analysis.blank_page.image_analysis import BlankScreenshotDetector
 from Analyzer.utils import file_utils
 
@@ -15,7 +15,7 @@ class BlankPageDetector:
         body_content = soup.body.get_text(strip=True)
 
         inline_body_css = soup.find('style').string if soup.find('style') else ''
-        is_inline_html_css_blank = css_hide_content(inline_body_css)
+        is_inline_html_css_blank = CssBlankDetector.css_hide_content(inline_body_css)
 
         # Check if content of <body> is empty
         # And check if there are any child (direct) tags inside <body>
