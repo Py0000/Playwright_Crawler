@@ -17,8 +17,11 @@ def extract_zipfile(zip_folder):
 
 
 # Remove zip folder that was extracted previously
-def remove_extracted_folder(extraction_path):
-    shutil.rmtree(extraction_path)
+def remove_folder(path):
+    if os.path.isdir(path):
+        shutil.rmtree(path)
+    elif os.path.isfile(path):
+        os.remove(path)
 
 
 # Returns the date of the extracted folder name (e.g. folder_date)

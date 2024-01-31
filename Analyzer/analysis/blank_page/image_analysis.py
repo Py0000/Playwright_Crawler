@@ -94,7 +94,7 @@ class BlankScreenshotDetector:
     
 
     # Use OCR to detect text in the image
-    def get_length_of_text_in_ss(image):
+    def get_length_of_text_in_ss(self, image):
         text = pytesseract.image_to_string(image)
         text_count = len(text.strip())
         return text_count

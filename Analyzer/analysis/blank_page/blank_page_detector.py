@@ -63,7 +63,8 @@ class BlankPageDetector:
                     "Before": ss_bef_stats
                 }
                 ss_sub_stats[sub_dir] = screenshot_stats
-            except:
+            except Exception as e:
+                print(e)
                 dataset_status[sub_dir] = "Error encountered while processing dataset folder"
                 ss_sub_stats[sub_dir] = "Error encountered while processing dataset folder"
         
@@ -98,7 +99,7 @@ class BlankPageDetector:
         file_utils.export_output_as_json_file(consolidated_output, consolidated_results)
         file_utils.export_output_as_json_file(ss_stats_output, ss_stats)
         
-
+        file_utils.remove_folder(self.main_folder_path)
         return consolidated_output
 
 

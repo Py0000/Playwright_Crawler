@@ -66,7 +66,7 @@ class BlankPageHandler:
         for ref_type in ref_types:
             self.filter_blank_page(ref_type)
         
-        self.clean_up_logs()
+        #self.clean_up_logs()
 
 
 if __name__ == '__main__':

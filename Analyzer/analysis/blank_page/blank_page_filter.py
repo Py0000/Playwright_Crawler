@@ -25,13 +25,14 @@ class BlankPageFilter:
 
         for folder in blank_page_list:
             zip_dataset_path = os.path.join(parent_folder_path, f"{folder}.zip")
+            print(zip_dataset_path)
             if (os.path.exists(zip_dataset_path)):
                 print(folder, os.path.exists(zip_dataset_path), "moved")
                 file_utils.shift_file_objects(zip_dataset_path, blank_page_dir)
             else:
                 print(folder, os.path.exists(zip_dataset_path), "failed")
                 status.append(folder) 
-        
+            
         log_dir = f"Analyzer/analysis/blank_page/cat_logs/{date}"
         file_utils.check_and_generate_new_dir(log_dir)
 

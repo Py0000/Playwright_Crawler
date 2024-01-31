@@ -148,7 +148,7 @@ class BlankPageExternalDetector:
         file_utils.export_output_as_json_file(consolidated_output)
         
         if is_zip_file:
-            file_utils.remove_extracted_folder(main_directory)
+            file_utils.remove_folder(main_directory)
 
         return consolidated_output
     
