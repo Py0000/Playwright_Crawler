@@ -52,6 +52,16 @@ def export_output_as_json_file(output_file_name, output_data):
         json.dump(output_data, f, ensure_ascii=False, indent=4)
 
 
+# Reads and return the data as a list in the txt file
+def read_data_from_txt_file_as_list(txt_file):
+    with open(txt_file, "r") as f: 
+        data = f.readlines()
+
+    # Remove newline characters and any whitespace
+    data_list = [folder_name.strip() for folder_name in data]
+
+    return data_list
+
 # Exports the data as a txt file
 def export_output_as_txt_file(output_file_name, output_data):
     with open(output_file_name, 'w') as f:

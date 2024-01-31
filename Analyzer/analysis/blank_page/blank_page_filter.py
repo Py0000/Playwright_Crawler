@@ -7,15 +7,6 @@ class BlankPageFilter:
         self.main_folder_path = main_folder_path
         self.date = date
 
-    def read_blank_files_as_list(self, txt_file):
-        with open(txt_file, "r") as f: 
-            blank_folder_names = f.readlines()
-        
-        # Remove newline characters and any whitespace
-        blank_folder_list = [folder_name.strip() for folder_name in blank_folder_names]
-
-        return blank_folder_list
-
 
     def filter_out_blank_page_by_html(self, blank_page_list, ref_type):
         status = []
@@ -60,7 +51,7 @@ class BlankPageFilterChecker:
         status = {}
         date = self.date
         # Cross check against logs for screenshot
-        ss_aft_blank_list = self.read_blank_files_as_list(os.path.join(self.primary_logs_dir, f"{date}_ss_aft_blank_{type}.txt"))
+        ss_aft_blank_list = file_utils.read_data_from_txt_file_as_list(os.path.join(self.primary_logs_dir, f"{date}_ss_aft_blank_{type}.txt"))
 
         # Return a dict {dataset_name: {css: true/false, js: true/false, ss_aft: true/false}}
         for filtered in filtered_out_dataset:
@@ -83,7 +74,7 @@ class BlankPageFilterChecker:
     def potentially_ss_blank_not_filtered_yet(self, filtered_dataset, type):
         print("Checking if filtered files are also potentially blank by other file types...")
         date = self.date
-        ss_aft_blank_list = self.read_blank_files_as_list(os.path.join(self.primary_logs_dir, f"{date}_ss_aft_blank_{type}.txt"))
+        ss_aft_blank_list = file_utils.read_data_from_txt_file_as_list(os.path.join(self.primary_logs_dir, f"{date}_ss_aft_blank_{type}.txt"))
 
         # Remove from ss_aft blank list/log files those that are already filtered
         for filtered in filtered_dataset:

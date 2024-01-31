@@ -54,8 +54,8 @@ class BlankPageHandler:
         unsuccessful_filtered_path = filterer.filter_out_blank_page_by_html(blank_page_by_html_list, ref_type)
         unsuccessful_filtered = filterer.read_blank_files_as_list(unsuccessful_filtered_path)
         filtered = [item for item in blank_page_by_html_list if item not in unsuccessful_filtered]
-        checker.cross_check_that_ss_is_blank(primary_logs_dir, filtered, ref_type)
-        checker.potentially_ss_blank_not_filtered_yet(primary_logs_dir, filtered, ref_type)
+        checker.cross_check_that_ss_is_blank(filtered, ref_type)
+        checker.potentially_ss_blank_not_filtered_yet(filtered, ref_type)
     
 
     def detect_and_filter(self):
