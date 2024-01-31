@@ -11,6 +11,7 @@ class BlankPageHandler:
         self.main_folder_path = main_folder_path
         self.date = date
     
+    """
     def shift_detector_log_files(self, src_dir):
         print(f"Shifting {src_dir} log files...")
         date = self.date
@@ -31,7 +32,7 @@ class BlankPageHandler:
         log_files_folder = [f'primary_logs', f'cat_logs']
         for folder in log_files_folder:
             self.shift_detector_log_files(os.path.join(base_folder, folder))
-
+    """
 
     def detect_blank_page(self):
         date = self.date
