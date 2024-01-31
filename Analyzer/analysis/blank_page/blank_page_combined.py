@@ -49,10 +49,10 @@ class BlankPageHandler:
         checker = blank_page_filter.BlankPageFilterChecker(primary_logs_dir, date)
 
         html_blank_txt_file_path = os.path.join(primary_logs_dir, f"{date}_html_blank_{ref_type}.txt")
-        blank_page_by_html_list = filterer.read_blank_files_as_list(html_blank_txt_file_path)
+        blank_page_by_html_list = file_utils.read_data_from_txt_file_as_list(html_blank_txt_file_path)
 
         unsuccessful_filtered_path = filterer.filter_out_blank_page_by_html(blank_page_by_html_list, ref_type)
-        unsuccessful_filtered = filterer.read_blank_files_as_list(unsuccessful_filtered_path)
+        unsuccessful_filtered = file_utils.read_data_from_txt_file_as_list(unsuccessful_filtered_path)
         filtered = [item for item in blank_page_by_html_list if item not in unsuccessful_filtered]
         checker.cross_check_that_ss_is_blank(filtered, ref_type)
         checker.potentially_ss_blank_not_filtered_yet(filtered, ref_type)
