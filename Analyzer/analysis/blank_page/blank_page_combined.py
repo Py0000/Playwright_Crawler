@@ -27,9 +27,10 @@ class BlankPageHandler:
 
 
     def clean_up_logs(self):
+        base_folder = f"Analyzer/analysis/blank_page"
         log_files_folder = [f'primary_logs', f'cat_logs']
         for folder in log_files_folder:
-            self.shift_logs_files(self.date, folder)
+            self.shift_detector_log_files(os.path.join(base_folder, folder))
 
 
     def detect_blank_page(self):
@@ -45,7 +46,7 @@ class BlankPageHandler:
     def filter_blank_page(self, ref_type):
         date = self.date
         primary_logs_dir = os.path.join("Analyzer/analysis/blank_page/primary_logs", date)
-        filterer = blank_page_filter.BlankPageFilter(self.main_folder_path, date)
+        filterer = blank_page_filter.BlankPageFilter(self.main_folder_path.replace(".zip", ""), date)
         checker = blank_page_filter.BlankPageFilterChecker(primary_logs_dir, date)
 
         html_blank_txt_file_path = os.path.join(primary_logs_dir, f"{date}_html_blank_{ref_type}.txt")
