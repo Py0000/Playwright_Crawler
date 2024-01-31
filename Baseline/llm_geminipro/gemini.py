@@ -14,21 +14,34 @@ class GeminiProVisionBaseline:
     def __init__(self, mode):
         self.mode = mode
         self.model = self.setup_model()
+        self.standard_prompt = self.generate_prompt()
 
     def setup_model(self):
         genai.configure(api_key=utils.get_api_key("Baseline/llm_geminipro/api_key.txt"))
         model = genai.GenerativeModel('gemini-pro-vision')
         return model
     
+    def generate_prompt(self):
+        system_prompt = "You are an expert at analyzing webpage screenshots(images) and webpage urls for phishing webpage detection."
+        
+        response_format_prompt_title = "From the provided webpage screenshot and url, you are able to determine whether the webpage under examination is a phishing site or not. As you determine whether the webpage is phishing, do also identify the target brand, any user credential fields, the phishing indicators."
+        response_format_prompt_body_0 = "Provide your response in the following format:"
+        response_format_prompt_body_1 = "1. Conclusion (i.e Phishing/Non-phishing)."
+        response_format_prompt_body_2 = "2. Target Brand: your_answer" 
+        response_format_prompt_body_3 = "3. Has user credential fields: your_answer (i.e Yes/No). If yes what are the fields present (i.e. what are the fields asking for?)"
+        response_format_prompt_body_4 = "4. (List of) Phishing Indicators: your_answer, or Reason why it is not phishing: your_answer"
+        response_format_prompt_body = f"{response_format_prompt_body_0}\n{response_format_prompt_body_1}\n{response_format_prompt_body_2}\n{response_format_prompt_body_3}\n{response_format_prompt_body_4}"
+
+        prompt = f"{system_prompt}\n\n{response_format_prompt_title}\n\n{response_format_prompt_body}\n\n"
+        return prompt
+
 
     def analyse_individual_data(self, model, image_path, provided_url, visited_url):
-        system_prompt = "You are an expert at analyzing webpage screenshots(images) and webpage urls for phishing webpage detection."
         url_prompt = f"Provided_Url: {provided_url}. Visited_Url: {visited_url}"
-        response_format_prompt = "From the provided webpage screenshot and url, you are able to determine whether the webpage under examination is a phishing site or not. As you determine whether the webpage is phishing, do also identify the target brand, any user credential fields, the phishing indicators. Provide your response in the following format: 1. Target Brand, 2. Has user credential fields (i.e Yes/No) 3. (List of) Phishing Indicators, 4. Conclusion (i.e Phishing/Non-phishing)."
-        full_prompt = f"{system_prompt}\n{url_prompt}\n{response_format_prompt}"
+        full_prompt = f"{self.standard_prompt}\n\n{url_prompt}"
 
         image = PIL.Image.open(image_path)
-        folder_hash = image_path.split("/")[1]
+        folder_hash = image_path.split("/")[3]
 
         response = model.generate_content([full_prompt, image], stream=True)
         response.resolve()
@@ -36,7 +49,7 @@ class GeminiProVisionBaseline:
         return f"{folder_hash}\n{response.text}"
     
 
-    def analyse_directory(self, zip_folder_path):
+    def analyse_directory(self, zip_folder_path, date):
         responses = []
 
         for zip_file in os.listdir(zip_folder_path):
@@ -75,7 +88,6 @@ class GeminiProVisionBaseline:
                     # Delete the extracted folder after processing
                     shutil.rmtree(extract_path)
 
-        date = zip_folder_path.split("_")[-1]
         output_file = f"Baseline/llm_geminipro/gemini_analysis_{date}.txt"
         with open(output_file, 'w') as file:
             for response in responses:
@@ -85,11 +97,12 @@ class GeminiProVisionBaseline:
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Supply the folder names")
     parser.add_argument("folder_path", help="Folder name")
+    parser.add_argument("date", help="Date")
     parser.add_argument("benign_phishing", help="benign or phishing")
     args = parser.parse_args()
 
     gemini_baseline = GeminiProVisionBaseline(args.benign_phishing)
-    gemini_baseline.analyse_directory(args.folder_path)
+    gemini_baseline.analyse_directory(args.folder_path, args.date)
 
 
 
