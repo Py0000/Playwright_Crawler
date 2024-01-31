@@ -22,14 +22,14 @@ class GeminiProVisionBaseline:
         return model
     
     def generate_prompt(self):
-        system_prompt = "You are an expert at analyzing webpage screenshots(images) and webpage urls for phishing webpage detection."
+        system_prompt = "You are an expert at analyzing webpage screenshots and urls for phishing webpage detection."
         
-        response_format_prompt_title = "From the provided webpage screenshot and url, you are able to determine whether the webpage under examination is a phishing site or not. As you determine whether the webpage is phishing, do also identify the target brand, any user credential fields, the phishing indicators."
+        response_format_prompt_title = "From the provided infromation, you are able to determine whether the webpage is a phishing site or not. As you determine whether the webpage is phishing, do also identify the target brand, any user credential fields, the phishing indicators."
         response_format_prompt_body_0 = "Provide your response in the following format:"
-        response_format_prompt_body_1 = "1. Conclusion (i.e Phishing/Non-phishing)."
-        response_format_prompt_body_2 = "2. Target Brand: your_answer" 
-        response_format_prompt_body_3 = "3. Has user credential fields: your_answer (i.e Yes/No). If yes what are the fields present (i.e. what are the fields asking for?)"
-        response_format_prompt_body_4 = "4. (List of) Phishing Indicators: your_answer, or Reason why it is not phishing: your_answer"
+        response_format_prompt_body_1 = "1. Conclusion (Phishing/Non-phishing)."
+        response_format_prompt_body_2 = "2. Target Brand: " 
+        response_format_prompt_body_3 = "3. Has user credential fields: (Yes/No). If yes what are the fields present (i.e. what are the fields asking for?)"
+        response_format_prompt_body_4 = "4. Phishing Indicators: , or Reason why it is not phishing: "
         response_format_prompt_body = f"{response_format_prompt_body_0}\n{response_format_prompt_body_1}\n{response_format_prompt_body_2}\n{response_format_prompt_body_3}\n{response_format_prompt_body_4}"
 
         prompt = f"{system_prompt}\n\n{response_format_prompt_title}\n\n{response_format_prompt_body}\n\n"
@@ -39,12 +39,15 @@ class GeminiProVisionBaseline:
     def analyse_individual_data(self, model, image_path, provided_url, visited_url):
         url_prompt = f"Provided_Url: {provided_url}. Visited_Url: {visited_url}"
         full_prompt = f"{self.standard_prompt}\n\n{url_prompt}"
+        try: 
+            image = PIL.Image.open(image_path)
+            folder_hash = image_path.split("/")[3]
 
-        image = PIL.Image.open(image_path)
-        folder_hash = image_path.split("/")[3]
+            response = model.generate_content([full_prompt, image], stream=True)
+            response.resolve()
+        except Exception as e:
+            return str(e)
 
-        response = model.generate_content([full_prompt, image], stream=True)
-        response.resolve()
 
         return f"{folder_hash}\n{response.text}"
     
