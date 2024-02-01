@@ -45,13 +45,11 @@ class GeminiProVisionBaseline:
 
             response = model.generate_content([full_prompt, image], stream=True)
             response.resolve()
+            return f"{folder_hash}\n{response.text}"
         except Exception as e:
             print(e)
-            return str(e)
+            return f"{folder_hash}\n{str(e)}"
 
-
-        return f"{folder_hash}\n{response.text}"
-    
 
     def analyse_directory(self, zip_folder_path, date):
         responses = []
