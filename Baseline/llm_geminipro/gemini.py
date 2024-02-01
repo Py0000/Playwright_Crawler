@@ -46,6 +46,7 @@ class GeminiProVisionBaseline:
             response = model.generate_content([full_prompt, image], stream=True)
             response.resolve()
         except Exception as e:
+            print(e)
             return str(e)
 
 
@@ -57,7 +58,7 @@ class GeminiProVisionBaseline:
 
         for zip_file in os.listdir(zip_folder_path):
             print(f"Processing {zip_file}")
-
+            
             if zip_file.endswith(".zip"):
                 zip_path = os.path.join(zip_folder_path, zip_file)
 
@@ -65,9 +66,9 @@ class GeminiProVisionBaseline:
                 with zipfile.ZipFile(zip_path, 'r') as zip_ref:
                     extract_path = os.path.join(zip_folder_path, zip_file.replace('.zip', ''))
                     zip_ref.extractall(extract_path)
-
+                    
                     if self.mode == "phishing":
-                        self_ref_path = os.path.join(extract_path, extract_path.split("/")[1], 'self_ref')
+                        self_ref_path = os.path.join(extract_path, extract_path.split("/")[3], 'self_ref')
                     else: 
                         self_ref_path = os.path.join(extract_path, 'self_ref')
                     
