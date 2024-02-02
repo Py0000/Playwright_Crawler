@@ -22,7 +22,7 @@ class LlmResultExport:
         for row in range(2, sheet.max_row + 1):
             if sheet[self.file_hash_column + str(row)].value == file_hash:
                 sheet[self.predicted_brand_column + str(row)] = target_brand
-                sheet[self.predicted_verdict_column + str(row)] = 'Yes' if 'phishing' in conclusion.lower() else 'No'
+                sheet[self.predicted_verdict_column + str(row)] = 'No' if 'non-phishing' in conclusion.lower() else 'Yes'
                 hash_found = True
                 break
         
