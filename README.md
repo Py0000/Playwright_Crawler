@@ -90,3 +90,15 @@ Returning to the ssh session:
 * Pre-cond: Running the script `blank_page_detector.py` from `Playwright_Crawler` directory
 * Cmd: `python3 -m Analyzer.analysis.blank_page.blank_page_detector {path_to_dataset}/dataset_{date}.zip`
 
+#### Updating results of llm analysis to excel sheet
+* Pre-cond: Running the script `blank_page_detector.py` from `Playwright_Crawler` directory
+* Cmd: `python3 -m Baseline.export_llm_result {path_to_analysis_txt_file} {path_to_excel_sheet} {file_hash_col} {brand_col} {verdict_col}`
+  * Phishing: 
+    * `file_hash_col`: B
+    * `brand_col`: AA
+    * `verdict_col`: Z
+  * Benign
+    * `file_hash_col`: B
+    * `brand_col`: E
+    * `verdict_col`: F
+
