@@ -16,6 +16,7 @@ class LlmResultExport:
         return entries
 
     def update_sheet(self, sheet, file_hash, target_brand, conclusion):
+        print(f"\nProcessing file: {file_hash}...")
         hash_found = False
         # Row 1 has headers
         for row in range(2, sheet.max_row + 1):
@@ -33,6 +34,12 @@ class LlmResultExport:
     def process_individual_entry(self, sheet, entry):
         lines = [line for line in entry.split('\n') if line.strip() != '']
         file_hash = lines[0].strip()
+
+        if len(lines) == 2:
+            # Encountered error when gemini-pro generates the response
+            print(f"[ERROR LOG] Invalid Entry for file: {file_hash}")
+            return
+
         conclusion = re.search(r'Conclusion: (.+)', entry).group(1).strip()
         target_brand = re.search(r'Target Brand: (.+)', entry).group(1).strip()
 
